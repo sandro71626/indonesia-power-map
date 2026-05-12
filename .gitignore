@@ -1,0 +1,73 @@
+# ============================================================================
+# Indonesia Power Map — .gitignore
+# ============================================================================
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.eggs/
+*.egg
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# --- IDE / Editor ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+
+# --- OS ---
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# --- Project-specific ---
+
+# Large PDF source documents — kept locally only, downloaded by user.
+# See data/raw/sources/README.md for instructions.
+data/raw/sources/*.pdf
+data/raw/sources/*.PDF
+
+# Original concept doc (kept in docs/concept/ instead, if .docx is moved)
+# Uncomment next line if you don't want to commit the .docx at root:
+# /*.docx
+
+# Temporary extraction outputs / scratch files
+data/raw/scratch/
+data/raw/tmp/
+*.tmp.csv
+*.tmp.geojson
+
+# Logs
+*.log
+logs/
+
+# Backup files
+*.bak
+*.orig
+
+# --- DO NOT IGNORE ---
+# Sample/derived data we DO want to commit:
+!data/processed/
+!data/geojson/
+# Source list (replacement README for PDFs):
+!data/raw/sources/README.md

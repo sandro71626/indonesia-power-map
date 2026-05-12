@@ -1,0 +1,62 @@
+cff-version: 1.2.0
+message: "If you use this software or data, please cite it using the metadata below."
+title: "Indonesia Power Map — Peta Ketenagalistrikan Indonesia"
+abstract: >-
+  An open-source digital map of Indonesia's electricity system,
+  built from public data (RUPTL, PLN statistics, OpenStreetMap).
+  Designed for education, exploration, and policy analysis.
+  Visualizes power plants, substations, and transmission networks
+  using single line diagram (SLD) conventions adapted for interactive maps.
+type: software
+authors:
+  - given-names: Sandro
+    family-names: Agassi
+    email: sandroagassi71@gmail.com
+date-released: 2026-05-12
+version: "0.1"
+license: Apache-2.0
+license-url: "https://www.apache.org/licenses/LICENSE-2.0"
+repository-code: "https://github.com/<username>/indonesia-power-map"
+url: "https://github.com/<username>/indonesia-power-map"
+keywords:
+  - indonesia
+  - power-system
+  - electricity
+  - ketenagalistrikan
+  - RUPTL
+  - PLN
+  - power-grid
+  - transmission
+  - substation
+  - power-plant
+  - open-data
+  - knowledge-map
+  - geospatial
+  - leaflet
+  - openstreetmap
+references:
+  - type: report
+    title: "Rencana Usaha Penyediaan Tenaga Listrik PT PLN (Persero) Tahun 2025 sampai dengan Tahun 2034"
+    authors:
+      - name: "PT PLN (Persero)"
+    institution:
+      name: "Kementerian Energi dan Sumber Daya Mineral Republik Indonesia"
+    year: 2025
+    notes: "Decree of the Minister of ESDM No. 188.K/TL.03/MEM.L/2025"
+  - type: data
+    title: "OpenStreetMap"
+    authors:
+      - name: "OpenStreetMap contributors"
+    url: "https://www.openstreetmap.org/copyright"
+    license: ODbL-1.0
+preferred-citation:
+  type: software
+  title: "Indonesia Power Map — Peta Ketenagalistrikan Indonesia"
+  authors:
+    - given-names: Sandro
+      family-names: Agassi
+      email: sandroagassi71@gmail.com
+  year: 2026
+  version: "0.1"
+  url: "https://github.com/<username>/indonesia-power-map"
+  license: Apache-2.0

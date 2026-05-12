@@ -1,0 +1,115 @@
+Indonesia Power Map — Peta Ketenagalistrikan Indonesia
+Copyright 2026 Sandro Agassi
+
+This product includes data and software components from third parties.
+Attributions and license notices for those components are listed below.
+
+
+=============================================================================
+DATA ATTRIBUTIONS
+=============================================================================
+
+OpenStreetMap
+-------------
+Coordinates, plant identifications, substation locations, and transmission
+line geometries in this product are © OpenStreetMap contributors and are
+licensed under the Open Database License (ODbL).
+  https://www.openstreetmap.org/copyright
+  https://opendatacommons.org/licenses/odbl/
+
+Any redistribution or use of substantial portions of OSM data is subject
+to the ODbL.
+
+Files derived from OSM in this repository:
+  - data/geojson/indonesia_plants.geojson
+  - data/geojson/indonesia_substations.geojson
+  - data/geojson/indonesia_lines.geojson
+  - Coordinate columns (lat, lon) in data/processed/*.csv
+  - Geometry features in data/processed/*.geojson
+
+
+PT PLN (Persero) — RUPTL 2025–2034
+-----------------------------------
+Substation lists, capacity figures, and aggregate generator statistics
+in this product are derived from the Indonesia Electric Power Supply
+Business Plan 2025–2034 (RUPTL PT PLN 2025–2034), a public regulatory
+document authorized by:
+  Decree of the Minister of Energy and Mineral Resources of the
+  Republic of Indonesia, No. 188.K/TL.03/MEM.L/2025 (26 May 2025).
+
+The original PDF document is publicly available from PLN. This
+repository contains derived/aggregated information for educational
+purposes; the original PDF is NOT redistributed here. See
+data/raw/sources/README.md for the source URL.
+
+
+Statistik PLN 2024 & 2025, Annual Report PLN 2024
+--------------------------------------------------
+Validation references for aggregate data are derived from publications
+by PT PLN (Persero). These are publicly available corporate reports.
+
+
+Handbook of Energy and Economic Statistics of Indonesia (HEESI) 2024
+---------------------------------------------------------------------
+Validation references are derived from a publication of the Ministry
+of Energy and Mineral Resources of the Republic of Indonesia (ESDM).
+
+
+=============================================================================
+BASEMAP TILE PROVIDERS
+=============================================================================
+
+CARTO Basemaps
+--------------
+The web preview uses raster tiles from CARTO:
+  - Positron, Positron (no labels), Voyager, Dark Matter
+Tiles are © CARTO and © OpenStreetMap contributors.
+  https://carto.com/attribution/
+
+CARTO basemaps are free for non-commercial use without an API key.
+For commercial use, please refer to CARTO's terms of service.
+
+
+=============================================================================
+SOFTWARE DEPENDENCIES
+=============================================================================
+
+Leaflet
+-------
+The web preview uses Leaflet, a JavaScript library for interactive maps.
+Leaflet is licensed under the 2-clause BSD License.
+  Copyright (c) 2010-2024, Volodymyr Agafonkin
+  Copyright (c) 2010-2011, CloudMade
+  https://leafletjs.com/
+
+
+Python Standard Library + Poppler (pdftotext)
+----------------------------------------------
+Data extraction scripts use Python 3 standard library only.
+PDF text extraction uses pdftotext from the Poppler PDF rendering
+library, licensed under the GPL v2+.
+  https://poppler.freedesktop.org/
+
+
+=============================================================================
+ATTRIBUTION REQUIREMENTS FOR DOWNSTREAM USERS
+=============================================================================
+
+If you use or redistribute this work or its derivatives, please:
+
+1. Cite this repository (see CITATION.cff for the preferred format).
+
+2. Preserve the attribution to OpenStreetMap contributors when using
+   coordinate or geometric data.
+
+3. Preserve the attribution to PT PLN (Persero) and the Ministry of
+   ESDM when referencing capacity or planning data.
+
+4. If you distribute basemap tiles or screenshots that include CARTO
+   tiles, include the CARTO + OSM attribution.
+
+Suggested combined attribution string:
+
+  "Indonesia Power Map by Sandro Agassi.
+   Data: © OpenStreetMap contributors (ODbL), RUPTL PLN 2025–2034
+   (PLN/ESDM, public document). Basemap: © CARTO."
