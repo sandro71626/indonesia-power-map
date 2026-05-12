@@ -72,7 +72,7 @@ indonesia-power-map/
 
 ```bash
 # 1. Clone repo
-git clone https://github.com/<username>/indonesia-power-map.git
+git clone https://github.com/sandro71626/indonesia-power-map.git
 cd indonesia-power-map
 
 # 2. Download sumber PDF (lihat data/raw/sources/README.md untuk URL)
@@ -108,7 +108,7 @@ Lihat [`docs/concept/`](docs/concept/) untuk detail roadmap.
 
 ## Author
 
-Diinisiasi dan dikembangkan oleh **Sandro Agassi** (2026). Kontak: `sandroagassi71@gmail.com`.
+Diinisiasi dan dikembangkan oleh **Sandro Agassi Sitompul** (2026). Kontak: `sandroagassi71@gmail.com`.
 
 Untuk daftar lengkap kontributor (kalau ada), lihat history commit Git.
 
@@ -117,8 +117,8 @@ Untuk daftar lengkap kontributor (kalau ada), lihat history commit Git.
 Kalau lo pakai data atau analisis dari repo ini di publikasi/laporan, mohon cite:
 
 ```
-Agassi, S. (2026). Peta Ketenagalistrikan Indonesia (Indonesia Power Map).
-Version v0.1. https://github.com/<username>/indonesia-power-map
+Sitompul, S. (2026). Peta Ketenagalistrikan Indonesia (Indonesia Power Map).
+Version v0.1. https://github.com/sandro71626/indonesia-power-map
 ```
 
 Format BibTeX dan format lain otomatis di-generate via tombol "Cite this repository" di sidebar GitHub (didukung oleh [`CITATION.cff`](CITATION.cff)).
