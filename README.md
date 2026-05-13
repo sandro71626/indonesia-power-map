@@ -8,7 +8,7 @@
 
 ## Visi
 
-Membangun peta digital ketenagalistrikan Indonesia yang mengubah informasi teknis tersebar, terutama dari RUPTL, laporan PLN, dan sumber publik lain — menjadi visualisasi sistem tenaga yang mudah dipahami, dieksplorasi, dan dikembangkan.
+Membangun peta digital ketenagalistrikan Indonesia yang mengubah informasi teknis tersebar, terutama dari RUPTL, laporan PLN, dan sumber publik lain, menjadi visualisasi sistem tenaga yang mudah dipahami, dieksplorasi, dan dikembangkan.
 
 Targetnya bukan dashboard operasi atau SCADA publik, melainkan **"knowledge map" sistem kelistrikan Indonesia** yang bisa dipakai mahasiswa, peneliti, analis kebijakan, media, dan publik teknis.
 
