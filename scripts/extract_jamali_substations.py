@@ -7,6 +7,13 @@ match dengan koordinat OSM, hasil:
 Sumber:
   - data/raw/sources/RUPTL-2025-2034.pdf (Tabel Bx.4 per provinsi)
   - data/geojson/indonesia_substations.geojson (OSM)
+  - data/overrides/substation_overrides.csv (manual mapping, lihat
+    data/overrides/README.md)
+
+Threshold matching:
+  - score >= 0.85 -> matched via fuzzy
+  - score <  0.85 -> UNMATCHED (kecuali ada override)
+  - override apply pertama, mengalahkan fuzzy match
 """
 import re
 import json
@@ -15,11 +22,16 @@ import subprocess
 from difflib import SequenceMatcher
 from pathlib import Path
 
-ROOT = Path("/sessions/pensive-beautiful-bohr/mnt/Indonesia Power Map")
+# ROOT diturunkan dari posisi skrip ini supaya path portable di mesin manapun.
+ROOT = Path(__file__).resolve().parent.parent
 RUPTL = ROOT / "data/raw/sources/RUPTL-2025-2034.pdf"
 OSM_SUB = ROOT / "data/geojson/indonesia_substations.geojson"
+OVERRIDES = ROOT / "data/overrides/substation_overrides.csv"
 OUT_CSV = ROOT / "data/processed/substation_master_jamali.csv"
 OUT_GJ = ROOT / "data/processed/substations_jamali.geojson"
+
+# Threshold fuzzy match: score >= ini = matched, di bawahnya = UNMATCHED
+MATCH_THRESHOLD = 0.85
 
 # Per-provinsi: page range Lampiran B + bbox OSM
 # bbox: (lat_min, lon_min, lat_max, lon_max)
@@ -172,22 +184,47 @@ def best_match(target_name, candidates):
     return best, best_score
 
 
+def load_overrides():
+    """Load manual override CSV jadi dict keyed by (ruptl_name, province).
+
+    Lihat data/overrides/README.md untuk schema lengkap.
+    Returns: {(ruptl_name, province): {coord_source, osm_id, osm_name, lat, lon, notes}}
+    """
+    overrides = {}
+    if not OVERRIDES.exists():
+        return overrides
+    with open(OVERRIDES) as f:
+        for r in csv.DictReader(f):
+            key = (r['ruptl_name'].strip(), r['province'].strip())
+            overrides[key] = {
+                'coord_source': r['coord_source'].strip(),
+                'osm_id': r['osm_id'].strip(),
+                'osm_name': r['osm_name'].strip(),
+                'lat': float(r['lat']),
+                'lon': float(r['lon']),
+                'notes': r.get('notes', '').strip(),
+            }
+    return overrides
+
+
 def run():
     osm_all = load_osm_substations()
+    overrides = load_overrides()
     print(f"OSM substations (named): {len(osm_all)}")
+    print(f"Manual overrides loaded: {len(overrides)}")
 
     out_rows = []
     summary = []
     next_id = 1
+    used_overrides = set()
 
     for pid, prov_name, system, start, end, bbox in PROVINCES:
         rupt_rows = extract_table(RUPTL, pid, start, end)
         osm_prov = filter_by_bbox(osm_all, bbox)
 
-        matched = 0
-        weak = 0  # 0.65 <= score < 0.85
+        matched_fuzzy = 0
+        matched_override = 0
         for r in rupt_rows:
-            cand, score = best_match(r['name'], osm_prov)
             row = {
                 'id': f'GI-JMB-{next_id:04d}',
                 'name': r['name'],
@@ -200,22 +237,37 @@ def run():
                 'osm_name': '',
                 'lat': '',
                 'lon': '',
-                'match_score': round(score, 2) if cand else 0.0,
+                'match_score': 0.0,
+                'match_source': '',
                 'review_flag': '',
                 'source_id': 'RUPTL-2025-2034',
                 'source_table': f'Tabel {pid}.4',
             }
-            if cand and score >= 0.65:
-                row['osm_id'] = cand['osm_id']
-                row['osm_name'] = cand['name']
-                row['lat'] = cand['lat']
-                row['lon'] = cand['lon']
-                matched += 1
-                if score < 0.85:
-                    row['review_flag'] = 'LOW_SCORE'
-                    weak += 1
+            # 1. Cek override dulu — kalau ada, langsung pakai.
+            ov_key = (r['name'].strip(), prov_name)
+            if ov_key in overrides:
+                ov = overrides[ov_key]
+                row['osm_id'] = ov['osm_id']
+                row['osm_name'] = ov['osm_name']
+                row['lat'] = ov['lat']
+                row['lon'] = ov['lon']
+                row['match_score'] = 1.0
+                row['match_source'] = f"override:{ov['coord_source']}"
+                used_overrides.add(ov_key)
+                matched_override += 1
             else:
-                row['review_flag'] = 'UNMATCHED'
+                # 2. Fuzzy match ke OSM substations dalam bbox provinsi.
+                cand, score = best_match(r['name'], osm_prov)
+                row['match_score'] = round(score, 2) if cand else 0.0
+                if cand and score >= MATCH_THRESHOLD:
+                    row['osm_id'] = cand['osm_id']
+                    row['osm_name'] = cand['name']
+                    row['lat'] = cand['lat']
+                    row['lon'] = cand['lon']
+                    row['match_source'] = 'osm_fuzzy'
+                    matched_fuzzy += 1
+                else:
+                    row['review_flag'] = 'UNMATCHED'
             out_rows.append(row)
             next_id += 1
 
@@ -223,10 +275,17 @@ def run():
             'pid': pid, 'province': prov_name,
             'rupt_count': len(rupt_rows),
             'osm_in_bbox': len(osm_prov),
-            'matched': matched,
-            'unmatched': len(rupt_rows) - matched,
-            'low_score': weak,
+            'matched_fuzzy': matched_fuzzy,
+            'matched_override': matched_override,
+            'unmatched': len(rupt_rows) - matched_fuzzy - matched_override,
         })
+
+    # Warn kalau ada override yang gak dipakai (mungkin nama RUPTL berubah)
+    stale = set(overrides.keys()) - used_overrides
+    if stale:
+        print("\nWARNING: override entries tidak terpakai (kemungkinan nama RUPTL berubah):")
+        for k in sorted(stale):
+            print(f"  - {k}")
 
     # Write CSV
     OUT_CSV.parent.mkdir(parents=True, exist_ok=True)
@@ -251,13 +310,19 @@ def run():
         json.dump(geojson, f, ensure_ascii=False)
 
     # Print summary
-    print(f"\n{'PID':<4}{'Province':<14}{'RUPTL':>7}{'OSM_bbox':>10}{'Match':>8}{'Unmatch':>9}{'LowScore':>10}")
-    total = {'rupt_count': 0, 'matched': 0, 'unmatched': 0, 'low_score': 0}
+    print(f"\n{'PID':<4}{'Province':<14}{'RUPTL':>7}{'OSM_bbox':>10}{'Fuzzy':>7}{'Override':>10}{'Unmatch':>9}")
+    total = {'rupt_count': 0, 'matched_fuzzy': 0, 'matched_override': 0, 'unmatched': 0}
     for s in summary:
-        print(f"{s['pid']:<4}{s['province']:<14}{s['rupt_count']:>7}{s['osm_in_bbox']:>10}{s['matched']:>8}{s['unmatched']:>9}{s['low_score']:>10}")
+        print(f"{s['pid']:<4}{s['province']:<14}{s['rupt_count']:>7}{s['osm_in_bbox']:>10}{s['matched_fuzzy']:>7}{s['matched_override']:>10}{s['unmatched']:>9}")
         for k in total:
             total[k] += s[k]
-    print(f"{'':<4}{'TOTAL':<14}{total['rupt_count']:>7}{'':>10}{total['matched']:>8}{total['unmatched']:>9}{total['low_score']:>10}")
+    matched_total = total['matched_fuzzy'] + total['matched_override']
+    rate = matched_total / total['rupt_count'] * 100 if total['rupt_count'] else 0
+    print(f"{'':<4}{'TOTAL':<14}{total['rupt_count']:>7}{'':>10}{total['matched_fuzzy']:>7}{total['matched_override']:>10}{total['unmatched']:>9}")
+    print(f"\nMatch rate: {matched_total}/{total['rupt_count']} = {rate:.1f}%")
+    print(f"  via fuzzy (score >= {MATCH_THRESHOLD}): {total['matched_fuzzy']}")
+    print(f"  via manual override:                    {total['matched_override']}")
+    print(f"  unmatched:                              {total['unmatched']}")
     print(f"\nWritten: {OUT_CSV}")
     print(f"Written: {OUT_GJ} ({len(features)} features)")
 

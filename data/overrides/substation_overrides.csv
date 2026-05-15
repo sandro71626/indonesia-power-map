@@ -1,0 +1,12 @@
+ruptl_name,province,coord_source,osm_id,osm_name,lat,lon,verified_date,notes
+Suralaya,Banten,osm_plant,way/531146249,PLTU Suralaya,-5.8892925,106.0311877,2026-05-16,GI step-up ko-lokasi dengan PLTU Suralaya; nama GI di RUPTL mengikuti nama pembangkit
+Suralaya Baru,Banten,osm_plant,way/531146249,PLTU Suralaya,-5.8892925,106.0311877,2026-05-16,Bagian ekspansi kompleks Suralaya; koordinat pakai centroid plant
+Muaratawar,Jawa Barat,osm_plant,way/269508907,PLTGU Muara Tawar,-6.086259,106.9985262,2026-05-16,GI step-up ko-lokasi dengan PLTGU Muara Tawar (Babelan Bekasi)
+Wayang Windu,Jawa Barat,osm_plant,way/237756221,PLTP Wayang Windu,-7.1979719,107.6259776,2026-05-16,GI step-up ko-lokasi dengan PLTP Wayang Windu (Pangalengan)
+Kamojang,Jawa Barat,osm_plant,relation/7406922,PLTP Kamojang,-7.1397629,107.7857855,2026-05-16,GI step-up ko-lokasi dengan PLTP Kamojang; replace low-score match ke Kemang
+Karangkates,Jawa Timur,osm_plant,way/262452224,PLTA Sutami,-8.1613555,112.4441829,2026-05-16,Karangkates di RUPTL = PLTA Sutami di OSM (nama bendungan vs nama proyek)
+Sengguruh,Jawa Timur,osm_plant,way/894351126,PLTA Sengguruh,-8.1837248,112.5491911,2026-05-16,GI step-up ko-lokasi dengan PLTA Sengguruh
+Selorejo,Jawa Timur,osm_plant,way/284137273,PLTA Selorejo,-7.8733171,112.3518016,2026-05-16,GI step-up ko-lokasi dengan PLTA Selorejo; replace low-score match ke Sukorejo
+Tanjungawarawar,Jawa Timur,osm_plant,way/706118077,PLTU Tanjung Awar-Awar,-6.8089608,111.996493,2026-05-16,Tanjungawarawar di RUPTL = Tanjung Awar-Awar di OSM (perbedaan spacing)
+Celukan Bawang,Bali,osm_plant,way/493218545,PLTU Celukan Bawang,-8.1974788,114.8536333,2026-05-16,GI step-up ko-lokasi dengan PLTU Celukan Bawang
+Tambaklorok III,Jawa Tengah,osm_plant,way/894351150,PLTGU Tambak Lorok,-6.9503683,110.4323048,2026-05-16,Tambaklorok III ko-lokasi dengan kompleks PLTGU Tambak Lorok Semarang
