@@ -4,6 +4,7 @@
 
 **Status:** Alpha (Step 1, cakupan Jawa-Madura-Bali) · **Versi:** v0.1 · **Diinisiasi:** 2026
 
+[![DOI](https://zenodo.org/badge/1236669929.svg)](https://doi.org/10.5281/zenodo.20208412)
 ---
 
 ## Visi
