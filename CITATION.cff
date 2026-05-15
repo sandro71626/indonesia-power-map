@@ -10,7 +10,7 @@ abstract: >-
 type: software
 authors:
   - given-names: Sandro
-    family-names: Agassi
+    family-names: Sitompul
     email: sandroagassi71@gmail.com
 date-released: 2026-05-12
 version: "0.1"
@@ -54,7 +54,7 @@ preferred-citation:
   title: "Indonesia Power Map — Peta Ketenagalistrikan Indonesia"
   authors:
     - given-names: Sandro
-      family-names: Agassi
+      family-names: Sitompul
       email: sandroagassi71@gmail.com
   year: 2026
   version: "0.1"
