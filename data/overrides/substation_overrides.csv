@@ -10,3 +10,22 @@ Selorejo,Jawa Timur,osm_plant,way/284137273,PLTA Selorejo,-7.8733171,112.3518016
 Tanjungawarawar,Jawa Timur,osm_plant,way/706118077,PLTU Tanjung Awar-Awar,-6.8089608,111.996493,2026-05-16,Tanjungawarawar di RUPTL = Tanjung Awar-Awar di OSM (perbedaan spacing)
 Celukan Bawang,Bali,osm_plant,way/493218545,PLTU Celukan Bawang,-8.1974788,114.8536333,2026-05-16,GI step-up ko-lokasi dengan PLTU Celukan Bawang
 Tambaklorok III,Jawa Tengah,osm_plant,way/894351150,PLTGU Tambak Lorok,-6.9503683,110.4323048,2026-05-16,Tambaklorok III ko-lokasi dengan kompleks PLTGU Tambak Lorok Semarang
+PLTU Nagan Raya,Aceh,osm_plant,way/321541350,PLTU Nagan Raya,4.1054362,96.1977401,2026-05-19,GI step-up ko-lokasi dengan PLTU Nagan Raya (Aceh Barat)
+Arun,Aceh,osm_plant,way/542904306,PLTMG Arun I,5.2162499,97.0899019,2026-05-19,GI Arun ko-lokasi dengan kompleks PLTMG Arun I (eks-LNG Arun di Lhokseumawe)
+Belawan,Sumatera Utara,osm_plant,way/277183762,PLTGU Belawan,3.7724229,98.668286,2026-05-19,GI Belawan ko-lokasi dengan kompleks PLTGU Belawan
+T. Morawa,Sumatera Utara,osm_substation,way/519390726,Gardu Induk Tanjung Morawa,3.5416152,98.8060798,2026-05-19,RUPTL pakai singkatan 'T. Morawa' = OSM 'Tanjung Morawa'
+P. Brandan,Sumatera Utara,osm_substation,way/754073847,Gardu Induk Pangkalan Brandan,3.9922627,98.2726004,2026-05-19,RUPTL pakai singkatan 'P. Brandan' = OSM 'Pangkalan Brandan'
+R. Prapat,Sumatera Utara,osm_substation,way/522690659,Gardu Induk Rantau Prapat,2.1124119,99.8083975,2026-05-19,RUPTL pakai singkatan 'R. Prapat' = OSM 'Rantau Prapat'
+P. Sidimpuan,Sumatera Utara,osm_substation,way/469888044,Gardu Induk Padang Sidempuan,1.3388358,99.3003159,2026-05-19,RUPTL 'P. Sidimpuan' = OSM 'Padang Sidempuan' (beda ejaan i/e)
+Panyabungan,Sumatera Utara,osm_substation,way/938146459,Gardu Induk Panyabungan,0.7783451,99.5787316,2026-05-19,Direct match tapi fuzzy score di bawah 0.85 karena normalisasi nama
+KID,Riau,osm_substation,way/947860177,Gardu Induk Kawasan Industri Dumai,1.6359416,101.6151555,2026-05-19,RUPTL 'KID' = Kawasan Industri Dumai
+Tenayan,Riau,osm_plant,way/528916594,PLTU Tenayan Raya,0.5636818,101.5233476,2026-05-19,GI Tenayan ko-lokasi dengan PLTU Tenayan Raya (Pekanbaru)
+Air Anyir,Kepulauan Bangka Belitung,osm_plant,way/543959909,PLTU Air Anyir,-2.0775568,106.1496436,2026-05-19,GI step-up ko-lokasi dengan PLTU Air Anyir (Bangka)
+Suge (GI Pembangkit),Kepulauan Bangka Belitung,osm_plant,way/953023896,PLTU Suge,-2.8929037,107.5637904,2026-05-19,GI step-up ko-lokasi dengan PLTU Suge (Belitung); nama RUPTL menyebut 'GI Pembangkit'
+Maninjau,Sumatera Barat,osm_plant,way/930242896,PLTA Maninjau,-0.3107109,100.1166728,2026-05-19,GI step-up ko-lokasi dengan PLTA Maninjau (Agam)
+Muaralabuh,Sumatera Barat,osm_plant,way/1312349205,PLTP Muara Laboh,-1.6013056,101.146979,2026-05-19,RUPTL 'Muaralabuh' = OSM 'PLTP Muara Laboh' (Solok Selatan)
+S. Rumbai,Sumatera Barat,osm_substation,way/1312287191,Gardu Induk Sungai Rumbai,-1.2157395,101.7114612,2026-05-19,RUPTL 'S. Rumbai' = OSM 'Sungai Rumbai' (Dharmasraya)
+Bukit Asam,Sumatera Selatan,osm_plant,way/719550864,PLTU Bukit Asam,-3.7314036,103.797662,2026-05-19,GI step-up ko-lokasi dengan PLTU Bukit Asam (Tanjung Enim)
+Tes,Bengkulu,osm_plant,way/956594058,PLTA Tes,-3.2067037,102.3181629,2026-05-19,GI step-up ko-lokasi dengan PLTA Tes (Lebong)
+P. Baai,Bengkulu,osm_substation,way/930719090,Gardu Induk Pulau Baai,-3.8383227,102.3651043,2026-05-19,RUPTL 'P. Baai' = OSM 'Pulau Baai' (Bengkulu kota)
+Ulubelu,Lampung,osm_plant,way/531143189,PLTP Ulubelu,-5.3076656,104.5748938,2026-05-19,GI step-up ko-lokasi dengan PLTP Ulubelu (Tanggamus)
