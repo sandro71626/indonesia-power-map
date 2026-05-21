@@ -1,27 +1,31 @@
-# Ekstraksi Gardu Induk Sumatera — Log
+# Ekstraksi Gardu Induk Sumatra — Log
 
 **Tanggal:** 2026-05-19 — extraction perdana (Step 2)
 **Sumber utama:** RUPTL PLN 2025–2034 (Lampiran A), OSM (Overpass API)
-**Output:** `data/processed/substation_master_sumatera.csv`, `data/processed/substations_sumatera.geojson`
-**Skrip:** `scripts/extract_sumatera_substations.py`
-**Overrides:** `data/overrides/substation_overrides.csv` (19 entries Sumatera, plus 11 entries Jamali — shared)
+**Output:** `data/processed/substation_master_sumatra.csv`, `data/processed/substations_sumatra.geojson`
+**Skrip:** `scripts/extract_sumatra_substations.py`
+**Overrides:** `data/overrides/substation_overrides.csv` (19 entries Sumatra, plus 11 entries Jamali — shared)
 
 **Threshold matching identik dengan JAMALI iterasi 2:** 0.85 absolute, override prioritas pertama, fuzzy SequenceMatcher di bawahnya.
+
+> Catatan ejaan: "Sumatra" = label region/sistem (English, lihat
+> `docs/naming_conventions.md`). "Sumatera Utara/Barat/Selatan" tetap ejaan
+> resmi BPS untuk nama administratif provinsi.
 
 ## Ringkasan
 
 | Provinsi | Tabel sumber | System | RUPTL | OSM (bbox) | Fuzzy ≥ 0.85 | Override | Unmatched |
 |----------|-------------|--------|------:|-----------:|-------------:|---------:|----------:|
-| Aceh | Tabel A1.4 | Sumatera | 20 | 22 | 16 | 2 | 2 |
-| Sumatera Utara | Tabel A2.4 | Sumatera | 53 | 61 | 45 | 6 | 2 |
-| Riau | Tabel A3.4 | Sumatera | 21 | 58 | 19 | 2 | 0 |
+| Aceh | Tabel A1.4 | Sumatra | 20 | 22 | 16 | 2 | 2 |
+| Sumatera Utara | Tabel A2.4 | Sumatra | 53 | 61 | 45 | 6 | 2 |
+| Riau | Tabel A3.4 | Sumatra | 21 | 58 | 19 | 2 | 0 |
 | Kepulauan Riau | Tabel A4.4 | Batam | 5 | 17 | 5 | 0 | 0 |
 | Kep. Bangka Belitung | Tabel A5.4 | Babel | 10 | 14 | 7 | 2 | 1 |
-| Sumatera Barat | Tabel A6.4 | Sumatera | 20 | 36 | 15 | 3 | 2 |
-| Jambi | Tabel A7.4 | Sumatera | 12 | 19 | 8 | 0 | 4 |
-| Sumatera Selatan | Tabel A8.4 | Sumatera | 34 | 59 | 29 | 1 | 4 |
-| Bengkulu | Tabel A9.4 | Sumatera | 6 | 20 | 3 | 2 | 1 |
-| Lampung | Tabel A10.4 | Sumatera | 29 | 45 | 26 | 1 | 2 |
+| Sumatera Barat | Tabel A6.4 | Sumatra | 20 | 36 | 15 | 3 | 2 |
+| Jambi | Tabel A7.4 | Sumatra | 12 | 19 | 8 | 0 | 4 |
+| Sumatera Selatan | Tabel A8.4 | Sumatra | 34 | 59 | 29 | 1 | 4 |
+| Bengkulu | Tabel A9.4 | Sumatra | 6 | 20 | 3 | 2 | 1 |
+| Lampung | Tabel A10.4 | Sumatra | 29 | 45 | 26 | 1 | 2 |
 | **Total** | | | **210** | | **173** | **19** | **18** |
 
 Match rate: **91,4%** (192 / 210).
@@ -30,7 +34,7 @@ Breakdown per sistem listrik:
 
 | System | Cakupan | Matched | Total | Rate |
 |--------|---------|--------:|------:|-----:|
-| Sumatera (interkoneksi 275 kV mainland) | 8 provinsi mainland | 178 | 195 | 91.3% |
+| Sumatra (interkoneksi 275 kV mainland) | 8 provinsi mainland | 178 | 195 | 91.3% |
 | Batam | Kepulauan Riau (Batam–Bintan) | 5 | 5 | 100.0% |
 | Babel | Kep. Bangka Belitung | 9 | 10 | 90.0% |
 
@@ -57,19 +61,19 @@ Asumsi awal alfabetis menyebabkan iterasi pertama match rate 50,5% dengan banyak
 
 ### 2. Heading tabel berbeda phrasing
 
-Lampiran B (JAMALI) pakai **"Kapasitas Gardu Induk Eksisting"**. Lampiran A (Sumatera) pakai **"Kapasitas Trafo Gardu Induk"** — ada kata "Trafo" yang tidak ada di JAMALI. Plus, A8 (Babel) doang yang pakai variasi "Kapasitas Trafo Gardu Induk **Eksisting**".
+Lampiran B (JAMALI) pakai **"Kapasitas Gardu Induk Eksisting"**. Lampiran A (Sumatra) pakai **"Kapasitas Trafo Gardu Induk"** — ada kata "Trafo" yang tidak ada di JAMALI. Plus, A8 (Babel) doang yang pakai variasi "Kapasitas Trafo Gardu Induk **Eksisting**".
 
-Regex extraction Sumatera dibuat fleksibel: kata "Trafo" wajib, modifier "Realisasi" dan "Eksisting" opsional.
+Regex extraction Sumatra dibuat fleksibel: kata "Trafo" wajib, modifier "Realisasi" dan "Eksisting" opsional.
 
 ### 3. Tegangan 275 kV muncul (tidak ada di JAMALI)
 
-Backbone Sumatera interkoneksi pakai 275 kV (vs 500 kV di JAMALI). Beberapa GI di output punya `voltage = '275/150'` atau `'150/275'`. Color palette di `docs/design_decisions.md` sudah punya entry untuk 275 kV (`#9467bd`, ungu) — siap pakai.
+Backbone Sumatra interkoneksi pakai 275 kV (vs 500 kV di JAMALI). Beberapa GI di output punya `voltage = '275/150'` atau `'150/275'`. Color palette di `docs/design_decisions.md` sudah punya entry untuk 275 kV (`#9467bd`, ungu) — siap pakai.
 
 ### 4. Multi-system di satu region
 
-Sumatera region punya **3 sistem listrik terpisah** (vs JAMALI yang satu sistem interkoneksi):
+Sumatra region punya **3 sistem listrik terpisah** (vs JAMALI yang satu sistem interkoneksi):
 
-- **Sumatera** — 8 provinsi mainland terinterkoneksi (Aceh, Sumut, Sumbar, Riau, Jambi, Sumsel, Bengkulu, Lampung). Backbone 275 kV.
+- **Sumatra** — 8 provinsi mainland terinterkoneksi (Aceh, Sumatera Utara, Sumatera Barat, Riau, Jambi, Sumatera Selatan, Bengkulu, Lampung). Backbone 275 kV.
 - **Batam** — Sistem Kepulauan Riau (Batam-Bintan-Karimun-Lingga). Sistem isolated yang terinterkoneksi internal antar-pulau Batam-Bintan.
 - **Babel** — Sistem Bangka & sistem Belitung. Dua sistem isolated terpisah yang sama-sama di provinsi Kep. Bangka Belitung.
 
@@ -143,8 +147,8 @@ Untuk iterasi berikutnya: kandidat sumber koordinat adalah PLN Annual Report (lo
 
 Identik dengan JAMALI iterasi 2 — lihat `docs/extraction_log_substations_jamali.md` untuk reference lengkap. Highlights:
 
-- `id` — prefix `GI-SMT-XXXX` untuk semua entry Sumatera (termasuk Batam & Babel; diskriminator sistem via field `system`)
-- `system` — `Sumatera` / `Batam` / `Babel`
+- `id` — prefix `GI-SMT-XXXX` untuk semua entry Sumatra (termasuk Batam & Babel; diskriminator sistem via field `system`)
+- `system` — `Sumatra` / `Batam` / `Babel`
 - `match_source` — `osm_fuzzy` / `override:osm_plant` / `override:osm_substation` (no `override:manual` di iterasi ini)
 - `review_flag` — `UNMATCHED` atau kosong
 - `source_table` — `Tabel A1.4`, `Tabel A2.4`, dst.
@@ -162,7 +166,7 @@ Probe `scripts/_probe_ruptl_tables.py` sudah mengonfirmasi bahwa Kalimantan ada 
 
 1. Probe page ranges & confirm urutan tabel (jangan asumsi alfabetis).
 2. Identify phrasing tabel (mungkin ada variasi lain lagi).
-3. Copy extractor template `extract_sumatera_substations.py`, ganti PROVINCES list + heading regex prefix (A→ C → dst).
+3. Copy extractor template `extract_sumatra_substations.py`, ganti PROVINCES list + heading regex prefix (A→ C → dst).
 4. Run, identify unmatched, populate overrides di CSV yang sama (`substation_overrides.csv`).
 5. Iterate sampai match rate 90%+.
 6. Document di extraction_log per region.
@@ -171,6 +175,6 @@ Probe `scripts/_probe_ruptl_tables.py` sudah mengonfirmasi bahwa Kalimantan ada 
 
 1. **Verify ordering ground-truth lebih awal.** Asumsi A1=Aceh, A2=Sumut alfabetis ternyata cuma kebetulan benar untuk 2 entry pertama. A3-A8 keacak. Pelajaran: setelah extractor jadi, **cek nama-nama yang ter-extract di 1 baris pertama tiap provinsi** match dengan provinsi yang diharapkan, sebelum kerja override.
 
-2. **Heading regex JAMALI tidak portable.** "Eksisting" wajib di JAMALI, opsional di Sumatera; "Trafo" wajib di Sumatera, tidak ada di JAMALI. Untuk Kalimantan dan seterusnya, mulai dari regex paling fleksibel (`Tabel\s+\w+\.\d+.*Gardu Induk`), lalu sempit-kan setelah probe.
+2. **Heading regex JAMALI tidak portable.** "Eksisting" wajib di JAMALI, opsional di Sumatra; "Trafo" wajib di Sumatra, tidak ada di JAMALI. Untuk Kalimantan dan seterusnya, mulai dari regex paling fleksibel (`Tabel\s+\w+\.\d+.*Gardu Induk`), lalu sempit-kan setelah probe.
 
 3. **Sistem isolated punya kelemahan struktural OSM.** Coverage substation OSM untuk Batam & Babel sangat tipis. Tapi pembangkit-nya ada (PLTU Suge, PLTU Air Anyir, PLTU Tanjung Kasam). Strategi plant-co-location bekerja sangat baik di sini.

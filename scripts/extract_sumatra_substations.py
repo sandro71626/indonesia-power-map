@@ -1,14 +1,18 @@
 """
-Ekstrak daftar Gardu Induk Eksisting dari Lampiran A (Sumatera + sistem
+Ekstrak daftar Gardu Induk Eksisting dari Lampiran A (Sumatra + sistem
 isolated) RUPTL 2025-2034, match dengan koordinat OSM. Hasil:
-  - data/processed/substation_master_sumatera.csv
-  - data/processed/substations_sumatera.geojson
+  - data/processed/substation_master_sumatra.csv
+  - data/processed/substations_sumatra.geojson
 
 Cakupan: 10 provinsi
-  - 8 provinsi sistem Sumatera interkoneksi (Aceh, Sumut, Sumbar, Riau,
-    Jambi, Sumsel, Bengkulu, Lampung) — backbone 275 kV
+  - 8 provinsi sistem Sumatra interkoneksi (Aceh, Sumatera Utara, Sumatera
+    Barat, Riau, Jambi, Sumatera Selatan, Bengkulu, Lampung) — backbone 275 kV
   - 1 sistem isolated Batam–Bintan (Kepulauan Riau)
   - 1 sistem isolated Bangka & Belitung (Kep. Bangka Belitung)
+
+Lihat docs/naming_conventions.md: 'Sumatra' = label region/sistem (English),
+sedangkan 'Sumatera Utara/Barat/Selatan' tetap ejaan resmi BPS untuk nama
+administratif provinsi.
 
 Sumber:
   - data/raw/sources/RUPTL-2025-2034.pdf (Tabel Ax.4 per provinsi)
@@ -38,8 +42,8 @@ ROOT = Path(__file__).resolve().parent.parent
 RUPTL = ROOT / "data/raw/sources/RUPTL-2025-2034.pdf"
 OSM_SUB = ROOT / "data/geojson/indonesia_substations.geojson"
 OVERRIDES = ROOT / "data/overrides/substation_overrides.csv"
-OUT_CSV = ROOT / "data/processed/substation_master_sumatera.csv"
-OUT_GJ = ROOT / "data/processed/substations_sumatera.geojson"
+OUT_CSV = ROOT / "data/processed/substation_master_sumatra.csv"
+OUT_GJ = ROOT / "data/processed/substations_sumatra.geojson"
 
 MATCH_THRESHOLD = 0.85
 ID_PREFIX = "GI-SMT"
@@ -55,16 +59,16 @@ ID_PREFIX = "GI-SMT"
 # ke nama kota/kabupaten administratif provinsi (mis. Duri, Dumai, Perawang
 # untuk Riau di A3; Padang, Maninjau, Bungus untuk Sumbar di A6).
 PROVINCES = [
-    ("A1",  "Aceh",                       "Sumatera", 601, 616, ( 2.00,  94.90,  6.10,  98.20)),
-    ("A2",  "Sumatera Utara",             "Sumatera", 617, 632, ( 0.90,  97.00,  4.50, 100.60)),
-    ("A3",  "Riau",                       "Sumatera", 633, 645, (-1.50, 100.00,  3.00, 103.70)),
+    ("A1",  "Aceh",                       "Sumatra",  601, 616, ( 2.00,  94.90,  6.10,  98.20)),
+    ("A2",  "Sumatera Utara",             "Sumatra",  617, 632, ( 0.90,  97.00,  4.50, 100.60)),
+    ("A3",  "Riau",                       "Sumatra",  633, 645, (-1.50, 100.00,  3.00, 103.70)),
     ("A4",  "Kepulauan Riau",             "Batam",    646, 658, (-0.20, 103.20,  1.55, 105.00)),
     ("A5",  "Kepulauan Bangka Belitung",  "Babel",    659, 669, (-3.70, 105.00, -1.30, 108.50)),
-    ("A6",  "Sumatera Barat",             "Sumatera", 670, 680, (-3.50,  98.50,  0.60, 102.00)),
-    ("A7",  "Jambi",                      "Sumatera", 681, 691, (-2.80, 101.00, -0.50, 104.50)),
-    ("A8",  "Sumatera Selatan",           "Sumatera", 692, 704, (-4.80, 102.30, -1.00, 106.20)),
-    ("A9",  "Bengkulu",                   "Sumatera", 705, 715, (-5.50, 101.00, -2.00, 104.00)),
-    ("A10", "Lampung",                    "Sumatera", 716, 729, (-6.00, 103.50, -3.60, 106.00)),
+    ("A6",  "Sumatera Barat",             "Sumatra",  670, 680, (-3.50,  98.50,  0.60, 102.00)),
+    ("A7",  "Jambi",                      "Sumatra",  681, 691, (-2.80, 101.00, -0.50, 104.50)),
+    ("A8",  "Sumatera Selatan",           "Sumatra",  692, 704, (-4.80, 102.30, -1.00, 106.20)),
+    ("A9",  "Bengkulu",                   "Sumatra",  705, 715, (-5.50, 101.00, -2.00, 104.00)),
+    ("A10", "Lampung",                    "Sumatra",  716, 729, (-6.00, 103.50, -3.60, 106.00)),
 ]
 
 
@@ -220,12 +224,12 @@ def run():
     osm_all = load_osm_substations()
     overrides = load_overrides()
     print(f"OSM substations (named): {len(osm_all)}")
-    print(f"Manual overrides loaded: {len(overrides)} (filter ke provinsi Sumatera)")
+    print(f"Manual overrides loaded: {len(overrides)} (filter ke provinsi Sumatra)")
 
-    # Filter overrides ke provinsi Sumatera saja (untuk warning stale yang akurat)
-    sumatera_provinces = {p[1] for p in PROVINCES}
-    overrides_relevant = {k: v for k, v in overrides.items() if k[1] in sumatera_provinces}
-    print(f"  Override entries untuk Sumatera region: {len(overrides_relevant)}")
+    # Filter overrides ke provinsi Sumatra saja (untuk warning stale yang akurat)
+    sumatra_provinces = {p[1] for p in PROVINCES}
+    overrides_relevant = {k: v for k, v in overrides.items() if k[1] in sumatra_provinces}
+    print(f"  Override entries untuk Sumatra region: {len(overrides_relevant)}")
 
     out_rows = []
     summary = []
@@ -292,10 +296,10 @@ def run():
             'unmatched': len(rupt_rows) - matched_fuzzy - matched_override,
         })
 
-    # Warn override Sumatera yang gak dipakai (mungkin nama berubah)
+    # Warn override Sumatra yang gak dipakai (mungkin nama berubah)
     stale = set(overrides_relevant.keys()) - used_overrides
     if stale:
-        print("\nWARNING: override entries Sumatera tidak terpakai:")
+        print("\nWARNING: override entries Sumatra tidak terpakai:")
         for k in sorted(stale):
             print(f"  - {k}")
 
