@@ -95,7 +95,8 @@ karena Jamali sendiri adalah acronym yang gak punya ejaan English alternatif.
 | `GI-SMT-XXXX` | Gardu Induk, region Sumatra (semua sistem: Sumatra/Batam/Babel) |
 | `GEN-JMB-XXXX` | Generator, Jamali |
 | `GEN-SMT-XXXX` | Generator, Sumatra |
-| `TR-JMB-XXXX` | Transmission, Jamali (?-belum dicek) |
+| `TRM-JMB-XXXX` | Transmission (ruas), Jamali |
+| `TRM-SMT-XXXX` | Transmission (ruas), Sumatra |
 
 ID prefix region-level (bukan per-system) supaya pembagian Sumatra vs Batam
 vs Babel jadi tanggung jawab field `system`, bukan prefix ID. Memudahkan
