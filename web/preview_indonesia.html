@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Peta Ketenagalistrikan Indonesia — JAMALI + Sumatra</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<style>
+  body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #222; }
+  #map { width: 100vw; height: 100vh; background: #f5f5f5; }
+
+  .header { position: absolute; top: 10px; left: 10px;
+            background: white; padding: 8px 14px; border-radius: 6px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.18); z-index: 1000;
+            font-size: 14px; font-weight: 600; max-width: 60vw; }
+  .header .sub { font-weight: 400; font-size: 11px; color: #666; margin-top: 2px; }
+  .header .perf { font-weight: 400; font-size: 11px; color: #1f77b4; margin-top: 3px;
+                  font-variant-numeric: tabular-nums; }
+
+  .footer { position: absolute; bottom: 10px; left: 10px;
+            background: rgba(255,255,255,0.95); padding: 6px 10px; border-radius: 4px;
+            font-size: 10px; color: #666; max-width: 60vw; line-height: 1.5; z-index: 999; }
+
+  .sidebar { position: absolute; top: 60px; right: 10px; z-index: 1000;
+             background: white; border-radius: 8px;
+             box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+             padding: 0; width: 260px; max-height: calc(100vh - 100px);
+             overflow-y: auto; font-size: 12px; }
+  .sidebar .section { padding: 10px 14px; border-bottom: 1px solid #eee; }
+  .sidebar .section:last-child { border-bottom: none; }
+  .sidebar .section.collapsible h4 { cursor: pointer; user-select: none; }
+  .sidebar .section.collapsed .content { display: none; }
+  .sidebar h4 { margin: 0 0 8px; font-size: 13px; font-weight: 600;
+                display: flex; justify-content: space-between; align-items: center; }
+  .sidebar h4 .chevron { color: #aaa; font-size: 10px; transition: transform 0.2s; }
+  .sidebar .section.collapsed .chevron { transform: rotate(-90deg); }
+  .sidebar h5 { margin: 8px 0 4px; font-size: 10px; color: #666;
+                text-transform: uppercase; letter-spacing: 0.04em; }
+  .sidebar .layer-toggle { display: flex; align-items: center; gap: 8px;
+                          padding: 4px 0; cursor: pointer; user-select: none; }
+  .sidebar .layer-toggle input { margin: 0; }
+  .sidebar .layer-toggle label { cursor: pointer; flex-grow: 1; }
+  .sidebar .row { display: flex; align-items: center; gap: 8px;
+                  padding: 2px 0; line-height: 1.4; }
+  .sidebar .circle-sym { width: 18px; height: 18px; border-radius: 50%;
+                         border: 1.5px solid #111; flex-shrink: 0;
+                         display: inline-flex; align-items: center; justify-content: center;
+                         color: #fff; font-size: 9px; font-weight: 700; }
+  .sidebar .square-sym { width: 14px; height: 14px; border: 1.5px solid #222; flex-shrink: 0; }
+  .sidebar .square-sym.gitet { outline: 1.5px solid #222; outline-offset: 2px;
+                                margin-left: 2px; margin-right: 2px; }
+  .sidebar .line-sample { flex-shrink: 0; border-radius: 1px; min-width: 24px; }
+  .sidebar .note { margin-top: 6px; font-size: 10px; color: #888; line-height: 1.4; }
+  .sidebar select { width: 100%; padding: 4px 6px; font-size: 12px;
+                    border: 1px solid #ccc; border-radius: 4px; background: white; cursor: pointer; }
+  .sidebar button.action { width: 100%; padding: 4px 6px; font-size: 12px;
+                    border: 1px solid #ccc; border-radius: 4px; background: white;
+                    cursor: pointer; color: #1f77b4; }
+
+  .plant-marker { border-radius: 50%; border: 1.5px solid #111;
+                  display: flex; align-items: center; justify-content: center;
+                  color: #fff; font-weight: 700; box-sizing: border-box; }
+  .gi-marker { border: 1.5px solid #222; box-sizing: border-box; }
+  .gi-marker.gitet { outline: 1.5px solid rgba(0,0,0,0.7); outline-offset: 2px; }
+
+  .popup-table { font-size: 12px; }
+  .popup-table td { padding: 1px 6px 1px 0; vertical-align: top; }
+  .popup-table td:first-child { color: #888; white-space: nowrap; }
+  .popup-title { font-weight: 600; font-size: 13px; margin-bottom: 4px; }
+
+  @media (max-width: 600px) {
+    .sidebar { width: calc(100vw - 20px); right: 10px; top: 78px; max-height: 45vh; }
+    .header { font-size: 12px; padding: 6px 10px; max-width: calc(100vw - 20px); }
+    .footer { font-size: 9px; max-width: calc(100vw - 20px); }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  Peta Ketenagalistrikan Indonesia
+  <div class="sub">JAMALI + Sumatra — uji performa multi-region</div>
+  <div class="perf" id="perf">memuat data…</div>
+</div>
+
+<div id="map"></div>
+
+<div class="sidebar">
+  <div class="section">
+    <h5>Peta dasar</h5>
+    <select id="basemap-select">
+      <option value="positron" selected>Carto Positron</option>
+      <option value="positron_nolabels">Positron (tanpa label)</option>
+      <option value="voyager">Carto Voyager</option>
+      <option value="dark">Carto Dark Matter</option>
+    </select>
+  </div>
+
+  <div class="section">
+    <h5>Renderer (uji performa)</h5>
+    <select id="renderer-select">
+      <option value="svg" selected>SVG (default Leaflet)</option>
+      <option value="canvas">Canvas (lebih ringan utk garis)</option>
+    </select>
+    <div class="note">Canvas me-render garis transmisi jauh lebih ringan.
+      Marker (divIcon) tetap DOM apa pun renderer-nya.</div>
+  </div>
+
+  <div class="section">
+    <h4>Region</h4>
+    <div class="layer-toggle"><input type="checkbox" id="r-jamali" checked>
+      <label for="r-jamali">JAMALI</label></div>
+    <div class="layer-toggle"><input type="checkbox" id="r-sumatra" checked>
+      <label for="r-sumatra">Sumatra</label></div>
+  </div>
+
+  <div class="section">
+    <h4>Layer</h4>
+    <div class="layer-toggle"><input type="checkbox" id="t-trm" checked>
+      <label for="t-trm">Transmisi (<span id="trm-count">…</span>)</label></div>
+    <div class="layer-toggle"><input type="checkbox" id="t-sub" checked>
+      <label for="t-sub">Gardu Induk (<span id="sub-count">…</span>)</label></div>
+    <div class="layer-toggle"><input type="checkbox" id="t-gen" checked>
+      <label for="t-gen">Pembangkit (<span id="gen-count">…</span>)</label></div>
+  </div>
+
+  <div class="section collapsible">
+    <h4>Pembangkit <span class="chevron">▼</span></h4>
+    <div class="content">
+      <div class="row"><span class="circle-sym" style="background:#3a3a3a">U</span> PLTU — Batubara</div>
+      <div class="row"><span class="circle-sym" style="background:#ff7f0e">GU</span> PLTGU — Gas combined</div>
+      <div class="row"><span class="circle-sym" style="background:#ffbb78;color:#222">G</span> PLTG — Gas open</div>
+      <div class="row"><span class="circle-sym" style="background:#1f77b4">A</span> PLTA — Hidro besar</div>
+      <div class="row"><span class="circle-sym" style="background:#d62728">P</span> PLTP — Panas bumi</div>
+      <div class="row"><span class="circle-sym" style="background:#f7d100;color:#222">S</span> PLTS — Surya</div>
+      <div class="row"><span class="circle-sym" style="background:#8c564b">D</span> PLTD — Diesel</div>
+      <div class="note">Lingkaran = pembangkit. Ukuran ∝ kapasitas MW.</div>
+    </div>
+  </div>
+
+  <div class="section collapsible">
+    <h4>Gardu Induk &amp; Transmisi <span class="chevron">▼</span></h4>
+    <div class="content">
+      <div class="row"><span class="square-sym gitet" style="background:#d62728"></span>
+        <span class="line-sample" style="background:#d62728; height:4px"></span> 500 kV</div>
+      <div class="row"><span class="square-sym gitet" style="background:#9467bd"></span>
+        <span class="line-sample" style="background:#9467bd; height:3px"></span> 275 kV</div>
+      <div class="row"><span class="square-sym" style="background:#1f77b4"></span>
+        <span class="line-sample" style="background:#1f77b4; height:2px"></span> 150 kV</div>
+      <div class="row"><span class="square-sym" style="background:#2ca02c"></span>
+        <span class="line-sample" style="background:#2ca02c; height:1.5px"></span> 70 kV</div>
+      <div class="note">Kotak = gardu induk, garis = transmisi. Border ganda =
+        tegangan ekstra tinggi (500/275 kV).</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <button class="action" onclick="document.getElementById('about-modal').style.display='flex'">
+      ℹ Tentang peta &amp; sumber data
+    </button>
+  </div>
+</div>
+
+<div class="footer">
+  Sumber: RUPTL PLN 2025–2034 · OpenStreetMap (© OSM contributors) · CARTO basemap.
+  Combined preview untuk uji performa — bukan rilis final.
+</div>
+
+<div id="about-modal" style="position:fixed;inset:0;background:rgba(0,0,0,0.5);
+     z-index:2000;display:none;align-items:center;justify-content:center;"
+     onclick="if(event.target===this)this.style.display='none'">
+  <div style="background:white;max-width:520px;max-height:85vh;overflow-y:auto;
+       border-radius:8px;padding:24px 30px;font-size:13px;line-height:1.55;margin:20px;">
+    <h2 style="margin:0 0 12px;font-size:18px;">Peta Ketenagalistrikan Indonesia</h2>
+    <p>Combined preview yang menggabungkan dua region: <strong>JAMALI</strong>
+    (Jawa-Madura-Bali, Step 1) dan <strong>Sumatra</strong> (Step 2). Halaman
+    ini dipakai untuk <strong>menguji performa rendering multi-region</strong>
+    sebelum region berikutnya (Kalimantan, Sulawesi, dst) ditambahkan.</p>
+    <p>Data di-load dari <code>data_jamali.js</code> dan <code>data_sumatra.js</code>
+    — file yang sama yang dipakai preview per-region. Menambah region baru
+    cukup tambah satu file data dan satu baris script.</p>
+    <p>Sumber: RUPTL PLN 2025–2034 (gardu induk &amp; kapasitas), OpenStreetMap
+    via Overpass API (pembangkit, transmisi, koordinat). Bukan alat operasi
+    sistem tenaga; koordinat perlu verifikasi independen.</p>
+    <button onclick="document.getElementById('about-modal').style.display='none'"
+       style="display:block;margin-top:16px;padding:9px 18px;background:#1f77b4;
+       color:white;border:none;border-radius:4px;cursor:pointer;font-weight:600;">
+      Tutup
+    </button>
+  </div>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="data_jamali.js"></script>
+<script src="data_sumatra.js"></script>
+<script>
+const map = L.map('map', {zoomControl: false, preferCanvas: false}).setView([-3.5, 108.0], 5);
+L.control.zoom({position: 'topleft'}).addTo(map);
+
+// === BASEMAPS ===
+const basemaps = {
+  positron: L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png',
+    {attribution:'© OpenStreetMap, © CARTO', subdomains:'abcd', maxZoom:19}),
+  positron_nolabels: L.tileLayer('https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png',
+    {attribution:'© OpenStreetMap, © CARTO', subdomains:'abcd', maxZoom:19}),
+  voyager: L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',
+    {attribution:'© OpenStreetMap, © CARTO', subdomains:'abcd', maxZoom:19}),
+  dark: L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',
+    {attribution:'© OpenStreetMap, © CARTO', subdomains:'abcd', maxZoom:19}),
+};
+let currentBasemap = basemaps.positron.addTo(map);
+document.getElementById('basemap-select').addEventListener('change', e => {
+  map.removeLayer(currentBasemap);
+  currentBasemap = basemaps[e.target.value].addTo(map);
+});
+
+// === MARKER HELPERS ===
+const PLANT_COLORS = {
+  'PLTU':'#3a3a3a','PLTGU':'#ff7f0e','PLTG':'#ffbb78','PLTA':'#1f77b4',
+  'PLTM':'#76b7e1','PLTMH':'#76b7e1','PLTP':'#d62728','PLTS':'#f7d100',
+  'PLTB':'#17becf','PLTD':'#8c564b','PLTMG':'#c49c94','PLTSa':'#8b4513','Unknown':'#999',
+};
+const PLANT_LABEL = {
+  'PLTU':'U','PLTGU':'GU','PLTG':'G','PLTA':'A','PLTM':'M','PLTMH':'M',
+  'PLTP':'P','PLTS':'S','PLTB':'B','PLTD':'D','PLTMG':'MG','PLTSa':'Sa','Unknown':'?',
+};
+const DARK_TEXT = new Set(['PLTG','PLTM','PLTMH','PLTS','PLTB','PLTMG']);
+
+function diameterForMW(mw) {
+  if (!mw) return 14;
+  if (mw < 10) return 14; if (mw < 50) return 16; if (mw < 200) return 20;
+  if (mw < 500) return 24; if (mw < 1000) return 30; if (mw < 2000) return 36;
+  return 42;
+}
+function plantIcon(type, mw) {
+  const d = diameterForMW(mw);
+  const color = PLANT_COLORS[type] || '#999';
+  const label = PLANT_LABEL[type] || '?';
+  const textColor = DARK_TEXT.has(type) ? '#222' : '#fff';
+  const fontSize = Math.max(8, Math.min(13, d * 0.36));
+  return L.divIcon({ className: '',
+    html: `<div class="plant-marker" style="width:${d}px;height:${d}px;
+        background:${color};color:${textColor};font-size:${fontSize}px;
+        box-shadow:0 1px 3px rgba(0,0,0,0.3);">${label}</div>`,
+    iconSize: [d, d], iconAnchor: [d/2, d/2] });
+}
+function colorForGIVoltage(v) {
+  if (!v) return '#999';
+  if (v.startsWith('500')) return '#d62728';
+  if (v.startsWith('275')) return '#9467bd';
+  if (v.startsWith('150')) return '#1f77b4';
+  if (v.startsWith('70'))  return '#2ca02c';
+  return '#999';
+}
+function sizeForMVA(mva) {
+  if (!mva) return 11;
+  return Math.max(11, Math.min(22, Math.sqrt(mva) / 3));
+}
+function giIcon(voltage, mva) {
+  const size = sizeForMVA(mva);
+  const color = colorForGIVoltage(voltage);
+  const isEhv = voltage && (voltage.startsWith('500') || voltage.startsWith('275'));
+  const cls = isEhv ? 'gi-marker gitet' : 'gi-marker';
+  const outer = isEhv ? size + 8 : size;
+  return L.divIcon({ className: '',
+    html: `<div class="${cls}" style="width:${size}px;height:${size}px;
+        background:${color};box-shadow:0 1px 3px rgba(0,0,0,0.3);"></div>`,
+    iconSize: [outer, outer], iconAnchor: [outer/2, outer/2] });
+}
+
+// === POPUP BUILDERS ===
+function trmPopup(p) {
+  return `<div class="popup-title">Transmisi ${p.voltage_class}</div>
+    <table class="popup-table">
+      <tr><td>ID</td><td>${p.id}</td></tr>
+      ${p.system ? `<tr><td>Sistem</td><td>${p.system}</td></tr>` : ''}
+      <tr><td>Tegangan</td><td>${p.voltage_kv_all} kV</td></tr>
+      <tr><td>Panjang</td><td>${parseFloat(p.length_km).toFixed(1)} km</td></tr>
+    </table>`;
+}
+function subPopup(p) {
+  return `<div class="popup-title">Gardu Induk: ${p.name}</div>
+    <table class="popup-table">
+      <tr><td>ID</td><td>${p.id}</td></tr>
+      <tr><td>Provinsi</td><td>${p.province}</td></tr>
+      ${p.system ? `<tr><td>Sistem</td><td>${p.system}</td></tr>` : ''}
+      <tr><td>Tegangan</td><td><strong>${p.voltage} kV</strong></td></tr>
+      <tr><td>Kapasitas</td><td>${p.capacity_mva} MVA</td></tr>
+    </table>`;
+}
+function genPopup(p) {
+  const mw = p.capacity_mw ? `${parseFloat(p.capacity_mw).toLocaleString('id-ID')} MW` : '<i>tidak tercatat</i>';
+  return `<div class="popup-title">${p.name}</div>
+    <table class="popup-table">
+      <tr><td>ID</td><td>${p.id}</td></tr>
+      <tr><td>Jenis</td><td><strong>${p.type}</strong></td></tr>
+      <tr><td>Kapasitas</td><td>${mw}</td></tr>
+      <tr><td>Provinsi</td><td>${p.province}</td></tr>
+      ${p.system ? `<tr><td>Sistem</td><td>${p.system}</td></tr>` : ''}
+    </table>`;
+}
+
+// === REGION DATASETS ===
+const REGIONS = {
+  jamali:  window.JAMALI_DATA  || null,
+  sumatra: window.SUMATRA_DATA || null,
+};
+
+// 6 Leaflet layer: layers[region][type]. Dibangun ulang saat renderer ganti.
+let layers = {};
+let rendererMode = 'svg';
+
+function buildLayers() {
+  // Hapus layer lama dari peta
+  Object.values(layers).forEach(byType =>
+    Object.values(byType).forEach(l => { if (map.hasLayer(l)) map.removeLayer(l); }));
+  layers = {};
+
+  const renderer = rendererMode === 'canvas' ? L.canvas({ padding: 0.5 }) : L.svg({ padding: 0.5 });
+
+  for (const [region, data] of Object.entries(REGIONS)) {
+    if (!data) continue;
+    layers[region] = {
+      trm: L.geoJSON(data.transmission, {
+        renderer: renderer,
+        style: f => ({ color: f.properties.color || '#666',
+                       weight: f.properties.weight || 1.5, opacity: 0.85 }),
+        onEachFeature: (f, l) => l.bindPopup(trmPopup(f.properties)),
+      }),
+      sub: L.geoJSON(data.substations, {
+        pointToLayer: (f, ll) => L.marker(ll, {
+          icon: giIcon(f.properties.voltage, parseFloat(f.properties.capacity_mva)) }),
+        onEachFeature: (f, l) => l.bindPopup(subPopup(f.properties)),
+      }),
+      gen: L.geoJSON(data.generators, {
+        pointToLayer: (f, ll) => L.marker(ll, {
+          icon: plantIcon(f.properties.type, parseFloat(f.properties.capacity_mw)) }),
+        onEachFeature: (f, l) => l.bindPopup(genPopup(f.properties)),
+      }),
+    };
+  }
+}
+
+// === REFRESH: tampilkan layer sesuai toggle region + layer ===
+function refreshLayers() {
+  const regionOn = { jamali: document.getElementById('r-jamali').checked,
+                     sumatra: document.getElementById('r-sumatra').checked };
+  const typeOn = { trm: document.getElementById('t-trm').checked,
+                   sub: document.getElementById('t-sub').checked,
+                   gen: document.getElementById('t-gen').checked };
+  const t0 = performance.now();
+  for (const [region, byType] of Object.entries(layers)) {
+    for (const [type, layer] of Object.entries(byType)) {
+      const show = regionOn[region] && typeOn[type];
+      if (show && !map.hasLayer(layer)) layer.addTo(map);
+      else if (!show && map.hasLayer(layer)) map.removeLayer(layer);
+    }
+  }
+  const ms = (performance.now() - t0).toFixed(0);
+  updatePerf(ms);
+}
+
+// === PERF READOUT ===
+function countVisible() {
+  const regionOn = { jamali: document.getElementById('r-jamali').checked,
+                     sumatra: document.getElementById('r-sumatra').checked };
+  const typeOn = { trm: document.getElementById('t-trm').checked,
+                   sub: document.getElementById('t-sub').checked,
+                   gen: document.getElementById('t-gen').checked };
+  let n = 0;
+  for (const [region, data] of Object.entries(REGIONS)) {
+    if (!data || !regionOn[region]) continue;
+    if (typeOn.trm) n += data.transmission.features.length;
+    if (typeOn.sub) n += data.substations.features.length;
+    if (typeOn.gen) n += data.generators.features.length;
+  }
+  return n;
+}
+function updatePerf(ms) {
+  const n = countVisible();
+  document.getElementById('perf').textContent =
+    `${n.toLocaleString('id-ID')} fitur tampil · render ${ms} ms · ${rendererMode.toUpperCase()}`;
+}
+
+// === COUNTS ===
+function updateCounts() {
+  let trm = 0, sub = 0, gen = 0;
+  for (const data of Object.values(REGIONS)) {
+    if (!data) continue;
+    trm += data.transmission.features.length;
+    sub += data.substations.features.length;
+    gen += data.generators.features.length;
+  }
+  document.getElementById('trm-count').textContent = trm.toLocaleString('id-ID');
+  document.getElementById('sub-count').textContent = sub.toLocaleString('id-ID');
+  document.getElementById('gen-count').textContent = gen.toLocaleString('id-ID');
+}
+
+// === INIT ===
+function init() {
+  if (!REGIONS.jamali && !REGIONS.sumatra) {
+    document.getElementById('perf').textContent =
+      'Data gagal load — pastikan data_jamali.js & data_sumatra.js ada di folder yang sama.';
+    return;
+  }
+  updateCounts();
+  const t0 = performance.now();
+  buildLayers();
+  refreshLayers();
+  const ms = (performance.now() - t0).toFixed(0);
+
+  // Fit bounds ke semua layer yang ada
+  const all = [];
+  Object.values(layers).forEach(byType => Object.values(byType).forEach(l => all.push(l)));
+  if (all.length) {
+    const grp = L.featureGroup(all);
+    if (grp.getBounds().isValid()) map.fitBounds(grp.getBounds(), { padding: [20, 20] });
+  }
+  updatePerf(ms);
+}
+
+// === EVENT BINDINGS ===
+['r-jamali','r-sumatra','t-trm','t-sub','t-gen'].forEach(id =>
+  document.getElementById(id).addEventListener('change', refreshLayers));
+
+document.getElementById('renderer-select').addEventListener('change', e => {
+  rendererMode = e.target.value;
+  const t0 = performance.now();
+  buildLayers();
+  refreshLayers();
+  updatePerf((performance.now() - t0).toFixed(0));
+});
+
+document.querySelectorAll('.sidebar .section.collapsible h4').forEach(h =>
+  h.addEventListener('click', () => h.parentElement.classList.toggle('collapsed')));
+
+init();
+</script>
+</body>
+</html>
