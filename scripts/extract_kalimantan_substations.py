@@ -55,7 +55,7 @@ PROVINCES = [
     ("A11", "Kalimantan Barat",   "Khatulistiwa", 730, 745, (-3.10, 108.50,  2.10, 114.30)),
     ("A12", "Kalimantan Selatan", "Kalselteng",   746, 759, (-4.80, 113.90, -1.30, 117.00)),
     ("A13", "Kalimantan Tengah",  "Kalselteng",   760, 774, (-3.70, 110.70,  0.10, 115.90)),
-    ("A14", "Kalimantan Timur",   "Mahakam",      775, 797, (-2.70, 113.30,  1.80, 119.10)),
+    ("A14", "Kalimantan Timur",   "Mahakam",      775, 797, (-2.70, 113.30,  1.80, 118.50)),
     ("A15", "Kalimantan Utara",   "Mahakam",      798, 813, ( 1.20, 114.50,  4.40, 118.20)),
 ]
 

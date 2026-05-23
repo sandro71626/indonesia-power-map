@@ -38,7 +38,7 @@ PROVINCES = [
     ("Kalimantan Barat",   "Khatulistiwa", (-3.10, 108.50,  2.10, 114.30)),
     ("Kalimantan Tengah",  "Kalselteng",   (-3.70, 110.70,  0.10, 115.90)),
     ("Kalimantan Selatan", "Kalselteng",   (-4.80, 113.90, -1.30, 117.00)),
-    ("Kalimantan Timur",   "Mahakam",      (-2.70, 113.30,  2.60, 119.10)),
+    ("Kalimantan Timur",   "Mahakam",      (-2.70, 113.30,  2.60, 118.50)),
     ("Kalimantan Utara",   "Mahakam",      ( 1.20, 114.50,  4.40, 118.20)),
 ]
 

@@ -43,7 +43,7 @@ MIN_VOLTAGE_KV = 70
 SYSTEMS = [
     ("Khatulistiwa", (-3.10, 108.50,  2.10, 114.30)),
     ("Kalselteng",   (-4.80, 110.70,  0.10, 117.00)),
-    ("Mahakam",      (-2.70, 113.30,  4.40, 119.10)),
+    ("Mahakam",      (-2.70, 113.30,  4.40, 118.50)),
 ]
 
 # Centroid tiebreaker per sistem (lat, lon) — dipakai kalau centroid garis

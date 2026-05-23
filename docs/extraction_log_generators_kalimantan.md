@@ -14,9 +14,8 @@ tiebreak. Tidak ada fuzzy matching atau override.
 
 ## Ringkasan
 
-**70 pembangkit** ter-extract di region Kalimantan (dari ~600 plant OSM
-se-Indonesia; 530 di luar Kalimantan di-skip). **43 punya data kapasitas**,
-total **2.943 MW**.
+**66 pembangkit** ter-extract di region Kalimantan (dari ~600 plant OSM
+se-Indonesia). **39 punya data kapasitas**, total **2.943 MW**.
 
 ### Per sistem listrik
 
@@ -24,8 +23,8 @@ total **2.943 MW**.
 |--------|---------|---------------------:|---------:|
 | Khatulistiwa | Kalimantan Barat | 9 | 694 |
 | Kalselteng | Kalimantan Tengah + Selatan | 13 | 881 |
-| Mahakam | Kalimantan Timur + Utara | 21 | 1.369 |
-| **Total** | | **43** | **2.943** |
+| Mahakam | Kalimantan Timur + Utara | 17 | 1.368 |
+| **Total** | | **39** | **2.943** |
 
 ### Per jenis pembangkit (semua sistem)
 
@@ -36,7 +35,7 @@ total **2.943 MW**.
 | PLTGU (gas combined cycle) | 2 | 177 |
 | PLTMG (mesin gas) | 2 | 170 |
 | PLTG (gas open cycle) | 2 | 140 |
-| PLTS (surya) | 7 | 68 |
+| PLTS (surya) | 3 | 67 |
 | PLTA (hidro besar) | 1 | 30 |
 
 PLTU mendominasi total — **69% kapasitas (2.018 dari 2.943 MW)**. Konsisten
@@ -48,7 +47,7 @@ potensi hidro besar dibanding Sumatra.
 
 | Provinsi | Count | Total MW |
 |----------|------:|---------:|
-| Kalimantan Timur | 19 | 1.344 |
+| Kalimantan Timur | 15 | 1.343 |
 | Kalimantan Selatan | 11 | 751 |
 | Kalimantan Barat | 9 | 694 |
 | Kalimantan Tengah | 2 | 130 |
@@ -63,38 +62,44 @@ plant masuk >1 bbox, dipilih provinsi dengan centroid terdekat.
 **Penyesuaian centroid Kalteng.** Iterasi pertama menempatkan centroid
 Kalimantan Tengah di tengah-geometris provinsi (lat −1,5). Akibatnya plant
 Kalteng yang terkonsentrasi di **bagian selatan** provinsi (Palangka Raya,
-Pulang Pisau, Sampit) ke-tiebreak ke Kalsel — Kalteng cuma kebagian 1 plant.
-Fix: centroid Kalteng digeser ke selatan (−2,2; 113,4), ke pusat-massa
-pembangkitnya yang sebenarnya. PLTU Kalteng-1 Pulang Pisau kembali ke Kalteng.
+Pulang Pisau, Sampit) ke-tiebreak ke Kalsel. Fix: centroid Kalteng digeser
+ke selatan (−2,2; 113,4), ke pusat-massa pembangkitnya yang sebenarnya.
+Kalimantan Tengah memang punya pembangkit sendiri yang sedikit — banyak
+disuplai lewat interkoneksi Kalselteng dari pusat pembangkitan Kalsel.
 
-Catatan: assignment **sistem** (Khatulistiwa / Kalselteng / Mahakam) jauh
-lebih robust daripada provinsi. Kalteng & Kalsel dua-duanya sistem Kalselteng,
-jadi pergeseran province-level tidak mengubah total per-sistem. Kalimantan
-Tengah memang punya pembangkit sendiri yang sedikit — banyak disuplai lewat
-interkoneksi Kalselteng dari pusat pembangkitan Kalsel.
+**Penyempitan bbox timur.** bbox Kaltim semula `lon_max = 119,10` —
+kelewat jauh ke timur, menyebrang Selat Makassar dan menangkap pembangkit
+Sulawesi Barat (area Mamuju). Setelah `lon_max` diperketat ke 118,50,
+**4 PLTS kecil Sulawesi Barat yang sebelumnya bocor sebagai "Kaltim"
+dikeluarkan** (70 → 66 plant). Total kapasitas praktis tidak berubah
+(plant yang dikeluarkan berukuran sangat kecil).
+
+Catatan: assignment **sistem** (Khatulistiwa / Kalselteng / Mahakam) lebih
+robust daripada provinsi. Kalteng & Kalsel dua-duanya sistem Kalselteng,
+jadi pergeseran province-level tidak mengubah total per-sistem.
 
 ## Review flags
 
 | Flag | Jumlah | Arti |
 |------|-------:|------|
 | `NO_NAME` | 17 | Plant tanpa tag `name` di OSM |
-| `NO_CAPACITY` | 27 | Plant tanpa tag `plant:output:electricity` (39%) |
+| `NO_CAPACITY` | 27 | Plant tanpa tag `plant:output:electricity` (41%) |
 | `NO_TYPE` | 3 | Tipe PLT tidak bisa diturunkan |
 
-39% plant tanpa data kapasitas — lebih tinggi dari Sumatra (24%). Coverage
-tag OSM di Kalimantan lebih tipis, terutama PLTD diesel tersebar di pedalaman.
-Total 2.943 MW hanya mencakup 43 plant berkapasitas; kapasitas sistem
-Kalimantan sesungguhnya lebih tinggi.
+41% plant tanpa data kapasitas — lebih tinggi dari Sumatra (24%). Coverage
+tag OSM di Kalimantan lebih tipis, terutama PLTD diesel tersebar di
+pedalaman. Total 2.943 MW hanya mencakup 39 plant berkapasitas; kapasitas
+sistem Kalimantan sesungguhnya lebih tinggi.
 
 ## Limitasi & batasan
 
-- **Kapasitas dari tag OSM**, bukan sumber resmi PLN. Belum divalidasi silang
-  dengan agregat RUPTL.
-- **27 plant (39%) tanpa kapasitas** — total MW di atas under-estimate.
+- **Kapasitas dari tag OSM**, bukan sumber resmi PLN. Belum divalidasi
+  silang dengan agregat RUPTL.
+- **27 plant (41%) tanpa kapasitas** — total MW di atas under-estimate.
 - **Assignment provinsi via bbox + centroid** — akurat untuk mayoritas, tapi
   plant sangat dekat perbatasan bisa meleset. Assignment sistem robust.
-- **Coverage OSM** Kalimantan lebih tipis dari Jawa/Sumatra; pembangkit kecil
-  & captive power industri tambang banyak yang belum ter-map.
+- **Coverage OSM** Kalimantan lebih tipis dari Jawa/Sumatra; pembangkit
+  kecil & captive power industri tambang banyak yang belum ter-map.
 
 ## Struktur kolom CSV
 

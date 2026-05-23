@@ -19,28 +19,28 @@ centroid terdekat (pola yang sama dengan extractor generator Kalimantan).
 
 ## Ringkasan
 
-**334 ruas transmisi** ter-extract di region Kalimantan, total **4.768 km**.
+**332 ruas transmisi** ter-extract di region Kalimantan, total **4.731 km**.
 
 ### Skip breakdown
 
 | Alasan skip | Jumlah |
 |-------------|-------:|
-| Di luar region Kalimantan (JAMALI, Sumatra, dll) | 3.755 |
+| Di luar region Kalimantan (JAMALI, Sumatra, dll) | 3.757 |
 | Tanpa tag voltage | 0 |
 | Di bawah 70 kV (distribusi) | 1 |
 | Bukan LineString valid | 0 |
-| **Included** | **334** |
+| **Included** | **332** |
 
 ### Per voltage class
 
 | Class | Lines | Length (km) | Warna |
 |-------|------:|------------:|-------|
 | 275 kV | 1 | 128 | `#9467bd` ungu |
-| 150 kV | 331 | 4.589 | `#1f77b4` biru |
+| 150 kV | 329 | 4.552 | `#1f77b4` biru |
 | 70 kV | 2 | 51 | `#2ca02c` hijau |
-| **Total** | **334** | **4.768** | |
+| **Total** | **332** | **4.731** | |
 
-**150 kV mendominasi total** — 96% panjang (4.589 km). Backbone interkoneksi
+**150 kV mendominasi total** — 96% panjang (4.552 km). Backbone interkoneksi
 Kalimantan memang 150 kV. **500 kV tidak ada** — Kalimantan belum punya
 jaringan 500 kV (berbeda dari JAMALI). 275 kV cuma 1 ruas (128 km):
 kemungkinan segmen backbone 275 kV Kalimantan yang sebagian besar masih
@@ -52,11 +52,20 @@ dalam konstruksi — perlu verifikasi status di iterasi berikutnya.
 |--------|------:|------------:|
 | Khatulistiwa (Kalimantan Barat) | 64 | 1.375 |
 | Kalselteng (Kalteng + Kalsel) | 142 | 2.179 |
-| Mahakam (Kaltim + Kaltara) | 128 | 1.214 |
+| Mahakam (Kaltim + Kaltara) | 126 | 1.177 |
 
 Kalselteng punya jaringan transmisi terpanjang — konsisten dengan posisinya
 sebagai sistem dengan pusat pembangkitan terbesar (kompleks PLTU Asam Asam)
 dan permintaan terkonsentrasi di koridor Banjarmasin–Palangka Raya.
+
+## Catatan: penyempitan bbox timur (perbaikan)
+
+bbox sistem Mahakam semula `lon_max = 119,10` — kelewat jauh ke timur,
+menyeberang Selat Makassar dan menangkap **2 ruas 150 kV Sulawesi Barat**
+(area Mamuju) sebagai "Kalimantan". Setelah `lon_max` diperketat ke 118,50
+(cukup menutup infrastruktur Kaltim paling timur yang hanya ~lon 117,6,
+tapi berhenti sebelum Mamuju), kedua ruas itu dikeluarkan — 334 → 332 ruas,
+4.768 → 4.731 km.
 
 ## Limitasi & batasan
 
@@ -64,12 +73,13 @@ dan permintaan terkonsentrasi di koridor Banjarmasin–Palangka Raya.
   konstruksi. 1 ruas 275 kV kemungkinan masih konstruksi.
 - **Tegangan dari tag OSM** — kalau OSM salah tag, klasifikasi ikut salah.
 - **Assignment sistem via centroid garis + tiebreak** — line panjang yang
-  membentang lintas-sistem bisa salah assign; risiko kecil untuk Kalimantan
-  karena ketiga sub-sistem cukup terpisah secara koridor.
+  membentang lintas-sistem bisa salah assign; risiko kecil untuk Kalimantan.
 - **Panjang via haversine** — jarak great-circle antar titik LineString.
 - **Coverage OSM** transmisi Kalimantan lebih tipis dari Jawa/Sumatra
-  (334 ruas / 4.768 km vs Sumatra 794 / 11.657 km) — sebagian 70 kV dan
-  ruas baru kemungkinan belum di-tag.
+  (332 ruas / 4.731 km vs Sumatra 794 / 11.657 km) — sebagian 70 kV dan
+  ruas baru kemungkinan belum di-tag. Beberapa gap di jaringan Mahakam
+  (timur/timur laut) juga mencerminkan kondisi nyata: grid Kaltara masih
+  muda dan interkoneksi Kaltim–Kaltara baru dibangun.
 
 ## Struktur kolom CSV
 
@@ -95,8 +105,8 @@ Dengan transmisi ini, ketiga layer data Kalimantan lengkap:
 | Layer | Hasil |
 |-------|-------|
 | Substations | 100 GI, 85% match rate |
-| Generators | 70 plant, 2.943 MW |
-| Transmission | 334 ruas, 4.768 km |
+| Generators | 66 plant, 2.943 MW |
+| Transmission | 332 ruas, 4.731 km |
 
-Tersisa **web visualization** (bundle `data_kalimantan.js` + integrasi ke
-`preview_indonesia.html`) untuk menutup Step 3.
+Web visualization Kalimantan sudah terintegrasi ke `preview_indonesia.html`
+(combined map), menutup Step 3.
