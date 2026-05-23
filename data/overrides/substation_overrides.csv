@@ -29,3 +29,10 @@ Bukit Asam,Sumatera Selatan,osm_plant,way/719550864,PLTU Bukit Asam,-3.7314036,1
 Tes,Bengkulu,osm_plant,way/956594058,PLTA Tes,-3.2067037,102.3181629,2026-05-19,GI step-up ko-lokasi dengan PLTA Tes (Lebong)
 P. Baai,Bengkulu,osm_substation,way/930719090,Gardu Induk Pulau Baai,-3.8383227,102.3651043,2026-05-19,RUPTL 'P. Baai' = OSM 'Pulau Baai' (Bengkulu kota)
 Ulubelu,Lampung,osm_plant,way/531143189,PLTP Ulubelu,-5.3076656,104.5748938,2026-05-19,GI step-up ko-lokasi dengan PLTP Ulubelu (Tanggamus)
+GI ASAM ASAM,Kalimantan Selatan,osm_plant,way/611478867,PLTU Asam Asam,-3.9271515,115.1052189,2026-05-23,GI step-up ko-lokasi dengan PLTU Asam Asam (Tanah Laut)
+GI PLTA,Kalimantan Selatan,osm_plant,way/613098761,PLTA Riam Kanan,-3.5147851,115.0064707,2026-05-23,RUPTL 'GI PLTA' = GI di PLTA Riam Kanan / PLTA Ir P M Noor
+GI SEI TABUK,Kalimantan Selatan,osm_substation,way/1191574020,Gardu Induk Sungai Tabuk,-3.3918538,114.7040557,2026-05-23,RUPTL 'GI SEI TABUK' = OSM 'Gardu Induk Sungai Tabuk' (Sei = Sungai)
+GI NANGABULIK,Kalimantan Tengah,osm_substation,way/1193123288,Gardu Induk Nanga Bulik,-2.2142342,111.4678679,2026-05-23,RUPTL 'GI NANGABULIK' = OSM 'Gardu Induk Nanga Bulik' (beda spacing)
+GI Embalut,Kalimantan Timur,osm_plant,way/450527118,PLTU Embalut,-0.3715316,117.062746,2026-05-23,GI step-up ko-lokasi dengan PLTU Embalut (Kutai Kartanegara)
+GI Muara Jawa,Kalimantan Timur,osm_plant,way/945128872,PLTU Muara Jawa,-0.7802248,117.1883726,2026-05-23,GI step-up ko-lokasi dengan PLTU Muara Jawa
+Bulungan/Tj. Selor,Kalimantan Utara,osm_substation,way/943966222,Gardu Induk Tanjung Selor,2.8104314,117.3679924,2026-05-23,RUPTL 'Bulungan/Tj. Selor' = OSM 'Gardu Induk Tanjung Selor'

@@ -1,0 +1,101 @@
+id,name,voltage,trafo_count,capacity_mva,province,system,osm_id,osm_name,lat,lon,match_score,match_source,review_flag,source_id,source_table
+GI-KLM-0001,GI SEI RAYA,150/20,3,180.0,Kalimantan Barat,Khatulistiwa,way/563399563,Gardu Induk Sei Raya,-0.0734118,109.3809627,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel A11.4
+GI-KLM-0002,GI SIANTAN,150/20,3,165.0,Kalimantan Barat,Khatulistiwa,way/284402708,Gardu Induk Siantan,-0.0001191,109.3281223,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel A11.4
+GI-KLM-0003,GI PARIT BARU,150/20,2,60.0,Kalimantan Barat,Khatulistiwa,way/563122287,Gardu Induk Parit Baru,0.0592546,109.2053844,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel A11.4
+GI-KLM-0004,GI KOTA BARU,150/20,3,150.0,Kalimantan Barat,Khatulistiwa,way/691239967,Gardu Induk Kota Baru,-0.0750087,109.2994078,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel A11.4
+GI-KLM-0005,GI TAYAN,150/20,2,60.0,Kalimantan Barat,Khatulistiwa,way/691239965,Gardu Induk Tayan,0.0016321,110.0934067,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel A11.4
+GI-KLM-0006,GI SANGGAU,150/20,2,60.0,Kalimantan Barat,Khatulistiwa,way/934342719,Gardu Induk Sanggau,0.1237476,110.5462146,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel A11.4
+GI-KLM-0007,GI CENDANA,150/20,1,30.0,Kalimantan Barat,Khatulistiwa,way/1432434025,Gardu Induk Cendana,-0.0311776,109.256592,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel A11.4
+GI-KLM-0008,GI SENGGIRING,150/20,3,120.0,Kalimantan Barat,Khatulistiwa,,,,,0.45,,UNMATCHED,RUPTL-2025-2034,Tabel A11.4
+GI-KLM-0009,GI SINGKAWANG,150/20,3,150.0,Kalimantan Barat,Khatulistiwa,way/563399568,Gardu Induk Singkawang,0.9259135,108.9876559,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel A11.4
+GI-KLM-0010,GI SAMBAS,150/20,3,120.0,Kalimantan Barat,Khatulistiwa,way/563399566,Gardu Induk Sambas,1.3429382,109.2686395,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel A11.4
+GI-KLM-0011,GI BENGKAYANG,150/20,2,60.0,Kalimantan Barat,Khatulistiwa,way/562061281,GITET Bengkayang,0.9059682,109.4966031,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel A11.4
+GI-KLM-0012,GITET BENGKAYANG,275/150,2,500.0,Kalimantan Barat,Khatulistiwa,way/562061281,GITET Bengkayang,0.9059682,109.4966031,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A11.4
+GI-KLM-0013,GI NGABANG,150/20,2,60.0,Kalimantan Barat,Khatulistiwa,way/934342724,Gardu Induk Ngabang,0.350304,110.001954,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel A11.4
+GI-KLM-0014,GI PLTU BENGKAYANG,150/20,1,30.0,Kalimantan Barat,Khatulistiwa,way/562061281,GITET Bengkayang,0.9059682,109.4966031,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel A11.4
+GI-KLM-0015,GIS PLTU Kalbar1,150/20,1,30.0,Kalimantan Barat,Khatulistiwa,way/1444757080,Gardu Induk PLTU Kalbar 1,0.8146375,108.8468753,0.96,osm_fuzzy,,RUPTL-2025-2034,Tabel A11.4
+GI-KLM-0016,GI KETAPANG,150/20,1,60.0,Kalimantan Barat,Khatulistiwa,way/934342726,Gardu Induk Ketapang,-1.8033094,109.9747217,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel A11.4
+GI-KLM-0017,GI KENDAWANGAN,150/20,1,30.0,Kalimantan Barat,Khatulistiwa,way/934342727,Gardu Induk Kendawangan,-2.2956756,110.137808,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel A11.4
+GI-KLM-0018,GI SUKADANA,150/20,1,30.0,Kalimantan Barat,Khatulistiwa,way/934342721,Gardu Induk Sukadana,-1.223325,109.9779738,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel A11.4
+GI-KLM-0019,GI SINTANG,150/20,1,60.0,Kalimantan Barat,Khatulistiwa,way/1175895909,Gardu Induk Sintang,0.0432104,111.4416735,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel A11.4
+GI-KLM-0020,GI SEKADAU,150/20,1,30.0,Kalimantan Barat,Khatulistiwa,way/1175895908,Gardu Induk Sekadau,-0.0026494,110.919577,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel A11.4
+GI-KLM-0021,GI SANDAI,150/20,1,30.0,Kalimantan Barat,Khatulistiwa,way/1175895912,Gardu Induk Sandai,-1.1992664,110.5393557,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel A11.4
+GI-KLM-0022,GI SELAT,150/20,2,50.0,Kalimantan Selatan,Kalselteng,way/613866772,Gardu Induk Selat,-3.0122131,114.3736947,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel A12.4
+GI-KLM-0023,GI SEBERANG BARITO,150/20,2,40.0,Kalimantan Selatan,Kalselteng,,,,,0.37,,UNMATCHED,RUPTL-2025-2034,Tabel A12.4
+GI-KLM-0024,GI TRISAKTI 70 kV,70/20,3,35.0,Kalimantan Selatan,Kalselteng,way/756074059,Gardu Induk Trisakti,-3.3098903,114.570886,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel A12.4
+GI-KLM-0025,GI TRISAKTI 150 kV,150/20,2,120.0,Kalimantan Selatan,Kalselteng,way/756074059,Gardu Induk Trisakti,-3.3098903,114.570886,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel A12.4
+GI-KLM-0026,GI KAYUTANGI,150/20,2,90.0,Kalimantan Selatan,Kalselteng,way/611547069,Gardu Induk Kayutangi,-3.2302071,114.62025,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel A12.4
+GI-KLM-0027,GI ULIN,70/20,3,80.0,Kalimantan Selatan,Kalselteng,way/720463590,Gardu Induk Ulin,-3.3376407,114.6188248,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel A12.4
+GI-KLM-0028,GIS ULIN,150/20,2,120.0,Kalimantan Selatan,Kalselteng,way/720463590,Gardu Induk Ulin,-3.3376407,114.6188248,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A12.4
+GI-KLM-0029,GI MANTUIL,150/20,3,110.0,Kalimantan Selatan,Kalselteng,way/611478869,Gardu Induk Mantuil,-3.4238908,114.6269126,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel A12.4
+GI-KLM-0030,GI MARABAHAN,150/20,1,30.0,Kalimantan Selatan,Kalselteng,way/1193130895,Gardu Induk Marabahan,-3.0115328,114.7867559,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel A12.4
+GI-KLM-0031,GI SEI TABUK,150/20,1,60.0,Kalimantan Selatan,Kalselteng,way/1191574020,Gardu Induk Sungai Tabuk,-3.3918538,114.7040557,1.0,override:osm_substation,,RUPTL-2025-2034,Tabel A12.4
+GI-KLM-0032,GI CEMPAKA 70,70/20,2,20.0,Kalimantan Selatan,Kalselteng,way/612650468,Gardu Induk Cempaka,-3.4658438,114.8503661,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel A12.4
+GI-KLM-0033,GI CEMPAKA 150,150/20,3,150.0,Kalimantan Selatan,Kalselteng,way/612650468,Gardu Induk Cempaka,-3.4658438,114.8503661,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel A12.4
+GI-KLM-0034,GI PELAIHARI,150/20,2,60.0,Kalimantan Selatan,Kalselteng,way/613094692,Gardu Induk Pelaihari,-3.7296143,114.7574034,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel A12.4
+GI-KLM-0035,GI PLTA,70/20,1,6.0,Kalimantan Selatan,Kalselteng,way/613098761,PLTA Riam Kanan,-3.5147851,115.0064707,1.0,override:osm_plant,,RUPTL-2025-2034,Tabel A12.4
+GI-KLM-0036,GI BANDARA,150/20,1,60.0,Kalimantan Selatan,Kalselteng,,,,,0.53,,UNMATCHED,RUPTL-2025-2034,Tabel A12.4
+GI-KLM-0037,GI BATI BATI,150/20,1,30.0,Kalimantan Selatan,Kalselteng,way/1028155967,Gardu Induk Bati Bati,-3.5626569,114.7487292,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel A12.4
+GI-KLM-0038,GI KANDANGAN,150/20,1,30.0,Kalimantan Selatan,Kalselteng,way/1317494888,Gardu Induk Kandangan,-2.7723664,115.2735569,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel A12.4
+GI-KLM-0039,GI BARIKIN,150/20,3,120.0,Kalimantan Selatan,Kalselteng,way/611647729,Gardu Induk Barikin,-2.6838904,115.3278691,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel A12.4
+GI-KLM-0040,GI RANTAU,150/20,2,60.0,Kalimantan Selatan,Kalselteng,way/612650470,Gardu Induk Rantau,-3.0288703,115.1259121,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel A12.4
+GI-KLM-0041,GI AMUNTAI,150/20,2,90.0,Kalimantan Selatan,Kalselteng,way/612605788,Gardu Induk Amuntai,-2.4166522,115.2949402,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel A12.4
+GI-KLM-0042,GI TANJUNG,150/20,2,120.0,Kalimantan Selatan,Kalselteng,way/611647731,Gardu Induk Tanjung,-2.194764,115.4510039,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel A12.4
+GI-KLM-0043,GI PARINGIN,150/20,1,60.0,Kalimantan Selatan,Kalselteng,way/1193130889,Gardu Induk Paringin,-2.357056,115.4530089,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel A12.4
+GI-KLM-0044,GI ASAM ASAM,150/20,2,90.0,Kalimantan Selatan,Kalselteng,way/611478867,PLTU Asam Asam,-3.9271515,115.1052189,1.0,override:osm_plant,,RUPTL-2025-2034,Tabel A12.4
+GI-KLM-0045,GI BATULICIN,150/20,2,60.0,Kalimantan Selatan,Kalselteng,way/613982410,Gardu Induk Batulicin,-3.4826465,115.9858981,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel A12.4
+GI-KLM-0046,GI SATUI,150/20,1,30.0,Kalimantan Selatan,Kalselteng,way/945982537,Gardu Induk Satui,-3.712594,115.5195439,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel A12.4
+GI-KLM-0047,GI PULAU LAUT,150/20,1,30.0,Kalimantan Selatan,Kalselteng,,,,,0.56,,UNMATCHED,RUPTL-2025-2034,Tabel A12.4
+GI-KLM-0048,GI TARJUN,150/20,1,30.0,Kalimantan Selatan,Kalselteng,way/1313244320,Gardu Induk Tarjun,-3.2465336,116.1085205,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel A12.4
+GI-KLM-0049,GI BUNTOK,150/20,1,30.0,Kalimantan Tengah,Kalselteng,way/614102422,Gardu Induk Buntok,-1.7494672,114.9805954,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel A13.4
+GI-KLM-0050,GI MUARA TEWEH,150/20,1,30.0,Kalimantan Tengah,Kalselteng,way/945128887,Gardu Induk Muara Teweh,-0.8675515,114.8658961,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel A13.4
+GI-KLM-0051,GI BANGKANAI,150/20,1,10.0,Kalimantan Tengah,Kalselteng,way/1222892239,Gardu Induk Bangkanai,-0.6232573,115.1358886,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel A13.4
+GI-KLM-0052,GI PURUK CAHU,150/20,1,30.0,Kalimantan Tengah,Kalselteng,way/945128882,Gardu Induk Puruk Cahu,-0.7017628,114.5459576,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel A13.4
+GI-KLM-0053,GI PALANGKARAYA,150/20,2,90.0,Kalimantan Tengah,Kalselteng,way/613865134,Gardu Induk Palangkaraya,-2.1749099,113.8736782,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel A13.4
+GI-KLM-0054,GI MINTIN,150/20,1,30.0,Kalimantan Tengah,Kalselteng,,,,,0.5,,UNMATCHED,RUPTL-2025-2034,Tabel A13.4
+GI-KLM-0055,GI KASONGAN,150/20,2,60.0,Kalimantan Tengah,Kalselteng,way/613865136,Gardu Induk Kasongan,-1.8990947,113.434204,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel A13.4
+GI-KLM-0056,GI PULANG PISAU,150/20,1,30.0,Kalimantan Tengah,Kalselteng,way/613966297,Gardu Induk Pulang Pisau,-2.731843,114.2546153,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel A13.4
+GI-KLM-0057,GI PARENGGEAN,150/20,1,30.0,Kalimantan Tengah,Kalselteng,way/1313922555,Gardu Induk Parenggean,-1.9758278,112.7559724,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel A13.4
+GI-KLM-0058,GI SEBANGAU,150/20,1,60.0,Kalimantan Tengah,Kalselteng,,,,,0.56,,UNMATCHED,RUPTL-2025-2034,Tabel A13.4
+GI-KLM-0059,GI PLTU SLK,150/20,1,30.0,Kalimantan Tengah,Kalselteng,,,,,0.52,,UNMATCHED,RUPTL-2025-2034,Tabel A13.4
+GI-KLM-0060,GI SUDAN,150/20,1,30.0,Kalimantan Tengah,Kalselteng,,,,,0.47,,UNMATCHED,RUPTL-2025-2034,Tabel A13.4
+GI-KLM-0061,GI KUALA KURUN,150/20,1,30.0,Kalimantan Tengah,Kalselteng,way/1186199864,Gardu Induk Kuala Kurun,-1.1150087,113.8081591,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel A13.4
+GI-KLM-0062,GI SAMPIT,150/20,3,120.0,Kalimantan Tengah,Kalselteng,way/945757584,Gardu Induk Sampit,-2.4816979,112.920845,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel A13.4
+GI-KLM-0063,GI PANGKALAN BUN,150/20,2,120.0,Kalimantan Tengah,Kalselteng,way/945757582,Gardu Induk Pangkalan Bun,-2.6159503,111.7035569,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel A13.4
+GI-KLM-0064,GI BAGENDANG,150/20,1,30.0,Kalimantan Tengah,Kalselteng,way/949915680,Gardu Induk Bagendang,-2.7624787,112.9096805,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel A13.4
+GI-KLM-0065,GI PANGKALAN BANTENG,150/20,1,30.0,Kalimantan Tengah,Kalselteng,,,,,0.73,,UNMATCHED,RUPTL-2025-2034,Tabel A13.4
+GI-KLM-0066,GI KUALA PEMBUANG,150/20,1,30.0,Kalimantan Tengah,Kalselteng,way/1193123287,Gardu Induk Kuala Pembuang,-3.3746881,112.5626081,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel A13.4
+GI-KLM-0067,GI NANGABULIK,150/20,1,30.0,Kalimantan Tengah,Kalselteng,way/1193123288,Gardu Induk Nanga Bulik,-2.2142342,111.4678679,1.0,override:osm_substation,,RUPTL-2025-2034,Tabel A13.4
+GI-KLM-0068,GI SUKAMARA,150/20,1,30.0,Kalimantan Tengah,Kalselteng,way/1121246707,Gardu Induk Sukamara,-2.7704381,111.2007091,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel A13.4
+GI-KLM-0069,GI Manggarsari,150/20,4,170.0,Kalimantan Timur,Mahakam,way/510478920,Gardu Induk Manggarsari,-1.2382347,116.9484552,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel A14.4
+GI-KLM-0070,GI Karang Joang,150/20,2,90.0,Kalimantan Timur,Mahakam,way/609209387,Gardu Induk Karang Joang,-1.1486891,116.8786257,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel A14.4
+GI-KLM-0071,GI Industri,150/20,3,150.0,Kalimantan Timur,Mahakam,way/945128876,Gardu Induk Industri,-1.2619016,116.8411206,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel A14.4
+GI-KLM-0072,GI Senipah,150/20,1,30.0,Kalimantan Timur,Mahakam,way/945128874,Gardu Induk Senipah,-0.9868809,117.1351388,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel A14.4
+GI-KLM-0073,GI Kariangau,150/20,1,60.0,Kalimantan Timur,Mahakam,way/609209385,Gardu Induk Kariangau,-1.1653207,116.7925268,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel A14.4
+GI-KLM-0074,GI New Balikpapan,150/20,2,120.0,Kalimantan Timur,Mahakam,way/1184644804,Gardu Induk New Balikpapan,-1.2256008,116.8905811,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel A14.4
+GI-KLM-0075,GI Harapan Baru,150/20,2,90.0,Kalimantan Timur,Mahakam,way/609209382,Gardu Induk Harapan Baru,-0.547173,117.106702,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel A14.4
+GI-KLM-0076,GI Bukuan,150/20,1,60.0,Kalimantan Timur,Mahakam,way/399284355,Gardu Induk Bukuan,-0.5831827,117.1936674,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel A14.4
+GI-KLM-0077,GI Embalut,150/20,2,60.0,Kalimantan Timur,Mahakam,way/450527118,PLTU Embalut,-0.3715316,117.062746,1.0,override:osm_plant,,RUPTL-2025-2034,Tabel A14.4
+GI-KLM-0078,GI Bukit Biru,150/20,2,60.0,Kalimantan Timur,Mahakam,,,,,0.78,,UNMATCHED,RUPTL-2025-2034,Tabel A14.4
+GI-KLM-0079,GI Tengkawang,150/20,4,180.0,Kalimantan Timur,Mahakam,way/609209384,Gardu Induk Tengkawang,-0.5023847,117.1137951,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel A14.4
+GI-KLM-0080,GI Muara Jawa,150/20,1,30.0,Kalimantan Timur,Mahakam,way/945128872,PLTU Muara Jawa,-0.7802248,117.1883726,1.0,override:osm_plant,,RUPTL-2025-2034,Tabel A14.4
+GI-KLM-0081,GI Kota Bangun,150/20,1,30.0,Kalimantan Timur,Mahakam,way/944537207,Gardu Induk Kota Bangun,-0.2711524,116.5955106,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel A14.4
+GI-KLM-0082,GI Sambutan,150/20,2,90.0,Kalimantan Timur,Mahakam,way/355885478,Gardu Induk Sambutan,-0.5246457,117.2140406,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel A14.4
+GI-KLM-0083,GI Muara Badak,150/20,2,60.0,Kalimantan Timur,Mahakam,,,,,0.64,,UNMATCHED,RUPTL-2025-2034,Tabel A14.4
+GI-KLM-0084,GI Teluk Pandan,150/20,3,110.0,Kalimantan Timur,Mahakam,,,,,0.4,,UNMATCHED,RUPTL-2025-2034,Tabel A14.4
+GI-KLM-0085,GI Sangatta,150/20,2,60.0,Kalimantan Timur,Mahakam,way/944504861,Gardu Induk Sangatta,0.4706811,117.5707079,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel A14.4
+GI-KLM-0086,GI New Samarinda,150/20,1,60.0,Kalimantan Timur,Mahakam,way/944537206,Gardu Induk New Samarinda,-0.4072293,117.1660695,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel A14.4
+GI-KLM-0087,GI Bontang Lestari,150/20,1,30.0,Kalimantan Timur,Mahakam,way/612348762,Gardu Induk Bontang,0.1616096,117.4350903,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel A14.4
+GI-KLM-0088,GI Petung,150/20,2,90.0,Kalimantan Timur,Mahakam,way/879894611,Gardu Induk Petung,-1.3407863,116.6719839,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel A14.4
+GI-KLM-0089,GI Longikis,150/20,1,30.0,Kalimantan Timur,Mahakam,,,,,0.53,,UNMATCHED,RUPTL-2025-2034,Tabel A14.4
+GI-KLM-0090,GI Kuaro,150/20,1,20.0,Kalimantan Timur,Mahakam,way/611647725,Gardu Induk Kuaro,-1.8035091,116.0941788,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel A14.4
+GI-KLM-0091,GI Grogot,150/20,2,60.0,Kalimantan Timur,Mahakam,way/945128879,Gardu Induk Grogot,-1.8988187,116.1656444,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel A14.4
+GI-KLM-0092,GI Muara Komam,150/20,1,30.0,Kalimantan Timur,Mahakam,way/1193130885,Gardu Induk Muara Komam,-1.8288913,115.869298,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel A14.4
+GI-KLM-0093,GI Tanjung Selor,150/20,1,60.0,Kalimantan Timur,Mahakam,way/611647731,Gardu Induk Tanjung,-2.194764,115.4510039,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel A14.4
+GI-KLM-0094,GI Tanjung Redeb,150/20,1,60.0,Kalimantan Timur,Mahakam,way/611647731,Gardu Induk Tanjung,-2.194764,115.4510039,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel A14.4
+GI-KLM-0095,GI Ibu Kota Negara,150/20,2,60.0,Kalimantan Timur,Mahakam,,,,,0.48,,UNMATCHED,RUPTL-2025-2034,Tabel A14.4
+GI-KLM-0096,GI Maloy,150/20,1,30.0,Kalimantan Timur,Mahakam,way/1193140427,Gardu Induk Maloy,0.9180499,117.847953,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel A14.4
+GI-KLM-0097,GIS 4 KPIKN/Sepaku,150/20,2,120.0,Kalimantan Timur,Mahakam,way/1308758959,GIS IKN,-0.9855107,116.7112751,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel A14.4
+GI-KLM-0098,Bulungan/Tj. Selor,150/20,1,60.0,Kalimantan Utara,Mahakam,way/943966222,Gardu Induk Tanjung Selor,2.8104314,117.3679924,1.0,override:osm_substation,,RUPTL-2025-2034,Tabel A15.4
+GI-KLM-0099,Tideng Pale/Tana Tidung,150/20,1,30.0,Kalimantan Utara,Mahakam,,,,,0.59,,UNMATCHED,RUPTL-2025-2034,Tabel A15.4
+GI-KLM-0100,Malinau,150/20,1,30.0,Kalimantan Utara,Mahakam,way/943966221,Gardu Induk Malinau,3.5115567,116.6287557,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A15.4
