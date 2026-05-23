@@ -2,7 +2,7 @@
 <html lang="id">
 <head>
 <meta charset="UTF-8">
-<title>Peta Ketenagalistrikan Indonesia — JAMALI + Sumatra</title>
+<title>Peta Ketenagalistrikan Indonesia</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 <style>
@@ -12,10 +12,13 @@
   .header { position: absolute; top: 10px; left: 10px;
             background: white; padding: 8px 14px; border-radius: 6px;
             box-shadow: 0 1px 4px rgba(0,0,0,0.18); z-index: 1000;
-            font-size: 14px; font-weight: 600; max-width: 60vw; }
+            font-size: 14px; font-weight: 600; max-width: 62vw; }
   .header .sub { font-weight: 400; font-size: 11px; color: #666; margin-top: 2px; }
-  .header .perf { font-weight: 400; font-size: 11px; color: #1f77b4; margin-top: 3px;
-                  font-variant-numeric: tabular-nums; }
+  .header .readout { font-weight: 400; font-size: 11px; color: #1f77b4; margin-top: 3px;
+                     font-variant-numeric: tabular-nums; }
+
+  /* Tombol zoom digeser turun supaya tidak dempet/menimpa header */
+  .leaflet-top.leaflet-left { margin-top: 74px; }
 
   .footer { position: absolute; bottom: 10px; left: 10px;
             background: rgba(255,255,255,0.95); padding: 6px 10px; border-radius: 4px;
@@ -24,7 +27,7 @@
   .sidebar { position: absolute; top: 60px; right: 10px; z-index: 1000;
              background: white; border-radius: 8px;
              box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-             padding: 0; width: 260px; max-height: calc(100vh - 100px);
+             padding: 0; width: 258px; max-height: calc(100vh - 100px);
              overflow-y: auto; font-size: 12px; }
   .sidebar .section { padding: 10px 14px; border-bottom: 1px solid #eee; }
   .sidebar .section:last-child { border-bottom: none; }
@@ -46,30 +49,99 @@
                          border: 1.5px solid #111; flex-shrink: 0;
                          display: inline-flex; align-items: center; justify-content: center;
                          color: #fff; font-size: 9px; font-weight: 700; }
-  .sidebar .square-sym { width: 14px; height: 14px; border: 1.5px solid #222; flex-shrink: 0; }
-  .sidebar .square-sym.gitet { outline: 1.5px solid #222; outline-offset: 2px;
-                                margin-left: 2px; margin-right: 2px; }
-  .sidebar .line-sample { flex-shrink: 0; border-radius: 1px; min-width: 24px; }
   .sidebar .note { margin-top: 6px; font-size: 10px; color: #888; line-height: 1.4; }
   .sidebar select { width: 100%; padding: 4px 6px; font-size: 12px;
                     border: 1px solid #ccc; border-radius: 4px; background: white; cursor: pointer; }
-  .sidebar button.action { width: 100%; padding: 4px 6px; font-size: 12px;
+  .sidebar button.action { width: 100%; padding: 5px 6px; font-size: 12px;
                     border: 1px solid #ccc; border-radius: 4px; background: white;
                     cursor: pointer; color: #1f77b4; }
 
+  /* Detail-level indicator (zoom LOD) */
+  .detail-bar { display: flex; gap: 3px; margin: 6px 0 4px; }
+  .detail-bar .step { flex: 1; height: 5px; border-radius: 2px; background: #e3e3e3; }
+  .detail-bar .step.on { background: #1f77b4; }
+  .detail-label { font-size: 11px; font-weight: 600; }
+  .detail-hint { font-size: 10px; color: #888; margin-top: 2px; line-height: 1.4; }
+
+  /* Custom markers */
   .plant-marker { border-radius: 50%; border: 1.5px solid #111;
                   display: flex; align-items: center; justify-content: center;
-                  color: #fff; font-weight: 700; box-sizing: border-box; }
-  .gi-marker { border: 1.5px solid #222; box-sizing: border-box; }
+                  color: #fff; font-weight: 700; box-sizing: border-box;
+                  transition: transform 0.15s ease; }
+  .gi-marker { border: 1.5px solid #222; box-sizing: border-box;
+               transition: transform 0.15s ease; }
   .gi-marker.gitet { outline: 1.5px solid rgba(0,0,0,0.7); outline-offset: 2px; }
 
-  .popup-table { font-size: 12px; }
-  .popup-table td { padding: 1px 6px 1px 0; vertical-align: top; }
-  .popup-table td:first-child { color: #888; white-space: nowrap; }
-  .popup-title { font-weight: 600; font-size: 13px; margin-bottom: 4px; }
+  /* A3 — marker scaling per zoom tier */
+  #map.z-low .plant-marker, #map.z-low .gi-marker { transform: scale(0.68); }
+  #map.z-mid .plant-marker, #map.z-mid .gi-marker { transform: scale(0.86); }
+
+  /* A2 — adaptive labels */
+  .leaflet-tooltip.feat-label { background: rgba(255,255,255,0.82); border: none;
+       box-shadow: none; font-size: 10px; font-weight: 600; color: #333;
+       padding: 0 3px; white-space: nowrap; }
+  .leaflet-tooltip.feat-label::before { display: none; }
+
+  /* Detail panel (Fitur C) */
+  #detail-panel { position: absolute; top: 10px; left: 10px; bottom: 10px;
+       width: 300px; max-width: calc(100vw - 20px); background: white;
+       border-radius: 8px; z-index: 1500; box-shadow: 0 2px 12px rgba(0,0,0,0.25);
+       display: flex; flex-direction: column; overflow: hidden;
+       transform: translateX(-340px); transition: transform 0.22s ease; }
+  #detail-panel.open { transform: translateX(0); }
+  .dp-head { display: flex; align-items: flex-start; justify-content: space-between;
+       gap: 8px; padding: 12px 14px 9px; border-bottom: 1px solid #eee; }
+  .dp-kind { font-size: 10px; color: #888; text-transform: uppercase;
+       letter-spacing: 0.04em; margin-bottom: 2px; }
+  .dp-title { font-size: 14px; font-weight: 600; line-height: 1.3; }
+  .dp-close { border: none; background: #f0f0f0; border-radius: 50%;
+       width: 24px; height: 24px; min-width: 24px; cursor: pointer;
+       font-size: 16px; line-height: 1; color: #555; }
+  .dp-close:hover { background: #e0e0e0; }
+  .dp-body { padding: 11px 14px 14px; overflow-y: auto; font-size: 12px; }
+  .dp-table { width: 100%; border-collapse: collapse; }
+  .dp-table td { padding: 3px 8px 3px 0; vertical-align: top; line-height: 1.4; }
+  .dp-table td:first-child { color: #888; white-space: nowrap; width: 36%; }
+  .dp-warn { color: #c0392b; margin-top: 9px; font-size: 11px; line-height: 1.4; }
+  .dp-conn { margin-top: 13px; }
+  .dp-conn h5 { margin: 0 0 5px; font-size: 10px; color: #666;
+       text-transform: uppercase; letter-spacing: 0.04em; }
+  .dp-conn .conn-item { display: flex; align-items: center; gap: 7px;
+       padding: 3px 5px; cursor: pointer; border-radius: 3px; }
+  .dp-conn .conn-item:hover { background: #eef4fa; }
+  .dp-conn .conn-line { width: 18px; border-radius: 1px; flex-shrink: 0; }
+  .dp-conn .empty { font-size: 11px; color: #999; }
+
+  /* Interactive plant-type legend (Fitur C) */
+  .type-toggle { display: flex; align-items: center; gap: 7px; padding: 2px 0;
+       cursor: pointer; }
+  .type-toggle input { margin: 0; }
+  .type-toggle.off { opacity: 0.4; }
+
+  /* Search & filter (Fitur B) */
+  .sidebar input[type=text] { width: 100%; padding: 5px 6px; font-size: 12px;
+       border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+  #search-results { margin-top: 4px; }
+  #search-results .hit { padding: 4px 6px; cursor: pointer; border-radius: 3px;
+       line-height: 1.35; }
+  #search-results .hit:hover { background: #eef4fa; }
+  #search-results .hit .meta { font-size: 10px; color: #888; }
+  #search-results .empty { font-size: 10px; color: #999; padding: 3px 6px; }
+  .sidebar button.reset { margin-top: 8px; }
+
+  /* Hierarchical layer toggles */
+  .layer-group { margin-bottom: 7px; }
+  .layer-group:last-child { margin-bottom: 2px; }
+  .sublayers { margin: 1px 0 0 22px; display: flex; flex-direction: column; gap: 1px; }
+  .sublayers label { display: flex; align-items: center; gap: 6px; cursor: pointer;
+       font-size: 11px; padding: 1px 0; }
+  .sublayers input { margin: 0; }
+  .sublayers .sw-line { width: 16px; border-radius: 1px; flex-shrink: 0; }
+  .sublayers .sw-box { width: 11px; height: 11px; border: 1.4px solid #222;
+       flex-shrink: 0; box-sizing: border-box; }
 
   @media (max-width: 600px) {
-    .sidebar { width: calc(100vw - 20px); right: 10px; top: 78px; max-height: 45vh; }
+    .sidebar { width: calc(100vw - 20px); right: 10px; top: 86px; max-height: 42vh; }
     .header { font-size: 12px; padding: 6px 10px; max-width: calc(100vw - 20px); }
     .footer { font-size: 9px; max-width: calc(100vw - 20px); }
   }
@@ -79,8 +151,8 @@
 
 <div class="header">
   Peta Ketenagalistrikan Indonesia
-  <div class="sub">JAMALI + Sumatra — uji performa multi-region</div>
-  <div class="perf" id="perf">memuat data…</div>
+  <div class="sub">JAMALI + Sumatra · data eksisting</div>
+  <div class="readout" id="readout">memuat data…</div>
 </div>
 
 <div id="map"></div>
@@ -97,13 +169,20 @@
   </div>
 
   <div class="section">
-    <h5>Renderer (uji performa)</h5>
-    <select id="renderer-select">
-      <option value="svg" selected>SVG (default Leaflet)</option>
-      <option value="canvas">Canvas (lebih ringan utk garis)</option>
-    </select>
-    <div class="note">Canvas me-render garis transmisi jauh lebih ringan.
-      Marker (divIcon) tetap DOM apa pun renderer-nya.</div>
+    <h5>Pencarian</h5>
+    <input type="text" id="search-input" placeholder="Cari GI / pembangkit…" autocomplete="off">
+    <div id="search-results"></div>
+  </div>
+
+  <div class="section">
+    <h5>Tingkat detail</h5>
+    <div class="detail-bar">
+      <div class="step" id="dstep-1"></div>
+      <div class="step" id="dstep-2"></div>
+      <div class="step" id="dstep-3"></div>
+    </div>
+    <div class="detail-label" id="detail-label">—</div>
+    <div class="detail-hint" id="detail-hint">Zoom in/out untuk mengubah tingkat detail.</div>
   </div>
 
   <div class="section">
@@ -116,41 +195,65 @@
 
   <div class="section">
     <h4>Layer</h4>
-    <div class="layer-toggle"><input type="checkbox" id="t-trm" checked>
-      <label for="t-trm">Transmisi (<span id="trm-count">…</span>)</label></div>
-    <div class="layer-toggle"><input type="checkbox" id="t-sub" checked>
-      <label for="t-sub">Gardu Induk (<span id="sub-count">…</span>)</label></div>
-    <div class="layer-toggle"><input type="checkbox" id="t-gen" checked>
-      <label for="t-gen">Pembangkit (<span id="gen-count">…</span>)</label></div>
-  </div>
 
-  <div class="section collapsible">
-    <h4>Pembangkit <span class="chevron">▼</span></h4>
-    <div class="content">
-      <div class="row"><span class="circle-sym" style="background:#3a3a3a">U</span> PLTU — Batubara</div>
-      <div class="row"><span class="circle-sym" style="background:#ff7f0e">GU</span> PLTGU — Gas combined</div>
-      <div class="row"><span class="circle-sym" style="background:#ffbb78;color:#222">G</span> PLTG — Gas open</div>
-      <div class="row"><span class="circle-sym" style="background:#1f77b4">A</span> PLTA — Hidro besar</div>
-      <div class="row"><span class="circle-sym" style="background:#d62728">P</span> PLTP — Panas bumi</div>
-      <div class="row"><span class="circle-sym" style="background:#f7d100;color:#222">S</span> PLTS — Surya</div>
-      <div class="row"><span class="circle-sym" style="background:#8c564b">D</span> PLTD — Diesel</div>
-      <div class="note">Lingkaran = pembangkit. Ukuran ∝ kapasitas MW.</div>
+    <div class="layer-group">
+      <div class="layer-toggle"><input type="checkbox" id="m-trm" checked>
+        <label for="m-trm"><strong>Transmisi</strong></label></div>
+      <div class="sublayers">
+        <label><input type="checkbox" class="sub-trm" value="500" checked>
+          <span class="sw-line" style="background:#d62728;height:4px"></span> 500 kV</label>
+        <label><input type="checkbox" class="sub-trm" value="275" checked>
+          <span class="sw-line" style="background:#9467bd;height:3px"></span> 275 kV</label>
+        <label><input type="checkbox" class="sub-trm" value="150" checked>
+          <span class="sw-line" style="background:#1f77b4;height:2px"></span> 150 kV</label>
+        <label><input type="checkbox" class="sub-trm" value="70" checked>
+          <span class="sw-line" style="background:#2ca02c;height:1.5px"></span> 70 kV</label>
+      </div>
     </div>
+
+    <div class="layer-group">
+      <div class="layer-toggle"><input type="checkbox" id="m-sub" checked>
+        <label for="m-sub"><strong>Gardu Induk</strong></label></div>
+      <div class="sublayers">
+        <label><input type="checkbox" class="sub-sub" value="500" checked>
+          <span class="sw-box" style="background:#d62728"></span> 500 kV</label>
+        <label><input type="checkbox" class="sub-sub" value="275" checked>
+          <span class="sw-box" style="background:#9467bd"></span> 275 kV</label>
+        <label><input type="checkbox" class="sub-sub" value="150" checked>
+          <span class="sw-box" style="background:#1f77b4"></span> 150 kV</label>
+        <label><input type="checkbox" class="sub-sub" value="70" checked>
+          <span class="sw-box" style="background:#2ca02c"></span> 70 kV</label>
+      </div>
+    </div>
+
+    <div class="layer-group">
+      <div class="layer-toggle"><input type="checkbox" id="m-gen" checked>
+        <label for="m-gen"><strong>Pembangkit</strong></label></div>
+      <div class="sublayers">
+        <label><input type="checkbox" class="sub-gen" value="b500" checked> ≥ 500 MW</label>
+        <label><input type="checkbox" class="sub-gen" value="b100" checked> 100–500 MW</label>
+        <label><input type="checkbox" class="sub-gen" value="b20" checked> 20–100 MW</label>
+        <label><input type="checkbox" class="sub-gen" value="b0" checked> &lt; 20 MW / tak tercatat</label>
+      </div>
+    </div>
+
+    <div class="note">Kotak = GI · garis = transmisi · lingkaran = pembangkit.
+      Border ganda = 500/275 kV.</div>
   </div>
 
   <div class="section collapsible">
-    <h4>Gardu Induk &amp; Transmisi <span class="chevron">▼</span></h4>
+    <h4>Jenis pembangkit <span class="chevron">▼</span></h4>
+    <div class="content" id="planttype-legend"></div>
+  </div>
+
+  <div class="section collapsible collapsed">
+    <h4>Filter <span class="chevron">▼</span></h4>
     <div class="content">
-      <div class="row"><span class="square-sym gitet" style="background:#d62728"></span>
-        <span class="line-sample" style="background:#d62728; height:4px"></span> 500 kV</div>
-      <div class="row"><span class="square-sym gitet" style="background:#9467bd"></span>
-        <span class="line-sample" style="background:#9467bd; height:3px"></span> 275 kV</div>
-      <div class="row"><span class="square-sym" style="background:#1f77b4"></span>
-        <span class="line-sample" style="background:#1f77b4; height:2px"></span> 150 kV</div>
-      <div class="row"><span class="square-sym" style="background:#2ca02c"></span>
-        <span class="line-sample" style="background:#2ca02c; height:1.5px"></span> 70 kV</div>
-      <div class="note">Kotak = gardu induk, garis = transmisi. Border ganda =
-        tegangan ekstra tinggi (500/275 kV).</div>
+      <h5>Provinsi</h5>
+      <select id="f-province"><option value="">Semua provinsi</option></select>
+      <button class="action reset" id="f-reset">Reset filter</button>
+      <div class="note">Filter tegangan &amp; ukuran pembangkit ada di section
+        Layer; jenis pembangkit di section "Jenis pembangkit".</div>
     </div>
   </div>
 
@@ -163,7 +266,17 @@
 
 <div class="footer">
   Sumber: RUPTL PLN 2025–2034 · OpenStreetMap (© OSM contributors) · CARTO basemap.
-  Combined preview untuk uji performa — bukan rilis final.
+</div>
+
+<div id="detail-panel">
+  <div class="dp-head">
+    <div>
+      <div class="dp-kind" id="dp-kind"></div>
+      <div class="dp-title" id="dp-title"></div>
+    </div>
+    <button class="dp-close" id="dp-close" title="Tutup">×</button>
+  </div>
+  <div class="dp-body" id="dp-body"></div>
 </div>
 
 <div id="about-modal" style="position:fixed;inset:0;background:rgba(0,0,0,0.5);
@@ -172,16 +285,16 @@
   <div style="background:white;max-width:520px;max-height:85vh;overflow-y:auto;
        border-radius:8px;padding:24px 30px;font-size:13px;line-height:1.55;margin:20px;">
     <h2 style="margin:0 0 12px;font-size:18px;">Peta Ketenagalistrikan Indonesia</h2>
-    <p>Combined preview yang menggabungkan dua region: <strong>JAMALI</strong>
-    (Jawa-Madura-Bali, Step 1) dan <strong>Sumatra</strong> (Step 2). Halaman
-    ini dipakai untuk <strong>menguji performa rendering multi-region</strong>
-    sebelum region berikutnya (Kalimantan, Sulawesi, dst) ditambahkan.</p>
-    <p>Data di-load dari <code>data_jamali.js</code> dan <code>data_sumatra.js</code>
-    — file yang sama yang dipakai preview per-region. Menambah region baru
-    cukup tambah satu file data dan satu baris script.</p>
+    <p>Visualisasi struktur sistem tenaga listrik Indonesia untuk edukasi,
+    eksplorasi, dan analisis umum. Saat ini mencakup region <strong>JAMALI</strong>
+    (Jawa-Madura-Bali) dan <strong>Sumatra</strong>.</p>
+    <p><strong>Tingkat detail mengikuti zoom.</strong> Saat zoom-out, peta hanya
+    menampilkan backbone tegangan tinggi dan pembangkit besar; semakin zoom-in,
+    semakin banyak detail (150 kV, lalu 70 kV dan fasilitas distribusi).</p>
     <p>Sumber: RUPTL PLN 2025–2034 (gardu induk &amp; kapasitas), OpenStreetMap
     via Overpass API (pembangkit, transmisi, koordinat). Bukan alat operasi
-    sistem tenaga; koordinat perlu verifikasi independen.</p>
+    sistem tenaga; koordinat perlu verifikasi independen sebelum dipakai untuk
+    keputusan operasional, teknis, atau hukum.</p>
     <button onclick="document.getElementById('about-modal').style.display='none'"
        style="display:block;margin-top:16px;padding:9px 18px;background:#1f77b4;
        color:white;border:none;border-radius:4px;cursor:pointer;font-weight:600;">
@@ -194,10 +307,12 @@
 <script src="data_jamali.js"></script>
 <script src="data_sumatra.js"></script>
 <script>
-const map = L.map('map', {zoomControl: false, preferCanvas: false}).setView([-3.5, 108.0], 5);
+// ============================================================
+// MAP + BASEMAPS
+// ============================================================
+const map = L.map('map', {zoomControl: false}).setView([-3.5, 108.0], 5);
 L.control.zoom({position: 'topleft'}).addTo(map);
 
-// === BASEMAPS ===
 const basemaps = {
   positron: L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png',
     {attribution:'© OpenStreetMap, © CARTO', subdomains:'abcd', maxZoom:19}),
@@ -214,7 +329,53 @@ document.getElementById('basemap-select').addEventListener('change', e => {
   currentBasemap = basemaps[e.target.value].addTo(map);
 });
 
-// === MARKER HELPERS ===
+// Shared canvas renderer untuk semua garis transmisi (jauh lebih ringan
+// daripada SVG untuk ribuan polyline).
+const lineRenderer = L.canvas({ padding: 0.5 });
+
+// ============================================================
+// LEVEL-OF-DETAIL CONFIG (Fitur A)
+// ============================================================
+// Tiap fitur punya 'tier': backbone / mid / local.
+// Zoom menentukan tier mana yang tampil — zoom-out = ringkas, zoom-in = lengkap.
+const LOD = {
+  tiersForZoom(z) {
+    if (z <= 6) return new Set(['backbone']);
+    if (z <= 8) return new Set(['backbone', 'mid']);
+    return new Set(['backbone', 'mid', 'local']);
+  },
+  levelForZoom(z) { return z <= 6 ? 1 : (z <= 8 ? 2 : 3); },
+  labelMinZoom: 8,
+};
+const DETAIL_TEXT = {
+  1: { label: 'Ringkas', hint: 'Backbone 500/275 kV & pembangkit besar (≥250 MW). Zoom in untuk lebih detail.' },
+  2: { label: 'Menengah', hint: 'Tambah jaringan 150 kV & pembangkit sedang (≥50 MW).' },
+  3: { label: 'Lengkap', hint: 'Semua fasilitas termasuk 70 kV & GI/pembangkit distribusi.' },
+};
+
+function trmTier(p) {
+  const v = parseFloat(p.voltage_kv_max) || 0;
+  if (v >= 275) return 'backbone';
+  if (v >= 150) return 'mid';
+  return 'local';
+}
+function subTier(p) {
+  const m = (p.voltage || '').match(/\d+/);
+  const v = m ? parseInt(m[0], 10) : 0;
+  if (v >= 275) return 'backbone';
+  if (v >= 150) return 'mid';
+  return 'local';
+}
+function genTier(p) {
+  const mw = parseFloat(p.capacity_mw) || 0;
+  if (mw >= 250) return 'backbone';
+  if (mw >= 50) return 'mid';
+  return 'local';
+}
+
+// ============================================================
+// MARKER HELPERS
+// ============================================================
 const PLANT_COLORS = {
   'PLTU':'#3a3a3a','PLTGU':'#ff7f0e','PLTG':'#ffbb78','PLTA':'#1f77b4',
   'PLTM':'#76b7e1','PLTMH':'#76b7e1','PLTP':'#d62728','PLTS':'#f7d100',
@@ -223,6 +384,13 @@ const PLANT_COLORS = {
 const PLANT_LABEL = {
   'PLTU':'U','PLTGU':'GU','PLTG':'G','PLTA':'A','PLTM':'M','PLTMH':'M',
   'PLTP':'P','PLTS':'S','PLTB':'B','PLTD':'D','PLTMG':'MG','PLTSa':'Sa','Unknown':'?',
+};
+// Deskripsi sumber energi tiap jenis pembangkit (untuk legend & panel detail)
+const PLANT_DESC = {
+  'PLTU':'Batubara (uap)','PLTGU':'Gas (combined cycle)','PLTG':'Gas (open cycle)',
+  'PLTMG':'Mesin gas','PLTA':'Tenaga air','PLTM':'Minihidro','PLTMH':'Mikrohidro',
+  'PLTP':'Panas bumi','PLTS':'Surya','PLTB':'Angin (bayu)','PLTD':'Diesel',
+  'PLTSa':'Sampah','Unknown':'Tidak diketahui',
 };
 const DARK_TEXT = new Set(['PLTG','PLTM','PLTMH','PLTS','PLTB','PLTMG']);
 
@@ -268,171 +436,456 @@ function giIcon(voltage, mva) {
     iconSize: [outer, outer], iconAnchor: [outer/2, outer/2] });
 }
 
-// === POPUP BUILDERS ===
-function trmPopup(p) {
-  return `<div class="popup-title">Transmisi ${p.voltage_class}</div>
-    <table class="popup-table">
-      <tr><td>ID</td><td>${p.id}</td></tr>
-      ${p.system ? `<tr><td>Sistem</td><td>${p.system}</td></tr>` : ''}
-      <tr><td>Tegangan</td><td>${p.voltage_kv_all} kV</td></tr>
-      <tr><td>Panjang</td><td>${parseFloat(p.length_km).toFixed(1)} km</td></tr>
-    </table>`;
+// ============================================================
+// DETAIL PANEL (Fitur C)
+// ============================================================
+function dpRow(label, value) {
+  return (value || value === 0) ? `<tr><td>${label}</td><td>${value}</td></tr>` : '';
 }
-function subPopup(p) {
-  return `<div class="popup-title">Gardu Induk: ${p.name}</div>
-    <table class="popup-table">
-      <tr><td>ID</td><td>${p.id}</td></tr>
-      <tr><td>Provinsi</td><td>${p.province}</td></tr>
-      ${p.system ? `<tr><td>Sistem</td><td>${p.system}</td></tr>` : ''}
-      <tr><td>Tegangan</td><td><strong>${p.voltage} kV</strong></td></tr>
-      <tr><td>Kapasitas</td><td>${p.capacity_mva} MVA</td></tr>
-    </table>`;
+function subDetailHTML(p) {
+  return `<table class="dp-table">
+    ${dpRow('ID', p.id)}
+    ${dpRow('Provinsi', p.province)}
+    ${dpRow('Sistem', p.system)}
+    ${dpRow('Tegangan', '<strong>' + p.voltage + ' kV</strong>')}
+    ${dpRow('Jumlah trafo', p.trafo_count ? p.trafo_count + ' unit' : '')}
+    ${dpRow('Kapasitas', p.capacity_mva ? p.capacity_mva + ' MVA' : '')}
+    ${dpRow('Sumber', p.source_id + (p.source_table ? ' (' + p.source_table + ')' : ''))}
+    ${dpRow('Koordinat', p.match_source)}
+  </table>
+  ${p.review_flag ? `<div class="dp-warn">⚠ ${p.review_flag}</div>` : ''}`;
 }
-function genPopup(p) {
-  const mw = p.capacity_mw ? `${parseFloat(p.capacity_mw).toLocaleString('id-ID')} MW` : '<i>tidak tercatat</i>';
-  return `<div class="popup-title">${p.name}</div>
-    <table class="popup-table">
-      <tr><td>ID</td><td>${p.id}</td></tr>
-      <tr><td>Jenis</td><td><strong>${p.type}</strong></td></tr>
-      <tr><td>Kapasitas</td><td>${mw}</td></tr>
-      <tr><td>Provinsi</td><td>${p.province}</td></tr>
-      ${p.system ? `<tr><td>Sistem</td><td>${p.system}</td></tr>` : ''}
-    </table>`;
+function genDetailHTML(p) {
+  const mw = p.capacity_mw
+    ? parseFloat(p.capacity_mw).toLocaleString('id-ID') + ' MW'
+    : '<i>tidak tercatat</i>';
+  return `<table class="dp-table">
+    ${dpRow('ID', p.id)}
+    ${dpRow('Jenis', '<strong>' + p.type + '</strong>'
+        + (PLANT_DESC[p.type] ? ' — ' + PLANT_DESC[p.type] : ''))}
+    ${dpRow('Kapasitas', mw)}
+    ${dpRow('Provinsi', p.province)}
+    ${dpRow('Sistem', p.system)}
+    ${dpRow('Status', p.status)}
+    ${dpRow('Operator', p.operator)}
+    ${dpRow('Metode', p.method)}
+    ${dpRow('Sumber', p.source_id)}
+  </table>
+  ${p.review_flag ? `<div class="dp-warn">⚠ ${p.review_flag}</div>` : ''}`;
+}
+function trmDetailHTML(p) {
+  return `<table class="dp-table">
+    ${dpRow('ID', p.id)}
+    ${dpRow('Sistem', p.system)}
+    ${dpRow('Kelas tegangan', '<strong>' + p.voltage_class + '</strong>')}
+    ${dpRow('Tegangan', p.voltage_kv_all + ' kV')}
+    ${dpRow('Panjang', parseFloat(p.length_km).toFixed(1) + ' km')}
+    ${dpRow('OSM ID', p.osm_id)}
+    ${dpRow('Sumber', p.source_id)}
+  </table>`;
 }
 
-// === REGION DATASETS ===
+// --- Highlight koneksi GI <-> transmisi (inferensi via kedekatan ujung garis) ---
+const CONNECT_THRESHOLD_M = 1000;   // ujung garis dianggap nyambung jika < 1 km
+let highlighted = [];
+
+function clearHighlight() {
+  for (const ft of highlighted) {
+    ft.layer.setStyle({ color: ft.props.color || '#666',
+      weight: ft.props.weight || 1.5, opacity: 0.85 });
+  }
+  highlighted = [];
+}
+function highlightLines(lines) {
+  clearHighlight();
+  for (const ft of lines) {
+    ft.layer.setStyle({ color: '#ff6600',
+      weight: (ft.props.weight || 1.5) + 2.5, opacity: 1 });
+    if (ft.layer.bringToFront) ft.layer.bringToFront();
+    highlighted.push(ft);
+  }
+}
+function connectedLines(subFt) {
+  const here = subFt.layer.getLatLng();
+  const hits = [];
+  for (const ft of features) {
+    if (ft.kind !== 'trm') continue;
+    const lls = ft.layer.getLatLngs();
+    if (lls.length < 2) continue;
+    const d = Math.min(map.distance(here, lls[0]),
+                       map.distance(here, lls[lls.length - 1]));
+    if (d <= CONNECT_THRESHOLD_M) hits.push(ft);
+  }
+  return hits;
+}
+function appendConnections(body, lines) {
+  const div = document.createElement('div');
+  div.className = 'dp-conn';
+  const h = document.createElement('h5');
+  if (!lines.length) {
+    h.textContent = 'Saluran transmisi tersambung';
+    div.appendChild(h);
+    const e = document.createElement('div');
+    e.className = 'empty';
+    e.textContent = 'Tidak terdeteksi saluran di sekitar GI ini.';
+    div.appendChild(e);
+  } else {
+    h.textContent = `Saluran transmisi tersambung (${lines.length})`;
+    div.appendChild(h);
+    lines.sort((a, b) =>
+      (parseFloat(b.props.voltage_kv_max) || 0) - (parseFloat(a.props.voltage_kv_max) || 0));
+    for (const lf of lines) {
+      const p = lf.props;
+      const item = document.createElement('div');
+      item.className = 'conn-item';
+      item.innerHTML = `<span class="conn-line" style="background:${p.color || '#666'};
+          height:${Math.max(2, p.weight || 2)}px"></span>
+        <span>${p.voltage_class} · ${parseFloat(p.length_km).toFixed(1)} km</span>`;
+      item.addEventListener('click', () => showDetail(lf));
+      div.appendChild(item);
+    }
+  }
+  body.appendChild(div);
+}
+
+function showDetail(ft) {
+  const p = ft.props;
+  const body = document.getElementById('dp-body');
+  if (ft.kind === 'sub') {
+    document.getElementById('dp-kind').textContent = 'Gardu Induk';
+    document.getElementById('dp-title').textContent = p.name || '(tanpa nama)';
+    body.innerHTML = subDetailHTML(p);
+    const lines = connectedLines(ft);
+    highlightLines(lines);
+    appendConnections(body, lines);
+  } else if (ft.kind === 'gen') {
+    document.getElementById('dp-kind').textContent = 'Pembangkit';
+    document.getElementById('dp-title').textContent = p.name || '(tanpa nama)';
+    body.innerHTML = genDetailHTML(p);
+    clearHighlight();
+  } else {
+    document.getElementById('dp-kind').textContent = 'Saluran Transmisi';
+    document.getElementById('dp-title').textContent = 'Transmisi ' + p.voltage_class;
+    body.innerHTML = trmDetailHTML(p);
+    clearHighlight();
+  }
+  document.getElementById('detail-panel').classList.add('open');
+}
+function closeDetail() {
+  document.getElementById('detail-panel').classList.remove('open');
+  clearHighlight();
+}
+
+// ============================================================
+// BUILD FEATURE RECORDS
+// ============================================================
+// Tiap fitur = 1 objek Leaflet + metadata. Visibilitas dikontrol terpusat
+// oleh applyFilters(); bukan dengan menambah/hapus L.geoJSON besar.
 const REGIONS = {
   jamali:  window.JAMALI_DATA  || null,
   sumatra: window.SUMATRA_DATA || null,
 };
+const features = [];   // { kind, region, tier, props, layer, visible }
 
-// 6 Leaflet layer: layers[region][type]. Dibangun ulang saat renderer ganti.
-let layers = {};
-let rendererMode = 'svg';
-
-function buildLayers() {
-  // Hapus layer lama dari peta
-  Object.values(layers).forEach(byType =>
-    Object.values(byType).forEach(l => { if (map.hasLayer(l)) map.removeLayer(l); }));
-  layers = {};
-
-  const renderer = rendererMode === 'canvas' ? L.canvas({ padding: 0.5 }) : L.svg({ padding: 0.5 });
-
+function buildFeatures() {
   for (const [region, data] of Object.entries(REGIONS)) {
     if (!data) continue;
-    layers[region] = {
-      trm: L.geoJSON(data.transmission, {
-        renderer: renderer,
-        style: f => ({ color: f.properties.color || '#666',
-                       weight: f.properties.weight || 1.5, opacity: 0.85 }),
-        onEachFeature: (f, l) => l.bindPopup(trmPopup(f.properties)),
-      }),
-      sub: L.geoJSON(data.substations, {
-        pointToLayer: (f, ll) => L.marker(ll, {
-          icon: giIcon(f.properties.voltage, parseFloat(f.properties.capacity_mva)) }),
-        onEachFeature: (f, l) => l.bindPopup(subPopup(f.properties)),
-      }),
-      gen: L.geoJSON(data.generators, {
-        pointToLayer: (f, ll) => L.marker(ll, {
-          icon: plantIcon(f.properties.type, parseFloat(f.properties.capacity_mw)) }),
-        onEachFeature: (f, l) => l.bindPopup(genPopup(f.properties)),
-      }),
-    };
-  }
-}
 
-// === REFRESH: tampilkan layer sesuai toggle region + layer ===
-function refreshLayers() {
-  const regionOn = { jamali: document.getElementById('r-jamali').checked,
-                     sumatra: document.getElementById('r-sumatra').checked };
-  const typeOn = { trm: document.getElementById('t-trm').checked,
-                   sub: document.getElementById('t-sub').checked,
-                   gen: document.getElementById('t-gen').checked };
-  const t0 = performance.now();
-  for (const [region, byType] of Object.entries(layers)) {
-    for (const [type, layer] of Object.entries(byType)) {
-      const show = regionOn[region] && typeOn[type];
-      if (show && !map.hasLayer(layer)) layer.addTo(map);
-      else if (!show && map.hasLayer(layer)) map.removeLayer(layer);
+    for (const f of data.transmission.features) {
+      const p = f.properties;
+      const latlngs = f.geometry.coordinates.map(c => [c[1], c[0]]);
+      const layer = L.polyline(latlngs, {
+        renderer: lineRenderer,
+        color: p.color || '#666', weight: p.weight || 1.5, opacity: 0.85,
+      });
+      const rec = { kind:'trm', region, tier:trmTier(p), props:p, layer, visible:false };
+      layer.on('click', () => showDetail(rec));
+      features.push(rec);
+    }
+
+    for (const f of data.substations.features) {
+      const p = f.properties;
+      const [lon, lat] = f.geometry.coordinates;
+      const tier = subTier(p);
+      const m = L.marker([lat, lon], { icon: giIcon(p.voltage, parseFloat(p.capacity_mva)) });
+      const rec = { kind:'sub', region, tier, props:p, layer:m, visible:false };
+      m.on('click', () => showDetail(rec));
+      if (tier === 'backbone' && p.name)
+        m.bindTooltip(p.name, {permanent:true, direction:'top', className:'feat-label', offset:[0,-4]});
+      features.push(rec);
+    }
+
+    for (const f of data.generators.features) {
+      const p = f.properties;
+      const [lon, lat] = f.geometry.coordinates;
+      const tier = genTier(p);
+      const m = L.marker([lat, lon], { icon: plantIcon(p.type, parseFloat(p.capacity_mw)) });
+      const rec = { kind:'gen', region, tier, props:p, layer:m, visible:false };
+      m.on('click', () => showDetail(rec));
+      if (tier === 'backbone' && p.name && p.name !== '(unnamed)')
+        m.bindTooltip(p.name, {permanent:true, direction:'top', className:'feat-label', offset:[0,-4]});
+      features.push(rec);
     }
   }
-  const ms = (performance.now() - t0).toFixed(0);
-  updatePerf(ms);
 }
 
-// === PERF READOUT ===
-function countVisible() {
-  const regionOn = { jamali: document.getElementById('r-jamali').checked,
-                     sumatra: document.getElementById('r-sumatra').checked };
-  const typeOn = { trm: document.getElementById('t-trm').checked,
-                   sub: document.getElementById('t-sub').checked,
-                   gen: document.getElementById('t-gen').checked };
-  let n = 0;
-  for (const [region, data] of Object.entries(REGIONS)) {
-    if (!data || !regionOn[region]) continue;
-    if (typeOn.trm) n += data.transmission.features.length;
-    if (typeOn.sub) n += data.substations.features.length;
-    if (typeOn.gen) n += data.generators.features.length;
+// ============================================================
+// FILTER HELPERS (Fitur B)
+// ============================================================
+function voltageClassOf(ft) {
+  // Return '500'|'275'|'150'|'70'|'other'. Hanya bermakna untuk trm & sub.
+  let v = 0;
+  if (ft.kind === 'trm') {
+    v = parseFloat(ft.props.voltage_kv_max) || 0;
+  } else if (ft.kind === 'sub') {
+    const m = (ft.props.voltage || '').match(/\d+/);
+    v = m ? parseInt(m[0], 10) : 0;
   }
-  return n;
+  if (v >= 500) return '500';
+  if (v >= 275) return '275';
+  if (v >= 150) return '150';
+  if (v >= 70)  return '70';
+  return 'other';
 }
-function updatePerf(ms) {
-  const n = countVisible();
-  document.getElementById('perf').textContent =
-    `${n.toLocaleString('id-ID')} fitur tampil · render ${ms} ms · ${rendererMode.toUpperCase()}`;
+function capacityBucket(mw) {
+  // Bucket ukuran pembangkit. Tanpa data kapasitas -> 'b0'.
+  mw = parseFloat(mw) || 0;
+  if (mw >= 500) return 'b500';
+  if (mw >= 100) return 'b100';
+  if (mw >= 20)  return 'b20';
+  return 'b0';
+}
+function passProvince(ft, prov) {
+  if (!prov || ft.kind === 'trm') return true;  // transmisi tak punya provinsi
+  return ft.props.province === prov;
+}
+function checkedSet(selector) {
+  return new Set([...document.querySelectorAll(selector + ':checked')].map(c => c.value));
 }
 
-// === COUNTS ===
-function updateCounts() {
-  let trm = 0, sub = 0, gen = 0;
-  for (const data of Object.values(REGIONS)) {
-    if (!data) continue;
-    trm += data.transmission.features.length;
-    sub += data.substations.features.length;
-    gen += data.generators.features.length;
+// ============================================================
+// CENTRAL FILTER — satu fungsi yang menentukan visibilitas semua fitur
+// ============================================================
+function applyFilters() {
+  const tiers = LOD.tiersForZoom(map.getZoom());
+  const regionOn = {
+    jamali:  document.getElementById('r-jamali').checked,
+    sumatra: document.getElementById('r-sumatra').checked,
+  };
+  const trmVolt = checkedSet('.sub-trm');   // sub-layer tegangan transmisi
+  const subVolt = checkedSet('.sub-sub');   // sub-layer tegangan gardu induk
+  const genBkt  = checkedSet('.sub-gen');   // sub-layer bucket kapasitas pembangkit
+  const typesOn = checkedSet('.f-type');    // toggle jenis pembangkit (legend interaktif)
+  const province = document.getElementById('f-province').value;
+
+  let shown = 0;
+  for (const ft of features) {
+    // Visibilitas per sub-layer
+    let layerVis;
+    if (ft.kind === 'trm') {
+      const c = voltageClassOf(ft);
+      layerVis = (c === 'other') ? true : trmVolt.has(c);
+    } else if (ft.kind === 'sub') {
+      const c = voltageClassOf(ft);
+      layerVis = (c === 'other') ? true : subVolt.has(c);
+    } else {
+      layerVis = genBkt.has(capacityBucket(ft.props.capacity_mw));
+    }
+    const vis = tiers.has(ft.tier) && regionOn[ft.region] && layerVis
+      && (ft.kind !== 'gen' || typesOn.has(ft.props.type))
+      && passProvince(ft, province);
+    if (vis !== ft.visible) {
+      if (vis) ft.layer.addTo(map);
+      else map.removeLayer(ft.layer);
+      ft.visible = vis;
+    }
+    if (vis) shown++;
   }
-  document.getElementById('trm-count').textContent = trm.toLocaleString('id-ID');
-  document.getElementById('sub-count').textContent = sub.toLocaleString('id-ID');
-  document.getElementById('gen-count').textContent = gen.toLocaleString('id-ID');
+  updateReadout(shown);
 }
 
-// === INIT ===
+// ============================================================
+// ZOOM-DRIVEN UI
+// ============================================================
+function updateZoomUI() {
+  const z = map.getZoom();
+  const lvl = LOD.levelForZoom(z);
+
+  // marker scaling class (A3)
+  const mapEl = document.getElementById('map');
+  mapEl.classList.remove('z-low', 'z-mid');
+  if (lvl === 1) mapEl.classList.add('z-low');
+  else if (lvl === 2) mapEl.classList.add('z-mid');
+
+  // adaptive labels (A2) — tampil hanya saat cukup zoom-in
+  const tp = map.getPane('tooltipPane');
+  if (tp) tp.style.display = (z >= LOD.labelMinZoom) ? '' : 'none';
+
+  // detail indicator
+  for (let i = 1; i <= 3; i++)
+    document.getElementById('dstep-' + i).classList.toggle('on', i <= lvl);
+  document.getElementById('detail-label').textContent = DETAIL_TEXT[lvl].label;
+  document.getElementById('detail-hint').textContent = DETAIL_TEXT[lvl].hint;
+}
+
+function updateReadout(shown) {
+  document.getElementById('readout').textContent =
+    `${shown.toLocaleString('id-ID')} fasilitas tampil`;
+}
+
+// ============================================================
+// SEARCH (Fitur B)
+// ============================================================
+function runSearch(q) {
+  q = q.trim().toLowerCase();
+  const box = document.getElementById('search-results');
+  if (q.length < 2) { box.innerHTML = ''; return; }
+  const hits = [];
+  for (const ft of features) {
+    if (ft.kind === 'trm') continue;          // transmisi tak punya nama
+    const name = (ft.props.name || '').toLowerCase();
+    if (name && name !== '(unnamed)' && name.includes(q))
+      hits.push({ ft, starts: name.startsWith(q) ? 1 : 0 });
+  }
+  hits.sort((a, b) => b.starts - a.starts);   // prefix match diutamakan
+  const top = hits.slice(0, 8);
+  if (!top.length) { box.innerHTML = '<div class="empty">Tidak ada hasil.</div>'; return; }
+  box.innerHTML = '';
+  top.forEach(({ ft }) => {
+    const div = document.createElement('div');
+    div.className = 'hit';
+    const kind = ft.kind === 'sub' ? 'Gardu Induk' : 'Pembangkit';
+    div.innerHTML = `${ft.props.name}<div class="meta">${kind} · ${ft.props.province || ''}</div>`;
+    div.addEventListener('click', () => selectSearchResult(ft));
+    box.appendChild(div);
+  });
+}
+function selectSearchResult(ft) {
+  document.getElementById('search-results').innerHTML = '';
+  document.getElementById('search-input').value = ft.props.name;
+  const ll = ft.layer.getLatLng();
+  map.setView(ll, 13);
+  // Pastikan fitur tampil walau LOD/filter sedang menyembunyikannya
+  if (!ft.visible) { ft.layer.addTo(map); ft.visible = true; }
+  showDetail(ft);
+}
+
+// ============================================================
+// SETUP FILTER UI — populate dropdown dari data + wire event
+// ============================================================
+function setupFilters() {
+  // Kumpulkan provinsi & jenis pembangkit dari data
+  const provinces = new Set();
+  const types = new Set();
+  for (const ft of features) {
+    if (ft.props.province) provinces.add(ft.props.province);
+    if (ft.kind === 'gen' && ft.props.type) types.add(ft.props.type);
+  }
+
+  // Dropdown provinsi
+  const provSel = document.getElementById('f-province');
+  [...provinces].sort().forEach(p => {
+    const o = document.createElement('option'); o.value = p; o.textContent = p;
+    provSel.appendChild(o);
+  });
+  provSel.addEventListener('change', applyFilters);
+
+  // Legend jenis pembangkit yang interaktif (klik = toggle visibilitas)
+  const ptLegend = document.getElementById('planttype-legend');
+  [...types].sort().forEach(t => {
+    const color = PLANT_COLORS[t] || '#999';
+    const code = PLANT_LABEL[t] || '?';
+    const dark = DARK_TEXT.has(t);
+    const lab = document.createElement('label');
+    lab.className = 'type-toggle';
+    const desc = PLANT_DESC[t] ? ' — ' + PLANT_DESC[t] : '';
+    lab.innerHTML = `<input type="checkbox" class="f-type" value="${t}" checked>
+      <span class="circle-sym" style="background:${color};${dark ? 'color:#222;' : ''}
+        width:15px;height:15px;font-size:8px">${code}</span>
+      <span><strong>${t}</strong>${desc}</span>`;
+    ptLegend.appendChild(lab);
+  });
+  const ptNote = document.createElement('div');
+  ptNote.className = 'note';
+  ptNote.textContent = 'Klik untuk sembunyikan/tampilkan jenis. Ukuran simbol ∝ kapasitas MW.';
+  ptLegend.appendChild(ptNote);
+  document.querySelectorAll('.f-type').forEach(c => c.addEventListener('change', () => {
+    c.closest('.type-toggle').classList.toggle('off', !c.checked);
+    applyFilters();
+  }));
+
+  // Layer hierarkis: master checkbox <-> sub-toggle
+  function wireLayerGroup(masterId, subClass) {
+    const master = document.getElementById(masterId);
+    const subs = [...document.querySelectorAll('.' + subClass)];
+    master.addEventListener('change', () => {
+      subs.forEach(s => s.checked = master.checked);
+      master.indeterminate = false;
+      applyFilters();
+    });
+    subs.forEach(s => s.addEventListener('change', () => {
+      const on = subs.filter(x => x.checked).length;
+      master.checked = on > 0;
+      master.indeterminate = on > 0 && on < subs.length;
+      applyFilters();
+    }));
+  }
+  wireLayerGroup('m-trm', 'sub-trm');
+  wireLayerGroup('m-sub', 'sub-sub');
+  wireLayerGroup('m-gen', 'sub-gen');
+
+  // Reset filter (jenis pembangkit & provinsi)
+  document.getElementById('f-reset').addEventListener('click', () => {
+    provSel.value = '';
+    document.querySelectorAll('.f-type').forEach(c => {
+      c.checked = true;
+      c.closest('.type-toggle').classList.remove('off');
+    });
+    applyFilters();
+  });
+
+  // Search
+  const si = document.getElementById('search-input');
+  si.addEventListener('input', () => runSearch(si.value));
+}
+
+// ============================================================
+// INIT
+// ============================================================
 function init() {
   if (!REGIONS.jamali && !REGIONS.sumatra) {
-    document.getElementById('perf').textContent =
-      'Data gagal load — pastikan data_jamali.js & data_sumatra.js ada di folder yang sama.';
+    document.getElementById('readout').textContent =
+      'Data gagal load — pastikan data_jamali.js & data_sumatra.js ada.';
     return;
   }
-  updateCounts();
-  const t0 = performance.now();
-  buildLayers();
-  refreshLayers();
-  const ms = (performance.now() - t0).toFixed(0);
+  buildFeatures();
+  setupFilters();
 
-  // Fit bounds ke semua layer yang ada
-  const all = [];
-  Object.values(layers).forEach(byType => Object.values(byType).forEach(l => all.push(l)));
-  if (all.length) {
-    const grp = L.featureGroup(all);
-    if (grp.getBounds().isValid()) map.fitBounds(grp.getBounds(), { padding: [20, 20] });
+  // Fit ke seluruh cakupan data (pakai bounds semua titik/garis)
+  const allLatLngs = [];
+  for (const ft of features) {
+    if (ft.kind === 'trm') ft.layer.getLatLngs().forEach(ll => allLatLngs.push(ll));
+    else allLatLngs.push(ft.layer.getLatLng());
   }
-  updatePerf(ms);
+  if (allLatLngs.length) map.fitBounds(L.latLngBounds(allLatLngs), { padding: [20, 20] });
+
+  updateZoomUI();
+  applyFilters();
 }
 
-// === EVENT BINDINGS ===
-['r-jamali','r-sumatra','t-trm','t-sub','t-gen'].forEach(id =>
-  document.getElementById(id).addEventListener('change', refreshLayers));
+// ============================================================
+// EVENTS
+// ============================================================
+map.on('zoomend', () => { updateZoomUI(); applyFilters(); });
 
-document.getElementById('renderer-select').addEventListener('change', e => {
-  rendererMode = e.target.value;
-  const t0 = performance.now();
-  buildLayers();
-  refreshLayers();
-  updatePerf((performance.now() - t0).toFixed(0));
-});
+['r-jamali','r-sumatra'].forEach(id =>
+  document.getElementById(id).addEventListener('change', applyFilters));
 
 document.querySelectorAll('.sidebar .section.collapsible h4').forEach(h =>
   h.addEventListener('click', () => h.parentElement.classList.toggle('collapsed')));
+
+document.getElementById('dp-close').addEventListener('click', closeDetail);
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeDetail(); });
 
 init();
 </script>
