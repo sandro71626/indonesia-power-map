@@ -1,23 +1,21 @@
 """
-Probe RUPTL PDF: cari semua heading 'Tabel X<n>.<m> ... Gardu Induk Eksisting'
+Probe RUPTL PDF: cari semua heading tabel "Gardu Induk Eksisting" per provinsi
 beserta nomor halamannya.
 
-Tujuan: discover page range per provinsi untuk extractor regional baru
-(Sumatera, Kalimantan, Sulawesi, dst). Run sekali, output dipakai untuk
-populate PROVINCES list di extractor.
+Menangkap kedua format heading yang dipakai RUPTL:
+  - Lampiran A (Sumatra, Kalimantan): "Tabel A1.4. Realisasi Kapasitas
+    Trafo Gardu Induk"
+  - Lampiran B (JAMALI): "Tabel B1.4 Realisasi Kapasitas Gardu Induk
+    Eksisting"
 
-Skrip ini scratchpad — nama prefix '_' biar gampang dibedakan dari extractor
-yang shipped. Boleh dihapus atau di-keep sebagai utility.
+Dipakai untuk discover posisi tabel region baru (Sulawesi, Maluku-Papua,
+Nusa Tenggara). Run sekali, output dipakai untuk populate PROVINCES list
+di extractor regional.
 
 Pakai:
     python3 scripts/_probe_ruptl_tables.py
 
-Output kira-kira:
-    Page  Heading
-    ----  -------
-      45  Tabel A1.4 Kapasitas Gardu Induk Eksisting Provinsi Aceh
-      67  Tabel A2.4 Kapasitas Gardu Induk Eksisting Provinsi Sumut
-      ...
+Skrip scratchpad — prefix '_' membedakannya dari extractor yang shipped.
 """
 import re
 import subprocess
@@ -26,54 +24,49 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 PDF = ROOT / "data/raw/sources/RUPTL-2025-2034.pdf"
 
-# Tiga pattern berbeda untuk catching variasi heading di RUPTL:
-PATTERNS = [
-    # 1. Strict: Tabel X<n>.<m> ... Kapasitas Gardu Induk Eksisting (yang dipakai JAMALI)
-    ('strict_kapasitas_eksisting',
-     re.compile(r'Tabel\s+([A-Z]\d+)\.(\d+)\.?\s*(?:Realisasi\s+)?Kapasitas\s+Gardu\s+Induk\s+Eksisting[^\n]*')),
-    # 2. Mid: Tabel X<n>.<m> apapun yang ada "Gardu Induk" (lebih luas)
-    ('any_tabel_gardu_induk',
-     re.compile(r'Tabel\s+([A-Z]?\d+)\.?(\d*)\.?\s*[^\n]*Gardu\s+Induk[^\n]*')),
-    # 3. Province name mentions (cari section header Sumatera)
-    ('sumatera_section_header',
-     re.compile(r'(?:Sistem|Wilayah|Provinsi|Lampiran)\s+[^\n]{0,100}(?:Sumatera|Aceh|Sumatera Utara|Sumatera Selatan|Riau|Lampung|Bengkulu|Jambi|Bangka)[^\n]*')),
-]
-
-
-def scan_with_pattern(pages, label, pattern):
-    print(f"\n=== Pattern: {label} ===")
-    print(f"{'Page':>5}  Match")
-    print(f"{'-'*5}  {'-'*70}")
-    hits = 0
-    seen = set()
-    for idx, page_text in enumerate(pages):
-        page_num = idx + 1
-        for m in pattern.finditer(page_text):
-            display = re.sub(r'\s+', ' ', m.group(0)).strip()[:90]
-            key = (page_num, display)
-            if key in seen:
-                continue
-            seen.add(key)
-            print(f"{page_num:>5}  {display}")
-            hits += 1
-            if hits >= 100:
-                print(f"  ... (truncated at 100 hits)")
-                return
-    if hits == 0:
-        print("  (no match)")
+# Heading tabel GI eksisting per provinsi. Membidik dua kata kunci yang
+# spesifik untuk tabel eksisting — "Trafo Gardu Induk" (format Lampiran A)
+# atau "Gardu Induk Eksisting" (format Lampiran B). Tabel rencana
+# ("Rencana Pembangunan Gardu Induk") tidak ikut tertangkap.
+HEADING_RE = re.compile(
+    r'Tabel\s+([A-Z]\d+)\.(\d+)\.?\s*[^\n]{0,60}?'
+    r'(?:Trafo Gardu Induk|Gardu Induk Eksisting)[^\n]*'
+)
 
 
 def main():
     print(f"Scanning {PDF.name}... (~30 detik)")
-    out = subprocess.run(
-        ['pdftotext', '-layout', str(PDF), '-'],
-        capture_output=True, text=True
-    ).stdout
-    pages = out.split('\f')
-    print(f"Total pages: {len(pages)}")
+    out = subprocess.run(['pdftotext', '-layout', str(PDF), '-'],
+                         capture_output=True, text=True).stdout
+    pages = out.split('\f')  # form feed = pemisah halaman
+    print(f"Total pages: {len(pages)}\n")
 
-    for label, pat in PATTERNS:
-        scan_with_pattern(pages, label, pat)
+    print(f"{'Page':>5}  Heading")
+    print(f"{'-' * 5}  {'-' * 72}")
+    found = []
+    for idx, page_text in enumerate(pages):
+        page_num = idx + 1
+        for m in HEADING_RE.finditer(page_text):
+            disp = re.sub(r'\s+', ' ', m.group(0)).strip()[:92]
+            print(f"{page_num:>5}  {disp}")
+            found.append((page_num, m.group(1)))
+
+    if not found:
+        print("  (tidak ada heading ditemukan)")
+        return
+
+    # Ringkasan per Lampiran (A, B, C, ...)
+    by_lampiran = {}
+    for page, tid in found:
+        by_lampiran.setdefault(tid[0], []).append((page, tid))
+    print("\nRingkasan per Lampiran:")
+    for prefix in sorted(by_lampiran):
+        rows = by_lampiran[prefix]
+        tids = sorted(set(r[1] for r in rows), key=lambda t: int(t[1:]))
+        p0 = min(r[0] for r in rows)
+        p1 = max(r[0] for r in rows)
+        print(f"  Lampiran {prefix}: {len(tids)} tabel "
+              f"({', '.join(tids)}) — page {p0}..{p1}")
 
 
 if __name__ == '__main__':

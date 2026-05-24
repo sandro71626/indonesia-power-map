@@ -36,3 +36,10 @@ GI NANGABULIK,Kalimantan Tengah,osm_substation,way/1193123288,Gardu Induk Nanga 
 GI Embalut,Kalimantan Timur,osm_plant,way/450527118,PLTU Embalut,-0.3715316,117.062746,2026-05-23,GI step-up ko-lokasi dengan PLTU Embalut (Kutai Kartanegara)
 GI Muara Jawa,Kalimantan Timur,osm_plant,way/945128872,PLTU Muara Jawa,-0.7802248,117.1883726,2026-05-23,GI step-up ko-lokasi dengan PLTU Muara Jawa
 Bulungan/Tj. Selor,Kalimantan Utara,osm_substation,way/943966222,Gardu Induk Tanjung Selor,2.8104314,117.3679924,2026-05-23,RUPTL 'Bulungan/Tj. Selor' = OSM 'Gardu Induk Tanjung Selor'
+Amurang,Sulawesi Utara,osm_plant,way/943309157,PLTU Amurang,1.1833413,124.4793945,2026-05-26,GI step-up ko-lokasi dengan PLTU Amurang (Minahasa Selatan)
+Anggrek (PLTU Gorontalo),Gorontalo,osm_plant,way/942620063,PLTU Anggrek,0.8507011,122.7965578,2026-05-26,GI ko-lokasi dengan PLTU Anggrek / PLTU Gorontalo (Gorontalo Utara)
+Tello,Sulawesi Selatan,osm_plant,way/109924603,PLTU Tello,-5.1473815,119.4719989,2026-05-26,GI ko-lokasi dengan kompleks pembangkit Tello (Makassar)
+Sengkang,Sulawesi Selatan,osm_plant,way/367586568,PLTGU Sengkang,-4.1761207,120.0725884,2026-05-26,GI step-up ko-lokasi dengan PLTGU Sengkang (Wajo)
+Punagaya,Sulawesi Selatan,osm_plant,way/905955777,PLTU Jeneponto,-5.6181198,119.5501444,2026-05-26,GI step-up ko-lokasi dengan PLTU Jeneponto/Punagaya
+Nii Tanasa,Sulawesi Tenggara,osm_plant,way/943189957,PLTU Nii Tanasa,-3.8950056,122.5374029,2026-05-26,GI step-up ko-lokasi dengan PLTU Nii Tanasa (Konawe Utara)
+Kendari 150 kV,Sulawesi Tenggara,osm_substation,way/943189956,Gardu Induk New Kendari,-4.0248257,122.4659051,2026-05-26,RUPTL 'Kendari 150 kV' = OSM 'Gardu Induk New Kendari'
