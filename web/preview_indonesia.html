@@ -144,7 +144,7 @@
 
 <div class="header">
   Peta Ketenagalistrikan Indonesia
-  <div class="sub">JAMALI + Sumatra + Kalimantan · data eksisting</div>
+  <div class="sub">JAMALI + Sumatra + Kalimantan + Sulawesi · data eksisting</div>
   <div class="readout" id="readout">memuat data…</div>
 </div>
 
@@ -175,6 +175,8 @@
       <label for="r-sumatra">Sumatra</label></div>
     <div class="layer-toggle"><input type="checkbox" id="r-kalimantan" checked>
       <label for="r-kalimantan">Kalimantan</label></div>
+    <div class="layer-toggle"><input type="checkbox" id="r-sulawesi" checked>
+      <label for="r-sulawesi">Sulawesi</label></div>
   </div>
 
   <div class="section">
@@ -271,7 +273,8 @@
     <h2 style="margin:0 0 12px;font-size:18px;">Peta Ketenagalistrikan Indonesia</h2>
     <p>Visualisasi struktur sistem tenaga listrik Indonesia untuk edukasi,
     eksplorasi, dan analisis umum. Saat ini mencakup region <strong>JAMALI</strong>
-    (Jawa-Madura-Bali), <strong>Sumatra</strong>, dan <strong>Kalimantan</strong>.</p>
+    (Jawa-Madura-Bali), <strong>Sumatra</strong>, <strong>Kalimantan</strong>, dan
+    <strong>Sulawesi</strong>.</p>
     <p><strong>Pakai panel Layer &amp; Filter</strong> di kanan untuk memilih
     apa yang tampil — kelas tegangan transmisi &amp; gardu induk, ukuran
     pembangkit, jenis pembangkit, region, dan provinsi. Zoom hanya mengatur
@@ -292,6 +295,7 @@
 <script src="data_jamali.js"></script>
 <script src="data_sumatra.js"></script>
 <script src="data_kalimantan.js"></script>
+<script src="data_sulawesi.js"></script>
 <script>
 // ============================================================
 // MAP + BASEMAPS
@@ -559,7 +563,7 @@ function closeDetail() {
 // oleh applyFilters(); bukan dengan menambah/hapus L.geoJSON besar.
 // Daftar region. Menambah region baru cukup: tambah key di sini + satu
 // <script src="data_<key>.js"> + satu toggle di sidebar. Sisanya generik.
-const REGION_KEYS = ['jamali', 'sumatra', 'kalimantan'];
+const REGION_KEYS = ['jamali', 'sumatra', 'kalimantan', 'sulawesi'];
 const REGIONS = {};
 REGION_KEYS.forEach(k => { REGIONS[k] = window[k.toUpperCase() + '_DATA'] || null; });
 const features = [];   // { kind, region, tier, props, layer, visible }
