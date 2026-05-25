@@ -1,0 +1,13 @@
+id,name,voltage,trafo_count,capacity_mva,province,system,osm_id,osm_name,lat,lon,match_score,match_source,review_flag,source_id,source_table
+GI-MLK-0001,Passo,150/70/20,4,160.0,Maluku,Maluku,way/611723635,Gardu Induk Passo,-3.6155882,128.2623042,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C7.4
+GI-MLK-0002,Sirimau,150/70/20,4,160.0,Maluku,Maluku,way/611723633,Gardu Induk Sirimau,-3.6893878,128.222381,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C7.4
+GI-MLK-0003,Hative Besar,150/20,2,60.0,Maluku,Maluku,way/949578855,Gardu Induk Wayame,-3.6627925,128.1602396,1.0,override:osm_substation,,RUPTL-2025-2034,Tabel C7.4
+GI-MLK-0004,Masohi,150/20,1,30.0,Maluku,Maluku,way/1313323076,Gardu Induk Masohi,-3.2953174,128.9851972,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C7.4
+GI-MLK-0005,Piru,150/20,1,30.0,Maluku,Maluku,way/1313323065,Gardu Induk Piru,-3.0606966,128.1874949,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C7.4
+GI-MLK-0006,Namlea,70/20,1,30.0,Maluku,Maluku,way/1313305449,Gardu Induk Namlea,-3.2143205,127.0914566,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C7.4
+GI-MLK-0007,Namrole,70/20,1,20.0,Maluku,Maluku,way/1313305446,Gardu Induk Namrole,-3.8340224,126.7510613,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C7.4
+GI-MLK-0008,Ternate,150/20,2,120.0,Maluku Utara,Maluku,way/951367597,Gardu Induk Ternate,0.7658522,127.3068904,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C8.4
+GI-MLK-0009,Jailolo,150/20,1,30.0,Maluku Utara,Maluku,way/1180198692,Gardu Induk Jailolo,1.0793923,127.4918142,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C8.4
+GI-MLK-0010,Malifut,150/20,1,20.0,Maluku Utara,Maluku,way/1180198690,Gardu Induk Malifut,1.1709163,127.8290295,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C8.4
+GI-MLK-0011,Sofifi,150/20,1,30.0,Maluku Utara,Maluku,way/1193554287,Gardu Induk Sofifi,0.7017663,127.5536934,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C8.4
+GI-MLK-0012,Tobelo,150/20,1,30.0,Maluku Utara,Maluku,way/1180198691,Gardu Induk Tobelo,1.765177,127.9627404,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C8.4

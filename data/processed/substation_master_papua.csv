@@ -1,0 +1,9 @@
+id,name,voltage,trafo_count,capacity_mva,province,system,osm_id,osm_name,lat,lon,match_score,match_source,review_flag,source_id,source_table
+GI-PAP-0001,Skyland/Jayapura,150/70/20,4,200.0,Papua,Papua,way/611223231,Gardu Induk Jayapura,-2.5855277,140.6785694,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel C9.4
+GI-PAP-0002,Sentani/Wamena,70/20,2,60.0,Papua,Papua,way/692489064,Gardu Induk Sentani,-2.5809621,140.5680379,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel C9.4
+GI-PAP-0003,Genyem,70/20,2,25.0,Papua,Papua,way/540362502,PLN Genyem,-2.5941876,140.166206,0.95,osm_fuzzy,,RUPTL-2025-2034,Tabel C9.4
+GI-PAP-0004,Holtekamp,150/70/20,2,90.0,Papua,Papua,way/736937944,Gardu Induk Holtekamp,-2.6164165,140.7903099,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C9.4
+GI-PAP-0005,Timika,150/20,2,120.0,Papua,Papua,way/1121717385,Gardu Induk Timika,-4.5973768,136.8854225,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C9.4
+GI-PAP-0006,Aimas,150/20,2,60.0,Papua Barat,Papua,way/940979316,Gardu Induk Aimas,-0.9852926,131.3336317,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C10.4
+GI-PAP-0007,Sorong,150/20,2,60.0,Papua Barat,Papua,way/940979318,Gardu Induk Sorong,-0.8940215,131.3466995,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C10.4
+GI-PAP-0008,Rufey,150/20,2,60.0,Papua Barat,Papua,way/940979317,Gardu Induk Rufey,-0.8375871,131.246961,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C10.4

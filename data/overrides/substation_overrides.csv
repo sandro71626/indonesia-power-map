@@ -43,3 +43,4 @@ Sengkang,Sulawesi Selatan,osm_plant,way/367586568,PLTGU Sengkang,-4.1761207,120.
 Punagaya,Sulawesi Selatan,osm_plant,way/905955777,PLTU Jeneponto,-5.6181198,119.5501444,2026-05-26,GI step-up ko-lokasi dengan PLTU Jeneponto/Punagaya
 Nii Tanasa,Sulawesi Tenggara,osm_plant,way/943189957,PLTU Nii Tanasa,-3.8950056,122.5374029,2026-05-26,GI step-up ko-lokasi dengan PLTU Nii Tanasa (Konawe Utara)
 Kendari 150 kV,Sulawesi Tenggara,osm_substation,way/943189956,Gardu Induk New Kendari,-4.0248257,122.4659051,2026-05-26,RUPTL 'Kendari 150 kV' = OSM 'Gardu Induk New Kendari'
+Hative Besar,Maluku,osm_substation,way/949578855,Gardu Induk Wayame,-3.6627925,128.1602396,2026-05-26,RUPTL 'Hative Besar' = OSM 'GI Wayame'; GI ke-3 ring 150 kV Ambon (by elimination: RUPTL Passo/Sirimau/Hative Besar vs OSM Passo/Sirimau/Wayame), desa Hative Besar & Wayame bersebelahan di pesisir utara Teluk Ambon
