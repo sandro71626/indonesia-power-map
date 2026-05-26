@@ -8,6 +8,18 @@
 
 **Threshold matching identik:** 0.85 absolute, override prioritas pertama, fuzzy SequenceMatcher di bawahnya.
 
+> **Update 2026-05-26 — audit fix parser multi-tegangan.** Setelah Step 5
+> Maluku/Papua menyingkap layout tabel multi-tegangan, audit
+> (`scripts/_audit_multivolt.py`) menemukan tiga koreksi di Tabel C4 (Sulsel):
+> **Pangkep** (multi-tegangan 3 trafo / 80 MVA — sebelumnya terlewat),
+> **Panakkukang** (sebelumnya muncul sebagai "baris nama kosong" UNMATCHED —
+> kini ternama dan ter-match, 3 trafo / 180 MVA), dan **Bontoala** (sebelumnya
+> hanya 2 trafo / 40 MVA — kini di-gabung dengan GIS Bontoala, total 4 trafo
+> / 160 MVA, sesuai No 7 RUPTL). Extractor sekarang pakai shared parser
+> `scripts/substation_table_parser.py`; total GI 105 → **106**, match rate
+> 87,6% → **88,7%** (94 matched). Angka di tabel-tabel bawah sudah diperbarui;
+> "baris nama kosong" sudah tidak ada lagi.
+
 ## Ringkasan
 
 | Provinsi | Tabel | System | RUPTL | Fuzzy ≥ 0.85 | Override | Unmatched |
@@ -15,12 +27,12 @@
 | Sulawesi Utara | C1 | Sulutgo | 24 | 19 | 1 | 4 |
 | Sulawesi Tengah | C2 | Sulteng | 15 | 14 | 0 | 1 |
 | Gorontalo | C3 | Sulutgo | 7 | 6 | 1 | 0 |
-| Sulawesi Selatan | C4 | Sulselrabar | 40 | 32 | 3 | 5 |
+| Sulawesi Selatan | C4 | Sulselrabar | 41 | 34 | 3 | 4 |
 | Sulawesi Tenggara | C5 | Sulselrabar | 13 | 8 | 2 | 3 |
 | Sulawesi Barat | C6 | Sulselrabar | 6 | 6 | 0 | 0 |
-| **Total** | | | **105** | **85** | **7** | **13** |
+| **Total** | | | **106** | **87** | **7** | **12** |
 
-Match rate: **87,6%** (92 / 105).
+Match rate: **88,7%** (94 / 106).
 
 Breakdown per sistem listrik:
 
@@ -28,7 +40,7 @@ Breakdown per sistem listrik:
 |--------|---------|--------:|------:|-----:|
 | Sulutgo | Sulawesi Utara + Gorontalo | 27 | 31 | 87.1% |
 | Sulteng | Sulawesi Tengah | 14 | 15 | 93.3% |
-| Sulselrabar | Sulawesi Selatan + Sulawesi Tenggara + Sulawesi Barat | 51 | 59 | 86.4% |
+| Sulselrabar | Sulawesi Selatan + Sulawesi Tenggara + Sulawesi Barat | 53 | 60 | 88.3% |
 
 ## Catatan ekstraksi
 
@@ -59,7 +71,7 @@ PLN sedang menyambungkan Sulbagsel (Sulselrabar) dan Sulbagut (Sulutgo + Sulteng
 
 ### Sulselrabar mendominasi
 
-59 dari 105 GI (56%) ada di Sulselrabar — konsisten dengan posisi Sulawesi Selatan sebagai pusat beban dan pembangkitan terbesar di Sulawesi. Sulteng paling kecil (15 GI) tapi punya match rate tertinggi (93,3%) karena GI-nya terkonsentrasi di koridor kota yang sudah ter-tag baik di OSM.
+60 dari 106 GI (57%) ada di Sulselrabar — konsisten dengan posisi Sulawesi Selatan sebagai pusat beban dan pembangkitan terbesar di Sulawesi. Sulteng paling kecil (15 GI) tapi punya match rate tertinggi (93,3%) karena GI-nya terkonsentrasi di koridor kota yang sudah ter-tag baik di OSM.
 
 ## 7 override yang di-apply
 
@@ -77,7 +89,7 @@ GI step-up yang ko-lokasi dengan pembangkit memakai centroid plant OSM; sisanya 
 
 Catatan: "Anggrek (PLTU Gorontalo)" dan "Punagaya" adalah contoh GI yang RUPTL namai mengikuti pembangkit ko-lokasi — Anggrek = PLTU Gorontalo Utara, Punagaya = PLTU Jeneponto. "Kendari 150 kV" di RUPTL dipetakan ke OSM "Gardu Induk New Kendari" (GI baru, beda generasi dari GI Kendari lama).
 
-## 13 GI yang masih UNMATCHED
+## 12 GI yang masih UNMATCHED
 
 Mayoritas GI distribusi atau town feeder kecil yang belum ada di OSM substations dataset dan tidak punya padanan pembangkit. Untuk iterasi berikutnya: PLN Annual Report atau Overpass API direct query.
 
@@ -88,8 +100,7 @@ Mayoritas GI distribusi atau town feeder kecil yang belum ada di OSM substations
 | GI Tutuyuan | Sulawesi Utara | Bolaang Mongondow Timur |
 | GI Bintauna (Town Feeder) | Sulawesi Utara | Town feeder Bintauna, Bolaang Mongondow Utara |
 | Palu Baru | Sulawesi Tengah | Kemungkinan GI baru pasca-rekonstruksi Palu; tidak di-override (konservatif, padanan belum dipastikan) |
-| Bontoala | Sulawesi Selatan | GI dalam kota Makassar |
-| *(baris nama kosong)* | Sulawesi Selatan | Artefak parsing tabel C4 — baris tanpa nama GI; di-flag UNMATCHED, perlu dibersihkan di iterasi berikut |
+| Bontoala | Sulawesi Selatan | GI + GIS Bontoala dalam kota Makassar; multi-tegangan 150/70/20 (4 trafo / 160 MVA setelah audit fix) |
 | Borongloe | Sulawesi Selatan | Gowa, area Malino |
 | Balusu | Sulawesi Selatan | Barru; ada kandidat OSM tapi tidak dipastikan — tidak di-override (konservatif) |
 | Belopa | Sulawesi Selatan | Ibu kota Luwu |
@@ -97,7 +108,7 @@ Mayoritas GI distribusi atau town feeder kecil yang belum ada di OSM substations
 | Wolo | Sulawesi Tenggara | Kolaka |
 | Kasi Pute | Sulawesi Tenggara | Kasipute, Bombana |
 
-Catatan baris kosong: parser tabel C4 menangkap satu baris tanpa nama GI (kemungkinan baris lanjutan/sub-total di PDF). Dipertahankan sebagai UNMATCHED dan bukan dihapus diam-diam agar hitungan RUPTL (105) tetap transparan; akan dirapikan saat extractor C-tables di-refine untuk Step 5.
+Catatan: "baris nama kosong" yang sebelumnya muncul sebagai UNMATCHED di C4 sudah hilang setelah audit-fix parser multi-tegangan — baris itu ternyata milik **Panakkukang** (nama di baris terpisah dari baris data karena layout merged-cell), kini ter-extract dan ter-match dengan benar.
 
 ## Struktur kolom CSV
 

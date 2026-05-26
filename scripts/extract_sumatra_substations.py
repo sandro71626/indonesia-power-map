@@ -34,9 +34,10 @@ Catatan format heading RUPTL Lampiran A:
 import re
 import json
 import csv
-import subprocess
 from difflib import SequenceMatcher
 from pathlib import Path
+
+from substation_table_parser import extract_table
 
 ROOT = Path(__file__).resolve().parent.parent
 RUPTL = ROOT / "data/raw/sources/RUPTL-2025-2034.pdf"
@@ -70,67 +71,6 @@ PROVINCES = [
     ("A9",  "Bengkulu",                   "Sumatra",  705, 715, (-5.50, 101.00, -2.00, 104.00)),
     ("A10", "Lampung",                    "Sumatra",  716, 729, (-6.00, 103.50, -3.60, 106.00)),
 ]
-
-
-def extract_table(pdf_path, table_id, start_page, end_page):
-    """Ekstrak tabel Trafo Gardu Induk dari range halaman tertentu.
-
-    Lampiran A pakai phrasing 'Realisasi Kapasitas Trafo Gardu Induk' (atau
-    'Kapasitas Trafo Gardu Induk Eksisting' di A8). Heading wajib mengandung
-    'Trafo' + 'Gardu Induk'; modifier 'Realisasi' / 'Eksisting' opsional.
-    """
-    out = subprocess.run(
-        ['pdftotext', '-layout', '-f', str(start_page), '-l', str(end_page),
-         str(pdf_path), '-'],
-        capture_output=True, text=True
-    ).stdout
-
-    table_num = table_id.replace("A", "")  # "A1" -> "1"
-    # Heading: "Tabel A<n>.<m>[.] [Realisasi] Kapasitas Trafo Gardu Induk [Eksisting]..."
-    heading_pat = re.compile(
-        rf'Tabel\s+A{table_num}\.(\d+)\.?\s*(?:Realisasi\s+)?Kapasitas\s+Trafo\s+Gardu\s+Induk(?:\s+Eksisting)?[^\n]*\n'
-    )
-    m = heading_pat.search(out)
-    if not m:
-        return []
-    found_subtable = int(m.group(1))
-
-    # Boundary: heading tabel berikutnya (A<n>.<found+1>)
-    end_pat = re.compile(rf'Tabel\s+A{table_num}\.{found_subtable + 1}\b')
-    end_m = end_pat.search(out, m.end())
-    block = out[m.end():end_m.start() if end_m else len(out)]
-
-    rows = []
-    # Pattern row: <num> <name multi-words> <volt/volt> <trafo> <capacity>
-    row_pat = re.compile(
-        r'^\s*(\d{1,3})\s+(.+?)\s+(\d{2,3}\s*/\s*\d{2,3})\s+(\d+)\s+([\d\.,]+)\s*$'
-    )
-    for line in block.split('\n'):
-        s = line.rstrip()
-        if not s:
-            continue
-        if 'Tegangan' in s or 'Total Kapasitas' in s or 'Jumlah Trafo' in s or 'Nama GI' in s:
-            continue
-        # Skip pagination markers seperti "A -16"
-        if re.match(r'^\s*A\s*-?\s*\d+\s*$', s):
-            continue
-        if re.search(r'^\s*(Total|Jumlah)\b', s, re.IGNORECASE):
-            continue
-        rm = row_pat.match(s)
-        if rm:
-            cap = rm.group(5).replace('.', '').replace(',', '.')
-            try:
-                cap_f = float(cap)
-            except ValueError:
-                cap_f = None
-            rows.append({
-                'src_no': int(rm.group(1)),
-                'name': rm.group(2).strip(),
-                'voltage': re.sub(r'\s+', '', rm.group(3)),
-                'trafo_count': int(rm.group(4)),
-                'capacity_mva': cap_f,
-            })
-    return rows
 
 
 def parse_voltage_osm(v):

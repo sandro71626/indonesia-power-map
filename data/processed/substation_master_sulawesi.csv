@@ -45,62 +45,63 @@ GI-SLW-0043,Anggrek (PLTU Gorontalo),150/20,1,20.0,Gorontalo,Sulutgo,way/9426200
 GI-SLW-0044,Gorontalo Baru,150/20,1,60.0,Gorontalo,Sulutgo,way/1224978143,Gardu Induk Gorontalo Baru,0.5510867,123.0254165,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C3.4
 GI-SLW-0045,Tilamuta,150/20,1,30.0,Gorontalo,Sulutgo,way/942620062,Gardu Induk Tilamuta,0.6067016,122.4811361,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C3.4
 GI-SLW-0046,Tolinggula,150/20,1,30.0,Gorontalo,Sulutgo,way/942620060,Gardu Induk Tolinggula,1.0200545,122.1518888,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C3.4
-GI-SLW-0047,Mandai,70/20,2,40.0,Sulawesi Selatan,Sulselrabar,way/1155942858,Gardu Induk Mandai,-5.0606118,119.5275995,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C4.4
-GI-SLW-0048,Daya,70/20,1,20.0,Sulawesi Selatan,Sulselrabar,way/1155942860,Gardu Induk Daya,-5.1044304,119.5082488,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C4.4
-GI-SLW-0049,Maros,150/20,2,60.0,Sulawesi Selatan,Sulselrabar,way/399505633,Gardu Induk Maros,-4.9304815,119.595475,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C4.4
-GI-SLW-0050,Kima Makassar,150/20,2,90.0,Sulawesi Selatan,Sulselrabar,way/756876724,Gardu Induk KIMA Makassar,-5.0858413,119.4991983,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C4.4
-GI-SLW-0051,Tallo Lama,150/20,3,120.0,Sulawesi Selatan,Sulselrabar,way/258997962,Gardu Induk Tallo Lama,-5.1100362,119.4378194,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C4.4
-GI-SLW-0052,Bontoala,70/20,2,40.0,Sulawesi Selatan,Sulselrabar,,,,,0.56,,UNMATCHED,RUPTL-2025-2034,Tabel C4.4
-GI-SLW-0053,Tello,150/20,2,120.0,Sulawesi Selatan,Sulselrabar,way/109924603,PLTU Tello,-5.1473815,119.4719989,1.0,override:osm_plant,,RUPTL-2025-2034,Tabel C4.4
-GI-SLW-0054,,70/20,0,0.0,Sulawesi Selatan,Sulselrabar,,,,,0.0,,UNMATCHED,RUPTL-2025-2034,Tabel C4.4
-GI-SLW-0055,Tanjung Bunga,150/20,3,180.0,Sulawesi Selatan,Sulselrabar,way/399505626,Gardu Induk Tanjung Bunga,-5.1900981,119.395629,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C4.4
-GI-SLW-0056,Borongloe,70/20,1,20.0,Sulawesi Selatan,Sulselrabar,,,,,0.57,,UNMATCHED,RUPTL-2025-2034,Tabel C4.4
-GI-SLW-0057,Tallasa,150/20,3,110.0,Sulawesi Selatan,Sulselrabar,way/116023446,Gardu Induk Tallasa,-5.4623087,119.4738259,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C4.4
-GI-SLW-0058,Sungguminasa,150/20,2,120.0,Sulawesi Selatan,Sulselrabar,way/116023450,Gardu Induk Sungguminasa,-5.2310143,119.4622946,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C4.4
-GI-SLW-0059,Pare-pare,150/20,3,76.0,Sulawesi Selatan,Sulselrabar,way/257725651,Gardu Induk Parepare,-4.0222747,119.636752,0.94,osm_fuzzy,,RUPTL-2025-2034,Tabel C4.4
-GI-SLW-0060,Barru,150/20,1,20.0,Sulawesi Selatan,Sulselrabar,way/1314037779,Gardu Induk Barru,-4.4066598,119.6259638,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C4.4
-GI-SLW-0061,Bakaru,150/20,1,20.0,Sulawesi Selatan,Sulselrabar,way/399724591,Gardu Induk Bakaru,-3.4746174,119.6493595,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C4.4
-GI-SLW-0062,Pinrang,150/20,3,76.0,Sulawesi Selatan,Sulselrabar,way/1315155366,Gardu Induk Pinrang,-3.7949088,119.6372482,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C4.4
-GI-SLW-0063,Soppeng,150/20,2,90.0,Sulawesi Selatan,Sulselrabar,way/756679753,Gardu Induk Soppeng,-4.3508161,119.9240093,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C4.4
-GI-SLW-0064,Bone/Watampone,150/20,3,80.0,Sulawesi Selatan,Sulselrabar,way/248953893,Gardu Induk Watampone,-4.5164688,120.2729125,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel C4.4
-GI-SLW-0065,Sidrap,150/20,2,50.0,Sulawesi Selatan,Sulselrabar,way/252566435,Gardu Induk Sidrap,-3.9166965,119.7526409,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C4.4
-GI-SLW-0066,Sengkang,150/20,3,110.0,Sulawesi Selatan,Sulselrabar,way/367586568,PLTGU Sengkang,-4.1761207,120.0725884,1.0,override:osm_plant,,RUPTL-2025-2034,Tabel C4.4
-GI-SLW-0067,Bulukumba,150/20,3,110.0,Sulawesi Selatan,Sulselrabar,way/756756918,Gardu Induk Bulukumba,-5.5695689,120.1395388,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C4.4
-GI-SLW-0068,Sinjai,150/20,3,80.0,Sulawesi Selatan,Sulselrabar,way/248953894,Gardu Induk Sinjai,-5.0942472,120.2392205,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C4.4
-GI-SLW-0069,Jeneponto,150/20,2,50.0,Sulawesi Selatan,Sulselrabar,way/229039262,Gardu Induk Jeneponto,-5.6662251,119.783558,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C4.4
-GI-SLW-0070,Bantaeng,150/20,1,30.0,Sulawesi Selatan,Sulselrabar,way/1228891500,Gardu Induk Bantaeng,-5.5308249,119.9372713,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C4.4
-GI-SLW-0071,Palopo,150/20,4,100.0,Sulawesi Selatan,Sulselrabar,way/615581272,Gardu Induk Palopo,-3.0243289,120.1771789,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C4.4
-GI-SLW-0072,Makale,150/20,2,50.0,Sulawesi Selatan,Sulselrabar,way/758790653,Gardu Induk Makale,-3.0721292,119.8951453,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C4.4
-GI-SLW-0073,Punagaya,150/20,1,30.0,Sulawesi Selatan,Sulselrabar,way/905955777,PLTU Jeneponto,-5.6181198,119.5501444,1.0,override:osm_plant,,RUPTL-2025-2034,Tabel C4.4
-GI-SLW-0074,Bolangi,150/20,2,120.0,Sulawesi Selatan,Sulselrabar,way/1155942863,Gardu Induk Bolangi,-5.2043781,119.5322867,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C4.4
-GI-SLW-0075,Wotu,150/20,1,30.0,Sulawesi Selatan,Sulselrabar,way/615581232,Gardu Induk Wotu,-2.552042,120.7918678,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C4.4
-GI-SLW-0076,Siwa,150/20,2,90.0,Sulawesi Selatan,Sulselrabar,way/1004332817,Gardu Induk Siwa,-3.717022,120.3869333,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C4.4
-GI-SLW-0077,Enrekang,150/20,1,30.0,Sulawesi Selatan,Sulselrabar,way/1004332814,Gardu Induk Enrekang,-3.5216346,119.7763181,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C4.4
-GI-SLW-0078,Daya Baru,70/20,1,20.0,Sulawesi Selatan,Sulselrabar,way/1155942862,Gardu Induk Daya Baru,-5.1475962,119.5753482,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C4.4
-GI-SLW-0079,Lanna,150/20,1,30.0,Sulawesi Selatan,Sulselrabar,way/1027126735,Gardu Induk Lanna,-5.2517848,119.6552857,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C4.4
-GI-SLW-0080,Malili,150/20,1,30.0,Sulawesi Selatan,Sulselrabar,way/943189967,Gardu Induk Malili,-2.6449185,121.1298962,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C4.4
-GI-SLW-0081,Tanete,150/20,1,30.0,Sulawesi Selatan,Sulselrabar,way/1312699029,Gardu Induk Tanete,-5.3598758,120.14136,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C4.4
-GI-SLW-0082,Balusu,150/20,1,6.3,Sulawesi Selatan,Sulselrabar,,,,,0.62,,UNMATCHED,RUPTL-2025-2034,Tabel C4.4
-GI-SLW-0083,Belopa,150/20,1,60.0,Sulawesi Selatan,Sulselrabar,,,,,0.55,,UNMATCHED,RUPTL-2025-2034,Tabel C4.4
-GI-SLW-0084,Masamba,150/20,1,30.0,Sulawesi Selatan,Sulselrabar,way/1312470132,Gardu Induk Masamba,-2.5381351,120.3622587,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C4.4
-GI-SLW-0085,Wotu,275/150,2,340.0,Sulawesi Selatan,Sulselrabar,way/615581232,Gardu Induk Wotu,-2.552042,120.7918678,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C4.4
-GI-SLW-0086,Palopo,275/150,4,360.0,Sulawesi Selatan,Sulselrabar,way/615581272,Gardu Induk Palopo,-3.0243289,120.1771789,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C4.4
-GI-SLW-0087,Puuwatu,70/20,3,80.0,Sulawesi Tenggara,Sulselrabar,way/1193198583,Gardu Induk Puuwatu,-3.9567111,122.5059057,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C5.4
-GI-SLW-0088,Nii Tanasa,70/20,1,10.0,Sulawesi Tenggara,Sulselrabar,way/943189957,PLTU Nii Tanasa,-3.8950056,122.5374029,1.0,override:osm_plant,,RUPTL-2025-2034,Tabel C5.4
-GI-SLW-0089,Kendari 150 kV,150/20,2,120.0,Sulawesi Tenggara,Sulselrabar,way/943189956,Gardu Induk New Kendari,-4.0248257,122.4659051,1.0,override:osm_substation,,RUPTL-2025-2034,Tabel C5.4
-GI-SLW-0090,Kolaka,150/20,1,30.0,Sulawesi Tenggara,Sulselrabar,way/943189963,Gardu Induk Kolaka,-4.0729016,121.6376779,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C5.4
-GI-SLW-0091,Lasusua,150/20,1,30.0,Sulawesi Tenggara,Sulselrabar,way/943189959,Gardu Induk Lasusua,-3.5364649,120.9178491,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C5.4
-GI-SLW-0092,Unaaha,150/20,1,30.0,Sulawesi Tenggara,Sulselrabar,way/943189966,Gardu Induk Unaaha,-3.861767,122.0742802,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C5.4
-GI-SLW-0093,Moramo TFT,150/20,1,60.0,Sulawesi Tenggara,Sulselrabar,,,,,0.29,,UNMATCHED,RUPTL-2025-2034,Tabel C5.4
-GI-SLW-0094,Wolo,150/20,1,30.0,Sulawesi Tenggara,Sulselrabar,,,,,0.6,,UNMATCHED,RUPTL-2025-2034,Tabel C5.4
-GI-SLW-0095,Andolo,150/20,1,30.0,Sulawesi Tenggara,Sulselrabar,way/1225042456,Gardu Induk Andolo,-4.3490591,122.2452834,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C5.4
-GI-SLW-0096,Kasi Pute,150/20,1,30.0,Sulawesi Tenggara,Sulselrabar,,,,,0.43,,UNMATCHED,RUPTL-2025-2034,Tabel C5.4
-GI-SLW-0097,Baubau,150/20,1,60.0,Sulawesi Tenggara,Sulselrabar,way/1121250709,Gardu Induk Baubau,-5.4647252,122.6378516,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C5.4
-GI-SLW-0098,Raha,150/20,1,60.0,Sulawesi Tenggara,Sulselrabar,way/1121250708,Gardu Induk Raha,-4.875513,122.7192974,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C5.4
-GI-SLW-0099,PLTMG Baubau,150/20,1,60.0,Sulawesi Tenggara,Sulselrabar,way/1121250709,Gardu Induk Baubau,-5.4647252,122.6378516,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel C5.4
-GI-SLW-0100,Polmas,150/20,2,50.0,Sulawesi Barat,Sulselrabar,way/399724593,Gardu Induk Polmas,-3.4023866,119.3198799,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C6.4
-GI-SLW-0101,Majene,150/20,2,50.0,Sulawesi Barat,Sulselrabar,way/756934978,Gardu Induk Majene,-3.4951672,118.9603512,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C6.4
-GI-SLW-0102,Mamuju,150/20,3,110.0,Sulawesi Barat,Sulselrabar,way/756934983,Gardu Induk Mamuju,-2.6974393,118.8802846,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C6.4
-GI-SLW-0103,Pasangkayu,150/20,1,30.0,Sulawesi Barat,Sulselrabar,way/1003539537,Gardu Induk Pasangkayu,-1.1554347,119.3936205,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C6.4
-GI-SLW-0104,Mamuju Baru,150/20,1,30.0,Sulawesi Barat,Sulselrabar,way/1003491139,Gardu Induk Mamuju Baru,-2.4921005,119.1183122,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C6.4
-GI-SLW-0105,Topoyo,150/20,1,30.0,Sulawesi Barat,Sulselrabar,way/1225158071,Gardu Induk Topoyo,-2.0772272,119.3095688,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C6.4
+GI-SLW-0047,Pangkep,150/70/20,3,80.0,Sulawesi Selatan,Sulselrabar,way/244815736,Gardu Induk Pangkep,-4.801929,119.589277,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C4.4
+GI-SLW-0048,Mandai,70/20,2,40.0,Sulawesi Selatan,Sulselrabar,way/1155942858,Gardu Induk Mandai,-5.0606118,119.5275995,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C4.4
+GI-SLW-0049,Daya,70/20,1,20.0,Sulawesi Selatan,Sulselrabar,way/1155942860,Gardu Induk Daya,-5.1044304,119.5082488,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C4.4
+GI-SLW-0050,Maros,150/20,2,60.0,Sulawesi Selatan,Sulselrabar,way/399505633,Gardu Induk Maros,-4.9304815,119.595475,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C4.4
+GI-SLW-0051,Kima Makassar,150/20,2,90.0,Sulawesi Selatan,Sulselrabar,way/756876724,Gardu Induk KIMA Makassar,-5.0858413,119.4991983,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C4.4
+GI-SLW-0052,Tallo Lama,150/20,3,120.0,Sulawesi Selatan,Sulselrabar,way/258997962,Gardu Induk Tallo Lama,-5.1100362,119.4378194,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C4.4
+GI-SLW-0053,Bontoala,150/70/20,4,160.0,Sulawesi Selatan,Sulselrabar,,,,,0.56,,UNMATCHED,RUPTL-2025-2034,Tabel C4.4
+GI-SLW-0054,Tello,150/20,2,120.0,Sulawesi Selatan,Sulselrabar,way/109924603,PLTU Tello,-5.1473815,119.4719989,1.0,override:osm_plant,,RUPTL-2025-2034,Tabel C4.4
+GI-SLW-0055,Panakkukang,150/70/20,3,180.0,Sulawesi Selatan,Sulselrabar,way/1155942866,Gardu Induk Panakkukang,-5.1641212,119.4463568,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C4.4
+GI-SLW-0056,Tanjung Bunga,150/20,3,180.0,Sulawesi Selatan,Sulselrabar,way/399505626,Gardu Induk Tanjung Bunga,-5.1900981,119.395629,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C4.4
+GI-SLW-0057,Borongloe,70/20,1,20.0,Sulawesi Selatan,Sulselrabar,,,,,0.57,,UNMATCHED,RUPTL-2025-2034,Tabel C4.4
+GI-SLW-0058,Tallasa,150/20,3,110.0,Sulawesi Selatan,Sulselrabar,way/116023446,Gardu Induk Tallasa,-5.4623087,119.4738259,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C4.4
+GI-SLW-0059,Sungguminasa,150/20,2,120.0,Sulawesi Selatan,Sulselrabar,way/116023450,Gardu Induk Sungguminasa,-5.2310143,119.4622946,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C4.4
+GI-SLW-0060,Pare-pare,150/20,3,76.0,Sulawesi Selatan,Sulselrabar,way/257725651,Gardu Induk Parepare,-4.0222747,119.636752,0.94,osm_fuzzy,,RUPTL-2025-2034,Tabel C4.4
+GI-SLW-0061,Barru,150/20,1,20.0,Sulawesi Selatan,Sulselrabar,way/1314037779,Gardu Induk Barru,-4.4066598,119.6259638,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C4.4
+GI-SLW-0062,Bakaru,150/20,1,20.0,Sulawesi Selatan,Sulselrabar,way/399724591,Gardu Induk Bakaru,-3.4746174,119.6493595,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C4.4
+GI-SLW-0063,Pinrang,150/20,3,76.0,Sulawesi Selatan,Sulselrabar,way/1315155366,Gardu Induk Pinrang,-3.7949088,119.6372482,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C4.4
+GI-SLW-0064,Soppeng,150/20,2,90.0,Sulawesi Selatan,Sulselrabar,way/756679753,Gardu Induk Soppeng,-4.3508161,119.9240093,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C4.4
+GI-SLW-0065,Bone/Watampone,150/20,3,80.0,Sulawesi Selatan,Sulselrabar,way/248953893,Gardu Induk Watampone,-4.5164688,120.2729125,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel C4.4
+GI-SLW-0066,Sidrap,150/20,2,50.0,Sulawesi Selatan,Sulselrabar,way/252566435,Gardu Induk Sidrap,-3.9166965,119.7526409,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C4.4
+GI-SLW-0067,Sengkang,150/20,3,110.0,Sulawesi Selatan,Sulselrabar,way/367586568,PLTGU Sengkang,-4.1761207,120.0725884,1.0,override:osm_plant,,RUPTL-2025-2034,Tabel C4.4
+GI-SLW-0068,Bulukumba,150/20,3,110.0,Sulawesi Selatan,Sulselrabar,way/756756918,Gardu Induk Bulukumba,-5.5695689,120.1395388,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C4.4
+GI-SLW-0069,Sinjai,150/20,3,80.0,Sulawesi Selatan,Sulselrabar,way/248953894,Gardu Induk Sinjai,-5.0942472,120.2392205,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C4.4
+GI-SLW-0070,Jeneponto,150/20,2,50.0,Sulawesi Selatan,Sulselrabar,way/229039262,Gardu Induk Jeneponto,-5.6662251,119.783558,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C4.4
+GI-SLW-0071,Bantaeng,150/20,1,30.0,Sulawesi Selatan,Sulselrabar,way/1228891500,Gardu Induk Bantaeng,-5.5308249,119.9372713,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C4.4
+GI-SLW-0072,Palopo,150/20,4,100.0,Sulawesi Selatan,Sulselrabar,way/615581272,Gardu Induk Palopo,-3.0243289,120.1771789,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C4.4
+GI-SLW-0073,Makale,150/20,2,50.0,Sulawesi Selatan,Sulselrabar,way/758790653,Gardu Induk Makale,-3.0721292,119.8951453,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C4.4
+GI-SLW-0074,Punagaya,150/20,1,30.0,Sulawesi Selatan,Sulselrabar,way/905955777,PLTU Jeneponto,-5.6181198,119.5501444,1.0,override:osm_plant,,RUPTL-2025-2034,Tabel C4.4
+GI-SLW-0075,Bolangi,150/20,2,120.0,Sulawesi Selatan,Sulselrabar,way/1155942863,Gardu Induk Bolangi,-5.2043781,119.5322867,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C4.4
+GI-SLW-0076,Wotu,150/20,1,30.0,Sulawesi Selatan,Sulselrabar,way/615581232,Gardu Induk Wotu,-2.552042,120.7918678,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C4.4
+GI-SLW-0077,Siwa,150/20,2,90.0,Sulawesi Selatan,Sulselrabar,way/1004332817,Gardu Induk Siwa,-3.717022,120.3869333,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C4.4
+GI-SLW-0078,Enrekang,150/20,1,30.0,Sulawesi Selatan,Sulselrabar,way/1004332814,Gardu Induk Enrekang,-3.5216346,119.7763181,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C4.4
+GI-SLW-0079,Daya Baru,70/20,1,20.0,Sulawesi Selatan,Sulselrabar,way/1155942862,Gardu Induk Daya Baru,-5.1475962,119.5753482,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C4.4
+GI-SLW-0080,Lanna,150/20,1,30.0,Sulawesi Selatan,Sulselrabar,way/1027126735,Gardu Induk Lanna,-5.2517848,119.6552857,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C4.4
+GI-SLW-0081,Malili,150/20,1,30.0,Sulawesi Selatan,Sulselrabar,way/943189967,Gardu Induk Malili,-2.6449185,121.1298962,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C4.4
+GI-SLW-0082,Tanete,150/20,1,30.0,Sulawesi Selatan,Sulselrabar,way/1312699029,Gardu Induk Tanete,-5.3598758,120.14136,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C4.4
+GI-SLW-0083,Balusu,150/20,1,6.3,Sulawesi Selatan,Sulselrabar,,,,,0.62,,UNMATCHED,RUPTL-2025-2034,Tabel C4.4
+GI-SLW-0084,Belopa,150/20,1,60.0,Sulawesi Selatan,Sulselrabar,,,,,0.55,,UNMATCHED,RUPTL-2025-2034,Tabel C4.4
+GI-SLW-0085,Masamba,150/20,1,30.0,Sulawesi Selatan,Sulselrabar,way/1312470132,Gardu Induk Masamba,-2.5381351,120.3622587,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C4.4
+GI-SLW-0086,Wotu,275/150,2,340.0,Sulawesi Selatan,Sulselrabar,way/615581232,Gardu Induk Wotu,-2.552042,120.7918678,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C4.4
+GI-SLW-0087,Palopo,275/150,4,360.0,Sulawesi Selatan,Sulselrabar,way/615581272,Gardu Induk Palopo,-3.0243289,120.1771789,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C4.4
+GI-SLW-0088,Puuwatu,70/20,3,80.0,Sulawesi Tenggara,Sulselrabar,way/1193198583,Gardu Induk Puuwatu,-3.9567111,122.5059057,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C5.4
+GI-SLW-0089,Nii Tanasa,70/20,1,10.0,Sulawesi Tenggara,Sulselrabar,way/943189957,PLTU Nii Tanasa,-3.8950056,122.5374029,1.0,override:osm_plant,,RUPTL-2025-2034,Tabel C5.4
+GI-SLW-0090,Kendari 150 kV,150/20,2,120.0,Sulawesi Tenggara,Sulselrabar,way/943189956,Gardu Induk New Kendari,-4.0248257,122.4659051,1.0,override:osm_substation,,RUPTL-2025-2034,Tabel C5.4
+GI-SLW-0091,Kolaka,150/20,1,30.0,Sulawesi Tenggara,Sulselrabar,way/943189963,Gardu Induk Kolaka,-4.0729016,121.6376779,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C5.4
+GI-SLW-0092,Lasusua,150/20,1,30.0,Sulawesi Tenggara,Sulselrabar,way/943189959,Gardu Induk Lasusua,-3.5364649,120.9178491,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C5.4
+GI-SLW-0093,Unaaha,150/20,1,30.0,Sulawesi Tenggara,Sulselrabar,way/943189966,Gardu Induk Unaaha,-3.861767,122.0742802,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C5.4
+GI-SLW-0094,Moramo TFT,150/20,1,60.0,Sulawesi Tenggara,Sulselrabar,,,,,0.29,,UNMATCHED,RUPTL-2025-2034,Tabel C5.4
+GI-SLW-0095,Wolo,150/20,1,30.0,Sulawesi Tenggara,Sulselrabar,,,,,0.6,,UNMATCHED,RUPTL-2025-2034,Tabel C5.4
+GI-SLW-0096,Andolo,150/20,1,30.0,Sulawesi Tenggara,Sulselrabar,way/1225042456,Gardu Induk Andolo,-4.3490591,122.2452834,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C5.4
+GI-SLW-0097,Kasi Pute,150/20,1,30.0,Sulawesi Tenggara,Sulselrabar,,,,,0.43,,UNMATCHED,RUPTL-2025-2034,Tabel C5.4
+GI-SLW-0098,Baubau,150/20,1,60.0,Sulawesi Tenggara,Sulselrabar,way/1121250709,Gardu Induk Baubau,-5.4647252,122.6378516,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C5.4
+GI-SLW-0099,Raha,150/20,1,60.0,Sulawesi Tenggara,Sulselrabar,way/1121250708,Gardu Induk Raha,-4.875513,122.7192974,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C5.4
+GI-SLW-0100,PLTMG Baubau,150/20,1,60.0,Sulawesi Tenggara,Sulselrabar,way/1121250709,Gardu Induk Baubau,-5.4647252,122.6378516,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel C5.4
+GI-SLW-0101,Polmas,150/20,2,50.0,Sulawesi Barat,Sulselrabar,way/399724593,Gardu Induk Polmas,-3.4023866,119.3198799,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C6.4
+GI-SLW-0102,Majene,150/20,2,50.0,Sulawesi Barat,Sulselrabar,way/756934978,Gardu Induk Majene,-3.4951672,118.9603512,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C6.4
+GI-SLW-0103,Mamuju,150/20,3,110.0,Sulawesi Barat,Sulselrabar,way/756934983,Gardu Induk Mamuju,-2.6974393,118.8802846,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C6.4
+GI-SLW-0104,Pasangkayu,150/20,1,30.0,Sulawesi Barat,Sulselrabar,way/1003539537,Gardu Induk Pasangkayu,-1.1554347,119.3936205,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C6.4
+GI-SLW-0105,Mamuju Baru,150/20,1,30.0,Sulawesi Barat,Sulselrabar,way/1003491139,Gardu Induk Mamuju Baru,-2.4921005,119.1183122,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C6.4
+GI-SLW-0106,Topoyo,150/20,1,30.0,Sulawesi Barat,Sulselrabar,way/1225158071,Gardu Induk Topoyo,-2.0772272,119.3095688,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C6.4

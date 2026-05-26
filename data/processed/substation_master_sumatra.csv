@@ -64,148 +64,152 @@ GI-SMT-0062,Teluk Dalam,70/20,1,30.0,Sumatera Utara,Sumatra,,,,,0.52,,UNMATCHED,
 GI-SMT-0063,Gunung Sitoli,70/20,2,60.0,Sumatera Utara,Sumatra,way/940597646,Gardu Induk Gunung Sitoli,1.2092485,97.6772842,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A2.4
 GI-SMT-0064,Labuhan Bilik,150/20,1,60.0,Sumatera Utara,Sumatra,way/1314075093,Gardu Induk Labuhan Bilik,2.4544564,100.1625066,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A2.4
 GI-SMT-0065,Tanjung Pura,150/20,1,60.0,Sumatera Utara,Sumatra,way/1190867839,Gardu Induk Tanjung Pura,3.8049564,98.4171886,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A2.4
-GI-SMT-0066,Negeri Dolok,150/20,2,60.0,Sumatera Utara,Sumatra,way/1190856217,Gardu Induk Negeri Dolok,3.1614239,98.8407585,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A2.4
-GI-SMT-0067,Selayang,150/20,1,60.0,Sumatera Utara,Sumatra,way/1223005210,Gardu Induk Selayang,3.4982668,98.5914883,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A2.4
-GI-SMT-0068,Sarula,150/20,1,30.0,Sumatera Utara,Sumatra,way/721674155,Gardu Induk Sarulla,1.8284304,99.0754439,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel A2.4
-GI-SMT-0069,Tanjung Balai,150/20,1,60.0,Sumatera Utara,Sumatra,way/1274583183,Gardu Induk Tanjung Balai,2.9543127,99.7781136,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A2.4
-GI-SMT-0070,Sibuhuan,150/20,1,60.0,Sumatera Utara,Sumatra,way/1191243018,Gardu Induk Sibuhuan,1.0824778,99.7552934,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A2.4
-GI-SMT-0071,New Padang Sidempuan,150/20,1,30.0,Sumatera Utara,Sumatra,way/469888044,Gardu Induk Padang Sidempuan,1.3388358,99.3003159,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel A2.4
-GI-SMT-0072,Belawan,150/20,1,60.0,Sumatera Utara,Sumatra,way/277183762,PLTGU Belawan,3.7724229,98.668286,1.0,override:osm_plant,,RUPTL-2025-2034,Tabel A2.4
-GI-SMT-0073,Tanah Jawa,150/20,1,60.0,Sumatera Utara,Sumatra,way/1190856219,Gardu Induk Tanah Jawa,2.8007217,99.1709966,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A2.4
-GI-SMT-0074,Koto Panjang,150/20,2,90.0,Riau,Sumatra,way/540716518,Gardu Induk Koto Panjang,0.2946716,100.8810085,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A3.4
-GI-SMT-0075,Bangkinang,150/20,2,90.0,Riau,Sumatra,way/625300177,Gardu Induk Bangkinang,0.3286425,101.0330213,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A3.4
-GI-SMT-0076,Garuda Sakti,150/20,4,240.0,Riau,Sumatra,way/625279426,Gardu Induk Garuda Sakti,0.4969226,101.3548907,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A3.4
-GI-SMT-0077,Teluk Lembu,150/20,3,180.0,Riau,Sumatra,way/465906681,Gardu Induk Teluk Lembu,0.5471696,101.4623353,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A3.4
-GI-SMT-0078,Pasir Pangaraian,150/20,2,90.0,Riau,Sumatra,way/1314001760,Gardu Induk Pasir Pangaraian,0.9235946,100.3360878,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A3.4
-GI-SMT-0079,Duri,150/20,2,120.0,Riau,Sumatra,way/939125634,Gardu Induk Duri,1.3648243,101.1299322,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A3.4
-GI-SMT-0080,Dumai,150/20,3,150.0,Riau,Sumatra,way/939125633,Gardu Induk Dumai,1.6892519,101.4121396,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A3.4
-GI-SMT-0081,Bagan Batu,150/20,3,100.0,Riau,Sumatra,way/755006489,Gardu Induk Bagan Batu,1.6656934,100.4481109,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A3.4
-GI-SMT-0082,Balai Pungut,150/20,2,90.0,Riau,Sumatra,way/939125619,Gardu Induk Balai Pungut,1.0744221,101.2801514,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A3.4
-GI-SMT-0083,KID,150/20,1,30.0,Riau,Sumatra,way/947860177,Gardu Induk Kawasan Industri Dumai,1.6359416,101.6151555,1.0,override:osm_substation,,RUPTL-2025-2034,Tabel A3.4
-GI-SMT-0084,Teluk Kuantan,150/20,2,90.0,Riau,Sumatra,way/930242870,Gardu Induk Teluk Kuantan,-0.5237208,101.5406469,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A3.4
-GI-SMT-0085,Pasir Putih,150/20,3,120.0,Riau,Sumatra,way/736599655,Gardu Induk Pasir Putih,0.4095641,101.5231016,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A3.4
-GI-SMT-0086,New Garuda Sakti,150/20,1,60.0,Riau,Sumatra,way/928928136,Gardu Induk New Garuda Sakti,0.5927925,101.4217123,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A3.4
-GI-SMT-0087,Pangkalan Kerinci,150/20,2,90.0,Riau,Sumatra,way/928928139,Gardu Induk Pangkalan Kerinci,0.3946519,101.8158597,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A3.4
-GI-SMT-0088,Perawang,150/20,1,60.0,Riau,Sumatra,way/736595653,Gardu Induk Perawang,0.6596896,101.5485408,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A3.4
-GI-SMT-0089,Rengat,150/20,2,90.0,Riau,Sumatra,way/939542520,Gardu Induk Rengat,-0.4608264,102.4399642,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A3.4
-GI-SMT-0090,Tenayan,150/20,1,30.0,Riau,Sumatra,way/528916594,PLTU Tenayan Raya,0.5636818,101.5233476,1.0,override:osm_plant,,RUPTL-2025-2034,Tabel A3.4
-GI-SMT-0091,Bagan Siapi-Api,150/20,1,30.0,Riau,Sumatra,way/1312413169,Gardu Induk Bagan Siapiapi,2.066966,100.8623791,0.97,osm_fuzzy,,RUPTL-2025-2034,Tabel A3.4
-GI-SMT-0092,GIS Kota Pekanbaru,150/20,2,120.0,Riau,Sumatra,way/1314000777,GIS Pekanbaru,0.502374,101.4107207,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel A3.4
-GI-SMT-0093,Tembilahan,150/20,1,60.0,Riau,Sumatra,way/939542518,Gardu Induk Tembilahan,-0.273221,103.180128,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A3.4
-GI-SMT-0094,Siak Sri Indra Pura,150/20,1,60.0,Riau,Sumatra,way/1314000786,Gardu Induk Siak Sri Indrapura,0.7831296,101.9959545,0.97,osm_fuzzy,,RUPTL-2025-2034,Tabel A3.4
-GI-SMT-0095,Ngenang,150/20,1,10.0,Kepulauan Riau,Batam,way/706965637,Landing Point Pulau Ngenang,1.0200009,104.1821734,0.95,osm_fuzzy,,RUPTL-2025-2034,Tabel A4.4
-GI-SMT-0096,Tanjung Uban,150/20,2,60.0,Kepulauan Riau,Batam,way/948167522,Gardu Induk Tanjung Uban,1.0637445,104.2372231,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A4.4
-GI-SMT-0097,Sri Bintan,150/20,2,60.0,Kepulauan Riau,Batam,way/706956290,Gardu Induk Sri Bintan,1.1071529,104.3639073,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A4.4
-GI-SMT-0098,Air Raja,150/20,2,120.0,Kepulauan Riau,Batam,way/706956296,Gardu Induk Air Raja,0.9456262,104.5165135,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A4.4
-GI-SMT-0099,Kijang,150/20,2,60.0,Kepulauan Riau,Batam,way/706956292,Gardu Induk Kijang,0.8811701,104.6036946,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A4.4
-GI-SMT-0100,Pangkalpinang (GI Kampak),150/20,2,120.0,Kepulauan Bangka Belitung,Babel,way/620166583,Gardu Induk Kampak,-2.1022794,106.0903027,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel A5.4
-GI-SMT-0101,Sungailiat,150/20,2,90.0,Kepulauan Bangka Belitung,Babel,way/928776913,Gardu Induk Sungailiat,-1.9015194,106.1008796,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A5.4
-GI-SMT-0102,Air Anyir,150/20,2,120.0,Kepulauan Bangka Belitung,Babel,way/543959909,PLTU Air Anyir,-2.0775568,106.1496436,1.0,override:osm_plant,,RUPTL-2025-2034,Tabel A5.4
-GI-SMT-0103,Kelapa,150/20,1,30.0,Kepulauan Bangka Belitung,Babel,way/928776916,Gardu Induk Kelapa,-1.871924,105.6564279,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A5.4
-GI-SMT-0104,Muntok,150/20,1,60.0,Kepulauan Bangka Belitung,Babel,way/928776914,Gardu Induk Muntok,-2.0335775,105.1747391,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A5.4
-GI-SMT-0105,Koba,150/20,1,30.0,Kepulauan Bangka Belitung,Babel,way/928791943,Gardu Induk Koba,-2.5007033,106.4008101,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A5.4
-GI-SMT-0106,Toboali,150/20,1,60.0,Kepulauan Bangka Belitung,Babel,way/928791944,Gardu Induk Toboali,-3.0113112,106.5073472,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A5.4
-GI-SMT-0107,Dukong,70/20,2,60.0,Kepulauan Bangka Belitung,Babel,,,,,0.4,,UNMATCHED,RUPTL-2025-2034,Tabel A5.4
-GI-SMT-0108,Suge (GI Pembangkit),70/20,3,90.0,Kepulauan Bangka Belitung,Babel,way/953023896,PLTU Suge,-2.8929037,107.5637904,1.0,override:osm_plant,,RUPTL-2025-2034,Tabel A5.4
-GI-SMT-0109,Manggar,70/20,1,30.0,Kepulauan Bangka Belitung,Babel,way/953023895,Gardu Induk Manggar,-2.8676044,108.252592,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A5.4
-GI-SMT-0110,PIP,150/20,3,120.0,Sumatera Barat,Sumatra,way/930242899,Gardu Induk PIP,-0.7823331,100.3226356,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A6.4
-GI-SMT-0111,Pauh Limo,150/20,2,120.0,Sumatera Barat,Sumatra,way/473523397,Gardu Induk Pauh Limo,-0.9337503,100.4328692,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A6.4
-GI-SMT-0112,Simpang Haru,150/20,3,144.0,Sumatera Barat,Sumatra,,,,,0.72,,UNMATCHED,RUPTL-2025-2034,Tabel A6.4
-GI-SMT-0113,Lubuk Alung,150/20,2,90.0,Sumatera Barat,Sumatra,way/930242898,Gardu Induk Lubuk Alung,-0.6826315,100.2767726,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A6.4
-GI-SMT-0114,Maninjau,150/20,2,80.0,Sumatera Barat,Sumatra,way/930242896,PLTA Maninjau,-0.3107109,100.1166728,1.0,override:osm_plant,,RUPTL-2025-2034,Tabel A6.4
-GI-SMT-0115,Padang Luar,150/20,2,90.0,Sumatera Barat,Sumatra,way/928928123,Gardu Induk Padang Luar,-0.3440073,100.3783196,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A6.4
-GI-SMT-0116,Simpang Empat,150/20,3,80.0,Sumatera Barat,Sumatra,way/196526544,Gardu Induk Simpang Empat,0.0777491,99.8279384,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A6.4
-GI-SMT-0117,Padang Panjang,150/20,2,70.0,Sumatera Barat,Sumatra,way/930242888,Gardu Induk Padang Panjang,-0.4508022,100.3991215,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A6.4
-GI-SMT-0118,Solok,150/20,2,80.0,Sumatera Barat,Sumatra,way/930242875,Gardu Induk Solok,-0.7933948,100.6320633,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A6.4
-GI-SMT-0119,Salak,150/20,2,80.0,Sumatera Barat,Sumatra,way/930242871,Gardu Induk Salak,-0.6209447,100.7694487,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A6.4
-GI-SMT-0120,Kiliranjao,150/20,3,110.0,Sumatera Barat,Sumatra,,,,,0.45,,UNMATCHED,RUPTL-2025-2034,Tabel A6.4
-GI-SMT-0121,Payakumbuh,150/20,2,90.0,Sumatera Barat,Sumatra,way/928928132,Gardu Induk Payakumbuh,-0.2532212,100.642375,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A6.4
-GI-SMT-0122,Batu Sangkar,150/20,2,50.0,Sumatera Barat,Sumatra,way/930242891,Gardu Induk Batusangkar,-0.4038046,100.5721602,0.96,osm_fuzzy,,RUPTL-2025-2034,Tabel A6.4
-GI-SMT-0123,Bungus,150/20,2,60.0,Sumatera Barat,Sumatra,way/450722292,Gardu Induk Bungus,-1.0293729,100.4159229,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A6.4
-GI-SMT-0124,Pariaman,150/20,2,60.0,Sumatera Barat,Sumatra,way/930242894,Gardu Induk Pariaman,-0.6260084,100.1596056,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A6.4
-GI-SMT-0125,Kambang,150/20,2,90.0,Sumatera Barat,Sumatra,way/930242879,Gardu Induk Kambang,-1.6606422,100.6924895,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A6.4
-GI-SMT-0126,S. Rumbai,150/20,1,30.0,Sumatera Barat,Sumatra,way/1312287191,Gardu Induk Sungai Rumbai,-1.2157395,101.7114612,1.0,override:osm_substation,,RUPTL-2025-2034,Tabel A6.4
-GI-SMT-0127,Muaralabuh,150/20,1,30.0,Sumatera Barat,Sumatra,way/1312349205,PLTP Muara Laboh,-1.6013056,101.146979,1.0,override:osm_plant,,RUPTL-2025-2034,Tabel A6.4
-GI-SMT-0128,Pasaman,150/20,1,60.0,Sumatera Barat,Sumatra,way/1191242851,Gardu Induk Pasaman,0.2820345,100.1031303,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A6.4
-GI-SMT-0129,Tapan,150/20,1,30.0,Sumatera Barat,Sumatra,way/1278388652,Gardu Induk Tapan,-2.1304584,101.0794229,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A6.4
-GI-SMT-0130,Aur Duri,150/20,3,150.0,Jambi,Sumatra,way/943539373,GITET Aur Duri Baru,-1.6898014,103.54202,0.95,osm_fuzzy,,RUPTL-2025-2034,Tabel A7.4
-GI-SMT-0131,Payo Selincah,150/20,2,120.0,Jambi,Sumatra,,,,,0.46,,UNMATCHED,RUPTL-2025-2034,Tabel A7.4
-GI-SMT-0132,Muara Bulian,150/20,2,90.0,Jambi,Sumatra,way/624460456,Gardu Induk Muara Bulian,-1.7269425,103.1501248,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A7.4
-GI-SMT-0133,Sungai Gelam,150/20,2,90.0,Jambi,Sumatra,,,,,0.76,,UNMATCHED,RUPTL-2025-2034,Tabel A7.4
-GI-SMT-0134,Muara Sabak,150/20,2,90.0,Jambi,Sumatra,way/623182765,Gardu Induk Muara Sabak,-1.2556161,103.7701526,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A7.4
-GI-SMT-0135,Sarolangun,150/20,1,30.0,Jambi,Sumatra,way/930719083,Gardu Induk Sarolangun,-2.32879,102.7461496,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A7.4
-GI-SMT-0136,New Aurduri,150/20,1,60.0,Jambi,Sumatra,way/623185705,Gardu Induk Aurduri,-1.6036804,103.5433813,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel A7.4
-GI-SMT-0137,Muara Bungo,150/20,3,150.0,Jambi,Sumatra,way/930719092,GITET Muaro Bungo,-1.4318772,102.1026809,0.91,osm_fuzzy,,RUPTL-2025-2034,Tabel A7.4
-GI-SMT-0138,Bangko,150/20,2,90.0,Jambi,Sumatra,way/841499143,GITET Bangko,-2.0437664,102.2754957,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A7.4
-GI-SMT-0139,Muara Tebo,150/20,1,60.0,Jambi,Sumatra,,,,,0.67,,UNMATCHED,RUPTL-2025-2034,Tabel A7.4
-GI-SMT-0140,Sungai Penuh,150/20,2,60.0,Jambi,Sumatra,,,,,0.67,,UNMATCHED,RUPTL-2025-2034,Tabel A7.4
-GI-SMT-0141,Kuala Tungkal,150/20,1,30.0,Jambi,Sumatra,way/939542524,Gardu Induk Kuala Tungkal,-0.9086439,103.3896976,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A7.4
-GI-SMT-0142,Bungaran,70/20,2,60.0,Sumatera Selatan,Sumatra,way/940047530,Gardu Induk Bungaran,-3.0041652,104.7703732,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A8.4
-GI-SMT-0143,Sungai Kedukan,70/20,2,45.0,Sumatera Selatan,Sumatra,way/610136436,Gardu Induk Sungai Kedukan,-3.0174425,104.8336378,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A8.4
-GI-SMT-0144,Mariana,150/20,2,90.0,Sumatera Selatan,Sumatra,way/610136435,Gardu Induk Mariana,-2.9494665,104.8962735,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A8.4
-GI-SMT-0145,New Jakabaring,150/20,2,120.0,Sumatera Selatan,Sumatra,way/610136448,Gardu Induk Jakabaring,-3.0306568,104.7924551,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel A8.4
-GI-SMT-0146,Kayu Agung,150/20,1,60.0,Sumatera Selatan,Sumatra,way/940299189,Gardu Induk Kayu Agung,-3.3914683,104.8641504,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A8.4
-GI-SMT-0147,Bukit Siguntang,70/20,3,90.0,Sumatera Selatan,Sumatra,way/940047521,Gardu Induk Bukit Siguntang,-3.0040518,104.7331949,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A8.4
-GI-SMT-0148,Boom Baru,70/20,2,60.0,Sumatera Selatan,Sumatra,way/940047532,Gardu Induk Boom Baru,-2.9758783,104.7811804,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A8.4
-GI-SMT-0149,Sungai Juaro,70/20,2,50.0,Sumatera Selatan,Sumatra,way/940047526,Gardu Induk Sungai Juaro,-2.9682375,104.8092793,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A8.4
-GI-SMT-0150,Talang Ratu,70/20,2,40.0,Sumatera Selatan,Sumatra,way/940047539,Gardu Induk Talang Ratu,-2.9516876,104.7313099,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A8.4
-GI-SMT-0151,Seduduk Putih,70/20,2,60.0,Sumatera Selatan,Sumatra,way/940047537,Gardu Induk Seduduk Putih,-2.9473857,104.7669299,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A8.4
-GI-SMT-0152,GIS Kota Barat,150/20,2,120.0,Sumatera Selatan,Sumatra,,,,,0.57,,UNMATCHED,RUPTL-2025-2034,Tabel A8.4
-GI-SMT-0153,GIS Kota Timur,150/20,2,120.0,Sumatera Selatan,Sumatra,,,,,0.48,,UNMATCHED,RUPTL-2025-2034,Tabel A8.4
-GI-SMT-0154,Borang,150/20,2,90.0,Sumatera Selatan,Sumatra,way/610136434,Gardu Induk Borang,-2.9242807,104.8715414,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A8.4
-GI-SMT-0155,Talang Kelapa,150/20,2,120.0,Sumatera Selatan,Sumatra,way/610168631,Gardu Induk Talang Kelapa,-2.9279317,104.6470298,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A8.4
-GI-SMT-0156,Betung,150/20,2,120.0,Sumatera Selatan,Sumatra,way/610198177,GITET Betung,-2.8436404,104.1816987,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A8.4
-GI-SMT-0157,Tanjung Api-api,150/20,1,30.0,Sumatera Selatan,Sumatra,way/610168613,Gardu Induk Tanjung Api-Api,-2.4274263,104.8179442,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A8.4
-GI-SMT-0158,Sungai Lilin,150/20,1,30.0,Sumatera Selatan,Sumatra,way/753733608,GITET Sungai Lilin,-2.4246045,103.9283614,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A8.4
-GI-SMT-0159,Gandus,150/20,2,120.0,Sumatera Selatan,Sumatra,way/558191050,Gardu Induk Gandus,-2.9756639,104.6947222,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A8.4
-GI-SMT-0160,Sekayu,150/20,1,30.0,Sumatera Selatan,Sumatra,way/946191121,Gardu Induk Sekayu,-2.8493671,103.8494357,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A8.4
-GI-SMT-0161,Kenten,150/20,2,120.0,Sumatera Selatan,Sumatra,way/610168632,Gardu Induk Kenten,-2.8838557,104.7387382,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A8.4
-GI-SMT-0162,Prabumulih,150/20,3,150.0,Sumatera Selatan,Sumatra,way/662978700,Gardu Induk Prabumulih,-3.4440345,104.243254,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A8.4
-GI-SMT-0163,Gunung Megang,150/20,2,90.0,Sumatera Selatan,Sumatra,,,,,0.57,,UNMATCHED,RUPTL-2025-2034,Tabel A8.4
-GI-SMT-0164,Simpang Tiga,150/20,3,180.0,Sumatera Selatan,Sumatra,,,,,0.56,,UNMATCHED,RUPTL-2025-2034,Tabel A8.4
-GI-SMT-0165,Lubuk Linggau,150/20,3,150.0,Sumatera Selatan,Sumatra,way/528189342,GITET Lubuk Linggau,-3.2394246,102.8558895,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A8.4
-GI-SMT-0166,Gumawang,150/20,3,120.0,Sumatera Selatan,Sumatra,way/931931121,GITET Gumawang,-4.053895,104.7833284,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A8.4
-GI-SMT-0167,Lahat,150/20,2,90.0,Sumatera Selatan,Sumatra,way/527900241,GITET Lahat,-3.7689918,103.510205,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A8.4
-GI-SMT-0168,Bukit Asam,150/20,2,120.0,Sumatera Selatan,Sumatra,way/719550864,PLTU Bukit Asam,-3.7314036,103.797662,1.0,override:osm_plant,,RUPTL-2025-2034,Tabel A8.4
-GI-SMT-0169,Baturaja,150/20,3,180.0,Sumatera Selatan,Sumatra,way/753522706,Gardu Induk Baturaja,-4.106283,104.1696073,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A8.4
-GI-SMT-0170,Martapura,150/20,1,60.0,Sumatera Selatan,Sumatra,way/931931129,Gardu Induk Martapura,-4.3787828,104.3581621,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A8.4
-GI-SMT-0171,Muara Dua,150/20,1,60.0,Sumatera Selatan,Sumatra,way/931931135,Gardu Induk Muaradua,-4.5884308,104.0564494,0.94,osm_fuzzy,,RUPTL-2025-2034,Tabel A8.4
-GI-SMT-0172,Lumut Balai,150/20,1,60.0,Sumatera Selatan,Sumatra,way/931931133,GITET Lumut Balai,-4.0399623,103.6060835,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A8.4
-GI-SMT-0173,Pagar Alam,150/20,3,105.0,Sumatera Selatan,Sumatra,way/956594064,Gardu Induk Pagar Alam,-3.9806403,103.225234,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A8.4
-GI-SMT-0174,Pendopo,150/20,1,60.0,Sumatera Selatan,Sumatra,way/1314442987,Gardu Induk Pendopo,-3.4356952,103.9787457,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A8.4
-GI-SMT-0175,Tebing Tinggi,150/20,1,30.0,Sumatera Selatan,Sumatra,way/1228701035,Gardu Induk Tebing Tinggi,-3.5489062,103.0785316,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A8.4
-GI-SMT-0176,Sukamerindu,70/20,3,120.0,Bengkulu,Sumatra,way/956594056,Gardu Induk Sukamerindu,-3.7878141,102.2694393,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A9.4
-GI-SMT-0177,Tes,70/20,1,30.0,Bengkulu,Sumatra,way/956594058,PLTA Tes,-3.2067037,102.3181629,1.0,override:osm_plant,,RUPTL-2025-2034,Tabel A9.4
-GI-SMT-0178,Manna,150/20,2,60.0,Bengkulu,Sumatra,way/956594063,Gardu Induk Manna,-4.4136571,102.9334228,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A9.4
-GI-SMT-0179,P. Baai,150/20,2,120.0,Bengkulu,Sumatra,way/930719090,Gardu Induk Pulau Baai,-3.8383227,102.3651043,1.0,override:osm_substation,,RUPTL-2025-2034,Tabel A9.4
-GI-SMT-0180,Muko - muko,150/20,1,60.0,Bengkulu,Sumatra,,,,,0.48,,UNMATCHED,RUPTL-2025-2034,Tabel A9.4
-GI-SMT-0181,Argamakmur,150/20,1,60.0,Bengkulu,Sumatra,way/1311638728,Gardu Induk Argamakmur,-3.4923529,102.1024556,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A9.4
-GI-SMT-0182,Tarahan,150/20,2,90.0,Lampung,Sumatra,way/557586719,Gardu Induk Tarahan,-5.518204,105.3501629,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A10.4
-GI-SMT-0183,Teluk Betung,150/20,3,180.0,Lampung,Sumatra,way/931931127,Gardu Induk Teluk Betung,-5.4396945,105.2536839,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A10.4
-GI-SMT-0184,Sutami,150/20,2,90.0,Lampung,Sumatra,way/557549676,Gardu Induk Sutami,-5.3905409,105.3771396,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A10.4
-GI-SMT-0185,Kalianda,150/20,2,90.0,Lampung,Sumatra,way/556355551,Gardu Induk Kalianda,-5.7233666,105.6264317,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A10.4
-GI-SMT-0186,New Tarahan,150/20,2,90.0,Lampung,Sumatra,way/557586719,Gardu Induk Tarahan,-5.518204,105.3501629,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel A10.4
-GI-SMT-0187,Sukarame,150/20,2,120.0,Lampung,Sumatra,way/405026507,Gardu Induk Sukarame,-5.3622699,105.3057012,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A10.4
-GI-SMT-0188,Adijaya,150/20,2,90.0,Lampung,Sumatra,way/931931110,Gardu Induk Adijaya,-4.9378365,105.1887945,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A10.4
-GI-SMT-0189,Tegineneng,150/20,3,150.0,Lampung,Sumatra,way/931931105,Gardu Induk Tegineneng,-5.1846139,105.1740647,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A10.4
-GI-SMT-0190,Natar,150/20,3,150.0,Lampung,Sumatra,way/931931126,Gardu Induk Natar,-5.3349265,105.2052931,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A10.4
-GI-SMT-0191,Sribawono,150/20,2,90.0,Lampung,Sumatra,way/662978701,Gardu Induk Sribawono,-5.3122098,105.7148534,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A10.4
-GI-SMT-0192,Metro,150/20,2,120.0,Lampung,Sumatra,way/931931112,Gardu Induk Metro,-5.1495333,105.3262648,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A10.4
-GI-SMT-0193,Seputih Banyak,150/20,3,150.0,Lampung,Sumatra,way/557379214,Gardu Induk Seputih Banyak,-4.8834927,105.5083106,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A10.4
-GI-SMT-0194,Pagelaran,150/20,2,120.0,Lampung,Sumatra,way/931931158,Gardu Induk Pagelaran,-5.3694267,104.930845,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A10.4
-GI-SMT-0195,Ulubelu,150/20,1,30.0,Lampung,Sumatra,way/531143189,PLTP Ulubelu,-5.3076656,104.5748938,1.0,override:osm_plant,,RUPTL-2025-2034,Tabel A10.4
-GI-SMT-0196,Kota Agung,150/20,2,90.0,Lampung,Sumatra,way/931931153,Gardu Induk Kota Agung,-5.4986261,104.6548189,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A10.4
-GI-SMT-0197,Kotabumi,150/20,2,120.0,Lampung,Sumatra,way/931931113,Gardu Induk Kotabumi,-4.8514328,104.8629022,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A10.4
-GI-SMT-0198,Menggala,150/20,3,150.0,Lampung,Sumatra,way/931931128,Gardu Induk Menggala,-4.5099406,105.2009412,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A10.4
-GI-SMT-0199,Bukit Kemuning,150/20,2,90.0,Lampung,Sumatra,way/931931107,Gardu Induk Bukit Kemuning,-4.8318679,104.5764635,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A10.4
-GI-SMT-0200,Liwa,150/20,2,60.0,Lampung,Sumatra,way/654007323,Gardu Induk Liwa,-5.0186419,104.1665,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A10.4
-GI-SMT-0201,Mesuji,150/20,1,60.0,Lampung,Sumatra,way/931931119,Gardu Induk Mesuji,-4.019877,105.2637472,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A10.4
-GI-SMT-0202,Blambangan Umpu,150/20,2,90.0,Lampung,Sumatra,way/931931130,Gardu Induk Blambangan Umpu,-4.5831222,104.4953115,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A10.4
-GI-SMT-0203,Ketapang,150/20,1,60.0,Lampung,Sumatra,way/957141002,Gardu Induk Ketapang,-5.7277002,105.7812429,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A10.4
-GI-SMT-0204,Jati Agung,150/20,1,60.0,Lampung,Sumatra,way/931931159,Gardu Induk Jati Agung,-5.3079341,105.3819483,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A10.4
-GI-SMT-0205,Langka Pura,150/20,1,60.0,Lampung,Sumatra,way/1311677134,Gardu Induk Langkapura,-5.4078051,105.1938182,0.95,osm_fuzzy,,RUPTL-2025-2034,Tabel A10.4
-GI-SMT-0206,Pakuan Ratu,150/20,1,60.0,Lampung,Sumatra,,,,,0.53,,UNMATCHED,RUPTL-2025-2034,Tabel A10.4
-GI-SMT-0207,Dipasena,150/20,1,60.0,Lampung,Sumatra,,,,,0.53,,UNMATCHED,RUPTL-2025-2034,Tabel A10.4
-GI-SMT-0208,Dente Teladas,150/20,1,60.0,Lampung,Sumatra,way/1311774299,Gardu Induk Dente Teladas,-4.4690161,105.8181533,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A10.4
-GI-SMT-0209,Sidomulyo,150/20,1,60.0,Lampung,Sumatra,way/1314409722,Gardu Induk Sidomulyo,-5.5825911,105.494484,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A10.4
-GI-SMT-0210,Gedong Tataan,150/20,1,60.0,Lampung,Sumatra,way/1311677143,Gardu Induk Gedong Tataan,-5.4009664,105.0620265,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A10.4
+GI-SMT-0066,Sorik Merapi,150/20,0,,Sumatera Utara,Sumatra,,,,,0.52,,UNMATCHED,RUPTL-2025-2034,Tabel A2.4
+GI-SMT-0067,Negeri Dolok,150/20,2,60.0,Sumatera Utara,Sumatra,way/1190856217,Gardu Induk Negeri Dolok,3.1614239,98.8407585,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A2.4
+GI-SMT-0068,Selayang,150/20,1,60.0,Sumatera Utara,Sumatra,way/1223005210,Gardu Induk Selayang,3.4982668,98.5914883,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A2.4
+GI-SMT-0069,Sarula,150/20,1,30.0,Sumatera Utara,Sumatra,way/721674155,Gardu Induk Sarulla,1.8284304,99.0754439,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel A2.4
+GI-SMT-0070,Tanjung Balai,150/20,1,60.0,Sumatera Utara,Sumatra,way/1274583183,Gardu Induk Tanjung Balai,2.9543127,99.7781136,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A2.4
+GI-SMT-0071,Sibuhuan,150/20,1,60.0,Sumatera Utara,Sumatra,way/1191243018,Gardu Induk Sibuhuan,1.0824778,99.7552934,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A2.4
+GI-SMT-0072,New Padang Sidempuan,150/20,1,30.0,Sumatera Utara,Sumatra,way/469888044,Gardu Induk Padang Sidempuan,1.3388358,99.3003159,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel A2.4
+GI-SMT-0073,Belawan,150/20,1,60.0,Sumatera Utara,Sumatra,way/277183762,PLTGU Belawan,3.7724229,98.668286,1.0,override:osm_plant,,RUPTL-2025-2034,Tabel A2.4
+GI-SMT-0074,Tanah Jawa,150/20,1,60.0,Sumatera Utara,Sumatra,way/1190856219,Gardu Induk Tanah Jawa,2.8007217,99.1709966,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A2.4
+GI-SMT-0075,Koto Panjang,150/20,2,90.0,Riau,Sumatra,way/540716518,Gardu Induk Koto Panjang,0.2946716,100.8810085,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A3.4
+GI-SMT-0076,Bangkinang,150/20,2,90.0,Riau,Sumatra,way/625300177,Gardu Induk Bangkinang,0.3286425,101.0330213,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A3.4
+GI-SMT-0077,Garuda Sakti,150/20,4,240.0,Riau,Sumatra,way/625279426,Gardu Induk Garuda Sakti,0.4969226,101.3548907,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A3.4
+GI-SMT-0078,Teluk Lembu,150/20,3,180.0,Riau,Sumatra,way/465906681,Gardu Induk Teluk Lembu,0.5471696,101.4623353,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A3.4
+GI-SMT-0079,Pasir Pangaraian,150/20,2,90.0,Riau,Sumatra,way/1314001760,Gardu Induk Pasir Pangaraian,0.9235946,100.3360878,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A3.4
+GI-SMT-0080,Duri,150/20,2,120.0,Riau,Sumatra,way/939125634,Gardu Induk Duri,1.3648243,101.1299322,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A3.4
+GI-SMT-0081,Dumai,150/20,3,150.0,Riau,Sumatra,way/939125633,Gardu Induk Dumai,1.6892519,101.4121396,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A3.4
+GI-SMT-0082,Bagan Batu,150/20,3,100.0,Riau,Sumatra,way/755006489,Gardu Induk Bagan Batu,1.6656934,100.4481109,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A3.4
+GI-SMT-0083,Balai Pungut,150/20,2,90.0,Riau,Sumatra,way/939125619,Gardu Induk Balai Pungut,1.0744221,101.2801514,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A3.4
+GI-SMT-0084,KID,150/20,1,30.0,Riau,Sumatra,way/947860177,Gardu Induk Kawasan Industri Dumai,1.6359416,101.6151555,1.0,override:osm_substation,,RUPTL-2025-2034,Tabel A3.4
+GI-SMT-0085,Teluk Kuantan,150/20,2,90.0,Riau,Sumatra,way/930242870,Gardu Induk Teluk Kuantan,-0.5237208,101.5406469,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A3.4
+GI-SMT-0086,Pasir Putih,150/20,3,120.0,Riau,Sumatra,way/736599655,Gardu Induk Pasir Putih,0.4095641,101.5231016,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A3.4
+GI-SMT-0087,New Garuda Sakti,150/20,1,60.0,Riau,Sumatra,way/928928136,Gardu Induk New Garuda Sakti,0.5927925,101.4217123,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A3.4
+GI-SMT-0088,Pangkalan Kerinci,150/20,2,90.0,Riau,Sumatra,way/928928139,Gardu Induk Pangkalan Kerinci,0.3946519,101.8158597,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A3.4
+GI-SMT-0089,Perawang,150/20,1,60.0,Riau,Sumatra,way/736595653,Gardu Induk Perawang,0.6596896,101.5485408,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A3.4
+GI-SMT-0090,Rengat,150/20,2,90.0,Riau,Sumatra,way/939542520,Gardu Induk Rengat,-0.4608264,102.4399642,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A3.4
+GI-SMT-0091,Tenayan,150/20,1,30.0,Riau,Sumatra,way/528916594,PLTU Tenayan Raya,0.5636818,101.5233476,1.0,override:osm_plant,,RUPTL-2025-2034,Tabel A3.4
+GI-SMT-0092,Bagan Siapi-Api,150/20,1,30.0,Riau,Sumatra,way/1312413169,Gardu Induk Bagan Siapiapi,2.066966,100.8623791,0.97,osm_fuzzy,,RUPTL-2025-2034,Tabel A3.4
+GI-SMT-0093,GIS Kota Pekanbaru,150/20,2,120.0,Riau,Sumatra,way/1314000777,GIS Pekanbaru,0.502374,101.4107207,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel A3.4
+GI-SMT-0094,Tembilahan,150/20,1,60.0,Riau,Sumatra,way/939542518,Gardu Induk Tembilahan,-0.273221,103.180128,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A3.4
+GI-SMT-0095,Siak Sri Indra Pura,150/20,1,60.0,Riau,Sumatra,way/1314000786,Gardu Induk Siak Sri Indrapura,0.7831296,101.9959545,0.97,osm_fuzzy,,RUPTL-2025-2034,Tabel A3.4
+GI-SMT-0096,Ngenang,150/20,1,10.0,Kepulauan Riau,Batam,way/706965637,Landing Point Pulau Ngenang,1.0200009,104.1821734,0.95,osm_fuzzy,,RUPTL-2025-2034,Tabel A4.4
+GI-SMT-0097,Tanjung Uban,150/20,2,60.0,Kepulauan Riau,Batam,way/948167522,Gardu Induk Tanjung Uban,1.0637445,104.2372231,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A4.4
+GI-SMT-0098,Sri Bintan,150/20,2,60.0,Kepulauan Riau,Batam,way/706956290,Gardu Induk Sri Bintan,1.1071529,104.3639073,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A4.4
+GI-SMT-0099,Air Raja,150/20,2,120.0,Kepulauan Riau,Batam,way/706956296,Gardu Induk Air Raja,0.9456262,104.5165135,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A4.4
+GI-SMT-0100,Kijang,150/20,2,60.0,Kepulauan Riau,Batam,way/706956292,Gardu Induk Kijang,0.8811701,104.6036946,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A4.4
+GI-SMT-0101,Pangkalpinang (GI Kampak),150/20,2,120.0,Kepulauan Bangka Belitung,Babel,way/620166583,Gardu Induk Kampak,-2.1022794,106.0903027,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel A5.4
+GI-SMT-0102,Sungailiat,150/20,2,90.0,Kepulauan Bangka Belitung,Babel,way/928776913,Gardu Induk Sungailiat,-1.9015194,106.1008796,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A5.4
+GI-SMT-0103,Air Anyir,150/20,2,120.0,Kepulauan Bangka Belitung,Babel,way/543959909,PLTU Air Anyir,-2.0775568,106.1496436,1.0,override:osm_plant,,RUPTL-2025-2034,Tabel A5.4
+GI-SMT-0104,Kelapa,150/20,1,30.0,Kepulauan Bangka Belitung,Babel,way/928776916,Gardu Induk Kelapa,-1.871924,105.6564279,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A5.4
+GI-SMT-0105,Muntok,150/20,1,60.0,Kepulauan Bangka Belitung,Babel,way/928776914,Gardu Induk Muntok,-2.0335775,105.1747391,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A5.4
+GI-SMT-0106,Koba,150/20,1,30.0,Kepulauan Bangka Belitung,Babel,way/928791943,Gardu Induk Koba,-2.5007033,106.4008101,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A5.4
+GI-SMT-0107,Toboali,150/20,1,60.0,Kepulauan Bangka Belitung,Babel,way/928791944,Gardu Induk Toboali,-3.0113112,106.5073472,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A5.4
+GI-SMT-0108,Dukong,70/20,2,60.0,Kepulauan Bangka Belitung,Babel,,,,,0.4,,UNMATCHED,RUPTL-2025-2034,Tabel A5.4
+GI-SMT-0109,Suge (GI Pembangkit),70/20,3,90.0,Kepulauan Bangka Belitung,Babel,way/953023896,PLTU Suge,-2.8929037,107.5637904,1.0,override:osm_plant,,RUPTL-2025-2034,Tabel A5.4
+GI-SMT-0110,Manggar,70/20,1,30.0,Kepulauan Bangka Belitung,Babel,way/953023895,Gardu Induk Manggar,-2.8676044,108.252592,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A5.4
+GI-SMT-0111,PIP,150/20,3,120.0,Sumatera Barat,Sumatra,way/930242899,Gardu Induk PIP,-0.7823331,100.3226356,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A6.4
+GI-SMT-0112,Pauh Limo,150/20,2,120.0,Sumatera Barat,Sumatra,way/473523397,Gardu Induk Pauh Limo,-0.9337503,100.4328692,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A6.4
+GI-SMT-0113,Simpang Haru,150/20,3,144.0,Sumatera Barat,Sumatra,,,,,0.72,,UNMATCHED,RUPTL-2025-2034,Tabel A6.4
+GI-SMT-0114,Lubuk Alung,150/20,2,90.0,Sumatera Barat,Sumatra,way/930242898,Gardu Induk Lubuk Alung,-0.6826315,100.2767726,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A6.4
+GI-SMT-0115,Maninjau,150/20,2,80.0,Sumatera Barat,Sumatra,way/930242896,PLTA Maninjau,-0.3107109,100.1166728,1.0,override:osm_plant,,RUPTL-2025-2034,Tabel A6.4
+GI-SMT-0116,Padang Luar,150/20,2,90.0,Sumatera Barat,Sumatra,way/928928123,Gardu Induk Padang Luar,-0.3440073,100.3783196,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A6.4
+GI-SMT-0117,Simpang Empat,150/20,3,80.0,Sumatera Barat,Sumatra,way/196526544,Gardu Induk Simpang Empat,0.0777491,99.8279384,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A6.4
+GI-SMT-0118,Padang Panjang,150/20,2,70.0,Sumatera Barat,Sumatra,way/930242888,Gardu Induk Padang Panjang,-0.4508022,100.3991215,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A6.4
+GI-SMT-0119,Solok,150/20,2,80.0,Sumatera Barat,Sumatra,way/930242875,Gardu Induk Solok,-0.7933948,100.6320633,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A6.4
+GI-SMT-0120,Salak,150/20,2,80.0,Sumatera Barat,Sumatra,way/930242871,Gardu Induk Salak,-0.6209447,100.7694487,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A6.4
+GI-SMT-0121,Kiliranjao,150/20,3,110.0,Sumatera Barat,Sumatra,,,,,0.45,,UNMATCHED,RUPTL-2025-2034,Tabel A6.4
+GI-SMT-0122,Payakumbuh,150/20,2,90.0,Sumatera Barat,Sumatra,way/928928132,Gardu Induk Payakumbuh,-0.2532212,100.642375,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A6.4
+GI-SMT-0123,Batu Sangkar,150/20,2,50.0,Sumatera Barat,Sumatra,way/930242891,Gardu Induk Batusangkar,-0.4038046,100.5721602,0.96,osm_fuzzy,,RUPTL-2025-2034,Tabel A6.4
+GI-SMT-0124,Bungus,150/20,2,60.0,Sumatera Barat,Sumatra,way/450722292,Gardu Induk Bungus,-1.0293729,100.4159229,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A6.4
+GI-SMT-0125,Pariaman,150/20,2,60.0,Sumatera Barat,Sumatra,way/930242894,Gardu Induk Pariaman,-0.6260084,100.1596056,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A6.4
+GI-SMT-0126,Kambang,150/20,2,90.0,Sumatera Barat,Sumatra,way/930242879,Gardu Induk Kambang,-1.6606422,100.6924895,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A6.4
+GI-SMT-0127,Indarung,150/20,0,,Sumatera Barat,Sumatra,way/930242874,Gardu Induk Indarung,-0.9472133,100.474067,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A6.4
+GI-SMT-0128,S. Rumbai,150/20,1,30.0,Sumatera Barat,Sumatra,way/1312287191,Gardu Induk Sungai Rumbai,-1.2157395,101.7114612,1.0,override:osm_substation,,RUPTL-2025-2034,Tabel A6.4
+GI-SMT-0129,Muaralabuh,150/20,1,30.0,Sumatera Barat,Sumatra,way/1312349205,PLTP Muara Laboh,-1.6013056,101.146979,1.0,override:osm_plant,,RUPTL-2025-2034,Tabel A6.4
+GI-SMT-0130,Pasaman,150/20,1,60.0,Sumatera Barat,Sumatra,way/1191242851,Gardu Induk Pasaman,0.2820345,100.1031303,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A6.4
+GI-SMT-0131,Tapan,150/20,1,30.0,Sumatera Barat,Sumatra,way/1278388652,Gardu Induk Tapan,-2.1304584,101.0794229,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A6.4
+GI-SMT-0132,Aur Duri,150/20,3,150.0,Jambi,Sumatra,way/943539373,GITET Aur Duri Baru,-1.6898014,103.54202,0.95,osm_fuzzy,,RUPTL-2025-2034,Tabel A7.4
+GI-SMT-0133,Payo Selincah,150/20,2,120.0,Jambi,Sumatra,,,,,0.46,,UNMATCHED,RUPTL-2025-2034,Tabel A7.4
+GI-SMT-0134,Muara Bulian,150/20,2,90.0,Jambi,Sumatra,way/624460456,Gardu Induk Muara Bulian,-1.7269425,103.1501248,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A7.4
+GI-SMT-0135,Sungai Gelam,150/20,2,90.0,Jambi,Sumatra,,,,,0.76,,UNMATCHED,RUPTL-2025-2034,Tabel A7.4
+GI-SMT-0136,Muara Sabak,150/20,2,90.0,Jambi,Sumatra,way/623182765,Gardu Induk Muara Sabak,-1.2556161,103.7701526,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A7.4
+GI-SMT-0137,Sarolangun,150/20,1,30.0,Jambi,Sumatra,way/930719083,Gardu Induk Sarolangun,-2.32879,102.7461496,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A7.4
+GI-SMT-0138,New Aurduri,150/20,1,60.0,Jambi,Sumatra,way/623185705,Gardu Induk Aurduri,-1.6036804,103.5433813,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel A7.4
+GI-SMT-0139,Muara Bungo,150/20,3,150.0,Jambi,Sumatra,way/930719092,GITET Muaro Bungo,-1.4318772,102.1026809,0.91,osm_fuzzy,,RUPTL-2025-2034,Tabel A7.4
+GI-SMT-0140,Bangko,150/20,2,90.0,Jambi,Sumatra,way/841499143,GITET Bangko,-2.0437664,102.2754957,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A7.4
+GI-SMT-0141,Muara Tebo,150/20,1,60.0,Jambi,Sumatra,,,,,0.67,,UNMATCHED,RUPTL-2025-2034,Tabel A7.4
+GI-SMT-0142,Sungai Penuh,150/20,2,60.0,Jambi,Sumatra,,,,,0.67,,UNMATCHED,RUPTL-2025-2034,Tabel A7.4
+GI-SMT-0143,Kuala Tungkal,150/20,1,30.0,Jambi,Sumatra,way/939542524,Gardu Induk Kuala Tungkal,-0.9086439,103.3896976,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A7.4
+GI-SMT-0144,Keramasan,150/70/20,2,90.0,Sumatera Selatan,Sumatra,way/610168635,Gardu Induk Keramasan,-3.0333679,104.7450687,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A8.4
+GI-SMT-0145,Bungaran,70/20,2,60.0,Sumatera Selatan,Sumatra,way/940047530,Gardu Induk Bungaran,-3.0041652,104.7703732,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A8.4
+GI-SMT-0146,Sungai Kedukan,70/20,2,45.0,Sumatera Selatan,Sumatra,way/610136436,Gardu Induk Sungai Kedukan,-3.0174425,104.8336378,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A8.4
+GI-SMT-0147,Mariana,150/20,2,90.0,Sumatera Selatan,Sumatra,way/610136435,Gardu Induk Mariana,-2.9494665,104.8962735,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A8.4
+GI-SMT-0148,New Jakabaring,150/20,2,120.0,Sumatera Selatan,Sumatra,way/610136448,Gardu Induk Jakabaring,-3.0306568,104.7924551,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel A8.4
+GI-SMT-0149,Kayu Agung,150/20,1,60.0,Sumatera Selatan,Sumatra,way/940299189,Gardu Induk Kayu Agung,-3.3914683,104.8641504,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A8.4
+GI-SMT-0150,Bukit Siguntang,70/20,3,90.0,Sumatera Selatan,Sumatra,way/940047521,Gardu Induk Bukit Siguntang,-3.0040518,104.7331949,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A8.4
+GI-SMT-0151,Boom Baru,70/20,2,60.0,Sumatera Selatan,Sumatra,way/940047532,Gardu Induk Boom Baru,-2.9758783,104.7811804,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A8.4
+GI-SMT-0152,Sungai Juaro,70/20,2,50.0,Sumatera Selatan,Sumatra,way/940047526,Gardu Induk Sungai Juaro,-2.9682375,104.8092793,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A8.4
+GI-SMT-0153,Talang Ratu,70/20,2,40.0,Sumatera Selatan,Sumatra,way/940047539,Gardu Induk Talang Ratu,-2.9516876,104.7313099,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A8.4
+GI-SMT-0154,Seduduk Putih,70/20,2,60.0,Sumatera Selatan,Sumatra,way/940047537,Gardu Induk Seduduk Putih,-2.9473857,104.7669299,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A8.4
+GI-SMT-0155,GIS Kota Barat,150/20,2,120.0,Sumatera Selatan,Sumatra,,,,,0.57,,UNMATCHED,RUPTL-2025-2034,Tabel A8.4
+GI-SMT-0156,GIS Kota Timur,150/20,2,120.0,Sumatera Selatan,Sumatra,,,,,0.48,,UNMATCHED,RUPTL-2025-2034,Tabel A8.4
+GI-SMT-0157,Borang,150/20,2,90.0,Sumatera Selatan,Sumatra,way/610136434,Gardu Induk Borang,-2.9242807,104.8715414,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A8.4
+GI-SMT-0158,Talang Kelapa,150/20,2,120.0,Sumatera Selatan,Sumatra,way/610168631,Gardu Induk Talang Kelapa,-2.9279317,104.6470298,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A8.4
+GI-SMT-0159,Betung,150/20,2,120.0,Sumatera Selatan,Sumatra,way/610198177,GITET Betung,-2.8436404,104.1816987,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A8.4
+GI-SMT-0160,Tanjung Api-api,150/20,1,30.0,Sumatera Selatan,Sumatra,way/610168613,Gardu Induk Tanjung Api-Api,-2.4274263,104.8179442,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A8.4
+GI-SMT-0161,Sungai Lilin,150/20,1,30.0,Sumatera Selatan,Sumatra,way/753733608,GITET Sungai Lilin,-2.4246045,103.9283614,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A8.4
+GI-SMT-0162,Gandus,150/20,2,120.0,Sumatera Selatan,Sumatra,way/558191050,Gardu Induk Gandus,-2.9756639,104.6947222,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A8.4
+GI-SMT-0163,Sekayu,150/20,1,30.0,Sumatera Selatan,Sumatra,way/946191121,Gardu Induk Sekayu,-2.8493671,103.8494357,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A8.4
+GI-SMT-0164,Kenten,150/20,2,120.0,Sumatera Selatan,Sumatra,way/610168632,Gardu Induk Kenten,-2.8838557,104.7387382,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A8.4
+GI-SMT-0165,Prabumulih,150/20,3,150.0,Sumatera Selatan,Sumatra,way/662978700,Gardu Induk Prabumulih,-3.4440345,104.243254,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A8.4
+GI-SMT-0166,Gunung Megang,150/20,2,90.0,Sumatera Selatan,Sumatra,,,,,0.57,,UNMATCHED,RUPTL-2025-2034,Tabel A8.4
+GI-SMT-0167,Simpang Tiga,150/20,3,180.0,Sumatera Selatan,Sumatra,,,,,0.56,,UNMATCHED,RUPTL-2025-2034,Tabel A8.4
+GI-SMT-0168,Lubuk Linggau,150/20,3,150.0,Sumatera Selatan,Sumatra,way/528189342,GITET Lubuk Linggau,-3.2394246,102.8558895,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A8.4
+GI-SMT-0169,Gumawang,150/20,3,120.0,Sumatera Selatan,Sumatra,way/931931121,GITET Gumawang,-4.053895,104.7833284,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A8.4
+GI-SMT-0170,Lahat,150/20,2,90.0,Sumatera Selatan,Sumatra,way/527900241,GITET Lahat,-3.7689918,103.510205,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A8.4
+GI-SMT-0171,Bukit Asam,150/20,2,120.0,Sumatera Selatan,Sumatra,way/719550864,PLTU Bukit Asam,-3.7314036,103.797662,1.0,override:osm_plant,,RUPTL-2025-2034,Tabel A8.4
+GI-SMT-0172,Baturaja,150/20,3,180.0,Sumatera Selatan,Sumatra,way/753522706,Gardu Induk Baturaja,-4.106283,104.1696073,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A8.4
+GI-SMT-0173,Martapura,150/20,1,60.0,Sumatera Selatan,Sumatra,way/931931129,Gardu Induk Martapura,-4.3787828,104.3581621,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A8.4
+GI-SMT-0174,Muara Dua,150/20,1,60.0,Sumatera Selatan,Sumatra,way/931931135,Gardu Induk Muaradua,-4.5884308,104.0564494,0.94,osm_fuzzy,,RUPTL-2025-2034,Tabel A8.4
+GI-SMT-0175,Lumut Balai,150/20,1,60.0,Sumatera Selatan,Sumatra,way/931931133,GITET Lumut Balai,-4.0399623,103.6060835,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A8.4
+GI-SMT-0176,Pagar Alam,150/20,3,105.0,Sumatera Selatan,Sumatra,way/956594064,Gardu Induk Pagar Alam,-3.9806403,103.225234,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A8.4
+GI-SMT-0177,Pendopo,150/20,1,60.0,Sumatera Selatan,Sumatra,way/1314442987,Gardu Induk Pendopo,-3.4356952,103.9787457,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A8.4
+GI-SMT-0178,Tebing Tinggi,150/20,1,30.0,Sumatera Selatan,Sumatra,way/1228701035,Gardu Induk Tebing Tinggi,-3.5489062,103.0785316,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A8.4
+GI-SMT-0179,Sukamerindu,70/20,3,120.0,Bengkulu,Sumatra,way/956594056,Gardu Induk Sukamerindu,-3.7878141,102.2694393,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A9.4
+GI-SMT-0180,Pekalongan,150/70/20,3,105.0,Bengkulu,Sumatra,way/528461299,Gardu Induk Pekalongan,-3.5262091,102.5153636,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A9.4
+GI-SMT-0181,Tes,70/20,1,30.0,Bengkulu,Sumatra,way/956594058,PLTA Tes,-3.2067037,102.3181629,1.0,override:osm_plant,,RUPTL-2025-2034,Tabel A9.4
+GI-SMT-0182,Manna,150/20,2,60.0,Bengkulu,Sumatra,way/956594063,Gardu Induk Manna,-4.4136571,102.9334228,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A9.4
+GI-SMT-0183,P. Baai,150/20,2,120.0,Bengkulu,Sumatra,way/930719090,Gardu Induk Pulau Baai,-3.8383227,102.3651043,1.0,override:osm_substation,,RUPTL-2025-2034,Tabel A9.4
+GI-SMT-0184,Muko - muko,150/20,1,60.0,Bengkulu,Sumatra,,,,,0.48,,UNMATCHED,RUPTL-2025-2034,Tabel A9.4
+GI-SMT-0185,Argamakmur,150/20,1,60.0,Bengkulu,Sumatra,way/1311638728,Gardu Induk Argamakmur,-3.4923529,102.1024556,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A9.4
+GI-SMT-0186,Tarahan,150/20,2,90.0,Lampung,Sumatra,way/557586719,Gardu Induk Tarahan,-5.518204,105.3501629,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A10.4
+GI-SMT-0187,Teluk Betung,150/20,3,180.0,Lampung,Sumatra,way/931931127,Gardu Induk Teluk Betung,-5.4396945,105.2536839,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A10.4
+GI-SMT-0188,Sutami,150/20,2,90.0,Lampung,Sumatra,way/557549676,Gardu Induk Sutami,-5.3905409,105.3771396,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A10.4
+GI-SMT-0189,Kalianda,150/20,2,90.0,Lampung,Sumatra,way/556355551,Gardu Induk Kalianda,-5.7233666,105.6264317,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A10.4
+GI-SMT-0190,New Tarahan,150/20,2,90.0,Lampung,Sumatra,way/557586719,Gardu Induk Tarahan,-5.518204,105.3501629,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel A10.4
+GI-SMT-0191,Sukarame,150/20,2,120.0,Lampung,Sumatra,way/405026507,Gardu Induk Sukarame,-5.3622699,105.3057012,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A10.4
+GI-SMT-0192,Adijaya,150/20,2,90.0,Lampung,Sumatra,way/931931110,Gardu Induk Adijaya,-4.9378365,105.1887945,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A10.4
+GI-SMT-0193,Tegineneng,150/20,3,150.0,Lampung,Sumatra,way/931931105,Gardu Induk Tegineneng,-5.1846139,105.1740647,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A10.4
+GI-SMT-0194,Natar,150/20,3,150.0,Lampung,Sumatra,way/931931126,Gardu Induk Natar,-5.3349265,105.2052931,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A10.4
+GI-SMT-0195,Sribawono,150/20,2,90.0,Lampung,Sumatra,way/662978701,Gardu Induk Sribawono,-5.3122098,105.7148534,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A10.4
+GI-SMT-0196,Metro,150/20,2,120.0,Lampung,Sumatra,way/931931112,Gardu Induk Metro,-5.1495333,105.3262648,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A10.4
+GI-SMT-0197,Seputih Banyak,150/20,3,150.0,Lampung,Sumatra,way/557379214,Gardu Induk Seputih Banyak,-4.8834927,105.5083106,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A10.4
+GI-SMT-0198,Pagelaran,150/20,2,120.0,Lampung,Sumatra,way/931931158,Gardu Induk Pagelaran,-5.3694267,104.930845,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A10.4
+GI-SMT-0199,Ulubelu,150/20,1,30.0,Lampung,Sumatra,way/531143189,PLTP Ulubelu,-5.3076656,104.5748938,1.0,override:osm_plant,,RUPTL-2025-2034,Tabel A10.4
+GI-SMT-0200,Kota Agung,150/20,2,90.0,Lampung,Sumatra,way/931931153,Gardu Induk Kota Agung,-5.4986261,104.6548189,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A10.4
+GI-SMT-0201,Kotabumi,150/20,2,120.0,Lampung,Sumatra,way/931931113,Gardu Induk Kotabumi,-4.8514328,104.8629022,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A10.4
+GI-SMT-0202,Menggala,150/20,3,150.0,Lampung,Sumatra,way/931931128,Gardu Induk Menggala,-4.5099406,105.2009412,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A10.4
+GI-SMT-0203,Bukit Kemuning,150/20,2,90.0,Lampung,Sumatra,way/931931107,Gardu Induk Bukit Kemuning,-4.8318679,104.5764635,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A10.4
+GI-SMT-0204,Liwa,150/20,2,60.0,Lampung,Sumatra,way/654007323,Gardu Induk Liwa,-5.0186419,104.1665,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A10.4
+GI-SMT-0205,Mesuji,150/20,1,60.0,Lampung,Sumatra,way/931931119,Gardu Induk Mesuji,-4.019877,105.2637472,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A10.4
+GI-SMT-0206,Blambangan Umpu,150/20,2,90.0,Lampung,Sumatra,way/931931130,Gardu Induk Blambangan Umpu,-4.5831222,104.4953115,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A10.4
+GI-SMT-0207,Ketapang,150/20,1,60.0,Lampung,Sumatra,way/957141002,Gardu Induk Ketapang,-5.7277002,105.7812429,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A10.4
+GI-SMT-0208,Jati Agung,150/20,1,60.0,Lampung,Sumatra,way/931931159,Gardu Induk Jati Agung,-5.3079341,105.3819483,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A10.4
+GI-SMT-0209,Langka Pura,150/20,1,60.0,Lampung,Sumatra,way/1311677134,Gardu Induk Langkapura,-5.4078051,105.1938182,0.95,osm_fuzzy,,RUPTL-2025-2034,Tabel A10.4
+GI-SMT-0210,Pakuan Ratu,150/20,1,60.0,Lampung,Sumatra,,,,,0.53,,UNMATCHED,RUPTL-2025-2034,Tabel A10.4
+GI-SMT-0211,Dipasena,150/20,1,60.0,Lampung,Sumatra,,,,,0.53,,UNMATCHED,RUPTL-2025-2034,Tabel A10.4
+GI-SMT-0212,Dente Teladas,150/20,1,60.0,Lampung,Sumatra,way/1311774299,Gardu Induk Dente Teladas,-4.4690161,105.8181533,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A10.4
+GI-SMT-0213,Sidomulyo,150/20,1,60.0,Lampung,Sumatra,way/1314409722,Gardu Induk Sidomulyo,-5.5825911,105.494484,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A10.4
+GI-SMT-0214,Gedong Tataan,150/20,1,60.0,Lampung,Sumatra,way/1311677143,Gardu Induk Gedong Tataan,-5.4009664,105.0620265,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel A10.4

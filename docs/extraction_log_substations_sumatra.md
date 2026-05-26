@@ -12,29 +12,40 @@
 > `docs/naming_conventions.md`). "Sumatera Utara/Barat/Selatan" tetap ejaan
 > resmi BPS untuk nama administratif provinsi.
 
+> **Update 2026-05-26 — audit fix parser multi-tegangan.** Setelah Step 5
+> Maluku/Papua menyingkap layout tabel multi-tegangan, audit
+> (`scripts/_audit_multivolt.py`) menemukan **4 GI Sumatra terlewat** parser
+> lama: **Keramasan** (A8, 2 trafo / 90 MVA, multi-tegangan name-only
+> middle), **Pekalongan** (A9, 3 trafo / 105 MVA, multi-tegangan),
+> **Indarung** (A6, dash placeholder), **Sorik Merapi** (A2, dash
+> placeholder). Extractor sekarang pakai shared parser
+> `scripts/substation_table_parser.py`; total GI 210 → **214**, match rate
+> 91,4% → **91,1%** (195 matched: 3 baru ter-match, 1 baru unmatched).
+> Angka di tabel-tabel bawah sudah diperbarui.
+
 ## Ringkasan
 
 | Provinsi | Tabel sumber | System | RUPTL | OSM (bbox) | Fuzzy ≥ 0.85 | Override | Unmatched |
 |----------|-------------|--------|------:|-----------:|-------------:|---------:|----------:|
 | Aceh | Tabel A1.4 | Sumatra | 20 | 22 | 16 | 2 | 2 |
-| Sumatera Utara | Tabel A2.4 | Sumatra | 53 | 61 | 45 | 6 | 2 |
+| Sumatera Utara | Tabel A2.4 | Sumatra | 54 | 61 | 45 | 6 | 3 |
 | Riau | Tabel A3.4 | Sumatra | 21 | 58 | 19 | 2 | 0 |
 | Kepulauan Riau | Tabel A4.4 | Batam | 5 | 17 | 5 | 0 | 0 |
 | Kep. Bangka Belitung | Tabel A5.4 | Babel | 10 | 14 | 7 | 2 | 1 |
-| Sumatera Barat | Tabel A6.4 | Sumatra | 20 | 36 | 15 | 3 | 2 |
+| Sumatera Barat | Tabel A6.4 | Sumatra | 21 | 36 | 16 | 3 | 2 |
 | Jambi | Tabel A7.4 | Sumatra | 12 | 19 | 8 | 0 | 4 |
-| Sumatera Selatan | Tabel A8.4 | Sumatra | 34 | 59 | 29 | 1 | 4 |
-| Bengkulu | Tabel A9.4 | Sumatra | 6 | 20 | 3 | 2 | 1 |
+| Sumatera Selatan | Tabel A8.4 | Sumatra | 35 | 59 | 30 | 1 | 4 |
+| Bengkulu | Tabel A9.4 | Sumatra | 7 | 20 | 4 | 2 | 1 |
 | Lampung | Tabel A10.4 | Sumatra | 29 | 45 | 26 | 1 | 2 |
-| **Total** | | | **210** | | **173** | **19** | **18** |
+| **Total** | | | **214** | | **176** | **19** | **19** |
 
-Match rate: **91,4%** (192 / 210).
+Match rate: **91,1%** (195 / 214).
 
 Breakdown per sistem listrik:
 
 | System | Cakupan | Matched | Total | Rate |
 |--------|---------|--------:|------:|-----:|
-| Sumatra (interkoneksi 275 kV mainland) | 8 provinsi mainland | 178 | 195 | 91.3% |
+| Sumatra (interkoneksi 275 kV mainland) | 8 provinsi mainland | 181 | 199 | 91.0% |
 | Batam | Kepulauan Riau (Batam–Bintan) | 5 | 5 | 100.0% |
 | Babel | Kep. Bangka Belitung | 9 | 10 | 90.0% |
 
@@ -116,9 +127,9 @@ GI yang ada di OSM substations dataset tapi nama berbeda dari RUPTL — biasanya
 | S. Rumbai | Sumatera Barat | way/1312287191 Gardu Induk Sungai Rumbai |
 | P. Baai | Bengkulu | way/930719090 Gardu Induk Pulau Baai |
 
-## 18 GI yang masih UNMATCHED
+## 19 GI yang masih UNMATCHED
 
-Mayoritas adalah GI distribusi 150/20 atau 70/20 di area pelosok/kabupaten yang belum di-tag di OSM substations dataset (no entry sama sekali). Tidak ada padanan plant juga, karena ini GI distribusi murni (bukan step-up dari pembangkit).
+Mayoritas adalah GI distribusi 150/20 atau 70/20 di area pelosok/kabupaten yang belum di-tag di OSM substations dataset (no entry sama sekali). Tidak ada padanan plant juga, karena ini GI distribusi murni (bukan step-up dari pembangkit). Plus satu GI placeholder ("Sorik Merapi") yang trafo-nya belum direalisasi di RUPTL.
 
 Untuk iterasi berikutnya: kandidat sumber koordinat adalah PLN Annual Report (lokasi GI per UID/UP3), atau Overpass API direct query yang mungkin nge-catch node-node tanpa nama tapi ber-tag `power=substation`.
 
@@ -127,6 +138,7 @@ Untuk iterasi berikutnya: kandidat sumber koordinat adalah PLN Annual Report (lo
 | Banda Aceh I / Lambaroe | Aceh | "Lambaroe" = area Aceh Besar; cek OSM tag `Lambaro` |
 | Singkil | Aceh | Aceh Singkil, kemungkinan GI distribusi kecil |
 | GIS Listrik | Sumatera Utara | Nama ambigu; cek apakah GI internal industri atau substation kampus |
+| Sorik Merapi | Sumatera Utara | GI listed dengan trafo "-" di RUPTL (belum realisasi); dekat PLTP Sorik Marapi |
 | Teluk Dalam | Sumatera Utara | Nias Selatan; sistem mungkin isolated kecil |
 | Dukong | Babel | Belitung area; cek apakah typo "Dukung" |
 | Simpang Haru | Sumatera Barat | Padang kota; GI distribusi |

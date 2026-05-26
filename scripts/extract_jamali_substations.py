@@ -18,9 +18,10 @@ Threshold matching:
 import re
 import json
 import csv
-import subprocess
 from difflib import SequenceMatcher
 from pathlib import Path
+
+from substation_table_parser import extract_table
 
 # ROOT diturunkan dari posisi skrip ini supaya path portable di mesin manapun.
 ROOT = Path(__file__).resolve().parent.parent
@@ -44,71 +45,6 @@ PROVINCES = [
     ("B6", "Jawa Timur",    "Jamali", 905, 937, (-8.80, 110.85, -6.60, 114.65)),
     ("B7", "Bali",          "Jamali", 938, 950, (-8.95, 114.40, -8.00, 115.75)),
 ]
-
-
-def extract_table(pdf_path, table_id, start_page, end_page):
-    """Ekstrak tabel "Gardu Induk Eksisting" dari range halaman tertentu.
-
-    Beberapa provinsi pakai nomor tabel berbeda (DIY: B5.3, Bali: B7.4 tanpa
-    'Realisasi'). Strategi: cari heading apapun yang punya pola
-    'Tabel B<n>.<m> ... Gardu Induk Eksisting' dan ambil yang pertama.
-    """
-    out = subprocess.run(
-        ['pdftotext', '-layout', '-f', str(start_page), '-l', str(end_page),
-         str(pdf_path), '-'],
-        capture_output=True, text=True
-    ).stdout
-
-    table_num = table_id.replace("B", "")  # "B1" -> "1"
-    # Cari heading: "Tabel B<n>.<m>[.] [Realisasi] Kapasitas Gardu Induk Eksisting"
-    # atau "Tabel B<n>.<m> Kapasitas Gardu Induk Eksisting"
-    heading_pat = re.compile(
-        rf'Tabel B{table_num}\.(\d+)\.?\s*(?:Realisasi\s+)?Kapasitas\s+Gardu\s+Induk\s+Eksisting[^\n]*\n'
-    )
-    m = heading_pat.search(out)
-    if not m:
-        return []
-    found_subtable = int(m.group(1))  # e.g. 3 or 4
-
-    # Boundary: heading tabel berikutnya (B<n>.<found+1>)
-    end_pat = re.compile(rf'Tabel B{table_num}\.{found_subtable + 1}\b')
-    end_m = end_pat.search(out, m.end())
-    block = out[m.end():end_m.start() if end_m else len(out)]
-
-    rows = []
-    # Pattern row: <num> <name multi-words> <volt/volt> <trafo> <capacity>
-    # Volt: 70/20, 150/20, 500/150, etc. (allow possible space variations)
-    row_pat = re.compile(
-        r'^\s*(\d{1,3})\s+(.+?)\s+(\d{2,3}\s*/\s*\d{2,3})\s+(\d+)\s+([\d\.,]+)\s*$'
-    )
-    for line in block.split('\n'):
-        s = line.rstrip()
-        if not s:
-            continue
-        # Skip header reprints
-        if 'Tegangan' in s or 'Total Kapasitas' in s or 'Jumlah Trafo' in s or 'Nama GI' in s:
-            continue
-        # Skip pagination markers like "B -16"
-        if re.match(r'^\s*B\s*-?\s*\d+\s*$', s):
-            continue
-        # Skip "Total" / "Jumlah" lines
-        if re.search(r'^\s*(Total|Jumlah)\b', s, re.IGNORECASE):
-            continue
-        rm = row_pat.match(s)
-        if rm:
-            cap = rm.group(5).replace('.', '').replace(',', '.')
-            try:
-                cap_f = float(cap)
-            except ValueError:
-                cap_f = None
-            rows.append({
-                'src_no': int(rm.group(1)),
-                'name': rm.group(2).strip(),
-                'voltage': re.sub(r'\s+', '', rm.group(3)),
-                'trafo_count': int(rm.group(4)),
-                'capacity_mva': cap_f,
-            })
-    return rows
 
 
 def parse_voltage_osm(v):

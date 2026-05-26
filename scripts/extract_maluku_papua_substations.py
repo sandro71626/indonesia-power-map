@@ -38,9 +38,10 @@ Urutan provinsi C7-C10 sudah DIVERIFIKASI lewat probe nama GI
 import re
 import json
 import csv
-import subprocess
 from difflib import SequenceMatcher
 from pathlib import Path
+
+from substation_table_parser import extract_table
 
 ROOT = Path(__file__).resolve().parent.parent
 RUPTL = ROOT / "data/raw/sources/RUPTL-2025-2034.pdf"
@@ -72,140 +73,6 @@ PROVINCES = [
 ]
 
 REGIONS = ["maluku", "papua"]
-
-
-def extract_table(pdf_path, table_id, start_page, end_page):
-    """Ekstrak tabel Trafo Gardu Induk; menangani format MULTI-TEGANGAN.
-
-    Heading wajib mengandung 'Trafo' + 'Gardu Induk'; modifier 'Realisasi'
-    dan 'Eksisting' opsional.
-
-    Tabel Lampiran C Maluku/Papua memakai layout di mana satu GI bisa
-    membentang beberapa baris (satu baris per level tegangan trafo). Sel
-    'No' & 'Nama GI' di-merge vertikal, jadi pdftotext me-render nama di
-    baris TENGAH blok GI — kadang di baris yang juga memuat data tegangan,
-    kadang di baris sendiri tanpa data.
-
-    Strategi:
-      1. Klasifikasi tiap baris jadi NAME (ada nomor + nama) atau VOLT
-         (hanya tegangan + jumlah trafo + kapasitas, tanpa nomor/nama).
-      2. Kelompokkan: tiap NAME "menyerap" baris VOLT di atas & bawahnya
-         secara SIMETRIS — karena sel nama di-merge & ter-render di tengah
-         blok, jumlah VOLT di atas selalu == jumlah VOLT di bawah.
-      3. trafo_count & capacity_mva tiap GI = JUMLAH semua level tegangan;
-         voltage = level tegangan unik (desc), mis. '150/70/20'.
-
-    GI satu-tegangan = blok berukuran 1 (curang khusus tidak perlu) — algo
-    yang sama menanganinya tanpa kasus khusus.
-    """
-    out = subprocess.run(
-        ['pdftotext', '-layout', '-f', str(start_page), '-l', str(end_page),
-         str(pdf_path), '-'],
-        capture_output=True, text=True
-    ).stdout
-
-    table_num = table_id.replace("C", "")  # "C7" -> "7"
-    heading_pat = re.compile(
-        rf'Tabel\s+C{table_num}\.(\d+)\.?\s*(?:Realisasi\s+)?Kapasitas\s+Trafo\s+Gardu\s+Induk(?:\s+Eksisting)?[^\n]*\n'
-    )
-    m = heading_pat.search(out)
-    if not m:
-        return []
-    found_subtable = int(m.group(1))
-
-    end_pat = re.compile(rf'Tabel\s+C{table_num}\.{found_subtable + 1}\b')
-    end_m = end_pat.search(out, m.end())
-    block = out[m.end():end_m.start() if end_m else len(out)]
-
-    # VOLT = satu baris tegangan: HV/LV  jumlah_trafo  kapasitas.
-    VOLT = r'(\d{2,3})\s*/\s*(\d{2,3})\s+(\d+)\s+([\d.,]+)'
-    volt_only_re = re.compile(rf'^\s*{VOLT}\s*$')                 # baris VOLT
-    name_data_re = re.compile(rf'^\s*(\d{{1,3}})\s+(.+?)\s+{VOLT}\s*$')  # NAME + data
-    name_only_re = re.compile(r'^\s*(\d{1,3})\s+([A-Za-z(].*?)\s*$')     # NAME tanpa data
-
-    def to_cap(s):
-        s = s.replace('.', '').replace(',', '.')
-        try:
-            return float(s)
-        except ValueError:
-            return 0.0
-
-    # --- Tahap 1: klasifikasi tiap baris ---
-    entries = []   # {'type':'name'|'volt', 'no'?, 'name'?, 'row': (hv,lv,cnt,cap) | None}
-    for line in block.split('\n'):
-        s = line.rstrip()
-        if not s.strip():
-            continue
-        if 'Tegangan' in s or 'Total Kapasitas' in s or 'Jumlah Trafo' in s or 'Nama GI' in s:
-            continue
-        if re.match(r'^\s*C\s*-?\s*\d+\s*$', s):
-            continue
-        if re.search(r'^\s*(Total|Jumlah)\b', s, re.IGNORECASE):
-            continue
-        mv = volt_only_re.match(s)
-        if mv:
-            entries.append({'type': 'volt', 'row': (
-                int(mv.group(1)), int(mv.group(2)),
-                int(mv.group(3)), to_cap(mv.group(4)))})
-            continue
-        md = name_data_re.match(s)
-        if md:
-            entries.append({'type': 'name', 'no': int(md.group(1)),
-                            'name': md.group(2).strip(), 'row': (
-                                int(md.group(3)), int(md.group(4)),
-                                int(md.group(5)), to_cap(md.group(6)))})
-            continue
-        mo = name_only_re.match(s)
-        if mo:
-            entries.append({'type': 'name', 'no': int(mo.group(1)),
-                            'name': mo.group(2).strip(), 'row': None})
-            continue
-        # baris lain (catatan kaki dll) diabaikan
-
-    # --- Tahap 2: grup VOLT di sekitar tiap NAME secara simetris ---
-    n = len(entries)
-    claimed = [False] * n
-    rows = []
-    for ni in [i for i, e in enumerate(entries) if e['type'] == 'name']:
-        claimed[ni] = True
-        r = 0
-        while True:
-            lo, hi = ni - r - 1, ni + r + 1
-            if lo < 0 or hi >= n:
-                break
-            if (entries[lo]['type'] == 'volt' and not claimed[lo]
-                    and entries[hi]['type'] == 'volt' and not claimed[hi]):
-                claimed[lo] = claimed[hi] = True
-                r += 1
-            else:
-                break
-
-        name_e = entries[ni]
-        vrows = [entries[k]['row'] for k in range(ni - r, ni + r + 1)
-                 if entries[k].get('row')]
-        if vrows:
-            levels = sorted({v for (hv, lv, c, cap) in vrows for v in (hv, lv)},
-                            reverse=True)
-            rows.append({
-                'src_no': name_e['no'],
-                'name': name_e['name'],
-                'voltage': '/'.join(str(x) for x in levels),
-                'trafo_count': sum(c for (hv, lv, c, cap) in vrows),
-                'capacity_mva': round(sum(cap for (hv, lv, c, cap) in vrows), 2),
-            })
-        else:
-            # GI tanpa baris data tegangan — tetap dicatat utk transparansi
-            rows.append({'src_no': name_e['no'], 'name': name_e['name'],
-                         'voltage': '', 'trafo_count': 0, 'capacity_mva': None})
-
-    leftover = sum(1 for i in range(n)
-                   if entries[i]['type'] == 'volt' and not claimed[i])
-    if leftover:
-        print(f"  WARNING {table_id}: {leftover} baris tegangan tak ter-grup "
-              f"(tabel mungkin malformed)")
-
-    rows.sort(key=lambda x: x['src_no'])
-    return rows
 
 
 def parse_voltage_osm(v):

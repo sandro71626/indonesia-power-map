@@ -28,9 +28,10 @@ Urutan provinsi C1-C6 sudah DIVERIFIKASI lewat probe nama GI
 import re
 import json
 import csv
-import subprocess
 from difflib import SequenceMatcher
 from pathlib import Path
+
+from substation_table_parser import extract_table
 
 ROOT = Path(__file__).resolve().parent.parent
 RUPTL = ROOT / "data/raw/sources/RUPTL-2025-2034.pdf"
@@ -54,62 +55,6 @@ PROVINCES = [
     ("C5", "Sulawesi Tenggara", "Sulselrabar", 1031, 1050, (-6.50, 120.70, -1.80, 124.60)),
     ("C6", "Sulawesi Barat",    "Sulselrabar", 1051, 1062, (-3.60, 118.50, -0.70, 119.90)),
 ]
-
-
-def extract_table(pdf_path, table_id, start_page, end_page):
-    """Ekstrak tabel Trafo Gardu Induk dari range halaman tertentu.
-
-    Heading wajib mengandung 'Trafo' + 'Gardu Induk'; modifier 'Realisasi'
-    dan 'Eksisting' opsional.
-    """
-    out = subprocess.run(
-        ['pdftotext', '-layout', '-f', str(start_page), '-l', str(end_page),
-         str(pdf_path), '-'],
-        capture_output=True, text=True
-    ).stdout
-
-    table_num = table_id.replace("C", "")  # "C1" -> "1"
-    heading_pat = re.compile(
-        rf'Tabel\s+C{table_num}\.(\d+)\.?\s*(?:Realisasi\s+)?Kapasitas\s+Trafo\s+Gardu\s+Induk(?:\s+Eksisting)?[^\n]*\n'
-    )
-    m = heading_pat.search(out)
-    if not m:
-        return []
-    found_subtable = int(m.group(1))
-
-    end_pat = re.compile(rf'Tabel\s+C{table_num}\.{found_subtable + 1}\b')
-    end_m = end_pat.search(out, m.end())
-    block = out[m.end():end_m.start() if end_m else len(out)]
-
-    rows = []
-    row_pat = re.compile(
-        r'^\s*(\d{1,3})\s+(.+?)\s+(\d{2,3}\s*/\s*\d{2,3})\s+(\d+)\s+([\d\.,]+)\s*$'
-    )
-    for line in block.split('\n'):
-        s = line.rstrip()
-        if not s:
-            continue
-        if 'Tegangan' in s or 'Total Kapasitas' in s or 'Jumlah Trafo' in s or 'Nama GI' in s:
-            continue
-        if re.match(r'^\s*C\s*-?\s*\d+\s*$', s):
-            continue
-        if re.search(r'^\s*(Total|Jumlah)\b', s, re.IGNORECASE):
-            continue
-        rm = row_pat.match(s)
-        if rm:
-            cap = rm.group(5).replace('.', '').replace(',', '.')
-            try:
-                cap_f = float(cap)
-            except ValueError:
-                cap_f = None
-            rows.append({
-                'src_no': int(rm.group(1)),
-                'name': rm.group(2).strip(),
-                'voltage': re.sub(r'\s+', '', rm.group(3)),
-                'trafo_count': int(rm.group(4)),
-                'capacity_mva': cap_f,
-            })
-    return rows
 
 
 def parse_voltage_osm(v):
