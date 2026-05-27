@@ -1,0 +1,20 @@
+id,name,voltage,trafo_count,capacity_mva,province,system,osm_id,osm_name,lat,lon,match_score,match_source,review_flag,source_id,source_table
+GI-NTT-0001,Panaf,150/20,1,30.0,Nusa Tenggara Timur,NTT,,,,,0.5,,UNMATCHED,RUPTL-2025-2034,Tabel C12.4
+GI-NTT-0002,Tenau,150/20,1,60.0,Nusa Tenggara Timur,NTT,way/1198315802,Gardu Induk Tenau,-10.1895328,123.5469816,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C12.4
+GI-NTT-0003,Bolok,70/20,2,60.0,Nusa Tenggara Timur,NTT,way/716898231,Gardu Induk Bolok,-10.2384623,123.4910246,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C12.4
+GI-NTT-0004,Maulafa,70/20,2,60.0,Nusa Tenggara Timur,NTT,way/611789535,Gardu Induk Maulafa,-10.2116095,123.6117871,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C12.4
+GI-NTT-0005,Naibonat,70/20,1,20.0,Nusa Tenggara Timur,NTT,way/611789534,Gardu Induk Naibonat,-10.1078013,123.8797049,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C12.4
+GI-NTT-0006,Nonohonis,70/20,1,20.0,Nusa Tenggara Timur,NTT,way/614316899,Gardu Induk Nonohonis,-9.8170662,124.2883074,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C12.4
+GI-NTT-0007,Kefamenanu,70/20,1,20.0,Nusa Tenggara Timur,NTT,way/611789540,Gardu Induk Kefamenanu,-9.5328948,124.4935808,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C12.4
+GI-NTT-0008,Atambua,70/20,1,20.0,Nusa Tenggara Timur,NTT,way/611789538,Gardu Induk Atambua,-9.0872625,124.865583,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C12.4
+GI-NTT-0009,PLTMG Maumere,150/20,1,30.0,Nusa Tenggara Timur,NTT,way/937059874,Gardu Induk Maumere,-8.5958161,122.1891863,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel C12.4
+GI-NTT-0010,Maumere,150/20,1,30.0,Nusa Tenggara Timur,NTT,way/937059874,Gardu Induk Maumere,-8.5958161,122.1891863,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C12.4
+GI-NTT-0011,Maumere,70/20,1,20.0,Nusa Tenggara Timur,NTT,way/937059874,Gardu Induk Maumere,-8.5958161,122.1891863,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C12.4
+GI-NTT-0012,Ropa,70/20,1,5.0,Nusa Tenggara Timur,NTT,way/614243452,Gardu Induk Ropa,-8.5093678,121.7009187,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C12.4
+GI-NTT-0013,Ende,70/20,2,50.0,Nusa Tenggara Timur,NTT,way/614243449,Gardu Induk Ende,-8.8453602,121.6725684,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C12.4
+GI-NTT-0014,Aesesa,70/20,1,20.0,Nusa Tenggara Timur,NTT,,,,,0.46,,UNMATCHED,RUPTL-2025-2034,Tabel C12.4
+GI-NTT-0015,Bajawa,70/20,1,20.0,Nusa Tenggara Timur,NTT,way/937059873,Gardu Induk Bajawa,-8.7807679,120.9996092,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C12.4
+GI-NTT-0016,Borong,70/20,1,20.0,Nusa Tenggara Timur,NTT,,,,,0.67,,UNMATCHED,RUPTL-2025-2034,Tabel C12.4
+GI-NTT-0017,Ruteng,70/20,2,50.0,Nusa Tenggara Timur,NTT,way/937059869,Gardu Induk Bahong,-8.5983218,120.4231458,1.0,override:osm_substation,,RUPTL-2025-2034,Tabel C12.4
+GI-NTT-0018,Labuan Bajo,70/20,2,50.0,Nusa Tenggara Timur,NTT,way/937059865,Gardu Induk Labuan Bajo,-8.5408133,119.882901,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C12.4
+GI-NTT-0019,PLTMG Flores / Rangko,70/20,1,30.0,Nusa Tenggara Timur,NTT,way/937059866,PLTMG Flores,-8.4612847,119.9442631,1.0,override:osm_plant,,RUPTL-2025-2034,Tabel C12.4

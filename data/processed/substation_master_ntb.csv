@@ -1,0 +1,27 @@
+id,name,voltage,trafo_count,capacity_mva,province,system,osm_id,osm_name,lat,lon,match_score,match_source,review_flag,source_id,source_table
+GI-NTB-0001,Ampenan,150/20,3,150.0,Nusa Tenggara Barat,NTB,way/614195177,Gardu Induk Ampenan,-8.5983687,116.0768772,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C11.4
+GI-NTB-0002,Jeranjang,150/20,2,60.0,Nusa Tenggara Barat,NTB,way/614195176,Gardu Induk Jeranjang,-8.6580249,116.0740629,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C11.4
+GI-NTB-0003,Sengkol,150/20,3,120.0,Nusa Tenggara Barat,NTB,way/614195178,Gardu Induk Sengkol,-8.8134664,116.2911884,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C11.4
+GI-NTB-0004,Mantang,150/20,2,90.0,Nusa Tenggara Barat,NTB,way/614195173,Gardu Induk Mantang,-8.6199585,116.3079932,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C11.4
+GI-NTB-0005,Selong,150/20,3,150.0,Nusa Tenggara Barat,NTB,,,,,0.71,,UNMATCHED,RUPTL-2025-2034,Tabel C11.4
+GI-NTB-0006,Kuta,150/20,1,30.0,Nusa Tenggara Barat,NTB,way/614195181,Gardu Induk Kuta,-8.88956,116.3060037,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C11.4
+GI-NTB-0007,Tanjung,150/20,1,30.0,Nusa Tenggara Barat,NTB,way/614635876,Gardu Induk Tanjung,-8.3659874,116.1533108,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C11.4
+GI-NTB-0008,Pringgabaya,150/20,1,30.0,Nusa Tenggara Barat,NTB,way/614215740,Gardu Induk Pringgabaya,-8.5432138,116.6296981,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C11.4
+GI-NTB-0009,Bayan,150/20,1,30.0,Nusa Tenggara Barat,NTB,way/929160637,Gardu Induk Bayan,-8.2281655,116.3977148,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C11.4
+GI-NTB-0010,Sambelia,150/20,1,20.0,Nusa Tenggara Barat,NTB,way/614625442,Gardu Induk Sambelia,-8.4224238,116.7081165,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C11.4
+GI-NTB-0011,Mataram,150/20,2,120.0,Nusa Tenggara Barat,NTB,way/929160638,Gardu Induk Mataram,-8.5921297,116.1660969,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C11.4
+GI-NTB-0012,Sekotong,150/20,1,30.0,Nusa Tenggara Barat,NTB,way/1411184750,Gardu Induk Sekotong,-8.74747,115.9549361,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C11.4
+GI-NTB-0013,Sumbawa,150/20,1,30.0,Nusa Tenggara Barat,NTB,way/707531067,Gardu Induk Seketeng,-8.5149344,117.4364131,1.0,override:osm_substation,,RUPTL-2025-2034,Tabel C11.4
+GI-NTB-0014,Labuhan,150/20,1,60.0,Nusa Tenggara Barat,NTB,,,,,0.5,,UNMATCHED,RUPTL-2025-2034,Tabel C11.4
+GI-NTB-0015,Empang,150/20,1,20.0,Nusa Tenggara Barat,NTB,way/707531069,Gardu Induk Empang,-8.774577,117.9792667,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C11.4
+GI-NTB-0016,Bonto,70/20,2,40.0,Nusa Tenggara Barat,NTB,,,,,0.4,,UNMATCHED,RUPTL-2025-2034,Tabel C11.4
+GI-NTB-0017,Bima,70/20,2,60.0,Nusa Tenggara Barat,NTB,way/707533370,Gardu Induk Bima,-8.4706724,118.7668044,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C11.4
+GI-NTB-0018,Woha,70/20,2,50.0,Nusa Tenggara Barat,NTB,way/355766825,Gardu Induk Woha,-8.5539067,118.6369418,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C11.4
+GI-NTB-0019,Dompu 150 kV,150/20,1,60.0,Nusa Tenggara Barat,NTB,way/707533375,Gardu Induk Dompu,-8.5329739,118.4550431,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel C11.4
+GI-NTB-0020,Dompu 70kV,70/20,1,10.0,Nusa Tenggara Barat,NTB,way/707533375,Gardu Induk Dompu,-8.5329739,118.4550431,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel C11.4
+GI-NTB-0021,Alas,70/20,1,20.0,Nusa Tenggara Barat,NTB,way/707043778,Gardu Induk Alas,-8.5400202,116.8950892,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C11.4
+GI-NTB-0022,Taliwang,70/20,1,30.0,Nusa Tenggara Barat,NTB,way/707043781,Gardu Induk Taliwang,-8.7640451,116.8202179,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C11.4
+GI-NTB-0023,PLTU Sumbawa,70/20,1,20.0,Nusa Tenggara Barat,NTB,,,,,0.47,,UNMATCHED,RUPTL-2025-2034,Tabel C11.4
+GI-NTB-0024,Sape,70/20,1,10.0,Nusa Tenggara Barat,NTB,way/707533367,Gardu Induk Sape,-8.5746308,118.9591201,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel C11.4
+GI-NTB-0025,Labuhan IBT,150/70,1,60.0,Nusa Tenggara Barat,NTB,,,,,0.38,,UNMATCHED,RUPTL-2025-2034,Tabel C11.4
+GI-NTB-0026,Dompu IBT,150/70,1,60.0,Nusa Tenggara Barat,NTB,way/707533375,Gardu Induk Dompu,-8.5329739,118.4550431,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel C11.4
