@@ -46,6 +46,7 @@ from collections import defaultdict
 
 ROOT = Path(__file__).resolve().parent.parent
 PLANTS_GJ = ROOT / "data/geojson/indonesia_plants.geojson"
+NAME_OVERRIDES = ROOT / "data/overrides/generator_name_overrides.csv"
 
 REGIONS = ["ntb", "ntt"]
 ID_PREFIX = {"ntb": "GEN-NTB", "ntt": "GEN-NTT"}
@@ -238,9 +239,22 @@ def load_plants():
     return plants
 
 
+def _load_name_overrides():
+    """Load mapping osm_id -> display_name dari generator_name_overrides.csv."""
+    overrides = {}
+    if not NAME_OVERRIDES.exists():
+        return overrides
+    with open(NAME_OVERRIDES) as f:
+        for r in csv.DictReader(f):
+            overrides[r['osm_id'].strip()] = r['override_name'].strip()
+    return overrides
+
+
 def run():
     plants = load_plants()
+    name_overrides = _load_name_overrides()
     print(f"OSM plants di region NTB/NTT: {len(plants)}")
+    print(f"Name overrides loaded: {len(name_overrides)}")
 
     rows_by_region = {r: [] for r in REGIONS}
     next_id = {r: 1 for r in REGIONS}
@@ -249,7 +263,9 @@ def run():
 
     for f, lat, lon, province, region, system in plants:
         props = f.get('properties', {})
-        name = (props.get('name') or props.get('name:en') or '').strip()
+        osm_name = (props.get('name') or props.get('name:en') or '').strip()
+        osm_id = props.get('@id', '')
+        name = name_overrides.get(osm_id, osm_name)
         cap_mw = parse_capacity_mw(props.get('plant:output:electricity'))
         plt_type = derive_type(props, cap_mw)
         operator = (props.get('operator') or '').strip()
@@ -266,6 +282,7 @@ def run():
         row = {
             'id': f'{ID_PREFIX[region]}-{next_id[region]:04d}',
             'name': name or '(unnamed)',
+            'osm_name': osm_name,
             'type': plt_type,
             'capacity_mw': cap_mw if cap_mw is not None else '',
             'province': province,

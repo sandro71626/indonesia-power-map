@@ -1,19 +1,19 @@
-id,name,type,capacity_mw,province,system,status,operator,method,lat,lon,osm_id,osm_source,review_flag,source_id
-GEN-NTB-0001,(unnamed),Unknown,,Nusa Tenggara Barat,NTB,existing,,,-8.5442948,118.4439023,way/119783797,,NO_NAME;NO_CAPACITY;NO_TYPE,OSM-overpass
-GEN-NTB-0002,PLTU Jeranjang,PLTU,90.0,Nusa Tenggara Barat,NTB,existing,Indonesia Power,,-8.6602738,116.0724587,way/173552269,coal,,OSM-overpass
-GEN-NTB-0003,PLTS Gili Trawangan,PLTS,0.6,Nusa Tenggara Barat,NTB,existing,Perusahaan Listrik Negara,photovoltaic,-8.3540858,116.0382681,way/230478896,solar,,OSM-overpass
-GEN-NTB-0004,PLTS Gili Air,PLTS,0.16,Nusa Tenggara Barat,NTB,existing,PLN Persero,photovoltaic,-8.3572501,116.0800007,way/230689630,solar,,OSM-overpass
-GEN-NTB-0005,PLTS Gili Meno,PLTS,0.06,Nusa Tenggara Barat,NTB,existing,PLN,photovoltaic,-8.3486132,116.057367,way/231666840,solar,,OSM-overpass
-GEN-NTB-0006,PLTMG Bima,PLTMG,50.0,Nusa Tenggara Barat,NTB,existing,PLN,combustion,-8.4110034,118.6999845,way/360110172,gas,,OSM-overpass
-GEN-NTB-0007,PLTU Lombok Timur,PLTU,50.0,Nusa Tenggara Barat,NTB,existing,,,-8.4329047,116.7054789,way/524519157,coal,,OSM-overpass
-GEN-NTB-0008,PLTU Sumbawa Barat,PLTU,14.0,Nusa Tenggara Barat,NTB,existing,Perusahaan Listrik Negara,,-8.7411446,116.777658,way/707043779,coal,,OSM-overpass
-GEN-NTB-0009,PLTS Selong,PLTS,5.0,Nusa Tenggara Barat,NTB,existing,,photovoltaic,-8.6586347,116.5764427,way/909882416,solar,,OSM-overpass
-GEN-NTB-0010,PLTS Pringgabaya,PLTS,5.0,Nusa Tenggara Barat,NTB,existing,,photovoltaic,-8.5183317,116.6319336,way/909882419,solar,,OSM-overpass
-GEN-NTB-0011,PLTS Sambelia,PLTS,5.0,Nusa Tenggara Barat,NTB,existing,,photovoltaic,-8.4326717,116.6923678,way/909882421,solar,,OSM-overpass
-GEN-NTB-0012,PLTS Sengkol,PLTS,5.0,Nusa Tenggara Barat,NTB,existing,,photovoltaic,-8.7936325,116.2945573,way/909882422,solar,,OSM-overpass
-GEN-NTB-0013,PLTU Sambelia,PLTU,100.0,Nusa Tenggara Barat,NTB,existing,,combustion,-8.4225888,116.7102636,way/929160635,coal,,OSM-overpass
-GEN-NTB-0014,"Komplek PLTMG Sumbawa 1, 2, dan 3",PLTMG,80.0,Nusa Tenggara Barat,NTB,existing,"PT. PLN Nusantara Power, PT. PLN Indonesia Power",combustion,-8.4484182,117.3367175,way/937059862,diesel;gas,,OSM-overpass
-GEN-NTB-0015,PLTU Batu Hijau,PLTU,112.0,Nusa Tenggara Barat,NTB,existing,PT Amman Mineral Nusa Tenggara,combustion,-8.9015418,116.7401426,way/944916493,coal,,OSM-overpass
-GEN-NTB-0016,Lombok New Peaker Steam Gas Engine Power Plant,PLTG,136.0,Nusa Tenggara Barat,NTB,existing,,combustion,-8.5899158,116.0744654,way/1134331383,gas,,OSM-overpass
-GEN-NTB-0017,PTLD Ampenan Power Station,PLTD,,Nusa Tenggara Barat,NTB,existing,,,-8.5993327,116.0746549,way/1216609678,diesel,NO_CAPACITY,OSM-overpass
-GEN-NTB-0018,PLTS Sumbawa,PLTS,26.8,Nusa Tenggara Barat,NTB,existing,PT Amman Mineral Nusa Tenggara,photovoltaic,-9.0078117,116.8049889,way/1303667171,solar,,OSM-overpass
+id,name,osm_name,type,capacity_mw,province,system,status,operator,method,lat,lon,osm_id,osm_source,review_flag,source_id
+GEN-NTB-0001,(unnamed),,Unknown,,Nusa Tenggara Barat,NTB,existing,,,-8.5442948,118.4439023,way/119783797,,NO_NAME;NO_CAPACITY;NO_TYPE,OSM-overpass
+GEN-NTB-0002,PLTU Jeranjang,PLTU Jeranjang,PLTU,90.0,Nusa Tenggara Barat,NTB,existing,Indonesia Power,,-8.6602738,116.0724587,way/173552269,coal,,OSM-overpass
+GEN-NTB-0003,PLTS Gili Trawangan,PLTS Gili Trawangan,PLTS,0.6,Nusa Tenggara Barat,NTB,existing,Perusahaan Listrik Negara,photovoltaic,-8.3540858,116.0382681,way/230478896,solar,,OSM-overpass
+GEN-NTB-0004,PLTS Gili Air,PLTS Gili Air,PLTS,0.16,Nusa Tenggara Barat,NTB,existing,PLN Persero,photovoltaic,-8.3572501,116.0800007,way/230689630,solar,,OSM-overpass
+GEN-NTB-0005,PLTS Gili Meno,PLTS Gili Meno,PLTS,0.06,Nusa Tenggara Barat,NTB,existing,PLN,photovoltaic,-8.3486132,116.057367,way/231666840,solar,,OSM-overpass
+GEN-NTB-0006,PLTMG Bima,PLTMG Bima,PLTMG,50.0,Nusa Tenggara Barat,NTB,existing,PLN,combustion,-8.4110034,118.6999845,way/360110172,gas,,OSM-overpass
+GEN-NTB-0007,PLTU Lombok Timur,PLTU Lombok Timur,PLTU,50.0,Nusa Tenggara Barat,NTB,existing,,,-8.4329047,116.7054789,way/524519157,coal,,OSM-overpass
+GEN-NTB-0008,PLTU Sumbawa Barat,PLTU Sumbawa Barat,PLTU,14.0,Nusa Tenggara Barat,NTB,existing,Perusahaan Listrik Negara,,-8.7411446,116.777658,way/707043779,coal,,OSM-overpass
+GEN-NTB-0009,PLTS Selong,PLTS Selong,PLTS,5.0,Nusa Tenggara Barat,NTB,existing,,photovoltaic,-8.6586347,116.5764427,way/909882416,solar,,OSM-overpass
+GEN-NTB-0010,PLTS Pringgabaya,PLTS Pringgabaya,PLTS,5.0,Nusa Tenggara Barat,NTB,existing,,photovoltaic,-8.5183317,116.6319336,way/909882419,solar,,OSM-overpass
+GEN-NTB-0011,PLTS Sambelia,PLTS Sambelia,PLTS,5.0,Nusa Tenggara Barat,NTB,existing,,photovoltaic,-8.4326717,116.6923678,way/909882421,solar,,OSM-overpass
+GEN-NTB-0012,PLTS Sengkol,PLTS Sengkol,PLTS,5.0,Nusa Tenggara Barat,NTB,existing,,photovoltaic,-8.7936325,116.2945573,way/909882422,solar,,OSM-overpass
+GEN-NTB-0013,PLTU Sambelia,PLTU Sambelia,PLTU,100.0,Nusa Tenggara Barat,NTB,existing,,combustion,-8.4225888,116.7102636,way/929160635,coal,,OSM-overpass
+GEN-NTB-0014,"Komplek PLTMG Sumbawa 1, 2, dan 3","Komplek PLTMG Sumbawa 1, 2, dan 3",PLTMG,80.0,Nusa Tenggara Barat,NTB,existing,"PT. PLN Nusantara Power, PT. PLN Indonesia Power",combustion,-8.4484182,117.3367175,way/937059862,diesel;gas,,OSM-overpass
+GEN-NTB-0015,PLTU Batu Hijau,PLTU Batu Hijau,PLTU,112.0,Nusa Tenggara Barat,NTB,existing,PT Amman Mineral Nusa Tenggara,combustion,-8.9015418,116.7401426,way/944916493,coal,,OSM-overpass
+GEN-NTB-0016,PLTMG Lombok New Peaker,Lombok New Peaker Steam Gas Engine Power Plant,PLTG,136.0,Nusa Tenggara Barat,NTB,existing,,combustion,-8.5899158,116.0744654,way/1134331383,gas,,OSM-overpass
+GEN-NTB-0017,PLTD Ampenan,PTLD Ampenan Power Station,PLTD,,Nusa Tenggara Barat,NTB,existing,,,-8.5993327,116.0746549,way/1216609678,diesel,NO_CAPACITY,OSM-overpass
+GEN-NTB-0018,PLTS Sumbawa,PLTS Sumbawa,PLTS,26.8,Nusa Tenggara Barat,NTB,existing,PT Amman Mineral Nusa Tenggara,photovoltaic,-9.0078117,116.8049889,way/1303667171,solar,,OSM-overpass

@@ -1,67 +1,67 @@
-id,name,type,capacity_mw,province,system,status,operator,method,lat,lon,osm_id,osm_source,review_flag,source_id
-GEN-KLM-0001,PLTD Siantan Kalbar,PLTD,30.0,Kalimantan Barat,Khatulistiwa,existing,Perusahaan Listrik Negara,combustion,-0.001087,109.3276215,way/284402692,oil,,OSM-overpass
-GEN-KLM-0002,PLTU MSW,PLTU,60.0,Kalimantan Selatan,Kalselteng,existing,,combustion,-2.1585393,115.4458201,way/353964382,coal,,OSM-overpass
-GEN-KLM-0003,PLTD Gunung Malang,PLTD,16.0,Kalimantan Timur,Mahakam,existing,Perusahaan Listrik Negara,,-1.2625591,116.8413592,way/373369943,diesel,,OSM-overpass
-GEN-KLM-0004,PLTD & PLTG Trisakti,PLTD,111.0,Kalimantan Selatan,Kalselteng,existing,PLN,combustion,-3.3102183,114.5703126,way/416518494,diesel;gas,,OSM-overpass
-GEN-KLM-0005,PLTGU Tanjung Batu,PLTGU,60.0,Kalimantan Timur,Mahakam,existing,,,-0.3823542,117.0519962,way/450527117,gas,,OSM-overpass
-GEN-KLM-0006,PLTU Embalut,PLTU,110.0,Kalimantan Timur,Mahakam,existing,,combustion,-0.3715316,117.062746,way/450527118,coal,,OSM-overpass
-GEN-KLM-0007,PTLD Batakan,PLTD,4.0,Kalimantan Timur,Mahakam,existing,PLN,,-1.2386724,116.9503976,way/508067180,diesel,,OSM-overpass
-GEN-KLM-0008,PLTU Sanggau,PLTU,17.0,Kalimantan Barat,Khatulistiwa,existing,Indonesia Power,combustion,0.0297497,110.555892,way/563399561,coal,,OSM-overpass
-GEN-KLM-0009,PLTU Sintang,PLTU,27.0,Kalimantan Barat,Khatulistiwa,existing,Indonesia Power,combustion,0.0739163,111.43339,way/563399562,coal,,OSM-overpass
-GEN-KLM-0010,PLTU Kalbar-2,PLTU,55.0,Kalimantan Barat,Khatulistiwa,existing,Perusahaan Listrik Negara,combustion,0.8300932,108.863233,way/563399569,coal,,OSM-overpass
-GEN-KLM-0011,PLTU Kaltim Teluk,PLTU,250.0,Kalimantan Timur,Mahakam,existing,,combustion,-1.1700853,116.7884605,way/573633098,coal,,OSM-overpass
-GEN-KLM-0012,PLTU Asam Asam,PLTU,260.0,Kalimantan Selatan,Kalselteng,existing,PLN,combustion,-3.9271515,115.1052189,way/611478867,coal,,OSM-overpass
-GEN-KLM-0013,PLTD Kuala Kapuas,PLTD,10.0,Kalimantan Selatan,Kalselteng,existing,,combustion,-3.0123226,114.3727892,way/611547067,diesel,,OSM-overpass
-GEN-KLM-0014,PLTD Seberang Barito,PLTD,45.0,Kalimantan Selatan,Kalselteng,existing,Perusahaan Listrik Negara,combustion,-3.2768161,114.5525672,way/611547068,diesel;gas,,OSM-overpass
-GEN-KLM-0015,PLTD Maburai,PLTD,5.0,Kalimantan Selatan,Kalselteng,existing,PLN,combustion,-2.1966964,115.4505238,way/611647727,diesel,,OSM-overpass
-GEN-KLM-0016,PLTG Sambera,PLTG,40.0,Kalimantan Timur,Mahakam,existing,,,-0.3161946,117.2924034,way/612348764,gas,,OSM-overpass
-GEN-KLM-0017,PLTA Riam Kanan,PLTA,30.0,Kalimantan Selatan,Kalselteng,existing,PLN,water-storage,-3.5147851,115.0064707,way/613098761,hydro,,OSM-overpass
-GEN-KLM-0018,PLTD Kahayan Baru,PLTD,10.0,Kalimantan Tengah,Kalselteng,existing,,combustion,-2.1732838,113.8736172,way/613865135,diesel,,OSM-overpass
-GEN-KLM-0019,(unnamed),Unknown,,Kalimantan Timur,Mahakam,existing,,,0.1754368,117.4980245,way/695724354,,NO_NAME;NO_CAPACITY;NO_TYPE,OSM-overpass
-GEN-KLM-0020,PLTU Kalbar-1,PLTU,200.0,Kalimantan Barat,Khatulistiwa,existing,,combustion,0.8174175,108.843188,way/872005243,coal,,OSM-overpass
-GEN-KLM-0021,PLTU Bengkayang,PLTU,100.0,Kalimantan Barat,Khatulistiwa,existing,,combustion,0.8371708,108.8737929,way/872005244,coal,,OSM-overpass
-GEN-KLM-0022,PLTU Parit Baru (FTP1),PLTU,100.0,Kalimantan Barat,Khatulistiwa,existing,Perusahaan Listrik Negara,combustion,0.0586762,109.2032589,way/919274063,coal,,OSM-overpass
-GEN-KLM-0023,PLTMG Tanjung Selor,PLTMG,15.0,Kalimantan Utara,Mahakam,existing,,,2.8134715,117.3671633,way/943966216,gas,,OSM-overpass
-GEN-KLM-0024,PLTD Sambaliung,PLTD,10.0,Kalimantan Utara,Mahakam,existing,,,2.1575228,117.5113113,way/943966217,diesel,,OSM-overpass
-GEN-KLM-0025,PLTU Tanjung Bara,PLTU,64.0,Kalimantan Timur,Mahakam,existing,,,0.5403338,117.6357811,way/944504857,coal,,OSM-overpass
-GEN-KLM-0026,PLTU Kaltim 2,PLTU,200.0,Kalimantan Timur,Mahakam,existing,,combustion,0.0548112,117.493966,way/944504860,coal,,OSM-overpass
-GEN-KLM-0027,PLTU Muara Jawa,PLTU,55.0,Kalimantan Timur,Mahakam,existing,,,-0.7802248,117.1883726,way/945128872,coal,,OSM-overpass
-GEN-KLM-0028,PLTGU Senipah,PLTGU,117.0,Kalimantan Timur,Mahakam,existing,,combustion,-0.9871918,117.1358469,way/945128875,gas,,OSM-overpass
-GEN-KLM-0029,PLTD Girimukti,PLTD,20.0,Kalimantan Timur,Mahakam,existing,,,-1.3411832,116.6713701,way/945128881,diesel,,OSM-overpass
-GEN-KLM-0030,PLTU Tabalong,PLTU,200.0,Kalimantan Selatan,Kalselteng,existing,,combustion,-2.1632372,115.4412353,way/945128883,coal,,OSM-overpass
-GEN-KLM-0031,PLTMG Bangkanai,PLTMG,155.0,Kalimantan Timur,Mahakam,existing,,combustion,-0.6229549,115.137459,way/945128888,gas,,OSM-overpass
-GEN-KLM-0032,Kalselteng-1 Power Plant,Unknown,,Kalimantan Tengah,Kalselteng,existing,,,-1.3733024,113.5674728,way/955122312,,NO_CAPACITY;NO_TYPE,OSM-overpass
-GEN-KLM-0033,PLTD Banua Lima Unit Barabai,PLTD,6.0,Kalimantan Selatan,Kalselteng,existing,PLN,combustion,-2.5917148,115.3734585,way/1028155968,diesel,,OSM-overpass
-GEN-KLM-0034,PLTD Banua Lima Unit Panangkalaan,PLTD,8.7,Kalimantan Selatan,Kalselteng,existing,PLN,combustion,-2.4050013,115.2626125,way/1028155969,diesel,,OSM-overpass
-GEN-KLM-0035,(unnamed),PLTS,,Kalimantan Timur,Mahakam,existing,,,0.7744364,114.2787485,way/1042007577,solar,NO_NAME;NO_CAPACITY,OSM-overpass
-GEN-KLM-0036,(unnamed),PLTS,,Kalimantan Timur,Mahakam,existing,,,0.7701449,114.2737324,way/1042007733,solar,NO_NAME;NO_CAPACITY,OSM-overpass
-GEN-KLM-0037,(unnamed),PLTS,,Kalimantan Utara,Mahakam,existing,,photovoltaic,3.6130338,115.6975726,way/1043457651,solar,NO_NAME;NO_CAPACITY,OSM-overpass
-GEN-KLM-0038,PLTU Kaltim-4,PLTU,200.0,Kalimantan Timur,Mahakam,existing,,combustion,-0.3644715,117.0651993,way/1148695448,coal,,OSM-overpass
-GEN-KLM-0039,PLTS Long Nawang,PLTS,,Kalimantan Utara,Mahakam,existing,,,1.7825724,114.9051424,way/1150889689,solar,NO_CAPACITY,OSM-overpass
-GEN-KLM-0040,PLTD Long Nawang,PLTD,,Kalimantan Utara,Mahakam,existing,Perusahaan Listrik Negara,combustion,1.7949122,114.8948056,way/1151107028,oil,NO_CAPACITY,OSM-overpass
-GEN-KLM-0041,PLTU Kalteng-1 Pulang Pisau,PLTU,120.0,Kalimantan Tengah,Kalselteng,existing,,combustion,-2.8245463,114.2117965,way/1178166875,coal,,OSM-overpass
-GEN-KLM-0042,(unnamed),PLTS,,Kalimantan Timur,Mahakam,existing,,photovoltaic,0.8856043,114.6897687,way/1188270208,solar,NO_NAME;NO_CAPACITY,OSM-overpass
-GEN-KLM-0043,Kaltim power station,Unknown,,Kalimantan Timur,Mahakam,existing,,,-0.3842383,117.0510154,way/1190705190,,NO_CAPACITY;NO_TYPE,OSM-overpass
-GEN-KLM-0044,EQUATORIAL BUMI PERSADA,PLTU,,Kalimantan Selatan,Kalselteng,existing,,combustion,-1.9183304,115.0908441,way/1211621343,coal,NO_CAPACITY,OSM-overpass
-GEN-KLM-0045,Ketapang WHW Smelter Power Plant,PLTU,,Kalimantan Barat,Khatulistiwa,existing,PT Well Harvest Winning Alumina Refinery,combustion,-2.3666338,110.1572199,way/1226006242,coal,NO_CAPACITY,OSM-overpass
-GEN-KLM-0046,(unnamed),PLTS,,Kalimantan Timur,Mahakam,existing,,photovoltaic,0.1067593,117.4768166,way/1231910573,solar,NO_NAME;NO_CAPACITY,OSM-overpass
-GEN-KLM-0047,(unnamed),PLTS,,Kalimantan Timur,Mahakam,existing,,photovoltaic,0.1078283,117.4774345,way/1231910574,solar,NO_NAME;NO_CAPACITY,OSM-overpass
-GEN-KLM-0048,(unnamed),PLTS,,Kalimantan Timur,Mahakam,existing,,photovoltaic,0.1088105,117.4765714,way/1231910575,solar,NO_NAME;NO_CAPACITY,OSM-overpass
-GEN-KLM-0049,(unnamed),PLTS,,Kalimantan Timur,Mahakam,existing,,photovoltaic,0.109365,117.4752228,way/1231910576,solar,NO_NAME;NO_CAPACITY,OSM-overpass
-GEN-KLM-0050,PLTG MPP Parit Baru,PLTG,100.0,Kalimantan Barat,Khatulistiwa,existing,Perusahaan Listrik Negara,combustion,0.0589964,109.2038611,way/1236737903,gas,,OSM-overpass
-GEN-KLM-0051,PTLU Lati,PLTU,,Kalimantan Utara,Mahakam,existing,,combustion,2.2143447,117.618881,way/1280400266,coal,NO_CAPACITY,OSM-overpass
-GEN-KLM-0052,PLTS IKN,PLTS,50.0,Kalimantan Timur,Mahakam,existing,Nusantara Sembcorp Solar Energi,photovoltaic,-0.9898017,116.6382959,way/1303917776,solar,,OSM-overpass
-GEN-KLM-0053,PLTD Sei Baya,PLTD,,Kalimantan Utara,Mahakam,existing,PLN,combustion,2.8316482,117.3853796,way/1312946738,coal,NO_CAPACITY,OSM-overpass
-GEN-KLM-0054,PLTS Bunyut,PLTS,2.0,Kalimantan Timur,Mahakam,existing,Indo Tambangraya Megah,photovoltaic,-0.3186849,115.8565947,way/1322972373,solar,,OSM-overpass
-GEN-KLM-0055,(unnamed),PLTS,,Kalimantan Utara,Mahakam,existing,,,3.0558239,116.1434176,way/1361600216,solar,NO_NAME;NO_CAPACITY,OSM-overpass
-GEN-KLM-0056,(unnamed),PLTS,,Kalimantan Utara,Mahakam,existing,,,3.9888448,116.5332271,way/1362008818,solar,NO_NAME;NO_CAPACITY,OSM-overpass
-GEN-KLM-0057,(unnamed),PLTS,,Kalimantan Utara,Mahakam,existing,,,4.2232843,116.4990023,way/1362142681,solar,NO_NAME;NO_CAPACITY,OSM-overpass
-GEN-KLM-0058,PLTS Temajuk,PLTS,,Kalimantan Barat,Khatulistiwa,existing,PT PLN,photovoltaic,2.0067549,109.598207,way/1371398238,solar,NO_CAPACITY,OSM-overpass
-GEN-KLM-0059,PLTS Derawan,PLTS,,Kalimantan Timur,Mahakam,existing,PT PLN,photovoltaic,2.2862757,118.2434624,way/1371398249,solar,NO_CAPACITY,OSM-overpass
-GEN-KLM-0060,PLTS Indocement,PLTS,15.0,Kalimantan Selatan,Kalselteng,existing,,photovoltaic,-3.256105,116.112217,way/1411100174,solar,,OSM-overpass
-GEN-KLM-0061,PLTD Sei Raya Kalbar,PLTD,65.0,Kalimantan Barat,Khatulistiwa,existing,Perusahaan Listrik Negara,combustion,-0.072842,109.3806946,way/1434857505,oil,,OSM-overpass
-GEN-KLM-0062,(unnamed),PLTS,,Kalimantan Utara,Mahakam,existing,,photovoltaic,2.6907285,115.7283033,way/1453797217,solar,NO_NAME;NO_CAPACITY,OSM-overpass
-GEN-KLM-0063,(unnamed),PLTS,,Kalimantan Utara,Mahakam,existing,,photovoltaic,4.3011171,117.301879,way/1455366530,solar,NO_NAME;NO_CAPACITY,OSM-overpass
-GEN-KLM-0064,(unnamed),PLTS,,Kalimantan Utara,Mahakam,existing,,photovoltaic,3.9725752,117.0205272,way/1456210720,solar,NO_NAME;NO_CAPACITY,OSM-overpass
-GEN-KLM-0065,(unnamed),PLTS,,Kalimantan Utara,Mahakam,existing,,,2.8339237,116.1515622,way/1460653376,solar,NO_NAME;NO_CAPACITY,OSM-overpass
-GEN-KLM-0066,(unnamed),PLTS,,Kalimantan Utara,Mahakam,existing,,photovoltaic,1.982936,116.5295215,way/1497548536,solar,NO_NAME;NO_CAPACITY,OSM-overpass
+id,name,osm_name,type,capacity_mw,province,system,status,operator,method,lat,lon,osm_id,osm_source,review_flag,source_id
+GEN-KLM-0001,PLTD Siantan Kalbar,PLTD Siantan Kalbar,PLTD,30.0,Kalimantan Barat,Khatulistiwa,existing,Perusahaan Listrik Negara,combustion,-0.001087,109.3276215,way/284402692,oil,,OSM-overpass
+GEN-KLM-0002,PLTU MSW,PLTU MSW,PLTU,60.0,Kalimantan Selatan,Kalselteng,existing,,combustion,-2.1585393,115.4458201,way/353964382,coal,,OSM-overpass
+GEN-KLM-0003,PLTD Gunung Malang,PLTD Gunung Malang,PLTD,16.0,Kalimantan Timur,Mahakam,existing,Perusahaan Listrik Negara,,-1.2625591,116.8413592,way/373369943,diesel,,OSM-overpass
+GEN-KLM-0004,PLTD & PLTG Trisakti,PLTD & PLTG Trisakti,PLTD,111.0,Kalimantan Selatan,Kalselteng,existing,PLN,combustion,-3.3102183,114.5703126,way/416518494,diesel;gas,,OSM-overpass
+GEN-KLM-0005,PLTGU Tanjung Batu,PLTGU Tanjung Batu,PLTGU,60.0,Kalimantan Timur,Mahakam,existing,,,-0.3823542,117.0519962,way/450527117,gas,,OSM-overpass
+GEN-KLM-0006,PLTU Embalut,PLTU Embalut,PLTU,110.0,Kalimantan Timur,Mahakam,existing,,combustion,-0.3715316,117.062746,way/450527118,coal,,OSM-overpass
+GEN-KLM-0007,PTLD Batakan,PTLD Batakan,PLTD,4.0,Kalimantan Timur,Mahakam,existing,PLN,,-1.2386724,116.9503976,way/508067180,diesel,,OSM-overpass
+GEN-KLM-0008,PLTU Sanggau,PLTU Sanggau,PLTU,17.0,Kalimantan Barat,Khatulistiwa,existing,Indonesia Power,combustion,0.0297497,110.555892,way/563399561,coal,,OSM-overpass
+GEN-KLM-0009,PLTU Sintang,PLTU Sintang,PLTU,27.0,Kalimantan Barat,Khatulistiwa,existing,Indonesia Power,combustion,0.0739163,111.43339,way/563399562,coal,,OSM-overpass
+GEN-KLM-0010,PLTU Kalbar-2,PLTU Kalbar-2,PLTU,55.0,Kalimantan Barat,Khatulistiwa,existing,Perusahaan Listrik Negara,combustion,0.8300932,108.863233,way/563399569,coal,,OSM-overpass
+GEN-KLM-0011,PLTU Kaltim Teluk,PLTU Kaltim Teluk,PLTU,250.0,Kalimantan Timur,Mahakam,existing,,combustion,-1.1700853,116.7884605,way/573633098,coal,,OSM-overpass
+GEN-KLM-0012,PLTU Asam Asam,PLTU Asam Asam,PLTU,260.0,Kalimantan Selatan,Kalselteng,existing,PLN,combustion,-3.9271515,115.1052189,way/611478867,coal,,OSM-overpass
+GEN-KLM-0013,PLTD Kuala Kapuas,PLTD Kuala Kapuas,PLTD,10.0,Kalimantan Selatan,Kalselteng,existing,,combustion,-3.0123226,114.3727892,way/611547067,diesel,,OSM-overpass
+GEN-KLM-0014,PLTD Seberang Barito,PLTD Seberang Barito,PLTD,45.0,Kalimantan Selatan,Kalselteng,existing,Perusahaan Listrik Negara,combustion,-3.2768161,114.5525672,way/611547068,diesel;gas,,OSM-overpass
+GEN-KLM-0015,PLTD Maburai,PLTD Maburai,PLTD,5.0,Kalimantan Selatan,Kalselteng,existing,PLN,combustion,-2.1966964,115.4505238,way/611647727,diesel,,OSM-overpass
+GEN-KLM-0016,PLTG Sambera,PLTG Sambera,PLTG,40.0,Kalimantan Timur,Mahakam,existing,,,-0.3161946,117.2924034,way/612348764,gas,,OSM-overpass
+GEN-KLM-0017,PLTA Riam Kanan,PLTA Riam Kanan,PLTA,30.0,Kalimantan Selatan,Kalselteng,existing,PLN,water-storage,-3.5147851,115.0064707,way/613098761,hydro,,OSM-overpass
+GEN-KLM-0018,PLTD Kahayan Baru,PLTD Kahayan Baru,PLTD,10.0,Kalimantan Tengah,Kalselteng,existing,,combustion,-2.1732838,113.8736172,way/613865135,diesel,,OSM-overpass
+GEN-KLM-0019,(unnamed),,Unknown,,Kalimantan Timur,Mahakam,existing,,,0.1754368,117.4980245,way/695724354,,NO_NAME;NO_CAPACITY;NO_TYPE,OSM-overpass
+GEN-KLM-0020,PLTU Kalbar-1,PLTU Kalbar-1,PLTU,200.0,Kalimantan Barat,Khatulistiwa,existing,,combustion,0.8174175,108.843188,way/872005243,coal,,OSM-overpass
+GEN-KLM-0021,PLTU Bengkayang,PLTU Bengkayang,PLTU,100.0,Kalimantan Barat,Khatulistiwa,existing,,combustion,0.8371708,108.8737929,way/872005244,coal,,OSM-overpass
+GEN-KLM-0022,PLTU Parit Baru (FTP1),PLTU Parit Baru (FTP1),PLTU,100.0,Kalimantan Barat,Khatulistiwa,existing,Perusahaan Listrik Negara,combustion,0.0586762,109.2032589,way/919274063,coal,,OSM-overpass
+GEN-KLM-0023,PLTMG Tanjung Selor,PLTMG Tanjung Selor,PLTMG,15.0,Kalimantan Utara,Mahakam,existing,,,2.8134715,117.3671633,way/943966216,gas,,OSM-overpass
+GEN-KLM-0024,PLTD Sambaliung,PLTD Sambaliung,PLTD,10.0,Kalimantan Utara,Mahakam,existing,,,2.1575228,117.5113113,way/943966217,diesel,,OSM-overpass
+GEN-KLM-0025,PLTU Tanjung Bara,PLTU Tanjung Bara,PLTU,64.0,Kalimantan Timur,Mahakam,existing,,,0.5403338,117.6357811,way/944504857,coal,,OSM-overpass
+GEN-KLM-0026,PLTU Kaltim 2,PLTU Kaltim 2,PLTU,200.0,Kalimantan Timur,Mahakam,existing,,combustion,0.0548112,117.493966,way/944504860,coal,,OSM-overpass
+GEN-KLM-0027,PLTU Muara Jawa,PLTU Muara Jawa,PLTU,55.0,Kalimantan Timur,Mahakam,existing,,,-0.7802248,117.1883726,way/945128872,coal,,OSM-overpass
+GEN-KLM-0028,PLTGU Senipah,PLTGU Senipah,PLTGU,117.0,Kalimantan Timur,Mahakam,existing,,combustion,-0.9871918,117.1358469,way/945128875,gas,,OSM-overpass
+GEN-KLM-0029,PLTD Girimukti,PLTD Girimukti,PLTD,20.0,Kalimantan Timur,Mahakam,existing,,,-1.3411832,116.6713701,way/945128881,diesel,,OSM-overpass
+GEN-KLM-0030,PLTU Tabalong,PLTU Tabalong,PLTU,200.0,Kalimantan Selatan,Kalselteng,existing,,combustion,-2.1632372,115.4412353,way/945128883,coal,,OSM-overpass
+GEN-KLM-0031,PLTMG Bangkanai,PLTMG Bangkanai,PLTMG,155.0,Kalimantan Timur,Mahakam,existing,,combustion,-0.6229549,115.137459,way/945128888,gas,,OSM-overpass
+GEN-KLM-0032,PLTU Kalselteng-1 Pulang Pisau,Kalselteng-1 Power Plant,Unknown,,Kalimantan Tengah,Kalselteng,existing,,,-1.3733024,113.5674728,way/955122312,,NO_CAPACITY;NO_TYPE,OSM-overpass
+GEN-KLM-0033,PLTD Banua Lima Unit Barabai,PLTD Banua Lima Unit Barabai,PLTD,6.0,Kalimantan Selatan,Kalselteng,existing,PLN,combustion,-2.5917148,115.3734585,way/1028155968,diesel,,OSM-overpass
+GEN-KLM-0034,PLTD Banua Lima Unit Panangkalaan,PLTD Banua Lima Unit Panangkalaan,PLTD,8.7,Kalimantan Selatan,Kalselteng,existing,PLN,combustion,-2.4050013,115.2626125,way/1028155969,diesel,,OSM-overpass
+GEN-KLM-0035,(unnamed),,PLTS,,Kalimantan Timur,Mahakam,existing,,,0.7744364,114.2787485,way/1042007577,solar,NO_NAME;NO_CAPACITY,OSM-overpass
+GEN-KLM-0036,(unnamed),,PLTS,,Kalimantan Timur,Mahakam,existing,,,0.7701449,114.2737324,way/1042007733,solar,NO_NAME;NO_CAPACITY,OSM-overpass
+GEN-KLM-0037,(unnamed),,PLTS,,Kalimantan Utara,Mahakam,existing,,photovoltaic,3.6130338,115.6975726,way/1043457651,solar,NO_NAME;NO_CAPACITY,OSM-overpass
+GEN-KLM-0038,PLTU Kaltim-4,PLTU Kaltim-4,PLTU,200.0,Kalimantan Timur,Mahakam,existing,,combustion,-0.3644715,117.0651993,way/1148695448,coal,,OSM-overpass
+GEN-KLM-0039,PLTS Long Nawang,PLTS Long Nawang,PLTS,,Kalimantan Utara,Mahakam,existing,,,1.7825724,114.9051424,way/1150889689,solar,NO_CAPACITY,OSM-overpass
+GEN-KLM-0040,PLTD Long Nawang,PLTD Long Nawang,PLTD,,Kalimantan Utara,Mahakam,existing,Perusahaan Listrik Negara,combustion,1.7949122,114.8948056,way/1151107028,oil,NO_CAPACITY,OSM-overpass
+GEN-KLM-0041,PLTU Kalteng-1 Pulang Pisau,PLTU Kalteng-1 Pulang Pisau,PLTU,120.0,Kalimantan Tengah,Kalselteng,existing,,combustion,-2.8245463,114.2117965,way/1178166875,coal,,OSM-overpass
+GEN-KLM-0042,(unnamed),,PLTS,,Kalimantan Timur,Mahakam,existing,,photovoltaic,0.8856043,114.6897687,way/1188270208,solar,NO_NAME;NO_CAPACITY,OSM-overpass
+GEN-KLM-0043,PLTU Kaltim,Kaltim power station,Unknown,,Kalimantan Timur,Mahakam,existing,,,-0.3842383,117.0510154,way/1190705190,,NO_CAPACITY;NO_TYPE,OSM-overpass
+GEN-KLM-0044,EQUATORIAL BUMI PERSADA,EQUATORIAL BUMI PERSADA,PLTU,,Kalimantan Selatan,Kalselteng,existing,,combustion,-1.9183304,115.0908441,way/1211621343,coal,NO_CAPACITY,OSM-overpass
+GEN-KLM-0045,PLTU WHW Ketapang,Ketapang WHW Smelter Power Plant,PLTU,,Kalimantan Barat,Khatulistiwa,existing,PT Well Harvest Winning Alumina Refinery,combustion,-2.3666338,110.1572199,way/1226006242,coal,NO_CAPACITY,OSM-overpass
+GEN-KLM-0046,(unnamed),,PLTS,,Kalimantan Timur,Mahakam,existing,,photovoltaic,0.1067593,117.4768166,way/1231910573,solar,NO_NAME;NO_CAPACITY,OSM-overpass
+GEN-KLM-0047,(unnamed),,PLTS,,Kalimantan Timur,Mahakam,existing,,photovoltaic,0.1078283,117.4774345,way/1231910574,solar,NO_NAME;NO_CAPACITY,OSM-overpass
+GEN-KLM-0048,(unnamed),,PLTS,,Kalimantan Timur,Mahakam,existing,,photovoltaic,0.1088105,117.4765714,way/1231910575,solar,NO_NAME;NO_CAPACITY,OSM-overpass
+GEN-KLM-0049,(unnamed),,PLTS,,Kalimantan Timur,Mahakam,existing,,photovoltaic,0.109365,117.4752228,way/1231910576,solar,NO_NAME;NO_CAPACITY,OSM-overpass
+GEN-KLM-0050,PLTG MPP Parit Baru,PLTG MPP Parit Baru,PLTG,100.0,Kalimantan Barat,Khatulistiwa,existing,Perusahaan Listrik Negara,combustion,0.0589964,109.2038611,way/1236737903,gas,,OSM-overpass
+GEN-KLM-0051,PTLU Lati,PTLU Lati,PLTU,,Kalimantan Utara,Mahakam,existing,,combustion,2.2143447,117.618881,way/1280400266,coal,NO_CAPACITY,OSM-overpass
+GEN-KLM-0052,PLTS IKN,PLTS IKN,PLTS,50.0,Kalimantan Timur,Mahakam,existing,Nusantara Sembcorp Solar Energi,photovoltaic,-0.9898017,116.6382959,way/1303917776,solar,,OSM-overpass
+GEN-KLM-0053,PLTD Sei Baya,PLTD Sei Baya,PLTD,,Kalimantan Utara,Mahakam,existing,PLN,combustion,2.8316482,117.3853796,way/1312946738,coal,NO_CAPACITY,OSM-overpass
+GEN-KLM-0054,PLTS Bunyut,PLTS Bunyut,PLTS,2.0,Kalimantan Timur,Mahakam,existing,Indo Tambangraya Megah,photovoltaic,-0.3186849,115.8565947,way/1322972373,solar,,OSM-overpass
+GEN-KLM-0055,(unnamed),,PLTS,,Kalimantan Utara,Mahakam,existing,,,3.0558239,116.1434176,way/1361600216,solar,NO_NAME;NO_CAPACITY,OSM-overpass
+GEN-KLM-0056,(unnamed),,PLTS,,Kalimantan Utara,Mahakam,existing,,,3.9888448,116.5332271,way/1362008818,solar,NO_NAME;NO_CAPACITY,OSM-overpass
+GEN-KLM-0057,(unnamed),,PLTS,,Kalimantan Utara,Mahakam,existing,,,4.2232843,116.4990023,way/1362142681,solar,NO_NAME;NO_CAPACITY,OSM-overpass
+GEN-KLM-0058,PLTS Temajuk,PLTS Temajuk,PLTS,,Kalimantan Barat,Khatulistiwa,existing,PT PLN,photovoltaic,2.0067549,109.598207,way/1371398238,solar,NO_CAPACITY,OSM-overpass
+GEN-KLM-0059,PLTS Derawan,PLTS Derawan,PLTS,,Kalimantan Timur,Mahakam,existing,PT PLN,photovoltaic,2.2862757,118.2434624,way/1371398249,solar,NO_CAPACITY,OSM-overpass
+GEN-KLM-0060,PLTS Indocement,PLTS Indocement,PLTS,15.0,Kalimantan Selatan,Kalselteng,existing,,photovoltaic,-3.256105,116.112217,way/1411100174,solar,,OSM-overpass
+GEN-KLM-0061,PLTD Sei Raya Kalbar,PLTD Sei Raya Kalbar,PLTD,65.0,Kalimantan Barat,Khatulistiwa,existing,Perusahaan Listrik Negara,combustion,-0.072842,109.3806946,way/1434857505,oil,,OSM-overpass
+GEN-KLM-0062,(unnamed),,PLTS,,Kalimantan Utara,Mahakam,existing,,photovoltaic,2.6907285,115.7283033,way/1453797217,solar,NO_NAME;NO_CAPACITY,OSM-overpass
+GEN-KLM-0063,(unnamed),,PLTS,,Kalimantan Utara,Mahakam,existing,,photovoltaic,4.3011171,117.301879,way/1455366530,solar,NO_NAME;NO_CAPACITY,OSM-overpass
+GEN-KLM-0064,(unnamed),,PLTS,,Kalimantan Utara,Mahakam,existing,,photovoltaic,3.9725752,117.0205272,way/1456210720,solar,NO_NAME;NO_CAPACITY,OSM-overpass
+GEN-KLM-0065,(unnamed),,PLTS,,Kalimantan Utara,Mahakam,existing,,,2.8339237,116.1515622,way/1460653376,solar,NO_NAME;NO_CAPACITY,OSM-overpass
+GEN-KLM-0066,(unnamed),,PLTS,,Kalimantan Utara,Mahakam,existing,,photovoltaic,1.982936,116.5295215,way/1497548536,solar,NO_NAME;NO_CAPACITY,OSM-overpass

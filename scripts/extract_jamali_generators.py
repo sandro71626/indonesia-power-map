@@ -21,8 +21,23 @@ from collections import defaultdict
 ROOT = Path(__file__).resolve().parent.parent
 PLANTS_GJ = ROOT / "data/geojson/indonesia_plants.geojson"
 RUPTL = ROOT / "data/raw/sources/RUPTL-2025-2034.pdf"
+NAME_OVERRIDES = ROOT / "data/overrides/generator_name_overrides.csv"
 OUT_CSV = ROOT / "data/processed/generator_master_jamali.csv"
 OUT_GJ = ROOT / "data/processed/generators_jamali.geojson"
+
+
+def load_name_overrides():
+    """Load mapping osm_id -> display_name dari generator_name_overrides.csv.
+    Untuk normalisasi nama plant non-Indonesia (English deskriptif captive
+    industrial). Original OSM name di-preserve di field `osm_name`."""
+    import csv as _csv
+    overrides = {}
+    if not NAME_OVERRIDES.exists():
+        return overrides
+    with open(NAME_OVERRIDES) as f:
+        for r in _csv.DictReader(f):
+            overrides[r['osm_id'].strip()] = r['override_name'].strip()
+    return overrides
 
 # Per-provinsi bbox (untuk assign provinsi dari koordinat)
 # (lat_min, lon_min, lat_max, lon_max)
@@ -199,7 +214,9 @@ def extract_ruptl_aggregates():
 
 def run():
     plants = load_jamali_plants()
+    name_overrides = load_name_overrides()
     print(f"OSM plants in Jamali: {len(plants)}")
+    print(f"Name overrides loaded: {len(name_overrides)}")
 
     rows = []
     by_province_type = defaultdict(lambda: defaultdict(lambda: {'count': 0, 'mw': 0.0}))
@@ -207,7 +224,9 @@ def run():
 
     for f, lat, lon in plants:
         props = f.get('properties', {})
-        name = (props.get('name') or props.get('name:en') or '').strip()
+        osm_name = (props.get('name') or props.get('name:en') or '').strip()
+        osm_id = props.get('@id', '')
+        display_name = name_overrides.get(osm_id, osm_name)
         cap_mw = parse_capacity_mw(props.get('plant:output:electricity'))
         plt_type = derive_type(props, cap_mw)
         province = assign_province(lat, lon)
@@ -215,13 +234,14 @@ def run():
         method = (props.get('plant:method') or '').strip()
 
         flags = []
-        if not name: flags.append('NO_NAME')
+        if not display_name: flags.append('NO_NAME')
         if cap_mw is None: flags.append('NO_CAPACITY')
         if plt_type == 'Unknown': flags.append('NO_TYPE')
 
         row = {
             'id': f'GEN-JMB-{next_id:04d}',
-            'name': name or '(unnamed)',
+            'name': display_name or '(unnamed)',
+            'osm_name': osm_name,
             'type': plt_type,
             'capacity_mw': cap_mw if cap_mw is not None else '',
             'province': province,
