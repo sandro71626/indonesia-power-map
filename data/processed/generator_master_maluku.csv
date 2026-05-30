@@ -1,20 +1,20 @@
-id,name,type,capacity_mw,province,system,status,operator,method,lat,lon,osm_id,osm_source,review_flag,source_id
-GEN-MLK-0001,PLTU Waai,PLTU,30.0,Maluku,Maluku,existing,,,-3.5505619,128.333643,way/174363561,coal,,OSM-overpass
-GEN-MLK-0002,PLTS Morotai,PLTS,0.6,Maluku Utara,Maluku,existing,PT PLN,photovoltaic,2.0049563,128.2828028,way/188467200,solar,,OSM-overpass
-GEN-MLK-0003,PLN Desa Waci,Unknown,,Maluku Utara,Maluku,existing,,,0.5959631,128.4762468,way/286552971,,NO_CAPACITY;NO_TYPE,OSM-overpass
-GEN-MLK-0004,PLTU Tidore,PLTU,14.0,Maluku Utara,Maluku,existing,,,0.7392645,127.3882774,way/391581020,coal,,OSM-overpass
-GEN-MLK-0005,PLTMG Seram,PLTMG,20.0,Maluku,Maluku,existing,,combustion,-3.3062485,128.9463252,way/501327305,gas,,OSM-overpass
-GEN-MLK-0006,PLTS Pulau Tiga,PLTS,0.075,Maluku,Maluku,existing,,photovoltaic,-3.6530298,127.9064399,way/522713233,solar,,OSM-overpass
-GEN-MLK-0007,PLTS Tahalupu,PLTS,0.1,Maluku,Maluku,existing,,photovoltaic,-3.231044,127.6552233,way/799249943,solar,,OSM-overpass
-GEN-MLK-0008,PLTMG Ternate,PLTMG,30.0,Maluku Utara,Maluku,existing,,combustion,0.7667497,127.3062418,way/951367598,gas,,OSM-overpass
-GEN-MLK-0009,PLTD Kayu Merah,PLTD,25.0,Maluku Utara,Maluku,existing,,,0.7608672,127.3705052,way/951367599,diesel,,OSM-overpass
-GEN-MLK-0010,PLTMG Dullah,PLTMG,,Maluku,Maluku,existing,,combustion,-5.5550791,132.7721921,way/1082807974,gas,NO_CAPACITY,OSM-overpass
-GEN-MLK-0011,MIN 4 Maluku Tengah,Unknown,,Maluku,Maluku,existing,PLN,,-3.3831064,129.5496582,way/1149620760,,NO_CAPACITY;NO_TYPE,OSM-overpass
-GEN-MLK-0012,PLN Tehoru,Unknown,,Maluku,Maluku,existing,PLN,,-3.381894,129.5488676,way/1149623514,,NO_CAPACITY;NO_TYPE,OSM-overpass
-GEN-MLK-0013,PLTU Weda Bay Power Plant（韦达贝燃煤发电厂）,PLTU,,Maluku Utara,Maluku,existing,,combustion,0.4765027,128.0013922,way/1152758557,coal,NO_CAPACITY,OSM-overpass
-GEN-MLK-0014,(unnamed),PLTS,,Maluku Utara,Maluku,existing,,,2.0377257,128.2999183,way/1204724030,solar,NO_NAME;NO_CAPACITY,OSM-overpass
-GEN-MLK-0015,(unnamed),PLTS,,Maluku Utara,Maluku,existing,,,2.2957053,128.1798122,way/1205552684,solar,NO_NAME;NO_CAPACITY,OSM-overpass
-GEN-MLK-0016,电厂(9-11),Unknown,,Maluku Utara,Maluku,existing,,,0.4761076,128.0082369,way/1245573861,,NO_CAPACITY;NO_TYPE,OSM-overpass
-GEN-MLK-0017,电厂（1-4）,PLTU,,Maluku Utara,Maluku,existing,,combustion,0.4760793,127.9986131,way/1245573862,coal,NO_CAPACITY,OSM-overpass
-GEN-MLK-0018,电厂（5-8）,PLTU,,Maluku Utara,Maluku,existing,,combustion,0.4761695,127.9946956,way/1245573863,coal,NO_CAPACITY,OSM-overpass
-GEN-MLK-0019,3号变电站,Unknown,,Maluku Utara,Maluku,existing,,,0.482199,127.9887766,way/1245573872,,NO_CAPACITY;NO_TYPE,OSM-overpass
+id,name,osm_name,type,capacity_mw,province,system,status,operator,method,lat,lon,osm_id,osm_source,review_flag,source_id
+GEN-MLK-0001,PLTU Waai,PLTU Waai,PLTU,30.0,Maluku,Maluku,existing,,,-3.5505619,128.333643,way/174363561,coal,,OSM-overpass
+GEN-MLK-0002,PLTS Morotai,PLTS Morotai,PLTS,0.6,Maluku Utara,Maluku,existing,PT PLN,photovoltaic,2.0049563,128.2828028,way/188467200,solar,,OSM-overpass
+GEN-MLK-0003,PLN Desa Waci,PLN Desa Waci,Unknown,,Maluku Utara,Maluku,existing,,,0.5959631,128.4762468,way/286552971,,NO_CAPACITY;NO_TYPE,OSM-overpass
+GEN-MLK-0004,PLTU Tidore,PLTU Tidore,PLTU,14.0,Maluku Utara,Maluku,existing,,,0.7392645,127.3882774,way/391581020,coal,,OSM-overpass
+GEN-MLK-0005,PLTMG Seram,PLTMG Seram,PLTMG,20.0,Maluku,Maluku,existing,,combustion,-3.3062485,128.9463252,way/501327305,gas,,OSM-overpass
+GEN-MLK-0006,PLTS Pulau Tiga,PLTS Pulau Tiga,PLTS,0.075,Maluku,Maluku,existing,,photovoltaic,-3.6530298,127.9064399,way/522713233,solar,,OSM-overpass
+GEN-MLK-0007,PLTS Tahalupu,PLTS Tahalupu,PLTS,0.1,Maluku,Maluku,existing,,photovoltaic,-3.231044,127.6552233,way/799249943,solar,,OSM-overpass
+GEN-MLK-0008,PLTMG Ternate,PLTMG Ternate,PLTMG,30.0,Maluku Utara,Maluku,existing,,combustion,0.7667497,127.3062418,way/951367598,gas,,OSM-overpass
+GEN-MLK-0009,PLTD Kayu Merah,PLTD Kayu Merah,PLTD,25.0,Maluku Utara,Maluku,existing,,,0.7608672,127.3705052,way/951367599,diesel,,OSM-overpass
+GEN-MLK-0010,PLTMG Dullah,PLTMG Dullah,PLTMG,,Maluku,Maluku,existing,,combustion,-5.5550791,132.7721921,way/1082807974,gas,NO_CAPACITY,OSM-overpass
+GEN-MLK-0011,MIN 4 Maluku Tengah,MIN 4 Maluku Tengah,Unknown,,Maluku,Maluku,existing,PLN,,-3.3831064,129.5496582,way/1149620760,,NO_CAPACITY;NO_TYPE,OSM-overpass
+GEN-MLK-0012,PLN Tehoru,PLN Tehoru,Unknown,,Maluku,Maluku,existing,PLN,,-3.381894,129.5488676,way/1149623514,,NO_CAPACITY;NO_TYPE,OSM-overpass
+GEN-MLK-0013,PLTU Weda Bay,PLTU Weda Bay Power Plant（韦达贝燃煤发电厂）,PLTU,,Maluku Utara,Maluku,existing,,combustion,0.4765027,128.0013922,way/1152758557,coal,NO_CAPACITY,OSM-overpass
+GEN-MLK-0014,(unnamed),,PLTS,,Maluku Utara,Maluku,existing,,,2.0377257,128.2999183,way/1204724030,solar,NO_NAME;NO_CAPACITY,OSM-overpass
+GEN-MLK-0015,(unnamed),,PLTS,,Maluku Utara,Maluku,existing,,,2.2957053,128.1798122,way/1205552684,solar,NO_NAME;NO_CAPACITY,OSM-overpass
+GEN-MLK-0016,PLTU Weda Bay Unit 9-11,电厂(9-11),Unknown,,Maluku Utara,Maluku,existing,,,0.4761076,128.0082369,way/1245573861,,NO_CAPACITY;NO_TYPE,OSM-overpass
+GEN-MLK-0017,PLTU Weda Bay Unit 1-4,电厂（1-4）,PLTU,,Maluku Utara,Maluku,existing,,combustion,0.4760793,127.9986131,way/1245573862,coal,NO_CAPACITY,OSM-overpass
+GEN-MLK-0018,PLTU Weda Bay Unit 5-8,电厂（5-8）,PLTU,,Maluku Utara,Maluku,existing,,combustion,0.4761695,127.9946956,way/1245573863,coal,NO_CAPACITY,OSM-overpass
+GEN-MLK-0019,Gardu Induk Weda Bay Unit 3,3号变电站,Unknown,,Maluku Utara,Maluku,existing,,,0.482199,127.9887766,way/1245573872,,NO_CAPACITY;NO_TYPE,OSM-overpass

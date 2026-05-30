@@ -75,19 +75,29 @@ Hasil pass kedua: **5 entri ter-drop** (4 unnamed PLTD Fakfak + 1 dup "PLTD Fakf
 
 ### Weda Bay cluster (Maluku Utara) — 4 unit terpisah, KEPT
 
-Weda Bay Industrial Park (Halmahera Tengah, smelter nickel Tsingshan-IWIP) punya pembangkit captive PLTU multi-unit. OSM ter-tag dengan nama Mandarin:
+Weda Bay Industrial Park (Halmahera Tengah, smelter nickel Tsingshan-IWIP) punya pembangkit captive PLTU multi-unit. OSM ter-tag dengan nama Mandarin; sudah di-override ke nama Indonesia via `data/overrides/generator_name_overrides.csv` (2026-05-27). Original OSM name di-preserve di field `osm_name`.
 
-| ID | Nama | Koord | Type |
-|----|------|-------|------|
-| GEN-MLK-0013 | PLTU Weda Bay Power Plant（韦达贝燃煤发电厂） | 0.477, 128.001 | PLTU |
-| GEN-MLK-0016 | 电厂(9-11) | 0.476, 128.008 | Unknown (source kosong) |
-| GEN-MLK-0017 | 电厂（1-4） | 0.476, 127.999 | PLTU |
-| GEN-MLK-0018 | 电厂（5-8） | 0.476, 127.995 | PLTU |
-| GEN-MLK-0019 | 3号变电站 | 0.482, 127.989 | Unknown — **lihat catatan** |
+| ID | Display name (override) | OSM original | Koord | Type |
+|----|-------------------------|--------------|-------|------|
+| GEN-MLK-0013 | **PLTU Weda Bay** | PLTU Weda Bay Power Plant（韦达贝燃煤发电厂） | 0.477, 128.001 | PLTU |
+| GEN-MLK-0016 | **PLTU Weda Bay Unit 9-11** | 电厂(9-11) | 0.476, 128.008 | Unknown (source kosong) |
+| GEN-MLK-0017 | **PLTU Weda Bay Unit 1-4** | 电厂（1-4） | 0.476, 127.999 | PLTU |
+| GEN-MLK-0018 | **PLTU Weda Bay Unit 5-8** | 电厂（5-8） | 0.476, 127.995 | PLTU |
+| GEN-MLK-0019 | **Gardu Induk Weda Bay Unit 3** | 3号变电站 | 0.482, 127.989 | Unknown — **lihat catatan** |
 
-Cluster 3-desimal: 4 entri 电厂 berada di koord 3-desimal BERBEDA satu sama lain → tidak ter-merge. Memang unit terpisah (1-4, 5-8, 9-11, dan PLTU induk yang ter-tag overall plant boundary).
+Cluster 3-desimal: 4 entri (`PLTU Weda Bay` + 3 unit) berada di koord 3-desimal BERBEDA satu sama lain → tidak ter-merge. Memang unit terpisah (1-4, 5-8, 9-11, dan PLTU induk yang ter-tag overall plant boundary).
 
-**GEN-MLK-0019 "3号变电站"** = "Substation 3" (Mandarin). Ini OSM tagging error di sumber — secara fisik substation, tapi di OSM ter-tag `power=plant`. Extractor ikut tag asli; bisa di-clean post-hoc atau ditambahkan ke PROVINCE_OVERRIDE dengan value `None` di iterasi berikutnya.
+**GEN-MLK-0019 (OSM "3号变电站" = "Substation 3")** sebenarnya substation, bukan plant — OSM mis-tagged `power=plant`. Display name "Gardu Induk Weda Bay Unit 3" mencerminkan fungsi sebenarnya. Bisa di-skip dari output plant di iterasi berikutnya via `PROVINCE_OVERRIDE` value `None`.
+
+### Name overrides mechanism (5 entries Maluku)
+
+Plant non-Indonesia di OSM (Mandarin/English deskriptif) di-normalisasi ke nama Indonesia via shared CSV `data/overrides/generator_name_overrides.csv`. Mekanisme:
+
+1. Extractor load mapping `osm_id → override_name`.
+2. Saat write row: kalau `osm_id` ada di overrides, set `name = override_name`; original disimpan di kolom baru `osm_name`.
+3. CSV master sekarang punya 13 kolom (sebelumnya 12) — tambah `osm_name` setelah `name`.
+
+5 entries Maluku Utara semua di kompleks Weda Bay (di-list di tabel di atas). Mekanisme yang sama dipakai oleh `extract_sulawesi_generators.py` untuk 6 plant English deskriptif di Morowali-Konawe-Bitung area.
 
 ### Catatan per provinsi
 

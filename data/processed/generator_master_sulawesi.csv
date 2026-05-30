@@ -1,102 +1,102 @@
-id,name,type,capacity_mw,province,system,status,operator,method,lat,lon,osm_id,osm_source,review_flag,source_id
-GEN-SLW-0001,PLTB Tolo,PLTB,72.0,Sulawesi Selatan,Sulselrabar,existing,Perusahaan Listrik Negara,wind_turbine,-5.6292833,119.763657,relation/10694862,wind,,OSM-overpass
-GEN-SLW-0002,Pembangkit Listrik Tenaga Air Bakaru,PLTA,130.0,Sulawesi Selatan,Sulselrabar,existing,,,-3.4646598,119.6290666,relation/13245083,hydro,,OSM-overpass
-GEN-SLW-0003,PLTA Poso-2,PLTA,395.0,Sulawesi Tengah,Sulteng,existing,Poso Energy,run-of-the-river,-1.6453984,120.6516728,relation/19123845,hydro,,OSM-overpass
-GEN-SLW-0004,PLTP Lahendong I & II,PLTP,40.0,Sulawesi Utara,Sulutgo,existing,,,1.2545538,124.8221456,way/101264872,geothermal,,OSM-overpass
-GEN-SLW-0005,PLTU Tello,PLTU,120.0,Sulawesi Selatan,Sulselrabar,existing,,combustion,-5.1473815,119.4719989,way/109924603,coal,,OSM-overpass
-GEN-SLW-0006,PLTD Bau-bau,PLTD,,Sulawesi Tenggara,Sulselrabar,existing,PLN,,-5.4578141,122.5984835,way/165616503,,NO_CAPACITY,OSM-overpass
-GEN-SLW-0007,Bili Bili Bendungan,PLTA,19.25,Sulawesi Selatan,Sulselrabar,existing,,,-5.2808747,119.5830648,way/181495712,hydro,,OSM-overpass
-GEN-SLW-0008,PLN Parepare,Unknown,,Sulawesi Selatan,Sulselrabar,existing,Perusahaan Listrik Negara,,-4.0103858,119.6234754,way/221102796,,NO_CAPACITY;NO_TYPE,OSM-overpass
-GEN-SLW-0009,PLTU PT Semen Tonasa Indonesia,PLTU,,Sulawesi Selatan,Sulselrabar,existing,,combustion,-4.8162214,119.5011209,way/244815714,coal,NO_CAPACITY,OSM-overpass
-GEN-SLW-0010,(unnamed),PLTA,126.0,Sulawesi Selatan,Sulselrabar,existing,,,-3.4798128,119.6515739,way/257613250,hydro,NO_NAME,OSM-overpass
-GEN-SLW-0011,(unnamed),Unknown,,Sulawesi Selatan,Sulselrabar,existing,,,-3.9706446,119.6246386,way/257725639,,NO_NAME;NO_CAPACITY;NO_TYPE,OSM-overpass
-GEN-SLW-0012,(unnamed),Unknown,,Sulawesi Selatan,Sulselrabar,existing,,,-3.9703677,119.6245589,way/257725642,,NO_NAME;NO_CAPACITY;NO_TYPE,OSM-overpass
-GEN-SLW-0013,(unnamed),Unknown,,Sulawesi Selatan,Sulselrabar,existing,,,-3.970314,119.6249861,way/257725648,,NO_NAME;NO_CAPACITY;NO_TYPE,OSM-overpass
-GEN-SLW-0014,PLTU Majene,PLTU,,Sulawesi Selatan,Sulselrabar,existing,,,-3.5402107,118.9698514,way/291881492,,NO_CAPACITY,OSM-overpass
-GEN-SLW-0015,(unnamed),Unknown,,Sulawesi Selatan,Sulselrabar,existing,,,-2.7116553,121.3084577,way/305656358,,NO_NAME;NO_CAPACITY;NO_TYPE,OSM-overpass
-GEN-SLW-0016,(unnamed),Unknown,,Sulawesi Tenggara,Sulselrabar,existing,,,-5.3956369,122.6261601,way/306631715,,NO_NAME;NO_CAPACITY;NO_TYPE,OSM-overpass
-GEN-SLW-0017,(unnamed),Unknown,,Sulawesi Tenggara,Sulselrabar,existing,,,-5.3247856,122.642418,way/306631716,,NO_NAME;NO_CAPACITY;NO_TYPE,OSM-overpass
-GEN-SLW-0018,PLTGU Sengkang,PLTGU,180.0,Sulawesi Selatan,Sulselrabar,existing,,combustion,-4.1761207,120.0725884,way/367586568,gas,,OSM-overpass
-GEN-SLW-0019,(unnamed),Unknown,,Gorontalo,Sulutgo,existing,,,0.6569413,122.8861349,way/399421491,,NO_NAME;NO_CAPACITY;NO_TYPE,OSM-overpass
-GEN-SLW-0020,PLTU Barru,PLTU,100.0,Sulawesi Selatan,Sulselrabar,existing,Indonesia Power,combustion,-4.2940266,119.6297586,way/399714487,coal,,OSM-overpass
-GEN-SLW-0021,PLTP Lahendong III & IV,PLTP,40.0,Sulawesi Utara,Sulutgo,existing,,,1.2719574,124.836059,way/424006224,geothermal,,OSM-overpass
-GEN-SLW-0022,KAWASAN,Unknown,,Sulawesi Selatan,Sulselrabar,existing,,,-3.6815781,120.4308049,way/475470080,,NO_CAPACITY;NO_TYPE,OSM-overpass
-GEN-SLW-0023,PLTS Bunaken,PLTS,,Sulawesi Utara,Sulutgo,existing,PT.PLN,photovoltaic,1.5988466,124.777528,way/519748910,solar,NO_CAPACITY,OSM-overpass
-GEN-SLW-0024,solar power plant,PLTS,,Sulawesi Utara,Sulutgo,existing,,photovoltaic,1.6193773,124.7028212,way/523434345,solar,NO_CAPACITY,OSM-overpass
-GEN-SLW-0025,PLTMH Bungin 1,PLTMH,,Sulawesi Selatan,Sulselrabar,existing,,,-3.520907,119.9351449,way/533599433,hydro,NO_CAPACITY,OSM-overpass
-GEN-SLW-0026,Listrik,Unknown,,Sulawesi Utara,Sulutgo,existing,,,1.4132501,125.0900732,way/593568043,,NO_CAPACITY;NO_TYPE,OSM-overpass
-GEN-SLW-0027,(unnamed),PLTA,,Sulawesi Tengah,Sulteng,existing,,,0.5369478,120.5401551,way/602391607,hydro,NO_NAME;NO_CAPACITY,OSM-overpass
-GEN-SLW-0028,PLTB Sidrap,PLTB,75.0,Sulawesi Selatan,Sulselrabar,existing,PLN,wind_turbine,-3.9780347,119.7099494,way/604841861,wind,,OSM-overpass
-GEN-SLW-0029,PLTS Tomia,PLTS,,Sulawesi Tenggara,Sulselrabar,existing,,,-5.7270549,123.898004,way/700049077,,NO_CAPACITY,OSM-overpass
-GEN-SLW-0030,PLN Tomia,Unknown,,Sulawesi Tenggara,Sulselrabar,existing,,,-5.7239741,123.904285,way/700049329,,NO_CAPACITY;NO_TYPE,OSM-overpass
-GEN-SLW-0031,PLTD Bitung,PLTD,17.0,Sulawesi Utara,Sulutgo,existing,,,1.4459126,125.1888268,way/704229858,diesel,,OSM-overpass
-GEN-SLW-0032,PLTP Lahendong V & VI,PLTP,40.0,Sulawesi Utara,Sulutgo,existing,Pertamina,,1.1740035,124.7958047,way/730262328,geothermal,,OSM-overpass
-GEN-SLW-0033,PLTD Selayar,PLTD,13.19,Sulawesi Selatan,Sulselrabar,existing,,combustion,-6.0480979,120.4583156,way/796875771,diesel,,OSM-overpass
-GEN-SLW-0034,PLTS Terpusat Kabaena Timur Desa Tapahuka,PLTS,0.2,Sulawesi Tenggara,Sulselrabar,existing,,photovoltaic,-5.3062963,122.0425541,way/797018876,solar,,OSM-overpass
-GEN-SLW-0035,(unnamed),PLTS,,Sulawesi Selatan,Sulselrabar,existing,,photovoltaic,-5.8629638,120.511037,way/834536854,solar,NO_NAME;NO_CAPACITY,OSM-overpass
-GEN-SLW-0036,PLTD Tallo Lama,PLTD,,Sulawesi Selatan,Sulselrabar,existing,,,-5.1104814,119.4396704,way/847485082,,NO_CAPACITY,OSM-overpass
-GEN-SLW-0037,PLTU Jeneponto,PLTU,250.0,Sulawesi Selatan,Sulselrabar,existing,,combustion,-5.6181198,119.5501444,way/905955777,coal,,OSM-overpass
-GEN-SLW-0038,PLTU Takalar (Punagaya-2),PLTU,200.0,Sulawesi Selatan,Sulselrabar,existing,,combustion,-5.6253685,119.5500928,way/941566464,coal,,OSM-overpass
-GEN-SLW-0039,PLTU Anggrek,PLTU,50.0,Gorontalo,Sulutgo,existing,,combustion,0.8507011,122.7965578,way/942620063,coal,,OSM-overpass
-GEN-SLW-0040,PLTU Sulbagut 3,PLTU,100.0,Gorontalo,Sulutgo,existing,,,0.4346558,123.1353852,way/942620064,coal,,OSM-overpass
-GEN-SLW-0041,PLTG Gorontalo,PLTG,100.0,Gorontalo,Sulutgo,existing,,,0.4662618,122.0060992,way/942620065,gas,,OSM-overpass
-GEN-SLW-0042,PLTU Nii Tanasa (20 MW) & PLTMG Kendari (58 MW),PLTU,,Sulawesi Tenggara,Sulselrabar,existing,,combustion,-3.8950056,122.5374029,way/943189957,coal;oil,NO_CAPACITY,OSM-overpass
-GEN-SLW-0043,PLTU Kendari 3 DSSA,PLTU,100.0,Sulawesi Tenggara,Sulselrabar,existing,,,-4.050323,122.654079,way/943189958,coal,,OSM-overpass
-GEN-SLW-0044,PLTU Amurang,PLTU,60.0,Sulawesi Utara,Sulutgo,existing,,,1.1833413,124.4793945,way/943309157,coal,,OSM-overpass
-GEN-SLW-0045,PLTD Lopana,PLTD,10.0,Sulawesi Utara,Sulutgo,existing,,,1.2202036,124.6035024,way/943309158,diesel,,OSM-overpass
-GEN-SLW-0046,PLTA Tanggari II,PLTA,19.0,Sulawesi Utara,Sulutgo,existing,,,1.3646916,124.9379477,way/943309161,hydro,,OSM-overpass
-GEN-SLW-0047,PLTA Tanggari I,PLTA,18.0,Sulawesi Utara,Sulutgo,existing,,,1.3488147,124.9234503,way/943309162,hydro,,OSM-overpass
-GEN-SLW-0048,PLTS Likupang,PLTS,15.0,Sulawesi Utara,Sulutgo,existing,,photovoltaic,1.6554339,125.0944729,way/943309164,solar,,OSM-overpass
-GEN-SLW-0049,PLTU Sulut 3,PLTU,100.0,Sulawesi Utara,Sulutgo,existing,,,1.3735403,125.0852412,way/943309171,coal,,OSM-overpass
-GEN-SLW-0050,PLTU Mamuju,PLTU,50.0,Sulawesi Barat,Sulselrabar,existing,,combustion,-2.4708695,119.1458523,way/1003491141,coal,,OSM-overpass
-GEN-SLW-0051,PLTU Palu,PLTU,30.0,Sulawesi Tengah,Sulteng,existing,,combustion,-0.7333093,119.8558081,way/1003539536,coal,,OSM-overpass
-GEN-SLW-0052,PLTA Malea,PLTA,90.0,Sulawesi Selatan,Sulselrabar,existing,,,-3.188974,119.7490775,way/1004332811,hydro,,OSM-overpass
-GEN-SLW-0053,PLTD Suppa,PLTD,62.2,Sulawesi Selatan,Sulselrabar,existing,,combustion,-3.9706287,119.6247411,way/1004332815,diesel,,OSM-overpass
-GEN-SLW-0054,(unnamed),Unknown,,Sulawesi Selatan,Sulselrabar,existing,PLN,,-2.5911956,121.2822398,way/1054024013,,NO_NAME;NO_CAPACITY;NO_TYPE,OSM-overpass
-GEN-SLW-0055,PLTU Antam Pomalaa,PLTU,60.0,Sulawesi Tenggara,Sulselrabar,existing,,combustion,-4.1800836,121.5933145,way/1081219367,coal,,OSM-overpass
-GEN-SLW-0056,(unnamed),PLTS,,Sulawesi Utara,Sulutgo,existing,,photovoltaic,0.4628204,124.4446638,way/1082004496,solar,NO_NAME;NO_CAPACITY,OSM-overpass
-GEN-SLW-0057,Karpowership (Indonesia) Zeynep Sultan power station,PLTG,,Sulawesi Utara,Sulutgo,existing,,combustion,1.1876303,124.4785981,way/1103596061,gas,NO_CAPACITY,OSM-overpass
-GEN-SLW-0058,Morowali Industrial Park Sulawesi Mining Power Station,Unknown,,Sulawesi Tengah,Sulteng,existing,,,-2.8286624,122.1557261,way/1118436421,,NO_CAPACITY;NO_TYPE,OSM-overpass
-GEN-SLW-0059,PLTMG Baubau,PLTMG,30.0,Sulawesi Tenggara,Sulselrabar,existing,,combustion,-5.3961013,122.6274121,way/1121250705,gas,,OSM-overpass
-GEN-SLW-0060,PLTU Baruta,PLTU,14.0,Sulawesi Tenggara,Sulselrabar,existing,,combustion,-5.323365,122.6413318,way/1121250706,coal,,OSM-overpass
-GEN-SLW-0061,Delong Nickel Phase II Power Station,PLTU,,Sulawesi Tenggara,Sulselrabar,existing,,combustion,-3.8281962,122.4656052,way/1168320730,coal,NO_CAPACITY,OSM-overpass
-GEN-SLW-0062,PLTA Larona,PLTA,165.0,Sulawesi Selatan,Sulselrabar,existing,PT Vale Indonesia,,-2.6681266,121.2586011,way/1193463283,hydro,,OSM-overpass
-GEN-SLW-0063,PLTA Balambano,PLTA,110.0,Sulawesi Selatan,Sulselrabar,existing,PT Vale Indonesia,,-2.6421815,121.2170237,way/1193463288,hydro,,OSM-overpass
-GEN-SLW-0064,PLTA Karebbe,PLTA,90.0,Sulawesi Selatan,Sulselrabar,existing,PT Vale Indonesia,,-2.6666648,121.1813279,way/1193463296,hydro,,OSM-overpass
-GEN-SLW-0065,PLTA Poso-1,PLTA,120.0,Sulawesi Tengah,Sulteng,existing,Poso Energy,run-of-the-river,-1.6599838,120.6601486,way/1193553153,hydro,,OSM-overpass
-GEN-SLW-0066,PLTU Sulut-1,PLTU,100.0,Gorontalo,Sulutgo,existing,,combustion,0.8864055,123.4688246,way/1224977651,coal,,OSM-overpass
-GEN-SLW-0067,PLTD Telaga,PLTD,,Gorontalo,Sulutgo,existing,,,0.5748397,123.0480209,way/1250980902,,NO_CAPACITY,OSM-overpass
-GEN-SLW-0068,PLTA Tonsealama,PLTA,14.38,Sulawesi Utara,Sulutgo,existing,,,1.3297387,124.9227638,way/1255718819,hydro,,OSM-overpass
-GEN-SLW-0069,PLTU Sulbagut-1,PLTU,100.0,Gorontalo,Sulutgo,existing,,combustion,0.9545683,122.9996421,way/1271028773,coal,,OSM-overpass
-GEN-SLW-0070,Sulawesi Labota Power Plant,PLTU,,Sulawesi Tengah,Sulteng,existing,,combustion,-2.8739151,122.1691965,way/1291862453,coal,NO_CAPACITY,OSM-overpass
-GEN-SLW-0071,PLTS Gorontalo,PLTS,2.0,Gorontalo,Sulutgo,existing,,,0.9536174,122.5577105,way/1312425747,solar,,OSM-overpass
-GEN-SLW-0072,PLTS Karampuang 1,PLTS,0.2,Sulawesi Barat,Sulselrabar,existing,,photovoltaic,-2.6356846,118.8818299,way/1322681373,solar,,OSM-overpass
-GEN-SLW-0073,PLTS Karampuang 2,PLTS,0.12,Sulawesi Barat,Sulselrabar,existing,,photovoltaic,-2.6275081,118.8805013,way/1322681375,solar,,OSM-overpass
-GEN-SLW-0074,PLTS Karampuang 3,PLTS,0.15,Sulawesi Barat,Sulselrabar,existing,,photovoltaic,-2.6241757,118.890817,way/1322681377,solar,,OSM-overpass
-GEN-SLW-0075,PLTS Karampuang 4,PLTS,0.13,Sulawesi Barat,Sulselrabar,existing,,photovoltaic,-2.6455713,118.8869481,way/1322681379,solar,,OSM-overpass
-GEN-SLW-0076,PLTS Kahianga,PLTS,0.31,Sulawesi Tenggara,Sulselrabar,existing,,photovoltaic,-5.7576757,123.9487823,way/1322685346,solar,,OSM-overpass
-GEN-SLW-0077,PLTS Lamanggau,PLTS,0.22,Sulawesi Tenggara,Sulselrabar,existing,,photovoltaic,-5.7643018,123.9032575,way/1322685350,solar,,OSM-overpass
-GEN-SLW-0078,PLTS Dete,PLTS,0.11,Sulawesi Tenggara,Sulselrabar,existing,,photovoltaic,-5.7747162,123.9739894,way/1322685353,solar,,OSM-overpass
-GEN-SLW-0079,PLTS Kulati,PLTS,0.14,Sulawesi Tenggara,Sulselrabar,existing,,photovoltaic,-5.7603693,123.9976769,way/1322685356,solar,,OSM-overpass
-GEN-SLW-0080,PLTS Isimu,PLTS,14.5,Gorontalo,Sulutgo,existing,,photovoltaic,0.6220207,122.8409226,way/1322727205,solar,,OSM-overpass
-GEN-SLW-0081,PLTS Selayar,PLTS,1.4,Sulawesi Selatan,Sulselrabar,existing,PT PLN,photovoltaic,-6.0463458,120.4585339,way/1323856434,solar,,OSM-overpass
-GEN-SLW-0082,PLTS Burungloe,PLTS,0.1,Sulawesi Selatan,Sulselrabar,existing,,photovoltaic,-5.1179451,120.3913064,way/1323856435,solar,,OSM-overpass
-GEN-SLW-0083,Wanxiang Nickel Indonesia power station,PLTU,,Sulawesi Tengah,Sulteng,existing,,combustion,-2.7312858,122.031064,way/1325505504,coal,NO_CAPACITY,OSM-overpass
-GEN-SLW-0084,PLTD Manadotua,PLTD,0.25,Sulawesi Utara,Sulutgo,existing,PT.PLN,reciprocating_engine,1.6447404,124.7093274,way/1329301174,diesel,,OSM-overpass
-GEN-SLW-0085,(unnamed),PLTS,,Sulawesi Selatan,Sulselrabar,existing,,photovoltaic,-6.8547829,119.0977202,way/1331175823,solar,NO_NAME;NO_CAPACITY,OSM-overpass
-GEN-SLW-0086,PLTS Terpusat Pasimarannu,PLTS,,Sulawesi Selatan,Sulselrabar,existing,,photovoltaic,-7.3643056,121.0836455,way/1334459348,solar,NO_CAPACITY,OSM-overpass
-GEN-SLW-0087,PLTS Bonea,PLTS,,Sulawesi Selatan,Sulselrabar,existing,,photovoltaic,-7.3769495,121.1352955,way/1334459373,solar,NO_CAPACITY,OSM-overpass
-GEN-SLW-0088,PLTS Batu Bingkung,PLTS,,Sulawesi Selatan,Sulselrabar,existing,,photovoltaic,-7.3679782,121.1246559,way/1334459400,solar,NO_CAPACITY,OSM-overpass
-GEN-SLW-0089,PLTS Sambali,PLTS,,Sulawesi Selatan,Sulselrabar,existing,,photovoltaic,-7.3607119,121.1520298,way/1334459403,solar,NO_CAPACITY,OSM-overpass
-GEN-SLW-0090,PLTS Menara Indah,PLTS,,Sulawesi Selatan,Sulselrabar,existing,,photovoltaic,-5.7540743,120.4864805,way/1334639659,solar,NO_CAPACITY,OSM-overpass
-GEN-SLW-0091,(unnamed),PLTS,,Sulawesi Selatan,Sulselrabar,existing,,,-6.9582135,120.7870314,way/1335862924,solar,NO_NAME;NO_CAPACITY,OSM-overpass
-GEN-SLW-0092,PLTS Pasitallu Tangnga,PLTS,,Sulawesi Selatan,Sulselrabar,existing,,,-7.0633375,121.0979689,way/1336362230,solar,NO_CAPACITY,OSM-overpass
-GEN-SLW-0093,PLTS Latondu,PLTS,,Sulawesi Selatan,Sulselrabar,existing,,,-6.5022263,120.9902588,way/1336362251,solar,NO_CAPACITY,OSM-overpass
-GEN-SLW-0094,(unnamed),PLTA,,Sulawesi Selatan,Sulselrabar,existing,,,-5.1719208,120.0382491,way/1360656288,hydro,NO_NAME;NO_CAPACITY,OSM-overpass
-GEN-SLW-0095,(unnamed),PLTS,,Sulawesi Tenggara,Sulselrabar,existing,,,-6.2057332,122.7247557,way/1365649482,solar,NO_NAME;NO_CAPACITY,OSM-overpass
-GEN-SLW-0096,PLTS Makalehi,PLTS,,Sulawesi Utara,Sulutgo,existing,PT PLN,photovoltaic,2.7398911,125.1696776,way/1371205002,solar,NO_CAPACITY,OSM-overpass
-GEN-SLW-0097,(unnamed),PLTS,,Sulawesi Selatan,Sulselrabar,existing,,photovoltaic,-5.1486883,119.2649187,way/1383897662,solar,NO_NAME;NO_CAPACITY,OSM-overpass
-GEN-SLW-0098,PLTU Ambunu,PLTU,350.0,Sulawesi Tengah,Sulteng,existing,Indonesia Huabao Industrial Park,combustion,-2.2591674,121.7716482,way/1416911382,coal,,OSM-overpass
-GEN-SLW-0099,PLTS Kayuadi,PLTS,,Sulawesi Selatan,Sulselrabar,existing,,photovoltaic,-6.7875933,120.7962051,way/1444676313,solar,NO_CAPACITY,OSM-overpass
-GEN-SLW-0100,(unnamed),Unknown,,Sulawesi Selatan,Sulselrabar,existing,Perusahaan Listrik Negara,,-5.1645,119.4451942,way/1454217130,,NO_NAME;NO_CAPACITY;NO_TYPE,OSM-overpass
-GEN-SLW-0101,(unnamed),Unknown,,Sulawesi Selatan,Sulselrabar,existing,Perusahaan Listrik Negara,,-5.1655327,119.4476742,way/1454217132,,NO_NAME;NO_CAPACITY;NO_TYPE,OSM-overpass
+id,name,osm_name,type,capacity_mw,province,system,status,operator,method,lat,lon,osm_id,osm_source,review_flag,source_id
+GEN-SLW-0001,PLTB Tolo,PLTB Tolo,PLTB,72.0,Sulawesi Selatan,Sulselrabar,existing,Perusahaan Listrik Negara,wind_turbine,-5.6292833,119.763657,relation/10694862,wind,,OSM-overpass
+GEN-SLW-0002,Pembangkit Listrik Tenaga Air Bakaru,Pembangkit Listrik Tenaga Air Bakaru,PLTA,130.0,Sulawesi Selatan,Sulselrabar,existing,,,-3.4646598,119.6290666,relation/13245083,hydro,,OSM-overpass
+GEN-SLW-0003,PLTA Poso-2,PLTA Poso-2,PLTA,395.0,Sulawesi Tengah,Sulteng,existing,Poso Energy,run-of-the-river,-1.6453984,120.6516728,relation/19123845,hydro,,OSM-overpass
+GEN-SLW-0004,PLTP Lahendong I & II,PLTP Lahendong I & II,PLTP,40.0,Sulawesi Utara,Sulutgo,existing,,,1.2545538,124.8221456,way/101264872,geothermal,,OSM-overpass
+GEN-SLW-0005,PLTU Tello,PLTU Tello,PLTU,120.0,Sulawesi Selatan,Sulselrabar,existing,,combustion,-5.1473815,119.4719989,way/109924603,coal,,OSM-overpass
+GEN-SLW-0006,PLTD Bau-bau,PLTD Bau-bau,PLTD,,Sulawesi Tenggara,Sulselrabar,existing,PLN,,-5.4578141,122.5984835,way/165616503,,NO_CAPACITY,OSM-overpass
+GEN-SLW-0007,Bili Bili Bendungan,Bili Bili Bendungan,PLTA,19.25,Sulawesi Selatan,Sulselrabar,existing,,,-5.2808747,119.5830648,way/181495712,hydro,,OSM-overpass
+GEN-SLW-0008,PLN Parepare,PLN Parepare,Unknown,,Sulawesi Selatan,Sulselrabar,existing,Perusahaan Listrik Negara,,-4.0103858,119.6234754,way/221102796,,NO_CAPACITY;NO_TYPE,OSM-overpass
+GEN-SLW-0009,PLTU PT Semen Tonasa Indonesia,PLTU PT Semen Tonasa Indonesia,PLTU,,Sulawesi Selatan,Sulselrabar,existing,,combustion,-4.8162214,119.5011209,way/244815714,coal,NO_CAPACITY,OSM-overpass
+GEN-SLW-0010,(unnamed),,PLTA,126.0,Sulawesi Selatan,Sulselrabar,existing,,,-3.4798128,119.6515739,way/257613250,hydro,NO_NAME,OSM-overpass
+GEN-SLW-0011,(unnamed),,Unknown,,Sulawesi Selatan,Sulselrabar,existing,,,-3.9706446,119.6246386,way/257725639,,NO_NAME;NO_CAPACITY;NO_TYPE,OSM-overpass
+GEN-SLW-0012,(unnamed),,Unknown,,Sulawesi Selatan,Sulselrabar,existing,,,-3.9703677,119.6245589,way/257725642,,NO_NAME;NO_CAPACITY;NO_TYPE,OSM-overpass
+GEN-SLW-0013,(unnamed),,Unknown,,Sulawesi Selatan,Sulselrabar,existing,,,-3.970314,119.6249861,way/257725648,,NO_NAME;NO_CAPACITY;NO_TYPE,OSM-overpass
+GEN-SLW-0014,PLTU Majene,PLTU Majene,PLTU,,Sulawesi Selatan,Sulselrabar,existing,,,-3.5402107,118.9698514,way/291881492,,NO_CAPACITY,OSM-overpass
+GEN-SLW-0015,(unnamed),,Unknown,,Sulawesi Selatan,Sulselrabar,existing,,,-2.7116553,121.3084577,way/305656358,,NO_NAME;NO_CAPACITY;NO_TYPE,OSM-overpass
+GEN-SLW-0016,(unnamed),,Unknown,,Sulawesi Tenggara,Sulselrabar,existing,,,-5.3956369,122.6261601,way/306631715,,NO_NAME;NO_CAPACITY;NO_TYPE,OSM-overpass
+GEN-SLW-0017,(unnamed),,Unknown,,Sulawesi Tenggara,Sulselrabar,existing,,,-5.3247856,122.642418,way/306631716,,NO_NAME;NO_CAPACITY;NO_TYPE,OSM-overpass
+GEN-SLW-0018,PLTGU Sengkang,PLTGU Sengkang,PLTGU,180.0,Sulawesi Selatan,Sulselrabar,existing,,combustion,-4.1761207,120.0725884,way/367586568,gas,,OSM-overpass
+GEN-SLW-0019,(unnamed),,Unknown,,Gorontalo,Sulutgo,existing,,,0.6569413,122.8861349,way/399421491,,NO_NAME;NO_CAPACITY;NO_TYPE,OSM-overpass
+GEN-SLW-0020,PLTU Barru,PLTU Barru,PLTU,100.0,Sulawesi Selatan,Sulselrabar,existing,Indonesia Power,combustion,-4.2940266,119.6297586,way/399714487,coal,,OSM-overpass
+GEN-SLW-0021,PLTP Lahendong III & IV,PLTP Lahendong III & IV,PLTP,40.0,Sulawesi Utara,Sulutgo,existing,,,1.2719574,124.836059,way/424006224,geothermal,,OSM-overpass
+GEN-SLW-0022,KAWASAN,KAWASAN,Unknown,,Sulawesi Selatan,Sulselrabar,existing,,,-3.6815781,120.4308049,way/475470080,,NO_CAPACITY;NO_TYPE,OSM-overpass
+GEN-SLW-0023,PLTS Bunaken,PLTS Bunaken,PLTS,,Sulawesi Utara,Sulutgo,existing,PT.PLN,photovoltaic,1.5988466,124.777528,way/519748910,solar,NO_CAPACITY,OSM-overpass
+GEN-SLW-0024,PLTS Likupang,solar power plant,PLTS,,Sulawesi Utara,Sulutgo,existing,,photovoltaic,1.6193773,124.7028212,way/523434345,solar,NO_CAPACITY,OSM-overpass
+GEN-SLW-0025,PLTMH Bungin 1,PLTMH Bungin 1,PLTMH,,Sulawesi Selatan,Sulselrabar,existing,,,-3.520907,119.9351449,way/533599433,hydro,NO_CAPACITY,OSM-overpass
+GEN-SLW-0026,Listrik,Listrik,Unknown,,Sulawesi Utara,Sulutgo,existing,,,1.4132501,125.0900732,way/593568043,,NO_CAPACITY;NO_TYPE,OSM-overpass
+GEN-SLW-0027,(unnamed),,PLTA,,Sulawesi Tengah,Sulteng,existing,,,0.5369478,120.5401551,way/602391607,hydro,NO_NAME;NO_CAPACITY,OSM-overpass
+GEN-SLW-0028,PLTB Sidrap,PLTB Sidrap,PLTB,75.0,Sulawesi Selatan,Sulselrabar,existing,PLN,wind_turbine,-3.9780347,119.7099494,way/604841861,wind,,OSM-overpass
+GEN-SLW-0029,PLTS Tomia,PLTS Tomia,PLTS,,Sulawesi Tenggara,Sulselrabar,existing,,,-5.7270549,123.898004,way/700049077,,NO_CAPACITY,OSM-overpass
+GEN-SLW-0030,PLN Tomia,PLN Tomia,Unknown,,Sulawesi Tenggara,Sulselrabar,existing,,,-5.7239741,123.904285,way/700049329,,NO_CAPACITY;NO_TYPE,OSM-overpass
+GEN-SLW-0031,PLTD Bitung,PLTD Bitung,PLTD,17.0,Sulawesi Utara,Sulutgo,existing,,,1.4459126,125.1888268,way/704229858,diesel,,OSM-overpass
+GEN-SLW-0032,PLTP Lahendong V & VI,PLTP Lahendong V & VI,PLTP,40.0,Sulawesi Utara,Sulutgo,existing,Pertamina,,1.1740035,124.7958047,way/730262328,geothermal,,OSM-overpass
+GEN-SLW-0033,PLTD Selayar,PLTD Selayar,PLTD,13.19,Sulawesi Selatan,Sulselrabar,existing,,combustion,-6.0480979,120.4583156,way/796875771,diesel,,OSM-overpass
+GEN-SLW-0034,PLTS Terpusat Kabaena Timur Desa Tapahuka,PLTS Terpusat Kabaena Timur Desa Tapahuka,PLTS,0.2,Sulawesi Tenggara,Sulselrabar,existing,,photovoltaic,-5.3062963,122.0425541,way/797018876,solar,,OSM-overpass
+GEN-SLW-0035,(unnamed),,PLTS,,Sulawesi Selatan,Sulselrabar,existing,,photovoltaic,-5.8629638,120.511037,way/834536854,solar,NO_NAME;NO_CAPACITY,OSM-overpass
+GEN-SLW-0036,PLTD Tallo Lama,PLTD Tallo Lama,PLTD,,Sulawesi Selatan,Sulselrabar,existing,,,-5.1104814,119.4396704,way/847485082,,NO_CAPACITY,OSM-overpass
+GEN-SLW-0037,PLTU Jeneponto,PLTU Jeneponto,PLTU,250.0,Sulawesi Selatan,Sulselrabar,existing,,combustion,-5.6181198,119.5501444,way/905955777,coal,,OSM-overpass
+GEN-SLW-0038,PLTU Takalar (Punagaya-2),PLTU Takalar (Punagaya-2),PLTU,200.0,Sulawesi Selatan,Sulselrabar,existing,,combustion,-5.6253685,119.5500928,way/941566464,coal,,OSM-overpass
+GEN-SLW-0039,PLTU Anggrek,PLTU Anggrek,PLTU,50.0,Gorontalo,Sulutgo,existing,,combustion,0.8507011,122.7965578,way/942620063,coal,,OSM-overpass
+GEN-SLW-0040,PLTU Sulbagut 3,PLTU Sulbagut 3,PLTU,100.0,Gorontalo,Sulutgo,existing,,,0.4346558,123.1353852,way/942620064,coal,,OSM-overpass
+GEN-SLW-0041,PLTG Gorontalo,PLTG Gorontalo,PLTG,100.0,Gorontalo,Sulutgo,existing,,,0.4662618,122.0060992,way/942620065,gas,,OSM-overpass
+GEN-SLW-0042,PLTU Nii Tanasa (20 MW) & PLTMG Kendari (58 MW),PLTU Nii Tanasa (20 MW) & PLTMG Kendari (58 MW),PLTU,,Sulawesi Tenggara,Sulselrabar,existing,,combustion,-3.8950056,122.5374029,way/943189957,coal;oil,NO_CAPACITY,OSM-overpass
+GEN-SLW-0043,PLTU Kendari 3 DSSA,PLTU Kendari 3 DSSA,PLTU,100.0,Sulawesi Tenggara,Sulselrabar,existing,,,-4.050323,122.654079,way/943189958,coal,,OSM-overpass
+GEN-SLW-0044,PLTU Amurang,PLTU Amurang,PLTU,60.0,Sulawesi Utara,Sulutgo,existing,,,1.1833413,124.4793945,way/943309157,coal,,OSM-overpass
+GEN-SLW-0045,PLTD Lopana,PLTD Lopana,PLTD,10.0,Sulawesi Utara,Sulutgo,existing,,,1.2202036,124.6035024,way/943309158,diesel,,OSM-overpass
+GEN-SLW-0046,PLTA Tanggari II,PLTA Tanggari II,PLTA,19.0,Sulawesi Utara,Sulutgo,existing,,,1.3646916,124.9379477,way/943309161,hydro,,OSM-overpass
+GEN-SLW-0047,PLTA Tanggari I,PLTA Tanggari I,PLTA,18.0,Sulawesi Utara,Sulutgo,existing,,,1.3488147,124.9234503,way/943309162,hydro,,OSM-overpass
+GEN-SLW-0048,PLTS Likupang,PLTS Likupang,PLTS,15.0,Sulawesi Utara,Sulutgo,existing,,photovoltaic,1.6554339,125.0944729,way/943309164,solar,,OSM-overpass
+GEN-SLW-0049,PLTU Sulut 3,PLTU Sulut 3,PLTU,100.0,Sulawesi Utara,Sulutgo,existing,,,1.3735403,125.0852412,way/943309171,coal,,OSM-overpass
+GEN-SLW-0050,PLTU Mamuju,PLTU Mamuju,PLTU,50.0,Sulawesi Barat,Sulselrabar,existing,,combustion,-2.4708695,119.1458523,way/1003491141,coal,,OSM-overpass
+GEN-SLW-0051,PLTU Palu,PLTU Palu,PLTU,30.0,Sulawesi Tengah,Sulteng,existing,,combustion,-0.7333093,119.8558081,way/1003539536,coal,,OSM-overpass
+GEN-SLW-0052,PLTA Malea,PLTA Malea,PLTA,90.0,Sulawesi Selatan,Sulselrabar,existing,,,-3.188974,119.7490775,way/1004332811,hydro,,OSM-overpass
+GEN-SLW-0053,PLTD Suppa,PLTD Suppa,PLTD,62.2,Sulawesi Selatan,Sulselrabar,existing,,combustion,-3.9706287,119.6247411,way/1004332815,diesel,,OSM-overpass
+GEN-SLW-0054,(unnamed),,Unknown,,Sulawesi Selatan,Sulselrabar,existing,PLN,,-2.5911956,121.2822398,way/1054024013,,NO_NAME;NO_CAPACITY;NO_TYPE,OSM-overpass
+GEN-SLW-0055,PLTU Antam Pomalaa,PLTU Antam Pomalaa,PLTU,60.0,Sulawesi Tenggara,Sulselrabar,existing,,combustion,-4.1800836,121.5933145,way/1081219367,coal,,OSM-overpass
+GEN-SLW-0056,(unnamed),,PLTS,,Sulawesi Utara,Sulutgo,existing,,photovoltaic,0.4628204,124.4446638,way/1082004496,solar,NO_NAME;NO_CAPACITY,OSM-overpass
+GEN-SLW-0057,PLTGU Apung Karpowership Zeynep Sultan,Karpowership (Indonesia) Zeynep Sultan power station,PLTG,,Sulawesi Utara,Sulutgo,existing,,combustion,1.1876303,124.4785981,way/1103596061,gas,NO_CAPACITY,OSM-overpass
+GEN-SLW-0058,PLTU IMIP Morowali (Sulawesi Mining),Morowali Industrial Park Sulawesi Mining Power Station,Unknown,,Sulawesi Tengah,Sulteng,existing,,,-2.8286624,122.1557261,way/1118436421,,NO_CAPACITY;NO_TYPE,OSM-overpass
+GEN-SLW-0059,PLTMG Baubau,PLTMG Baubau,PLTMG,30.0,Sulawesi Tenggara,Sulselrabar,existing,,combustion,-5.3961013,122.6274121,way/1121250705,gas,,OSM-overpass
+GEN-SLW-0060,PLTU Baruta,PLTU Baruta,PLTU,14.0,Sulawesi Tenggara,Sulselrabar,existing,,combustion,-5.323365,122.6413318,way/1121250706,coal,,OSM-overpass
+GEN-SLW-0061,PLTU Delong Nickel Phase II,Delong Nickel Phase II Power Station,PLTU,,Sulawesi Tenggara,Sulselrabar,existing,,combustion,-3.8281962,122.4656052,way/1168320730,coal,NO_CAPACITY,OSM-overpass
+GEN-SLW-0062,PLTA Larona,PLTA Larona,PLTA,165.0,Sulawesi Selatan,Sulselrabar,existing,PT Vale Indonesia,,-2.6681266,121.2586011,way/1193463283,hydro,,OSM-overpass
+GEN-SLW-0063,PLTA Balambano,PLTA Balambano,PLTA,110.0,Sulawesi Selatan,Sulselrabar,existing,PT Vale Indonesia,,-2.6421815,121.2170237,way/1193463288,hydro,,OSM-overpass
+GEN-SLW-0064,PLTA Karebbe,PLTA Karebbe,PLTA,90.0,Sulawesi Selatan,Sulselrabar,existing,PT Vale Indonesia,,-2.6666648,121.1813279,way/1193463296,hydro,,OSM-overpass
+GEN-SLW-0065,PLTA Poso-1,PLTA Poso-1,PLTA,120.0,Sulawesi Tengah,Sulteng,existing,Poso Energy,run-of-the-river,-1.6599838,120.6601486,way/1193553153,hydro,,OSM-overpass
+GEN-SLW-0066,PLTU Sulut-1,PLTU Sulut-1,PLTU,100.0,Gorontalo,Sulutgo,existing,,combustion,0.8864055,123.4688246,way/1224977651,coal,,OSM-overpass
+GEN-SLW-0067,PLTD Telaga,PLTD Telaga,PLTD,,Gorontalo,Sulutgo,existing,,,0.5748397,123.0480209,way/1250980902,,NO_CAPACITY,OSM-overpass
+GEN-SLW-0068,PLTA Tonsealama,PLTA Tonsealama,PLTA,14.38,Sulawesi Utara,Sulutgo,existing,,,1.3297387,124.9227638,way/1255718819,hydro,,OSM-overpass
+GEN-SLW-0069,PLTU Sulbagut-1,PLTU Sulbagut-1,PLTU,100.0,Gorontalo,Sulutgo,existing,,combustion,0.9545683,122.9996421,way/1271028773,coal,,OSM-overpass
+GEN-SLW-0070,PLTU Labota (IMIP Morowali),Sulawesi Labota Power Plant,PLTU,,Sulawesi Tengah,Sulteng,existing,,combustion,-2.8739151,122.1691965,way/1291862453,coal,NO_CAPACITY,OSM-overpass
+GEN-SLW-0071,PLTS Gorontalo,PLTS Gorontalo,PLTS,2.0,Gorontalo,Sulutgo,existing,,,0.9536174,122.5577105,way/1312425747,solar,,OSM-overpass
+GEN-SLW-0072,PLTS Karampuang 1,PLTS Karampuang 1,PLTS,0.2,Sulawesi Barat,Sulselrabar,existing,,photovoltaic,-2.6356846,118.8818299,way/1322681373,solar,,OSM-overpass
+GEN-SLW-0073,PLTS Karampuang 2,PLTS Karampuang 2,PLTS,0.12,Sulawesi Barat,Sulselrabar,existing,,photovoltaic,-2.6275081,118.8805013,way/1322681375,solar,,OSM-overpass
+GEN-SLW-0074,PLTS Karampuang 3,PLTS Karampuang 3,PLTS,0.15,Sulawesi Barat,Sulselrabar,existing,,photovoltaic,-2.6241757,118.890817,way/1322681377,solar,,OSM-overpass
+GEN-SLW-0075,PLTS Karampuang 4,PLTS Karampuang 4,PLTS,0.13,Sulawesi Barat,Sulselrabar,existing,,photovoltaic,-2.6455713,118.8869481,way/1322681379,solar,,OSM-overpass
+GEN-SLW-0076,PLTS Kahianga,PLTS Kahianga,PLTS,0.31,Sulawesi Tenggara,Sulselrabar,existing,,photovoltaic,-5.7576757,123.9487823,way/1322685346,solar,,OSM-overpass
+GEN-SLW-0077,PLTS Lamanggau,PLTS Lamanggau,PLTS,0.22,Sulawesi Tenggara,Sulselrabar,existing,,photovoltaic,-5.7643018,123.9032575,way/1322685350,solar,,OSM-overpass
+GEN-SLW-0078,PLTS Dete,PLTS Dete,PLTS,0.11,Sulawesi Tenggara,Sulselrabar,existing,,photovoltaic,-5.7747162,123.9739894,way/1322685353,solar,,OSM-overpass
+GEN-SLW-0079,PLTS Kulati,PLTS Kulati,PLTS,0.14,Sulawesi Tenggara,Sulselrabar,existing,,photovoltaic,-5.7603693,123.9976769,way/1322685356,solar,,OSM-overpass
+GEN-SLW-0080,PLTS Isimu,PLTS Isimu,PLTS,14.5,Gorontalo,Sulutgo,existing,,photovoltaic,0.6220207,122.8409226,way/1322727205,solar,,OSM-overpass
+GEN-SLW-0081,PLTS Selayar,PLTS Selayar,PLTS,1.4,Sulawesi Selatan,Sulselrabar,existing,PT PLN,photovoltaic,-6.0463458,120.4585339,way/1323856434,solar,,OSM-overpass
+GEN-SLW-0082,PLTS Burungloe,PLTS Burungloe,PLTS,0.1,Sulawesi Selatan,Sulselrabar,existing,,photovoltaic,-5.1179451,120.3913064,way/1323856435,solar,,OSM-overpass
+GEN-SLW-0083,PLTU Wanxiang Nickel Indonesia,Wanxiang Nickel Indonesia power station,PLTU,,Sulawesi Tengah,Sulteng,existing,,combustion,-2.7312858,122.031064,way/1325505504,coal,NO_CAPACITY,OSM-overpass
+GEN-SLW-0084,PLTD Manadotua,PLTD Manadotua,PLTD,0.25,Sulawesi Utara,Sulutgo,existing,PT.PLN,reciprocating_engine,1.6447404,124.7093274,way/1329301174,diesel,,OSM-overpass
+GEN-SLW-0085,(unnamed),,PLTS,,Sulawesi Selatan,Sulselrabar,existing,,photovoltaic,-6.8547829,119.0977202,way/1331175823,solar,NO_NAME;NO_CAPACITY,OSM-overpass
+GEN-SLW-0086,PLTS Terpusat Pasimarannu,PLTS Terpusat Pasimarannu,PLTS,,Sulawesi Selatan,Sulselrabar,existing,,photovoltaic,-7.3643056,121.0836455,way/1334459348,solar,NO_CAPACITY,OSM-overpass
+GEN-SLW-0087,PLTS Bonea,PLTS Bonea,PLTS,,Sulawesi Selatan,Sulselrabar,existing,,photovoltaic,-7.3769495,121.1352955,way/1334459373,solar,NO_CAPACITY,OSM-overpass
+GEN-SLW-0088,PLTS Batu Bingkung,PLTS Batu Bingkung,PLTS,,Sulawesi Selatan,Sulselrabar,existing,,photovoltaic,-7.3679782,121.1246559,way/1334459400,solar,NO_CAPACITY,OSM-overpass
+GEN-SLW-0089,PLTS Sambali,PLTS Sambali,PLTS,,Sulawesi Selatan,Sulselrabar,existing,,photovoltaic,-7.3607119,121.1520298,way/1334459403,solar,NO_CAPACITY,OSM-overpass
+GEN-SLW-0090,PLTS Menara Indah,PLTS Menara Indah,PLTS,,Sulawesi Selatan,Sulselrabar,existing,,photovoltaic,-5.7540743,120.4864805,way/1334639659,solar,NO_CAPACITY,OSM-overpass
+GEN-SLW-0091,(unnamed),,PLTS,,Sulawesi Selatan,Sulselrabar,existing,,,-6.9582135,120.7870314,way/1335862924,solar,NO_NAME;NO_CAPACITY,OSM-overpass
+GEN-SLW-0092,PLTS Pasitallu Tangnga,PLTS Pasitallu Tangnga,PLTS,,Sulawesi Selatan,Sulselrabar,existing,,,-7.0633375,121.0979689,way/1336362230,solar,NO_CAPACITY,OSM-overpass
+GEN-SLW-0093,PLTS Latondu,PLTS Latondu,PLTS,,Sulawesi Selatan,Sulselrabar,existing,,,-6.5022263,120.9902588,way/1336362251,solar,NO_CAPACITY,OSM-overpass
+GEN-SLW-0094,(unnamed),,PLTA,,Sulawesi Selatan,Sulselrabar,existing,,,-5.1719208,120.0382491,way/1360656288,hydro,NO_NAME;NO_CAPACITY,OSM-overpass
+GEN-SLW-0095,(unnamed),,PLTS,,Sulawesi Tenggara,Sulselrabar,existing,,,-6.2057332,122.7247557,way/1365649482,solar,NO_NAME;NO_CAPACITY,OSM-overpass
+GEN-SLW-0096,PLTS Makalehi,PLTS Makalehi,PLTS,,Sulawesi Utara,Sulutgo,existing,PT PLN,photovoltaic,2.7398911,125.1696776,way/1371205002,solar,NO_CAPACITY,OSM-overpass
+GEN-SLW-0097,(unnamed),,PLTS,,Sulawesi Selatan,Sulselrabar,existing,,photovoltaic,-5.1486883,119.2649187,way/1383897662,solar,NO_NAME;NO_CAPACITY,OSM-overpass
+GEN-SLW-0098,PLTU Ambunu,PLTU Ambunu,PLTU,350.0,Sulawesi Tengah,Sulteng,existing,Indonesia Huabao Industrial Park,combustion,-2.2591674,121.7716482,way/1416911382,coal,,OSM-overpass
+GEN-SLW-0099,PLTS Kayuadi,PLTS Kayuadi,PLTS,,Sulawesi Selatan,Sulselrabar,existing,,photovoltaic,-6.7875933,120.7962051,way/1444676313,solar,NO_CAPACITY,OSM-overpass
+GEN-SLW-0100,(unnamed),,Unknown,,Sulawesi Selatan,Sulselrabar,existing,Perusahaan Listrik Negara,,-5.1645,119.4451942,way/1454217130,,NO_NAME;NO_CAPACITY;NO_TYPE,OSM-overpass
+GEN-SLW-0101,(unnamed),,Unknown,,Sulawesi Selatan,Sulselrabar,existing,Perusahaan Listrik Negara,,-5.1655327,119.4476742,way/1454217132,,NO_NAME;NO_CAPACITY;NO_TYPE,OSM-overpass

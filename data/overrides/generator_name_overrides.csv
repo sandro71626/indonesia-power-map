@@ -1,0 +1,12 @@
+osm_id,override_name,verified_date,notes
+way/1152758557,PLTU Weda Bay,2026-05-27,Drop tail Mandarin "（韦达贝燃煤发电厂）" dan token redundant "Power Plant" — kompleks PLTU captive di Weda Bay Industrial Park (IWIP) Halmahera Tengah, Tsingshan-IWIP Holdings
+way/1245573861,PLTU Weda Bay Unit 9-11,2026-05-27,Mandarin "电厂(9-11)" = Power Plant 9-11. Unit blok 9-11 dari kompleks PLTU Weda Bay
+way/1245573862,PLTU Weda Bay Unit 1-4,2026-05-27,Mandarin "电厂（1-4）" = Power Plant 1-4. Unit blok 1-4 dari kompleks PLTU Weda Bay
+way/1245573863,PLTU Weda Bay Unit 5-8,2026-05-27,Mandarin "电厂（5-8）" = Power Plant 5-8. Unit blok 5-8 dari kompleks PLTU Weda Bay
+way/1245573872,Gardu Induk Weda Bay Unit 3,2026-05-27,Mandarin "3号变电站" = Substation No. 3 — sebenarnya substation bukan plant (OSM mis-tagged power=plant). Dipertahankan di data plant; nama mencerminkan fungsi sebenarnya
+way/523434345,PLTS Likupang,2026-05-27,"OSM ""solar power plant"" tanpa nama; koord lat 1.619 lon 124.703 = Likupang Minahasa Utara, PLTS PLN ~21 MW"
+way/1103596061,PLTGU Apung Karpowership Zeynep Sultan,2026-05-27,"Floating power plant Karpowership (Turki) Zeynep Sultan — sewa PLN, biasanya di Pelabuhan Bitung; Karpowership & Zeynep Sultan = nama proper (operator + kapal) dipertahankan"
+way/1118436421,PLTU IMIP Morowali (Sulawesi Mining),2026-05-27,Indonesia Morowali Industrial Park (IMIP) captive PLTU; ""Sulawesi Mining"" = nama entitas yang dipertahankan
+way/1168320730,PLTU Delong Nickel Phase II,2026-05-27,"Delong = PT Virtue Dragon Nickel (Delong Holdings) subsidiary di Konawe; ""Phase II"" = fase pengembangan kedua. Captive smelter"
+way/1291862453,PLTU Labota (IMIP Morowali),2026-05-27,Labota = nama lokasi cluster smelter dalam IMIP Bahodopi Morowali; PLTU captive
+way/1325505504,PLTU Wanxiang Nickel Indonesia,2026-05-27,"PT Wanxiang Nickel Indonesia (Wanxiang Holdings) — smelter di Morowali; ""Wanxiang"" nama proper dipertahankan"

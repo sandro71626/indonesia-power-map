@@ -159,9 +159,32 @@ review_flag     NO_NAME / NO_CAPACITY / NO_TYPE
 source_id       'OSM-overpass'
 ```
 
+## Name overrides (6 entries Sulawesi)
+
+Plant non-Indonesia di OSM (English deskriptif di kawasan industri smelter nikel Morowali-Konawe + Karpowership Bitung + PLTS Likupang generic) di-normalisasi ke nama Indonesia via shared `data/overrides/generator_name_overrides.csv` (2026-05-27). Original OSM name di-preserve di kolom baru `osm_name`.
+
+| ID | Display name (override) | OSM original |
+|----|-------------------------|--------------|
+| GEN-SLW-0024 | **PLTS Likupang** | solar power plant |
+| GEN-SLW-0057 | **PLTGU Apung Karpowership Zeynep Sultan** | Karpowership (Indonesia) Zeynep Sultan power station |
+| GEN-SLW-0058 | **PLTU IMIP Morowali (Sulawesi Mining)** | Morowali Industrial Park Sulawesi Mining Power Station |
+| GEN-SLW-0061 | **PLTU Delong Nickel Phase II** | Delong Nickel Phase II Power Station |
+| GEN-SLW-0070 | **PLTU Labota (IMIP Morowali)** | Sulawesi Labota Power Plant |
+| GEN-SLW-0083 | **PLTU Wanxiang Nickel Indonesia** | Wanxiang Nickel Indonesia power station |
+
+Pola normalisasi:
+- Token deskriptif generik ("power plant", "power station") di-translate menjadi prefix PLT-X sesuai sumber energi (PLTU/PLTGU/PLTS).
+- Nama proper noun (Karpowership, Zeynep Sultan, Delong, Wanxiang, Sulawesi Mining) **dipertahankan** — itu nama operator/kapal/entitas valid.
+- PLTS Likupang: OSM "solar power plant" tanpa nama; koord lat 1.619 lon 124.703 = Likupang Minahasa Utara (PLTS PLN ~21 MW); rename berdasarkan lokasi.
+
+Mekanisme yang sama dipakai oleh `extract_maluku_papua_generators.py` untuk 5 plant Mandarin di kompleks Weda Bay (Halmahera Tengah).
+
+CSV schema sekarang punya 14 kolom (sebelumnya 13) — tambah `osm_name` setelah `name`.
+
 ## Kandidat iterasi berikutnya
 
 1. Validasi silang agregat RUPTL untuk kuantifikasi gap coverage OSM.
 2. Isi `capacity_mw` yang kosong (46 plant) via RUPTL / PLN Annual Report / GEM.
 3. Resolve `NO_TYPE` (15 plant) — sebagian captive power smelter nikel.
 4. Cek apakah 2 entri PLTA Poso perlu digabung jadi satu fasilitas.
+5. Audit nama plant non-Indonesia di region lain (Sumatra, Kalimantan, JAMALI) — terapkan name override mechanism kalau ada.

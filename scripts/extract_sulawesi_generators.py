@@ -42,10 +42,26 @@ from collections import defaultdict
 
 ROOT = Path(__file__).resolve().parent.parent
 PLANTS_GJ = ROOT / "data/geojson/indonesia_plants.geojson"
+NAME_OVERRIDES = ROOT / "data/overrides/generator_name_overrides.csv"
 OUT_CSV = ROOT / "data/processed/generator_master_sulawesi.csv"
 OUT_GJ = ROOT / "data/processed/generators_sulawesi.geojson"
 
 ID_PREFIX = "GEN-SLW"
+
+
+def load_name_overrides():
+    """Load mapping osm_id -> display_name dari generator_name_overrides.csv.
+
+    Untuk normalisasi nama plant non-Indonesia (English deskriptif di plant
+    captive industrial Morowali-Konawe). Original OSM name di-preserve di
+    field `osm_name` saat write CSV."""
+    overrides = {}
+    if not NAME_OVERRIDES.exists():
+        return overrides
+    with open(NAME_OVERRIDES) as f:
+        for r in csv.DictReader(f):
+            overrides[r['osm_id'].strip()] = r['override_name'].strip()
+    return overrides
 
 # Urutan sistem untuk ringkasan.
 SYSTEMS = ["Sulutgo", "Sulteng", "Sulselrabar"]
@@ -218,23 +234,35 @@ def load_sulawesi_plants():
 
 def run():
     plants = load_sulawesi_plants()
+    name_overrides = load_name_overrides()
     print(f"OSM plants di region Sulawesi: {len(plants)}")
+    print(f"Name overrides loaded: {len(name_overrides)}")
 
     rows = []
     by_system_type = defaultdict(lambda: defaultdict(lambda: {'count': 0, 'mw': 0.0}))
     by_province = defaultdict(lambda: {'count': 0, 'mw': 0.0})
     next_id = 1
+    used_overrides = set()
 
     for f, lat, lon, province, system in plants:
         props = f.get('properties', {})
-        name = (props.get('name') or props.get('name:en') or '').strip()
+        osm_name = (props.get('name') or props.get('name:en') or '').strip()
+        osm_id = props.get('@id', '')
+
+        # Apply name override jika ada (normalisasi nama English/Mandarin).
+        if osm_id in name_overrides:
+            display_name = name_overrides[osm_id]
+            used_overrides.add(osm_id)
+        else:
+            display_name = osm_name
+
         cap_mw = parse_capacity_mw(props.get('plant:output:electricity'))
         plt_type = derive_type(props, cap_mw)
         operator = (props.get('operator') or '').strip()
         method = (props.get('plant:method') or '').strip()
 
         flags = []
-        if not name:
+        if not display_name:
             flags.append('NO_NAME')
         if cap_mw is None:
             flags.append('NO_CAPACITY')
@@ -243,7 +271,8 @@ def run():
 
         row = {
             'id': f'{ID_PREFIX}-{next_id:04d}',
-            'name': name or '(unnamed)',
+            'name': display_name or '(unnamed)',
+            'osm_name': osm_name,  # Original OSM name, untuk audit trail
             'type': plt_type,
             'capacity_mw': cap_mw if cap_mw is not None else '',
             'province': province,
@@ -252,7 +281,7 @@ def run():
             'operator': operator,
             'method': method,
             'lat': lat, 'lon': lon,
-            'osm_id': props.get('@id', ''),
+            'osm_id': osm_id,
             'osm_source': props.get('plant:source', ''),
             'review_flag': ';'.join(flags),
             'source_id': 'OSM-overpass',
