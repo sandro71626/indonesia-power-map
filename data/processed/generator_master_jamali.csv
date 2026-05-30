@@ -41,7 +41,7 @@ GEN-JMB-0039,PLTA Panglima Besar Soedirman,PLTA,180.9,Jawa Tengah,Jamali,existin
 GEN-JMB-0040,PLTA Ubrug,PLTA,18.36,Jawa Barat,Jamali,existing,Indonesia Power,,-6.9499858,106.7551839,way/280246818,hydro,,OSM-overpass
 GEN-JMB-0041,PLTA Selorejo,PLTA,4.5,Jawa Timur,Jamali,existing,,water-storage,-7.8733171,112.3518016,way/284137273,hydro,,OSM-overpass
 GEN-JMB-0042,PLTA Ketenger,PLTA,8.54,Jawa Tengah,Jamali,existing,Indonesia Power,,-7.333515,109.2199531,way/304324906,hydro,,OSM-overpass
-GEN-JMB-0043,PLTU Rembang,PLTU,630.0,Jawa Timur,Jamali,existing,PT Pembangkitan Jawa Bali,combustion,-6.6346891,111.4743362,way/307271432,coal,,OSM-overpass
+GEN-JMB-0043,PLTU Rembang,PLTU,630.0,Jawa Tengah,Jamali,existing,PT Pembangkitan Jawa Bali,combustion,-6.6346891,111.4743362,way/307271432,coal,,OSM-overpass
 GEN-JMB-0044,Unit Pembangkit Listrik Paiton,PLTU,4608.0,Jawa Timur,Jamali,existing,PT PLN Nusantara Power,combustion,-7.7129411,113.5826364,way/340912781,coal,,OSM-overpass
 GEN-JMB-0045,PLTGU Grati,PLTGU,1424.66,Jawa Timur,Jamali,existing,Indonesia Power,combustion,-7.6485367,113.0247313,way/340978686,gas,,OSM-overpass
 GEN-JMB-0046,PT PLN,Unknown,,DKI Jakarta,Jamali,existing,PT Perusahaan Listrik Negara,,-6.260325,106.8688348,way/399022979,,NO_CAPACITY;NO_TYPE,OSM-overpass
@@ -58,14 +58,14 @@ GEN-JMB-0056,Gedung PLTD Pulau Panggang,Unknown,,Other Jamali,Jamali,existing,,,
 GEN-JMB-0057,PLTU Jawa 7,PLTU,2000.0,Banten,Jamali,existing,PT SGPJB,combustion,-5.9918823,106.1055836,way/530303610,coal,,OSM-overpass
 GEN-JMB-0058,PLTU Suralaya,PLTU,4025.0,Banten,Jamali,existing,Indonesia Power,combustion,-5.8892925,106.0311877,way/531146249,coal,,OSM-overpass
 GEN-JMB-0059,PLTU Merak Energi Indonesia,PLTU,120.0,Banten,Jamali,existing,,combustion,-5.8833741,106.0643003,way/531146292,coal,,OSM-overpass
-GEN-JMB-0060,Genset,Unknown,,Jawa Tengah,Jamali,existing,,,-7.5363944,110.2627606,way/531599678,,NO_CAPACITY;NO_TYPE,OSM-overpass
+GEN-JMB-0060,Genset,Unknown,,DIY,Jamali,existing,,,-7.5363944,110.2627606,way/531599678,,NO_CAPACITY;NO_TYPE,OSM-overpass
 GEN-JMB-0061,PLTU TIGA,PLTU,,Jawa Barat,Jamali,existing,,,-6.7873693,108.6540498,way/548479670,,NO_CAPACITY,OSM-overpass
 GEN-JMB-0062,PLTGU Bekasi Power,PLTGU,118.8,Jawa Barat,Jamali,existing,Bekasi Power,combustion,-6.2701676,107.1591988,way/549604296,gas,,OSM-overpass
 GEN-JMB-0063,PLTA Wlingi,PLTA,53.62,Jawa Timur,Jamali,existing,PT Pembangkitan Jawa Bali,,-8.1417117,112.2477736,way/558289605,hydro,,OSM-overpass
-GEN-JMB-0064,PLTU Palabuhan Ratu,PLTU,1050.0,Banten,Jamali,existing,Indonesia Power,combustion,-7.02259,106.5464052,way/560638469,coal,,OSM-overpass
+GEN-JMB-0064,PLTU Palabuhan Ratu,PLTU,1050.0,Jawa Barat,Jamali,existing,Indonesia Power,combustion,-7.02259,106.5464052,way/560638469,coal,,OSM-overpass
 GEN-JMB-0065,PLTA Kedung Ombo,PLTA,22.5,Jawa Tengah,Jamali,existing,Indonesia Power,water-storage,-7.2560075,110.8378828,way/561591953,hydro,,OSM-overpass
 GEN-JMB-0066,PLTA Pejengkolan,PLTA,1.4,Jawa Tengah,Jamali,existing,Indonesia Power,run-of-the-river,-7.6595626,109.7719566,way/561746042,hydro,,OSM-overpass
-GEN-JMB-0067,PLTG Gilimanuk,PLTG,133.8,Jawa Timur,Jamali,existing,Indonesia Power,combustion,-8.1749306,114.4420497,way/564749763,gas,,OSM-overpass
+GEN-JMB-0067,PLTG Gilimanuk,PLTG,133.8,Bali,Jamali,existing,Indonesia Power,combustion,-8.1749306,114.4420497,way/564749763,gas,,OSM-overpass
 GEN-JMB-0068,PLTA Saguling,PLTA,700.72,Jawa Barat,Jamali,existing,Indonesia Power,water-storage,-6.8646138,107.350105,way/564749764,hydro,,OSM-overpass
 GEN-JMB-0069,PLTGU Priok,PLTGU,2720.0,DKI Jakarta,Jamali,existing,Indonesia Power,combustion,-6.1084173,106.8683823,way/662173157,gas,,OSM-overpass
 GEN-JMB-0070,PLTU Banten Serang,PLTU,625.0,Banten,Jamali,existing,PT Lestari Banten Energi,combustion,-5.8808614,106.044809,way/694589974,coal,,OSM-overpass

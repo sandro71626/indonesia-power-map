@@ -53,7 +53,12 @@ PROVINCES = [
     ("Jambi",                     "Sumatra", (-2.80, 101.00, -0.50, 104.50)),
     ("Sumatera Selatan",          "Sumatra", (-4.80, 102.30, -1.00, 105.40)),
     ("Bengkulu",                  "Sumatra", (-5.50, 101.00, -2.00, 103.50)),
-    ("Lampung",                   "Sumatra", (-6.10, 103.40, -3.60, 106.00)),
+    # Lampung — paling SE Bakauheni (lat ~-5.87, lon ~105.77). Sebelum fix,
+    # bbox -6.10..-3.60 / 103.40..106.00 ter-leak ke Banten/Cilegon (lat -6.0,
+    # lon 105.94+) sehingga PLTU Krakatau Chandra Energi, Cilegon Posco, &
+    # PLTU Asahimas Chemical ter-tag dobel (Lampung di Sumatra + Banten di
+    # JAMALI). Ketat ke lat_min -5.92, lon_max 105.85 (Bakauheni + ~5km buffer).
+    ("Lampung",                   "Sumatra", (-5.92, 103.40, -3.60, 105.85)),
 ]
 
 

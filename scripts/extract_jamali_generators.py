@@ -18,7 +18,7 @@ import subprocess
 from pathlib import Path
 from collections import defaultdict
 
-ROOT = Path("/sessions/pensive-beautiful-bohr/mnt/Indonesia Power Map")
+ROOT = Path(__file__).resolve().parent.parent
 PLANTS_GJ = ROOT / "data/geojson/indonesia_plants.geojson"
 RUPTL = ROOT / "data/raw/sources/RUPTL-2025-2034.pdf"
 OUT_CSV = ROOT / "data/processed/generator_master_jamali.csv"
@@ -28,21 +28,54 @@ OUT_GJ = ROOT / "data/processed/generators_jamali.geojson"
 # (lat_min, lon_min, lat_max, lon_max)
 PROVINCES = [
     ("DKI Jakarta",  (-6.45, 106.65, -5.40, 107.05)),   # extended north for Kepulauan Seribu
-    ("Banten",       (-7.05, 105.10, -5.85, 106.65)),
+    # Banten lat_min -7.00 (sebelumnya -7.05). Ujung Kulon (paling selatan)
+    # sekitar lat -6.85; Bayah (perbatasan Banten-Jabar pesisir selatan) di
+    # lat -6.97. Lat -7.05 ter-leak ke Sukabumi/Jabar (Palabuhan Ratu lat
+    # -7.02 sebelumnya salah ter-tag Banten). Centroid tiebreak juga di-apply.
+    ("Banten",       (-7.00, 105.10, -5.85, 106.65)),
     ("Jawa Barat",   (-7.85, 106.30, -5.95, 108.85)),
-    ("Jawa Tengah",  (-8.30, 108.55, -6.30, 110.95)),   # extended east for Tanjung Jati B (Jepara)
+    # Jawa Tengah lon_max diperluas dari 110.95 ke 111.70 supaya PLTU Rembang
+    # (Sluke, Kab. Rembang, lat -6.63 lon 111.47) tetap ter-tag Jateng — bukan
+    # ter-leak ke Jatim. Tanjung Jati B (Jepara, lon 110.74) tetap ter-include.
+    ("Jawa Tengah",  (-8.30, 108.55, -6.30, 111.70)),
     ("DIY",          (-8.25, 110.00, -7.50, 110.85)),
     ("Jawa Timur",   (-8.85, 110.95, -5.80, 114.65)),   # extended north for Bawean
     ("Bali",         (-8.95, 114.40, -8.00, 115.75)),
 ]
 
+# Centroid geografis aproksimasi per provinsi (lat, lon). Dipakai sebagai
+# tiebreaker kalau plant jatuh di overlap bbox >1 provinsi (mengganti first-match
+# logic lama yang menyebabkan PLTU Palabuhan Ratu mis-tag Banten alih-alih Jabar).
+PROVINCE_CENTROIDS = {
+    "DKI Jakarta":  (-6.18, 106.83),
+    "Banten":       (-6.40, 106.06),   # tengah Banten (Serang-Lebak)
+    "Jawa Barat":   (-6.90, 107.61),   # Bandung area
+    "Jawa Tengah":  (-7.00, 110.40),   # Semarang area — supaya plant utara Jateng tetap dekat centroid Jateng saat tiebreak vs Jatim/DIY
+    "DIY":          (-7.80, 110.36),
+    "Jawa Timur":   (-7.60, 112.50),   # Surabaya-Malang
+    "Bali":         (-8.55, 115.20),
+}
+
 def assign_province(lat, lon):
-    # Prioritas: provinsi terkecil dulu (DKI sebelum Banten/Jabar)
-    # Karena bbox DKI sangat sempit, akan match duluan
+    """Kumpulkan semua provinsi yang bbox-nya memuat titik; kalau >1, pilih
+    centroid terdekat. Pattern sama dengan Sumatra/Kalimantan/Sulawesi
+    extractor — replace first-match wins yang menyebabkan mis-assignment
+    di overlap zone Banten/Jabar dan Jabar/Jateng."""
+    candidates = []
     for name, (la_min, lo_min, la_max, lo_max) in PROVINCES:
         if la_min <= lat <= la_max and lo_min <= lon <= lo_max:
-            return name
-    return "Other Jamali"
+            candidates.append(name)
+    if not candidates:
+        return "Other Jamali"
+    if len(candidates) == 1:
+        return candidates[0]
+    best, best_d2 = None, None
+    for name in candidates:
+        clat, clon = PROVINCE_CENTROIDS[name]
+        d2 = (lat - clat) ** 2 + (lon - clon) ** 2
+        if best_d2 is None or d2 < best_d2:
+            best_d2, best = d2, name
+    return best
 
 # OSM plant:source -> Indonesian PLT type
 SOURCE_MAP = {

@@ -69,7 +69,11 @@ PROVINCES = [
     ("A7",  "Jambi",                      "Sumatra",  681, 691, (-2.80, 101.00, -0.50, 104.50)),
     ("A8",  "Sumatera Selatan",           "Sumatra",  692, 704, (-4.80, 102.30, -1.00, 106.20)),
     ("A9",  "Bengkulu",                   "Sumatra",  705, 715, (-5.50, 101.00, -2.00, 104.00)),
-    ("A10", "Lampung",                    "Sumatra",  716, 729, (-6.00, 103.50, -3.60, 106.00)),
+    # Lampung — bbox diperketat (lat_min -5.92, lon_max 105.85) supaya tidak
+    # ter-leak ke Banten/Cilegon. Match-by-name dari RUPTL Tabel A10 sebenarnya
+    # sudah menyaring (Cilegon GI tidak ada di RUPTL Lampung), tapi defensive
+    # supaya kandidat OSM substations dari Banten tidak ditawarkan ke fuzzy.
+    ("A10", "Lampung",                    "Sumatra",  716, 729, (-5.92, 103.50, -3.60, 105.85)),
 ]
 
 

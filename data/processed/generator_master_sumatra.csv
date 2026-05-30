@@ -4,134 +4,131 @@ GEN-SMT-0002,PLTGU Keramasan,PLTGU,80.0,Sumatera Selatan,Sumatra,existing,,,-3.0
 GEN-SMT-0003,(unnamed),Unknown,,Aceh,Sumatra,existing,,,4.1080821,96.1994004,relation/17940643,,NO_NAME;NO_CAPACITY;NO_TYPE,OSM-overpass
 GEN-SMT-0004,PLTP Rantau Dedap,PLTP,91.0,Sumatera Selatan,Sumatra,existing,,,-4.2225041,103.3825072,relation/19387721,geothermal,,OSM-overpass
 GEN-SMT-0005,PLTD Koba,PLTD,5.0,Kepulauan Bangka Belitung,Babel,existing,,,-2.4999692,106.4013528,way/186109191,diesel,,OSM-overpass
-GEN-SMT-0006,PLTU 400 MW PT Krakatau Chandra Energi,PLTU,400.0,Lampung,Sumatra,existing,PT Krakatau Chandra Energi,combustion,-5.9937986,105.9834238,way/203604070,gas,,OSM-overpass
-GEN-SMT-0007,Lau Renun hydro,PLTA,82.0,Sumatera Utara,Sumatra,existing,PT. PLN,,2.7865021,98.5405475,way/238272778,hydro,,OSM-overpass
-GEN-SMT-0008,PLTU Tanjung Balai Karimun,PLTU,14.0,Kepulauan Riau,Batam,existing,,combustion,1.0419781,103.4202689,way/254334992,coal,,OSM-overpass
-GEN-SMT-0009,PLTGU Belawan,PLTGU,720.0,Sumatera Utara,Sumatra,existing,,,3.7724229,98.668286,way/277183762,gas,,OSM-overpass
-GEN-SMT-0010,KANTOR,Unknown,,Aceh,Sumatra,existing,PLN,,3.8244057,96.7596275,way/284166407,,NO_CAPACITY;NO_TYPE,OSM-overpass
-GEN-SMT-0011,PLTU Nagan Raya,PLTU,200.0,Aceh,Sumatra,existing,Perusahaan Listrik Negara,combustion,4.1054362,96.1977401,way/321541350,coal,,OSM-overpass
-GEN-SMT-0012,PLTU Labuhan Angin,PLTU,230.0,Sumatera Utara,Sumatra,existing,,combustion,1.7516492,98.7310234,way/329719280,coal,,OSM-overpass
-GEN-SMT-0013,PLTA Sipansihaporas II,PLTA,33.0,Sumatera Utara,Sumatra,existing,,,1.7360892,98.8437366,way/329730421,hydro,,OSM-overpass
-GEN-SMT-0014,PLTPB Sibayak,PLTP,12.0,Sumatera Utara,Sumatra,existing,Pertamina Geothermal Energy;Dizamatra Powerindo,,3.2262088,98.5137747,way/333361524,geothermal,,OSM-overpass
-GEN-SMT-0015,PLTU Sebalang,PLTU,200.0,Lampung,Sumatra,existing,PT PLN,,-5.5853215,105.3883594,way/337762452,coal,,OSM-overpass
-GEN-SMT-0016,PLTU Teluk Sirih,PLTU,224.0,Sumatera Barat,Sumatra,existing,,,-1.0766611,100.3715873,way/450924241,coal,,OSM-overpass
-GEN-SMT-0017,PLTD/G Teluk Lembu,PLTD,21.6,Riau,Sumatra,existing,PT. Riau Power Satu,combustion,0.5489611,101.462182,way/465906682,gas,,OSM-overpass
-GEN-SMT-0018,Lueng Bata Power Plant,Unknown,,Aceh,Sumatra,existing,,,5.5387773,95.3412835,way/468197327,,NO_CAPACITY;NO_TYPE,OSM-overpass
-GEN-SMT-0019,PLTG Pauh Limo,PLTG,49.0,Sumatera Barat,Sumatra,existing,,combustion,-0.9343952,100.433046,way/473523398,gas,,OSM-overpass
-GEN-SMT-0020,PLTU Paluh Kurau,PLTU,300.0,Sumatera Utara,Sumatra,existing,,,3.7804962,98.6347121,way/504810894,coal,,OSM-overpass
-GEN-SMT-0021,PLTA Renun,PLTA,,Sumatera Utara,Sumatra,existing,,,2.7944567,98.4975714,way/511391884,,NO_CAPACITY,OSM-overpass
-GEN-SMT-0022,PLTGU Gunung Megang,PLTGU,150.0,Sumatera Selatan,Sumatra,existing,,,-3.506523,103.7992502,way/527695410,gas,,OSM-overpass
-GEN-SMT-0023,PLTA Musi,PLTA,210.0,Bengkulu,Sumatra,existing,,run-of-the-river,-3.5930447,102.4835863,way/528512460,hydro,,OSM-overpass
-GEN-SMT-0024,PLTU Tenayan Raya,PLTU,220.0,Riau,Sumatra,existing,,combustion,0.5636818,101.5233476,way/528916594,coal,,OSM-overpass
-GEN-SMT-0025,PLTP Ulubelu,PLTP,220.0,Lampung,Sumatra,existing,PLN,,-5.3076656,104.5748938,way/531143189,geothermal,,OSM-overpass
-GEN-SMT-0026,PLTMG Arun I,PLTMG,184.0,Aceh,Sumatra,existing,PT Pembangkitan Jawa Bali,,5.2162499,97.0899019,way/542904306,gas,,OSM-overpass
-GEN-SMT-0027,PLTU Air Anyir,PLTU,60.0,Kepulauan Bangka Belitung,Babel,existing,PT PLN Sektor Pembangkitan Bangka Belitung,combustion,-2.0775568,106.1496436,way/543959909,coal,,OSM-overpass
-GEN-SMT-0028,Bendungan Pembangkit Listrik Mikro,Unknown,,Lampung,Sumatra,existing,goverment,,-5.336733,104.3247913,way/548692967,,NO_CAPACITY;NO_TYPE,OSM-overpass
-GEN-SMT-0029,PLTU Tarahan,PLTU,200.0,Lampung,Sumatra,existing,,combustion,-5.5216466,105.3533453,way/557586715,coal,,OSM-overpass
-GEN-SMT-0030,PLTA Koto Panjang,PLTA,114.0,Riau,Sumatra,existing,,,0.2907544,100.881924,way/558200147,hydro,,OSM-overpass
-GEN-SMT-0031,(unnamed),Unknown,,Kepulauan Riau,Batam,existing,,,1.0752172,104.0228053,way/599504349,,NO_NAME;NO_CAPACITY;NO_TYPE,OSM-overpass
-GEN-SMT-0032,PLTMG Baloi,PLTMG,30.0,Kepulauan Riau,Batam,existing,,combustion,1.115555,104.020618,way/602039121,gas,,OSM-overpass
-GEN-SMT-0033,PLTA Asahan 1,PLTA,180.0,Sumatera Utara,Sumatra,existing,,water-storage,2.5117949,99.2603324,way/602689146,hydro,,OSM-overpass
-GEN-SMT-0034,PLTA Sigura-Gura,PLTA,286.0,Sumatera Utara,Sumatra,existing,,water-storage,2.5206126,99.2802997,way/602689154,hydro,,OSM-overpass
-GEN-SMT-0035,Booster PAM,Unknown,,Sumatera Selatan,Sumatra,existing,,,-2.9917363,104.7965226,way/605159168,,NO_CAPACITY;NO_TYPE,OSM-overpass
-GEN-SMT-0036,PLTGU Panaran,PLTGU,164.0,Kepulauan Riau,Batam,existing,Mitra Energi Batam,combustion,1.0135851,104.0068031,way/608005581,gas,,OSM-overpass
-GEN-SMT-0037,PLTU Pangkalan Susu,PLTU,440.0,Aceh,Sumatra,existing,Indonesia Power,combustion,4.1196588,98.2585572,way/610023526,coal,,OSM-overpass
-GEN-SMT-0038,PLTG Talang Duku,PLTG,60.0,Sumatera Selatan,Sumatra,existing,,,-2.8628747,104.1348459,way/610198178,gas,,OSM-overpass
-GEN-SMT-0039,PLTU Tanjung Kasam,PLTU,130.0,Kepulauan Riau,Batam,existing,TJK Power,,1.04422,104.1333958,way/614805877,coal,,OSM-overpass
-GEN-SMT-0040,PLTGU Indralaya,PLTGU,130.0,Sumatera Selatan,Sumatra,existing,,combustion,-3.207056,104.6562593,way/621794946,gas,,OSM-overpass
-GEN-SMT-0041,Pusat Listrik Sei Gelam,PLTG,,Jambi,Sumatra,existing,,combustion,-1.6746401,103.6778833,way/623185709,gas,NO_CAPACITY,OSM-overpass
-GEN-SMT-0042,PLTU Ombilin,PLTU,200.0,Sumatera Barat,Sumatra,existing,Perusahaan Listrik Negara,,-0.6092886,100.7533007,way/626597111,coal,,OSM-overpass
-GEN-SMT-0043,PLTD Koto Lolo,PLTD,21.0,Sumatera Barat,Sumatra,existing,PLN,,-2.0463497,101.3885701,way/639281144,diesel,,OSM-overpass
-GEN-SMT-0044,PLTU Simpang Belimbing,PLTU,300.0,Sumatera Selatan,Sumatra,existing,GH EMM Indonesia,combustion,-3.4009037,104.1180164,way/662978699,coal,,OSM-overpass
-GEN-SMT-0045,PLN,Unknown,,Riau,Sumatra,existing,PLN,,1.4726561,102.1113448,way/674867131,,NO_CAPACITY;NO_TYPE,OSM-overpass
-GEN-SMT-0046,PLTG Batamindo Industrial Park,PLTG,114.0,Kepulauan Riau,Batam,existing,,combustion,1.0642729,104.0258208,way/692066654,gas,,OSM-overpass
-GEN-SMT-0047,PLTGU Tanjung Uncang & IPP Batam,PLTGU,120.0,Kepulauan Riau,Batam,existing,,combustion,1.0903717,103.9004288,way/706971183,gas,,OSM-overpass
-GEN-SMT-0048,PLTU Bukit Asam,PLTU,260.0,Sumatera Selatan,Sumatra,existing,,combustion,-3.7314036,103.797662,way/719550864,coal,,OSM-overpass
-GEN-SMT-0049,PLTP Sarulla II,PLTP,220.0,Sumatera Utara,Sumatra,existing,PLN,,1.8879656,99.0263576,way/721674156,geothermal,,OSM-overpass
-GEN-SMT-0050,PLTP Sarulla I,PLTP,110.0,Sumatera Utara,Sumatra,existing,PLN,,1.820782,99.0886277,way/721674157,geothermal,,OSM-overpass
-GEN-SMT-0051,Sumbagut 2 Peaker Power Plant,PLTG,250.0,Aceh,Sumatra,existing,PT PLN (Persero),combustion,5.2140487,97.0869756,way/721696769,gas,,OSM-overpass
-GEN-SMT-0052,PLTS Jakabaring,PLTS,1.6,Sumatera Selatan,Sumatra,existing,,photovoltaic,-3.0105344,104.7910651,way/772768598,solar,,OSM-overpass
-GEN-SMT-0053,(unnamed),Unknown,,Bengkulu,Sumatra,existing,,,-3.6223442,102.4526119,way/797095277,,NO_NAME;NO_CAPACITY;NO_TYPE,OSM-overpass
-GEN-SMT-0054,(unnamed),Unknown,,Bengkulu,Sumatra,existing,,,-3.6148936,102.4617555,way/797095278,,NO_NAME;NO_CAPACITY;NO_TYPE,OSM-overpass
-GEN-SMT-0055,PLTD Pilang,PLTD,5.0,Kepulauan Bangka Belitung,Babel,existing,,,-2.7585933,107.6481523,way/800388453,diesel,,OSM-overpass
-GEN-SMT-0056,PLTU Tanjung Enim,PLTU,,Sumatera Selatan,Sumatra,existing,PT Bukit Energi Servis Terpadu (PT BEST),combustion,-3.7281238,103.8073538,way/814022610,coal,NO_CAPACITY,OSM-overpass
-GEN-SMT-0057,(unnamed),PLTS,,Aceh,Sumatra,existing,,photovoltaic,4.7156949,96.8374803,way/902235362,solar,NO_NAME;NO_CAPACITY,OSM-overpass
-GEN-SMT-0058,(unnamed),PLTS,,Aceh,Sumatra,existing,,photovoltaic,4.7163391,96.8387733,way/902235363,solar,NO_NAME;NO_CAPACITY,OSM-overpass
-GEN-SMT-0059,Perawang Mill Power Plant,PLTU,,Riau,Sumatra,existing,,combustion,0.6936879,101.6199939,way/914010995,coal,NO_CAPACITY,OSM-overpass
-GEN-SMT-0060,Perawang Mill Power Plant,PLTU,,Riau,Sumatra,existing,,combustion,0.6844962,101.6177586,way/914011000,coal,NO_CAPACITY,OSM-overpass
-GEN-SMT-0061,PLTU Sumsel 5,PLTU,300.0,Sumatera Selatan,Sumatra,existing,,combustion,-2.155187,103.7562482,way/917199954,coal,,OSM-overpass
-GEN-SMT-0062,PLTU Keban Agung,PLTU,270.0,Sumatera Selatan,Sumatra,existing,,combustion,-3.7520802,103.6454265,way/926323064,coal,,OSM-overpass
-GEN-SMT-0063,PLTA Singkarak,PLTA,175.0,Sumatera Barat,Sumatra,existing,,,-0.6221396,100.349172,way/930242884,hydro,,OSM-overpass
-GEN-SMT-0064,PLTA Maninjau,PLTA,68.0,Sumatera Barat,Sumatra,existing,,,-0.3107109,100.1166728,way/930242896,hydro,,OSM-overpass
-GEN-SMT-0065,PLTU Bengkulu,PLTU,200.0,Bengkulu,Sumatra,existing,,combustion,-3.9126533,102.2720473,way/930719085,coal,,OSM-overpass
-GEN-SMT-0066,PLTG Glugur,PLTG,44.0,Sumatera Utara,Sumatra,existing,,combustion,3.6159362,98.6686635,way/930833477,gas,,OSM-overpass
-GEN-SMT-0067,PLTG Paya Pasir,PLTG,75.0,Sumatera Utara,Sumatra,existing,,,3.7146521,98.6663822,way/930833481,gas,,OSM-overpass
-GEN-SMT-0068,PLTP Lumut Balai,PLTP,110.0,Sumatera Selatan,Sumatra,existing,,,-4.1979192,103.6485919,way/931931104,geothermal,,OSM-overpass
-GEN-SMT-0069,PLTA Semangka,PLTA,56.0,Lampung,Sumatra,existing,,,-5.3901596,104.3848747,way/931931106,hydro,,OSM-overpass
-GEN-SMT-0070,PLTA Besai,PLTA,90.0,Lampung,Sumatra,existing,PLN,,-4.944151,104.5096645,way/931931108,hydro,,OSM-overpass
-GEN-SMT-0071,PLTD Tegineneng,PLTD,28.5,Lampung,Sumatra,existing,,,-5.1839942,105.1739671,way/931931152,diesel,,OSM-overpass
-GEN-SMT-0072,PLTA Batang Toru,PLTA,510.0,Sumatera Utara,Sumatra,existing,,,1.5117335,99.067744,way/938146449,hydro,,OSM-overpass
-GEN-SMT-0073,PLTP Sorik Marapi,PLTP,240.0,Sumatera Utara,Sumatra,existing,,,0.7150503,99.5707052,way/938146456,geothermal,,OSM-overpass
-GEN-SMT-0074,North Duri Cogeneration Plant,PLTG,300.0,Riau,Sumatra,existing,,combustion,1.3723051,101.2255963,way/939125618,gas,,OSM-overpass
-GEN-SMT-0075,PLTMG Balai Pungut,PLTMG,200.0,Riau,Sumatra,existing,,,1.0732598,101.2811511,way/939125620,coal,,OSM-overpass
-GEN-SMT-0076,PLTU Koto Ringin,PLTU,6.0,Riau,Sumatra,existing,,combustion,0.8266724,102.0653312,way/939125630,coal,,OSM-overpass
-GEN-SMT-0077,PLTGU Musi II,PLTGU,30.0,Sumatera Selatan,Sumatra,existing,,,-3.0256146,104.7169483,way/940047516,gas,,OSM-overpass
-GEN-SMT-0078,PLTG Borang,PLTG,,Sumatera Selatan,Sumatra,existing,,combustion,-2.9228194,104.8721878,way/940047517,gas,NO_CAPACITY,OSM-overpass
-GEN-SMT-0079,Palembang Timur Power Plant,PLTG,150.0,Sumatera Selatan,Sumatra,existing,,,-2.9285278,104.8706872,way/940047518,gas,,OSM-overpass
-GEN-SMT-0080,PLTD Sungai Juaro,PLTD,25.0,Sumatera Selatan,Sumatra,existing,,,-2.9678089,104.8091881,way/940047527,diesel,,OSM-overpass
-GEN-SMT-0081,PLTU Banjarsari,PLTU,270.0,Sumatera Selatan,Sumatra,existing,PT Bukit Pembangkit Innovative,combustion,-3.7244961,103.6902133,way/940526241,coal,,OSM-overpass
-GEN-SMT-0082,Arun Aceh LNG Gas Power Plant,PLTG,,Aceh,Sumatra,existing,,combustion,5.2249277,97.0780487,way/943366985,gas,NO_CAPACITY,OSM-overpass
-GEN-SMT-0083,Sinar Mas Jambi Lontar Power Plant,Unknown,,Jambi,Sumatra,existing,,,-1.0077707,103.0821877,way/946699119,,NO_CAPACITY;NO_TYPE,OSM-overpass
-GEN-SMT-0084,PLTU Galang Batang,PLTU,200.0,Kepulauan Riau,Batam,existing,,combustion,0.9070262,104.6266815,way/948167520,coal,,OSM-overpass
-GEN-SMT-0085,PLTD Batu Ampar,PLTD,10.0,Kepulauan Riau,Batam,existing,,,1.1786981,104.0226732,way/948167521,diesel,,OSM-overpass
-GEN-SMT-0086,PLTD Padang,PLTD,5.0,Kepulauan Bangka Belitung,Babel,existing,,,-2.8670846,108.2535495,way/953023894,diesel,,OSM-overpass
-GEN-SMT-0087,PLTU Suge,PLTU,33.0,Kepulauan Bangka Belitung,Babel,existing,,combustion,-2.8929037,107.5637904,way/953023896,coal,,OSM-overpass
-GEN-SMT-0088,PLTA Air Putih,PLTA,21.0,Bengkulu,Sumatra,existing,,,-3.0731025,102.1468811,way/956594055,hydro,,OSM-overpass
-GEN-SMT-0089,PLTA Lebong,PLTA,14.0,Bengkulu,Sumatra,existing,,,-3.1905433,102.306329,way/956594057,hydro,,OSM-overpass
-GEN-SMT-0090,PLTA Tes,PLTA,18.0,Bengkulu,Sumatra,existing,,,-3.2067037,102.3181629,way/956594058,hydro,,OSM-overpass
-GEN-SMT-0091,PLTD Suka Merindu,PLTD,33.0,Bengkulu,Sumatra,existing,,,-3.7878255,102.268821,way/956594059,diesel,,OSM-overpass
-GEN-SMT-0092,PLTA Wampu,PLTA,45.0,Sumatera Utara,Sumatra,existing,,,3.2549323,98.212291,way/957085166,hydro,,OSM-overpass
-GEN-SMT-0093,PLTA Batutegi,PLTA,90.0,Lampung,Sumatra,existing,,,-5.25557,104.7828233,way/958109271,hydro,,OSM-overpass
-GEN-SMT-0094,PLTA Hasang,PLTA,39.0,Sumatera Utara,Sumatra,existing,,,2.2989375,99.474152,way/958172154,hydro,,OSM-overpass
-GEN-SMT-0095,PLTA Tangga,PLTA,317.0,Sumatera Utara,Sumatra,existing,,,2.5606618,99.3098214,way/958172156,hydro,,OSM-overpass
-GEN-SMT-0096,PLTD Aneuk Laot,PLTD,4.0,Aceh,Sumatra,existing,,,5.8749983,95.3278944,way/958644942,diesel,,OSM-overpass
-GEN-SMT-0097,PLTD Cot Abeuk,PLTD,6.0,Aceh,Sumatra,existing,,,5.8555154,95.345612,way/958644943,diesel,,OSM-overpass
-GEN-SMT-0098,PLTD Seurapong,PLTD,0.5,Aceh,Sumatra,existing,,,5.6696603,95.0755434,way/958644944,diesel,,OSM-overpass
-GEN-SMT-0099,PLTD Deudap,PLTD,0.3,Aceh,Sumatra,existing,,,5.6084823,95.171582,way/958644945,diesel,,OSM-overpass
-GEN-SMT-0100,Cilegon Krakatau Posco Power Plant,Unknown,200.0,Lampung,Sumatra,existing,,,-6.0071,105.9713524,way/967994503,waste_heat;gas,NO_TYPE,OSM-overpass
-GEN-SMT-0101,MV Karadeniz Powership Onur Sultan,PLTG,,Sumatera Utara,Sumatra,existing,,combustion,3.7755498,98.6697348,way/1034545850,gas,NO_CAPACITY,OSM-overpass
-GEN-SMT-0102,PLTU Semaran,PLTU,,Jambi,Sumatra,existing,,,-2.1243999,102.8527342,way/1052212667,biomass,NO_CAPACITY,OSM-overpass
-GEN-SMT-0103,PLTU Asahimas Chemical,PLTU,300.0,Lampung,Sumatra,existing,,combustion,-6.0239045,105.9426962,way/1102958475,coal,,OSM-overpass
-GEN-SMT-0104,Riau (MRPR) Power Plant,Unknown,,Riau,Sumatra,existing,,,0.5396725,101.5205226,way/1107800132,,NO_CAPACITY;NO_TYPE,OSM-overpass
-GEN-SMT-0105,Waterkracht Centrale Koerandji,PLTA,,Sumatera Barat,Sumatra,existing,,run-of-the-river,-0.9067185,100.456433,way/1127696139,hydro,NO_CAPACITY,OSM-overpass
-GEN-SMT-0106,PLTMG MPP Nias,PLTMG,25.0,Sumatera Utara,Sumatra,existing,,combustion,1.2084754,97.6782952,way/1180199241,gas,,OSM-overpass
-GEN-SMT-0107,PLTG Nias,PLTG,25.0,Sumatera Utara,Sumatra,existing,,combustion,1.2103007,97.6781772,way/1180199242,gas,,OSM-overpass
-GEN-SMT-0108,PLTU IPP Nagan Raya,PLTU,400.0,Aceh,Sumatra,existing,Perusahaan Listrik Negara,combustion,4.1151476,96.2021711,way/1180983527,coal,,OSM-overpass
-GEN-SMT-0109,(unnamed),Unknown,,Lampung,Sumatra,existing,PLN,,-4.2818552,105.2249679,way/1186657321,,NO_NAME;NO_CAPACITY;NO_TYPE,OSM-overpass
-GEN-SMT-0110,Riau Andalan Pulp & Paper Power Station,PLT Biomas,,Riau,Sumatra,existing,,,0.4388772,101.8924244,way/1189446338,biomass,NO_CAPACITY,OSM-overpass
-GEN-SMT-0111,Duri Power Plant,PLTG,112.0,Riau,Sumatra,existing,,combustion,1.0699788,101.2805214,way/1203478280,gas,,OSM-overpass
-GEN-SMT-0112,PLTG MPP Air Anyir,PLTG,50.0,Kepulauan Bangka Belitung,Babel,existing,,combustion,-2.0765961,106.1487126,way/1214611090,gas,,OSM-overpass
-GEN-SMT-0113,PLTBg Sei Mangkei,Unknown,2.4,Sumatera Utara,Sumatra,existing,,combustion,3.127251,99.3448779,way/1224794317,biogas,NO_TYPE,OSM-overpass
-GEN-SMT-0114,PT Berkat Bima Sentana Power Plant,PLTD,,Sumatera Utara,Sumatra,existing,,combustion,3.7711009,98.6667543,way/1227244933,oil,NO_CAPACITY,OSM-overpass
-GEN-SMT-0115,PLTM Sako-1,PLTM,6.0,Sumatera Barat,Sumatra,existing,,,-2.1283044,101.2010674,way/1273311983,hydro,,OSM-overpass
-GEN-SMT-0116,PLTA Peusangan 1,PLTA,45.0,Aceh,Sumatra,existing,,run-of-the-river,4.6020756,96.7427489,way/1304188434,hydro,,OSM-overpass
-GEN-SMT-0117,PLTA Peusangan 2,PLTA,43.0,Aceh,Sumatra,existing,,run-of-the-river,4.6500598,96.6981478,way/1304188435,hydro,,OSM-overpass
-GEN-SMT-0118,PLTP Muara Laboh,PLTP,160.0,Sumatera Barat,Sumatra,existing,,,-1.6013056,101.146979,way/1312349205,geothermal,,OSM-overpass
-GEN-SMT-0119,PLTA Sipansihaporas I,PLTA,17.0,Sumatera Utara,Sumatra,existing,,,1.7402548,98.8672572,way/1314072048,hydro,,OSM-overpass
-GEN-SMT-0120,PLTS Batam,PLTS,1.0,Kepulauan Riau,Batam,existing,,photovoltaic,1.1443175,104.000245,way/1315309553,solar,,OSM-overpass
-GEN-SMT-0121,PLTU Sumsel 8,PLTU,1320.0,Sumatera Selatan,Sumatra,existing,PT Huadian Bukit Asam Power,combustion,-3.8391168,103.8079329,way/1316786274,coal,,OSM-overpass
-GEN-SMT-0122,PLTMG Rawa Minyak,PLTMG,,Riau,Sumatra,existing,,combustion,0.8751148,102.3538969,way/1321567186,oil,NO_CAPACITY,OSM-overpass
-GEN-SMT-0123,PLTS Belinyu,PLTS,1.0,Kepulauan Bangka Belitung,Babel,existing,,photovoltaic,-1.600127,105.793542,way/1322971756,solar,,OSM-overpass
-GEN-SMT-0124,PLTS Pertamina Dumai,PLTS,2.0,Riau,Sumatra,existing,,photovoltaic,1.6428335,101.401951,way/1322972849,solar,,OSM-overpass
-GEN-SMT-0125,PLTS Teluk Keramat,PLTS,0.07,Lampung,Sumatra,existing,,photovoltaic,-5.8175951,105.2721515,way/1326070098,solar,,OSM-overpass
-GEN-SMT-0126,PLTS Sei Mangkei,PLTS,2.0,Sumatera Utara,Sumatra,existing,,photovoltaic,3.1404565,99.3602179,way/1331107102,solar,,OSM-overpass
-GEN-SMT-0127,PLTA Kerinci,PLTA,350.0,Jambi,Sumatra,existing,PT Kerinci Merangin Hidro,,-2.2172865,101.6723425,way/1376708741,hydro,,OSM-overpass
-GEN-SMT-0128,(unnamed),PLTS,,Riau,Sumatra,existing,,photovoltaic,0.8035551,102.0218266,way/1390617059,solar,NO_NAME;NO_CAPACITY,OSM-overpass
-GEN-SMT-0129,PLTU Tembilahan,PLTU,14.0,Riau,Sumatra,existing,,combustion,-0.2985338,103.204527,way/1394466750,coal,,OSM-overpass
-GEN-SMT-0130,PLTU PT Inhil Sarimas Kelapa,PLTU,15.0,Jambi,Sumatra,existing,,combustion,-0.5181603,102.9158625,way/1394466866,coal,,OSM-overpass
-GEN-SMT-0131,(unnamed),Unknown,,Aceh,Sumatra,existing,,,5.4500965,95.2450231,way/1456916345,,NO_NAME;NO_CAPACITY;NO_TYPE,OSM-overpass
-GEN-SMT-0132,(unnamed),Unknown,,Aceh,Sumatra,existing,,,4.0168942,97.2996323,way/1460559922,,NO_NAME;NO_CAPACITY;NO_TYPE,OSM-overpass
-GEN-SMT-0133,Bendungan Sei Silam,PLTA,,Riau,Sumatra,existing,,,0.329262,100.9057351,way/1462469867,hydro,NO_CAPACITY,OSM-overpass
-GEN-SMT-0134,PLTU Soma Daya Utama,PLTU,62.0,Riau,Sumatra,existing,,combustion,1.0534889,103.3150219,way/1504769297,coal,,OSM-overpass
-GEN-SMT-0135,PLTS Karimun,PLTS,5.0,Riau,Sumatra,existing,Karimun Power,photovoltaic,1.0122481,103.3519128,way/1504769383,solar,,OSM-overpass
-GEN-SMT-0136,PLN ranting Pagar Alam,Unknown,,Bengkulu,Sumatra,existing,,,-4.035826,103.2608495,node/7658115634,,NO_CAPACITY;NO_TYPE,OSM-overpass
+GEN-SMT-0006,Lau Renun hydro,PLTA,82.0,Sumatera Utara,Sumatra,existing,PT. PLN,,2.7865021,98.5405475,way/238272778,hydro,,OSM-overpass
+GEN-SMT-0007,PLTU Tanjung Balai Karimun,PLTU,14.0,Kepulauan Riau,Batam,existing,,combustion,1.0419781,103.4202689,way/254334992,coal,,OSM-overpass
+GEN-SMT-0008,PLTGU Belawan,PLTGU,720.0,Sumatera Utara,Sumatra,existing,,,3.7724229,98.668286,way/277183762,gas,,OSM-overpass
+GEN-SMT-0009,KANTOR,Unknown,,Aceh,Sumatra,existing,PLN,,3.8244057,96.7596275,way/284166407,,NO_CAPACITY;NO_TYPE,OSM-overpass
+GEN-SMT-0010,PLTU Nagan Raya,PLTU,200.0,Aceh,Sumatra,existing,Perusahaan Listrik Negara,combustion,4.1054362,96.1977401,way/321541350,coal,,OSM-overpass
+GEN-SMT-0011,PLTU Labuhan Angin,PLTU,230.0,Sumatera Utara,Sumatra,existing,,combustion,1.7516492,98.7310234,way/329719280,coal,,OSM-overpass
+GEN-SMT-0012,PLTA Sipansihaporas II,PLTA,33.0,Sumatera Utara,Sumatra,existing,,,1.7360892,98.8437366,way/329730421,hydro,,OSM-overpass
+GEN-SMT-0013,PLTPB Sibayak,PLTP,12.0,Sumatera Utara,Sumatra,existing,Pertamina Geothermal Energy;Dizamatra Powerindo,,3.2262088,98.5137747,way/333361524,geothermal,,OSM-overpass
+GEN-SMT-0014,PLTU Sebalang,PLTU,200.0,Lampung,Sumatra,existing,PT PLN,,-5.5853215,105.3883594,way/337762452,coal,,OSM-overpass
+GEN-SMT-0015,PLTU Teluk Sirih,PLTU,224.0,Sumatera Barat,Sumatra,existing,,,-1.0766611,100.3715873,way/450924241,coal,,OSM-overpass
+GEN-SMT-0016,PLTD/G Teluk Lembu,PLTD,21.6,Riau,Sumatra,existing,PT. Riau Power Satu,combustion,0.5489611,101.462182,way/465906682,gas,,OSM-overpass
+GEN-SMT-0017,Lueng Bata Power Plant,Unknown,,Aceh,Sumatra,existing,,,5.5387773,95.3412835,way/468197327,,NO_CAPACITY;NO_TYPE,OSM-overpass
+GEN-SMT-0018,PLTG Pauh Limo,PLTG,49.0,Sumatera Barat,Sumatra,existing,,combustion,-0.9343952,100.433046,way/473523398,gas,,OSM-overpass
+GEN-SMT-0019,PLTU Paluh Kurau,PLTU,300.0,Sumatera Utara,Sumatra,existing,,,3.7804962,98.6347121,way/504810894,coal,,OSM-overpass
+GEN-SMT-0020,PLTA Renun,PLTA,,Sumatera Utara,Sumatra,existing,,,2.7944567,98.4975714,way/511391884,,NO_CAPACITY,OSM-overpass
+GEN-SMT-0021,PLTGU Gunung Megang,PLTGU,150.0,Sumatera Selatan,Sumatra,existing,,,-3.506523,103.7992502,way/527695410,gas,,OSM-overpass
+GEN-SMT-0022,PLTA Musi,PLTA,210.0,Bengkulu,Sumatra,existing,,run-of-the-river,-3.5930447,102.4835863,way/528512460,hydro,,OSM-overpass
+GEN-SMT-0023,PLTU Tenayan Raya,PLTU,220.0,Riau,Sumatra,existing,,combustion,0.5636818,101.5233476,way/528916594,coal,,OSM-overpass
+GEN-SMT-0024,PLTP Ulubelu,PLTP,220.0,Lampung,Sumatra,existing,PLN,,-5.3076656,104.5748938,way/531143189,geothermal,,OSM-overpass
+GEN-SMT-0025,PLTMG Arun I,PLTMG,184.0,Aceh,Sumatra,existing,PT Pembangkitan Jawa Bali,,5.2162499,97.0899019,way/542904306,gas,,OSM-overpass
+GEN-SMT-0026,PLTU Air Anyir,PLTU,60.0,Kepulauan Bangka Belitung,Babel,existing,PT PLN Sektor Pembangkitan Bangka Belitung,combustion,-2.0775568,106.1496436,way/543959909,coal,,OSM-overpass
+GEN-SMT-0027,Bendungan Pembangkit Listrik Mikro,Unknown,,Lampung,Sumatra,existing,goverment,,-5.336733,104.3247913,way/548692967,,NO_CAPACITY;NO_TYPE,OSM-overpass
+GEN-SMT-0028,PLTU Tarahan,PLTU,200.0,Lampung,Sumatra,existing,,combustion,-5.5216466,105.3533453,way/557586715,coal,,OSM-overpass
+GEN-SMT-0029,PLTA Koto Panjang,PLTA,114.0,Riau,Sumatra,existing,,,0.2907544,100.881924,way/558200147,hydro,,OSM-overpass
+GEN-SMT-0030,(unnamed),Unknown,,Kepulauan Riau,Batam,existing,,,1.0752172,104.0228053,way/599504349,,NO_NAME;NO_CAPACITY;NO_TYPE,OSM-overpass
+GEN-SMT-0031,PLTMG Baloi,PLTMG,30.0,Kepulauan Riau,Batam,existing,,combustion,1.115555,104.020618,way/602039121,gas,,OSM-overpass
+GEN-SMT-0032,PLTA Asahan 1,PLTA,180.0,Sumatera Utara,Sumatra,existing,,water-storage,2.5117949,99.2603324,way/602689146,hydro,,OSM-overpass
+GEN-SMT-0033,PLTA Sigura-Gura,PLTA,286.0,Sumatera Utara,Sumatra,existing,,water-storage,2.5206126,99.2802997,way/602689154,hydro,,OSM-overpass
+GEN-SMT-0034,Booster PAM,Unknown,,Sumatera Selatan,Sumatra,existing,,,-2.9917363,104.7965226,way/605159168,,NO_CAPACITY;NO_TYPE,OSM-overpass
+GEN-SMT-0035,PLTGU Panaran,PLTGU,164.0,Kepulauan Riau,Batam,existing,Mitra Energi Batam,combustion,1.0135851,104.0068031,way/608005581,gas,,OSM-overpass
+GEN-SMT-0036,PLTU Pangkalan Susu,PLTU,440.0,Aceh,Sumatra,existing,Indonesia Power,combustion,4.1196588,98.2585572,way/610023526,coal,,OSM-overpass
+GEN-SMT-0037,PLTG Talang Duku,PLTG,60.0,Sumatera Selatan,Sumatra,existing,,,-2.8628747,104.1348459,way/610198178,gas,,OSM-overpass
+GEN-SMT-0038,PLTU Tanjung Kasam,PLTU,130.0,Kepulauan Riau,Batam,existing,TJK Power,,1.04422,104.1333958,way/614805877,coal,,OSM-overpass
+GEN-SMT-0039,PLTGU Indralaya,PLTGU,130.0,Sumatera Selatan,Sumatra,existing,,combustion,-3.207056,104.6562593,way/621794946,gas,,OSM-overpass
+GEN-SMT-0040,Pusat Listrik Sei Gelam,PLTG,,Jambi,Sumatra,existing,,combustion,-1.6746401,103.6778833,way/623185709,gas,NO_CAPACITY,OSM-overpass
+GEN-SMT-0041,PLTU Ombilin,PLTU,200.0,Sumatera Barat,Sumatra,existing,Perusahaan Listrik Negara,,-0.6092886,100.7533007,way/626597111,coal,,OSM-overpass
+GEN-SMT-0042,PLTD Koto Lolo,PLTD,21.0,Sumatera Barat,Sumatra,existing,PLN,,-2.0463497,101.3885701,way/639281144,diesel,,OSM-overpass
+GEN-SMT-0043,PLTU Simpang Belimbing,PLTU,300.0,Sumatera Selatan,Sumatra,existing,GH EMM Indonesia,combustion,-3.4009037,104.1180164,way/662978699,coal,,OSM-overpass
+GEN-SMT-0044,PLN,Unknown,,Riau,Sumatra,existing,PLN,,1.4726561,102.1113448,way/674867131,,NO_CAPACITY;NO_TYPE,OSM-overpass
+GEN-SMT-0045,PLTG Batamindo Industrial Park,PLTG,114.0,Kepulauan Riau,Batam,existing,,combustion,1.0642729,104.0258208,way/692066654,gas,,OSM-overpass
+GEN-SMT-0046,PLTGU Tanjung Uncang & IPP Batam,PLTGU,120.0,Kepulauan Riau,Batam,existing,,combustion,1.0903717,103.9004288,way/706971183,gas,,OSM-overpass
+GEN-SMT-0047,PLTU Bukit Asam,PLTU,260.0,Sumatera Selatan,Sumatra,existing,,combustion,-3.7314036,103.797662,way/719550864,coal,,OSM-overpass
+GEN-SMT-0048,PLTP Sarulla II,PLTP,220.0,Sumatera Utara,Sumatra,existing,PLN,,1.8879656,99.0263576,way/721674156,geothermal,,OSM-overpass
+GEN-SMT-0049,PLTP Sarulla I,PLTP,110.0,Sumatera Utara,Sumatra,existing,PLN,,1.820782,99.0886277,way/721674157,geothermal,,OSM-overpass
+GEN-SMT-0050,Sumbagut 2 Peaker Power Plant,PLTG,250.0,Aceh,Sumatra,existing,PT PLN (Persero),combustion,5.2140487,97.0869756,way/721696769,gas,,OSM-overpass
+GEN-SMT-0051,PLTS Jakabaring,PLTS,1.6,Sumatera Selatan,Sumatra,existing,,photovoltaic,-3.0105344,104.7910651,way/772768598,solar,,OSM-overpass
+GEN-SMT-0052,(unnamed),Unknown,,Bengkulu,Sumatra,existing,,,-3.6223442,102.4526119,way/797095277,,NO_NAME;NO_CAPACITY;NO_TYPE,OSM-overpass
+GEN-SMT-0053,(unnamed),Unknown,,Bengkulu,Sumatra,existing,,,-3.6148936,102.4617555,way/797095278,,NO_NAME;NO_CAPACITY;NO_TYPE,OSM-overpass
+GEN-SMT-0054,PLTD Pilang,PLTD,5.0,Kepulauan Bangka Belitung,Babel,existing,,,-2.7585933,107.6481523,way/800388453,diesel,,OSM-overpass
+GEN-SMT-0055,PLTU Tanjung Enim,PLTU,,Sumatera Selatan,Sumatra,existing,PT Bukit Energi Servis Terpadu (PT BEST),combustion,-3.7281238,103.8073538,way/814022610,coal,NO_CAPACITY,OSM-overpass
+GEN-SMT-0056,(unnamed),PLTS,,Aceh,Sumatra,existing,,photovoltaic,4.7156949,96.8374803,way/902235362,solar,NO_NAME;NO_CAPACITY,OSM-overpass
+GEN-SMT-0057,(unnamed),PLTS,,Aceh,Sumatra,existing,,photovoltaic,4.7163391,96.8387733,way/902235363,solar,NO_NAME;NO_CAPACITY,OSM-overpass
+GEN-SMT-0058,Perawang Mill Power Plant,PLTU,,Riau,Sumatra,existing,,combustion,0.6936879,101.6199939,way/914010995,coal,NO_CAPACITY,OSM-overpass
+GEN-SMT-0059,Perawang Mill Power Plant,PLTU,,Riau,Sumatra,existing,,combustion,0.6844962,101.6177586,way/914011000,coal,NO_CAPACITY,OSM-overpass
+GEN-SMT-0060,PLTU Sumsel 5,PLTU,300.0,Sumatera Selatan,Sumatra,existing,,combustion,-2.155187,103.7562482,way/917199954,coal,,OSM-overpass
+GEN-SMT-0061,PLTU Keban Agung,PLTU,270.0,Sumatera Selatan,Sumatra,existing,,combustion,-3.7520802,103.6454265,way/926323064,coal,,OSM-overpass
+GEN-SMT-0062,PLTA Singkarak,PLTA,175.0,Sumatera Barat,Sumatra,existing,,,-0.6221396,100.349172,way/930242884,hydro,,OSM-overpass
+GEN-SMT-0063,PLTA Maninjau,PLTA,68.0,Sumatera Barat,Sumatra,existing,,,-0.3107109,100.1166728,way/930242896,hydro,,OSM-overpass
+GEN-SMT-0064,PLTU Bengkulu,PLTU,200.0,Bengkulu,Sumatra,existing,,combustion,-3.9126533,102.2720473,way/930719085,coal,,OSM-overpass
+GEN-SMT-0065,PLTG Glugur,PLTG,44.0,Sumatera Utara,Sumatra,existing,,combustion,3.6159362,98.6686635,way/930833477,gas,,OSM-overpass
+GEN-SMT-0066,PLTG Paya Pasir,PLTG,75.0,Sumatera Utara,Sumatra,existing,,,3.7146521,98.6663822,way/930833481,gas,,OSM-overpass
+GEN-SMT-0067,PLTP Lumut Balai,PLTP,110.0,Sumatera Selatan,Sumatra,existing,,,-4.1979192,103.6485919,way/931931104,geothermal,,OSM-overpass
+GEN-SMT-0068,PLTA Semangka,PLTA,56.0,Lampung,Sumatra,existing,,,-5.3901596,104.3848747,way/931931106,hydro,,OSM-overpass
+GEN-SMT-0069,PLTA Besai,PLTA,90.0,Lampung,Sumatra,existing,PLN,,-4.944151,104.5096645,way/931931108,hydro,,OSM-overpass
+GEN-SMT-0070,PLTD Tegineneng,PLTD,28.5,Lampung,Sumatra,existing,,,-5.1839942,105.1739671,way/931931152,diesel,,OSM-overpass
+GEN-SMT-0071,PLTA Batang Toru,PLTA,510.0,Sumatera Utara,Sumatra,existing,,,1.5117335,99.067744,way/938146449,hydro,,OSM-overpass
+GEN-SMT-0072,PLTP Sorik Marapi,PLTP,240.0,Sumatera Utara,Sumatra,existing,,,0.7150503,99.5707052,way/938146456,geothermal,,OSM-overpass
+GEN-SMT-0073,North Duri Cogeneration Plant,PLTG,300.0,Riau,Sumatra,existing,,combustion,1.3723051,101.2255963,way/939125618,gas,,OSM-overpass
+GEN-SMT-0074,PLTMG Balai Pungut,PLTMG,200.0,Riau,Sumatra,existing,,,1.0732598,101.2811511,way/939125620,coal,,OSM-overpass
+GEN-SMT-0075,PLTU Koto Ringin,PLTU,6.0,Riau,Sumatra,existing,,combustion,0.8266724,102.0653312,way/939125630,coal,,OSM-overpass
+GEN-SMT-0076,PLTGU Musi II,PLTGU,30.0,Sumatera Selatan,Sumatra,existing,,,-3.0256146,104.7169483,way/940047516,gas,,OSM-overpass
+GEN-SMT-0077,PLTG Borang,PLTG,,Sumatera Selatan,Sumatra,existing,,combustion,-2.9228194,104.8721878,way/940047517,gas,NO_CAPACITY,OSM-overpass
+GEN-SMT-0078,Palembang Timur Power Plant,PLTG,150.0,Sumatera Selatan,Sumatra,existing,,,-2.9285278,104.8706872,way/940047518,gas,,OSM-overpass
+GEN-SMT-0079,PLTD Sungai Juaro,PLTD,25.0,Sumatera Selatan,Sumatra,existing,,,-2.9678089,104.8091881,way/940047527,diesel,,OSM-overpass
+GEN-SMT-0080,PLTU Banjarsari,PLTU,270.0,Sumatera Selatan,Sumatra,existing,PT Bukit Pembangkit Innovative,combustion,-3.7244961,103.6902133,way/940526241,coal,,OSM-overpass
+GEN-SMT-0081,Arun Aceh LNG Gas Power Plant,PLTG,,Aceh,Sumatra,existing,,combustion,5.2249277,97.0780487,way/943366985,gas,NO_CAPACITY,OSM-overpass
+GEN-SMT-0082,Sinar Mas Jambi Lontar Power Plant,Unknown,,Jambi,Sumatra,existing,,,-1.0077707,103.0821877,way/946699119,,NO_CAPACITY;NO_TYPE,OSM-overpass
+GEN-SMT-0083,PLTU Galang Batang,PLTU,200.0,Kepulauan Riau,Batam,existing,,combustion,0.9070262,104.6266815,way/948167520,coal,,OSM-overpass
+GEN-SMT-0084,PLTD Batu Ampar,PLTD,10.0,Kepulauan Riau,Batam,existing,,,1.1786981,104.0226732,way/948167521,diesel,,OSM-overpass
+GEN-SMT-0085,PLTD Padang,PLTD,5.0,Kepulauan Bangka Belitung,Babel,existing,,,-2.8670846,108.2535495,way/953023894,diesel,,OSM-overpass
+GEN-SMT-0086,PLTU Suge,PLTU,33.0,Kepulauan Bangka Belitung,Babel,existing,,combustion,-2.8929037,107.5637904,way/953023896,coal,,OSM-overpass
+GEN-SMT-0087,PLTA Air Putih,PLTA,21.0,Bengkulu,Sumatra,existing,,,-3.0731025,102.1468811,way/956594055,hydro,,OSM-overpass
+GEN-SMT-0088,PLTA Lebong,PLTA,14.0,Bengkulu,Sumatra,existing,,,-3.1905433,102.306329,way/956594057,hydro,,OSM-overpass
+GEN-SMT-0089,PLTA Tes,PLTA,18.0,Bengkulu,Sumatra,existing,,,-3.2067037,102.3181629,way/956594058,hydro,,OSM-overpass
+GEN-SMT-0090,PLTD Suka Merindu,PLTD,33.0,Bengkulu,Sumatra,existing,,,-3.7878255,102.268821,way/956594059,diesel,,OSM-overpass
+GEN-SMT-0091,PLTA Wampu,PLTA,45.0,Sumatera Utara,Sumatra,existing,,,3.2549323,98.212291,way/957085166,hydro,,OSM-overpass
+GEN-SMT-0092,PLTA Batutegi,PLTA,90.0,Lampung,Sumatra,existing,,,-5.25557,104.7828233,way/958109271,hydro,,OSM-overpass
+GEN-SMT-0093,PLTA Hasang,PLTA,39.0,Sumatera Utara,Sumatra,existing,,,2.2989375,99.474152,way/958172154,hydro,,OSM-overpass
+GEN-SMT-0094,PLTA Tangga,PLTA,317.0,Sumatera Utara,Sumatra,existing,,,2.5606618,99.3098214,way/958172156,hydro,,OSM-overpass
+GEN-SMT-0095,PLTD Aneuk Laot,PLTD,4.0,Aceh,Sumatra,existing,,,5.8749983,95.3278944,way/958644942,diesel,,OSM-overpass
+GEN-SMT-0096,PLTD Cot Abeuk,PLTD,6.0,Aceh,Sumatra,existing,,,5.8555154,95.345612,way/958644943,diesel,,OSM-overpass
+GEN-SMT-0097,PLTD Seurapong,PLTD,0.5,Aceh,Sumatra,existing,,,5.6696603,95.0755434,way/958644944,diesel,,OSM-overpass
+GEN-SMT-0098,PLTD Deudap,PLTD,0.3,Aceh,Sumatra,existing,,,5.6084823,95.171582,way/958644945,diesel,,OSM-overpass
+GEN-SMT-0099,MV Karadeniz Powership Onur Sultan,PLTG,,Sumatera Utara,Sumatra,existing,,combustion,3.7755498,98.6697348,way/1034545850,gas,NO_CAPACITY,OSM-overpass
+GEN-SMT-0100,PLTU Semaran,PLTU,,Jambi,Sumatra,existing,,,-2.1243999,102.8527342,way/1052212667,biomass,NO_CAPACITY,OSM-overpass
+GEN-SMT-0101,Riau (MRPR) Power Plant,Unknown,,Riau,Sumatra,existing,,,0.5396725,101.5205226,way/1107800132,,NO_CAPACITY;NO_TYPE,OSM-overpass
+GEN-SMT-0102,Waterkracht Centrale Koerandji,PLTA,,Sumatera Barat,Sumatra,existing,,run-of-the-river,-0.9067185,100.456433,way/1127696139,hydro,NO_CAPACITY,OSM-overpass
+GEN-SMT-0103,PLTMG MPP Nias,PLTMG,25.0,Sumatera Utara,Sumatra,existing,,combustion,1.2084754,97.6782952,way/1180199241,gas,,OSM-overpass
+GEN-SMT-0104,PLTG Nias,PLTG,25.0,Sumatera Utara,Sumatra,existing,,combustion,1.2103007,97.6781772,way/1180199242,gas,,OSM-overpass
+GEN-SMT-0105,PLTU IPP Nagan Raya,PLTU,400.0,Aceh,Sumatra,existing,Perusahaan Listrik Negara,combustion,4.1151476,96.2021711,way/1180983527,coal,,OSM-overpass
+GEN-SMT-0106,(unnamed),Unknown,,Lampung,Sumatra,existing,PLN,,-4.2818552,105.2249679,way/1186657321,,NO_NAME;NO_CAPACITY;NO_TYPE,OSM-overpass
+GEN-SMT-0107,Riau Andalan Pulp & Paper Power Station,PLT Biomas,,Riau,Sumatra,existing,,,0.4388772,101.8924244,way/1189446338,biomass,NO_CAPACITY,OSM-overpass
+GEN-SMT-0108,Duri Power Plant,PLTG,112.0,Riau,Sumatra,existing,,combustion,1.0699788,101.2805214,way/1203478280,gas,,OSM-overpass
+GEN-SMT-0109,PLTG MPP Air Anyir,PLTG,50.0,Kepulauan Bangka Belitung,Babel,existing,,combustion,-2.0765961,106.1487126,way/1214611090,gas,,OSM-overpass
+GEN-SMT-0110,PLTBg Sei Mangkei,Unknown,2.4,Sumatera Utara,Sumatra,existing,,combustion,3.127251,99.3448779,way/1224794317,biogas,NO_TYPE,OSM-overpass
+GEN-SMT-0111,PT Berkat Bima Sentana Power Plant,PLTD,,Sumatera Utara,Sumatra,existing,,combustion,3.7711009,98.6667543,way/1227244933,oil,NO_CAPACITY,OSM-overpass
+GEN-SMT-0112,PLTM Sako-1,PLTM,6.0,Sumatera Barat,Sumatra,existing,,,-2.1283044,101.2010674,way/1273311983,hydro,,OSM-overpass
+GEN-SMT-0113,PLTA Peusangan 1,PLTA,45.0,Aceh,Sumatra,existing,,run-of-the-river,4.6020756,96.7427489,way/1304188434,hydro,,OSM-overpass
+GEN-SMT-0114,PLTA Peusangan 2,PLTA,43.0,Aceh,Sumatra,existing,,run-of-the-river,4.6500598,96.6981478,way/1304188435,hydro,,OSM-overpass
+GEN-SMT-0115,PLTP Muara Laboh,PLTP,160.0,Sumatera Barat,Sumatra,existing,,,-1.6013056,101.146979,way/1312349205,geothermal,,OSM-overpass
+GEN-SMT-0116,PLTA Sipansihaporas I,PLTA,17.0,Sumatera Utara,Sumatra,existing,,,1.7402548,98.8672572,way/1314072048,hydro,,OSM-overpass
+GEN-SMT-0117,PLTS Batam,PLTS,1.0,Kepulauan Riau,Batam,existing,,photovoltaic,1.1443175,104.000245,way/1315309553,solar,,OSM-overpass
+GEN-SMT-0118,PLTU Sumsel 8,PLTU,1320.0,Sumatera Selatan,Sumatra,existing,PT Huadian Bukit Asam Power,combustion,-3.8391168,103.8079329,way/1316786274,coal,,OSM-overpass
+GEN-SMT-0119,PLTMG Rawa Minyak,PLTMG,,Riau,Sumatra,existing,,combustion,0.8751148,102.3538969,way/1321567186,oil,NO_CAPACITY,OSM-overpass
+GEN-SMT-0120,PLTS Belinyu,PLTS,1.0,Kepulauan Bangka Belitung,Babel,existing,,photovoltaic,-1.600127,105.793542,way/1322971756,solar,,OSM-overpass
+GEN-SMT-0121,PLTS Pertamina Dumai,PLTS,2.0,Riau,Sumatra,existing,,photovoltaic,1.6428335,101.401951,way/1322972849,solar,,OSM-overpass
+GEN-SMT-0122,PLTS Teluk Keramat,PLTS,0.07,Lampung,Sumatra,existing,,photovoltaic,-5.8175951,105.2721515,way/1326070098,solar,,OSM-overpass
+GEN-SMT-0123,PLTS Sei Mangkei,PLTS,2.0,Sumatera Utara,Sumatra,existing,,photovoltaic,3.1404565,99.3602179,way/1331107102,solar,,OSM-overpass
+GEN-SMT-0124,PLTA Kerinci,PLTA,350.0,Jambi,Sumatra,existing,PT Kerinci Merangin Hidro,,-2.2172865,101.6723425,way/1376708741,hydro,,OSM-overpass
+GEN-SMT-0125,(unnamed),PLTS,,Riau,Sumatra,existing,,photovoltaic,0.8035551,102.0218266,way/1390617059,solar,NO_NAME;NO_CAPACITY,OSM-overpass
+GEN-SMT-0126,PLTU Tembilahan,PLTU,14.0,Riau,Sumatra,existing,,combustion,-0.2985338,103.204527,way/1394466750,coal,,OSM-overpass
+GEN-SMT-0127,PLTU PT Inhil Sarimas Kelapa,PLTU,15.0,Jambi,Sumatra,existing,,combustion,-0.5181603,102.9158625,way/1394466866,coal,,OSM-overpass
+GEN-SMT-0128,(unnamed),Unknown,,Aceh,Sumatra,existing,,,5.4500965,95.2450231,way/1456916345,,NO_NAME;NO_CAPACITY;NO_TYPE,OSM-overpass
+GEN-SMT-0129,(unnamed),Unknown,,Aceh,Sumatra,existing,,,4.0168942,97.2996323,way/1460559922,,NO_NAME;NO_CAPACITY;NO_TYPE,OSM-overpass
+GEN-SMT-0130,Bendungan Sei Silam,PLTA,,Riau,Sumatra,existing,,,0.329262,100.9057351,way/1462469867,hydro,NO_CAPACITY,OSM-overpass
+GEN-SMT-0131,PLTU Soma Daya Utama,PLTU,62.0,Riau,Sumatra,existing,,combustion,1.0534889,103.3150219,way/1504769297,coal,,OSM-overpass
+GEN-SMT-0132,PLTS Karimun,PLTS,5.0,Riau,Sumatra,existing,Karimun Power,photovoltaic,1.0122481,103.3519128,way/1504769383,solar,,OSM-overpass
+GEN-SMT-0133,PLN ranting Pagar Alam,Unknown,,Bengkulu,Sumatra,existing,,,-4.035826,103.2608495,node/7658115634,,NO_CAPACITY;NO_TYPE,OSM-overpass

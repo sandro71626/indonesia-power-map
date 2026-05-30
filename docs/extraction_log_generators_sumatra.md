@@ -28,18 +28,30 @@ dan **meng-assign provinsi + sistem**.
 
 ## Ringkasan
 
-**136 pembangkit** ter-extract di region Sumatra (dari ~600 plant OSM
-se-Indonesia; 464 di luar region Sumatra di-skip). **103 punya data kapasitas**,
-total **14.182 MW**.
+**133 pembangkit** ter-extract di region Sumatra (dari ~600 plant OSM
+se-Indonesia; 467 di luar region Sumatra di-skip). **100 punya data kapasitas**.
+
+> **Update 2026-05-27 — fix bbox-leak Lampung↔Banten.** Run perdana memberi
+> 136 plant karena bbox Lampung lat_min `-6.10` & lon_max `106.00` menangkap
+> 3 plant Cilegon (Banten): **PLTU 400 MW PT Krakatau Chandra Energi**,
+> **Cilegon Krakatau Posco Power Plant**, dan **PLTU Asahimas Chemical** —
+> sehingga ke-3 plant tsb muncul DOBEL (tagged Lampung di Sumatra master
+> DAN Banten di JAMALI master). Bbox dipersempit ke lat_min `-5.92`
+> (Bakauheni + ~5km buffer) dan lon_max `105.85` (Bakauheni + buffer). Total
+> Sumatra generators kini 133; ke-3 Cilegon plants tetap di JAMALI master
+> sebagai Banten (lokasi benar). Lihat catatan teknis di bagian "Bbox
+> revisi" di bawah.
 
 ### Per sistem listrik
 
 | System | Plant (berkapasitas) | Total MW |
 |--------|---------------------:|---------:|
-| Sumatra (interkoneksi mainland) | 87 | 13.240 |
+| Sumatra (interkoneksi mainland) | 84 | 12.340 |
 | Batam | 9 | 783 |
 | Babel | 7 | 159 |
-| **Total** | **103** | **14.182** |
+| **Total** | **100** | **13.282** |
+
+> Angka tabel post-fix bbox Lampung (2026-05-27). Sebelum fix: 87 plant / 13.240 MW Sumatra mainland karena 3 plant Cilegon (Banten) ter-counted. Total turun -3 plant / -900 MW; ke-3 plant tetap di JAMALI master sebagai Banten dengan kapasitas yang benar.
 
 ### Per jenis pembangkit (sistem Sumatra mainland)
 
@@ -94,7 +106,36 @@ lat/lon). Plant yang cuma match 1 bbox tidak terpengaruh — jadi fix ini hanya
 bisa memperbaiki, tidak mungkin merusak assignment yang sudah benar.
 
 Setelah fix: Sumatera Barat 4→8 plant, Riau 17→11, dan koreksi otomatis di
-semua pasangan provinsi berbatasan. Total tetap 136 plant — hanya redistribusi.
+semua pasangan provinsi berbatasan. Total 133 plant (setelah audit-fix bbox Lampung) — hanya redistribusi.
+
+### Bbox revisi Lampung (post-audit)
+
+Bbox Lampung awal `(-6.10, 103.40, -3.60, 106.00)` terlalu longgar di sisi
+tenggara — extends ke lat -6.10 (sudah masuk Banten/Cilegon area) dan lon
+106.00 (sudah masuk Cilegon-Anyer). Audit cross-check antara
+`generator_master_sumatra.csv` dan `generator_master_jamali.csv`
+menemukan **3 plant Cilegon ter-double-tagged**:
+
+| Plant | Koord (lat, lon) | Status fix |
+|-------|------------------|------------|
+| PLTU 400 MW PT Krakatau Chandra Energi | -5.994, 105.983 | Sumatra row di-drop; JAMALI Banten tetap |
+| Cilegon Krakatau Posco Power Plant | -6.007, 105.971 | Sumatra row di-drop; JAMALI Banten tetap |
+| PLTU Asahimas Chemical | -6.024, 105.943 | Sumatra row di-drop; JAMALI Banten tetap |
+
+Bbox baru: `(-5.92, 103.40, -3.60, 105.85)`. Referensi geografis:
+Bakauheni (Lampung paling SE) lat ~-5.87 lon ~105.77; bbox dikasih
+~5km buffer ke arah selat. Cek manual: tidak ada plant Lampung yang
+ter-cut karena lat < -5.92 (semua Lampung-tagged plant berada di
+lat -5.81..-4.28).
+
+Bbox `extract_sumatra_substations.py` Lampung juga diperketat ke nilai
+yang sama secara **defensive** — match-by-name dari RUPTL Tabel A10
+sebenarnya sudah menyaring (Cilegon GI tidak ada di RUPTL Lampung),
+jadi tidak ada GI yang berubah. Tapi mencegah OSM substations Banten
+"ditawarkan" ke fuzzy matching GI Lampung.
+
+Bbox `extract_sumatra_transmission.py` tidak perlu fix — bbox Sumatra
+mainland sudah `lon_max 105.40` (cukup ketat ke barat Selat Sunda).
 
 Catatan: assignment **sistem** (Sumatra / Batam / Babel) jauh lebih robust
 daripada assignment provinsi, karena Batam dan Babel adalah pulau yang
@@ -110,7 +151,7 @@ OSM adalah data crowdsourced; kelengkapan tag bervariasi. Extractor menandai:
 | `NO_CAPACITY` | 33 | Plant tanpa tag `plant:output:electricity` — kapasitas kosong |
 | `NO_TYPE` | 17 | Tipe PLT tidak bisa diturunkan dari nama maupun `plant:source` |
 
-33 dari 136 plant (24%) tidak punya data kapasitas. Ini batasan kualitas
+33 dari 133 plant (25%) tidak punya data kapasitas. Ini batasan kualitas
 data OSM, bukan bug extractor. 15 dari 17 plant `NO_TYPE` juga `NO_CAPACITY`
 — korelasi yang masuk akal (plant dengan tag minim cenderung minim di semua
 field).
