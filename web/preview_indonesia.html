@@ -137,14 +137,33 @@
     .sidebar { width: calc(100vw - 20px); right: 10px; top: 86px; max-height: 42vh; }
     .header { font-size: 12px; padding: 6px 10px; max-width: calc(100vw - 20px); }
     .footer { font-size: 9px; max-width: calc(100vw - 20px); }
+    .modal { padding: 18px 20px; font-size: 12px; }
   }
+
+  /* ===== DISCLAIMER MODAL ===== */
+  .modal-backdrop { position: fixed; inset: 0; background: rgba(0,0,0,0.5);
+                    z-index: 2000; display: none; align-items: center; justify-content: center; }
+  .modal-backdrop.show { display: flex; }
+  .modal { background: white; max-width: 580px; max-height: 85vh; overflow-y: auto;
+           border-radius: 8px; padding: 24px 30px; font-size: 13px; line-height: 1.55;
+           box-shadow: 0 4px 20px rgba(0,0,0,0.3); margin: 20px; }
+  .modal h2 { margin: 0 0 12px; font-size: 18px; }
+  .modal h3 { margin: 16px 0 6px; font-size: 14px; font-weight: 600; }
+  .modal p { margin: 8px 0; }
+  .modal ul { margin: 6px 0 6px 18px; padding: 0; }
+  .modal ul li { margin: 4px 0; }
+  .modal .close { display: block; margin-top: 18px; padding: 9px 18px;
+                  background: #1f77b4; color: white; border: none; border-radius: 4px;
+                  cursor: pointer; font-size: 13px; font-weight: 600; }
+  .modal .close:hover { background: #155a85; }
+  .footer a { color: #1f77b4; cursor: pointer; text-decoration: underline; }
 </style>
 </head>
 <body>
 
 <div class="header">
   Peta Ketenagalistrikan Indonesia
-  <div class="sub">JAMALI + Sumatra + Kalimantan + Sulawesi · data eksisting</div>
+  <div class="sub">8 region · JAMALI + Sumatra + Kalimantan + Sulawesi + Maluku + Papua + NTB + NTT · data eksisting</div>
   <div class="readout" id="readout">memuat data…</div>
 </div>
 
@@ -177,6 +196,14 @@
       <label for="r-kalimantan">Kalimantan</label></div>
     <div class="layer-toggle"><input type="checkbox" id="r-sulawesi" checked>
       <label for="r-sulawesi">Sulawesi</label></div>
+    <div class="layer-toggle"><input type="checkbox" id="r-maluku" checked>
+      <label for="r-maluku">Maluku</label></div>
+    <div class="layer-toggle"><input type="checkbox" id="r-papua" checked>
+      <label for="r-papua">Papua</label></div>
+    <div class="layer-toggle"><input type="checkbox" id="r-ntb" checked>
+      <label for="r-ntb">NTB</label></div>
+    <div class="layer-toggle"><input type="checkbox" id="r-ntt" checked>
+      <label for="r-ntt">NTT</label></div>
   </div>
 
   <div class="section">
@@ -244,7 +271,7 @@
   </div>
 
   <div class="section">
-    <button class="action" onclick="document.getElementById('about-modal').style.display='flex'">
+    <button class="action" onclick="document.getElementById('about-modal').classList.add('show')">
       ℹ Tentang peta &amp; sumber data
     </button>
   </div>
@@ -252,6 +279,7 @@
 
 <div class="footer">
   Sumber: RUPTL PLN 2025–2034 · OpenStreetMap (© OSM contributors) · CARTO basemap.
+  <a onclick="document.getElementById('about-modal').classList.add('show')">Detail sumber &amp; disclaimer</a>
 </div>
 
 <div id="detail-panel">
@@ -265,28 +293,78 @@
   <div class="dp-body" id="dp-body"></div>
 </div>
 
-<div id="about-modal" style="position:fixed;inset:0;background:rgba(0,0,0,0.5);
-     z-index:2000;display:none;align-items:center;justify-content:center;"
-     onclick="if(event.target===this)this.style.display='none'">
-  <div style="background:white;max-width:520px;max-height:85vh;overflow-y:auto;
-       border-radius:8px;padding:24px 30px;font-size:13px;line-height:1.55;margin:20px;">
-    <h2 style="margin:0 0 12px;font-size:18px;">Peta Ketenagalistrikan Indonesia</h2>
-    <p>Visualisasi struktur sistem tenaga listrik Indonesia untuk edukasi,
-    eksplorasi, dan analisis umum. Saat ini mencakup region <strong>JAMALI</strong>
-    (Jawa-Madura-Bali), <strong>Sumatra</strong>, <strong>Kalimantan</strong>, dan
-    <strong>Sulawesi</strong>.</p>
-    <p><strong>Pakai panel Layer &amp; Filter</strong> di kanan untuk memilih
-    apa yang tampil — kelas tegangan transmisi &amp; gardu induk, ukuran
-    pembangkit, jenis pembangkit, region, dan provinsi. Zoom hanya mengatur
-    area pandang, bukan apa yang ditampilkan.</p>
-    <p>Sumber: RUPTL PLN 2025–2034 (gardu induk &amp; kapasitas), OpenStreetMap
-    via Overpass API (pembangkit, transmisi, koordinat). Bukan alat operasi
-    sistem tenaga; koordinat perlu verifikasi independen sebelum dipakai untuk
-    keputusan operasional, teknis, atau hukum.</p>
-    <button onclick="document.getElementById('about-modal').style.display='none'"
-       style="display:block;margin-top:16px;padding:9px 18px;background:#1f77b4;
-       color:white;border:none;border-radius:4px;cursor:pointer;font-weight:600;">
-      Tutup
+<!-- ===== ABOUT / DISCLAIMER MODAL ===== -->
+<div class="modal-backdrop" id="about-modal"
+     onclick="if(event.target===this)this.classList.remove('show')">
+  <div class="modal">
+    <h2>Tentang Peta Ketenagalistrikan Indonesia</h2>
+
+    <p><strong>Tujuan.</strong> Visualisasi struktur sistem tenaga listrik Indonesia
+    untuk edukasi, eksplorasi, dan analisis umum. Saat ini mencakup
+    <strong>8 region</strong>: JAMALI (Jawa-Madura-Bali), Sumatra, Kalimantan,
+    Sulawesi, Maluku, Papua, NTB, dan NTT — coverage Indonesia complete.
+    Ditujukan untuk mahasiswa, peneliti, analis kebijakan, media, dan publik teknis.</p>
+
+    <h3>Disclaimer</h3>
+    <ul>
+      <li>Peta ini <strong>bukan</strong> alat operasi sistem tenaga, <strong>bukan</strong>
+          dashboard dispatch realtime, dan <strong>tidak</strong> merepresentasikan
+          informasi rahasia atau internal institusi mana pun.</li>
+      <li>Data koordinat berasal dari OpenStreetMap dan <strong>perlu verifikasi independen</strong>
+          sebelum dipakai untuk keputusan operasional, teknis, atau hukum.</li>
+      <li>Data kapasitas dan daftar gardu induk dari RUPTL PLN 2025–2034 (publik).
+          Daftar pembangkit dari OSM — coverage utility-scale baik,
+          tapi pembangkit terdistribusi (rooftop PV, dll) banyak yang belum ter-map.
+          Coverage transmisi di Indonesia Timur (Maluku, Papua, sub-pulau NTT)
+          masih tipis di OSM.</li>
+      <li>Tanggal data: RUPTL per Mei 2025 (Keputusan Menteri ESDM 188.K/TL.03/MEM.L/2025).
+          Data OSM bersifat live dan terus diperbarui kontributor; snapshot Overpass
+          diambil 2026-05.</li>
+    </ul>
+
+    <h3>Sumber data</h3>
+    <ul>
+      <li><strong>Daftar Gardu Induk</strong> &amp; kapasitas: RUPTL PLN 2025–2034,
+          Lampiran A–C per region. <strong>~990 GI</strong> diekstrak;
+          <strong>931 ter-koordinat</strong> via match nama ke OSM + override manual
+          (match rate global ~94%; Nusa Tenggara terendah 82% karena OSM coverage
+          rural tipis).</li>
+      <li><strong>Daftar Pembangkit</strong>: OSM <code>power=plant</code> di area
+          ke-8 region. <strong>593 pembangkit</strong>, ~400 dengan kapasitas
+          tercatat. Validasi terhadap RUPTL Tabel x.3 agregat per provinsi.</li>
+      <li><strong>Garis Transmisi</strong>: OSM <code>power=line</code> dengan tag
+          voltage ≥70 kV. <strong>4.053 garis</strong>, ~20.000+ km total.
+          Belum ada 275/500 kV di Maluku, Papua, NTB, NTT.</li>
+      <li><strong>Koordinat</strong>: OSM via Overpass API.</li>
+      <li><strong>Peta dasar</strong>: Carto Positron, © CARTO &amp; © OpenStreetMap.</li>
+    </ul>
+
+    <h3>Catatan penamaan</h3>
+    <p>Beberapa Gardu Induk Tegangan Ekstra Tinggi (500 kV) yang dikenal publik
+    (mis. "GITET Bekasi") mungkin tercatat di RUPTL dengan nama desa/kecamatan
+    terdekat (mis. Sukatani, Tambun, Deltamas) atau tidak masuk Tabel x.4
+    karena kategorisasi internal RUPTL. Untuk wilayah timur, nama PLN
+    kadang berbeda dari nama OSM (contoh: GI Ruteng ↔ Gardu Induk Bahong di
+    OSM, GI Sumbawa ↔ Gardu Induk Seketeng). Untuk pemetaan lebih lengkap,
+    referensi silang dengan OSM dianjurkan.</p>
+
+    <h3>Konvensi simbol</h3>
+    <p>Mengikuti konvensi <em>single line diagram</em>:</p>
+    <ul>
+      <li><strong>Lingkaran</strong> = pembangkit (generator). Label dalam = jenis
+          (U/GU/G/MG/A/M/P/S/B/D/Sa).</li>
+      <li><strong>Kotak</strong> = gardu induk (substation).</li>
+      <li><strong>Kotak dengan border ganda</strong> = GITET (500 kV).</li>
+      <li><strong>Garis</strong> = saluran transmisi. Warna &amp; ketebalan
+          menunjukkan tegangan (500/275/150/70 kV).</li>
+    </ul>
+
+    <h3>Lisensi</h3>
+    <p>Proyek open-source untuk kepentingan publik. Data turunan tunduk pada
+    lisensi sumber asal (OSM: ODbL, RUPTL: dokumen publik PLN/ESDM).</p>
+
+    <button class="close" onclick="document.getElementById('about-modal').classList.remove('show')">
+      Mengerti, mulai eksplorasi
     </button>
   </div>
 </div>
@@ -296,11 +374,15 @@
 <script src="data_sumatra.js"></script>
 <script src="data_kalimantan.js"></script>
 <script src="data_sulawesi.js"></script>
+<script src="data_maluku.js"></script>
+<script src="data_papua.js"></script>
+<script src="data_ntb.js"></script>
+<script src="data_ntt.js"></script>
 <script>
 // ============================================================
 // MAP + BASEMAPS
 // ============================================================
-const map = L.map('map', {zoomControl: false}).setView([-3.5, 108.0], 5);
+const map = L.map('map', {zoomControl: false}).setView([-2.5, 118.0], 5);
 L.control.zoom({position: 'topleft'}).addTo(map);
 
 const basemaps = {
@@ -563,7 +645,7 @@ function closeDetail() {
 // oleh applyFilters(); bukan dengan menambah/hapus L.geoJSON besar.
 // Daftar region. Menambah region baru cukup: tambah key di sini + satu
 // <script src="data_<key>.js"> + satu toggle di sidebar. Sisanya generik.
-const REGION_KEYS = ['jamali', 'sumatra', 'kalimantan', 'sulawesi'];
+const REGION_KEYS = ['jamali', 'sumatra', 'kalimantan', 'sulawesi', 'maluku', 'papua', 'ntb', 'ntt'];
 const REGIONS = {};
 REGION_KEYS.forEach(k => { REGIONS[k] = window[k.toUpperCase() + '_DATA'] || null; });
 const features = [];   // { kind, region, tier, props, layer, visible }
@@ -856,7 +938,19 @@ document.querySelectorAll('.sidebar .section.collapsible h4').forEach(h =>
   h.addEventListener('click', () => h.parentElement.classList.toggle('collapsed')));
 
 document.getElementById('dp-close').addEventListener('click', closeDetail);
-document.addEventListener('keydown', e => { if (e.key === 'Escape') closeDetail(); });
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') {
+    // Escape: tutup modal kalau lagi terbuka, kalau tidak tutup detail panel.
+    const modal = document.getElementById('about-modal');
+    if (modal.classList.contains('show')) modal.classList.remove('show');
+    else closeDetail();
+  }
+});
+
+// === SHOW DISCLAIMER MODAL ON LOAD ===
+window.addEventListener('load', () => {
+  setTimeout(() => document.getElementById('about-modal').classList.add('show'), 300);
+});
 
 init();
 </script>
