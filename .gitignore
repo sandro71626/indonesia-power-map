@@ -49,7 +49,7 @@ data/raw/sources/*.PDF
 
 # Original concept doc (kept in docs/concept/ instead, if .docx is moved)
 # Uncomment next line if you don't want to commit the .docx at root:
-# /*.docx
+/*.docx
 
 # Temporary extraction outputs / scratch files
 data/raw/scratch/

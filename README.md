@@ -2,7 +2,7 @@
 
 > Indonesia Power Map — peta digital sistem tenaga listrik Indonesia berbasis data publik, untuk edukasi, eksplorasi, dan analisis umum.
 
-**Status:** Alpha (Step 1, cakupan Jawa-Madura-Bali) · **Versi:** v0.1 · **Diinisiasi:** 2026
+**Status:** Beta · **Versi:** v0.7.2-beta · **Pembaruan terakhir:** 30 Mei 2026 · **Diinisiasi:** 2026
 
 [![DOI](https://zenodo.org/badge/1236669929.svg)](https://doi.org/10.5281/zenodo.20208412)
 ---
@@ -17,19 +17,29 @@ Konsep lengkap ada di [`docs/concept/`](docs/concept/).
 
 ## Status & cakupan saat ini
 
-| Sistem | Pembangkit | Gardu Induk | Transmisi |
-|--------|-----------:|------------:|----------:|
-| Jamali (Jawa-Madura-Bali) | 196 | 520 | 2.358 garis |
-| Sumatera | _belum_ | _belum_ | _belum_ |
-| Kalimantan | _belum_ | _belum_ | _belum_ |
-| Sulawesi | _belum_ | _belum_ | _belum_ |
-| Maluku-Papua-Nusra | _belum_ | _belum_ | _belum_ |
+Cakupan nasional tersedia (Sabang–Merauke), dengan tingkat kelengkapan data yang bervariasi antar wilayah — backbone di Jawa, Sumatra, dan Sulawesi padat; Indonesia Timur (Maluku, Papua, sub-pulau NTT) lebih tipis seiring kelengkapan OSM. Per layer dan region:
 
-Step 1 (peta visual statis) untuk Jamali sudah complete. Step 2 (interactive explorer) dan ekspansi ke sistem lain di roadmap.
+| Region | Pembangkit | Gardu Induk (RUPTL / ter-koord) | Transmisi |
+|--------|-----------:|--------------------------------:|----------:|
+| JAMALI (Jawa-Madura-Bali)   | 196 | 520 / 500 | 2.358 |
+| Sumatra                     | 133 | 214 / 195 |   794 |
+| Kalimantan                  |  66 | 100 /  85 |   332 |
+| Sulawesi                    | 101 | 106 /  94 |   390 |
+| Maluku                      |  19 |  12 /  12 |    61 |
+| Papua                       |  16 |   8 /   8 |    36 |
+| Nusa Tenggara Barat (NTB)   |  18 |  26 /  21 |    31 |
+| Nusa Tenggara Timur (NTT)   |  41 |  19 /  16 |    51 |
+| **Total** | **590** | **1.005 / 931** | **4.053** |
+
+Catatan: kolom "Gardu Induk" memuat RUPTL Lampiran A–C (`x` baris) → terkoordinat di OSM/override (`y` baris). Match rate global ~94% (Nusa Tenggara terendah 82% karena OSM coverage rural tipis); detail per region di [`docs/extraction_log_*.md`](docs/). Total 5.577 fitur live di peta interaktif.
+
+Step 1–6 (extraction + integration peta gabungan 8 region) sudah complete. Step 7+ di roadmap.
 
 ## Preview
 
-Buka [`web/preview_jamali.html`](web/preview_jamali.html) di browser. Self-contained, tidak butuh server — semua data ter-inline.
+Buka [`web/preview_indonesia.html`](web/preview_indonesia.html) di browser — peta gabungan 8 region dengan filter, search, dan detail panel. Self-contained, tidak butuh server: semua data ter-bundle via `web/data_<region>.js`.
+
+Preview per-region (legacy, masih bisa dipakai untuk eksplorasi terpisah): [`preview_jamali.html`](web/preview_jamali.html), [`preview_sumatra.html`](web/preview_sumatra.html).
 
 Atau lihat live demo (akan ditambahkan setelah deploy ke GitHub Pages).
 
@@ -56,17 +66,25 @@ indonesia-power-map/
 ├── docs/
 │   ├── concept/                       # Dokumen konsep awal proyek
 │   ├── design_decisions.md            # Keputusan visual & UX
-│   └── extraction_log_*.md            # Log per pipeline ekstraksi
+│   ├── naming_conventions.md          # Konvensi PLT-X, GITET, dll
+│   └── extraction_log_*.md            # Log ekstraksi per region × per layer
 ├── scripts/                           # Pipeline ekstraksi & transformasi
-│   ├── extract_jamali_substations.py
-│   ├── extract_jamali_generators.py
-│   └── extract_jamali_transmission.py
+│   ├── substation_table_parser.py     # Shared parser RUPTL Lampiran A–C
+│   ├── extract_{region}_substations.py    # 6 file: jamali/sumatra/kalimantan/
+│   ├── extract_{region}_generators.py     #         sulawesi/maluku_papua/
+│   ├── extract_{region}_transmission.py   #         nusa_tenggara
+│   └── bundle_web_data.py             # GeoJSON → JS bundle untuk web/
 ├── data/
 │   ├── raw/sources/                   # Sumber PDF (TIDAK di-commit, lihat README)
 │   ├── geojson/                       # Data OSM mentah (Overpass exports)
-│   └── processed/                     # Output: CSV + GeoJSON master
+│   ├── processed/                     # Output: CSV + GeoJSON master per region × layer
+│   └── overrides/                     # Manual overrides koordinat + nama plant
+│       ├── substation_overrides.csv         # 49 entries (GI step-up, naming mismatch)
+│       └── generator_name_overrides.csv     # 37 entries (Mandarin/English → Indonesia)
 └── web/                               # Preview HTML interaktif
-    └── preview_jamali.html
+    ├── preview_indonesia.html         # Peta gabungan 8 region (entry point utama)
+    ├── preview_{region}.html          # Preview per-region (legacy)
+    └── data_{region}.js               # Bundle GeoJSON per region
 ```
 
 ## Cara reproduce
@@ -79,25 +97,40 @@ cd indonesia-power-map
 # 2. Download sumber PDF (lihat data/raw/sources/README.md untuk URL)
 #    Letakkan di data/raw/sources/
 
-# 3. Re-run pipeline ekstraksi (opsional, output sudah ada di data/processed/)
-python3 scripts/extract_jamali_substations.py
-python3 scripts/extract_jamali_generators.py
-python3 scripts/extract_jamali_transmission.py
+# 3. Re-run pipeline ekstraksi (opsional, output sudah ada di data/processed/).
+#    Tiap region punya 3 extractor (substations + generators + transmission):
+for region in jamali sumatra kalimantan sulawesi maluku_papua nusa_tenggara; do
+  python3 scripts/extract_${region}_substations.py
+  python3 scripts/extract_${region}_generators.py
+  python3 scripts/extract_${region}_transmission.py
+done
 
-# 4. Buka preview
-open web/preview_jamali.html   # macOS
-xdg-open web/preview_jamali.html   # Linux
+# 4. Bundle ulang data web (kalau ada perubahan CSV/GeoJSON):
+for r in jamali sumatra kalimantan sulawesi maluku papua ntb ntt; do
+  python3 scripts/bundle_web_data.py $r
+done
+
+# 5. Buka peta gabungan
+open web/preview_indonesia.html   # macOS
+xdg-open web/preview_indonesia.html   # Linux
 ```
 
 Dependency: Python 3.10+, `pdftotext` (poppler-utils). Tidak butuh package eksternal.
 
 ## Roadmap
 
-- **Step 1** — Static Visual Knowledge Map: ✅ Jamali done
-- **Step 2** — Interactive Grid Explorer (filter, search, popup detail): 🔄 Next
-- **Step 3** — System Intelligence Layer (generation mix, load center, supply-demand): planned
-- **Step 4** — Temporal Expansion (existing → 2025 → 2030 → 2035): planned
-- **Step 5** — Approximate Power Flow (DC PF educational simulation): planned
+Data extraction + integration peta interaktif (Step 1–6) sudah selesai. Selanjutnya:
+
+- **Step 1** — Static Visual Knowledge Map (JAMALI): ✅ done
+- **Step 2** — Extension ke Sumatra + Interactive Grid Explorer (filter, search, popup detail): ✅ done
+- **Step 3** — Extension ke Kalimantan + integration peta gabungan: ✅ done
+- **Step 4** — Extension ke Sulawesi: ✅ done
+- **Step 5** — Extension ke Maluku & Papua: ✅ done
+- **Step 6** — Extension ke Nusa Tenggara (NTB + NTT) + integrasi 8 region: ✅ done
+- **Step 7** — System Intelligence Layer (generation mix per-region, load center indicator, supply-demand context): 🔄 planned
+- **Step 8** — Temporal Expansion (existing → 2025 → 2030 → 2035 dari RUPTL Tabel x.5+): planned
+- **Step 9** — Approximate Power Flow (DC PF educational simulation): planned
+- **Step 10** — Public deployment ke GitHub Pages / Cloudflare Pages + automated OSM refresh: planned
 
 Lihat [`docs/concept/`](docs/concept/) untuk detail roadmap.
 
@@ -107,19 +140,33 @@ Lihat [`docs/concept/`](docs/concept/) untuk detail roadmap.
 - Data koordinat berasal dari OpenStreetMap dan **perlu verifikasi independen** sebelum dipakai untuk keputusan operasional, teknis, atau hukum.
 - Untuk edukasi, eksplorasi, dan analisis umum.
 
+## Metodologi Singkat
+
+Data pembangkit, gardu induk, dan transmisi dikompilasi dari kombinasi dokumen publik (RUPTL PLN 2025–2034) dan OpenStreetMap melalui proses ekstraksi otomatis, pencocokan nama (fuzzy match dengan threshold 0,85), validasi silang antar sumber, serta override manual untuk meningkatkan akurasi koordinat dan representasi sistem. Detail lengkap per region tersedia di [`docs/extraction_log_*.md`](docs/).
+
+Beberapa nama plant non-Indonesia di OSM (Mandarin di kompleks Weda Bay Industrial Park, English deskriptif di smelter Morowali/Konawe/Bitung dan beberapa captive industrial JAMALI/Sumatra/Kalimantan/NTB) dinormalisasi ke nama Indonesia via [`data/overrides/generator_name_overrides.csv`](data/overrides/generator_name_overrides.csv) — original OSM name tetap di-preserve di kolom `osm_name` untuk audit trail.
+
 ## Author
 
-Diinisiasi dan dikembangkan oleh **Sandro Agassi Sitompul** (2026). Kontak: `sandroagassi71@gmail.com`.
+Diinisiasi dan dikembangkan oleh **Sandro Agassi Sitompul, Ph.D.** (2026) sebagai inisiatif teknis independen untuk membantu pemahaman publik terhadap sistem ketenagalistrikan Indonesia.
 
 Untuk daftar lengkap kontributor (kalau ada), lihat history commit Git.
+
+## Feedback & Kontak
+
+Feedback, koreksi data, atau saran pengembangan sangat diterima.
+
+- **Email:** [sandro.sitompul@ieee.org](mailto:sandro.sitompul@ieee.org)
+- **LinkedIn:** [linkedin.com/in/sandro-sitompul-a7a490107](https://www.linkedin.com/in/sandro-sitompul-a7a490107)
+- **GitHub:** [github.com/sandro71626/indonesia-power-map](https://github.com/sandro71626/indonesia-power-map)
 
 ## Sitasi
 
 Kalau lo pakai data atau analisis dari repo ini di publikasi/laporan, mohon cite:
 
 ```
-Sitompul, S. (2026). Peta Ketenagalistrikan Indonesia (Indonesia Power Map).
-Version v0.1. https://github.com/sandro71626/indonesia-power-map
+Sitompul, S. A. (2026). Peta Ketenagalistrikan Indonesia (Indonesia Power Map).
+Version v0.7.2-beta. https://github.com/sandro71626/indonesia-power-map
 ```
 
 Format BibTeX dan format lain otomatis di-generate via tombol "Cite this repository" di sidebar GitHub (didukung oleh [`CITATION.cff`](CITATION.cff)).
