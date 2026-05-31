@@ -207,6 +207,11 @@
                          border-top: 1px solid #eee; font-size: 11px;
                          color: #666; line-height: 1.5; }
   .modal .version-info span { font-variant-numeric: tabular-nums; }
+  .modal .tip { margin: 10px 0 6px; padding: 8px 11px;
+                background: #f7faff; border-left: 3px solid #1f77b4;
+                font-size: 12px; color: #444; line-height: 1.5;
+                border-radius: 0 3px 3px 0; }
+  .modal .tip strong { color: #1f77b4; }
   .modal .close { display: block; margin-top: 18px; padding: 9px 18px;
                   background: #1f77b4; color: white; border: none; border-radius: 4px;
                   cursor: pointer; font-size: 13px; font-weight: 600; }
@@ -223,7 +228,7 @@
 
 <div class="header">
   Peta Ketenagalistrikan Indonesia
-  <div class="sub">8 region · JAMALI + Sumatra + Kalimantan + Sulawesi + Maluku + Papua + NTB + NTT · data eksisting</div>
+  <div class="sub">8 region: JAMALI, Sumatra, Kalimantan, Sulawesi, Maluku, Papua, NTB, NTT · data eksisting</div>
   <div class="readout" id="readout">memuat data…</div>
 </div>
 
@@ -294,7 +299,7 @@
     </div>
 
     <div class="layer-group">
-      <div class="layer-toggle"><input type="checkbox" id="m-sub" checked>
+      <div class="layer-toggle"><input type="checkbox" id="m-sub">
         <label for="m-sub"><strong>Gardu Induk</strong></label></div>
       <div class="sublayers">
         <label><input type="checkbox" class="sub-sub" value="500" checked>
@@ -309,7 +314,7 @@
     </div>
 
     <div class="layer-group">
-      <div class="layer-toggle"><input type="checkbox" id="m-gen" checked>
+      <div class="layer-toggle"><input type="checkbox" id="m-gen">
         <label for="m-gen"><strong>Pembangkit</strong></label></div>
       <div class="sublayers">
         <label><input type="checkbox" class="sub-gen" value="b500" checked> ≥ 500 MW</label>
@@ -352,8 +357,8 @@
   Sumber: RUPTL PLN 2025–2034 · OpenStreetMap (© OSM contributors) · CARTO basemap.
   <a onclick="document.getElementById('about-modal').classList.add('show')">Detail sumber &amp; disclaimer</a>
   <div class="attribution">
-    Created by <strong>Sandro Agassi Sitompul, Ph.D.</strong> —
-    <em>inisiatif teknis independen untuk membantu pemahaman publik terhadap sistem ketenagalistrikan Indonesia.</em>
+    Disusun oleh <strong>Sandro Agassi Sitompul, Ph.D.</strong>
+    <em>Inisiatif teknis independen untuk membantu pemahaman publik terhadap sistem ketenagalistrikan Indonesia.</em>
   </div>
 </div>
 
@@ -374,80 +379,94 @@
   <div class="modal">
     <h2>Tentang Peta Ketenagalistrikan Indonesia</h2>
 
-    <p><strong>Tujuan.</strong> Visualisasi struktur sistem tenaga listrik Indonesia
-    untuk edukasi, eksplorasi, dan analisis umum. Saat ini mencakup
-    <strong>8 region</strong>: JAMALI (Jawa-Madura-Bali), Sumatra, Kalimantan,
-    Sulawesi, Maluku, Papua, NTB, dan NTT — cakupan nasional tersedia
-    (Sabang–Merauke), dengan tingkat kelengkapan data yang bervariasi antar wilayah.
-    Ditujukan untuk mahasiswa, peneliti, analis kebijakan, media, dan publik teknis.</p>
+    <p><strong>Tujuan.</strong> Memvisualisasikan struktur sistem tenaga listrik
+    Indonesia untuk kepentingan edukasi, eksplorasi, dan analisis umum. Saat ini
+    peta mencakup <strong>8 region</strong>, yaitu JAMALI (Jawa-Madura-Bali),
+    Sumatra, Kalimantan, Sulawesi, Maluku, Papua, NTB, dan NTT. Cakupannya
+    nasional dari Sabang sampai Merauke, meskipun tingkat kelengkapan data
+    bervariasi antar wilayah. Audiens yang dituju adalah mahasiswa, peneliti,
+    analis kebijakan, media, dan publik dengan latar belakang teknis.</p>
 
     <h3>Disclaimer</h3>
     <ul>
       <li>Peta ini <strong>bukan</strong> alat operasi sistem tenaga, <strong>bukan</strong>
           dashboard dispatch realtime, dan <strong>tidak</strong> merepresentasikan
-          informasi rahasia atau internal institusi mana pun.</li>
-      <li>Data koordinat berasal dari OpenStreetMap dan <strong>perlu verifikasi independen</strong>
-          sebelum dipakai untuk keputusan operasional, teknis, atau hukum.</li>
-      <li>Data kapasitas dan daftar gardu induk dari RUPTL PLN 2025–2034 (publik).
-          Daftar pembangkit dari OSM — coverage utility-scale baik,
-          tapi pembangkit terdistribusi (rooftop PV, dll) banyak yang belum ter-map.
-          Coverage transmisi di Indonesia Timur (Maluku, Papua, sub-pulau NTT)
-          masih tipis di OSM.</li>
-      <li>Tanggal data: RUPTL per Mei 2025 (Keputusan Menteri ESDM 188.K/TL.03/MEM.L/2025).
-          Data OSM bersifat live dan terus diperbarui kontributor; snapshot Overpass
-          diambil 2026-05.</li>
+          informasi rahasia maupun data internal institusi mana pun.</li>
+      <li>Koordinat berasal dari OpenStreetMap sehingga <strong>perlu verifikasi
+          independen</strong> sebelum dipakai untuk keputusan operasional, teknis,
+          atau hukum.</li>
+      <li>Data kapasitas dan daftar gardu induk diambil dari RUPTL PLN 2025–2034
+          yang bersifat publik. Daftar pembangkit bersumber dari OSM dengan
+          cakupan utility-scale yang cukup baik. Pembangkit terdistribusi
+          (misalnya rooftop PV) banyak yang belum terpetakan. Cakupan transmisi
+          di Indonesia Timur, terutama Maluku, Papua, dan sub-pulau NTT, masih
+          relatif tipis di OSM.</li>
+      <li>Tanggal data: RUPTL per Mei 2025 (Keputusan Menteri ESDM
+          188.K/TL.03/MEM.L/2025). Data OSM bersifat live dan terus diperbarui
+          oleh kontributor; snapshot Overpass diambil pada Mei 2026.</li>
     </ul>
 
     <h3>Metodologi Singkat</h3>
-    <p>Data pembangkit, gardu induk, dan transmisi dikompilasi dari kombinasi dokumen
-    publik (RUPTL PLN 2025–2034) dan OpenStreetMap melalui proses ekstraksi otomatis,
-    pencocokan nama (fuzzy match dengan threshold 0,85), validasi silang antar sumber,
-    serta override manual untuk meningkatkan akurasi koordinat dan representasi sistem.
-    Detail lengkap tiap region tersedia di <code>docs/extraction_log_*.md</code> repo.</p>
+    <p>Data pembangkit, gardu induk, dan transmisi dikompilasi dari kombinasi
+    dokumen publik (RUPTL PLN 2025–2034) dan OpenStreetMap. Pipeline mencakup
+    ekstraksi otomatis, pencocokan nama dengan fuzzy match (threshold 0,85),
+    validasi silang antar sumber, dan override manual untuk meningkatkan akurasi
+    koordinat serta representasi sistem. Detail lengkap per region terdokumentasi
+    di <code>docs/extraction_log_*.md</code> pada repositori.</p>
+
+    <p class="tip"><strong>Tip.</strong> Untuk performa lebih ringan dan
+    eksplorasi yang lebih nyaman, manfaatkan filter wilayah atau layer
+    sesuai kebutuhan.</p>
 
     <h3>Sumber data</h3>
     <ul>
-      <li><strong>Daftar Gardu Induk</strong> &amp; kapasitas: RUPTL PLN 2025–2034,
-          Lampiran A–C per region. <strong>~990 GI</strong> diekstrak;
-          <strong>931 ter-koordinat</strong> via match nama ke OSM + override manual
-          (match rate global ~94%; Nusa Tenggara terendah 82% karena OSM coverage
-          rural tipis).</li>
-      <li><strong>Daftar Pembangkit</strong>: OSM <code>power=plant</code> di area
-          ke-8 region. <strong>593 pembangkit</strong>, ~400 dengan kapasitas
-          tercatat. Validasi terhadap RUPTL Tabel x.3 agregat per provinsi.</li>
-      <li><strong>Garis Transmisi</strong>: OSM <code>power=line</code> dengan tag
-          voltage ≥70 kV. <strong>4.053 garis</strong>, ~20.000+ km total.
-          Belum ada 275/500 kV di Maluku, Papua, NTB, NTT.</li>
-      <li><strong>Koordinat</strong>: OSM via Overpass API.</li>
-      <li><strong>Peta dasar</strong>: Carto Positron, © CARTO &amp; © OpenStreetMap.</li>
+      <li><strong>Daftar Gardu Induk</strong> dan kapasitas: RUPTL PLN 2025–2034,
+          Lampiran A sampai C per region. Sebanyak <strong>~990 GI</strong>
+          diekstrak, dengan <strong>931 di antaranya terkoordinat</strong>
+          melalui pencocokan nama ke OSM dan override manual. Match rate
+          global mencapai ~94%, dengan Nusa Tenggara terendah pada 82%
+          karena keterbatasan cakupan OSM di wilayah rural.</li>
+      <li><strong>Daftar Pembangkit</strong>: OSM <code>power=plant</code> di
+          area 8 region. Total <strong>593 pembangkit</strong> dengan ~400
+          di antaranya memiliki nilai kapasitas tercatat. Validasi dilakukan
+          terhadap RUPTL Tabel x.3 agregat per provinsi.</li>
+      <li><strong>Garis Transmisi</strong>: OSM <code>power=line</code> dengan
+          tag tegangan ≥70 kV. Total <strong>4.053 garis</strong>, sekitar
+          20.000 km. Tegangan 275/500 kV belum tersedia di Maluku, Papua,
+          NTB, maupun NTT.</li>
+      <li><strong>Koordinat</strong>: OSM melalui Overpass API.</li>
+      <li><strong>Peta dasar</strong>: Carto Positron, © CARTO dan
+          © OpenStreetMap.</li>
     </ul>
 
     <h3>Catatan penamaan</h3>
     <p>Beberapa Gardu Induk Tegangan Ekstra Tinggi (500 kV) yang dikenal publik
-    (mis. "GITET Bekasi") mungkin tercatat di RUPTL dengan nama desa/kecamatan
-    terdekat (mis. Sukatani, Tambun, Deltamas) atau tidak masuk Tabel x.4
-    karena kategorisasi internal RUPTL. Untuk wilayah timur, nama PLN
-    kadang berbeda dari nama OSM (contoh: GI Ruteng ↔ Gardu Induk Bahong di
-    OSM, GI Sumbawa ↔ Gardu Induk Seketeng). Untuk pemetaan lebih lengkap,
-    referensi silang dengan OSM dianjurkan.</p>
+    (misalnya "GITET Bekasi") tercatat di RUPTL dengan nama desa atau kecamatan
+    terdekat (Sukatani, Tambun, Deltamas), atau tidak masuk Tabel x.4 karena
+    kategorisasi internal RUPTL. Di wilayah timur, nama yang dipakai PLN kadang
+    berbeda dari nama di OSM. Contoh: GI Ruteng tercatat sebagai Gardu Induk
+    Bahong di OSM, GI Sumbawa muncul sebagai Gardu Induk Seketeng. Untuk
+    pemetaan yang lebih lengkap, referensi silang dengan OSM disarankan.</p>
 
     <h3>Konvensi simbol</h3>
     <p>Mengikuti konvensi <em>single line diagram</em>:</p>
     <ul>
-      <li><strong>Lingkaran</strong> = pembangkit (generator). Label dalam = jenis
+      <li><strong>Lingkaran</strong> menandai pembangkit (generator). Label di
+          dalam lingkaran menyatakan jenis pembangkit
           (U/GU/G/MG/A/M/P/S/B/D/Sa).</li>
-      <li><strong>Kotak</strong> = gardu induk (substation).</li>
-      <li><strong>Kotak dengan border ganda</strong> = GITET (500 kV).</li>
-      <li><strong>Garis</strong> = saluran transmisi. Warna &amp; ketebalan
-          menunjukkan tegangan (500/275/150/70 kV).</li>
+      <li><strong>Kotak</strong> menandai gardu induk (substation).</li>
+      <li><strong>Kotak dengan border ganda</strong> menandai GITET (500 kV).</li>
+      <li><strong>Garis</strong> menandai saluran transmisi. Warna dan ketebalan
+          merepresentasikan kelas tegangan (500/275/150/70 kV).</li>
     </ul>
 
     <h3>Lisensi</h3>
     <p>Proyek open-source untuk kepentingan publik. Data turunan tunduk pada
-    lisensi sumber asal (OSM: ODbL, RUPTL: dokumen publik PLN/ESDM).</p>
+    lisensi sumber asal: OSM mengikuti ODbL, sedangkan data RUPTL adalah
+    dokumen publik PLN/ESDM.</p>
 
     <h3>Feedback &amp; Kontak</h3>
-    <p>Feedback, koreksi data, atau saran pengembangan sangat diterima.</p>
+    <p>Masukan, koreksi data, maupun saran pengembangan sangat diterima.</p>
     <ul>
       <li>Email:
           <a href="mailto:sandro.sitompul@ieee.org">sandro.sitompul@ieee.org</a></li>
@@ -458,7 +477,7 @@
     </ul>
 
     <div class="version-info">
-      Versi <span>v0.7.2-beta</span> · Pembaruan terakhir <span>30 Mei 2026</span>
+      Versi <span>v1.0.0-beta</span> · Pembaruan terakhir <span>30 Mei 2026</span>
     </div>
 
     <button class="close" onclick="document.getElementById('about-modal').classList.remove('show')">
@@ -1037,7 +1056,7 @@ function setupFilters() {
 function init() {
   if (REGION_KEYS.every(k => !REGIONS[k])) {
     document.getElementById('readout').textContent =
-      'Data gagal load — pastikan file data_<region>.js ada di folder yang sama.';
+      'Data gagal dimuat. Pastikan file data_<region>.js berada di folder yang sama.';
     return;
   }
   buildFeatures();
