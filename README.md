@@ -156,7 +156,7 @@ Daftar lengkap kontributor (apabila ada) dapat dilihat melalui history commit Gi
 
 Masukan, koreksi data, maupun saran pengembangan sangat diterima.
 
-- **Email:** [sandro.sitompul@ieee.org](mailto:sandro.sitompul@ieee.org)
+- **Email:** [contact@indonesiapowermap.com](mailto:contact@indonesiapowermap.com)
 - **LinkedIn:** [linkedin.com/in/sandro-sitompul-a7a490107](https://www.linkedin.com/in/sandro-sitompul-a7a490107)
 - **GitHub:** [github.com/sandro71626/indonesia-power-map](https://github.com/sandro71626/indonesia-power-map)
 

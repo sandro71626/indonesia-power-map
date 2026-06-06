@@ -452,8 +452,11 @@
     <p>Mengikuti konvensi <em>single line diagram</em>:</p>
     <ul>
       <li><strong>Lingkaran</strong> menandai pembangkit (generator). Label di
-          dalam lingkaran menyatakan jenis pembangkit
-          (U/GU/G/MG/A/M/P/S/B/D/Sa).</li>
+          dalam lingkaran menyatakan jenis pembangkit:
+          U=Uap, GU=Gas&amp;Uap, G=Gas, <strong>MG=Mesin Gas (PLTMG)</strong>,
+          A=Air, M=Mini-hidro/Mikrohidro, P=Panas Bumi, S=Surya, B=Bayu,
+          <strong>BM=Biomassa (PLT Biomass)</strong>,
+          <strong>BG=Biogas (PLTBg)</strong>, D=Diesel, Sa=Sampah.</li>
       <li><strong>Kotak</strong> menandai gardu induk (substation).</li>
       <li><strong>Kotak dengan border ganda</strong> menandai GITET (500 kV).</li>
       <li><strong>Garis</strong> menandai saluran transmisi. Warna dan ketebalan
@@ -469,7 +472,7 @@
     <p>Masukan, koreksi data, maupun saran pengembangan sangat diterima.</p>
     <ul>
       <li>Email:
-          <a href="mailto:sandro.sitompul@ieee.org">sandro.sitompul@ieee.org</a></li>
+          <a href="mailto:contact@indonesiapowermap.com">contact@indonesiapowermap.com</a></li>
       <li>LinkedIn:
           <a href="https://www.linkedin.com/in/sandro-sitompul-a7a490107" target="_blank" rel="noopener">linkedin.com/in/sandro-sitompul-a7a490107</a></li>
       <li>GitHub:
@@ -564,20 +567,25 @@ function genTier(p) {
 const PLANT_COLORS = {
   'PLTU':'#3a3a3a','PLTGU':'#ff7f0e','PLTG':'#ffbb78','PLTA':'#1f77b4',
   'PLTM':'#76b7e1','PLTMH':'#76b7e1','PLTP':'#d62728','PLTS':'#f7d100',
-  'PLTB':'#17becf','PLTD':'#8c564b','PLTMG':'#c49c94','PLTSa':'#8b4513','Unknown':'#999',
+  'PLTB':'#17becf','PLTD':'#8c564b','PLTMG':'#c49c94','PLTSa':'#8b4513',
+  'PLT Biomas':'#6b8e23','PLT Biomass':'#6b8e23','PLTBg':'#9acd32',
+  'Unknown':'#999',
 };
 const PLANT_LABEL = {
   'PLTU':'U','PLTGU':'GU','PLTG':'G','PLTA':'A','PLTM':'M','PLTMH':'M',
-  'PLTP':'P','PLTS':'S','PLTB':'B','PLTD':'D','PLTMG':'MG','PLTSa':'Sa','Unknown':'?',
+  'PLTP':'P','PLTS':'S','PLTB':'B','PLTD':'D','PLTMG':'MG','PLTSa':'Sa',
+  'PLT Biomas':'BM','PLT Biomass':'BM','PLTBg':'BG',
+  'Unknown':'?',
 };
 // Deskripsi sumber energi tiap jenis pembangkit (untuk legend & panel detail)
 const PLANT_DESC = {
   'PLTU':'Batubara (uap)','PLTGU':'Gas (combined cycle)','PLTG':'Gas (open cycle)',
   'PLTMG':'Mesin gas','PLTA':'Tenaga air','PLTM':'Minihidro','PLTMH':'Mikrohidro',
   'PLTP':'Panas bumi','PLTS':'Surya','PLTB':'Angin (bayu)','PLTD':'Diesel',
-  'PLTSa':'Sampah','Unknown':'Tidak diketahui',
+  'PLTSa':'Sampah','PLT Biomas':'Biomassa','PLT Biomass':'Biomassa','PLTBg':'Biogas',
+  'Unknown':'Tidak diketahui',
 };
-const DARK_TEXT = new Set(['PLTG','PLTM','PLTMH','PLTS','PLTB','PLTMG']);
+const DARK_TEXT = new Set(['PLTG','PLTM','PLTMH','PLTS','PLTB','PLTMG','PLTBg']);
 
 function diameterForMW(mw) {
   if (!mw) return 14;
@@ -638,7 +646,7 @@ function subDetailHTML(p) {
     ${dpRow('Sumber', p.source_id + (p.source_table ? ' (' + p.source_table + ')' : ''))}
     ${dpRow('Koordinat', p.match_source)}
   </table>
-  ${p.review_flag ? `<div class="dp-warn">⚠ ${p.review_flag}</div>` : ''}`;
+  `;
 }
 function genDetailHTML(p) {
   const mw = p.capacity_mw
@@ -656,7 +664,7 @@ function genDetailHTML(p) {
     ${dpRow('Metode', p.method)}
     ${dpRow('Sumber', p.source_id)}
   </table>
-  ${p.review_flag ? `<div class="dp-warn">⚠ ${p.review_flag}</div>` : ''}`;
+  `;
 }
 function trmDetailHTML(p) {
   return `<table class="dp-table">

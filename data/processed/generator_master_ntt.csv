@@ -1,42 +1,40 @@
-id,name,osm_name,type,capacity_mw,province,system,status,operator,method,lat,lon,osm_id,osm_source,review_flag,source_id
-GEN-NTT-0001,PLTD Tenau,PLTD Tenau,PLTD,6.4,Nusa Tenggara Timur,NTT,existing,,combustion,-10.1884429,123.5464335,way/150155344,diesel,,OSM-overpass
-GEN-NTT-0002,PLTD Wolomarang,PLTD Wolomarang,PLTD,3.0,Nusa Tenggara Timur,NTT,existing,,combustion,-8.5967197,122.1905953,way/244246232,diesel,,OSM-overpass
-GEN-NTT-0003,PLN Cabang Magepanda,PLN Cabang Magepanda,Unknown,,Nusa Tenggara Timur,NTT,existing,,,-8.5360286,122.0463851,way/410503813,,NO_CAPACITY;NO_TYPE,OSM-overpass
-GEN-NTT-0004,Pembangkit Listrik Tenaga Surya,Pembangkit Listrik Tenaga Surya,PLTS,1.0,Nusa Tenggara Timur,NTT,existing,PT Buana Energi Surya Persada,,-9.5391303,120.2227955,way/515587640,solar,,OSM-overpass
-GEN-NTT-0005,(unnamed),,Unknown,,Nusa Tenggara Timur,NTT,existing,PT Perusahaan Listrik Negara,,-9.6742626,120.2276152,way/527176121,,NO_NAME;NO_CAPACITY;NO_TYPE,OSM-overpass
-GEN-NTT-0006,PLTA-MH,PLTA-MH,PLTA,,Nusa Tenggara Timur,NTT,existing,,,-8.7162892,121.9746966,way/597434946,,NO_CAPACITY,OSM-overpass
-GEN-NTT-0007,PLTU Bolok,PLTU Bolok,PLTU,33.0,Nusa Tenggara Timur,NTT,existing,,,-10.2393253,123.4913586,way/611789533,coal,,OSM-overpass
-GEN-NTT-0008,PLTU Atapupu,PLTU Atapupu,PLTU,,Nusa Tenggara Timur,NTT,existing,,,-9.005082,124.8180958,way/614569627,,NO_CAPACITY,OSM-overpass
-GEN-NTT-0009,PLTMG Kupang,PLTMG Kupang,PLTMG,40.0,Nusa Tenggara Timur,NTT,existing,,,-10.353854,123.4593698,way/716898232,gas,,OSM-overpass
-GEN-NTT-0010,PLTS Oelpuah,PLTS Oelpuah,PLTS,5.0,Nusa Tenggara Timur,NTT,existing,PT Lembaga Elektronik Nasional (LEN),photovoltaic,-10.1469168,123.7486233,way/798987869,solar,,OSM-overpass
-GEN-NTT-0011,(unnamed),,PLTA,,Nusa Tenggara Timur,NTT,existing,,run-of-the-river,-8.7601128,120.5704061,way/845393015,hydro,NO_NAME;NO_CAPACITY,OSM-overpass
-GEN-NTT-0012,PLTS Maumere,PLTS Maumere,PLTS,2.0,Nusa Tenggara Timur,NTT,existing,,photovoltaic,-8.6296498,122.3282918,way/937059859,solar,,OSM-overpass
-GEN-NTT-0013,PLTMG Maumere,PLTMG Maumere,PLTMG,40.0,Nusa Tenggara Timur,NTT,existing,,,-8.6198021,122.3410147,way/937059861,gas,,OSM-overpass
-GEN-NTT-0014,PLTU Ropa,PLTU Ropa,PLTU,14.0,Nusa Tenggara Timur,NTT,existing,,,-8.5106178,121.6998428,way/937059863,coal,,OSM-overpass
-GEN-NTT-0015,PLTMG Flores,PLTMG Flores,PLTMG,20.0,Nusa Tenggara Timur,NTT,existing,,,-8.4610735,119.9435178,way/937059866,gas,,OSM-overpass
-GEN-NTT-0016,PLTG Ulumbu,PLTG Ulumbu,PLTG,10.0,Nusa Tenggara Timur,NTT,existing,,,-8.7260519,120.4355139,way/937059867,geothermal,,OSM-overpass
-GEN-NTT-0017,PLTU Timor-1,PLTU Timor-1,PLTU,100.0,Nusa Tenggara Timur,NTT,existing,,combustion,-10.3501327,123.4589058,way/1198315805,coal,,OSM-overpass
-GEN-NTT-0018,PLTP Sokoria,PLTP Sokoria,PLTP,8.0,Nusa Tenggara Timur,NTT,existing,,,-8.7929784,121.76608,way/1313835498,geothermal,,OSM-overpass
-GEN-NTT-0019,PLTS Nembrala,PLTS Nembrala,PLTS,0.1,Nusa Tenggara Timur,NTT,existing,,photovoltaic,-10.8839841,122.8307471,way/1322035311,solar,,OSM-overpass
-GEN-NTT-0020,PLTS Praimbana,PLTS Praimbana,PLTS,0.13,Nusa Tenggara Timur,NTT,existing,,photovoltaic,-10.0089602,120.4800836,way/1322035319,solar,,OSM-overpass
-GEN-NTT-0021,PLTS Solor Barat,PLTS Solor Barat,PLTS,0.275,Nusa Tenggara Timur,NTT,existing,PT PLN,photovoltaic,-8.5302927,122.9381078,way/1322035330,solar,,OSM-overpass
-GEN-NTT-0022,PLTS Palue,PLTS Palue,PLTS,0.76,Nusa Tenggara Timur,NTT,existing,,photovoltaic,-8.3069116,121.7060922,way/1322035334,solar,,OSM-overpass
-GEN-NTT-0023,PLTS Seraya Marranu,PLTS Seraya Marranu,PLTS,0.19,Nusa Tenggara Timur,NTT,existing,,photovoltaic,-8.3938237,119.857453,way/1322035336,solar,,OSM-overpass
-GEN-NTT-0024,PLTS Mbakung,PLTS Mbakung,PLTS,0.26,Nusa Tenggara Timur,NTT,existing,,photovoltaic,-8.3496123,120.2529124,way/1322035338,solar,,OSM-overpass
-GEN-NTT-0025,PLTS Nangabere,PLTS Nangabere,PLTS,0.27,Nusa Tenggara Timur,NTT,existing,,photovoltaic,-8.8188254,119.9620628,way/1322035340,solar,,OSM-overpass
-GEN-NTT-0026,PLTS Golo Munde,PLTS Golo Munde,PLTS,0.2,Nusa Tenggara Timur,NTT,existing,,photovoltaic,-8.5194977,120.8043655,way/1322035341,solar,,OSM-overpass
-GEN-NTT-0027,PLTS Nuca Molas,PLTS Nuca Molas,PLTS,0.38,Nusa Tenggara Timur,NTT,existing,,photovoltaic,-8.8784434,120.3015548,way/1322035344,solar,,OSM-overpass
-GEN-NTT-0028,PLTS Wontong,PLTS Wontong,PLTS,0.32,Nusa Tenggara Timur,NTT,existing,,photovoltaic,-8.4502505,120.2754246,way/1322035352,solar,,OSM-overpass
-GEN-NTT-0029,PLTS Mesa,PLTS Mesa,PLTS,0.53,Nusa Tenggara Timur,NTT,existing,,photovoltaic,-8.5258627,119.7452233,way/1322035355,solar,,OSM-overpass
-GEN-NTT-0030,PLTS Papagarang,PLTS Papagarang,PLTS,0.38,Nusa Tenggara Timur,NTT,existing,,photovoltaic,-8.5719699,119.7126574,way/1322035356,solar,,OSM-overpass
-GEN-NTT-0031,PLTS Longos,PLTS Longos,PLTS,0.15,Nusa Tenggara Timur,NTT,existing,,photovoltaic,-8.3476364,120.1489754,way/1322035357,solar,,OSM-overpass
-GEN-NTT-0032,PLTS Treweng,PLTS Treweng,PLTS,0.11,Nusa Tenggara Timur,NTT,existing,PT PLN,photovoltaic,-8.4714722,124.2797486,way/1371199601,solar,,OSM-overpass
-GEN-NTT-0033,PLTS Tribur,PLTS Tribur,PLTS,0.25,Nusa Tenggara Timur,NTT,existing,PT PLN,photovoltaic,-8.4058365,124.4952014,way/1371199620,solar,,OSM-overpass
-GEN-NTT-0034,PLTS Ternate,PLTS Ternate,PLTS,0.28,Nusa Tenggara Timur,NTT,existing,PT PLN,photovoltaic,-8.2097636,124.3749957,way/1371199637,solar,,OSM-overpass
-GEN-NTT-0035,PLTS Nule,PLTS Nule,PLTS,0.25,Nusa Tenggara Timur,NTT,existing,PT PLN,photovoltaic,-8.37253,124.2405934,way/1371199648,solar,,OSM-overpass
-GEN-NTT-0036,PLTS Raijua,PLTS Raijua,PLTS,0.15,Nusa Tenggara Timur,NTT,existing,PT PLN,photovoltaic,-10.6179725,121.5944621,way/1371199703,solar,,OSM-overpass
-GEN-NTT-0037,PLTS Pura,PLTS Pura,PLTS,0.175,Nusa Tenggara Timur,NTT,existing,PT PLN,photovoltaic,-8.2980884,124.3214553,way/1371199721,solar,,OSM-overpass
-GEN-NTT-0038,(unnamed),,PLTS,,Nusa Tenggara Timur,NTT,existing,,photovoltaic,-9.0847345,124.8674083,way/1373003292,solar,NO_NAME;NO_CAPACITY,OSM-overpass
-GEN-NTT-0039,PLTS Koja besar,PLTS Koja besar,PLTS,,Nusa Tenggara Timur,NTT,existing,,photovoltaic,-8.4880505,122.3932506,way/1381155744,solar,NO_CAPACITY,OSM-overpass
-GEN-NTT-0040,PLTS Parumaan,PLTS Parumaan,PLTS,,Nusa Tenggara Timur,NTT,existing,,photovoltaic,-8.4531407,122.4435984,way/1381160881,solar,NO_CAPACITY,OSM-overpass
-GEN-NTT-0041,PLTS DESA PULAU BUAYA,PLTS DESA PULAU BUAYA,PLTS,,Nusa Tenggara Timur,NTT,existing,,photovoltaic,-8.1821066,124.3740605,way/1469884017,solar,NO_CAPACITY,OSM-overpass
+id,name,osm_name,type,capacity_mw,province,system,status,operator,method,lat,lon,osm_id,osm_source,review_flag,source_id,capacity_unit
+GEN-NTT-0001,PLTD Tenau,PLTD Tenau,PLTD,6.4,Nusa Tenggara Timur,NTT,existing,,combustion,-10.1884429,123.5464335,way/150155344,diesel,,OSM-overpass,MW
+GEN-NTT-0002,PLTD Wolomarang,PLTD Wolomarang,PLTD,3.0,Nusa Tenggara Timur,NTT,existing,,combustion,-8.5967197,122.1905953,way/244246232,diesel,,OSM-overpass,MW
+GEN-NTT-0004,PLTS Hambapraing,Pembangkit Listrik Tenaga Surya,PLTS,1.0,Nusa Tenggara Timur,NTT,existing,PT Buana Energi Surya Persada,,-9.5391303,120.2227955,way/515587640,solar,,OSM-overpass,MWp
+GEN-NTT-0007,PLTU Bolok,PLTU Bolok,PLTU,33.0,Nusa Tenggara Timur,NTT,existing,,,-10.2393253,123.4913586,way/611789533,coal,,OSM-overpass,MW
+GEN-NTT-0008,PLTU Atapupu,PLTU Atapupu,PLTU,24.0,Nusa Tenggara Timur,NTT,existing,,,-9.005082,124.8180958,way/614569627,,NO_CAPACITY,OSM-overpass,MW
+GEN-NTT-0009,PLTMG Kupang,PLTMG Kupang,PLTMG,40.0,Nusa Tenggara Timur,NTT,existing,,,-10.353854,123.4593698,way/716898232,gas,,OSM-overpass,MW
+GEN-NTT-0010,PLTS Oelpuah,PLTS Oelpuah,PLTS,5.0,Nusa Tenggara Timur,NTT,existing,PT Lembaga Elektronik Nasional (LEN),photovoltaic,-10.1469168,123.7486233,way/798987869,solar,,OSM-overpass,MWp
+GEN-NTT-0011,PLTMH Sita,,PLTMH,1.0,Nusa Tenggara Timur,NTT,existing,,run-of-the-river,-8.7601128,120.5704061,way/845393015,hydro,NO_NAME;NO_CAPACITY,OSM-overpass,MW
+GEN-NTT-0012,PLTS Maumere,PLTS Maumere,PLTS,2.0,Nusa Tenggara Timur,NTT,existing,,photovoltaic,-8.6296498,122.3282918,way/937059859,solar,,OSM-overpass,MWp
+GEN-NTT-0013,PLTMG Maumere,PLTMG Maumere,PLTMG,40.0,Nusa Tenggara Timur,NTT,existing,,,-8.6198021,122.3410147,way/937059861,gas,,OSM-overpass,MW
+GEN-NTT-0014,PLTU Ropa,PLTU Ropa,PLTU,14.0,Nusa Tenggara Timur,NTT,existing,,,-8.5106178,121.6998428,way/937059863,coal,,OSM-overpass,MW
+GEN-NTT-0015,PLTMG Flores,PLTMG Flores,PLTMG,20.0,Nusa Tenggara Timur,NTT,existing,,,-8.4610735,119.9435178,way/937059866,gas,,OSM-overpass,MW
+GEN-NTT-0016,PLTP Ulumbu,PLTG Ulumbu,PLTP,10.0,Nusa Tenggara Timur,NTT,existing,,,-8.7260519,120.4355139,way/937059867,geothermal,,OSM-overpass,MW
+GEN-NTT-0017,PLTU Timor-1,PLTU Timor-1,PLTU,100.0,Nusa Tenggara Timur,NTT,existing,,combustion,-10.3501327,123.4589058,way/1198315805,coal,,OSM-overpass,MW
+GEN-NTT-0018,PLTP Sokoria,PLTP Sokoria,PLTP,8.0,Nusa Tenggara Timur,NTT,existing,,,-8.7929784,121.76608,way/1313835498,geothermal,,OSM-overpass,MW
+GEN-NTT-0019,PLTS Nembrala,PLTS Nembrala,PLTS,0.1,Nusa Tenggara Timur,NTT,existing,,photovoltaic,-10.8839841,122.8307471,way/1322035311,solar,,OSM-overpass,MWp
+GEN-NTT-0020,PLTS Praimbana,PLTS Praimbana,PLTS,0.13,Nusa Tenggara Timur,NTT,existing,,photovoltaic,-10.0089602,120.4800836,way/1322035319,solar,,OSM-overpass,MWp
+GEN-NTT-0021,PLTS Solor Barat,PLTS Solor Barat,PLTS,0.275,Nusa Tenggara Timur,NTT,existing,PT PLN,photovoltaic,-8.5302927,122.9381078,way/1322035330,solar,,OSM-overpass,MWp
+GEN-NTT-0022,PLTS Palue,PLTS Palue,PLTS,0.76,Nusa Tenggara Timur,NTT,existing,,photovoltaic,-8.3069116,121.7060922,way/1322035334,solar,,OSM-overpass,MWp
+GEN-NTT-0023,PLTS Seraya Marranu,PLTS Seraya Marranu,PLTS,0.19,Nusa Tenggara Timur,NTT,existing,,photovoltaic,-8.3938237,119.857453,way/1322035336,solar,,OSM-overpass,MWp
+GEN-NTT-0024,PLTS Mbakung,PLTS Mbakung,PLTS,0.26,Nusa Tenggara Timur,NTT,existing,,photovoltaic,-8.3496123,120.2529124,way/1322035338,solar,,OSM-overpass,MWp
+GEN-NTT-0025,PLTS Nangabere,PLTS Nangabere,PLTS,0.27,Nusa Tenggara Timur,NTT,existing,,photovoltaic,-8.8188254,119.9620628,way/1322035340,solar,,OSM-overpass,MWp
+GEN-NTT-0026,PLTS Golo Munde,PLTS Golo Munde,PLTS,0.2,Nusa Tenggara Timur,NTT,existing,,photovoltaic,-8.5194977,120.8043655,way/1322035341,solar,,OSM-overpass,MWp
+GEN-NTT-0027,PLTS Nuca Molas,PLTS Nuca Molas,PLTS,0.38,Nusa Tenggara Timur,NTT,existing,,photovoltaic,-8.8784434,120.3015548,way/1322035344,solar,,OSM-overpass,MWp
+GEN-NTT-0028,PLTS Wontong,PLTS Wontong,PLTS,0.32,Nusa Tenggara Timur,NTT,existing,,photovoltaic,-8.4502505,120.2754246,way/1322035352,solar,,OSM-overpass,MWp
+GEN-NTT-0029,PLTS Mesa,PLTS Mesa,PLTS,0.53,Nusa Tenggara Timur,NTT,existing,,photovoltaic,-8.5258627,119.7452233,way/1322035355,solar,,OSM-overpass,MWp
+GEN-NTT-0030,PLTS Papagarang,PLTS Papagarang,PLTS,0.38,Nusa Tenggara Timur,NTT,existing,,photovoltaic,-8.5719699,119.7126574,way/1322035356,solar,,OSM-overpass,MWp
+GEN-NTT-0031,PLTS Longos,PLTS Longos,PLTS,0.15,Nusa Tenggara Timur,NTT,existing,,photovoltaic,-8.3476364,120.1489754,way/1322035357,solar,,OSM-overpass,MWp
+GEN-NTT-0032,PLTS Treweng,PLTS Treweng,PLTS,0.11,Nusa Tenggara Timur,NTT,existing,PT PLN,photovoltaic,-8.4714722,124.2797486,way/1371199601,solar,,OSM-overpass,MWp
+GEN-NTT-0033,PLTS Tribur,PLTS Tribur,PLTS,0.25,Nusa Tenggara Timur,NTT,existing,PT PLN,photovoltaic,-8.4058365,124.4952014,way/1371199620,solar,,OSM-overpass,MWp
+GEN-NTT-0034,PLTS Ternate,PLTS Ternate,PLTS,0.28,Nusa Tenggara Timur,NTT,existing,PT PLN,photovoltaic,-8.2097636,124.3749957,way/1371199637,solar,,OSM-overpass,MWp
+GEN-NTT-0035,PLTS Nule,PLTS Nule,PLTS,0.25,Nusa Tenggara Timur,NTT,existing,PT PLN,photovoltaic,-8.37253,124.2405934,way/1371199648,solar,,OSM-overpass,MWp
+GEN-NTT-0036,PLTS Raijua,PLTS Raijua,PLTS,0.15,Nusa Tenggara Timur,NTT,existing,PT PLN,photovoltaic,-10.6179725,121.5944621,way/1371199703,solar,,OSM-overpass,MWp
+GEN-NTT-0037,PLTS Pura,PLTS Pura,PLTS,0.175,Nusa Tenggara Timur,NTT,existing,PT PLN,photovoltaic,-8.2980884,124.3214553,way/1371199721,solar,,OSM-overpass,MWp
+GEN-NTT-0038,PLTS Kabuna,,PLTS,0.00286,Nusa Tenggara Timur,NTT,existing,,photovoltaic,-9.0847345,124.8674083,way/1373003292,solar,,OSM-overpass,MWp
+GEN-NTT-0039,PLTS Koja Besar,PLTS Koja besar,PLTS,0.150,Nusa Tenggara Timur,NTT,existing,,photovoltaic,-8.4880505,122.3932506,way/1381155744,solar,NO_CAPACITY,OSM-overpass,MWp
+GEN-NTT-0040,PLTS Parumaan,PLTS Parumaan,PLTS,0.420,Nusa Tenggara Timur,NTT,existing,,photovoltaic,-8.4531407,122.4435984,way/1381160881,solar,NO_CAPACITY,OSM-overpass,MWp
+GEN-NTT-0041,PLTS Desa Pulau Buaya,PLTS DESA PULAU BUAYA,PLTS,0.250,Nusa Tenggara Timur,NTT,existing,,photovoltaic,-8.1821066,124.3740605,way/1469884017,solar,NO_CAPACITY,OSM-overpass,MWp
+GEN-NTT-0042,PLTMH Wae Nampe,,PLTMH,0.05,Nusa Tenggara Timur,NTT,existing,,,-8.5638,120.6347,,,MANUAL_ADD_v1.0,manual_revision_v1.0,MW

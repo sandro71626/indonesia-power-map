@@ -1,17 +1,21 @@
-id,name,osm_name,type,capacity_mw,province,system,status,operator,method,lat,lon,osm_id,osm_source,review_flag,source_id
-GEN-PAP-0001,PLTD Kota Sorong,PLTD Kota Sorong,PLTD,,Papua Barat,Papua,existing,,,-0.8790946,131.2603534,relation/7625982,,NO_CAPACITY,OSM-overpass
-GEN-PAP-0002,PLTU Holtekamp,PLTU Holtekamp,PLTU,24.0,Papua,Papua,existing,Indonesia Power,combustion,-2.6144744,140.790386,way/377005221,coal,,OSM-overpass
-GEN-PAP-0003,(unnamed),,Unknown,,Papua,Papua,existing,,,-4.111108,138.9268303,way/607542063,,NO_NAME;NO_CAPACITY;NO_TYPE,OSM-overpass
-GEN-PAP-0004,PLTU Amamapare,PLTU Amamapare,PLTU,255.0,Papua,Papua,existing,PT Puncak Jaya Power,combustion,-4.8275311,136.8377098,way/614077557,coal,,OSM-overpass
-GEN-PAP-0005,PLTD Fakfak,PLTD Fakfak,PLTD,,Papua Barat,Papua,existing,,,-2.9238711,132.2998361,way/629897977,,NO_CAPACITY,OSM-overpass
-GEN-PAP-0006,PLTMG Jayapura,PLTMG Jayapura,PLTMG,40.0,Papua,Papua,existing,,combustion,-2.6163241,140.7913037,way/894329107,gas,,OSM-overpass
-GEN-PAP-0007,PLTMG Sorong,PLTMG Sorong,PLTMG,50.0,Papua Barat,Papua,existing,,,-1.0205161,131.2469853,way/940979321,gas,,OSM-overpass
-GEN-PAP-0008,PLTMG Timika,PLTMG Timika,PLTMG,10.0,Papua,Papua,existing,,combustion,-4.7534102,136.7675772,way/1121717386,gas,,OSM-overpass
-GEN-PAP-0009,PLTS Werua,PLTS Werua,PLTS,,Papua Barat,Papua,existing,,,-3.4746024,134.0059452,way/1164608628,solar,NO_CAPACITY,OSM-overpass
-GEN-PAP-0010,PLTS Sara,PLTS Sara,PLTS,,Papua Barat,Papua,existing,,,-3.4938104,133.979851,way/1164613430,solar,NO_CAPACITY,OSM-overpass
-GEN-PAP-0011,PLTMG MPP Jayapura,PLTMG MPP Jayapura,PLTMG,50.0,Papua,Papua,existing,,combustion,-2.6169122,140.7891872,way/1191857160,gas,,OSM-overpass
-GEN-PAP-0012,PLTA Orya Genyem,PLTA Orya Genyem,PLTA,20.0,Papua,Papua,existing,,,-2.6355849,140.0199124,way/1191857172,hydro,,OSM-overpass
-GEN-PAP-0013,PLTD Sanggeng,PLTD Sanggeng,PLTD,7.5,Papua Barat,Papua,existing,,combustion,-0.8716802,134.0659233,way/1313567917,diesel,,OSM-overpass
-GEN-PAP-0014,PLTS Arfai,PLTS Arfai,PLTS,1.0,Papua Barat,Papua,existing,,photovoltaic,-0.9239977,134.0267712,way/1313567921,solar,,OSM-overpass
-GEN-PAP-0015,PLTS Reremi,PLTS Reremi,PLTS,1.0,Papua Barat,Papua,existing,,photovoltaic,-0.8436382,134.0483711,way/1313567929,solar,,OSM-overpass
-GEN-PAP-0016,PLTMG MPP Manokwari,PLTMG MPP Manokwari,PLTMG,20.0,Papua Barat,Papua,existing,,combustion,-0.9348179,134.015478,way/1313567930,gas,,OSM-overpass
+id,name,osm_name,type,capacity_mw,province,system,status,operator,method,lat,lon,osm_id,osm_source,review_flag,source_id,capacity_unit
+GEN-PAP-0001,PLTD Kota Sorong,PLTD Kota Sorong,PLTD,40.37,Papua Barat,Papua,existing,,,-0.8790946,131.2603534,relation/7625982,,NO_CAPACITY,OSM-overpass,MW
+GEN-PAP-0002,PLTU Holtekamp,PLTU Holtekamp,PLTU,24.0,Papua,Papua,existing,Indonesia Power,combustion,-2.6144744,140.790386,way/377005221,coal,,OSM-overpass,MW
+GEN-PAP-0004,PLTU Amamapare,PLTU Amamapare,PLTU,255.0,Papua,Papua,existing,PT Puncak Jaya Power,combustion,-4.8275311,136.8377098,way/614077557,coal,,OSM-overpass,MW
+GEN-PAP-0005,PLTD Fakfak,PLTD Fakfak,PLTD,8.8,Papua Barat,Papua,existing,,,-2.9238711,132.2998361,way/629897977,,NO_CAPACITY,OSM-overpass,MW
+GEN-PAP-0006,PLTMG Jayapura,PLTMG Jayapura,PLTMG,40.0,Papua,Papua,existing,,combustion,-2.6163241,140.7913037,way/894329107,gas,,OSM-overpass,MW
+GEN-PAP-0007,PLTMG Sorong,PLTMG Sorong,PLTMG,50.0,Papua Barat,Papua,existing,,,-1.0205161,131.2469853,way/940979321,gas,,OSM-overpass,MW
+GEN-PAP-0008,PLTMG Timika,PLTMG Timika,PLTMG,10.0,Papua,Papua,existing,,combustion,-4.7534102,136.7675772,way/1121717386,gas,,OSM-overpass,MW
+GEN-PAP-0009,PLTS Werua,PLTS Werua,PLTS,0.020,Papua Barat,Papua,existing,,,-3.4746024,134.0059452,way/1164608628,solar,NO_CAPACITY,OSM-overpass,MWp
+GEN-PAP-0010,PLTS Sara,PLTS Sara,PLTS,0.020,Papua Barat,Papua,existing,,,-3.4938104,133.979851,way/1164613430,solar,NO_CAPACITY,OSM-overpass,MWp
+GEN-PAP-0011,PLTMG MPP Jayapura,PLTMG MPP Jayapura,PLTMG,50.0,Papua,Papua,existing,,combustion,-2.6169122,140.7891872,way/1191857160,gas,,OSM-overpass,MW
+GEN-PAP-0012,PLTA Orya Genyem,PLTA Orya Genyem,PLTA,20.0,Papua,Papua,existing,,,-2.6355849,140.0199124,way/1191857172,hydro,,OSM-overpass,MW
+GEN-PAP-0013,PLTD Sanggeng,PLTD Sanggeng,PLTD,7.5,Papua Barat,Papua,existing,,combustion,-0.8716802,134.0659233,way/1313567917,diesel,,OSM-overpass,MW
+GEN-PAP-0014,PLTS Arfai,PLTS Arfai,PLTS,1.0,Papua Barat,Papua,existing,,photovoltaic,-0.9239977,134.0267712,way/1313567921,solar,,OSM-overpass,MWp
+GEN-PAP-0015,PLTS Reremi,PLTS Reremi,PLTS,1.0,Papua Barat,Papua,existing,,photovoltaic,-0.8436382,134.0483711,way/1313567929,solar,,OSM-overpass,MWp
+GEN-PAP-0016,PLTMG MPP Manokwari,PLTMG MPP Manokwari,PLTMG,20.0,Papua Barat,Papua,existing,,combustion,-0.9348179,134.015478,way/1313567930,gas,,OSM-overpass,MW
+GEN-PAP-0017,PLTD Sinakma,,PLTD,6.0,Papua,Papua,existing,,,-4.1017,138.9312,,,MANUAL_ADD_v1.0,manual_revision_v1.0,MW
+GEN-PAP-0018,PLTMH Walesi,,PLTMH,3.85,Papua,Papua,existing,,,-4.1284,138.9567,,,MANUAL_ADD_v1.0,manual_revision_v1.0,MW
+GEN-PAP-0019,PLTS Pulau Namatota,,PLTS,0.063,Papua Barat,Papua,existing,,,-3.6492,133.5684,,,MANUAL_ADD_v1.0,manual_revision_v1.0,MWp
+GEN-PAP-0020,PLTS Kampung Maimai,,PLTS,0.040,Papua Barat,Papua,existing,,,-3.6761,133.6711,,,MANUAL_ADD_v1.0;CAPACITY_RANGE_30-50_kWp_review,manual_revision_v1.0,MWp
+GEN-PAP-0021,PLTD Kaimana,,PLTD,8.8,Papua Barat,Papua,existing,,,-3.6558,133.7663,,,MANUAL_ADD_v1.0,manual_revision_v1.0,MW

@@ -271,7 +271,7 @@ GI-JMB-0269,Tegalherang,150/20,4,240.0,Jawa Barat,Jamali,way/960747928,Gardu Ind
 GI-JMB-0270,Telukjambe,150/20,4,240.0,Jawa Barat,Jamali,way/269490142,Gardu Induk Telukjambe,-6.378914,107.331547,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel B3.4
 GI-JMB-0271,Ubrug,70/20,1,3.0,Jawa Barat,Jamali,way/280246817,Gardu Induk Ubrug,-6.950413,106.7550188,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel B3.4
 GI-JMB-0272,Ujungberung,150/70,2,200.0,Jawa Barat,Jamali,way/769617021,GITET Ujungberung,-6.9636118,107.8169182,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel B3.4
-GI-JMB-0273,Ujungberung,150/20,5,300.0,Jawa Barat,Jamali,way/769617021,GITET Ujungberung,-6.9636118,107.8169182,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel B3.4
+GI-JMB-0273,Gardu Induk New Ujungberung-2,150/20,5,300.0,Jawa Barat,Jamali,way/769617021,GITET Ujungberung,-6.9636118,107.8169182,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel B3.4
 GI-JMB-0274,Wayang Windu,150/70,1,100.0,Jawa Barat,Jamali,way/237756221,PLTP Wayang Windu,-7.1979719,107.6259776,1.0,override:osm_plant,,RUPTL-2025-2034,Tabel B3.4
 GI-JMB-0275,Ampel,150/20,1,60.0,Jawa Tengah,Jamali,way/1228686647,Gardu Induk Ampel,-7.4816904,110.5583622,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel B4.4
 GI-JMB-0276,Balapulang,150/20,2,120.0,Jawa Tengah,Jamali,way/269160480,Gardu Induk Balapulang,-7.0910909,109.0889258,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel B4.4
@@ -402,7 +402,7 @@ GI-JMB-0400,Ngawi,150/20,2,120.0,Jawa Timur,Jamali,way/268831411,Gardu Induk Nga
 GI-JMB-0401,Ngimbang,150/20,1,60.0,Jawa Timur,Jamali,way/398909640,GITET Ngimbang,-7.2879426,112.189255,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel B6.4
 GI-JMB-0402,Paciran,150/20,2,120.0,Jawa Timur,Jamali,way/1187946052,Gardu Induk Paciran,-6.8911786,112.4340955,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel B6.4
 GI-JMB-0403,Tanjungawarawar,150/20,1,40.0,Jawa Timur,Jamali,way/706118077,PLTU Tanjung Awar-Awar,-6.8089608,111.996493,1.0,override:osm_plant,,RUPTL-2025-2034,Tabel B6.4
-GI-JMB-0404,Tuban,150/20,3,150.0,Jawa Timur,Jamali,way/558257192,Gardu Induk Tuban 3,-6.8616552,111.9083114,0.95,osm_fuzzy,,RUPTL-2025-2034,Tabel B6.4
+GI-JMB-0404,Gardu Induk Tuban 3,150/20,3,150.0,Jawa Timur,Jamali,way/558257192,Gardu Induk Tuban 3,-6.8616552,111.9083114,0.95,osm_fuzzy,,RUPTL-2025-2034,Tabel B6.4
 GI-JMB-0405,Blitar Baru,70/20,3,90.0,Jawa Timur,Jamali,way/558289610,Gardu Induk Blitar,-8.0738106,112.1859944,0.92,osm_fuzzy,,RUPTL-2025-2034,Tabel B6.4
 GI-JMB-0406,Caruban,70/20,2,50.0,Jawa Timur,Jamali,way/268865915,Gardu Induk Caruban,-7.5331041,111.6476194,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel B6.4
 GI-JMB-0407,Dolopo,70/20,1,30.0,Jawa Timur,Jamali,way/1256159510,Gardu Induk Dolopo,-7.746899,111.527401,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel B6.4
@@ -519,3 +519,5 @@ GI-JMB-0517,Pemecutan Kelod,150/20,4,240.0,Bali,Jamali,way/340152021,Gardu Induk
 GI-JMB-0518,Pesanggaran,150/20,3,180.0,Bali,Jamali,way/186634762,Gardu Induk Pesanggaran,-8.718465,115.2109985,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel B7.4
 GI-JMB-0519,Sanur,150/20,4,240.0,Bali,Jamali,way/311862991,Gardu Induk Sanur,-8.6748353,115.2529902,1.0,osm_fuzzy,,RUPTL-2025-2034,Tabel B7.4
 GI-JMB-0520,Tanah Lot,150/20,2,120.0,Bali,Jamali,way/1039231666,Gas Insulated Switchgear Tanah Lot,-8.5868142,115.1019199,0.95,osm_fuzzy,,RUPTL-2025-2034,Tabel B7.4
+GI-JMB-0521,Gardu Induk Ujungberung,150/70,,,Jawa Barat,Jamali,way/856953020,,-6.9352199,107.7302883,1.0,reclassified_from_generator,,OSM-overpass,JAMALI v1.0 revision
+GI-JMB-0522,Gardu Induk Tuban,150,,,Jawa Timur,Jamali,way/1068853130,,-6.8880592,112.0343827,1.0,reclassified_from_generator,,OSM-overpass,JAMALI v1.0 revision
