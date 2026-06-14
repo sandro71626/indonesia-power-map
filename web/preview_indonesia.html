@@ -480,7 +480,7 @@
     </ul>
 
     <div class="version-info">
-      Versi <span>v1.0.0-beta</span> · Pembaruan terakhir <span>30 Mei 2026</span>
+      Versi <span>v1.1.0</span> · Pembaruan terakhir <span>14 Juni 2026</span>
     </div>
 
     <button class="close" onclick="document.getElementById('about-modal').classList.remove('show')">
@@ -587,6 +587,16 @@ const PLANT_DESC = {
 };
 const DARK_TEXT = new Set(['PLTG','PLTM','PLTMH','PLTS','PLTB','PLTMG','PLTBg']);
 
+// --- Role klasifikasi pembangkit (Utility / Captive / Community) ---
+// Klasifikasi fungsional (terpisah dari jenis teknologi). Sejak v1.1.0,
+// 37 pembangkit ber-role Captive dan 53 pembangkit ber-role Community.
+// Sisanya default Utility. Lihat docs/ untuk definisi lengkap.
+const ROLE_DESC = {
+  'Utility':  'Memasok listrik ke sistem kelistrikan publik.',
+  'Captive':  'Memasok listrik untuk kebutuhan industri atau pelanggan khusus.',
+  'Community':'Memasok listrik untuk komunitas lokal, desa terpencil, atau pulau kecil.',
+};
+
 function diameterForMW(mw) {
   if (!mw) return 14;
   if (mw < 10) return 14; if (mw < 50) return 16; if (mw < 200) return 20;
@@ -649,13 +659,22 @@ function subDetailHTML(p) {
   `;
 }
 function genDetailHTML(p) {
+  // capacity_unit: 'MWp' untuk PLTS (peak nameplate Surya), 'MW' untuk
+  // pembangkit lain. Default fallback ke 'MW' kalau field kosong.
+  const unit = p.capacity_unit || (p.type === 'PLTS' ? 'MWp' : 'MW');
   const mw = p.capacity_mw
-    ? parseFloat(p.capacity_mw).toLocaleString('id-ID') + ' MW'
+    ? parseFloat(p.capacity_mw).toLocaleString('id-ID') + ' ' + unit
     : '<i>tidak tercatat</i>';
+  // Peran fungsional pembangkit (Utility/Captive/Community). roleDescription
+  // dibaca dari data kalau ada; kalau tidak, fallback ke ROLE_DESC mapping.
+  const role = p.role || 'Utility';
+  const roleDesc = p.roleDescription || ROLE_DESC[role] || ROLE_DESC['Utility'];
   return `<table class="dp-table">
     ${dpRow('ID', p.id)}
     ${dpRow('Jenis', '<strong>' + p.type + '</strong>'
         + (PLANT_DESC[p.type] ? ' — ' + PLANT_DESC[p.type] : ''))}
+    ${dpRow('Peran', '<strong>' + role + '</strong>')}
+    ${dpRow('Deskripsi', roleDesc)}
     ${dpRow('Kapasitas', mw)}
     ${dpRow('Provinsi', p.province)}
     ${dpRow('Sistem', p.system)}
@@ -679,6 +698,9 @@ function trmDetailHTML(p) {
 }
 
 // --- Highlight koneksi GI <-> transmisi (inferensi via kedekatan ujung garis) ---
+// highlightLines() juga dipakai untuk highlight ruas transmisi yang di-klik
+// langsung (showDetail branch transmission) supaya user tahu line mana yang
+// sedang ditampilkan detailnya di panel kiri.
 const CONNECT_THRESHOLD_M = 1000;   // ujung garis dianggap nyambung jika < 1 km
 let highlighted = [];
 
@@ -760,7 +782,10 @@ function showDetail(ft) {
     document.getElementById('dp-kind').textContent = 'Saluran Transmisi';
     document.getElementById('dp-title').textContent = 'Transmisi ' + p.voltage_class;
     body.innerHTML = trmDetailHTML(p);
-    clearHighlight();
+    // Highlight ruas transmisi yang sedang ditampilkan di detail panel,
+    // mirror behaviour klik GI. Pakai highlightLines([ft]) supaya semua
+    // highlight sebelumnya ke-clear dan hanya ruas ini yang ter-emphasize.
+    highlightLines([ft]);
   }
   document.getElementById('detail-panel').classList.add('open');
 }
@@ -1170,7 +1195,11 @@ function renderStatsHTML(regionKey) {
 
   const genRows = Object.entries(s.genByType)
     .sort((a, b) => b[1].mw - a[1].mw || b[1].count - a[1].count)
-    .map(([t, v]) => `<tr><td>${t}</td><td class="num">${v.count}</td><td class="num">${fmt(v.mw)} MW</td></tr>`).join('');
+    .map(([t, v]) => {
+      // PLTS pakai MWp (Megawatt-peak); jenis lain pakai MW konvensional.
+      const u = t === 'PLTS' ? 'MWp' : 'MW';
+      return `<tr><td>${t}</td><td class="num">${v.count}</td><td class="num">${fmt(v.mw)} ${u}</td></tr>`;
+    }).join('');
 
   const subRows = s.VOLT_CLASSES.filter(v => s.subByVolt[v])
     .map(v => `<tr><td>${v}</td><td class="num">${s.subByVolt[v]}</td></tr>`).join('');
@@ -1181,7 +1210,7 @@ function renderStatsHTML(regionKey) {
   return `
     <h2>Statistik ${label}</h2>
     <h3>Pembangkit</h3>
-    <p>Total: <strong>${s.gens}</strong> · Kapasitas ter-parse: <strong>${fmt(s.totalMW)} MW</strong></p>
+    <p>Total: <strong>${s.gens}</strong> · Kapasitas ter-parse: <strong>${fmt(s.totalMW)} MW/MWp</strong> <small style="color:#6c757d">(MWp untuk PLTS, MW untuk lainnya)</small></p>
     ${genRows ? `<table class="stats-table"><thead><tr><th>Tipe</th><th class="num">Count</th><th class="num">Kapasitas</th></tr></thead><tbody>${genRows}</tbody></table>` : '<p><em>tidak ada data</em></p>'}
 
     <h3>Gardu Induk</h3>

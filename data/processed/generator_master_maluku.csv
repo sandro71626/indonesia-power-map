@@ -1,13 +1,13 @@
-id,name,osm_name,type,capacity_mw,province,system,status,operator,method,lat,lon,osm_id,osm_source,review_flag,source_id,capacity_unit
-GEN-MLK-0001,PLTU Waai,PLTU Waai,PLTU,30.0,Maluku,Maluku,existing,,,-3.5505619,128.333643,way/174363561,coal,,OSM-overpass,MW
-GEN-MLK-0002,PLTS Morotai,PLTS Morotai,PLTS,0.6,Maluku Utara,Maluku,existing,PT PLN,photovoltaic,2.0049563,128.2828028,way/188467200,solar,,OSM-overpass,MWp
-GEN-MLK-0004,PLTU Tidore,PLTU Tidore,PLTU,14.0,Maluku Utara,Maluku,existing,,,0.7392645,127.3882774,way/391581020,coal,,OSM-overpass,MW
-GEN-MLK-0005,PLTMG Seram,PLTMG Seram,PLTMG,20.0,Maluku,Maluku,existing,,combustion,-3.3062485,128.9463252,way/501327305,gas,,OSM-overpass,MW
-GEN-MLK-0006,PLTS Pulau Tiga,PLTS Pulau Tiga,PLTS,0.075,Maluku,Maluku,existing,,photovoltaic,-3.6530298,127.9064399,way/522713233,solar,,OSM-overpass,MWp
-GEN-MLK-0007,PLTS Tahalupu,PLTS Tahalupu,PLTS,0.1,Maluku,Maluku,existing,,photovoltaic,-3.231044,127.6552233,way/799249943,solar,,OSM-overpass,MWp
-GEN-MLK-0008,PLTMG Ternate,PLTMG Ternate,PLTMG,30.0,Maluku Utara,Maluku,existing,,combustion,0.7667497,127.3062418,way/951367598,gas,,OSM-overpass,MW
-GEN-MLK-0009,PLTD Kayu Merah,PLTD Kayu Merah,PLTD,25.0,Maluku Utara,Maluku,existing,,,0.7608672,127.3705052,way/951367599,diesel,,OSM-overpass,MW
-GEN-MLK-0010,PLTMG Dullah,PLTMG Dullah,PLTMG,20.0,Maluku,Maluku,existing,,combustion,-5.5550791,132.7721921,way/1082807974,gas,NO_CAPACITY,OSM-overpass,MW
-GEN-MLK-0013,PLTU Weda Bay,PLTU Weda Bay Power Plant（韦达贝燃煤发电厂）,PLTU,4000.0,Maluku Utara,Maluku,existing,,combustion,0.4765027,128.0013922,way/1152758557,coal,CAPACITY_FLAG_4GW_verify_multiunit,OSM-overpass,MW
-GEN-MLK-0014,PLTS Daruba,,PLTS,0.600,Maluku Utara,Maluku,existing,,,2.0377257,128.2999183,way/1204724030,solar,NO_NAME;NO_CAPACITY,OSM-overpass,MWp
-GEN-MLK-0015,PLTS Terpusat Desa Posi-Posi,,PLTS,0.0005,Maluku Utara,Maluku,existing,,,2.2957053,128.1798122,way/1205552684,solar,NO_NAME;NO_CAPACITY,OSM-overpass,MWp
+id,name,osm_name,type,capacity_mw,province,system,status,operator,method,lat,lon,osm_id,osm_source,review_flag,source_id,capacity_unit,role,roleDescription,roleConfidence,roleReason
+GEN-MLK-0001,PLTU Waai,PLTU Waai,PLTU,30.0,Maluku,Maluku,existing,,,-3.5505619,128.333643,way/174363561,coal,,OSM-overpass,MW,Utility,Memasok listrik ke sistem kelistrikan publik.,,
+GEN-MLK-0002,PLTS Morotai,PLTS Morotai,PLTS,0.6,Maluku Utara,Maluku,existing,PT PLN,photovoltaic,2.0049563,128.2828028,way/188467200,solar,,OSM-overpass,MWp,Utility,Memasok listrik ke sistem kelistrikan publik.,,
+GEN-MLK-0004,PLTU Tidore,PLTU Tidore,PLTU,14.0,Maluku Utara,Maluku,existing,,,0.7392645,127.3882774,way/391581020,coal,,OSM-overpass,MW,Utility,Memasok listrik ke sistem kelistrikan publik.,,
+GEN-MLK-0005,PLTMG Seram,PLTMG Seram,PLTMG,20.0,Maluku,Maluku,existing,,combustion,-3.3062485,128.9463252,way/501327305,gas,,OSM-overpass,MW,Utility,Memasok listrik ke sistem kelistrikan publik.,,
+GEN-MLK-0006,PLTS Pulau Tiga,PLTS Pulau Tiga,PLTS,0.075,Maluku,Maluku,existing,,photovoltaic,-3.6530298,127.9064399,way/522713233,solar,,OSM-overpass,MWp,Community,"Memasok listrik untuk komunitas lokal, desa terpencil, atau pulau kecil.",High,Sistem elektrifikasi pulau kecil
+GEN-MLK-0007,PLTS Tahalupu,PLTS Tahalupu,PLTS,0.1,Maluku,Maluku,existing,,photovoltaic,-3.231044,127.6552233,way/799249943,solar,,OSM-overpass,MWp,Community,"Memasok listrik untuk komunitas lokal, desa terpencil, atau pulau kecil.",High,Sistem elektrifikasi pulau kecil
+GEN-MLK-0008,PLTMG Ternate,PLTMG Ternate,PLTMG,30.0,Maluku Utara,Maluku,existing,,combustion,0.7667497,127.3062418,way/951367598,gas,,OSM-overpass,MW,Utility,Memasok listrik ke sistem kelistrikan publik.,,
+GEN-MLK-0009,PLTD Kayu Merah,PLTD Kayu Merah,PLTD,25.0,Maluku Utara,Maluku,existing,,,0.7608672,127.3705052,way/951367599,diesel,,OSM-overpass,MW,Utility,Memasok listrik ke sistem kelistrikan publik.,,
+GEN-MLK-0010,PLTMG Dullah,PLTMG Dullah,PLTMG,20.0,Maluku,Maluku,existing,,combustion,-5.5550791,132.7721921,way/1082807974,gas,NO_CAPACITY,OSM-overpass,MW,Utility,Memasok listrik ke sistem kelistrikan publik.,,
+GEN-MLK-0013,PLTU Weda Bay,PLTU Weda Bay Power Plant（韦达贝燃煤发电厂）,PLTU,4000.0,Maluku Utara,Maluku,existing,,combustion,0.4765027,128.0013922,way/1152758557,coal,CAPACITY_FLAG_4GW_verify_multiunit,OSM-overpass,MW,Captive,Memasok listrik untuk kebutuhan industri atau pelanggan khusus.,High,Nama/operator menunjukkan fasilitas smelter
+GEN-MLK-0014,PLTS Daruba,,PLTS,0.600,Maluku Utara,Maluku,existing,,,2.0377257,128.2999183,way/1204724030,solar,NO_NAME;NO_CAPACITY,OSM-overpass,MWp,Utility,Memasok listrik ke sistem kelistrikan publik.,,
+GEN-MLK-0015,PLTS Terpusat Desa Posi-Posi,,PLTS,0.0005,Maluku Utara,Maluku,existing,,,2.2957053,128.1798122,way/1205552684,solar,NO_NAME;NO_CAPACITY,OSM-overpass,MWp,Community,"Memasok listrik untuk komunitas lokal, desa terpencil, atau pulau kecil.",High,Sistem elektrifikasi desa
