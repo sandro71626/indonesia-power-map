@@ -12,8 +12,8 @@ authors:
   - given-names: Sandro
     family-names: Sitompul
     email: contact@indonesiapowermap.com
-date-released: 2026-06-14
-version: "1.1.0"
+date-released: 2026-06-24
+version: "1.1.1"
 license: Apache-2.0
 license-url: "https://www.apache.org/licenses/LICENSE-2.0"
 repository-code: "https://github.com/<username>/indonesia-power-map"
@@ -57,6 +57,6 @@ preferred-citation:
       family-names: Sitompul
       email: contact@indonesiapowermap.com
   year: 2026
-  version: "1.1.0"
+  version: "1.1.1"
   url: "https://github.com/<username>/indonesia-power-map"
   license: Apache-2.0

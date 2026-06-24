@@ -2,7 +2,7 @@
 
 > Indonesia Power Map adalah peta digital sistem tenaga listrik Indonesia berbasis data publik, ditujukan untuk edukasi, eksplorasi, dan analisis umum.
 
-**Status:** Stable · **Versi:** v1.1.0 · **Pembaruan terakhir:** 14 Juni 2026 · **Diinisiasi:** 2026
+**Status:** Stable · **Versi:** v1.1.1 · **Pembaruan terakhir:** 24 Juni 2026 · **Diinisiasi:** 2026
 
 [![DOI](https://zenodo.org/badge/1236669929.svg)](https://doi.org/10.5281/zenodo.20208412)
 ---
@@ -166,7 +166,7 @@ Apabila data atau analisis dari repositori ini digunakan dalam publikasi atau la
 
 ```
 Sitompul, S. A. (2026). Peta Ketenagalistrikan Indonesia (Indonesia Power Map).
-Version v1.1.0. https://github.com/sandro71626/indonesia-power-map
+Version v1.1.1. https://github.com/sandro71626/indonesia-power-map
 ```
 
 Format BibTeX dan format sitasi lain dapat dihasilkan otomatis melalui tombol "Cite this repository" pada sidebar GitHub (didukung oleh [`CITATION.cff`](CITATION.cff)).
