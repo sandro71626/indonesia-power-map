@@ -132,6 +132,10 @@
   .sublayers .sw-line { width: 16px; border-radius: 1px; flex-shrink: 0; }
   .sublayers .sw-box { width: 11px; height: 11px; border: 1.4px solid #222;
        flex-shrink: 0; box-sizing: border-box; }
+  .sublayers .sw-dot { width: 10px; height: 10px; border-radius: 50%;
+       flex-shrink: 0; box-sizing: border-box; }
+  .sublayers .sub-hint { margin: 4px 0 1px 0; font-size: 10px; color: #6c757d;
+       font-weight: 600; letter-spacing: 0.3px; }
 
   @media (max-width: 600px) {
     .sidebar { width: calc(100vw - 20px); right: 10px; top: 86px; max-height: 42vh; }
@@ -317,10 +321,18 @@
       <div class="layer-toggle"><input type="checkbox" id="m-gen">
         <label for="m-gen"><strong>Pembangkit</strong></label></div>
       <div class="sublayers">
+        <div class="sub-hint">UKURAN</div>
         <label><input type="checkbox" class="sub-gen" value="b500" checked> ≥ 500 MW</label>
         <label><input type="checkbox" class="sub-gen" value="b100" checked> 100–500 MW</label>
         <label><input type="checkbox" class="sub-gen" value="b20" checked> 20–100 MW</label>
         <label><input type="checkbox" class="sub-gen" value="b0" checked> &lt; 20 MW / tak tercatat</label>
+        <div class="sub-hint">PERAN</div>
+        <label><input type="checkbox" class="sub-gen-role" value="Utility" checked>
+          <span class="sw-dot" style="background:#1f77b4"></span> Utility</label>
+        <label><input type="checkbox" class="sub-gen-role" value="Captive" checked>
+          <span class="sw-dot" style="background:#d97706"></span> Captive</label>
+        <label><input type="checkbox" class="sub-gen-role" value="Community" checked>
+          <span class="sw-dot" style="background:#2ca02c"></span> Community</label>
       </div>
     </div>
 
@@ -591,11 +603,18 @@ const DARK_TEXT = new Set(['PLTG','PLTM','PLTMH','PLTS','PLTB','PLTMG','PLTBg'])
 // Klasifikasi fungsional (terpisah dari jenis teknologi). Sejak v1.1.0,
 // 37 pembangkit ber-role Captive dan 53 pembangkit ber-role Community.
 // Sisanya default Utility. Lihat docs/ untuk definisi lengkap.
+const ROLE_KEYS = ['Utility', 'Captive', 'Community'];
 const ROLE_DESC = {
   'Utility':  'Memasok listrik ke sistem kelistrikan publik.',
   'Captive':  'Memasok listrik untuk kebutuhan industri atau pelanggan khusus.',
   'Community':'Memasok listrik untuk komunitas lokal, desa terpencil, atau pulau kecil.',
 };
+// Helper: ambil role dari props dengan default 'Utility' untuk backward
+// compatibility dengan data lama yang belum punya field role. Dipakai
+// oleh genDetailHTML, applyFilters, dan future stats features.
+function getRole(props) {
+  return (props && props.role) || 'Utility';
+}
 
 function diameterForMW(mw) {
   if (!mw) return 14;
@@ -667,7 +686,7 @@ function genDetailHTML(p) {
     : '<i>tidak tercatat</i>';
   // Peran fungsional pembangkit (Utility/Captive/Community). roleDescription
   // dibaca dari data kalau ada; kalau tidak, fallback ke ROLE_DESC mapping.
-  const role = p.role || 'Utility';
+  const role = getRole(p);
   const roleDesc = p.roleDescription || ROLE_DESC[role] || ROLE_DESC['Utility'];
   return `<table class="dp-table">
     ${dpRow('ID', p.id)}
@@ -913,10 +932,11 @@ function checkedSet(selector) {
 function applyFilters() {
   const regionOn = {};
   REGION_KEYS.forEach(k => { regionOn[k] = document.getElementById('r-' + k).checked; });
-  const trmVolt = checkedSet('.sub-trm');   // sub-layer tegangan transmisi
-  const subVolt = checkedSet('.sub-sub');   // sub-layer tegangan gardu induk
-  const genBkt  = checkedSet('.sub-gen');   // sub-layer bucket kapasitas pembangkit
-  const typesOn = checkedSet('.f-type');    // toggle jenis pembangkit (legend interaktif)
+  const trmVolt = checkedSet('.sub-trm');     // sub-layer tegangan transmisi
+  const subVolt = checkedSet('.sub-sub');     // sub-layer tegangan gardu induk
+  const genBkt  = checkedSet('.sub-gen');     // sub-layer bucket kapasitas pembangkit
+  const genRole = checkedSet('.sub-gen-role'); // sub-layer peran pembangkit (Utility/Captive/Community)
+  const typesOn = checkedSet('.f-type');      // toggle jenis pembangkit (legend interaktif)
   const province = document.getElementById('f-province').value;
 
   let shown = 0;
@@ -930,7 +950,10 @@ function applyFilters() {
       const c = voltageClassOf(ft);
       layerVis = (c === 'other') ? true : subVolt.has(c);
     } else {
-      layerVis = genBkt.has(capacityBucket(ft.props.capacity_mw));
+      // Pembangkit: AND antara filter kapasitas (sub-gen) dan filter peran
+      // (sub-gen-role). Pembangkit terlihat hanya kalau lolos kedua-duanya.
+      layerVis = genBkt.has(capacityBucket(ft.props.capacity_mw))
+              && genRole.has(getRole(ft.props));
     }
     const vis = regionOn[ft.region] && layerVis
       && (ft.kind !== 'gen' || typesOn.has(ft.props.type))
@@ -1068,13 +1091,21 @@ function setupFilters() {
   wireLayerGroup('m-sub', 'sub-sub');
   wireLayerGroup('m-gen', 'sub-gen');
 
-  // Reset filter (jenis pembangkit & provinsi)
+  // Role filter (sub-gen-role) — standalone, tidak ikut master m-gen.
+  // Default semua tercentang. applyFilters() langsung re-evaluate visibilitas
+  // pembangkit saat checkbox di-toggle. Performa OK karena loop linear lewat
+  // features dan setStyle/addLayer hanya dipanggil saat visibility berubah.
+  document.querySelectorAll('.sub-gen-role').forEach(c =>
+    c.addEventListener('change', applyFilters));
+
+  // Reset filter (jenis pembangkit & provinsi & peran)
   document.getElementById('f-reset').addEventListener('click', () => {
     provSel.value = '';
     document.querySelectorAll('.f-type').forEach(c => {
       c.checked = true;
       c.closest('.type-toggle').classList.remove('off');
     });
+    document.querySelectorAll('.sub-gen-role').forEach(c => { c.checked = true; });
     applyFilters();
   });
 
