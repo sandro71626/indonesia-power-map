@@ -9,26 +9,36 @@
   body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #222; }
   #map { width: 100vw; height: 100vh; background: #f5f5f5; }
 
-  .header { position: absolute; top: 10px; left: 10px;
-            background: white; padding: 8px 14px; border-radius: 6px;
-            box-shadow: 0 1px 4px rgba(0,0,0,0.18); z-index: 1000;
-            font-size: 14px; font-weight: 600; max-width: 62vw; }
+  /* ===== TOP CONTROLS (header + menu-bar stack) =====
+     Container absolute single-anchor; isinya (header + menu-bar) flow
+     natural sebagai flex column. Tinggi container otomatis mengikuti
+     content — kalau header line wrap di mobile, menu-bar ikut turun.
+     Tidak ada nilai top hardcoded untuk menu-bar. */
+  .top-controls { position: absolute; top: 10px; left: 10px; z-index: 1000;
+                  display: flex; flex-direction: column; gap: 8px;
+                  max-width: 62vw; align-items: flex-start; }
+
+  .header { background: white; padding: 8px 14px; border-radius: 6px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.18);
+            font-size: 14px; font-weight: 600; width: 100%;
+            box-sizing: border-box; }
   .header .sub { font-weight: 400; font-size: 11px; color: #666; margin-top: 2px; }
   .header .readout { font-weight: 400; font-size: 11px; color: #1f77b4; margin-top: 3px;
                      font-variant-numeric: tabular-nums; }
 
-  /* Tombol zoom digeser turun supaya tidak dempet/menimpa header + menu-bar */
-  .leaflet-top.leaflet-left { margin-top: 126px; }
+  /* Tombol zoom & sidebar offset diatur dinamis via CSS var
+     --top-controls-offset, di-update oleh ResizeObserver. Fallback 140px
+     dipakai kalau JS belum jalan (initial paint). */
+  .leaflet-top.leaflet-left { margin-top: var(--top-controls-offset, 140px); }
 
-  /* ===== MENU BAR (di bawah header) =====
-     Container horizontal untuk fitur cross-cutting: Legenda, Profil Provinsi,
-     dst. Mudah ditambah ke depannya tanpa restrukturisasi UI.
-     top:78px = clearance dari header (header berhenti ~62px) + 16px breathing
-     room. Tetap di atas leaflet zoom (126px). */
-  .menu-bar { position: absolute; top: 78px; left: 10px; z-index: 1000;
-              background: white; border-radius: 6px; padding: 3px;
+  /* ===== MENU BAR =====
+     Container horizontal untuk fitur cross-cutting: Legenda, Profil
+     Provinsi, dst. Mudah ditambah ke depannya tanpa restrukturisasi UI.
+     Flow natural di bawah header (anak .top-controls), TANPA absolute
+     positioning — tinggi header dinamis langsung mempengaruhi posisi. */
+  .menu-bar { background: white; border-radius: 6px; padding: 3px;
               box-shadow: 0 1px 4px rgba(0,0,0,0.18);
-              display: flex; gap: 2px; flex-wrap: wrap; max-width: 62vw; }
+              display: flex; gap: 2px; flex-wrap: wrap; }
   .menu-btn { background: none; border: none; cursor: pointer;
               font-size: 12px; padding: 6px 11px; border-radius: 4px;
               color: #333; font-weight: 500; line-height: 1;
@@ -154,11 +164,14 @@
        font-weight: 600; letter-spacing: 0.3px; }
 
   @media (max-width: 600px) {
-    .sidebar { width: calc(100vw - 20px); right: 10px; top: 132px; max-height: 42vh; }
-    .header { font-size: 12px; padding: 6px 10px; max-width: calc(100vw - 20px); }
-    .menu-bar { top: 70px; max-width: calc(100vw - 20px); }
+    /* top-controls auto-resize via flex; tinggi diserap oleh ResizeObserver
+       lalu di-broadcast ke --top-controls-offset. Sidebar (full-width di
+       mobile) juga pakai CSS var supaya selalu di bawah top-controls. */
+    .top-controls { max-width: calc(100vw - 20px); }
+    .sidebar { width: calc(100vw - 20px); right: 10px;
+               top: var(--top-controls-offset, 150px); max-height: 42vh; }
+    .header { font-size: 12px; padding: 6px 10px; }
     .menu-btn { font-size: 11px; padding: 5px 9px; }
-    .leaflet-top.leaflet-left { margin-top: 118px; }
     .footer { font-size: 9px; max-width: calc(100vw - 20px); }
     .modal { padding: 18px 20px; font-size: 12px; }
   }
@@ -315,21 +328,28 @@
 </head>
 <body>
 
-<div class="header">
-  Peta Ketenagalistrikan Indonesia
-  <div class="sub">8 region: JAMALI, Sumatra, Kalimantan, Sulawesi, Maluku, Papua, NTB, NTT · data eksisting</div>
-  <div class="readout" id="readout">memuat data…</div>
-</div>
+<!-- Top controls: header + menu-bar stack flex column. Container ini absolute-
+     positioned (anchor top-left), tapi children-nya flow natural — sehingga
+     menu-bar selalu pas di bawah header berapa pun tingginya (1 baris di
+     desktop, 2-3 baris di mobile saat region list wrap). ResizeObserver
+     update --top-controls-offset CSS var untuk leaflet zoom & sidebar mobile. -->
+<div class="top-controls" id="top-controls">
+  <div class="header">
+    Peta Ketenagalistrikan Indonesia
+    <div class="sub">8 region: JAMALI, Sumatra, Kalimantan, Sulawesi, Maluku, Papua, NTB, NTT · data eksisting</div>
+    <div class="readout" id="readout">memuat data…</div>
+  </div>
 
-<!-- Menu bar horizontal di bawah header. Container extensible untuk fitur
-     cross-cutting: Legenda, Profil Provinsi (sekarang), Profil Sistem
-     Regional, Perbandingan Wilayah, Statistik Nasional (future). -->
-<nav class="menu-bar" id="menu-bar" aria-label="Menu fitur">
-  <button class="menu-btn active" id="menu-legend"
-          title="Tampilkan/sembunyikan panel legenda">📖 Legenda</button>
-  <button class="menu-btn" id="menu-province"
-          title="Profil ringkas per provinsi">📊 Profil Provinsi</button>
-</nav>
+  <!-- Menu bar — container extensible untuk fitur cross-cutting: Legenda,
+       Profil Provinsi (sekarang), Profil Sistem Regional, Perbandingan
+       Wilayah, Statistik Nasional (future). -->
+  <nav class="menu-bar" id="menu-bar" aria-label="Menu fitur">
+    <button class="menu-btn active" id="menu-legend"
+            title="Tampilkan/sembunyikan panel legenda">📖 Legenda</button>
+    <button class="menu-btn" id="menu-province"
+            title="Profil ringkas per provinsi">📊 Profil Provinsi</button>
+  </nav>
+</div>
 
 <div id="map"></div>
 
@@ -1702,6 +1722,34 @@ function navigateToFeature(ft) {
   map.flyTo(ll, NAV_ZOOM, { duration: NAV_FLY_DURATION });
   map.once('moveend', () => showDetail(ft));
 }
+
+// ============================================================
+// RESPONSIVE TOP-CONTROLS OFFSET
+// ============================================================
+// Header + menu-bar stack dalam .top-controls. Tingginya bisa berubah karena:
+// - Region list di .header line-wrap saat viewport mengecil
+// - Browser zoom / font scaling user
+// - Future addition (tombol baru di menu-bar)
+// ResizeObserver tracks tinggi aktual lalu broadcast ke CSS var supaya
+// .leaflet-top.leaflet-left dan .sidebar (mobile) selalu di bawah top-controls
+// tanpa overlap atau gap berlebihan. Fallback static 140px / 150px dipakai
+// kalau ResizeObserver tidak tersedia (browser sangat lama).
+(function() {
+  const top = document.getElementById('top-controls');
+  if (!top) return;
+  const update = () => {
+    const h = top.getBoundingClientRect().height;
+    // +20px = 10px top-anchor + 10px breathing room antara toolbar & control
+    document.documentElement.style.setProperty(
+      '--top-controls-offset', Math.ceil(h + 20) + 'px');
+  };
+  update();  // initial paint
+  if (typeof ResizeObserver !== 'undefined') {
+    new ResizeObserver(update).observe(top);
+  } else {
+    window.addEventListener('resize', update);  // fallback
+  }
+})();
 
 document.querySelectorAll('.region-stats').forEach(btn => {
   btn.addEventListener('click', e => {
