@@ -1678,21 +1678,29 @@ function renderProvinceProfile(provinceName) {
   });
 }
 
-// Navigate ke feature: tutup province-modal, pan+zoom peta ke lokasi,
-// pastikan marker visible (overrides filter sementara), buka detail panel.
-// Mirror perilaku selectSearchResult() supaya konsisten dengan search flow.
+// Navigate ke feature dari Profil Provinsi (atau panel lain di masa depan):
+// 1) Tutup province-modal supaya peta visible
+// 2) Pastikan marker visible (override filter sementara) SEBELUM animasi
+// 3) Smooth fly animation ke lokasi (Leaflet flyTo, bukan setView jump)
+// 4) Detail panel dibuka SETELAH animasi selesai (moveend event) supaya
+//    transisi terasa natural — popup tidak muncul sambil peta masih bergerak.
 // Safety: kalau ft / ft.layer / getLatLng tidak ada (mis. feature deleted
 // atau geometry corrupt), bail out tanpa error.
+const NAV_ZOOM = 13;            // zoom level konsisten untuk navigasi
+const NAV_FLY_DURATION = 1.0;   // detik — sweet spot antara fast & natural
+
 function navigateToFeature(ft) {
   if (!ft || !ft.layer || typeof ft.layer.getLatLng !== 'function') {
     console.warn('navigateToFeature: feature tidak punya lokasi yang valid', ft);
     return;
   }
   document.getElementById('province-modal').classList.remove('show');
-  const ll = ft.layer.getLatLng();
-  map.setView(ll, 13);
   if (!ft.visible) { ft.layer.addTo(map); ft.visible = true; }
-  showDetail(ft);
+  const ll = ft.layer.getLatLng();
+  // flyTo melakukan pan + zoom smooth dengan easing curve bawaan Leaflet.
+  // moveend.once() fires saat animasi selesai (atau di-cancel).
+  map.flyTo(ll, NAV_ZOOM, { duration: NAV_FLY_DURATION });
+  map.once('moveend', () => showDetail(ft));
 }
 
 document.querySelectorAll('.region-stats').forEach(btn => {
