@@ -45,6 +45,9 @@
               transition: background 0.12s, color 0.12s; }
   .menu-btn:hover { background: #f0f0f0; color: #1f77b4; }
   .menu-btn.active { background: #1f77b4; color: white; }
+  /* Icon-only button (mis. tombol Home) — square aspect, sedikit lebih besar
+     font supaya emoji ikon balance dengan tombol bertext. */
+  .menu-btn.menu-icon { font-size: 14px; padding: 5px 9px; line-height: 1; }
 
   .footer { position: absolute; bottom: 10px; left: 10px;
             background: rgba(255,255,255,0.95); padding: 6px 10px; border-radius: 4px;
@@ -344,6 +347,9 @@
        Profil Provinsi (sekarang), Profil Sistem Regional, Perbandingan
        Wilayah, Statistik Nasional (future). -->
   <nav class="menu-bar" id="menu-bar" aria-label="Menu fitur">
+    <button class="menu-btn menu-icon" id="menu-home"
+            aria-label="Kembali ke Tampilan Awal"
+            title="Kembali ke Tampilan Awal">🏠</button>
     <button class="menu-btn active" id="menu-legend"
             title="Tampilkan/sembunyikan panel legenda">📖 Legenda</button>
     <button class="menu-btn" id="menu-province"
@@ -1241,6 +1247,91 @@ function setupFilters() {
 // ============================================================
 // INIT
 // ============================================================
+// ============================================================
+// HOME / RESET — Capture initial state, restore on Home click
+// ============================================================
+// Dipakai oleh tombol 🏠 di menu-bar. Capture state semua filter
+// (checkbox/select/collapsed section) DI AKHIR init() setelah setupFilters
+// + initial applyFilters jalan, supaya snapshot mencerminkan kondisi
+// "first paint" — bukan state user setelah eksplorasi.
+let INITIAL_BOUNDS = null;
+let INITIAL_FILTER_STATE = null;
+
+function captureFilterState() {
+  const checkboxes = {};
+  const selects = {};
+  const collapsed = [];
+  document.querySelectorAll('.sidebar input[type=checkbox]').forEach(c => {
+    const key = c.id || (c.className + '|' + c.value);
+    // Capture both checked & indeterminate (master toggle state)
+    checkboxes[key] = { checked: c.checked, indeterminate: c.indeterminate };
+  });
+  document.querySelectorAll('.sidebar select').forEach(s => {
+    if (s.id) selects[s.id] = s.value;
+  });
+  document.querySelectorAll('.sidebar .section.collapsible').forEach((sec, i) => {
+    if (sec.classList.contains('collapsed')) collapsed.push(i);
+  });
+  return { checkboxes, selects, collapsed };
+}
+
+function restoreFilterState(state) {
+  if (!state) return;
+  document.querySelectorAll('.sidebar input[type=checkbox]').forEach(c => {
+    const key = c.id || (c.className + '|' + c.value);
+    const saved = state.checkboxes[key];
+    if (saved) {
+      c.checked = saved.checked;
+      c.indeterminate = saved.indeterminate;
+    }
+  });
+  document.querySelectorAll('.sidebar select').forEach(s => {
+    if (s.id && s.id in state.selects) s.value = state.selects[s.id];
+  });
+  document.querySelectorAll('.sidebar .section.collapsible').forEach((sec, i) => {
+    sec.classList.toggle('collapsed', state.collapsed.indexOf(i) !== -1);
+  });
+}
+
+// Tombol Home — restore tampilan awal eksplorasi (BUKAN reset penuh website:
+// disclaimer/about tetap hanya muncul lewat mekanisme load awal). Reuse
+// NAV_FLY_DURATION & flyToBounds supaya animasi konsisten dengan
+// navigateToFeature.
+function goHome() {
+  // 1. Tutup popup pembangkit (detail panel + transmisi highlight)
+  closeDetail();
+  // 2. Tutup modal eksplorasi (province, stats). Disclaimer (about) sengaja
+  //    TIDAK ditutup paksa di sini — kalau lagi terbuka (mis. user lagi
+  //    baca), biarkan; kalau tidak terbuka, tidak akan muncul lagi.
+  document.getElementById('province-modal').classList.remove('show');
+  document.getElementById('stats-modal').classList.remove('show');
+  // 3. Clear search input + dropdown results
+  const si = document.getElementById('search-input');
+  if (si) si.value = '';
+  const sr = document.getElementById('search-results');
+  if (sr) sr.innerHTML = '';
+  // 4. Restore semua filter & section collapse state
+  restoreFilterState(INITIAL_FILTER_STATE);
+  // 5. Sync visual state plant-type toggles (.off class mengikuti checked)
+  document.querySelectorAll('.type-toggle').forEach(t => {
+    const c = t.querySelector('input.f-type');
+    if (c) t.classList.toggle('off', !c.checked);
+  });
+  // 6. Restore sidebar visibility (Legenda) — set ke active state default
+  document.querySelector('.sidebar').classList.remove('minimized');
+  document.getElementById('menu-legend').classList.add('active');
+  // 7. Re-apply filter — update marker visibility berdasar state yang baru
+  applyFilters();
+  // 8. Smooth flyTo back to initial Indonesia view (bounds dari init())
+  if (INITIAL_BOUNDS) {
+    map.flyToBounds(INITIAL_BOUNDS, {
+      padding: [20, 20], duration: NAV_FLY_DURATION,
+    });
+  } else {
+    map.flyTo([-2.5, 118.0], 5, { duration: NAV_FLY_DURATION });
+  }
+}
+
 function init() {
   if (REGION_KEYS.every(k => !REGIONS[k])) {
     document.getElementById('readout').textContent =
@@ -1256,10 +1347,16 @@ function init() {
     if (ft.kind === 'trm') ft.layer.getLatLngs().forEach(ll => allLatLngs.push(ll));
     else allLatLngs.push(ft.layer.getLatLng());
   }
-  if (allLatLngs.length) map.fitBounds(L.latLngBounds(allLatLngs), { padding: [20, 20] });
+  if (allLatLngs.length) {
+    INITIAL_BOUNDS = L.latLngBounds(allLatLngs);
+    map.fitBounds(INITIAL_BOUNDS, { padding: [20, 20] });
+  }
 
   updateZoomUI();
   applyFilters();
+
+  // Capture state DI SINI — setelah semua control + visibility ter-settle
+  INITIAL_FILTER_STATE = captureFilterState();
 }
 
 // ============================================================
@@ -1801,6 +1898,10 @@ document.addEventListener('keydown', e => {
     renderProvincePicker();
     document.getElementById('province-modal').classList.add('show');
   });
+
+  // Home — kembali ke tampilan awal eksplorasi (lihat goHome() untuk detail).
+  // TIDAK reload halaman; disclaimer/about modal tidak dimunculkan ulang.
+  document.getElementById('menu-home').addEventListener('click', goHome);
 })();
 
 // === SHOW DISCLAIMER MODAL ON LOAD ===
