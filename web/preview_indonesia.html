@@ -696,6 +696,14 @@
 // MAP + BASEMAPS
 // ============================================================
 const map = L.map('map', {zoomControl: false}).setView([-2.5, 118.0], 5);
+
+// Override attribution prefix Leaflet — hilangkan SVG bendera bawaan
+// (Ukraina, dari Leaflet 1.9.x default sebagai solidarity statement).
+// Tetap pertahankan credit "Leaflet" + link ke leafletjs.com sesuai
+// konvensi lisensi BSD-2. Pilihan netral untuk identitas peta.
+map.attributionControl.setPrefix(
+  '<a href="https://leafletjs.com" title="A JavaScript library for interactive maps">Leaflet</a>'
+);
 L.control.zoom({position: 'topleft'}).addTo(map);
 
 const basemaps = {
