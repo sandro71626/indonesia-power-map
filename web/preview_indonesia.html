@@ -49,6 +49,28 @@
      font supaya emoji ikon balance dengan tombol bertext. */
   .menu-btn.menu-icon { font-size: 14px; padding: 5px 9px; line-height: 1; }
 
+  /* ===== CONTEXT ANCHOR =====
+     Pill ringan yang muncul di bawah menu-bar saat user sedang dalam
+     konteks suatu provinsi. Klik = buka ulang Profil Provinsi tersebut.
+     Filosofi: bukan primary button, bukan breadcrumb. Hanya marker konteks
+     aktif. Auto-hide kalau belum/tidak ada konteks (.show toggled by JS). */
+  .context-anchor { display: none; align-items: center; gap: 5px;
+                    background: white; border: 1px solid #e0e0e0;
+                    border-radius: 14px; padding: 4px 11px;
+                    font-size: 11px; color: #555; cursor: pointer;
+                    align-self: flex-start; font-family: inherit;
+                    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+                    transition: background 0.12s, color 0.12s,
+                                border-color 0.12s; }
+  .context-anchor.show { display: inline-flex; }
+  .context-anchor:hover { background: #f7faff; color: #1f77b4;
+                          border-color: #1f77b4; }
+  .context-anchor:hover .name { text-decoration: underline;
+                                text-decoration-thickness: 1px;
+                                text-underline-offset: 2px; }
+  .context-anchor .icon { font-size: 12px; line-height: 1; }
+  .context-anchor .name { font-weight: 500; }
+
   .footer { position: absolute; bottom: 10px; left: 10px;
             background: rgba(255,255,255,0.95); padding: 6px 10px; border-radius: 4px;
             font-size: 10px; color: #666; max-width: 60vw; line-height: 1.5; z-index: 999; }
@@ -310,6 +332,19 @@
   .profile-table .role-dot { display: inline-block; width: 8px; height: 8px;
                              border-radius: 50%; margin-right: 6px;
                              vertical-align: middle; }
+  /* Role row & Tech row clickable — gaya konsisten dengan .profile-top card
+     (cursor pointer + hover bg). Row tetap baris tabel, tapi terasa
+     interaktif. Empty row (count=0) tetap inert. */
+  .profile-table tr.role-row.clickable,
+  .profile-table tr.tech-row.clickable { cursor: pointer;
+                                         transition: background 0.12s; }
+  .profile-table tr.role-row.clickable td,
+  .profile-table tr.tech-row.clickable td { transition: color 0.12s; }
+  .profile-table tr.role-row.clickable:hover,
+  .profile-table tr.tech-row.clickable:hover { background: #f7faff; }
+  .profile-table tr.role-row.clickable:hover td:first-child,
+  .profile-table tr.tech-row.clickable:hover td:first-child { color: #1f77b4; }
+  .profile-table tr.role-row.empty td:first-child { color: #aaa; }
   .profile-top { background: #fff; padding: 9px 12px; border: 1px solid #e8e8e8;
                  border-radius: 4px; cursor: pointer;
                  display: flex; align-items: center; gap: 8px;
@@ -355,6 +390,16 @@
     <button class="menu-btn" id="menu-province"
             title="Profil ringkas per provinsi">📊 Profil Provinsi</button>
   </nav>
+
+  <!-- Context Anchor — pill konteks aktif. Muncul saat user dalam konteks
+       suatu provinsi (after open Profil Provinsi). Klik = reopen profile
+       tanpa ubah peta/filter. Hidden by default. JS toggle via .show. -->
+  <button class="context-anchor" id="context-anchor" type="button"
+          title="Kembali ke Profil Provinsi yang sedang aktif"
+          aria-label="Kembali ke Profil Provinsi yang sedang aktif">
+    <span class="icon" aria-hidden="true">📍</span>
+    <span class="name" id="context-anchor-name"></span>
+  </button>
 </div>
 
 <div id="map"></div>
@@ -1298,6 +1343,8 @@ function restoreFilterState(state) {
 // NAV_FLY_DURATION & flyToBounds supaya animasi konsisten dengan
 // navigateToFeature.
 function goHome() {
+  // 0. Bersihkan context anchor — user kembali ke "no province context"
+  setProvinceContext(null);
   // 1. Tutup popup pembangkit (detail panel + transmisi highlight)
   closeDetail();
   // 2. Tutup modal eksplorasi (province, stats). Disclaimer (about) sengaja
@@ -1599,6 +1646,28 @@ const ROLE_COLOR = {
 };
 
 // ============================================================
+// CONTEXT ANCHOR — konteks provinsi aktif
+// ============================================================
+// State: provinsi mana yang sedang user eksplor (last viewed Profil
+// Provinsi). Null kalau belum/tidak ada. Updated di renderProvinceProfile,
+// di-clear oleh goHome. Anchor pill muncul saat state != null.
+let CURRENT_PROVINCE_CONTEXT = null;
+
+function setProvinceContext(provinceName) {
+  CURRENT_PROVINCE_CONTEXT = provinceName || null;
+  const anchor = document.getElementById('context-anchor');
+  const name = document.getElementById('context-anchor-name');
+  if (!anchor || !name) return;
+  if (CURRENT_PROVINCE_CONTEXT) {
+    name.textContent = CURRENT_PROVINCE_CONTEXT;
+    anchor.classList.add('show');
+  } else {
+    anchor.classList.remove('show');
+    name.textContent = '';
+  }
+}
+
+// ============================================================
 // PROVINCE PROFILE — RENDER (picker list + profile detail)
 // ============================================================
 function renderProvincePicker() {
@@ -1652,6 +1721,11 @@ function renderProvincePicker() {
 }
 
 function renderProvinceProfile(provinceName) {
+  // Update context anchor — pill di top-controls jadi tahu provinsi mana
+  // yang lagi user eksplor. Otomatis terupdate kalau user pindah ke
+  // provinsi lain via picker.
+  setProvinceContext(provinceName);
+
   const p = computeProvinceProfile(provinceName);
   const fmtNum = n => (n || 0).toLocaleString('id-ID', {maximumFractionDigits: 1});
 
@@ -1672,11 +1746,17 @@ function renderProvinceProfile(provinceName) {
       </div>
     </div>`;
 
-  // Komposisi role
+  // Komposisi role — row clickable kalau count > 0. Click → aktifkan
+  // role filter (hanya role ini), set province dropdown ke provinsi profile,
+  // applyFilters, flyToBounds ke wilayah provinsi.
   const roleRows = ROLE_KEYS.map(r => {
     const s = p.roleStats[r] || {count: 0, mw: 0};
     const dotColor = ROLE_COLOR[r] || '#999';
-    return `<tr>
+    const clickable = s.count > 0;
+    const trAttrs = clickable
+      ? `class="role-row clickable" data-role-filter="${r}" role="button" tabindex="0" title="Filter peta: hanya pembangkit ${r} di ${provinceName}"`
+      : `class="role-row empty"`;
+    return `<tr ${trAttrs}>
       <td><span class="role-dot" style="background:${dotColor}"></span>${r}</td>
       <td class="num">${s.count}</td>
       <td class="num">${s.mw > 0 ? formatCapacity(s.mw) : '-'}</td>
@@ -1693,7 +1773,10 @@ function renderProvinceProfile(provinceName) {
     // sehingga semua bar align di posisi horizontal yang sama dan max
     // width-nya (100%) konsisten antar baris. Presisi 2 desimal pada
     // width supaya 0.5% benar-benar 0.55% (proporsional, bukan dibulatkan).
-    return `<tr>
+    // Row clickable: filter peta ke type ini + provinsi sekarang.
+    return `<tr class="tech-row clickable" data-tech-filter="${t}"
+                role="button" tabindex="0"
+                title="Filter peta: hanya ${t} di ${provinceName}">
       <td>${t}</td>
       <td class="num">${v.count}</td>
       <td class="num">${v.mw > 0 ? fmtNum(v.mw) + ' ' + unit : '-'}</td>
@@ -1793,6 +1876,111 @@ function renderProvinceProfile(provinceName) {
       if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); go(); }
     });
   });
+
+  // Wire klik row "Komposisi Berdasarkan Role" → filter peta ke role +
+  // provinsi yang sedang dilihat. Reuse mekanisme filter existing
+  // (.sub-gen-role + f-province dropdown). Keyboard accessible.
+  document.querySelectorAll('tr.role-row.clickable').forEach(row => {
+    const role = row.dataset.roleFilter;
+    const go = () => filterByRoleAndFocus(provinceName, role);
+    row.addEventListener('click', go);
+    row.addEventListener('keydown', e => {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); go(); }
+    });
+  });
+
+  // Wire klik row "Bauran Teknologi" → filter peta ke type pembangkit +
+  // provinsi yang sedang dilihat. Reuse .f-type checkboxes + f-province
+  // dropdown — tidak ada logika filter baru.
+  document.querySelectorAll('tr.tech-row.clickable').forEach(row => {
+    const type = row.dataset.techFilter;
+    const go = () => filterByTypeAndFocus(provinceName, type);
+    row.addEventListener('click', go);
+    row.addEventListener('keydown', e => {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); go(); }
+    });
+  });
+}
+
+// Compute bounding box dari semua marker pembangkit + GI di provinsi tertentu.
+// Dipakai oleh filterByRoleAndFocus untuk flyToBounds. Return null kalau
+// provinsi tidak punya marker (caller skip flyTo).
+function computeProvinceBounds(provinceName) {
+  const lls = [];
+  for (const ft of features) {
+    if (ft.kind === 'trm') continue;  // transmisi tidak punya province field
+    if (ft.props.province !== provinceName) continue;
+    if (ft.layer && typeof ft.layer.getLatLng === 'function') {
+      lls.push(ft.layer.getLatLng());
+    }
+  }
+  return lls.length ? L.latLngBounds(lls) : null;
+}
+
+// Filter peta: hanya tampilkan pembangkit type X di provinsi Y.
+// REUSE mekanisme existing:
+// - .f-type checkboxes (legend interaktif jenis pembangkit)
+// - f-province dropdown (provinsi filter)
+// Safety: kalau type tidak punya checkbox (mis. 'Unknown' tidak listed),
+// semua .f-type jadi unchecked → user lihat 0 gen marker (tetap aman,
+// tidak throw). Klik Home untuk reset.
+function filterByTypeAndFocus(provinceName, type) {
+  // 1. Set type filter — hanya type terpilih checked, sisanya unchecked.
+  //    Plus update .off class pada wrapper .type-toggle (visual state).
+  document.querySelectorAll('.f-type').forEach(c => {
+    const on = (c.value === type);
+    c.checked = on;
+    const wrap = c.closest('.type-toggle');
+    if (wrap) wrap.classList.toggle('off', !on);
+  });
+  // 2. Set province dropdown ke provinsi sekarang
+  const provSel = document.getElementById('f-province');
+  if (provSel) {
+    const hasOption = [...provSel.options].some(o => o.value === provinceName);
+    if (hasOption) provSel.value = provinceName;
+  }
+  // 3. Tutup detail panel + province modal
+  closeDetail();
+  document.getElementById('province-modal').classList.remove('show');
+  // 4. Re-apply filter
+  applyFilters();
+  // 5. Smooth flyToBounds ke wilayah provinsi
+  const bounds = computeProvinceBounds(provinceName);
+  if (bounds && bounds.isValid()) {
+    map.flyToBounds(bounds, {
+      padding: [40, 40], duration: NAV_FLY_DURATION, maxZoom: 11,
+    });
+  }
+}
+
+// Filter peta: hanya tampilkan pembangkit role X di provinsi Y.
+// REUSE mekanisme existing — tidak ada logika filter baru:
+// - .sub-gen-role checkboxes (role filter dari Pembangkit controls)
+// - f-province dropdown (provinsi filter di Filter section)
+// Animasi flyToBounds konsisten dengan goHome & navigateToFeature.
+function filterByRoleAndFocus(provinceName, role) {
+  // 1. Set role filter — hanya role terpilih checked, 2 lainnya unchecked
+  document.querySelectorAll('.sub-gen-role').forEach(c => {
+    c.checked = (c.value === role);
+  });
+  // 2. Set province dropdown ke provinsi sekarang (kalau option-nya ada)
+  const provSel = document.getElementById('f-province');
+  if (provSel) {
+    const hasOption = [...provSel.options].some(o => o.value === provinceName);
+    if (hasOption) provSel.value = provinceName;
+  }
+  // 3. Tutup detail panel + province modal supaya peta visible
+  closeDetail();
+  document.getElementById('province-modal').classList.remove('show');
+  // 4. Re-apply filter — update marker visibility
+  applyFilters();
+  // 5. Smooth flyToBounds ke wilayah provinsi (sama animasi navigateToFeature)
+  const bounds = computeProvinceBounds(provinceName);
+  if (bounds && bounds.isValid()) {
+    map.flyToBounds(bounds, {
+      padding: [40, 40], duration: NAV_FLY_DURATION, maxZoom: 11,
+    });
+  }
 }
 
 // Navigate ke feature dari Profil Provinsi (atau panel lain di masa depan):
@@ -1902,7 +2090,61 @@ document.addEventListener('keydown', e => {
   // Home — kembali ke tampilan awal eksplorasi (lihat goHome() untuk detail).
   // TIDAK reload halaman; disclaimer/about modal tidak dimunculkan ulang.
   document.getElementById('menu-home').addEventListener('click', goHome);
+
+  // Context Anchor — jalan cepat balik ke Profil Provinsi yang sedang aktif.
+  // SEMI RESET behavior: clear filter eksplorasi yang berasal dari row-click
+  // di Profil (type + role) supaya user bisa coba dimensi lain tanpa filter
+  // sebelumnya carried over. Tetap pertahankan konteks provinsi (f-province
+  // di-set ke konteks) supaya peta menampilkan SELURUH pembangkit di
+  // provinsi tersebut.
+  //
+  // YANG DI-RESET:                YANG DIPERTAHANKAN:
+  //   .f-type (all checked)         f-province (set ke konteks aktif)
+  //   .sub-gen-role (all checked)   .sub-trm / .sub-sub / .sub-gen
+  //   .type-toggle .off class       region toggles (r-*)
+  //                                 master toggles (m-*)
+  //                                 sidebar collapse state
+  //
+  // Tidak mengubah view peta (zoom/center) — konteks visual user terjaga.
+  // Tidak menutup disclaimer/about modal.
+  document.getElementById('context-anchor').addEventListener('click', () => {
+    if (!CURRENT_PROVINCE_CONTEXT) return;
+    semiResetExplorationFilters(CURRENT_PROVINCE_CONTEXT);
+    applyFilters();
+    renderProvinceProfile(CURRENT_PROVINCE_CONTEXT);
+    document.getElementById('province-modal').classList.add('show');
+  });
 })();
+
+// Semi reset filter eksplorasi (dipakai oleh Context Anchor click).
+// Reset HANYA filter yang biasanya di-set oleh row-click di Profil Provinsi
+// (filterByTypeAndFocus / filterByRoleAndFocus). Tidak menyentuh filter
+// manual user di sidebar (voltage class, capacity bucket, region toggles).
+function semiResetExplorationFilters(provinceName) {
+  // 1. Reset .f-type ke semua checked + clear .off class di .type-toggle wrap
+  document.querySelectorAll('.f-type').forEach(c => {
+    c.checked = true;
+    const wrap = c.closest('.type-toggle');
+    if (wrap) wrap.classList.remove('off');
+  });
+  // 2. Reset .sub-gen-role ke semua checked (Utility + Captive + Community on)
+  document.querySelectorAll('.sub-gen-role').forEach(c => {
+    c.checked = true;
+  });
+  // 3. PERTAHANKAN konteks provinsi: pastikan f-province dropdown tetap
+  //    pada provinsi yang aktif (kalau user belum pernah klik row sehingga
+  //    dropdown belum di-set, set juga di sini supaya behavior konsisten —
+  //    "tampilkan SELURUH pembangkit di provinsi tersebut").
+  const provSel = document.getElementById('f-province');
+  if (provSel && provinceName) {
+    const hasOption = [...provSel.options].some(o => o.value === provinceName);
+    if (hasOption) provSel.value = provinceName;
+  }
+  // 4. Tutup detail panel kalau ada popup pembangkit yang relevan ke filter
+  //    lama (mis. user di-PLTS-mode, popup PLTS terbuka, lalu anchor click —
+  //    popup itu mungkin tidak relevan untuk eksplorasi baru).
+  closeDetail();
+}
 
 // === SHOW DISCLAIMER MODAL ON LOAD ===
 window.addEventListener('load', () => {
