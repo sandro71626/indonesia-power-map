@@ -1101,8 +1101,21 @@ function capacityBucket(mw) {
   if (mw >= 20)  return 'b20';
   return 'b0';
 }
-function passProvince(ft, prov) {
-  if (!prov || ft.kind === 'trm') return true;  // transmisi tak punya provinsi
+// Province Filter (Layer 1 dari model dua-layer filter).
+// - Generator/GI: match langsung via props.province (data punya field ini).
+// - Transmisi: tidak punya field province (line lintas provinsi). Approximasi
+//   pakai bbox intersection — line ditampilkan kalau bounding box-nya
+//   beririsan dengan bounds provinsi terpilih. Ini menampilkan semua
+//   transmisi yang secara geografis "menyentuh" wilayah provinsi (termasuk
+//   line yang endpoint-nya di dalam, atau melintas). provBounds di-compute
+//   sekali per panggilan applyFilters (lihat pemanggil).
+function passProvince(ft, prov, provBounds) {
+  if (!prov) return true;
+  if (ft.kind === 'trm') {
+    if (!provBounds || !provBounds.isValid()) return true;
+    // L.Polyline.getBounds() cached oleh Leaflet — O(1) setelah pertama.
+    return provBounds.intersects(ft.layer.getBounds());
+  }
   return ft.props.province === prov;
 }
 function checkedSet(selector) {
@@ -1121,6 +1134,9 @@ function applyFilters() {
   const genRole = checkedSet('.sub-gen-role'); // sub-layer peran pembangkit (Utility/Captive/Community)
   const typesOn = checkedSet('.f-type');      // toggle jenis pembangkit (legend interaktif)
   const province = document.getElementById('f-province').value;
+  // Compute province bounds sekali (dipakai passProvince untuk filter
+  // transmisi via bbox intersection). Null kalau tidak ada Province Filter.
+  const provinceBounds = province ? computeProvinceBounds(province) : null;
 
   let shown = 0;
   for (const ft of features) {
@@ -1140,7 +1156,7 @@ function applyFilters() {
     }
     const vis = regionOn[ft.region] && layerVis
       && (ft.kind !== 'gen' || typesOn.has(ft.props.type))
-      && passProvince(ft, province);
+      && passProvince(ft, province, provinceBounds);
     if (vis !== ft.visible) {
       if (vis) ft.layer.addTo(map);
       else map.removeLayer(ft.layer);
@@ -1710,10 +1726,12 @@ function renderProvincePicker() {
     <button class="close" onclick="document.getElementById('province-modal').classList.remove('show')">Tutup</button>
   `;
 
-  // Wire province click → tampilkan profile
+  // Wire province click → fly dulu ke bounds provinsi, baru profile muncul
+  // setelah animasi selesai. Reuse pattern moveend seperti navigateToFeature
+  // supaya UI tidak nongol sambil peta masih bergerak.
   document.querySelectorAll('.province-item').forEach(btn => {
     btn.addEventListener('click', () => {
-      renderProvinceProfile(btn.dataset.province);
+      flyToProvinceThenProfile(btn.dataset.province);
     });
   });
 
@@ -1826,7 +1844,14 @@ function renderProvinceProfile(provinceName) {
       <div class="profile-empty">Belum ada data pembangkit atau gardu induk untuk provinsi ini.</div>
       <button class="close" onclick="document.getElementById('province-modal').classList.remove('show')">Tutup</button>
     `;
-    document.getElementById('prov-back').addEventListener('click', renderProvincePicker);
+    document.getElementById('prov-back').addEventListener('click', () => {
+      // Back = keluar dari konteks provinsi ini. Reset filter eksplorasi
+      // (role + type + province dropdown) + clear konteks aktif SEBELUM
+      // render picker, supaya pilihan provinsi selanjutnya tidak mewarisi
+      // filter dari provinsi ini. Posisi peta TIDAK diubah.
+      exitProvinceContext();
+      renderProvincePicker();
+    });
     return;
   }
 
@@ -1869,7 +1894,14 @@ function renderProvinceProfile(provinceName) {
 
     <button class="close" onclick="document.getElementById('province-modal').classList.remove('show')">Tutup</button>
   `;
-  document.getElementById('prov-back').addEventListener('click', renderProvincePicker);
+  document.getElementById('prov-back').addEventListener('click', () => {
+    // Back = keluar dari konteks provinsi ini. Reset filter eksplorasi
+    // (role + type + province dropdown) + clear konteks aktif SEBELUM
+    // render picker, supaya pilihan provinsi selanjutnya tidak mewarisi
+    // filter dari provinsi ini. Posisi peta TIDAK diubah.
+    exitProvinceContext();
+    renderProvincePicker();
+  });
 
   // Wire klik card "Pembangkit Terbesar" → navigate ke marker + buka detail.
   // Pakai data-role-top attribute untuk lookup top feature object (closure
@@ -1911,8 +1943,12 @@ function renderProvinceProfile(provinceName) {
 }
 
 // Compute bounding box dari semua marker pembangkit + GI di provinsi tertentu.
-// Dipakai oleh filterByRoleAndFocus untuk flyToBounds. Return null kalau
-// provinsi tidak punya marker (caller skip flyTo).
+// Dipakai oleh:
+// - flyToProvinceThenProfile & filterByRoleAndFocus untuk flyToBounds
+// - applyFilters untuk filter transmisi via bbox intersection (Layer 1
+//   Province Filter — transmisi tidak punya field province eksplisit)
+// Return null kalau provinsi tidak punya marker (caller boleh skip flyTo
+// atau passProvince akan default show-all untuk transmisi).
 function computeProvinceBounds(provinceName) {
   const lls = [];
   for (const ft of features) {
@@ -1923,6 +1959,59 @@ function computeProvinceBounds(provinceName) {
     }
   }
   return lls.length ? L.latLngBounds(lls) : null;
+}
+
+// Ketika user memilih provinsi di picker: tutup modal picker + detail panel,
+// terbangkan peta ke bounds provinsi, lalu tampilkan Province Profile setelah
+// animasi flyTo selesai (moveend). Pola ini sama dengan navigateToFeature —
+// UI baru dimunculkan saat peta sudah diam supaya transisi terasa natural.
+//
+// Tidak menyentuh filter apa pun — Utility/Captive/Community/Technology Mix/
+// Largest Generator handler tetap dijalankan dari klik selanjutnya di profile.
+//
+// Edge case: kalau provinsi tidak punya marker sama sekali (bounds null),
+// skip flyTo dan langsung tampilkan profile — profile tetap berguna sebagai
+// ringkasan (jumlah pembangkit/GI = 0), meski secara peta tidak ada yang
+// bisa di-focus.
+function flyToProvinceThenProfile(provinceName) {
+  // 1. Tutup modal picker + detail panel supaya peta terlihat sepenuhnya
+  //    selama animasi flyTo.
+  document.getElementById('province-modal').classList.remove('show');
+  closeDetail();
+
+  // 2. Aktifkan Province Filter (Layer 1) SEBELUM flyTo — set f-province
+  //    dropdown ke provinsi terpilih, lalu applyFilters(). Saat animasi
+  //    berjalan, marker di luar provinsi sudah tersembunyi; user sampai
+  //    di provinsi dengan konteks yang sudah difilter.
+  //
+  //    Detail Filter (Layer 2 — Utility/Captive/Community/tipe pembangkit)
+  //    TIDAK disentuh di sini. Semua .sub-gen-role & .f-type tetap all-checked
+  //    supaya user langsung melihat seluruh aset provinsi. Detail Filter
+  //    baru aktif ketika user klik row di Profil Provinsi (via
+  //    filterByRoleAndFocus / filterByTypeAndFocus yang existing).
+  const provSel = document.getElementById('f-province');
+  if (provSel) {
+    const hasOption = [...provSel.options].some(o => o.value === provinceName);
+    if (hasOption) provSel.value = provinceName;
+  }
+  applyFilters();
+
+  const bounds = computeProvinceBounds(provinceName);
+
+  const showProfile = () => {
+    renderProvinceProfile(provinceName);
+    document.getElementById('province-modal').classList.add('show');
+  };
+
+  if (bounds && bounds.isValid()) {
+    map.flyToBounds(bounds, {
+      padding: [40, 40], duration: NAV_FLY_DURATION, maxZoom: 11,
+    });
+    map.once('moveend', showProfile);
+  } else {
+    // Fallback: provinsi tanpa marker → langsung tampilkan profile tanpa fly
+    showProfile();
+  }
 }
 
 // Filter peta: hanya tampilkan pembangkit type X di provinsi Y.
@@ -2123,6 +2212,46 @@ document.addEventListener('keydown', e => {
     document.getElementById('province-modal').classList.add('show');
   });
 })();
+
+// Exit provinsi context: dipakai oleh tombol Back di Profil Provinsi.
+// Reset filter eksplorasi yang berasal dari klik row di Profil (type + role +
+// province dropdown) DAN clear konteks provinsi aktif. Beda dengan
+// semiResetExplorationFilters yang mempertahankan konteks:
+//
+//   YANG DI-RESET:                         YANG DIPERTAHANKAN:
+//     .f-type (all checked)                  .sub-trm / .sub-sub / .sub-gen
+//     .sub-gen-role (all checked)            region toggles (r-*)
+//     .type-toggle .off class                master toggles (m-*)
+//     f-province dropdown (→ 'Semua')        sidebar collapse state
+//     CURRENT_PROVINCE_CONTEXT (→ null)      voltage class / capacity filters
+//     detail panel                           posisi & zoom peta (TIDAK di-flyTo)
+//
+// Setelah reset ini, applyFilters() dipanggil supaya marker balik ke tampilan
+// tanpa filter provinsi/role/type. Map view SENGAJA tidak diubah — user
+// tetap di area provinsi lama, cukup filter yang dibersihkan sebelum mereka
+// pilih provinsi baru dari daftar.
+function exitProvinceContext() {
+  // 1. Reset .f-type ke semua checked + clear .off class
+  document.querySelectorAll('.f-type').forEach(c => {
+    c.checked = true;
+    const wrap = c.closest('.type-toggle');
+    if (wrap) wrap.classList.remove('off');
+  });
+  // 2. Reset .sub-gen-role ke semua checked (Utility + Captive + Community)
+  document.querySelectorAll('.sub-gen-role').forEach(c => {
+    c.checked = true;
+  });
+  // 3. Reset f-province dropdown ke default "Semua provinsi" ("")
+  const provSel = document.getElementById('f-province');
+  if (provSel) provSel.value = '';
+  // 4. Clear konteks provinsi aktif (context anchor pill jadi hidden)
+  setProvinceContext(null);
+  // 5. Tutup detail panel kalau kebuka — sisa dari eksplorasi provinsi lama
+  closeDetail();
+  // 6. Re-apply filter untuk update marker visibility (semua marker tanpa
+  //    filter role/type/province — kembali ke normal). TIDAK ada flyTo.
+  applyFilters();
+}
 
 // Semi reset filter eksplorasi (dipakai oleh Context Anchor click).
 // Reset HANYA filter yang biasanya di-set oleh row-click di Profil Provinsi
