@@ -373,9 +373,9 @@
      update --top-controls-offset CSS var untuk leaflet zoom & sidebar mobile. -->
 <div class="top-controls" id="top-controls">
   <div class="header">
-    Peta Ketenagalistrikan Indonesia
-    <div class="sub">8 region: JAMALI, Sumatra, Kalimantan, Sulawesi, Maluku, Papua, NTB, NTT · data eksisting</div>
-    <div class="readout" id="readout">memuat data…</div>
+    Peta Ketenagalistrikan Indonesia (Indonesia Power Map)
+    <div class="sub" data-i18n="header.subtitle">8 region: JAMALI, Sumatra, Kalimantan, Sulawesi, Maluku, Papua, NTB, NTT · data eksisting</div>
+    <div class="readout" id="readout" data-i18n="header.readout_loading">memuat data…</div>
   </div>
 
   <!-- Menu bar — container extensible untuk fitur cross-cutting: Legenda,
@@ -383,18 +383,35 @@
        Wilayah, Statistik Nasional (future). -->
   <nav class="menu-bar" id="menu-bar" aria-label="Menu fitur">
     <button class="menu-btn menu-icon" id="menu-home"
+            data-i18n-aria="menu.home_title"
+            data-i18n-title="menu.home_title"
             aria-label="Kembali ke Tampilan Awal"
             title="Kembali ke Tampilan Awal">🏠</button>
     <button class="menu-btn active" id="menu-legend"
+            data-i18n="menu.legend_label"
+            data-i18n-title="menu.legend_title"
             title="Tampilkan/sembunyikan panel legenda">📖 Legenda</button>
     <button class="menu-btn" id="menu-province"
+            data-i18n="menu.province_label"
+            data-i18n-title="menu.province_title"
             title="Profil ringkas per provinsi">📊 Profil Provinsi</button>
+    <!-- Language switcher — inline di menu bar. Toggle sederhana ID/EN.
+         Klik = switch bahasa + persist ke localStorage. -->
+    <select class="menu-btn" id="lang-select"
+            aria-label="Language / Bahasa"
+            title="Language / Bahasa"
+            style="cursor:pointer;padding:5px 8px;">
+      <option value="id">🇮🇩 ID</option>
+      <option value="en">🇬🇧 EN</option>
+    </select>
   </nav>
 
   <!-- Context Anchor — pill konteks aktif. Muncul saat user dalam konteks
        suatu provinsi (after open Profil Provinsi). Klik = reopen profile
        tanpa ubah peta/filter. Hidden by default. JS toggle via .show. -->
   <button class="context-anchor" id="context-anchor" type="button"
+          data-i18n-aria="menu.context_anchor_title"
+          data-i18n-title="menu.context_anchor_title"
           title="Kembali ke Profil Provinsi yang sedang aktif"
           aria-label="Kembali ke Profil Provinsi yang sedang aktif">
     <span class="icon" aria-hidden="true">📍</span>
@@ -405,9 +422,12 @@
 <div id="map"></div>
 
 <div class="sidebar">
-  <button class="sidebar-min" id="sidebar-min" title="Minimize legenda" aria-label="Minimize legenda">−</button>
+  <button class="sidebar-min" id="sidebar-min"
+          data-i18n-title="sidebar.minimize_title"
+          data-i18n-aria="sidebar.minimize_title"
+          title="Minimize legenda" aria-label="Minimize legenda">−</button>
   <div class="section">
-    <h5>Peta dasar</h5>
+    <h5 data-i18n="sidebar.basemap">Peta dasar</h5>
     <select id="basemap-select">
       <option value="positron" selected>Carto Positron</option>
       <option value="positron_nolabels">Positron (tanpa label)</option>
@@ -417,45 +437,47 @@
   </div>
 
   <div class="section">
-    <h5>Pencarian</h5>
-    <input type="text" id="search-input" placeholder="Cari GI / pembangkit…" autocomplete="off">
+    <h5 data-i18n="sidebar.search">Pencarian</h5>
+    <input type="text" id="search-input"
+           data-i18n-placeholder="sidebar.search_placeholder"
+           placeholder="Cari GI / pembangkit…" autocomplete="off">
     <div id="search-results"></div>
   </div>
 
   <div class="section">
-    <h4>Region</h4>
+    <h4 data-i18n="sidebar.region">Region</h4>
     <div class="layer-toggle"><input type="checkbox" id="r-jamali" checked>
       <label for="r-jamali">JAMALI</label>
-      <button class="region-zoom" data-region="jamali" aria-label="Fokus ke Wilayah">📍</button><button class="region-stats" data-region="jamali" aria-label="Statistik Wilayah">📊</button></div>
+      <button class="region-zoom" data-region="jamali" data-i18n-aria="sidebar.region.focus" aria-label="Fokus ke Wilayah">📍</button><button class="region-stats" data-region="jamali" data-i18n-aria="sidebar.region.stats" aria-label="Statistik Wilayah">📊</button></div>
     <div class="layer-toggle"><input type="checkbox" id="r-sumatra" checked>
       <label for="r-sumatra">Sumatra</label>
-      <button class="region-zoom" data-region="sumatra" aria-label="Fokus ke Wilayah">📍</button><button class="region-stats" data-region="sumatra" aria-label="Statistik Wilayah">📊</button></div>
+      <button class="region-zoom" data-region="sumatra" data-i18n-aria="sidebar.region.focus" aria-label="Fokus ke Wilayah">📍</button><button class="region-stats" data-region="sumatra" data-i18n-aria="sidebar.region.stats" aria-label="Statistik Wilayah">📊</button></div>
     <div class="layer-toggle"><input type="checkbox" id="r-kalimantan" checked>
       <label for="r-kalimantan">Kalimantan</label>
-      <button class="region-zoom" data-region="kalimantan" aria-label="Fokus ke Wilayah">📍</button><button class="region-stats" data-region="kalimantan" aria-label="Statistik Wilayah">📊</button></div>
+      <button class="region-zoom" data-region="kalimantan" data-i18n-aria="sidebar.region.focus" aria-label="Fokus ke Wilayah">📍</button><button class="region-stats" data-region="kalimantan" data-i18n-aria="sidebar.region.stats" aria-label="Statistik Wilayah">📊</button></div>
     <div class="layer-toggle"><input type="checkbox" id="r-sulawesi" checked>
       <label for="r-sulawesi">Sulawesi</label>
-      <button class="region-zoom" data-region="sulawesi" aria-label="Fokus ke Wilayah">📍</button><button class="region-stats" data-region="sulawesi" aria-label="Statistik Wilayah">📊</button></div>
+      <button class="region-zoom" data-region="sulawesi" data-i18n-aria="sidebar.region.focus" aria-label="Fokus ke Wilayah">📍</button><button class="region-stats" data-region="sulawesi" data-i18n-aria="sidebar.region.stats" aria-label="Statistik Wilayah">📊</button></div>
     <div class="layer-toggle"><input type="checkbox" id="r-maluku" checked>
       <label for="r-maluku">Maluku</label>
-      <button class="region-zoom" data-region="maluku" aria-label="Fokus ke Wilayah">📍</button><button class="region-stats" data-region="maluku" aria-label="Statistik Wilayah">📊</button></div>
+      <button class="region-zoom" data-region="maluku" data-i18n-aria="sidebar.region.focus" aria-label="Fokus ke Wilayah">📍</button><button class="region-stats" data-region="maluku" data-i18n-aria="sidebar.region.stats" aria-label="Statistik Wilayah">📊</button></div>
     <div class="layer-toggle"><input type="checkbox" id="r-papua" checked>
       <label for="r-papua">Papua</label>
-      <button class="region-zoom" data-region="papua" aria-label="Fokus ke Wilayah">📍</button><button class="region-stats" data-region="papua" aria-label="Statistik Wilayah">📊</button></div>
+      <button class="region-zoom" data-region="papua" data-i18n-aria="sidebar.region.focus" aria-label="Fokus ke Wilayah">📍</button><button class="region-stats" data-region="papua" data-i18n-aria="sidebar.region.stats" aria-label="Statistik Wilayah">📊</button></div>
     <div class="layer-toggle"><input type="checkbox" id="r-ntb" checked>
       <label for="r-ntb">NTB</label>
-      <button class="region-zoom" data-region="ntb" aria-label="Fokus ke Wilayah">📍</button><button class="region-stats" data-region="ntb" aria-label="Statistik Wilayah">📊</button></div>
+      <button class="region-zoom" data-region="ntb" data-i18n-aria="sidebar.region.focus" aria-label="Fokus ke Wilayah">📍</button><button class="region-stats" data-region="ntb" data-i18n-aria="sidebar.region.stats" aria-label="Statistik Wilayah">📊</button></div>
     <div class="layer-toggle"><input type="checkbox" id="r-ntt" checked>
       <label for="r-ntt">NTT</label>
-      <button class="region-zoom" data-region="ntt" aria-label="Fokus ke Wilayah">📍</button><button class="region-stats" data-region="ntt" aria-label="Statistik Wilayah">📊</button></div>
+      <button class="region-zoom" data-region="ntt" data-i18n-aria="sidebar.region.focus" aria-label="Fokus ke Wilayah">📍</button><button class="region-stats" data-region="ntt" data-i18n-aria="sidebar.region.stats" aria-label="Statistik Wilayah">📊</button></div>
   </div>
 
   <div class="section">
-    <h4>Layer</h4>
+    <h4 data-i18n="sidebar.layer">Layer</h4>
 
     <div class="layer-group">
       <div class="layer-toggle"><input type="checkbox" id="m-trm" checked>
-        <label for="m-trm"><strong>Transmisi</strong></label></div>
+        <label for="m-trm"><strong data-i18n="sidebar.layer.transmisi">Transmisi</strong></label></div>
       <div class="sublayers">
         <label><input type="checkbox" class="sub-trm" value="500" checked>
           <span class="sw-line" style="background:#d62728;height:4px"></span> 500 kV</label>
@@ -470,7 +492,7 @@
 
     <div class="layer-group">
       <div class="layer-toggle"><input type="checkbox" id="m-sub">
-        <label for="m-sub"><strong>Gardu Induk</strong></label></div>
+        <label for="m-sub"><strong data-i18n="sidebar.layer.gi">Gardu Induk</strong></label></div>
       <div class="sublayers">
         <label><input type="checkbox" class="sub-sub" value="500" checked>
           <span class="sw-box" style="background:#d62728"></span> 500 kV</label>
@@ -485,14 +507,18 @@
 
     <div class="layer-group">
       <div class="layer-toggle"><input type="checkbox" id="m-gen">
-        <label for="m-gen"><strong>Pembangkit</strong></label></div>
+        <label for="m-gen"><strong data-i18n="sidebar.layer.pembangkit">Pembangkit</strong></label></div>
       <div class="sublayers">
-        <div class="sub-hint">UKURAN</div>
-        <label><input type="checkbox" class="sub-gen" value="b500" checked> ≥ 500 MW</label>
-        <label><input type="checkbox" class="sub-gen" value="b100" checked> 100–500 MW</label>
-        <label><input type="checkbox" class="sub-gen" value="b20" checked> 20–100 MW</label>
-        <label><input type="checkbox" class="sub-gen" value="b0" checked> &lt; 20 MW / tak tercatat</label>
-        <div class="sub-hint">PERAN</div>
+        <div class="sub-hint" data-i18n="sidebar.layer.size_header">UKURAN</div>
+        <label><input type="checkbox" class="sub-gen" value="b500" checked>
+          <span data-i18n="sidebar.layer.b500">≥ 500 MW</span></label>
+        <label><input type="checkbox" class="sub-gen" value="b100" checked>
+          <span data-i18n="sidebar.layer.b100">100–500 MW</span></label>
+        <label><input type="checkbox" class="sub-gen" value="b20" checked>
+          <span data-i18n="sidebar.layer.b20">20–100 MW</span></label>
+        <label><input type="checkbox" class="sub-gen" value="b0" checked>
+          <span data-i18n="sidebar.layer.b0">&lt; 20 MW / tak tercatat</span></label>
+        <div class="sub-hint" data-i18n="sidebar.layer.role_header">PERAN</div>
         <label><input type="checkbox" class="sub-gen-role" value="Utility" checked>
           <span class="sw-dot" style="background:#1f77b4"></span> Utility</label>
         <label><input type="checkbox" class="sub-gen-role" value="Captive" checked>
@@ -502,28 +528,29 @@
       </div>
     </div>
 
-    <div class="note">Kotak = GI · garis = transmisi · lingkaran = pembangkit.
+    <div class="note" data-i18n="sidebar.layer.note">Kotak = GI · garis = transmisi · lingkaran = pembangkit.
       Border ganda = 500/275 kV.</div>
   </div>
 
   <div class="section collapsible">
-    <h4>Jenis pembangkit <span class="chevron">▼</span></h4>
+    <h4><span data-i18n="sidebar.planttype">Jenis pembangkit</span> <span class="chevron">▼</span></h4>
     <div class="content" id="planttype-legend"></div>
   </div>
 
   <div class="section collapsible collapsed">
-    <h4>Filter <span class="chevron">▼</span></h4>
+    <h4><span data-i18n="sidebar.filter">Filter</span> <span class="chevron">▼</span></h4>
     <div class="content">
-      <h5>Provinsi</h5>
-      <select id="f-province"><option value="">Semua provinsi</option></select>
-      <button class="action reset" id="f-reset">Reset filter</button>
-      <div class="note">Filter tegangan &amp; ukuran pembangkit ada di section
+      <h5 data-i18n="sidebar.filter.province">Provinsi</h5>
+      <select id="f-province"><option value="" data-i18n="sidebar.filter.all_provinces">Semua provinsi</option></select>
+      <button class="action reset" id="f-reset" data-i18n="sidebar.filter.reset">Reset filter</button>
+      <div class="note" data-i18n="sidebar.filter.note">Filter tegangan &amp; ukuran pembangkit ada di section
         Layer; jenis pembangkit di section "Jenis pembangkit".</div>
     </div>
   </div>
 
   <div class="section">
-    <button class="action" onclick="document.getElementById('about-modal').classList.add('show')">
+    <button class="action" onclick="document.getElementById('about-modal').classList.add('show')"
+            data-i18n="sidebar.about">
       ℹ Tentang peta &amp; sumber data
     </button>
   </div>
@@ -533,11 +560,12 @@
 
 
 <div class="footer">
-  Sumber: RUPTL PLN 2025–2034 · OpenStreetMap (© OSM contributors) · CARTO basemap.
-  <a onclick="document.getElementById('about-modal').classList.add('show')">Detail sumber &amp; disclaimer</a>
+  <span data-i18n="footer.source">Sumber: RUPTL PLN 2025–2034 · OpenStreetMap (© OSM contributors) · CARTO basemap.</span>
+  <a onclick="document.getElementById('about-modal').classList.add('show')"
+     data-i18n="footer.detail">Detail sumber &amp; disclaimer</a>
   <div class="attribution">
-    Disusun oleh <strong>Sandro Agassi Sitompul, Ph.D.</strong>
-    <em>Inisiatif teknis independen untuk membantu pemahaman publik terhadap sistem ketenagalistrikan Indonesia.</em>
+    <span data-i18n="footer.attribution_prefix">Disusun oleh</span> <strong>Sandro Agassi Sitompul, Ph.D.</strong>
+    <em data-i18n="footer.attribution_desc">Inisiatif teknis independen untuk membantu pemahaman publik terhadap sistem ketenagalistrikan Indonesia.</em>
   </div>
 </div>
 
@@ -547,7 +575,9 @@
       <div class="dp-kind" id="dp-kind"></div>
       <div class="dp-title" id="dp-title"></div>
     </div>
-    <button class="dp-close" id="dp-close" title="Tutup">×</button>
+    <button class="dp-close" id="dp-close"
+            data-i18n-title="detail.close_title"
+            title="Tutup">×</button>
   </div>
   <div class="dp-body" id="dp-body"></div>
 </div>
@@ -556,7 +586,7 @@
 <div class="modal-backdrop" id="about-modal"
      onclick="if(event.target===this)this.classList.remove('show')">
   <div class="modal">
-    <h2>Tentang Peta Ketenagalistrikan Indonesia</h2>
+    <h2 data-i18n="about.title">Tentang Peta Ketenagalistrikan Indonesia</h2>
 
     <p><strong>Tujuan.</strong> Memvisualisasikan struktur sistem tenaga listrik
     Indonesia untuk kepentingan edukasi, eksplorasi, dan analisis umum. Saat ini
@@ -566,7 +596,7 @@
     bervariasi antar wilayah. Audiens yang dituju adalah mahasiswa, peneliti,
     analis kebijakan, media, dan publik dengan latar belakang teknis.</p>
 
-    <h3>Disclaimer</h3>
+    <h3 data-i18n="about.disclaimer_heading">Disclaimer</h3>
     <ul>
       <li>Peta ini <strong>bukan</strong> alat operasi sistem tenaga, <strong>bukan</strong>
           dashboard dispatch realtime, dan <strong>tidak</strong> merepresentasikan
@@ -585,7 +615,7 @@
           oleh kontributor; snapshot Overpass diambil pada Mei 2026.</li>
     </ul>
 
-    <h3>Metodologi Singkat</h3>
+    <h3 data-i18n="about.methodology_heading">Metodologi Singkat</h3>
     <p>Data pembangkit, gardu induk, dan transmisi dikompilasi dari kombinasi
     dokumen publik (RUPTL PLN 2025–2034) dan OpenStreetMap. Pipeline mencakup
     ekstraksi otomatis, pencocokan nama dengan fuzzy match (threshold 0,85),
@@ -597,7 +627,7 @@
     eksplorasi yang lebih nyaman, manfaatkan filter wilayah atau layer
     sesuai kebutuhan.</p>
 
-    <h3>Sumber data</h3>
+    <h3 data-i18n="about.source_heading">Sumber data</h3>
     <ul>
       <li><strong>Daftar Gardu Induk</strong> dan kapasitas: RUPTL PLN 2025–2034,
           Lampiran A sampai C per region. Sebanyak <strong>~990 GI</strong>
@@ -618,7 +648,7 @@
           © OpenStreetMap.</li>
     </ul>
 
-    <h3>Catatan penamaan</h3>
+    <h3 data-i18n="about.naming_heading">Catatan penamaan</h3>
     <p>Beberapa Gardu Induk Tegangan Ekstra Tinggi (500 kV) yang dikenal publik
     (misalnya "GITET Bekasi") tercatat di RUPTL dengan nama desa atau kecamatan
     terdekat (Sukatani, Tambun, Deltamas), atau tidak masuk Tabel x.4 karena
@@ -627,7 +657,7 @@
     Bahong di OSM, GI Sumbawa muncul sebagai Gardu Induk Seketeng. Untuk
     pemetaan yang lebih lengkap, referensi silang dengan OSM disarankan.</p>
 
-    <h3>Konvensi simbol</h3>
+    <h3 data-i18n="about.symbol_heading">Konvensi simbol</h3>
     <p>Mengikuti konvensi <em>single line diagram</em>:</p>
     <ul>
       <li><strong>Lingkaran</strong> menandai pembangkit (generator). Label di
@@ -642,12 +672,12 @@
           merepresentasikan kelas tegangan (500/275/150/70 kV).</li>
     </ul>
 
-    <h3>Lisensi</h3>
+    <h3 data-i18n="about.license_heading">Lisensi</h3>
     <p>Proyek open-source untuk kepentingan publik. Data turunan tunduk pada
     lisensi sumber asal: OSM mengikuti ODbL, sedangkan data RUPTL adalah
     dokumen publik PLN/ESDM.</p>
 
-    <h3>Feedback &amp; Kontak</h3>
+    <h3 data-i18n="about.feedback_heading">Feedback &amp; Kontak</h3>
     <p>Masukan, koreksi data, maupun saran pengembangan sangat diterima.</p>
     <ul>
       <li>Email:
@@ -662,7 +692,8 @@
       Versi <span>v1.1.1</span> · Pembaruan terakhir <span>24 Juni 2026</span>
     </div>
 
-    <button class="close" onclick="document.getElementById('about-modal').classList.remove('show')">
+    <button class="close" onclick="document.getElementById('about-modal').classList.remove('show')"
+            data-i18n="about.close_button">
       Mengerti, mulai eksplorasi
     </button>
   </div>
@@ -693,6 +724,350 @@
 <script src="data_ntt.js"></script>
 <script>
 // ============================================================
+// I18N — INTERNATIONALIZATION INFRASTRUCTURE
+// ============================================================
+// Model: single dictionary of translation keys, currentLanguage state,
+// dan updateLanguage() yang re-render semua UI (baik static HTML via
+// data-i18n* attributes maupun JS-rendered content via t() + re-render).
+//
+// Data DOMAIN (nama provinsi, nama pembangkit, nama gardu induk, jenis PLT,
+// role Utility/Captive/Community, source_id) TIDAK diterjemahkan — hanya
+// UI text (label, tombol, header, footer, disclaimer).
+//
+// Nanti untuk translate ke bahasa lain: cukup tambah locale baru di
+// TRANSLATIONS + isi valuenya. Kunci EN sekarang placeholder = ID.
+const TRANSLATIONS = {
+  id: {
+    // Header & menu bar
+    'header.subtitle': '8 region: JAMALI, Sumatra, Kalimantan, Sulawesi, Maluku, Papua, NTB, NTT · data eksisting',
+    'header.readout_loading': 'memuat data…',
+    'header.readout_count': '{n} fasilitas tampil',
+    'menu.home_title': 'Kembali ke Tampilan Awal',
+    'menu.legend_label': '📖 Legenda',
+    'menu.legend_title': 'Tampilkan/sembunyikan panel legenda',
+    'menu.province_label': '📊 Profil Provinsi',
+    'menu.province_title': 'Profil ringkas per provinsi',
+    'menu.context_anchor_title': 'Kembali ke Profil Provinsi yang sedang aktif',
+    // Sidebar sections
+    'sidebar.language': 'Bahasa',
+    'sidebar.minimize_title': 'Minimize legenda',
+    'sidebar.basemap': 'Peta dasar',
+    'sidebar.basemap.positron_nolabels': 'Positron (tanpa label)',
+    'sidebar.search': 'Pencarian',
+    'sidebar.search_placeholder': 'Cari GI / pembangkit…',
+    'sidebar.region': 'Region',
+    'sidebar.region.focus': 'Fokus ke Wilayah',
+    'sidebar.region.stats': 'Statistik Wilayah',
+    'sidebar.layer': 'Layer',
+    'sidebar.layer.transmisi': 'Transmisi',
+    'sidebar.layer.gi': 'Gardu Induk',
+    'sidebar.layer.pembangkit': 'Pembangkit',
+    'sidebar.layer.size_header': 'UKURAN',
+    'sidebar.layer.role_header': 'PERAN',
+    'sidebar.layer.b500': '≥ 500 MW',
+    'sidebar.layer.b100': '100–500 MW',
+    'sidebar.layer.b20': '20–100 MW',
+    'sidebar.layer.b0': '< 20 MW / tak tercatat',
+    'sidebar.layer.note': 'Kotak = GI · garis = transmisi · lingkaran = pembangkit. Border ganda = 500/275 kV.',
+    'sidebar.planttype': 'Jenis pembangkit',
+    'sidebar.planttype.note': 'Klik untuk sembunyikan/tampilkan jenis. Ukuran simbol ∝ kapasitas MW.',
+    'sidebar.filter': 'Filter',
+    'sidebar.filter.province': 'Provinsi',
+    'sidebar.filter.all_provinces': 'Semua provinsi',
+    'sidebar.filter.reset': 'Reset filter',
+    'sidebar.filter.note': 'Filter tegangan & ukuran pembangkit ada di section Layer; jenis pembangkit di section "Jenis pembangkit".',
+    'sidebar.about': 'ℹ Tentang peta & sumber data',
+    // Footer
+    'footer.source': 'Sumber: RUPTL PLN 2025–2034 · OpenStreetMap (© OSM contributors) · CARTO basemap.',
+    'footer.detail': 'Detail sumber & disclaimer',
+    'footer.attribution_prefix': 'Disusun oleh',
+    'footer.attribution_desc': 'Inisiatif teknis independen untuk membantu pemahaman publik terhadap sistem ketenagalistrikan Indonesia.',
+    // Detail panel
+    'detail.close_title': 'Tutup',
+    'detail.kind.sub': 'Gardu Induk',
+    'detail.kind.gen': 'Pembangkit',
+    'detail.kind.trm': 'Saluran Transmisi',
+    'detail.transmisi_prefix': 'Transmisi',
+    'detail.no_name': '(tanpa nama)',
+    'detail.no_capacity': 'tidak tercatat',
+    'detail.field.id': 'ID',
+    'detail.field.province': 'Provinsi',
+    'detail.field.system': 'Sistem',
+    'detail.field.voltage': 'Tegangan',
+    'detail.field.voltage_class': 'Kelas tegangan',
+    'detail.field.trafo': 'Jumlah trafo',
+    'detail.field.trafo_unit': 'unit',
+    'detail.field.capacity': 'Kapasitas',
+    'detail.field.source': 'Sumber',
+    'detail.field.coordinate': 'Koordinat',
+    'detail.field.type': 'Jenis',
+    'detail.field.role': 'Peran',
+    'detail.field.role_desc': 'Deskripsi',
+    'detail.field.status': 'Status',
+    'detail.field.operator': 'Operator',
+    'detail.field.method': 'Metode',
+    'detail.field.length': 'Panjang',
+    'detail.field.osm_id': 'OSM ID',
+    'detail.connections.title': 'Saluran transmisi tersambung',
+    'detail.connections.empty': 'Tidak terdeteksi saluran di sekitar GI ini.',
+    'detail.connections.count': 'Saluran transmisi tersambung ({n})',
+    // Search
+    'search.no_results': 'Tidak ada hasil.',
+    // About modal (heading level only — body prose keeps its own data-i18n key)
+    'about.title': 'Tentang Peta Ketenagalistrikan Indonesia',
+    'about.disclaimer_heading': 'Disclaimer',
+    'about.methodology_heading': 'Metodologi Singkat',
+    'about.source_heading': 'Sumber data',
+    'about.naming_heading': 'Catatan penamaan',
+    'about.symbol_heading': 'Konvensi simbol',
+    'about.license_heading': 'Lisensi',
+    'about.feedback_heading': 'Feedback & Kontak',
+    'about.close_button': 'Mengerti, mulai eksplorasi',
+    'about.version_prefix': 'Versi',
+    'about.version_updated': 'Pembaruan terakhir',
+    // Province modal / picker / profile
+    'province.picker.title': 'Profil Provinsi',
+    'province.picker.subtitle': 'Pilih provinsi untuk lihat ringkasan kapasitas, komposisi role, bauran teknologi, dan jumlah infrastruktur.',
+    'province.picker.search_placeholder': 'Cari provinsi… (mis. Jawa Barat, Sulawesi)',
+    'province.picker.meta': '{gen} pembangkit · {sub} GI',
+    'province.picker.close': 'Tutup',
+    'province.profile.back': '← Kembali ke daftar provinsi',
+    'province.profile.close': 'Tutup',
+    'province.profile.headline.capacity': 'Kapasitas Terpasang',
+    'province.profile.headline.count_gen': 'Jumlah Pembangkit',
+    'province.profile.headline.count_sub': 'Gardu Induk',
+    'province.profile.section.role': 'Komposisi Berdasarkan Role',
+    'province.profile.section.tech_mix': 'Bauran Teknologi (berdasar kapasitas)',
+    'province.profile.section.top_utility': 'Pembangkit Utility Terbesar',
+    'province.profile.section.top_captive': 'Pembangkit Captive Terbesar',
+    'province.profile.table.role': 'Role',
+    'province.profile.table.count': 'Jumlah',
+    'province.profile.table.capacity': 'Kapasitas',
+    'province.profile.table.type': 'Jenis',
+    'province.profile.table.mix': 'Bauran',
+    'province.profile.table.pct': '%',
+    'province.profile.table.no_capacity_data': 'Tidak ada data kapasitas.',
+    'province.profile.empty': 'Belum ada data pembangkit atau gardu induk untuk provinsi ini.',
+    'province.profile.filter_title': 'Filter peta: hanya pembangkit {q} di {province}',
+  },
+  en: {
+    // NOTE: English strings are placeholders identical to Indonesian for now.
+    // Replace individual keys with proper translations incrementally.
+    'header.subtitle': '8 regions: JAMALI, Sumatra, Kalimantan, Sulawesi, Maluku, Papua, NTB, NTT · existing data',
+    'header.readout_loading': 'loading data…',
+    'header.readout_count': '{n} facilities shown',
+    'menu.home_title': 'Return to Initial View',
+    'menu.legend_label': '📖 Legend',
+    'menu.legend_title': 'Show/hide legend panel',
+    'menu.province_label': '📊 Province Profile',
+    'menu.province_title': 'Concise per-province profile',
+    'menu.context_anchor_title': 'Return to active Province Profile',
+    'sidebar.language': 'Language',
+    'sidebar.minimize_title': 'Minimize legend',
+    'sidebar.basemap': 'Basemap',
+    'sidebar.basemap.positron_nolabels': 'Positron (no labels)',
+    'sidebar.search': 'Search',
+    'sidebar.search_placeholder': 'Search substation / plant…',
+    'sidebar.region': 'Region',
+    'sidebar.region.focus': 'Focus on Region',
+    'sidebar.region.stats': 'Region Statistics',
+    'sidebar.layer': 'Layer',
+    'sidebar.layer.transmisi': 'Transmission',
+    'sidebar.layer.gi': 'Substation',
+    'sidebar.layer.pembangkit': 'Power Plant',
+    'sidebar.layer.size_header': 'SIZE',
+    'sidebar.layer.role_header': 'ROLE',
+    'sidebar.layer.b500': '≥ 500 MW',
+    'sidebar.layer.b100': '100–500 MW',
+    'sidebar.layer.b20': '20–100 MW',
+    'sidebar.layer.b0': '< 20 MW / unrecorded',
+    'sidebar.layer.note': 'Square = substation · line = transmission · circle = power plant. Double border = 500/275 kV.',
+    'sidebar.planttype': 'Plant type',
+    'sidebar.planttype.note': 'Click to hide/show type. Symbol size ∝ MW capacity.',
+    'sidebar.filter': 'Filter',
+    'sidebar.filter.province': 'Province',
+    'sidebar.filter.all_provinces': 'All provinces',
+    'sidebar.filter.reset': 'Reset filter',
+    'sidebar.filter.note': 'Voltage & plant size filters live in the Layer section; plant type in "Plant type".',
+    'sidebar.about': 'ℹ About & data sources',
+    'footer.source': 'Sources: RUPTL PLN 2025–2034 · OpenStreetMap (© OSM contributors) · CARTO basemap.',
+    'footer.detail': 'Source detail & disclaimer',
+    'footer.attribution_prefix': 'Compiled by',
+    'footer.attribution_desc': 'Independent technical initiative to support public understanding of Indonesia\'s power system.',
+    'detail.close_title': 'Close',
+    'detail.kind.sub': 'Substation',
+    'detail.kind.gen': 'Power Plant',
+    'detail.kind.trm': 'Transmission Line',
+    'detail.transmisi_prefix': 'Transmission',
+    'detail.no_name': '(unnamed)',
+    'detail.no_capacity': 'not recorded',
+    'detail.field.id': 'ID',
+    'detail.field.province': 'Province',
+    'detail.field.system': 'System',
+    'detail.field.voltage': 'Voltage',
+    'detail.field.voltage_class': 'Voltage class',
+    'detail.field.trafo': 'Transformer count',
+    'detail.field.trafo_unit': 'units',
+    'detail.field.capacity': 'Capacity',
+    'detail.field.source': 'Source',
+    'detail.field.coordinate': 'Coordinate',
+    'detail.field.type': 'Type',
+    'detail.field.role': 'Role',
+    'detail.field.role_desc': 'Description',
+    'detail.field.status': 'Status',
+    'detail.field.operator': 'Operator',
+    'detail.field.method': 'Method',
+    'detail.field.length': 'Length',
+    'detail.field.osm_id': 'OSM ID',
+    'detail.connections.title': 'Connected transmission lines',
+    'detail.connections.empty': 'No transmission lines detected near this substation.',
+    'detail.connections.count': 'Connected transmission lines ({n})',
+    'search.no_results': 'No results.',
+    'about.title': 'About Indonesia Power Map',
+    'about.disclaimer_heading': 'Disclaimer',
+    'about.methodology_heading': 'Methodology (brief)',
+    'about.source_heading': 'Data sources',
+    'about.naming_heading': 'Naming notes',
+    'about.symbol_heading': 'Symbol conventions',
+    'about.license_heading': 'License',
+    'about.feedback_heading': 'Feedback & Contact',
+    'about.close_button': 'Got it, start exploring',
+    'about.version_prefix': 'Version',
+    'about.version_updated': 'Last updated',
+    'province.picker.title': 'Province Profile',
+    'province.picker.subtitle': 'Pick a province to see capacity summary, role composition, technology mix, and infrastructure counts.',
+    'province.picker.search_placeholder': 'Search province… (e.g. West Java, Sulawesi)',
+    'province.picker.meta': '{gen} plants · {sub} substations',
+    'province.picker.close': 'Close',
+    'province.profile.back': '← Back to province list',
+    'province.profile.close': 'Close',
+    'province.profile.headline.capacity': 'Installed Capacity',
+    'province.profile.headline.count_gen': 'Number of Plants',
+    'province.profile.headline.count_sub': 'Substations',
+    'province.profile.section.role': 'Composition by Role',
+    'province.profile.section.tech_mix': 'Technology Mix (by capacity)',
+    'province.profile.section.top_utility': 'Largest Utility Plant',
+    'province.profile.section.top_captive': 'Largest Captive Plant',
+    'province.profile.table.role': 'Role',
+    'province.profile.table.count': 'Count',
+    'province.profile.table.capacity': 'Capacity',
+    'province.profile.table.type': 'Type',
+    'province.profile.table.mix': 'Mix',
+    'province.profile.table.pct': '%',
+    'province.profile.table.no_capacity_data': 'No capacity data.',
+    'province.profile.empty': 'No plant or substation data for this province yet.',
+    'province.profile.filter_title': 'Filter map: only {q} in {province}',
+  },
+};
+
+let currentLanguage = 'id';
+
+// Format helper: t('some.key', {n: 42}) → interpolate {n} placeholder.
+// Fallback chain: currentLanguage → 'id' → raw key (untuk debugging kalau
+// key belum ada).
+function t(key, params) {
+  let str = (TRANSLATIONS[currentLanguage] && TRANSLATIONS[currentLanguage][key])
+         || TRANSLATIONS.id[key]
+         || key;
+  if (params) {
+    for (const k in params) {
+      str = str.replace(new RegExp('\\{' + k + '\\}', 'g'), params[k]);
+    }
+  }
+  return str;
+}
+
+// Ganti bahasa aktif dan trigger update UI. Persist ke localStorage supaya
+// pilihan user survive reload. Aman kalau localStorage tidak tersedia
+// (mis. private mode) — try/catch swallow error.
+function setLanguage(lang) {
+  if (!TRANSLATIONS[lang]) return;
+  currentLanguage = lang;
+  try { localStorage.setItem('ipm_lang', lang); } catch (e) {}
+  document.documentElement.lang = lang;
+  updateLanguage();
+}
+
+// Iterate semua elemen dengan data-i18n* attributes dan update text/attribut
+// dari dictionary. Juga trigger re-render dynamic content yang lagi visible
+// (modal, detail panel, planttype-legend) supaya bahasa langsung nyambung
+// tanpa perlu user klik ulang.
+function updateLanguage() {
+  // 1. Static HTML — textContent, placeholder, title, aria-label
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    el.textContent = t(el.dataset.i18n);
+  });
+  document.querySelectorAll('[data-i18n-html]').forEach(el => {
+    el.innerHTML = t(el.dataset.i18nHtml);
+  });
+  document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+    el.placeholder = t(el.dataset.i18nPlaceholder);
+  });
+  document.querySelectorAll('[data-i18n-title]').forEach(el => {
+    el.title = t(el.dataset.i18nTitle);
+  });
+  document.querySelectorAll('[data-i18n-aria]').forEach(el => {
+    el.setAttribute('aria-label', t(el.dataset.i18nAria));
+  });
+
+  // 2. Dropdown default option "All provinces"
+  const provSel = document.getElementById('f-province');
+  if (provSel && provSel.options[0]) {
+    provSel.options[0].textContent = t('sidebar.filter.all_provinces');
+  }
+
+  // 3. Basemap select — option label "Positron (no labels)"
+  const bmSel = document.getElementById('basemap-select');
+  if (bmSel) {
+    const opt = bmSel.querySelector('option[value="positron_nolabels"]');
+    if (opt) opt.textContent = t('sidebar.basemap.positron_nolabels');
+  }
+
+  // 4. Planttype-legend — singkatan PLTU/PLTA/dll TIDAK diterjemahkan
+  //    (domain nomenclature PLN), tapi deskripsi teknologinya YA (mis.
+  //    "Batubara (uap)" → "Coal (Steam)" saat EN). Re-render inline
+  //    per span daripada rebuild seluruh legend (yang akan add listener
+  //    duplikat + reset checkbox state user).
+  document.querySelectorAll('.pt-desc[data-plant-type]').forEach(el => {
+    const ty = el.dataset.plantType;
+    const d = plantDesc(ty);
+    el.textContent = d ? ' — ' + d : '';
+  });
+  const ptNote = document.querySelector('#planttype-legend .note');
+  if (ptNote) ptNote.textContent = t('sidebar.planttype.note');
+
+  // 5. Readout — kalau applyFilters sudah pernah jalan, count masih valid;
+  //    kita re-format supaya "fasilitas tampil" / "facilities shown" ikut ganti.
+  if (typeof applyFilters === 'function') applyFilters();
+
+  // 6. Detail panel — kalau lagi terbuka, re-render dari feature terakhir.
+  if (LAST_DETAIL_FT) {
+    showDetail(LAST_DETAIL_FT);
+  }
+
+  // 7. Modal Profil Provinsi — kalau kebuka, re-render sesuai state (picker
+  //    atau profile).
+  const provModal = document.getElementById('province-modal');
+  if (provModal && provModal.classList.contains('show')) {
+    if (CURRENT_PROVINCE_CONTEXT) {
+      renderProvinceProfile(CURRENT_PROVINCE_CONTEXT);
+    } else {
+      renderProvincePicker();
+    }
+  }
+
+  // 8. Modal Stats — kalau kebuka, re-render kalau kita tahu region terakhir.
+  const statsModal = document.getElementById('stats-modal');
+  if (statsModal && statsModal.classList.contains('show') && LAST_STATS_REGION) {
+    document.getElementById('stats-content').innerHTML = renderStatsHTML(LAST_STATS_REGION);
+  }
+}
+
+// State kecil untuk re-render support.
+let LAST_DETAIL_FT = null;
+let LAST_STATS_REGION = null;
+
+// ============================================================
 // MAP + BASEMAPS
 // ============================================================
 const map = L.map('map', {zoomControl: false}).setView([-2.5, 118.0], 5);
@@ -721,6 +1096,27 @@ document.getElementById('basemap-select').addEventListener('change', e => {
   map.removeLayer(currentBasemap);
   currentBasemap = basemaps[e.target.value].addTo(map);
 });
+
+// ============================================================
+// LANGUAGE SWITCHER — wire dropdown + restore persisted preference
+// ============================================================
+// Restore bahasa dari localStorage kalau ada (aman kalau tidak available).
+// Fallback ke 'id'. currentLanguage sudah di-init 'id' di atas.
+(function() {
+  let saved = null;
+  try { saved = localStorage.getItem('ipm_lang'); } catch (e) {}
+  const initial = (saved && TRANSLATIONS[saved]) ? saved : 'id';
+  currentLanguage = initial;
+  document.documentElement.lang = initial;
+  const sel = document.getElementById('lang-select');
+  if (sel) {
+    sel.value = initial;
+    sel.addEventListener('change', e => setLanguage(e.target.value));
+  }
+  // NOTE: updateLanguage() dipanggil setelah init() supaya semua elemen
+  // yang dibangun secara dinamis (planttype-legend, filter dropdown provinsi)
+  // sudah ada di DOM. Lihat init() di bawah.
+})();
 
 // Shared canvas renderer untuk semua garis transmisi (jauh lebih ringan
 // daripada SVG untuk ribuan polyline).
@@ -772,7 +1168,9 @@ const PLANT_LABEL = {
   'PLT Biomas':'BM','PLT Biomass':'BM','PLTBg':'BG',
   'Unknown':'?',
 };
-// Deskripsi sumber energi tiap jenis pembangkit (untuk legend & panel detail)
+// Deskripsi sumber energi tiap jenis pembangkit (untuk legend & panel detail).
+// Singkatan pembangkit (PLTU, PLTGU, dst.) TIDAK diterjemahkan — itu
+// nomenklatur baku PLN. Yang diterjemahkan hanya deskripsi teknologinya.
 const PLANT_DESC = {
   'PLTU':'Batubara (uap)','PLTGU':'Gas (combined cycle)','PLTG':'Gas (open cycle)',
   'PLTMG':'Mesin gas','PLTA':'Tenaga air','PLTM':'Minihidro','PLTMH':'Mikrohidro',
@@ -780,6 +1178,21 @@ const PLANT_DESC = {
   'PLTSa':'Sampah','PLT Biomas':'Biomassa','PLT Biomass':'Biomassa','PLTBg':'Biogas',
   'Unknown':'Tidak diketahui',
 };
+// English descriptions untuk mode EN. Sesuai standar industri global +
+// istilah yang umum di reporting sektor listrik Indonesia berbahasa Inggris.
+const PLANT_DESC_EN = {
+  'PLTU':'Coal (Steam)','PLTGU':'Gas (Combined Cycle)','PLTG':'Gas (Open Cycle)',
+  'PLTMG':'Gas Engine','PLTA':'Hydro','PLTM':'Mini Hydro','PLTMH':'Micro Hydro',
+  'PLTP':'Geothermal','PLTS':'Solar PV','PLTB':'Wind','PLTD':'Diesel',
+  'PLTSa':'Waste-to-Energy','PLT Biomas':'Biomass','PLT Biomass':'Biomass','PLTBg':'Biogas',
+  'Unknown':'Unknown',
+};
+// Locale-aware getter — pakai dictionary sesuai currentLanguage.
+// Dipanggil di setupFilters (legend) dan genDetailHTML (detail panel).
+function plantDesc(type) {
+  const dict = currentLanguage === 'en' ? PLANT_DESC_EN : PLANT_DESC;
+  return dict[type];
+}
 const DARK_TEXT = new Set(['PLTG','PLTM','PLTMH','PLTS','PLTB','PLTMG','PLTBg']);
 
 // --- Role klasifikasi pembangkit (Utility / Captive / Community) ---
@@ -849,14 +1262,14 @@ function dpRow(label, value) {
 }
 function subDetailHTML(p) {
   return `<table class="dp-table">
-    ${dpRow('ID', p.id)}
-    ${dpRow('Provinsi', p.province)}
-    ${dpRow('Sistem', p.system)}
-    ${dpRow('Tegangan', '<strong>' + p.voltage + ' kV</strong>')}
-    ${dpRow('Jumlah trafo', p.trafo_count ? p.trafo_count + ' unit' : '')}
-    ${dpRow('Kapasitas', p.capacity_mva ? p.capacity_mva + ' MVA' : '')}
-    ${dpRow('Sumber', p.source_id + (p.source_table ? ' (' + p.source_table + ')' : ''))}
-    ${dpRow('Koordinat', p.match_source)}
+    ${dpRow(t('detail.field.id'), p.id)}
+    ${dpRow(t('detail.field.province'), p.province)}
+    ${dpRow(t('detail.field.system'), p.system)}
+    ${dpRow(t('detail.field.voltage'), '<strong>' + p.voltage + ' kV</strong>')}
+    ${dpRow(t('detail.field.trafo'), p.trafo_count ? p.trafo_count + ' ' + t('detail.field.trafo_unit') : '')}
+    ${dpRow(t('detail.field.capacity'), p.capacity_mva ? p.capacity_mva + ' MVA' : '')}
+    ${dpRow(t('detail.field.source'), p.source_id + (p.source_table ? ' (' + p.source_table + ')' : ''))}
+    ${dpRow(t('detail.field.coordinate'), p.match_source)}
   </table>
   `;
 }
@@ -865,37 +1278,37 @@ function genDetailHTML(p) {
   // pembangkit lain. Default fallback ke 'MW' kalau field kosong.
   const unit = p.capacity_unit || (p.type === 'PLTS' ? 'MWp' : 'MW');
   const mw = p.capacity_mw
-    ? parseFloat(p.capacity_mw).toLocaleString('id-ID') + ' ' + unit
-    : '<i>tidak tercatat</i>';
+    ? parseFloat(p.capacity_mw).toLocaleString(currentLanguage === 'id' ? 'id-ID' : 'en-US') + ' ' + unit
+    : '<i>' + t('detail.no_capacity') + '</i>';
   // Peran fungsional pembangkit (Utility/Captive/Community). roleDescription
   // dibaca dari data kalau ada; kalau tidak, fallback ke ROLE_DESC mapping.
   const role = getRole(p);
   const roleDesc = p.roleDescription || ROLE_DESC[role] || ROLE_DESC['Utility'];
   return `<table class="dp-table">
-    ${dpRow('ID', p.id)}
-    ${dpRow('Jenis', '<strong>' + p.type + '</strong>'
-        + (PLANT_DESC[p.type] ? ' — ' + PLANT_DESC[p.type] : ''))}
-    ${dpRow('Peran', '<strong>' + role + '</strong>')}
-    ${dpRow('Deskripsi', roleDesc)}
-    ${dpRow('Kapasitas', mw)}
-    ${dpRow('Provinsi', p.province)}
-    ${dpRow('Sistem', p.system)}
-    ${dpRow('Status', p.status)}
-    ${dpRow('Operator', p.operator)}
-    ${dpRow('Metode', p.method)}
-    ${dpRow('Sumber', p.source_id)}
+    ${dpRow(t('detail.field.id'), p.id)}
+    ${dpRow(t('detail.field.type'), '<strong>' + p.type + '</strong>'
+        + (plantDesc(p.type) ? ' — ' + plantDesc(p.type) : ''))}
+    ${dpRow(t('detail.field.role'), '<strong>' + role + '</strong>')}
+    ${dpRow(t('detail.field.role_desc'), roleDesc)}
+    ${dpRow(t('detail.field.capacity'), mw)}
+    ${dpRow(t('detail.field.province'), p.province)}
+    ${dpRow(t('detail.field.system'), p.system)}
+    ${dpRow(t('detail.field.status'), p.status)}
+    ${dpRow(t('detail.field.operator'), p.operator)}
+    ${dpRow(t('detail.field.method'), p.method)}
+    ${dpRow(t('detail.field.source'), p.source_id)}
   </table>
   `;
 }
 function trmDetailHTML(p) {
   return `<table class="dp-table">
-    ${dpRow('ID', p.id)}
-    ${dpRow('Sistem', p.system)}
-    ${dpRow('Kelas tegangan', '<strong>' + p.voltage_class + '</strong>')}
-    ${dpRow('Tegangan', p.voltage_kv_all + ' kV')}
-    ${dpRow('Panjang', parseFloat(p.length_km).toFixed(1) + ' km')}
-    ${dpRow('OSM ID', p.osm_id)}
-    ${dpRow('Sumber', p.source_id)}
+    ${dpRow(t('detail.field.id'), p.id)}
+    ${dpRow(t('detail.field.system'), p.system)}
+    ${dpRow(t('detail.field.voltage_class'), '<strong>' + p.voltage_class + '</strong>')}
+    ${dpRow(t('detail.field.voltage'), p.voltage_kv_all + ' kV')}
+    ${dpRow(t('detail.field.length'), parseFloat(p.length_km).toFixed(1) + ' km')}
+    ${dpRow(t('detail.field.osm_id'), p.osm_id)}
+    ${dpRow(t('detail.field.source'), p.source_id)}
   </table>`;
 }
 
@@ -940,14 +1353,14 @@ function appendConnections(body, lines) {
   div.className = 'dp-conn';
   const h = document.createElement('h5');
   if (!lines.length) {
-    h.textContent = 'Saluran transmisi tersambung';
+    h.textContent = t('detail.connections.title');
     div.appendChild(h);
     const e = document.createElement('div');
     e.className = 'empty';
-    e.textContent = 'Tidak terdeteksi saluran di sekitar GI ini.';
+    e.textContent = t('detail.connections.empty');
     div.appendChild(e);
   } else {
-    h.textContent = `Saluran transmisi tersambung (${lines.length})`;
+    h.textContent = t('detail.connections.count', {n: lines.length});
     div.appendChild(h);
     lines.sort((a, b) =>
       (parseFloat(b.props.voltage_kv_max) || 0) - (parseFloat(a.props.voltage_kv_max) || 0));
@@ -966,23 +1379,24 @@ function appendConnections(body, lines) {
 }
 
 function showDetail(ft) {
+  LAST_DETAIL_FT = ft;  // simpan untuk re-render saat setLanguage
   const p = ft.props;
   const body = document.getElementById('dp-body');
   if (ft.kind === 'sub') {
-    document.getElementById('dp-kind').textContent = 'Gardu Induk';
-    document.getElementById('dp-title').textContent = p.name || '(tanpa nama)';
+    document.getElementById('dp-kind').textContent = t('detail.kind.sub');
+    document.getElementById('dp-title').textContent = p.name || t('detail.no_name');
     body.innerHTML = subDetailHTML(p);
     const lines = connectedLines(ft);
     highlightLines(lines);
     appendConnections(body, lines);
   } else if (ft.kind === 'gen') {
-    document.getElementById('dp-kind').textContent = 'Pembangkit';
-    document.getElementById('dp-title').textContent = p.name || '(tanpa nama)';
+    document.getElementById('dp-kind').textContent = t('detail.kind.gen');
+    document.getElementById('dp-title').textContent = p.name || t('detail.no_name');
     body.innerHTML = genDetailHTML(p);
     clearHighlight();
   } else {
-    document.getElementById('dp-kind').textContent = 'Saluran Transmisi';
-    document.getElementById('dp-title').textContent = 'Transmisi ' + p.voltage_class;
+    document.getElementById('dp-kind').textContent = t('detail.kind.trm');
+    document.getElementById('dp-title').textContent = t('detail.transmisi_prefix') + ' ' + p.voltage_class;
     body.innerHTML = trmDetailHTML(p);
     // Highlight ruas transmisi yang sedang ditampilkan di detail panel,
     // mirror behaviour klik GI. Pakai highlightLines([ft]) supaya semua
@@ -994,6 +1408,7 @@ function showDetail(ft) {
 function closeDetail() {
   document.getElementById('detail-panel').classList.remove('open');
   clearHighlight();
+  LAST_DETAIL_FT = null;  // reset supaya updateLanguage tidak re-open panel yang sudah ditutup
 }
 
 // ============================================================
@@ -1185,8 +1600,9 @@ function updateZoomUI() {
 }
 
 function updateReadout(shown) {
+  const localeCode = currentLanguage === 'id' ? 'id-ID' : 'en-US';
   document.getElementById('readout').textContent =
-    `${shown.toLocaleString('id-ID')} fasilitas tampil`;
+    t('header.readout_count', {n: shown.toLocaleString(localeCode)});
 }
 
 // ============================================================
@@ -1205,12 +1621,12 @@ function runSearch(q) {
   }
   hits.sort((a, b) => b.starts - a.starts);   // prefix match diutamakan
   const top = hits.slice(0, 8);
-  if (!top.length) { box.innerHTML = '<div class="empty">Tidak ada hasil.</div>'; return; }
+  if (!top.length) { box.innerHTML = `<div class="empty">${t('search.no_results')}</div>`; return; }
   box.innerHTML = '';
   top.forEach(({ ft }) => {
     const div = document.createElement('div');
     div.className = 'hit';
-    const kind = ft.kind === 'sub' ? 'Gardu Induk' : 'Pembangkit';
+    const kind = ft.kind === 'sub' ? t('detail.kind.sub') : t('detail.kind.gen');
     div.innerHTML = `${ft.props.name}<div class="meta">${kind} · ${ft.props.province || ''}</div>`;
     div.addEventListener('click', () => selectSearchResult(ft));
     box.appendChild(div);
@@ -1248,17 +1664,21 @@ function setupFilters() {
 
   // Legend jenis pembangkit yang interaktif (klik = toggle visibilitas)
   const ptLegend = document.getElementById('planttype-legend');
-  [...types].sort().forEach(t => {
-    const color = PLANT_COLORS[t] || '#999';
-    const code = PLANT_LABEL[t] || '?';
-    const dark = DARK_TEXT.has(t);
+  // NOTE: loop var renamed dari `t` ke `ty` — hindari shadow global t().
+  // Description dibungkus <span class="pt-desc" data-plant-type="..."> supaya
+  // updateLanguage() bisa re-render text-nya saat user switch bahasa tanpa
+  // rebuild seluruh legend (yang akan add listener duplikat).
+  [...types].sort().forEach(ty => {
+    const color = PLANT_COLORS[ty] || '#999';
+    const code = PLANT_LABEL[ty] || '?';
+    const dark = DARK_TEXT.has(ty);
     const lab = document.createElement('label');
     lab.className = 'type-toggle';
-    const desc = PLANT_DESC[t] ? ' — ' + PLANT_DESC[t] : '';
-    lab.innerHTML = `<input type="checkbox" class="f-type" value="${t}" checked>
+    const desc = plantDesc(ty) ? ' — ' + plantDesc(ty) : '';
+    lab.innerHTML = `<input type="checkbox" class="f-type" value="${ty}" checked>
       <span class="circle-sym" style="background:${color};${dark ? 'color:#222;' : ''}
         width:15px;height:15px;font-size:8px">${code}</span>
-      <span><strong>${t}</strong>${desc}</span>`;
+      <span><strong>${ty}</strong><span class="pt-desc" data-plant-type="${ty}">${desc}</span></span>`;
     ptLegend.appendChild(lab);
   });
   const ptNote = document.createElement('div');
@@ -1428,6 +1848,11 @@ function init() {
 
   // Capture state DI SINI — setelah semua control + visibility ter-settle
   INITIAL_FILTER_STATE = captureFilterState();
+
+  // Apply bahasa aktif ke semua elemen data-i18n* + dynamic content yang
+  // baru saja dibuat (planttype-legend, filter dropdown). Panggilan ini
+  // pasti terjadi setelah init lengkap.
+  if (typeof updateLanguage === 'function') updateLanguage();
 }
 
 // ============================================================
@@ -1518,10 +1943,11 @@ function renderStatsHTML(regionKey) {
 
   const genRows = Object.entries(s.genByType)
     .sort((a, b) => b[1].mw - a[1].mw || b[1].count - a[1].count)
-    .map(([t, v]) => {
+    .map(([ty, v]) => {
       // PLTS pakai MWp (Megawatt-peak); jenis lain pakai MW konvensional.
-      const u = t === 'PLTS' ? 'MWp' : 'MW';
-      return `<tr><td>${t}</td><td class="num">${v.count}</td><td class="num">${fmt(v.mw)} ${u}</td></tr>`;
+      // NOTE: loop variable dari `t` ke `ty` — hindari shadow global t().
+      const u = ty === 'PLTS' ? 'MWp' : 'MW';
+      return `<tr><td>${ty}</td><td class="num">${v.count}</td><td class="num">${fmt(v.mw)} ${u}</td></tr>`;
     }).join('');
 
   const subRows = s.VOLT_CLASSES.filter(v => s.subByVolt[v])
@@ -1589,14 +2015,15 @@ function computeProfile(scope) {
     roleStats[r].mw += parseFloat(g.props.capacity_mw) || 0;
   }
 
-  // Bauran teknologi: kapasitas + count per jenis pembangkit
+  // Bauran teknologi: kapasitas + count per jenis pembangkit.
+  // NOTE: local var renamed dari `t` ke `ty` untuk hindari shadow global t().
   const techMix = {};
   for (const g of gens) {
-    const t = g.props.type || 'Unknown';
+    const ty = g.props.type || 'Unknown';
     const mw = parseFloat(g.props.capacity_mw) || 0;
-    if (!techMix[t]) techMix[t] = { count: 0, mw: 0 };
-    techMix[t].count++;
-    techMix[t].mw += mw;
+    if (!techMix[ty]) techMix[ty] = { count: 0, mw: 0 };
+    techMix[ty].count++;
+    techMix[ty].mw += mw;
   }
 
   // Pembangkit terbesar per role (skip yang capacity-nya tidak diketahui)
@@ -1608,11 +2035,12 @@ function computeProfile(scope) {
     topByRole[r] = candidates[0] || null;
   }
 
-  // Panjang transmisi: jumlahkan length_km kalau ada data
+  // Panjang transmisi: jumlahkan length_km kalau ada data.
+  // NOTE: loop var renamed dari `t` ke `trm` — hindari shadow global t().
   let trmKm = 0;
   let trmHasData = false;
-  for (const t of trms) {
-    const km = parseFloat(t.props.length_km);
+  for (const trm of trms) {
+    const km = parseFloat(trm.props.length_km);
     if (!isNaN(km)) { trmKm += km; trmHasData = true; }
   }
 
@@ -1709,21 +2137,21 @@ function renderProvincePicker() {
 
   const itemsHTML = provinces.map(p => {
     const c = provCounts[p];
+    const meta = t('province.picker.meta', {gen: c.gen, sub: c.sub});
     return `<button class="province-item" data-province="${p.replace(/"/g, '&quot;')}">
       <span class="pname">${p}</span>
-      <span class="pmeta">${c.gen} pembangkit · ${c.sub} GI</span>
+      <span class="pmeta">${meta}</span>
     </button>`;
   }).join('');
 
   document.getElementById('province-content').innerHTML = `
-    <h2>Profil Provinsi</h2>
+    <h2>${t('province.picker.title')}</h2>
     <p style="font-size:12px;color:#666;margin:4px 0 0;">
-      Pilih provinsi untuk lihat ringkasan kapasitas, komposisi role,
-      bauran teknologi, dan jumlah infrastruktur.</p>
+      ${t('province.picker.subtitle')}</p>
     <input type="text" class="province-search" id="province-search"
-           placeholder="Cari provinsi… (mis. Jawa Barat, Sulawesi)">
+           placeholder="${t('province.picker.search_placeholder').replace(/"/g, '&quot;')}">
     <div class="province-list" id="province-list">${itemsHTML}</div>
-    <button class="close" onclick="document.getElementById('province-modal').classList.remove('show')">Tutup</button>
+    <button class="close" onclick="document.getElementById('province-modal').classList.remove('show')">${t('province.picker.close')}</button>
   `;
 
   // Wire province click → fly dulu ke bounds provinsi, baru profile muncul
@@ -1753,22 +2181,23 @@ function renderProvinceProfile(provinceName) {
   setProvinceContext(provinceName);
 
   const p = computeProvinceProfile(provinceName);
-  const fmtNum = n => (n || 0).toLocaleString('id-ID', {maximumFractionDigits: 1});
+  const localeCode = currentLanguage === 'id' ? 'id-ID' : 'en-US';
+  const fmtNum = n => (n || 0).toLocaleString(localeCode, {maximumFractionDigits: 1});
 
   // Headline (kapasitas + jumlah pembangkit)
   const headline = `
     <div class="profile-headline">
       <div class="headline-item">
         <div class="v">${formatCapacity(p.totalMW)}</div>
-        <div class="l">Kapasitas Terpasang</div>
+        <div class="l">${t('province.profile.headline.capacity')}</div>
       </div>
       <div class="headline-item">
         <div class="v">${p.genCount}</div>
-        <div class="l">Jumlah Pembangkit</div>
+        <div class="l">${t('province.profile.headline.count_gen')}</div>
       </div>
       <div class="headline-item">
         <div class="v">${p.subCount}</div>
-        <div class="l">Gardu Induk</div>
+        <div class="l">${t('province.profile.headline.count_sub')}</div>
       </div>
     </div>`;
 
@@ -1779,8 +2208,9 @@ function renderProvinceProfile(provinceName) {
     const s = p.roleStats[r] || {count: 0, mw: 0};
     const dotColor = ROLE_COLOR[r] || '#999';
     const clickable = s.count > 0;
+    const filterTitle = t('province.profile.filter_title', {q: r, province: provinceName});
     const trAttrs = clickable
-      ? `class="role-row clickable" data-role-filter="${r}" role="button" tabindex="0" title="Filter peta: hanya pembangkit ${r} di ${provinceName}"`
+      ? `class="role-row clickable" data-role-filter="${r}" role="button" tabindex="0" title="${filterTitle.replace(/"/g, '&quot;')}"`
       : `class="role-row empty"`;
     return `<tr ${trAttrs}>
       <td><span class="role-dot" style="background:${dotColor}"></span>${r}</td>
@@ -1789,27 +2219,29 @@ function renderProvinceProfile(provinceName) {
     </tr>`;
   }).join('');
 
-  // Bauran teknologi (sort by MW desc)
+  // Bauran teknologi (sort by MW desc). NOTE: loop variable renamed dari `t`
+  // ke `ty` untuk avoid shadowing global t() (translation function).
   const techEntries = Object.entries(p.techMix)
     .sort((a, b) => b[1].mw - a[1].mw || b[1].count - a[1].count);
-  const techRows = techEntries.length ? techEntries.map(([t, v]) => {
+  const techRows = techEntries.length ? techEntries.map(([ty, v]) => {
     const pct = p.totalMW > 0 ? (v.mw / p.totalMW * 100) : 0;
-    const unit = t === 'PLTS' ? 'MWp' : 'MW';
+    const unit = ty === 'PLTS' ? 'MWp' : 'MW';
     // Bar dan % di kolom terpisah. Kolom .col-bar punya width tetap 140px,
     // sehingga semua bar align di posisi horizontal yang sama dan max
     // width-nya (100%) konsisten antar baris. Presisi 2 desimal pada
     // width supaya 0.5% benar-benar 0.55% (proporsional, bukan dibulatkan).
     // Row clickable: filter peta ke type ini + provinsi sekarang.
-    return `<tr class="tech-row clickable" data-tech-filter="${t}"
+    const filterTitle = t('province.profile.filter_title', {q: ty, province: provinceName});
+    return `<tr class="tech-row clickable" data-tech-filter="${ty}"
                 role="button" tabindex="0"
-                title="Filter peta: hanya ${t} di ${provinceName}">
-      <td>${t}</td>
+                title="${filterTitle.replace(/"/g, '&quot;')}">
+      <td>${ty}</td>
       <td class="num">${v.count}</td>
       <td class="num">${v.mw > 0 ? fmtNum(v.mw) + ' ' + unit : '-'}</td>
       <td class="col-bar"><span class="pct-bar"><span class="fill" style="width:${pct.toFixed(2)}%"></span></span></td>
       <td class="col-pct">${pct.toFixed(1)}%</td>
     </tr>`;
-  }).join('') : '<tr><td colspan="5"><em>Tidak ada data kapasitas.</em></td></tr>';
+  }).join('') : `<tr><td colspan="5"><em>${t('province.profile.table.no_capacity_data')}</em></td></tr>`;
 
   // Top per role — render card. Card clickable kalau ada feature (data-role-top
   // attribute dipakai handler untuk lookup ulang top object). Empty state
@@ -1817,13 +2249,20 @@ function renderProvinceProfile(provinceName) {
   function renderTop(r) {
     const top = p.topByRole[r];
     if (!top) {
-      return `<div class="profile-top empty">Tidak ada pembangkit ${r}.</div>`;
+      // Empty state — pakai simple pattern "No X plants." dengan role name inline
+      const emptyMsg = currentLanguage === 'en'
+        ? `No ${r} plants.`
+        : `Tidak ada pembangkit ${r}.`;
+      return `<div class="profile-top empty">${emptyMsg}</div>`;
     }
     const unit = top.props.type === 'PLTS' ? 'MWp' : 'MW';
+    const tipMsg = currentLanguage === 'en'
+      ? 'Click to focus on the plant location'
+      : 'Klik untuk fokus ke lokasi pembangkit di peta';
     return `<div class="profile-top" data-role-top="${r}" role="button" tabindex="0"
-                 title="Klik untuk fokus ke lokasi pembangkit di peta">
+                 title="${tipMsg}">
       <div class="top-info">
-        <div class="top-name">${top.props.name || '(tanpa nama)'}</div>
+        <div class="top-name">${top.props.name || t('detail.no_name')}</div>
         <div class="top-cap">${top.props.type} · ${fmtNum(parseFloat(top.props.capacity_mw))} ${unit}</div>
       </div>
       <div class="top-arrow" aria-hidden="true">→</div>
@@ -1839,10 +2278,10 @@ function renderProvinceProfile(provinceName) {
   // Empty province check
   if (p.genCount === 0 && p.subCount === 0) {
     document.getElementById('province-content').innerHTML = `
-      <button class="back-btn" id="prov-back">← Kembali ke daftar provinsi</button>
+      <button class="back-btn" id="prov-back">${t('province.profile.back')}</button>
       <h2>${provinceName}</h2>
-      <div class="profile-empty">Belum ada data pembangkit atau gardu induk untuk provinsi ini.</div>
-      <button class="close" onclick="document.getElementById('province-modal').classList.remove('show')">Tutup</button>
+      <div class="profile-empty">${t('province.profile.empty')}</div>
+      <button class="close" onclick="document.getElementById('province-modal').classList.remove('show')">${t('province.profile.close')}</button>
     `;
     document.getElementById('prov-back').addEventListener('click', () => {
       // Back = keluar dari konteks provinsi ini. Reset filter eksplorasi
@@ -1856,43 +2295,43 @@ function renderProvinceProfile(provinceName) {
   }
 
   document.getElementById('province-content').innerHTML = `
-    <button class="back-btn" id="prov-back">← Kembali ke daftar provinsi</button>
+    <button class="back-btn" id="prov-back">${t('province.profile.back')}</button>
     <h2>${provinceName}</h2>
     ${headline}
 
     <div class="profile-section">
-      <h4>Komposisi Berdasarkan Role</h4>
+      <h4>${t('province.profile.section.role')}</h4>
       <table class="profile-table">
-        <thead><tr><th>Role</th><th class="num">Jumlah</th><th class="num">Kapasitas</th></tr></thead>
+        <thead><tr><th>${t('province.profile.table.role')}</th><th class="num">${t('province.profile.table.count')}</th><th class="num">${t('province.profile.table.capacity')}</th></tr></thead>
         <tbody>${roleRows}</tbody>
       </table>
     </div>
 
     <div class="profile-section">
-      <h4>Bauran Teknologi (berdasar kapasitas)</h4>
+      <h4>${t('province.profile.section.tech_mix')}</h4>
       <table class="profile-table">
         <thead><tr>
-          <th>Jenis</th>
-          <th class="num">Jumlah</th>
-          <th class="num">Kapasitas</th>
-          <th class="col-bar">Bauran</th>
-          <th class="col-pct">%</th>
+          <th>${t('province.profile.table.type')}</th>
+          <th class="num">${t('province.profile.table.count')}</th>
+          <th class="num">${t('province.profile.table.capacity')}</th>
+          <th class="col-bar">${t('province.profile.table.mix')}</th>
+          <th class="col-pct">${t('province.profile.table.pct')}</th>
         </tr></thead>
         <tbody>${techRows}</tbody>
       </table>
     </div>
 
     <div class="profile-section">
-      <h4>Pembangkit Utility Terbesar</h4>
+      <h4>${t('province.profile.section.top_utility')}</h4>
       ${renderTop('Utility')}
     </div>
 
     <div class="profile-section">
-      <h4>Pembangkit Captive Terbesar</h4>
+      <h4>${t('province.profile.section.top_captive')}</h4>
       ${renderTop('Captive')}
     </div>
 
-    <button class="close" onclick="document.getElementById('province-modal').classList.remove('show')">Tutup</button>
+    <button class="close" onclick="document.getElementById('province-modal').classList.remove('show')">${t('province.profile.close')}</button>
   `;
   document.getElementById('prov-back').addEventListener('click', () => {
     // Back = keluar dari konteks provinsi ini. Reset filter eksplorasi
@@ -2137,7 +2576,8 @@ document.querySelectorAll('.region-stats').forEach(btn => {
   btn.addEventListener('click', e => {
     e.preventDefault();
     e.stopPropagation();
-    document.getElementById('stats-content').innerHTML = renderStatsHTML(btn.dataset.region);
+    LAST_STATS_REGION = btn.dataset.region;  // simpan untuk updateLanguage re-render
+    document.getElementById('stats-content').innerHTML = renderStatsHTML(LAST_STATS_REGION);
     document.getElementById('stats-modal').classList.add('show');
   });
 });
