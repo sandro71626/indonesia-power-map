@@ -54,7 +54,9 @@
      konteks suatu provinsi. Klik = buka ulang Profil Provinsi tersebut.
      Filosofi: bukan primary button, bukan breadcrumb. Hanya marker konteks
      aktif. Auto-hide kalau belum/tidak ada konteks (.show toggled by JS). */
-  .context-anchor { display: none; align-items: center; gap: 5px;
+  /* Breadcrumb navigator (dulunya single-button context anchor). Container
+     tidak clickable — inner .crumb buttons yang handle klik & hover. */
+  .context-anchor { display: none; align-items: center; gap: 2px;
                     background: white; border: 1px solid #e0e0e0;
                     border-radius: 14px; padding: 4px 11px;
                     font-size: 11px; color: #555; cursor: pointer;
@@ -63,13 +65,21 @@
                     transition: background 0.12s, color 0.12s,
                                 border-color 0.12s; }
   .context-anchor.show { display: inline-flex; }
-  .context-anchor:hover { background: #f7faff; color: #1f77b4;
-                          border-color: #1f77b4; }
-  .context-anchor:hover .name { text-decoration: underline;
-                                text-decoration-thickness: 1px;
-                                text-underline-offset: 2px; }
-  .context-anchor .icon { font-size: 12px; line-height: 1; }
-  .context-anchor .name { font-weight: 500; }
+  .context-anchor { cursor: default; }  /* override — inner .crumb handles cursor */
+  .context-anchor .icon { font-size: 12px; line-height: 1; margin-right: 3px; }
+  .context-anchor .crumb { background: none; border: none; padding: 2px 7px;
+                           font: inherit; color: inherit; cursor: pointer;
+                           border-radius: 10px; white-space: nowrap;
+                           font-weight: 500;
+                           transition: background 0.12s, color 0.12s; }
+  .context-anchor .crumb:hover { background: #eef4fa; color: #1f77b4;
+                                 text-decoration: underline;
+                                 text-decoration-thickness: 1px;
+                                 text-underline-offset: 2px; }
+  .context-anchor .crumb-sep { color: #bbb; font-weight: 400;
+                               padding: 0 1px; user-select: none; }
+  .context-anchor .crumb:empty,
+  .context-anchor .crumb-sep.hide { display: none; }
 
   .footer { position: absolute; bottom: 10px; left: 10px;
             background: rgba(255,255,255,0.95); padding: 6px 10px; border-radius: 4px;
@@ -391,6 +401,10 @@
             data-i18n="menu.legend_label"
             data-i18n-title="menu.legend_title"
             title="Tampilkan/sembunyikan panel legenda">📖 Legenda</button>
+    <button class="menu-btn" id="menu-region"
+            data-i18n="menu.region_label"
+            data-i18n-title="menu.region_title"
+            title="Profil ringkas per region">🗺️ Profil Region</button>
     <button class="menu-btn" id="menu-province"
             data-i18n="menu.province_label"
             data-i18n-title="menu.province_title"
@@ -406,17 +420,22 @@
     </select>
   </nav>
 
-  <!-- Context Anchor — pill konteks aktif. Muncul saat user dalam konteks
-       suatu provinsi (after open Profil Provinsi). Klik = reopen profile
-       tanpa ubah peta/filter. Hidden by default. JS toggle via .show. -->
-  <button class="context-anchor" id="context-anchor" type="button"
-          data-i18n-aria="menu.context_anchor_title"
-          data-i18n-title="menu.context_anchor_title"
-          title="Kembali ke Profil Provinsi yang sedang aktif"
-          aria-label="Kembali ke Profil Provinsi yang sedang aktif">
+  <!-- Breadcrumb navigator — pill konteks eksplorasi. Format:
+       [Region]  atau  [Region] / [Province]
+       Setiap crumb clickable:
+       - Klik region crumb  → buka Regional Profile (province di-clear)
+       - Klik province crumb → buka Province Profile (semi-reset filter)
+       Hidden by default; JS toggle .show class saat state region/province aktif. -->
+  <div class="context-anchor" id="context-anchor">
     <span class="icon" aria-hidden="true">📍</span>
-    <span class="name" id="context-anchor-name"></span>
-  </button>
+    <button class="crumb crumb-region" id="crumb-region" type="button"
+            data-i18n-title="menu.breadcrumb_region_title"
+            title="Kembali ke Regional Profile"></button>
+    <span class="crumb-sep" id="crumb-sep" aria-hidden="true">/</span>
+    <button class="crumb crumb-province" id="crumb-province" type="button"
+            data-i18n-title="menu.breadcrumb_province_title"
+            title="Kembali ke Province Profile"></button>
+  </div>
 </div>
 
 <div id="map"></div>
@@ -713,6 +732,15 @@
   <div class="modal" id="province-content"></div>
 </div>
 
+<!-- Profil Regional modal: mirror struktur province-modal. 2 state (picker
+     list of 8 regions vs region profile detail) di-switch via JS
+     renderRegionPicker / renderRegionalProfile. Reuse CSS class .province-*
+     supaya visual persis konsisten dengan Province Profile. -->
+<div class="modal-backdrop" id="regional-modal"
+     onclick="if(event.target===this)this.classList.remove('show')">
+  <div class="modal" id="regional-content"></div>
+</div>
+
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="data_jamali.js"></script>
 <script src="data_sumatra.js"></script>
@@ -747,7 +775,25 @@ const TRANSLATIONS = {
     'menu.legend_title': 'Tampilkan/sembunyikan panel legenda',
     'menu.province_label': '📊 Profil Provinsi',
     'menu.province_title': 'Profil ringkas per provinsi',
+    'menu.region_label': '🗺️ Profil Region',
+    'menu.region_title': 'Profil ringkas per region (JAMALI, Sumatra, dst.)',
     'menu.context_anchor_title': 'Kembali ke Profil Provinsi yang sedang aktif',
+    'menu.breadcrumb_region_title': 'Kembali ke Regional Profile — Province Profile ditutup, filter region tetap aktif',
+    'menu.breadcrumb_province_title': 'Buka kembali Province Profile',
+    // Regional Profile — mirror Province Profile, plus section Kontribusi Provinsi
+    'region.picker.title': 'Profil Region',
+    'region.picker.subtitle': 'Pilih region untuk lihat ringkasan kapasitas, komposisi role, bauran teknologi, dan kontribusi tiap provinsi.',
+    'region.picker.search_placeholder': 'Cari region… (mis. JAMALI, Sumatra)',
+    'region.picker.meta': '{prov} provinsi · {gen} pembangkit · {sub} GI',
+    'region.picker.close': 'Tutup',
+    'region.profile.back': '← Kembali ke daftar region',
+    'region.profile.close': 'Tutup',
+    'region.profile.headline.count_prov': 'Jumlah Provinsi',
+    'region.profile.section.contribution': 'Kontribusi Provinsi (berdasar kapasitas)',
+    'region.profile.contribution.tooltip': 'Buka Profil Provinsi {province}',
+    'region.profile.contribution.no_data': 'Tidak ada data kapasitas per provinsi.',
+    'region.profile.contribution.no_capacity': 'tanpa kapasitas tercatat',
+    'region.profile.empty': 'Belum ada data untuk region ini.',
     // Sidebar sections
     'sidebar.language': 'Bahasa',
     'sidebar.minimize_title': 'Minimize legenda',
@@ -940,7 +986,24 @@ const TRANSLATIONS = {
     'menu.legend_title': 'Show/hide legend panel',
     'menu.province_label': '📊 Province Profile',
     'menu.province_title': 'Concise per-province profile',
+    'menu.region_label': '🗺️ Regional Profile',
+    'menu.region_title': 'Concise per-region profile (JAMALI, Sumatra, etc.)',
     'menu.context_anchor_title': 'Return to active Province Profile',
+    'menu.breadcrumb_region_title': 'Return to Regional Profile — closes Province Profile, region filter stays active',
+    'menu.breadcrumb_province_title': 'Reopen Province Profile',
+    'region.picker.title': 'Regional Profile',
+    'region.picker.subtitle': 'Pick a region to see capacity summary, role composition, technology mix, and each province\'s contribution.',
+    'region.picker.search_placeholder': 'Search region… (e.g. JAMALI, Sumatra)',
+    'region.picker.meta': '{prov} provinces · {gen} generators · {sub} substations',
+    'region.picker.close': 'Close',
+    'region.profile.back': '← Back to region list',
+    'region.profile.close': 'Close',
+    'region.profile.headline.count_prov': 'Number of Provinces',
+    'region.profile.section.contribution': 'Provincial Contribution (by capacity)',
+    'region.profile.contribution.tooltip': 'Open Province Profile: {province}',
+    'region.profile.contribution.no_data': 'No per-province capacity data.',
+    'region.profile.contribution.no_capacity': 'no capacity recorded',
+    'region.profile.empty': 'No data for this region yet.',
     'sidebar.language': 'Language',
     'sidebar.minimize_title': 'Minimize legend',
     'sidebar.basemap': 'Basemap',
@@ -1216,6 +1279,16 @@ function updateLanguage() {
     }
   }
 
+  // 7b. Modal Profil Region — sama pattern dengan Profil Provinsi.
+  const regionModal = document.getElementById('regional-modal');
+  if (regionModal && regionModal.classList.contains('show')) {
+    if (CURRENT_REGION_CONTEXT) {
+      renderRegionalProfile(CURRENT_REGION_CONTEXT);
+    } else {
+      renderRegionPicker();
+    }
+  }
+
   // 8. Modal Stats — kalau kebuka, re-render kalau kita tahu region terakhir.
   const statsModal = document.getElementById('stats-modal');
   if (statsModal && statsModal.classList.contains('show') && LAST_STATS_REGION) {
@@ -1226,6 +1299,81 @@ function updateLanguage() {
 // State kecil untuk re-render support.
 let LAST_DETAIL_FT = null;
 let LAST_STATS_REGION = null;
+
+// ============================================================
+// BREADCRUMB NAVIGATOR — state + helpers
+// ============================================================
+// Model: Region ⊃ Province. Province TIDAK BOLEH aktif tanpa Region parent.
+// Region boleh aktif standalone. Home = clear semuanya.
+//
+// PROVINCE_TO_REGION mapping dibangun sekali di init() setelah buildFeatures
+// dari ft.props.province × ft.region. Dipakai untuk auto-derive region saat
+// user pick province langsung (mis. dari menu Province Profile → pick "Aceh"
+// → sistem tahu "Aceh" ada di region "sumatra").
+const PROVINCE_TO_REGION = {};
+function getRegionForProvince(provinceName) {
+  return PROVINCE_TO_REGION[provinceName] || null;
+}
+
+// Apply Region Filter — hide semua region toggle kecuali yang dipilih.
+// Menggunakan mekanisme existing (r-{region} checkboxes) supaya konsisten
+// dengan user manual toggle. applyFilters() otomatis membaca checkbox state.
+function setRegionFilterOnly(regionKey) {
+  REGION_KEYS.forEach(k => {
+    const cb = document.getElementById('r-' + k);
+    if (cb) cb.checked = (k === regionKey);
+  });
+  applyFilters();
+}
+
+// Reset semua region toggle ke checked — dipakai saat Home / exit region context
+function clearRegionFilter() {
+  REGION_KEYS.forEach(k => {
+    const cb = document.getElementById('r-' + k);
+    if (cb) cb.checked = true;
+  });
+  applyFilters();
+}
+
+// Render breadcrumb dari CURRENT_REGION_CONTEXT + CURRENT_PROVINCE_CONTEXT.
+// Panggilan idempoten — bisa dipanggil kapan saja setelah state berubah.
+function updateBreadcrumb() {
+  const anchor = document.getElementById('context-anchor');
+  const regionCrumb = document.getElementById('crumb-region');
+  const sep = document.getElementById('crumb-sep');
+  const provCrumb = document.getElementById('crumb-province');
+  if (!anchor) return;
+
+  const hasRegion = !!CURRENT_REGION_CONTEXT;
+  const hasProvince = !!CURRENT_PROVINCE_CONTEXT;
+
+  if (!hasRegion && !hasProvince) {
+    anchor.classList.remove('show');
+    return;
+  }
+  anchor.classList.add('show');
+
+  // Region crumb — always shown when either state active. Kalau hanya province
+  // (edge case), derive region dari mapping supaya invariant "province ⊂ region"
+  // tetap dijaga secara visual.
+  const effectiveRegion = CURRENT_REGION_CONTEXT
+    || (hasProvince ? getRegionForProvince(CURRENT_PROVINCE_CONTEXT) : null);
+  if (effectiveRegion) {
+    regionCrumb.textContent = REGION_LABEL[effectiveRegion] || effectiveRegion;
+    regionCrumb.style.display = '';
+  } else {
+    regionCrumb.style.display = 'none';
+  }
+
+  if (hasProvince) {
+    provCrumb.textContent = CURRENT_PROVINCE_CONTEXT;
+    provCrumb.style.display = '';
+    sep.classList.remove('hide');
+  } else {
+    provCrumb.style.display = 'none';
+    sep.classList.add('hide');
+  }
+}
 
 // ============================================================
 // MAP + BASEMAPS
@@ -1947,14 +2095,18 @@ function restoreFilterState(state) {
 // NAV_FLY_DURATION & flyToBounds supaya animasi konsisten dengan
 // navigateToFeature.
 function goHome() {
-  // 0. Bersihkan context anchor — user kembali ke "no province context"
-  setProvinceContext(null);
+  // 0. Bersihkan breadcrumb konteks — user kembali ke "Indonesia" (no context).
+  //    Clear BOTH region & province state. Region filter di-reset ke semua
+  //    region visible (per requirement item 7: "Ketika kembali ke Indonesia
+  //    (Home), seluruh filter region harus di-reset").
+  CURRENT_REGION_CONTEXT = null;
+  setProvinceContext(null);  // otomatis updateBreadcrumb
   // 1. Tutup popup pembangkit (detail panel + transmisi highlight)
   closeDetail();
-  // 2. Tutup modal eksplorasi (province, stats). Disclaimer (about) sengaja
-  //    TIDAK ditutup paksa di sini — kalau lagi terbuka (mis. user lagi
-  //    baca), biarkan; kalau tidak terbuka, tidak akan muncul lagi.
+  // 2. Tutup modal eksplorasi (province, region, stats). Disclaimer (about)
+  //    sengaja TIDAK ditutup paksa di sini.
   document.getElementById('province-modal').classList.remove('show');
+  document.getElementById('regional-modal').classList.remove('show');
   document.getElementById('stats-modal').classList.remove('show');
   // 3. Clear search input + dropdown results
   const si = document.getElementById('search-input');
@@ -1991,6 +2143,17 @@ function init() {
   }
   buildFeatures();
   setupFilters();
+
+  // Populate PROVINCE_TO_REGION mapping — dipakai getRegionForProvince() untuk
+  // auto-derive region parent saat user pick province langsung tanpa lewat
+  // Regional Profile. Dibangun sekali dari data yang sudah loaded.
+  for (const ft of features) {
+    if (ft.kind === 'trm') continue;
+    const prov = ft.props.province;
+    if (prov && ft.region && !PROVINCE_TO_REGION[prov]) {
+      PROVINCE_TO_REGION[prov] = ft.region;
+    }
+  }
 
   // Fit ke seluruh cakupan data (pakai bounds semua titik/garis)
   const allLatLngs = [];
@@ -2267,16 +2430,14 @@ let CURRENT_PROVINCE_CONTEXT = null;
 
 function setProvinceContext(provinceName) {
   CURRENT_PROVINCE_CONTEXT = provinceName || null;
-  const anchor = document.getElementById('context-anchor');
-  const name = document.getElementById('context-anchor-name');
-  if (!anchor || !name) return;
-  if (CURRENT_PROVINCE_CONTEXT) {
-    name.textContent = CURRENT_PROVINCE_CONTEXT;
-    anchor.classList.add('show');
-  } else {
-    anchor.classList.remove('show');
-    name.textContent = '';
+  // Auto-derive region parent — invariant "Province tidak boleh aktif tanpa
+  // Region". Kalau user pick province langsung dari menu Province Profile
+  // tanpa lewat Region, sistem tetap tahu region parent-nya.
+  if (CURRENT_PROVINCE_CONTEXT && !CURRENT_REGION_CONTEXT) {
+    const reg = getRegionForProvince(CURRENT_PROVINCE_CONTEXT);
+    if (reg) CURRENT_REGION_CONTEXT = reg;
   }
+  updateBreadcrumb();
 }
 
 // ============================================================
@@ -2576,18 +2737,26 @@ function flyToProvinceThenProfile(provinceName) {
   // 1. Tutup modal picker + detail panel supaya peta terlihat sepenuhnya
   //    selama animasi flyTo.
   document.getElementById('province-modal').classList.remove('show');
+  // Juga tutup Regional Profile kalau kebuka (drill-down case)
+  document.getElementById('regional-modal').classList.remove('show');
   closeDetail();
 
-  // 2. Aktifkan Province Filter (Layer 1) SEBELUM flyTo — set f-province
-  //    dropdown ke provinsi terpilih, lalu applyFilters(). Saat animasi
-  //    berjalan, marker di luar provinsi sudah tersembunyi; user sampai
-  //    di provinsi dengan konteks yang sudah difilter.
-  //
-  //    Detail Filter (Layer 2 — Utility/Captive/Community/tipe pembangkit)
-  //    TIDAK disentuh di sini. Semua .sub-gen-role & .f-type tetap all-checked
-  //    supaya user langsung melihat seluruh aset provinsi. Detail Filter
-  //    baru aktif ketika user klik row di Profil Provinsi (via
-  //    filterByRoleAndFocus / filterByTypeAndFocus yang existing).
+  // 2. Aktifkan Region Filter parent (breadcrumb invariant: province ⊂ region).
+  //    Kalau province diketahui region parent-nya, aktifkan region toggle
+  //    hanya untuk region tersebut — jadi semua marker di luar region sudah
+  //    hidden juga (bukan cuma di luar provinsi). Region filter di-apply
+  //    lewat setRegionFilterOnly yang juga call applyFilters. Kalau region
+  //    tidak ditemukan (edge case), skip — Province Filter alone still works.
+  const parentRegion = getRegionForProvince(provinceName);
+  if (parentRegion) {
+    CURRENT_REGION_CONTEXT = parentRegion;
+    setRegionFilterOnly(parentRegion);  // panggilan ini include applyFilters()
+  }
+
+  // 3. Aktifkan Province Filter (Layer 1) — set f-province dropdown ke
+  //    provinsi terpilih, lalu applyFilters(). Detail Filter (Layer 2 —
+  //    Utility/Captive/Community/tipe) TIDAK disentuh; baru aktif kalau
+  //    user klik row di Profil Provinsi.
   const provSel = document.getElementById('f-province');
   if (provSel) {
     const hasOption = [...provSel.options].some(o => o.value === provinceName);
@@ -2752,7 +2921,9 @@ document.addEventListener('keydown', e => {
     const aboutM = document.getElementById('about-modal');
     const statsM = document.getElementById('stats-modal');
     const provM  = document.getElementById('province-modal');
+    const regM   = document.getElementById('regional-modal');
     if (provM.classList.contains('show')) provM.classList.remove('show');
+    else if (regM && regM.classList.contains('show')) regM.classList.remove('show');
     else if (statsM.classList.contains('show')) statsM.classList.remove('show');
     else if (aboutM.classList.contains('show')) aboutM.classList.remove('show');
     else closeDetail();
@@ -2784,6 +2955,14 @@ document.addEventListener('keydown', e => {
     document.getElementById('province-modal').classList.add('show');
   });
 
+  // Profil Region — buka modal picker. Struktur sama dengan Profil Provinsi
+  // (picker → profile), tapi scope di level 8 region. Klik provinsi di
+  // section "Regional Composition" akan drill-down ke Profil Provinsi.
+  document.getElementById('menu-region').addEventListener('click', () => {
+    renderRegionPicker();
+    document.getElementById('regional-modal').classList.add('show');
+  });
+
   // Home — kembali ke tampilan awal eksplorasi (lihat goHome() untuk detail).
   // TIDAK reload halaman; disclaimer/about modal tidak dimunculkan ulang.
   document.getElementById('menu-home').addEventListener('click', goHome);
@@ -2804,7 +2983,26 @@ document.addEventListener('keydown', e => {
   //
   // Tidak mengubah view peta (zoom/center) — konteks visual user terjaga.
   // Tidak menutup disclaimer/about modal.
-  document.getElementById('context-anchor').addEventListener('click', () => {
+  // ============================================================
+  // BREADCRUMB — click handlers
+  // ============================================================
+  // Klik region crumb → naik satu level ke Regional Profile. Province Profile
+  // ditutup, province state + filter di-clear, region filter tetap aktif.
+  // Ini pintas untuk "kembali ke tampilan region tanpa membuka menu lagi".
+  document.getElementById('crumb-region').addEventListener('click', () => {
+    const region = CURRENT_REGION_CONTEXT
+      || (CURRENT_PROVINCE_CONTEXT ? getRegionForProvince(CURRENT_PROVINCE_CONTEXT) : null);
+    if (!region) return;
+    // flyToRegionThenProfile handles: clear province state + filter,
+    // set region context + region filter, open Regional Profile.
+    flyToRegionThenProfile(region);
+  });
+
+  // Klik province crumb → buka kembali Province Profile untuk konteks yang
+  // sedang aktif. Sama behavior dengan "Context Anchor" lama: semi-reset
+  // filter eksplorasi (type + role) supaya user bisa coba dimensi lain
+  // tanpa filter row-click lama carried over. Peta tidak di-fly ulang.
+  document.getElementById('crumb-province').addEventListener('click', () => {
     if (!CURRENT_PROVINCE_CONTEXT) return;
     semiResetExplorationFilters(CURRENT_PROVINCE_CONTEXT);
     applyFilters();
@@ -2851,6 +3049,364 @@ function exitProvinceContext() {
   // 6. Re-apply filter untuk update marker visibility (semua marker tanpa
   //    filter role/type/province — kembali ke normal). TIDAK ada flyTo.
   applyFilters();
+}
+
+// ============================================================
+// REGIONAL PROFILE — layer baru antara Indonesia dan Province
+// ============================================================
+// Prinsip: reuse maksimum dari Province Profile. Kita pinjam:
+// - computeProfile()  → aggregation logic (roleStats, techMix, topByRole)
+// - computeRegionProfile()  → sudah ada di atas
+// - CSS class .province-* / .profile-* / .headline-* → gaya identik
+// - flyToProvinceThenProfile() → drill-down chain saat user klik provinsi
+// - i18n keys 'province.profile.headline.*' / 'province.profile.section.*' /
+//   'province.profile.table.*' → text yang generik dipakai ulang
+// Yang baru: renderRegionPicker, renderRegionalProfile, computeProvinceContributions,
+// flyToRegionThenProfile, exitRegionContext, dan state CURRENT_REGION_CONTEXT
+// (dipakai updateLanguage untuk re-render saat user switch bahasa).
+
+let CURRENT_REGION_CONTEXT = null;
+
+// Kontribusi per provinsi terhadap kapasitas terpasang region — data untuk
+// section "Regional Composition". Return: array {province, mw, count, pct}
+// sorted by MW desc. Provinsi tanpa capacity dihitung count-nya saja
+// (mw=0, pct=0) supaya tetap visible tapi bar-nya kosong.
+function computeProvinceContributions(regionKey) {
+  const gens = features.filter(f => f.kind === 'gen' && f.region === regionKey);
+  const byProv = {};
+  for (const g of gens) {
+    const prov = g.props.province || '(unknown)';
+    const mw = parseFloat(g.props.capacity_mw) || 0;
+    if (!byProv[prov]) byProv[prov] = { province: prov, mw: 0, count: 0 };
+    byProv[prov].mw += mw;
+    byProv[prov].count += 1;
+  }
+  const totalMW = Object.values(byProv).reduce((s, x) => s + x.mw, 0);
+  const list = Object.values(byProv).map(p => ({
+    ...p,
+    pct: totalMW > 0 ? (p.mw / totalMW * 100) : 0,
+  }));
+  // Sort by MW desc, fallback count desc, fallback nama asc
+  list.sort((a, b) => b.mw - a.mw || b.count - a.count || a.province.localeCompare(b.province, 'id'));
+  return { totalMW, provinces: list };
+}
+
+// Region picker — daftar 8 region (mirror renderProvincePicker).
+function renderRegionPicker() {
+  const itemsHTML = REGION_KEYS.map(rk => {
+    const gens = features.filter(f => f.kind === 'gen' && f.region === rk);
+    const subs = features.filter(f => f.kind === 'sub' && f.region === rk);
+    const provSet = new Set();
+    for (const g of gens) if (g.props.province) provSet.add(g.props.province);
+    for (const s of subs) if (s.props.province) provSet.add(s.props.province);
+    const meta = t('region.picker.meta', {prov: provSet.size, gen: gens.length, sub: subs.length});
+    const label = REGION_LABEL[rk] || rk;
+    return `<button class="province-item" data-region="${rk}">
+      <span class="pname">${label}</span>
+      <span class="pmeta">${meta}</span>
+    </button>`;
+  }).join('');
+
+  document.getElementById('regional-content').innerHTML = `
+    <h2>${t('region.picker.title')}</h2>
+    <p style="font-size:12px;color:#666;margin:4px 0 0;">
+      ${t('region.picker.subtitle')}</p>
+    <input type="text" class="province-search" id="region-search"
+           placeholder="${t('region.picker.search_placeholder').replace(/"/g, '&quot;')}">
+    <div class="province-list" id="region-list">${itemsHTML}</div>
+    <button class="close" onclick="document.getElementById('regional-modal').classList.remove('show')">${t('region.picker.close')}</button>
+  `;
+
+  document.querySelectorAll('#region-list .province-item').forEach(btn => {
+    btn.addEventListener('click', () => {
+      flyToRegionThenProfile(btn.dataset.region);
+    });
+  });
+  const search = document.getElementById('region-search');
+  search.addEventListener('input', () => {
+    const q = search.value.toLowerCase().trim();
+    document.querySelectorAll('#region-list .province-item').forEach(btn => {
+      const name = (REGION_LABEL[btn.dataset.region] || btn.dataset.region).toLowerCase();
+      btn.style.display = (!q || name.includes(q)) ? '' : 'none';
+    });
+  });
+}
+
+// Regional Profile — mirror renderProvinceProfile. Reuse CSS class .profile-*
+// dan i18n keys 'province.profile.*' untuk header yang generik. Tambah satu
+// section unik: "Regional Composition" — kontribusi provinsi ke total region.
+function renderRegionalProfile(regionKey) {
+  CURRENT_REGION_CONTEXT = regionKey;
+  const p = computeRegionProfile(regionKey);
+  const label = REGION_LABEL[regionKey] || regionKey;
+  const localeCode = currentLanguage === 'id' ? 'id-ID' : 'en-US';
+  const fmtNum = n => (n || 0).toLocaleString(localeCode, {maximumFractionDigits: 1});
+
+  // Hitung jumlah provinsi unik di region ini
+  const provSet = new Set();
+  for (const g of features) {
+    if (g.region !== regionKey) continue;
+    if (g.kind === 'trm') continue;
+    if (g.props.province) provSet.add(g.props.province);
+  }
+  const provCount = provSet.size;
+
+  // Empty region check
+  if (p.genCount === 0 && p.subCount === 0) {
+    document.getElementById('regional-content').innerHTML = `
+      <button class="back-btn" id="region-back">${t('region.profile.back')}</button>
+      <h2>${label}</h2>
+      <div class="profile-empty">${t('region.profile.empty')}</div>
+      <button class="close" onclick="document.getElementById('regional-modal').classList.remove('show')">${t('region.profile.close')}</button>
+    `;
+    document.getElementById('region-back').addEventListener('click', () => {
+      exitRegionContext();
+      renderRegionPicker();
+    });
+    return;
+  }
+
+  // Headline — reuse province.profile.headline.* keys + tambah count_prov
+  const headline = `
+    <div class="profile-headline">
+      <div class="headline-item">
+        <div class="v">${formatCapacity(p.totalMW)}</div>
+        <div class="l">${t('province.profile.headline.capacity')}</div>
+      </div>
+      <div class="headline-item">
+        <div class="v">${p.genCount}</div>
+        <div class="l">${t('province.profile.headline.count_gen')}</div>
+      </div>
+      <div class="headline-item">
+        <div class="v">${provCount}</div>
+        <div class="l">${t('region.profile.headline.count_prov')}</div>
+      </div>
+      <div class="headline-item">
+        <div class="v">${p.subCount}</div>
+        <div class="l">${t('province.profile.headline.count_sub')}</div>
+      </div>
+    </div>`;
+
+  // Role composition — SAMA seperti Province Profile. Row TIDAK clickable
+  // di regional (region tidak punya filter setara filterByRoleAndFocus untuk
+  // seluruh region — cukup gunakan Province row click di section Composition
+  // atau row role saat sudah di Province Profile).
+  const roleRows = ROLE_KEYS.map(r => {
+    const s = p.roleStats[r] || {count: 0, mw: 0};
+    const dotColor = ROLE_COLOR[r] || '#999';
+    return `<tr class="role-row">
+      <td><span class="role-dot" style="background:${dotColor}"></span>${r}</td>
+      <td class="num">${s.count}</td>
+      <td class="num">${s.mw > 0 ? formatCapacity(s.mw) : '-'}</td>
+    </tr>`;
+  }).join('');
+
+  // Technology mix — SAMA seperti Province Profile (tanpa click filter).
+  const techEntries = Object.entries(p.techMix)
+    .sort((a, b) => b[1].mw - a[1].mw || b[1].count - a[1].count);
+  const techRows = techEntries.length ? techEntries.map(([ty, v]) => {
+    const pct = p.totalMW > 0 ? (v.mw / p.totalMW * 100) : 0;
+    const unit = ty === 'PLTS' ? 'MWp' : 'MW';
+    return `<tr class="tech-row">
+      <td>${ty}</td>
+      <td class="num">${v.count}</td>
+      <td class="num">${v.mw > 0 ? fmtNum(v.mw) + ' ' + unit : '-'}</td>
+      <td class="col-bar"><span class="pct-bar"><span class="fill" style="width:${pct.toFixed(2)}%"></span></span></td>
+      <td class="col-pct">${pct.toFixed(1)}%</td>
+    </tr>`;
+  }).join('') : `<tr><td colspan="5"><em>${t('province.profile.table.no_capacity_data')}</em></td></tr>`;
+
+  // Top Utility / Captive card — SAMA seperti Province Profile
+  function renderTop(r) {
+    const top = p.topByRole[r];
+    if (!top) {
+      const emptyMsg = currentLanguage === 'en'
+        ? `No ${r} plants.`
+        : `Tidak ada pembangkit ${r}.`;
+      return `<div class="profile-top empty">${emptyMsg}</div>`;
+    }
+    const unit = top.props.type === 'PLTS' ? 'MWp' : 'MW';
+    const tipMsg = currentLanguage === 'en'
+      ? 'Click to focus on the plant location'
+      : 'Klik untuk fokus ke lokasi pembangkit di peta';
+    return `<div class="profile-top" data-role-top="${r}" role="button" tabindex="0" title="${tipMsg}">
+      <div class="top-info">
+        <div class="top-name">${top.props.name || t('detail.no_name')}</div>
+        <div class="top-cap">${top.props.type} · ${fmtNum(parseFloat(top.props.capacity_mw))} ${unit}</div>
+      </div>
+      <div class="top-arrow" aria-hidden="true">→</div>
+    </div>`;
+  }
+
+  // Regional Composition — SECTION BARU khusus Regional Profile.
+  // Bar per provinsi (row clickable → drill down ke Province Profile).
+  const contrib = computeProvinceContributions(regionKey);
+  const noCapText = t('region.profile.contribution.no_capacity');
+  const contribRows = contrib.provinces.length ? contrib.provinces.map(pv => {
+    const tipMsg = t('region.profile.contribution.tooltip', {province: pv.province}).replace(/"/g, '&quot;');
+    const capCell = pv.mw > 0
+      ? `${fmtNum(pv.mw)} MW`
+      : `<em style="color:#999">${noCapText}</em>`;
+    return `<tr class="tech-row clickable" data-drilldown-province="${pv.province.replace(/"/g, '&quot;')}"
+                role="button" tabindex="0" title="${tipMsg}">
+      <td>${pv.province}</td>
+      <td class="num">${pv.count}</td>
+      <td class="num">${capCell}</td>
+      <td class="col-bar"><span class="pct-bar"><span class="fill" style="width:${pv.pct.toFixed(2)}%"></span></span></td>
+      <td class="col-pct">${pv.pct.toFixed(1)}%</td>
+    </tr>`;
+  }).join('') : `<tr><td colspan="5"><em>${t('region.profile.contribution.no_data')}</em></td></tr>`;
+
+  document.getElementById('regional-content').innerHTML = `
+    <button class="back-btn" id="region-back">${t('region.profile.back')}</button>
+    <h2>${label}</h2>
+    ${headline}
+
+    <div class="profile-section">
+      <h4>${t('province.profile.section.role')}</h4>
+      <table class="profile-table">
+        <thead><tr><th>${t('province.profile.table.role')}</th><th class="num">${t('province.profile.table.count')}</th><th class="num">${t('province.profile.table.capacity')}</th></tr></thead>
+        <tbody>${roleRows}</tbody>
+      </table>
+    </div>
+
+    <div class="profile-section">
+      <h4>${t('province.profile.section.tech_mix')}</h4>
+      <table class="profile-table">
+        <thead><tr>
+          <th>${t('province.profile.table.type')}</th>
+          <th class="num">${t('province.profile.table.count')}</th>
+          <th class="num">${t('province.profile.table.capacity')}</th>
+          <th class="col-bar">${t('province.profile.table.mix')}</th>
+          <th class="col-pct">${t('province.profile.table.pct')}</th>
+        </tr></thead>
+        <tbody>${techRows}</tbody>
+      </table>
+    </div>
+
+    <div class="profile-section">
+      <h4>${t('province.profile.section.top_utility')}</h4>
+      ${renderTop('Utility')}
+    </div>
+
+    <div class="profile-section">
+      <h4>${t('province.profile.section.top_captive')}</h4>
+      ${renderTop('Captive')}
+    </div>
+
+    <div class="profile-section">
+      <h4>${t('region.profile.section.contribution')}</h4>
+      <table class="profile-table">
+        <thead><tr>
+          <th>${t('sidebar.filter.province')}</th>
+          <th class="num">${t('province.profile.table.count')}</th>
+          <th class="num">${t('province.profile.table.capacity')}</th>
+          <th class="col-bar">${t('province.profile.table.mix')}</th>
+          <th class="col-pct">${t('province.profile.table.pct')}</th>
+        </tr></thead>
+        <tbody>${contribRows}</tbody>
+      </table>
+    </div>
+
+    <button class="close" onclick="document.getElementById('regional-modal').classList.remove('show')">${t('region.profile.close')}</button>
+  `;
+
+  // Wire Back button — exit context + kembali ke picker
+  document.getElementById('region-back').addEventListener('click', () => {
+    exitRegionContext();
+    renderRegionPicker();
+  });
+
+  // Wire "Largest Utility/Captive" card → navigate to marker (SAMA seperti Province Profile)
+  document.querySelectorAll('#regional-content .profile-top[data-role-top]').forEach(card => {
+    const role = card.dataset.roleTop;
+    const top = p.topByRole[role];
+    if (!top) return;
+    const go = () => {
+      document.getElementById('regional-modal').classList.remove('show');
+      navigateToFeature(top);
+    };
+    card.addEventListener('click', go);
+    card.addEventListener('keydown', e => {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); go(); }
+    });
+  });
+
+  // Wire "Regional Composition" row → DRILL DOWN ke Province Profile.
+  // Tutup regional modal + chain ke flyToProvinceThenProfile. TIDAK panggil
+  // exitRegionContext supaya region filter tetap on selama transisi (tanpa
+  // flicker). flyToProvinceThenProfile akan re-set CURRENT_REGION_CONTEXT
+  // via getRegionForProvince(province) — invariant Region ⊃ Province tetap.
+  document.querySelectorAll('#regional-content tr[data-drilldown-province]').forEach(row => {
+    const province = row.dataset.drilldownProvince;
+    const go = () => {
+      document.getElementById('regional-modal').classList.remove('show');
+      flyToProvinceThenProfile(province);
+    };
+    row.addEventListener('click', go);
+    row.addEventListener('keydown', e => {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); go(); }
+    });
+  });
+}
+
+// Fly ke bounds region, buka Regional Profile setelah moveend.
+// Sama pattern dengan flyToProvinceThenProfile — reuse REGION_BOUNDS.
+// Sekarang JUGA aktifkan Region Filter: hide semua asset di luar region
+// (via setRegionFilterOnly yang untick region toggle lain). Tujuannya:
+// animasi fly lebih ringan, visual lebih bersih, user fokus ke region
+// yang sedang dieksplorasi.
+function flyToRegionThenProfile(regionKey) {
+  document.getElementById('regional-modal').classList.remove('show');
+  // Juga tutup Province modal kalau kebuka (klik region crumb dari Province)
+  document.getElementById('province-modal').classList.remove('show');
+  closeDetail();
+
+  // Set context + activate Region Filter SEBELUM flyTo, sehingga saat
+  // animasi berjalan marker di luar region sudah hidden.
+  CURRENT_REGION_CONTEXT = regionKey;
+  // Kalau sebelumnya user di Province Profile, clear province state + filter.
+  // Region ⊃ Province: pindah ke Region berarti province context tidak relevan.
+  if (CURRENT_PROVINCE_CONTEXT) {
+    CURRENT_PROVINCE_CONTEXT = null;
+    const provSel = document.getElementById('f-province');
+    if (provSel) provSel.value = '';
+    // Reset Detail Filter juga (semi-reset seperti Context Anchor lama)
+    document.querySelectorAll('.f-type').forEach(c => {
+      c.checked = true;
+      const wrap = c.closest('.type-toggle');
+      if (wrap) wrap.classList.remove('off');
+    });
+    document.querySelectorAll('.sub-gen-role').forEach(c => { c.checked = true; });
+  }
+  setRegionFilterOnly(regionKey);  // termasuk applyFilters() di dalamnya
+  updateBreadcrumb();
+
+  const bounds = REGION_BOUNDS[regionKey];
+  const showProfile = () => {
+    renderRegionalProfile(regionKey);
+    document.getElementById('regional-modal').classList.add('show');
+  };
+
+  if (bounds) {
+    map.flyToBounds(bounds, {
+      padding: [40, 40], duration: NAV_FLY_DURATION,
+    });
+    map.once('moveend', showProfile);
+  } else {
+    showProfile();  // fallback: tanpa bounds → langsung tampil
+  }
+}
+
+// Exit dari region context — dipanggil oleh Back button di Regional Profile.
+// Clear state region + reset region toggles ke semua aktif (kembali ke
+// tampilan Indonesia). Kalau ini dipanggil dari drill-down (region → province),
+// caller HARUS re-set region context via flyToProvinceThenProfile yang meng-
+// activate region parent lagi (via getRegionForProvince).
+function exitRegionContext() {
+  CURRENT_REGION_CONTEXT = null;
+  clearRegionFilter();
+  updateBreadcrumb();
 }
 
 // Semi reset filter eksplorasi (dipakai oleh Context Anchor click).
