@@ -1390,13 +1390,13 @@ map.attributionControl.setPrefix(
 L.control.zoom({position: 'topleft'}).addTo(map);
 
 const basemaps = {
-  positron: L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png',
+  positron: L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png?key=cb1_2blo_1_da02642c3c4056a819a9c471',
     {attribution:'© OpenStreetMap, © CARTO', subdomains:'abcd', maxZoom:19}),
-  positron_nolabels: L.tileLayer('https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png',
+  positron_nolabels: L.tileLayer('https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png?key=cb1_2blo_1_da02642c3c4056a819a9c471',
     {attribution:'© OpenStreetMap, © CARTO', subdomains:'abcd', maxZoom:19}),
-  voyager: L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',
+  voyager: L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png?key=cb1_2blo_1_da02642c3c4056a819a9c471',
     {attribution:'© OpenStreetMap, © CARTO', subdomains:'abcd', maxZoom:19}),
-  dark: L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',
+  dark: L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png?key=cb1_2blo_1_da02642c3c4056a819a9c471',
     {attribution:'© OpenStreetMap, © CARTO', subdomains:'abcd', maxZoom:19}),
 };
 let currentBasemap = basemaps.positron.addTo(map);
