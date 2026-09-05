@@ -1,0 +1,1034 @@
+ruptl_id,name,voltage_kv,action_type,capacity_mva,target_cod_year,status,province,classification,baseline_id,baseline_name,source_page,source_table
+RUPTL-JAMALI-GI-0001,Gandul II / Pamulang,150/20,New,120.0,2025,Planned,Dki Jakarta,NEW_BUILD,,,821,Tabel B1.14
+RUPTL-JAMALI-GI-0002,Muara Tawar,500,Extension,,2025,Construction,Dki Jakarta,NEW_BUILD,,,821,Tabel B1.14
+RUPTL-JAMALI-GI-0003,Budi Kemuliaan,150,Uprate,2.0,2025,Planned,Dki Jakarta,EXISTING_UPRATE,GI-JMB-0007,Budi Kemuliaan,821,Tabel B1.14
+RUPTL-JAMALI-GI-0004,Muara Karang Lama,150,Uprate,2.0,2025,Planned,Dki Jakarta,NEW_BUILD,,,821,Tabel B1.14
+RUPTL-JAMALI-GI-0005,Marunda,150,Extension,2.0,2025,Construction,Dki Jakarta,EXISTING_EXT,GI-JMB-0052,Marunda,821,Tabel B1.14
+RUPTL-JAMALI-GI-0006,Senayan III / Ulujami,150/20,Extension,60.0,2026,Planned,Dki Jakarta,EXISTING_EXT,GI-JMB-0072,Senayan III / Ulujami,821,Tabel B1.14
+RUPTL-JAMALI-GI-0007,Setiabudi II / Casablanca,150/20,New,120.0,2026,Planned,Dki Jakarta,NEW_BUILD,,,821,Tabel B1.14
+RUPTL-JAMALI-GI-0008,Dukuh Atas,150,Extension,1.0,2026,Planned,Dki Jakarta,EXISTING_EXT,GI-JMB-0017,Dukuh Atas,821,Tabel B1.14
+RUPTL-JAMALI-GI-0009,Manggarai,150,Extension,1.0,2026,Planned,Dki Jakarta,EXISTING_EXT,GI-JMB-0051,Manggarai,821,Tabel B1.14
+RUPTL-JAMALI-GI-0010,Gandul,500,Extension,1.0,2026,Planned,Dki Jakarta,EXISTING_EXT,GI-JMB-0024,Gandul,821,Tabel B1.14
+RUPTL-JAMALI-GI-0011,Cawang Lama,150,Extension,2.0,2026,Planned,Dki Jakarta,NEW_BUILD,,,821,Tabel B1.14
+RUPTL-JAMALI-GI-0012,Cawang Lama,150,Extension,,2026,Planned,Dki Jakarta,NEW_BUILD,,,821,Tabel B1.14
+RUPTL-JAMALI-GI-0013,Abadi Guna Papan,150,Extension,2.0,2026,Planned,Dki Jakarta,EXISTING_EXT,GI-JMB-0001,Abadi Guna Papan,821,Tabel B1.14
+RUPTL-JAMALI-GI-0014,Angke,150,Extension,2.0,2027,Planned,Dki Jakarta,EXISTING_EXT,GI-JMB-0003,Angke,821,Tabel B1.14
+RUPTL-JAMALI-GI-0015,Ancol II / Pinangsia,150/20,New,60.0,2027,Planned,Dki Jakarta,NEW_BUILD,,,821,Tabel B1.14
+RUPTL-JAMALI-GI-0016,Duren Tiga II / Ragunan,150/20,Extension,60.0,2027,Construction,Dki Jakarta,EXISTING_EXT,GI-JMB-0078,Duren Tiga II / Ragunan,821,Tabel B1.14
+RUPTL-JAMALI-GI-0017,Duri Kosambi,500/150,Extension,500.0,2027,Planned,Dki Jakarta,EXISTING_EXT,GI-JMB-0019,Duri Kosambi,821,Tabel B1.14
+RUPTL-JAMALI-GI-0018,Duri Kosambi,500/150,Extension,500.0,2027,Planned,Dki Jakarta,EXISTING_EXT,GI-JMB-0019,Duri Kosambi,821,Tabel B1.14
+RUPTL-JAMALI-GI-0019,Duri Kosambi,150,Extension,,2027,Planned,Dki Jakarta,EXISTING_EXT,GI-JMB-0019,Duri Kosambi,821,Tabel B1.14
+RUPTL-JAMALI-GI-0020,Kapuk / PIK,150/20,Extension,60.0,2027,Construction,Dki Jakarta,NEW_BUILD,,,821,Tabel B1.14
+RUPTL-JAMALI-GI-0021,Gambir Lama II,150,Extension,1.0,2027,Planned,Dki Jakarta,EXISTING_EXT,GI-JMB-0021,Gambir Lama,821,Tabel B1.14
+RUPTL-JAMALI-GI-0022,Karet Lama,150,Extension,1.0,2027,Planned,Dki Jakarta,EXISTING_EXT,GI-JMB-0037,Karet Lama,821,Tabel B1.14
+RUPTL-JAMALI-GI-0023,Muara Karang Lama,150,New,1.0,2027,Planned,Dki Jakarta,NEW_BUILD,,,821,Tabel B1.14
+RUPTL-JAMALI-GI-0024,Muara Karang New,150/20,New,60.0,2027,Construction,Dki Jakarta,RECLASSIFY_NEW,GI-JMB-0054,Muara Karang Baru,821,Tabel B1.14
+RUPTL-JAMALI-GI-0025,PLTD Senayan,150,Extension,1.0,2027,Planned,Dki Jakarta,EXISTING_EXT,GI-JMB-0055,New Senayan,821,Tabel B1.14
+RUPTL-JAMALI-GI-0026,Gedung Pola,150,Extension,1.0,2027,Planned,Dki Jakarta,EXISTING_EXT,GI-JMB-0026,Gedung Pola,821,Tabel B1.14
+RUPTL-JAMALI-GI-0027,Manggarai,150,Extension,1.0,2027,Planned,Dki Jakarta,EXISTING_EXT,GI-JMB-0051,Manggarai,821,Tabel B1.14
+RUPTL-JAMALI-GI-0028,Cawang Baru,500/150,Extension,1000.0,2027,Planned,Dki Jakarta,EXISTING_EXT,GI-JMB-0008,Cawang,821,Tabel B1.14
+RUPTL-JAMALI-GI-0029,Duri Kosambi,150,Uprate,2.0,2027,Planned,Dki Jakarta,EXISTING_UPRATE,GI-JMB-0019,Duri Kosambi,821,Tabel B1.14
+RUPTL-JAMALI-GI-0030,Kembangan,150,Uprate,2.0,2027,Planned,Dki Jakarta,EXISTING_UPRATE,GI-JMB-0045,Kembangan,821,Tabel B1.14
+RUPTL-JAMALI-GI-0031,Kemayoran,150,Extension,1.0,2028,Planned,Dki Jakarta,EXISTING_EXT,GI-JMB-0043,Kemayoran,821,Tabel B1.14
+RUPTL-JAMALI-GI-0032,PLTSA Sunter,150,New,1.0,2028,Planned,Dki Jakarta,RECLASSIFY_NEW,GI-JMB-0074,Sunter,821,Tabel B1.14
+RUPTL-JAMALI-GI-0033,Pondok Indah II / Cirendeu,150/20,Extension,120.0,2028,Planned,Dki Jakarta,EXISTING_EXT,GI-JMB-0064,Pondok Indah 2 / Cirendeu,821,Tabel B1.14
+RUPTL-JAMALI-GI-0034,Cawang,500,Extension,2.0,2028,Planned,Dki Jakarta,EXISTING_EXT,GI-JMB-0008,Cawang,821,Tabel B1.14
+RUPTL-JAMALI-GI-0035,Cawang,275,New,2.0,2028,Planned,Dki Jakarta,RECLASSIFY_NEW,GI-JMB-0008,Cawang,821,Tabel B1.14
+RUPTL-JAMALI-GI-0036,Rasuna Said,275/150,New,1000.0,2028,Planned,Dki Jakarta,NEW_BUILD,,,821,Tabel B1.14
+RUPTL-JAMALI-GI-0037,Rasuna Said,150/20,New,60.0,2028,Planned,Dki Jakarta,NEW_BUILD,,,821,Tabel B1.14
+RUPTL-JAMALI-GI-0038,Cawang,500/275,Extension,1000.0,2028,Planned,Dki Jakarta,EXISTING_EXT,GI-JMB-0008,Cawang,821,Tabel B1.14
+RUPTL-JAMALI-GI-0039,Harapan Indah,150/20,Extension,60.0,2029,Planned,Dki Jakarta,EXISTING_EXT,GI-JMB-0030,Harapan Indah,821,Tabel B1.14
+RUPTL-JAMALI-GI-0040,Bintaro,150/20,Extension,60.0,2031,Planned,Dki Jakarta,EXISTING_EXT,GI-JMB-0005,Bintaro,821,Tabel B1.14
+RUPTL-JAMALI-GI-0041,Kapuk / PIK,150,Extension,2.0,2032,Planned,Dki Jakarta,NEW_BUILD,,,822,Tabel B1.9
+RUPTL-JAMALI-GI-0042,Citra Garden,150/20,New,60.0,2032,Planned,Dki Jakarta,NEW_BUILD,,,822,Tabel B1.9
+RUPTL-JAMALI-GI-0043,Kembangan II / Metland Cyber City,150/20,Extension,60.0,2032,Planned,Dki Jakarta,NEW_BUILD,,,822,Tabel B1.9
+RUPTL-JAMALI-GI-0044,Gambir Baru,150/20,Extension,60.0,2033,Planned,Dki Jakarta,EXISTING_EXT,GI-JMB-0020,Gambir Baru,822,Tabel B1.9
+RUPTL-JAMALI-GI-0045,Gambir Lama II,150/20,Extension,60.0,2033,Planned,Dki Jakarta,EXISTING_EXT,GI-JMB-0021,Gambir Lama,822,Tabel B1.9
+RUPTL-JAMALI-GI-0046,Grogol II / Kedaung,150/20,Extension,120.0,2033,Planned,Dki Jakarta,NEW_BUILD,,,822,Tabel B1.9
+RUPTL-JAMALI-GI-0047,Kandang Sapi,150/20,Extension,60.0,2033,Planned,Dki Jakarta,EXISTING_EXT,GI-JMB-0035,Kandang Sapi,822,Tabel B1.9
+RUPTL-JAMALI-GI-0048,Tomang,150,Extension,1.0,2033,Planned,Dki Jakarta,EXISTING_EXT,GI-JMB-0077,Tomang,822,Tabel B1.9
+RUPTL-JAMALI-GI-0049,Tomang,150,Extension,1.0,2033,Planned,Dki Jakarta,EXISTING_EXT,GI-JMB-0077,Tomang,822,Tabel B1.9
+RUPTL-JAMALI-GI-0050,Plumpang,150,Uprate,2.0,2033,Planned,Dki Jakarta,EXISTING_UPRATE,GI-JMB-0062,Plumpang,822,Tabel B1.9
+RUPTL-JAMALI-GI-0051,Pulo Gadung II,150/20,Extension,60.0,2033,Planned,Dki Jakarta,NEW_BUILD,,,822,Tabel B1.9
+RUPTL-JAMALI-GI-0052,Karet Lama,150,Extension,2.0,2033,Planned,Dki Jakarta,EXISTING_EXT,GI-JMB-0037,Karet Lama,822,Tabel B1.9
+RUPTL-JAMALI-GI-0053,Taman Rasuna II / Benhil,150/20,New,60.0,2033,Planned,Dki Jakarta,NEW_BUILD,,,822,Tabel B1.9
+RUPTL-JAMALI-GI-0054,Gandaria II / Jl. Raya Bogor,150/20,Extension,60.0,2034,Planned,Dki Jakarta,NEW_BUILD,,,822,Tabel B1.9
+RUPTL-JAMALI-GI-0055,Mangga Besar,150/20,Extension,60.0,2034,Planned,Dki Jakarta,EXISTING_EXT,GI-JMB-0050,Mangga Besar,822,Tabel B1.9
+RUPTL-JAMALI-GI-0056,Karet Lama,150,Extension,2.0,2034,Planned,Dki Jakarta,EXISTING_EXT,GI-JMB-0037,Karet Lama,822,Tabel B1.9
+RUPTL-JAMALI-GI-0057,Semanggi Barat II / Petamburan,150/20,New,120.0,2034,Planned,Dki Jakarta,NEW_BUILD,,,822,Tabel B1.9
+RUPTL-JAMALI-GI-0058,DKI Jakarta Eksisting/Baru,150,Extension,2.0,2029,Planned,Dki Jakarta,NEW_BUILD,,,822,Tabel B1.9
+RUPTL-JAMALI-GI-0059,DKI Jakarta Eksisting/Baru,150,Extension,2.0,2029,Planned,Dki Jakarta,NEW_BUILD,,,822,Tabel B1.9
+RUPTL-JAMALI-GI-0060,DKI Jakarta Eksisting/Baru,150,Extension,2.0,2029,Planned,Dki Jakarta,NEW_BUILD,,,822,Tabel B1.9
+RUPTL-JAMALI-GI-0061,Pondok Kelapa II,150/20,New,60.0,2026,Construction,Dki Jakarta,RECLASSIFY_NEW,GI-JMB-0065,Pondok Kelapa,822,Tabel B1.9
+RUPTL-JAMALI-GI-0062,Mampang Baru II,150/20,New,120.0,2028,Planned,Dki Jakarta,RECLASSIFY_NEW,GI-JMB-0048,Mampang Baru,822,Tabel B1.9
+RUPTL-JAMALI-GI-0063,Ancol,150/20,Extension,60.0,2032,Planned,Dki Jakarta,EXISTING_EXT,GI-JMB-0002,Ancol,822,Tabel B1.9
+RUPTL-JAMALI-GI-0064,Kuningan,150/20,Extension,120.0,2034,Planned,Dki Jakarta,NEW_BUILD,,,822,Tabel B1.9
+RUPTL-JAMALI-GI-0065,Cikupa,500/150,New,1000.0,2025,Construction,Banten,RECLASSIFY_NEW,GI-JMB-0092,Cikupa,835,Tabel B2.15
+RUPTL-JAMALI-GI-0066,Cikupa New,150/20,New,60.0,2025,Committed,Banten,RECLASSIFY_NEW,GI-JMB-0092,Cikupa,835,Tabel B2.15
+RUPTL-JAMALI-GI-0067,Cilegon,500,Uprate,2.0,2025,Construction,Banten,EXISTING_UPRATE,GI-JMB-0094,Cilegon,835,Tabel B2.15
+RUPTL-JAMALI-GI-0068,PLTU Jawa-9 & Jawa-10,500,New,4.0,2025,Construction,Banten,NEW_BUILD,,,835,Tabel B2.15
+RUPTL-JAMALI-GI-0069,Suralaya Lama,500,Uprate,2.0,2025,Construction,Banten,NEW_BUILD,,,835,Tabel B2.15
+RUPTL-JAMALI-GI-0070,Lautan Baja Indonesia / LBI,150,New,3.0,2025,Construction,Banten,NEW_BUILD,,,835,Tabel B2.15
+RUPTL-JAMALI-GI-0071,Lautan Baja Indonesia / LBI,150/20,Extension,60.0,2025,Planned,Banten,NEW_BUILD,,,835,Tabel B2.15
+RUPTL-JAMALI-GI-0072,Cilegon,500/150,Extension,500.0,2025,Construction,Banten,EXISTING_EXT,GI-JMB-0094,Cilegon,835,Tabel B2.15
+RUPTL-JAMALI-GI-0073,Cilegon Baru,150,Extension,,2025,Construction,Banten,EXISTING_EXT,GI-JMB-0094,Cilegon,835,Tabel B2.15
+RUPTL-JAMALI-GI-0074,Suralaya Lama,150,Extension,,2025,Planned,Banten,NEW_BUILD,,,835,Tabel B2.15
+RUPTL-JAMALI-GI-0075,Balaraja,500,Extension,2.0,2025,Construction,Banten,EXISTING_EXT,GI-JMB-0085,Balaraja,835,Tabel B2.15
+RUPTL-JAMALI-GI-0076,Puncak Ardi Mulya II / Modern,150/20,Extension,60.0,2025,Planned,Banten,EXISTING_EXT,GI-JMB-0120,Puncak Ardi Mulya,835,Tabel B2.15
+RUPTL-JAMALI-GI-0077,Rangkasbitung Baru,150/20,Extension,60.0,2025,Construction,Banten,EXISTING_EXT,GI-JMB-0121,Rangkasbitung Baru,835,Tabel B2.15
+RUPTL-JAMALI-GI-0078,Serang,150,Extension,2.0,2025,Construction,Banten,EXISTING_EXT,GI-JMB-0126,Serang,835,Tabel B2.15
+RUPTL-JAMALI-GI-0079,Serang Selatan / Baros,150/20,New,60.0,2025,Construction,Banten,NEW_BUILD,,,835,Tabel B2.15
+RUPTL-JAMALI-GI-0080,Puncak Ardi Mulya II / Modern,150,Extension,1.0,2025,Planned,Banten,EXISTING_EXT,GI-JMB-0120,Puncak Ardi Mulya,836,
+RUPTL-JAMALI-GI-0081,Salira Indah,150,Extension,1.0,2025,Planned,Banten,EXISTING_EXT,GI-JMB-0123,Salira Indah,836,
+RUPTL-JAMALI-GI-0082,Menes,150,Extension,2.0,2025,Construction,Banten,EXISTING_EXT,GI-JMB-0112,Menes,836,
+RUPTL-JAMALI-GI-0083,Tanjung Lesung,150/20,New,120.0,2025,Construction,Banten,NEW_BUILD,,,836,
+RUPTL-JAMALI-GI-0084,Tigaraksa,150,Extension,2.0,2025,Construction,Banten,NEW_BUILD,,,836,
+RUPTL-JAMALI-GI-0085,Tigaraksa II / Citra Maja,150/20,New,120.0,2025,Planned,Banten,NEW_BUILD,,,836,
+RUPTL-JAMALI-GI-0086,Cikande,500/150,New,1000.0,2026,Construction,Banten,RECLASSIFY_NEW,GI-JMB-0091,Cikande,836,
+RUPTL-JAMALI-GI-0087,Cikande,150,Uprate,2.0,2026,Planned,Banten,EXISTING_UPRATE,GI-JMB-0091,Cikande,836,
+RUPTL-JAMALI-GI-0088,Cikande New,150/20,New,60.0,2026,Planned,Banten,RECLASSIFY_NEW,GI-JMB-0091,Cikande,836,
+RUPTL-JAMALI-GI-0089,Suralaya Lama,500/150,Uprate,500.0,2026,Planned,Banten,NEW_BUILD,,,836,
+RUPTL-JAMALI-GI-0090,Suralaya Lama,150,Uprate,,2026,Planned,Banten,NEW_BUILD,,,836,
+RUPTL-JAMALI-GI-0091,Suralaya Baru,500,Uprate,,2026,Planned,Banten,EXISTING_UPRATE,GI-JMB-0132,Suralaya,836,
+RUPTL-JAMALI-GI-0092,Suralaya Baru,500/150,Uprate,500.0,2026,Planned,Banten,EXISTING_UPRATE,GI-JMB-0132,Suralaya,836,
+RUPTL-JAMALI-GI-0093,Rangkasbitung Baru,150,Extension,2.0,2026,Construction,Banten,EXISTING_EXT,GI-JMB-0121,Rangkasbitung Baru,836,
+RUPTL-JAMALI-GI-0094,Serang Selatan / Baros,150,Extension,2.0,2026,Construction,Banten,NEW_BUILD,,,836,
+RUPTL-JAMALI-GI-0095,Puncak Ardi Mulya II / Modern,150/20,Extension,60.0,2026,Planned,Banten,EXISTING_EXT,GI-JMB-0120,Puncak Ardi Mulya,836,
+RUPTL-JAMALI-GI-0096,Jatake II / Kelapa Dua,150/20,Extension,60.0,2027,Planned,Banten,NEW_BUILD,,,836,
+RUPTL-JAMALI-GI-0097,KEK PIK,150/20,New,60.0,2027,Planned,Banten,NEW_BUILD,,,836,
+RUPTL-JAMALI-GI-0098,Lautan Baja Indonesia / LBI,150/20,Extension,60.0,2027,Planned,Banten,NEW_BUILD,,,836,
+RUPTL-JAMALI-GI-0099,Indonesia Torray Synthetics (ITS),150/20,Extension,60.0,2028,Planned,Banten,NEW_BUILD,,,836,
+RUPTL-JAMALI-GI-0100,Kopo,150,Extension,2.0,2028,Planned,Banten,EXISTING_EXT,GI-JMB-0103,Kopo,836,
+RUPTL-JAMALI-GI-0101,Tigaraksa II,150,Extension,2.0,2028,Planned,Banten,NEW_BUILD,,,836,
+RUPTL-JAMALI-GI-0102,PLTB Banten,150,New,2.0,2028,Planned,Banten,NEW_BUILD,,,836,
+RUPTL-JAMALI-GI-0103,Tanjung Lesung,150,Extension,2.0,2028,Planned,Banten,NEW_BUILD,,,836,
+RUPTL-JAMALI-GI-0104,Teluk Naga II / Dadap,150/20,Extension,60.0,2028,Planned,Banten,EXISTING_EXT,GI-JMB-0138,Teluk Naga II / Dadap,836,
+RUPTL-JAMALI-GI-0105,Cikupa,500/150,Extension,1000.0,2030,Planned,Banten,EXISTING_EXT,GI-JMB-0092,Cikupa,836,
+RUPTL-JAMALI-GI-0106,Cikupa New,150,Extension,,2030,Planned,Banten,EXISTING_EXT,GI-JMB-0092,Cikupa,836,
+RUPTL-JAMALI-GI-0107,Curug Switching,150,New,6.0,2030,Planned,Banten,RECLASSIFY_NEW,GI-JMB-0098,Curug,836,
+RUPTL-JAMALI-GI-0108,Summarecon Serpong,150/20,Extension,60.0,2030,Planned,Banten,NEW_BUILD,,,836,
+RUPTL-JAMALI-GI-0109,Cikande,500,Extension,1.0,2030,Planned,Banten,EXISTING_EXT,GI-JMB-0091,Cikande,836,
+RUPTL-JAMALI-GI-0110,PLTGU Jawa-5,500,New,4.0,2030,Planned,Banten,NEW_BUILD,,,836,
+RUPTL-JAMALI-GI-0111,Rangkasbitung Baru,150,Uprate,2.0,2030,Planned,Banten,EXISTING_UPRATE,GI-JMB-0121,Rangkasbitung Baru,836,
+RUPTL-JAMALI-GI-0112,Saketi,150,Uprate,2.0,2030,Planned,Banten,EXISTING_UPRATE,GI-JMB-0122,Saketi,836,
+RUPTL-JAMALI-GI-0113,PLTP Rawa Dano,150/20,New,60.0,2030,Planned,Banten,NEW_BUILD,,,836,
+RUPTL-JAMALI-GI-0114,Lippo Curug,150,Extension,2.0,2033,Planned,Banten,NEW_BUILD,,,836,
+RUPTL-JAMALI-GI-0115,Lippo Curug II,150/20,New,120.0,2033,Planned,Banten,NEW_BUILD,,,836,
+RUPTL-JAMALI-GI-0116,Banten Eksisting/Baru,150,Extension,2.0,2026,Planned,Banten,NEW_BUILD,,,836,
+RUPTL-JAMALI-GI-0117,Banten Eksisting/Baru,150,Extension,2.0,2030,Planned,Banten,NEW_BUILD,,,836,
+RUPTL-JAMALI-GI-0118,Banten Eksisting/Baru,150,Extension,2.0,,Planned,Banten,NEW_BUILD,,,836,
+RUPTL-JAMALI-GI-0119,BESS Smoothing Tersebar (1),150,New,2.0,,Planned,Banten,NEW_BUILD,,,836,
+RUPTL-JAMALI-GI-0120,Banten Eksisting/Baru,150,Extension,2.0,2028,Planned,Banten,NEW_BUILD,,,836,
+RUPTL-JAMALI-GI-0121,Banten Eksisting/Baru,150,Extension,2.0,2028,Planned,Banten,NEW_BUILD,,,836,
+RUPTL-JAMALI-GI-0122,Banten Eksisting/Baru,150,Extension,2.0,2028,Planned,Banten,NEW_BUILD,,,836,
+RUPTL-JAMALI-GI-0123,Saketi,150,Extension,2.0,2030,Planned,Banten,EXISTING_EXT,GI-JMB-0122,Saketi,836,
+RUPTL-JAMALI-GI-0124,Banten Eksisting/Baru,150,Extension,2.0,,Planned,Banten,NEW_BUILD,,,836,
+RUPTL-JAMALI-GI-0125,Banten Eksisting/Baru,150,Extension,2.0,2030,Planned,Banten,NEW_BUILD,,,837,
+RUPTL-JAMALI-GI-0126,Banten Eksisting/Baru,150,Extension,2.0,2030,Planned,Banten,NEW_BUILD,,,837,
+RUPTL-JAMALI-GI-0127,Banten Eksisting/Baru,150,Extension,2.0,2030,Planned,Banten,NEW_BUILD,,,837,
+RUPTL-JAMALI-GI-0128,Banten Eksisting/Baru,150,Extension,2.0,2034,Planned,Banten,NEW_BUILD,,,837,
+RUPTL-JAMALI-GI-0129,Banten Eksisting/Baru,150,Extension,2.0,,Planned,Banten,NEW_BUILD,,,837,
+RUPTL-JAMALI-GI-0130,BESS Smoothing Tersebar (2),150,New,2.0,,Planned,Banten,NEW_BUILD,,,837,
+RUPTL-JAMALI-GI-0131,Banten Eksisting/Baru,150,Extension,2.0,2032,Planned,Banten,NEW_BUILD,,,837,
+RUPTL-JAMALI-GI-0132,Banten Eksisting/Baru,150,Extension,2.0,2033,Planned,Banten,NEW_BUILD,,,837,
+RUPTL-JAMALI-GI-0133,PLTP Jawa-Bali (Kuota) Tersebar 2,150/20,New,60.0,2033,Planned,Banten,NEW_BUILD,,,837,
+RUPTL-JAMALI-GI-0134,Banten Eksisting/Baru,150,Extension,2.0,,Planned,Banten,NEW_BUILD,,,837,
+RUPTL-JAMALI-GI-0135,Banten Eksisting/Baru,150,Extension,2.0,2034,Planned,Banten,NEW_BUILD,,,837,
+RUPTL-JAMALI-GI-0136,BESS Jawa-Bali (Kuota) Tersebar IVA (3),150,New,2.0,2034,Planned,Banten,NEW_BUILD,,,837,
+RUPTL-JAMALI-GI-0137,Banten Eksisting/Baru,150,Extension,2.0,2034,Planned,Banten,NEW_BUILD,,,837,
+RUPTL-JAMALI-GI-0138,Banten Eksisting/Baru,150,Extension,2.0,,Planned,Banten,NEW_BUILD,,,837,
+RUPTL-JAMALI-GI-0139,Banten Eksisting/Baru,150,Extension,2.0,,Planned,Banten,NEW_BUILD,,,837,
+RUPTL-JAMALI-GI-0140,Serpong,150/20,Extension,60.0,2025,Planned,Banten,EXISTING_EXT,GI-JMB-0127,Serpong,837,
+RUPTL-JAMALI-GI-0141,Gajah Tunggal,150/20,Extension,60.0,2026,Planned,Banten,EXISTING_EXT,GI-JMB-0099,Gajah Tunggal,837,
+RUPTL-JAMALI-GI-0142,Banten Eksisting/Baru,150,Extension,2.0,,Planned,Banten,NEW_BUILD,,,837,
+RUPTL-JAMALI-GI-0143,Banten Eksisting/Baru,150,Extension,2.0,,Planned,Banten,NEW_BUILD,,,837,
+RUPTL-JAMALI-GI-0144,Banten Eksisting/Baru,150,Extension,2.0,,Planned,Banten,NEW_BUILD,,,837,
+RUPTL-JAMALI-GI-0145,BESS Jawa-Bali (Kuota) Tersebar IIIA (1),150,New,2.0,,Planned,Banten,NEW_BUILD,,,837,
+RUPTL-JAMALI-GI-0146,Banten Eksisting/Baru,150,Extension,2.0,,Planned,Banten,NEW_BUILD,,,837,
+RUPTL-JAMALI-GI-0147,BESS Jawa-Bali (Kuota) Tersebar IIIA (2),150,New,2.0,,Planned,Banten,NEW_BUILD,,,837,
+RUPTL-JAMALI-GI-0148,Banten Eksisting/Baru,150,Extension,2.0,,Planned,Banten,NEW_BUILD,,,837,
+RUPTL-JAMALI-GI-0149,BESS Jawa-Bali (Kuota) Tersebar IIIA (3),150,New,2.0,,Planned,Banten,NEW_BUILD,,,837,
+RUPTL-JAMALI-GI-0150,Banten Eksisting/Baru,150,Extension,2.0,2034,Planned,Banten,NEW_BUILD,,,837,
+RUPTL-JAMALI-GI-0151,BESS Jawa-Bali (Kuota) Tersebar IVA (1),150,New,2.0,2034,Planned,Banten,NEW_BUILD,,,837,
+RUPTL-JAMALI-GI-0152,Banten Eksisting/Baru,150,Extension,2.0,2034,Planned,Banten,NEW_BUILD,,,837,
+RUPTL-JAMALI-GI-0153,BESS Jawa-Bali (Kuota) Tersebar IVA (2),150,New,2.0,2034,Planned,Banten,NEW_BUILD,,,837,
+RUPTL-JAMALI-GI-0154,Banten Eksisting/Baru,150,Extension,2.0,2034,Planned,Banten,NEW_BUILD,,,837,
+RUPTL-JAMALI-GI-0155,Banten Eksisting/Baru,150,Extension,2.0,2034,Planned,Banten,NEW_BUILD,,,837,
+RUPTL-JAMALI-GI-0156,Banten Eksisting/Baru,150,Extension,2.0,,Planned,Banten,NEW_BUILD,,,837,
+RUPTL-JAMALI-GI-0157,Banten Eksisting/Baru,150,Extension,2.0,,Planned,Banten,NEW_BUILD,,,838,Tabel B2.16
+RUPTL-JAMALI-GI-0158,Banten Eksisting/Baru,150,Extension,2.0,,Planned,Banten,NEW_BUILD,,,838,Tabel B2.16
+RUPTL-JAMALI-GI-0159,Banten Eksisting/Baru,150,Extension,2.0,,Planned,Banten,NEW_BUILD,,,838,Tabel B2.16
+RUPTL-JAMALI-GI-0160,Banten Eksisting/Baru,150,Extension,2.0,,Planned,Banten,NEW_BUILD,,,838,Tabel B2.16
+RUPTL-JAMALI-GI-0161,Cilegon,500,Extension,1.0,2031,Planned,Banten,EXISTING_EXT,GI-JMB-0094,Cilegon,838,Tabel B2.16
+RUPTL-JAMALI-GI-0162,Tanjung Pucut / Salira Switching Station,500 DC,New,,2031,Planned,Banten,NEW_BUILD,,,838,Tabel B2.16
+RUPTL-JAMALI-GI-0163,Ketapang,500 DC,New,,2031,Planned,Banten,NEW_BUILD,,,838,Tabel B2.16
+RUPTL-JAMALI-GI-0164,Muara Enim,500/150 DC,New,2.0,2031,Planned,Banten,NEW_BUILD,,,838,Tabel B2.16
+RUPTL-JAMALI-GI-0165,Heksa / AUA / AMI / Taman Mekar,150/20,Extension,60.0,2025,Planned,Jawa Barat,NEW_BUILD,,,863,Tabel B3.14
+RUPTL-JAMALI-GI-0166,Balongan,150/20,New,120.0,2025,Construction,Jawa Barat,NEW_BUILD,,,863,Tabel B3.14
+RUPTL-JAMALI-GI-0167,Cibatu,150/20,Extension,60.0,2025,Construction,Jawa Barat,EXISTING_EXT,GI-JMB-0162,Cibatu,863,Tabel B3.14
+RUPTL-JAMALI-GI-0168,Cibatu Baru / Deltamas,500/150,Extension,500.0,2025,Construction,Jawa Barat,NEW_BUILD,,,863,Tabel B3.14
+RUPTL-JAMALI-GI-0169,Cibatu Baru / Deltamas,500/150,Extension,500.0,2025,Construction,Jawa Barat,NEW_BUILD,,,863,Tabel B3.14
+RUPTL-JAMALI-GI-0170,Cibatu Baru / Deltamas,150,Extension,,2025,Planned,Jawa Barat,NEW_BUILD,,,863,Tabel B3.14
+RUPTL-JAMALI-GI-0171,Cibatu Baru / Deltamas,150,Extension,,2025,Planned,Jawa Barat,NEW_BUILD,,,863,Tabel B3.14
+RUPTL-JAMALI-GI-0172,Cibatu Baru / Deltamas,150/20,Extension,60.0,2025,Construction,Jawa Barat,NEW_BUILD,,,863,Tabel B3.14
+RUPTL-JAMALI-GI-0173,Cibatu Baru / Deltamas,150/20,Extension,60.0,2025,Construction,Jawa Barat,NEW_BUILD,,,863,Tabel B3.14
+RUPTL-JAMALI-GI-0174,Salak Lama,150,Uprate,1.0,2025,Planned,Jawa Barat,NEW_BUILD,,,863,Tabel B3.14
+RUPTL-JAMALI-GI-0175,KTT Indah Kiat,150,New,3.0,2025,Planned,Jawa Barat,NEW_BUILD,,,863,Tabel B3.14
+RUPTL-JAMALI-GI-0176,Telukjambe II,150,Extension,2.0,2025,Planned,Jawa Barat,EXISTING_EXT,GI-JMB-0270,Telukjambe,863,Tabel B3.14
+RUPTL-JAMALI-GI-0177,Indramayu,500/150,Extension,500.0,2025,Planned,Jawa Barat,EXISTING_EXT,GI-JMB-0194,Indramayu,863,Tabel B3.14
+RUPTL-JAMALI-GI-0178,PLTA Jatigede / Parakan Kondang Baru,150,New,4.0,2025,Construction,Jawa Barat,NEW_BUILD,,,863,Tabel B3.14
+RUPTL-JAMALI-GI-0179,Jatiluhur Baru,150/20,New,60.0,2025,Planned,Jawa Barat,NEW_BUILD,,,863,Tabel B3.14
+RUPTL-JAMALI-GI-0180,Jatiluhur Baru,150,Extension,2.0,2025,Planned,Jawa Barat,NEW_BUILD,,,863,Tabel B3.14
+RUPTL-JAMALI-GI-0181,JISC / MOS,150/20,New,120.0,2025,Planned,Jawa Barat,NEW_BUILD,,,863,Tabel B3.14
+RUPTL-JAMALI-GI-0182,Kadipaten Baru,150/20,Extension,60.0,2025,Committed,Jawa Barat,EXISTING_EXT,GI-JMB-0199,Kadipaten,863,Tabel B3.14
+RUPTL-JAMALI-GI-0183,Kadipaten Baru,150,Extension,2.0,2025,Committed,Jawa Barat,EXISTING_EXT,GI-JMB-0199,Kadipaten,863,Tabel B3.14
+RUPTL-JAMALI-GI-0184,Switching Tegalluar,150,New,4.0,2025,Committed,Jawa Barat,NEW_BUILD,,,863,Tabel B3.14
+RUPTL-JAMALI-GI-0185,KIIC II / Margakaya,150/20,Extension,60.0,2025,Planned,Jawa Barat,NEW_BUILD,,,863,Tabel B3.14
+RUPTL-JAMALI-GI-0186,KTT Data Center,150,Extension,2.0,2025,Planned,Jawa Barat,NEW_BUILD,,,863,Tabel B3.14
+RUPTL-JAMALI-GI-0187,KIIC II / Margakaya,150,Extension,1.0,2025,Planned,Jawa Barat,NEW_BUILD,,,863,Tabel B3.14
+RUPTL-JAMALI-GI-0188,Pinayungan,150,Extension,1.0,2025,Planned,Jawa Barat,EXISTING_EXT,GI-JMB-0236,Pinayungan,863,Tabel B3.14
+RUPTL-JAMALI-GI-0189,KTT Indorama Baru,150,New,6.0,2025,Planned,Jawa Barat,NEW_BUILD,,,864,
+RUPTL-JAMALI-GI-0190,PLTU Pelabuhan Ratu,150,Extension,2.0,2025,Construction,Jawa Barat,EXISTING_EXT,GI-JMB-0238,PLTU Pelabuhan Ratu,864,
+RUPTL-JAMALI-GI-0191,Pelabuhan Ratu Baru,150/20,New,60.0,2025,Construction,Jawa Barat,RECLASSIFY_NEW,GI-JMB-0238,PLTU Pelabuhan Ratu,864,
+RUPTL-JAMALI-GI-0192,PLTS Saguling,150,New,2.0,2025,Planned,Jawa Barat,NEW_BUILD,,,864,
+RUPTL-JAMALI-GI-0193,Switching Rajamandala,150,New,8.0,2025,Planned,Jawa Barat,NEW_BUILD,,,864,
+RUPTL-JAMALI-GI-0194,Bekasi,500,Extension,2.0,2025,Construction,Jawa Barat,NEW_BUILD,,,864,
+RUPTL-JAMALI-GI-0195,Sentul Baru / Cijayanti,150/20,New,180.0,2025,Planned,Jawa Barat,NEW_BUILD,,,864,
+RUPTL-JAMALI-GI-0196,Subang Baru / Pamanukan,150/20,New,180.0,2025,Construction,Jawa Barat,NEW_BUILD,,,864,
+RUPTL-JAMALI-GI-0197,Kosambi Baru,150,Uprate,2.0,2025,Construction,Jawa Barat,NEW_BUILD,,,864,
+RUPTL-JAMALI-GI-0198,Tambun,150,Uprate,2.0,2025,Planned,Jawa Barat,EXISTING_UPRATE,GI-JMB-0225,New Tambun,864,
+RUPTL-JAMALI-GI-0199,Tambun,500/150,Extension,1000.0,2025,Planned,Jawa Barat,EXISTING_EXT,GI-JMB-0225,New Tambun,864,
+RUPTL-JAMALI-GI-0200,Poncol Baru II,150,Extension,1.0,2025,Planned,Jawa Barat,EXISTING_EXT,GI-JMB-0240,Poncol Baru II,864,
+RUPTL-JAMALI-GI-0201,Telukjambe,150,Extension,2.0,2025,Construction,Jawa Barat,EXISTING_EXT,GI-JMB-0270,Telukjambe,864,
+RUPTL-JAMALI-GI-0202,Telukjambe II,150/20,New,120.0,2025,Construction,Jawa Barat,RECLASSIFY_NEW,GI-JMB-0270,Telukjambe,864,
+RUPTL-JAMALI-GI-0203,Ujungberung Lama,150,Uprate,2.0,2025,Planned,Jawa Barat,NEW_BUILD,,,864,
+RUPTL-JAMALI-GI-0204,KTT Data Center,150,Extension,2.0,2026,Planned,Jawa Barat,NEW_BUILD,,,864,
+RUPTL-JAMALI-GI-0205,KIIC II / Margakaya,150,Extension,2.0,2026,Planned,Jawa Barat,NEW_BUILD,,,864,
+RUPTL-JAMALI-GI-0206,Telukjambe II,150,Extension,2.0,2026,Planned,Jawa Barat,EXISTING_EXT,GI-JMB-0270,Telukjambe,864,
+RUPTL-JAMALI-GI-0207,Babakan Baru,150/20,New,120.0,2026,Construction,Jawa Barat,RECLASSIFY_NEW,GI-JMB-0142,Babakan,864,
+RUPTL-JAMALI-GI-0208,Balongan,150,Extension,2.0,2026,Construction,Jawa Barat,NEW_BUILD,,,864,
+RUPTL-JAMALI-GI-0209,Bekasi Power,150,Extension,4.0,2026,Planned,Jawa Barat,NEW_BUILD,,,864,
+RUPTL-JAMALI-GI-0210,Cibadak Baru II / Lido,150/20,New,120.0,2026,Planned,Jawa Barat,NEW_BUILD,,,864,
+RUPTL-JAMALI-GI-0211,Cikarang Baru Lippo,150/20,Extension,60.0,2026,Planned,Jawa Barat,EXISTING_EXT,GI-JMB-0173,Cikarang Lippo,864,
+RUPTL-JAMALI-GI-0212,Gandamekar II / Cibuntu,150/20,New,120.0,2026,Planned,Jawa Barat,NEW_BUILD,,,864,
+RUPTL-JAMALI-GI-0213,Heksa / AUA / AMI / Taman Mekar,150,Extension,1.0,2026,Planned,Jawa Barat,NEW_BUILD,,,864,
+RUPTL-JAMALI-GI-0214,HLI,150,New,3.0,2026,Planned,Jawa Barat,NEW_BUILD,,,864,
+RUPTL-JAMALI-GI-0215,Tamansari/ KNIC,150,Extension,1.0,2026,Planned,Jawa Barat,NEW_BUILD,,,864,
+RUPTL-JAMALI-GI-0216,Cibatu Baru II / Sukatani,500/150,Extension,1000.0,2026,Planned,Jawa Barat,NEW_BUILD,,,864,
+RUPTL-JAMALI-GI-0217,Sukatani New,150,Extension,4.0,2026,Planned,Jawa Barat,EXISTING_EXT,GI-JMB-0255,Sukatani,864,
+RUPTL-JAMALI-GI-0218,Jababeka,150,Extension,2.0,2026,Planned,Jawa Barat,EXISTING_EXT,GI-JMB-0195,Jababeka,864,
+RUPTL-JAMALI-GI-0219,Jababeka II / Pamahan,150/20,New,120.0,2026,Planned,Jawa Barat,NEW_BUILD,,,864,
+RUPTL-JAMALI-GI-0220,Bandung Selatan,150,Extension,2.0,2026,Planned,Jawa Barat,EXISTING_EXT,GI-JMB-0143,Bandung Selatan,864,
+RUPTL-JAMALI-GI-0221,Kamojang,150,Uprate,2.0,2026,Planned,Jawa Barat,EXISTING_UPRATE,GI-JMB-0200,Kamojang,864,
+RUPTL-JAMALI-GI-0222,KIIC II / Margakaya,150,Extension,2.0,2026,Planned,Jawa Barat,NEW_BUILD,,,864,
+RUPTL-JAMALI-GI-0223,Tamansari/ KNIC,150,New,3.0,2026,Planned,Jawa Barat,NEW_BUILD,,,864,
+RUPTL-JAMALI-GI-0224,Tamansari/ KNIC,150/20,Extension,120.0,2026,Planned,Jawa Barat,NEW_BUILD,,,864,
+RUPTL-JAMALI-GI-0225,KIIC II / Margakaya,150,Extension,1.0,2026,Planned,Jawa Barat,NEW_BUILD,,,864,
+RUPTL-JAMALI-GI-0226,Pinayungan,150,Extension,1.0,2026,Planned,Jawa Barat,EXISTING_EXT,GI-JMB-0236,Pinayungan,864,
+RUPTL-JAMALI-GI-0227,Cikarang,150,Extension,1.0,2026,Planned,Jawa Barat,EXISTING_EXT,GI-JMB-0172,Cikarang,864,
+RUPTL-JAMALI-GI-0228,Rancaekek,150,Uprate,2.0,2026,Construction,Jawa Barat,EXISTING_UPRATE,GI-JMB-0244,Rancaekek,864,
+RUPTL-JAMALI-GI-0229,Sunyaragi,150,Uprate,2.0,2026,Construction,Jawa Barat,EXISTING_UPRATE,GI-JMB-0259,Sunyaragi,864,
+RUPTL-JAMALI-GI-0230,Ciawi Baru,150,Extension,2.0,2026,Planned,Jawa Barat,EXISTING_EXT,GI-JMB-0157,Ciawi,864,
+RUPTL-JAMALI-GI-0231,Salak Baru,150,Extension,2.0,2026,Planned,Jawa Barat,NEW_BUILD,,,864,
+RUPTL-JAMALI-GI-0232,Salak Baru,150,Extension,,2026,Planned,Jawa Barat,NEW_BUILD,,,864,
+RUPTL-JAMALI-GI-0233,Bogor Baru,150,Uprate,2.0,2026,Planned,Jawa Barat,EXISTING_UPRATE,GI-JMB-0149,Bogor Baru,865,
+RUPTL-JAMALI-GI-0234,Cianjur,150,Uprate,2.0,2026,Planned,Jawa Barat,EXISTING_UPRATE,GI-JMB-0156,Cianjur,865,
+RUPTL-JAMALI-GI-0235,Katulampa,150,Uprate,2.0,2026,Planned,Jawa Barat,EXISTING_UPRATE,GI-JMB-0203,Katulampa,865,
+RUPTL-JAMALI-GI-0236,Pertiwi Lestari,150/20,Extension,120.0,2026,Planned,Jawa Barat,NEW_BUILD,,,865,
+RUPTL-JAMALI-GI-0237,Pertiwi Lestari,150,New,3.0,2026,Planned,Jawa Barat,NEW_BUILD,,,865,
+RUPTL-JAMALI-GI-0238,Wayang Windu,150,Extension,,2027,Planned,Jawa Barat,EXISTING_EXT,GI-JMB-0274,Wayang Windu,865,
+RUPTL-JAMALI-GI-0239,Jawa Barat Eksisting/Baru,150,Extension,2.0,2027,Planned,Jawa Barat,NEW_BUILD,,,865,
+RUPTL-JAMALI-GI-0240,PLTS+BESS Jawa Barat (Kuota) VA,150,New,2.0,2027,Planned,Jawa Barat,NEW_BUILD,,,865,
+RUPTL-JAMALI-GI-0241,Sukatani /Gobel,150,Extension,2.0,2026,Planned,Jawa Barat,NEW_BUILD,,,865,
+RUPTL-JAMALI-GI-0242,Rengasdengklok Baru,150/20,New,120.0,2026,Planned,Jawa Barat,RECLASSIFY_NEW,GI-JMB-0246,Rengasdengklok,865,
+RUPTL-JAMALI-GI-0243,Pelabuhan Ratu Baru / Jampang Kulon,150,Extension,2.0,2026,Planned,Jawa Barat,NEW_BUILD,,,865,
+RUPTL-JAMALI-GI-0244,Tanggeung / Cianjur Selatan,150/20,New,60.0,2026,Planned,Jawa Barat,NEW_BUILD,,,865,
+RUPTL-JAMALI-GI-0245,Pinayungan,150,Extension,,2026,Planned,Jawa Barat,EXISTING_EXT,GI-JMB-0236,Pinayungan,865,
+RUPTL-JAMALI-GI-0246,Bandung Timur Baru,150/20,Extension,60.0,2027,Planned,Jawa Barat,EXISTING_EXT,GI-JMB-0145,Bandung Timur,865,
+RUPTL-JAMALI-GI-0247,Bogor Baru II / Katulampa,150,Extension,2.0,2027,Planned,Jawa Barat,NEW_BUILD,,,865,
+RUPTL-JAMALI-GI-0248,CATL,150,New,3.0,2027,Planned,Jawa Barat,NEW_BUILD,,,865,
+RUPTL-JAMALI-GI-0249,Indah Kiat,150,Extension,2.0,2027,Planned,Jawa Barat,NEW_BUILD,,,865,
+RUPTL-JAMALI-GI-0250,Cikalong,500,New,4.0,2027,Planned,Jawa Barat,RECLASSIFY_NEW,GI-JMB-0171,Cikalong,865,
+RUPTL-JAMALI-GI-0251,Cikalong,500/150,Extension,1000.0,2027,Planned,Jawa Barat,EXISTING_EXT,GI-JMB-0171,Cikalong,865,
+RUPTL-JAMALI-GI-0252,Cigereleng,150,Extension,2.0,2027,Planned,Jawa Barat,EXISTING_EXT,GI-JMB-0169,Cigereleng,865,
+RUPTL-JAMALI-GI-0253,Cikalong,150/20,New,60.0,2027,Planned,Jawa Barat,RECLASSIFY_NEW,GI-JMB-0171,Cikalong,865,
+RUPTL-JAMALI-GI-0254,Wayang Windu,150/70,Extension,100.0,2027,Planned,Jawa Barat,EXISTING_EXT,GI-JMB-0274,Wayang Windu,865,
+RUPTL-JAMALI-GI-0255,Cikedung,150,Extension,2.0,2027,Planned,Jawa Barat,EXISTING_EXT,GI-JMB-0175,Cikedung,865,
+RUPTL-JAMALI-GI-0256,Cikijing,150/20,New,60.0,2027,Planned,Jawa Barat,NEW_BUILD,,,865,
+RUPTL-JAMALI-GI-0257,Cimanggis II / Tengah,150/20,Extension,60.0,2027,Planned,Jawa Barat,NEW_BUILD,,,865,
+RUPTL-JAMALI-GI-0258,Cirata Baru,150/20,Uprate,60.0,2027,Planned,Jawa Barat,EXISTING_UPRATE,GI-JMB-0179,Cirata,865,
+RUPTL-JAMALI-GI-0259,Karawang,500,Extension,2.0,2027,Planned,Jawa Barat,NEW_BUILD,,,865,
+RUPTL-JAMALI-GI-0260,KIIC,500/150,New,1000.0,2027,Planned,Jawa Barat,NEW_BUILD,,,865,
+RUPTL-JAMALI-GI-0261,KIIC II / Margakaya,150,Extension,2.0,2027,Planned,Jawa Barat,NEW_BUILD,,,865,
+RUPTL-JAMALI-GI-0262,KIIC III,150/20,New,120.0,2027,Planned,Jawa Barat,NEW_BUILD,,,865,
+RUPTL-JAMALI-GI-0263,Ciamis,150,Uprate,2.0,2027,Planned,Jawa Barat,EXISTING_UPRATE,GI-JMB-0155,Ciamis,865,
+RUPTL-JAMALI-GI-0264,Tasikmalaya New,150,Extension,2.0,2027,Planned,Jawa Barat,EXISTING_EXT,GI-JMB-0264,Tasikmalaya,865,
+RUPTL-JAMALI-GI-0265,Kadipaten Baru II / Kertajati,150/20,New,120.0,2027,Planned,Jawa Barat,NEW_BUILD,,,865,
+RUPTL-JAMALI-GI-0266,Karawang,500/150,New,2000.0,2027,Planned,Jawa Barat,NEW_BUILD,,,865,
+RUPTL-JAMALI-GI-0267,Jatiluhur Baru,150,Extension,2.0,2027,Planned,Jawa Barat,NEW_BUILD,,,865,
+RUPTL-JAMALI-GI-0268,KIIC II / Margakaya,150,Extension,2.0,2027,Planned,Jawa Barat,NEW_BUILD,,,865,
+RUPTL-JAMALI-GI-0269,Telukjambe II,150,Extension,2.0,2027,Planned,Jawa Barat,EXISTING_EXT,GI-JMB-0270,Telukjambe,865,
+RUPTL-JAMALI-GI-0270,Karawang,150/20,New,60.0,2027,Planned,Jawa Barat,NEW_BUILD,,,865,
+RUPTL-JAMALI-GI-0271,Subang Baru / Pamanukan,150,Extension,2.0,2027,Planned,Jawa Barat,NEW_BUILD,,,865,
+RUPTL-JAMALI-GI-0272,Subang Smartpolitan / Metropolitan,150/20,New,120.0,2027,Planned,Jawa Barat,NEW_BUILD,,,865,
+RUPTL-JAMALI-GI-0273,Kedung Badak Baru II / Kencana,150/20,New,120.0,2027,Planned,Jawa Barat,NEW_BUILD,,,865,
+RUPTL-JAMALI-GI-0274,KIIC II / Margakaya,150,Extension,,2027,Planned,Jawa Barat,NEW_BUILD,,,866,
+RUPTL-JAMALI-GI-0275,Kuningan Baru,150,Extension,2.0,2027,Planned,Jawa Barat,EXISTING_EXT,GI-JMB-0211,Kuningan,866,
+RUPTL-JAMALI-GI-0276,Mandirancan,150,Extension,2.0,2027,Planned,Jawa Barat,EXISTING_EXT,GI-JMB-0218,Mandirancan,866,
+RUPTL-JAMALI-GI-0277,Kuningan Baru,150/20,New,60.0,2027,Planned,Jawa Barat,RECLASSIFY_NEW,GI-JMB-0211,Kuningan,866,
+RUPTL-JAMALI-GI-0278,Karahabodas,150,Extension,2.0,2027,Planned,Jawa Barat,NEW_BUILD,,,866,
+RUPTL-JAMALI-GI-0279,Malangbong Baru,150,Extension,2.0,2027,Planned,Jawa Barat,EXISTING_EXT,GI-JMB-0216,Malangbong,866,
+RUPTL-JAMALI-GI-0280,Malangbong Baru,150/20,New,120.0,2027,Planned,Jawa Barat,RECLASSIFY_NEW,GI-JMB-0216,Malangbong,866,
+RUPTL-JAMALI-GI-0281,Padalarang Baru II / Ngamprah / Walini,150/20,New,120.0,2027,Planned,Jawa Barat,NEW_BUILD,,,866,
+RUPTL-JAMALI-GI-0282,Patimban,150/20,New,120.0,2027,Planned,Jawa Barat,NEW_BUILD,,,866,
+RUPTL-JAMALI-GI-0283,Bandung Utara,150,Uprate,2.0,2027,Planned,Jawa Barat,EXISTING_UPRATE,GI-JMB-0146,Bandung Utara,866,
+RUPTL-JAMALI-GI-0284,Padalarang,150,Uprate,2.0,2027,Planned,Jawa Barat,EXISTING_UPRATE,GI-JMB-0228,Padalarang Baru,866,
+RUPTL-JAMALI-GI-0285,Cibatu,150,Uprate,2.0,2027,Planned,Jawa Barat,EXISTING_UPRATE,GI-JMB-0162,Cibatu,866,
+RUPTL-JAMALI-GI-0286,Mekarsari,150,Uprate,2.0,2027,Planned,Jawa Barat,EXISTING_UPRATE,GI-JMB-0221,Mekarsari,866,
+RUPTL-JAMALI-GI-0287,Mekarsari,150,Uprate,2.0,2027,Planned,Jawa Barat,EXISTING_UPRATE,GI-JMB-0221,Mekarsari,866,
+RUPTL-JAMALI-GI-0288,Pinayungan,150,Uprate,2.0,2027,Planned,Jawa Barat,EXISTING_UPRATE,GI-JMB-0236,Pinayungan,866,
+RUPTL-JAMALI-GI-0289,Rancanumpang / Gedebage,150/20,Extension,60.0,2027,Planned,Jawa Barat,NEW_BUILD,,,866,
+RUPTL-JAMALI-GI-0290,Wayang Windu,150,Extension,2.0,2027,Planned,Jawa Barat,EXISTING_EXT,GI-JMB-0274,Wayang Windu,866,
+RUPTL-JAMALI-GI-0291,Sukarame,150/20,New,120.0,2027,Planned,Jawa Barat,NEW_BUILD,,,866,
+RUPTL-JAMALI-GI-0292,Sukatani New,150/20,Extension,60.0,2027,Planned,Jawa Barat,EXISTING_EXT,GI-JMB-0255,Sukatani,866,
+RUPTL-JAMALI-GI-0293,Sukatani,150,Extension,2.0,2027,Planned,Jawa Barat,EXISTING_EXT,GI-JMB-0255,Sukatani,866,
+RUPTL-JAMALI-GI-0294,Sumedang Baru,150/20,New,120.0,2027,Construction,Jawa Barat,RECLASSIFY_NEW,GI-JMB-0258,Sumedang,866,
+RUPTL-JAMALI-GI-0295,Tambun II / Pasar Kalong,150/20,Extension,60.0,2027,Planned,Jawa Barat,NEW_BUILD,,,866,
+RUPTL-JAMALI-GI-0296,Tenjo,150/20,New,120.0,2027,Planned,Jawa Barat,NEW_BUILD,,,866,
+RUPTL-JAMALI-GI-0297,Cibabat II / Leuwigajah,150/20,Extension,60.0,2028,Planned,Jawa Barat,NEW_BUILD,,,866,
+RUPTL-JAMALI-GI-0298,Cibinong II,150/20,New,120.0,2028,Planned,Jawa Barat,RECLASSIFY_NEW,GI-JMB-0165,Cibinong,866,
+RUPTL-JAMALI-GI-0299,Patuha,150,Extension,2.0,2028,Planned,Jawa Barat,EXISTING_EXT,GI-JMB-0234,Patuha,866,
+RUPTL-JAMALI-GI-0300,PLTP Cibuni,150/20,New,60.0,2028,Planned,Jawa Barat,NEW_BUILD,,,866,
+RUPTL-JAMALI-GI-0301,Cikarang Baru Lippo,150/20,Extension,60.0,2028,Planned,Jawa Barat,EXISTING_EXT,GI-JMB-0173,Cikarang Lippo,866,
+RUPTL-JAMALI-GI-0302,KIIC III,150,Extension,2.0,2028,Planned,Jawa Barat,NEW_BUILD,,,866,
+RUPTL-JAMALI-GI-0303,Jababeka II / Pamahan,150/20,Extension,60.0,2028,Planned,Jawa Barat,NEW_BUILD,,,866,
+RUPTL-JAMALI-GI-0304,Karawang,500/150,Extension,1000.0,2028,Planned,Jawa Barat,NEW_BUILD,,,866,
+RUPTL-JAMALI-GI-0305,Karawang,150,Extension,2.0,2028,Planned,Jawa Barat,NEW_BUILD,,,866,
+RUPTL-JAMALI-GI-0306,Maligi,150/20,Extension,60.0,2028,Planned,Jawa Barat,EXISTING_EXT,GI-JMB-0217,Maligi,866,
+RUPTL-JAMALI-GI-0307,Panasia II / Warung Lobak,150/20,New,60.0,2028,Planned,Jawa Barat,NEW_BUILD,,,866,
+RUPTL-JAMALI-GI-0308,Bandung Timur,150,Extension,2.0,2028,Planned,Jawa Barat,EXISTING_EXT,GI-JMB-0145,Bandung Timur,866,
+RUPTL-JAMALI-GI-0309,Braga,150,Extension,2.0,2028,Planned,Jawa Barat,EXISTING_EXT,GI-JMB-0152,Braga,866,
+RUPTL-JAMALI-GI-0310,Bogor Baru,150,Extension,2.0,2028,Planned,Jawa Barat,EXISTING_EXT,GI-JMB-0149,Bogor Baru,866,
+RUPTL-JAMALI-GI-0311,ITP,150,Extension,2.0,2028,Planned,Jawa Barat,NEW_BUILD,,,866,
+RUPTL-JAMALI-GI-0312,Sukatani New,150/20,Extension,60.0,2028,Planned,Jawa Barat,EXISTING_EXT,GI-JMB-0255,Sukatani,866,
+RUPTL-JAMALI-GI-0313,Telukjambe II,150/20,Extension,60.0,2028,Planned,Jawa Barat,EXISTING_EXT,GI-JMB-0270,Telukjambe,866,
+RUPTL-JAMALI-GI-0314,Ubrug,500/150,New,1000.0,2028,Planned,Jawa Barat,RECLASSIFY_NEW,GI-JMB-0271,Ubrug,866,
+RUPTL-JAMALI-GI-0315,Sentul Baru / Cijayanti,150,Extension,2.0,2028,Planned,Jawa Barat,NEW_BUILD,,,866,
+RUPTL-JAMALI-GI-0316,Ubrug New / Warung Kiara,150/20,New,120.0,2028,Planned,Jawa Barat,NEW_BUILD,,,866,
+RUPTL-JAMALI-GI-0317,Citeurup,500/150,New,1000.0,2028,Planned,Jawa Barat,NEW_BUILD,,,867,
+RUPTL-JAMALI-GI-0318,Citeurup,150/20,New,120.0,2028,Planned,Jawa Barat,NEW_BUILD,,,867,
+RUPTL-JAMALI-GI-0319,Upper Cisokan PLTA PS,500,New,4.0,2028,Planned,Jawa Barat,NEW_BUILD,,,867,
+RUPTL-JAMALI-GI-0320,Balongan,150/20,Extension,60.0,2029,Planned,Jawa Barat,NEW_BUILD,,,867,
+RUPTL-JAMALI-GI-0321,Bandung Selatan II / Soreang,150,New,4.0,2029,Planned,Jawa Barat,NEW_BUILD,,,867,
+RUPTL-JAMALI-GI-0322,Bunar Baru,150,Extension,2.0,2029,Planned,Jawa Barat,EXISTING_EXT,GI-JMB-0153,Bunar Baru,867,
+RUPTL-JAMALI-GI-0323,Kracak Baru,150/20,New,120.0,2029,Planned,Jawa Barat,RECLASSIFY_NEW,GI-JMB-0210,Kracak,867,
+RUPTL-JAMALI-GI-0324,Cibeureum,150,Extension,2.0,2029,Planned,Jawa Barat,EXISTING_EXT,GI-JMB-0164,Cibeureum Baru,867,
+RUPTL-JAMALI-GI-0325,Cibeureum II / Bandung Barat,150/20,New,120.0,2029,Planned,Jawa Barat,NEW_BUILD,,,867,
+RUPTL-JAMALI-GI-0326,Bandung Selatan II / Soreang,150,Extension,2.0,2029,Planned,Jawa Barat,NEW_BUILD,,,867,
+RUPTL-JAMALI-GI-0327,Cikalong,150,Extension,2.0,2029,Planned,Jawa Barat,EXISTING_EXT,GI-JMB-0171,Cikalong,867,
+RUPTL-JAMALI-GI-0328,Kosambi Baru,150,Extension,2.0,2029,Planned,Jawa Barat,NEW_BUILD,,,867,
+RUPTL-JAMALI-GI-0329,Kamojang,150,Uprate,2.0,2029,Planned,Jawa Barat,EXISTING_UPRATE,GI-JMB-0200,Kamojang,867,
+RUPTL-JAMALI-GI-0330,Lagadar II / Bojong,150/20,New,120.0,2029,Planned,Jawa Barat,NEW_BUILD,,,867,
+RUPTL-JAMALI-GI-0331,Kedung Badak,150,Extension,2.0,2029,Planned,Jawa Barat,NEW_BUILD,,,867,
+RUPTL-JAMALI-GI-0332,Depok,500,Uprate,2.0,2029,Planned,Jawa Barat,NEW_BUILD,,,867,
+RUPTL-JAMALI-GI-0333,Gandul,500,Uprate,2.0,2029,Planned,Jawa Barat,NEW_BUILD,,,867,
+RUPTL-JAMALI-GI-0334,Peruri II,150/20,New,120.0,2029,Planned,Jawa Barat,RECLASSIFY_NEW,GI-JMB-0235,Peruri,867,
+RUPTL-JAMALI-GI-0335,Jababeka II / Pamahan,150,Extension,2.0,2029,Planned,Jawa Barat,NEW_BUILD,,,867,
+RUPTL-JAMALI-GI-0336,PLTG Jawa Bali-5,150/20,New,60.0,2029,Planned,Jawa Barat,NEW_BUILD,,,867,
+RUPTL-JAMALI-GI-0337,PLTGU Jawa-4,500,New,2.0,2029,Planned,Jawa Barat,NEW_BUILD,,,867,
+RUPTL-JAMALI-GI-0338,PLTGU Jawa-4 Switching,500,New,4.0,2029,Planned,Jawa Barat,NEW_BUILD,,,867,
+RUPTL-JAMALI-GI-0339,Poncol Baru II,150/20,Extension,60.0,2029,Planned,Jawa Barat,EXISTING_EXT,GI-JMB-0240,Poncol Baru II,867,
+RUPTL-JAMALI-GI-0340,Rancaekek II,150/20,New,120.0,2029,Planned,Jawa Barat,RECLASSIFY_NEW,GI-JMB-0244,Rancaekek,867,
+RUPTL-JAMALI-GI-0341,Kosambi Baru,150,Uprate,2.0,2029,Planned,Jawa Barat,NEW_BUILD,,,867,
+RUPTL-JAMALI-GI-0342,Kutamekar,150,Uprate,2.0,2029,Planned,Jawa Barat,NEW_BUILD,,,867,
+RUPTL-JAMALI-GI-0343,Maligi,150,Uprate,2.0,2029,Planned,Jawa Barat,EXISTING_UPRATE,GI-JMB-0217,Maligi,867,
+RUPTL-JAMALI-GI-0344,Parungmulya,150,Uprate,2.0,2029,Planned,Jawa Barat,EXISTING_UPRATE,GI-JMB-0233,Parungmulya,867,
+RUPTL-JAMALI-GI-0345,Rengasdengklok Baru,150/20,Extension,60.0,2029,Planned,Jawa Barat,EXISTING_EXT,GI-JMB-0246,Rengasdengklok,867,
+RUPTL-JAMALI-GI-0346,Sentul Baru / Cijayanti,150/20,Extension,60.0,2029,Planned,Jawa Barat,NEW_BUILD,,,867,
+RUPTL-JAMALI-GI-0347,Tasikmalaya,150,Extension,2.0,2030,Planned,Jawa Barat,EXISTING_EXT,GI-JMB-0264,Tasikmalaya,867,
+RUPTL-JAMALI-GI-0348,Mandirancan,500,Extension,,2030,Planned,Jawa Barat,EXISTING_EXT,GI-JMB-0218,Mandirancan,867,
+RUPTL-JAMALI-GI-0349,Kracak Baru,150,Extension,2.0,2030,Planned,Jawa Barat,EXISTING_EXT,GI-JMB-0210,Kracak,867,
+RUPTL-JAMALI-GI-0350,Bekasi,150,Uprate,2.0,2030,Planned,Jawa Barat,NEW_BUILD,,,867,
+RUPTL-JAMALI-GI-0351,Tegal Herang,150,Extension,2.0,2030,Planned,Jawa Barat,NEW_BUILD,,,867,
+RUPTL-JAMALI-GI-0352,Tegal Herang II,150/20,New,120.0,2030,Planned,Jawa Barat,NEW_BUILD,,,867,
+RUPTL-JAMALI-GI-0353,Bekasi II / Pinggir Kali / Summarecon,150/20,Extension,60.0,2031,Planned,Jawa Barat,NEW_BUILD,,,867,
+RUPTL-JAMALI-GI-0354,PLTP Cisolok Sukarame,150/20,New,60.0,2031,Planned,Jawa Barat,NEW_BUILD,,,867,
+RUPTL-JAMALI-GI-0355,Dawuan II / Megatama Putra Sejahtera KTT,150/20,New,120.0,2031,Planned,Jawa Barat,NEW_BUILD,,,867,
+RUPTL-JAMALI-GI-0356,Dawuan II / Megatama Putra Sejahtera KTT,150,Extension,2.0,2031,Planned,Jawa Barat,NEW_BUILD,,,867,
+RUPTL-JAMALI-GI-0357,Pabuaran,150,Extension,2.0,2031,Planned,Jawa Barat,EXISTING_EXT,GI-JMB-0227,Pabuaran,867,
+RUPTL-JAMALI-GI-0358,Sawangan,150/20,Extension,60.0,2031,Planned,Jawa Barat,NEW_BUILD,,,867,
+RUPTL-JAMALI-GI-0359,Tambun II / Pasar Kalong,150/20,Extension,60.0,2031,Planned,Jawa Barat,NEW_BUILD,,,868,
+RUPTL-JAMALI-GI-0360,Tasikmalaya Baru II / Singaparna,150/20,New,120.0,2031,Planned,Jawa Barat,NEW_BUILD,,,868,
+RUPTL-JAMALI-GI-0361,Cangkring Baru / Kapetakan,150/20,Extension,60.0,2032,Planned,Jawa Barat,NEW_BUILD,,,868,
+RUPTL-JAMALI-GI-0362,Garut II / Leles,150/20,New,60.0,2032,Planned,Jawa Barat,NEW_BUILD,,,868,
+RUPTL-JAMALI-GI-0363,Cigereleng,150,Uprate,2.0,2032,Planned,Jawa Barat,EXISTING_UPRATE,GI-JMB-0169,Cigereleng,868,
+RUPTL-JAMALI-GI-0364,Lagadar,150,Uprate,2.0,2032,Planned,Jawa Barat,EXISTING_UPRATE,GI-JMB-0212,Lagadar,868,
+RUPTL-JAMALI-GI-0365,Cianjur,150,Extension,2.0,2032,Planned,Jawa Barat,EXISTING_EXT,GI-JMB-0156,Cianjur,868,
+RUPTL-JAMALI-GI-0366,Padalarang,150,Extension,2.0,2032,Planned,Jawa Barat,EXISTING_EXT,GI-JMB-0228,Padalarang Baru,868,
+RUPTL-JAMALI-GI-0367,Pertiwi Lestari,150/20,Extension,60.0,2032,Planned,Jawa Barat,NEW_BUILD,,,868,
+RUPTL-JAMALI-GI-0368,Patuha,150,Extension,2.0,2032,Planned,Jawa Barat,EXISTING_EXT,GI-JMB-0234,Patuha,868,
+RUPTL-JAMALI-GI-0369,Padalarang Baru II,150,Extension,2.0,2032,Planned,Jawa Barat,EXISTING_EXT,GI-JMB-0228,Padalarang Baru,868,
+RUPTL-JAMALI-GI-0370,PLTP Tangkuban Perahu I,150/20,New,60.0,2032,Planned,Jawa Barat,NEW_BUILD,,,868,
+RUPTL-JAMALI-GI-0371,Tambun II / Pasar Kalong,150,Extension,2.0,2032,Planned,Jawa Barat,NEW_BUILD,,,868,
+RUPTL-JAMALI-GI-0372,Tambun III / Mustika Jaya,150/20,New,60.0,2032,Planned,Jawa Barat,NEW_BUILD,,,868,
+RUPTL-JAMALI-GI-0373,Telukjambe II / Surya Cipta,150/20,Extension,60.0,2032,Planned,Jawa Barat,NEW_BUILD,,,868,
+RUPTL-JAMALI-GI-0374,Arjawinangun Baru,150/20,Extension,60.0,2033,Planned,Jawa Barat,EXISTING_EXT,GI-JMB-0140,Arjawinangun,868,
+RUPTL-JAMALI-GI-0375,Cikumpay II / Sadang,150/20,New,60.0,2033,Planned,Jawa Barat,NEW_BUILD,,,868,
+RUPTL-JAMALI-GI-0376,Cileungsi II / Jonggol,150,Extension,2.0,2033,Planned,Jawa Barat,NEW_BUILD,,,868,
+RUPTL-JAMALI-GI-0377,Cileungsi III / Pasir Angin,150/20,New,120.0,2033,Planned,Jawa Barat,NEW_BUILD,,,868,
+RUPTL-JAMALI-GI-0378,KSB Gunung Sindur,150,New,5.0,2033,Planned,Jawa Barat,NEW_BUILD,,,868,
+RUPTL-JAMALI-GI-0379,Katulampa,150/20,Extension,60.0,2033,Planned,Jawa Barat,EXISTING_EXT,GI-JMB-0203,Katulampa,868,
+RUPTL-JAMALI-GI-0380,Bekasi,150,Uprate,2.0,2033,Planned,Jawa Barat,NEW_BUILD,,,868,
+RUPTL-JAMALI-GI-0381,Cibinong,150,Uprate,2.0,2033,Planned,Jawa Barat,EXISTING_UPRATE,GI-JMB-0165,Cibinong,868,
+RUPTL-JAMALI-GI-0382,Cimanggis,150,Uprate,2.0,2033,Planned,Jawa Barat,NEW_BUILD,,,868,
+RUPTL-JAMALI-GI-0383,KSB Cirata New,150,New,5.0,2033,Planned,Jawa Barat,NEW_BUILD,,,868,
+RUPTL-JAMALI-GI-0384,Ciawi Baru II / Cisarua,150/20,New,120.0,2034,Planned,Jawa Barat,NEW_BUILD,,,868,
+RUPTL-JAMALI-GI-0385,Cibadak Baru II / Lido,150/20,Extension,60.0,2034,Planned,Jawa Barat,NEW_BUILD,,,868,
+RUPTL-JAMALI-GI-0386,Dayeuhkolot,150/20,Extension,60.0,2034,Planned,Jawa Barat,EXISTING_EXT,GI-JMB-0184,Dayeuhkolot,868,
+RUPTL-JAMALI-GI-0387,Jawa Barat Eksisting/Baru,150,Extension,2.0,2025,Planned,Jawa Barat,NEW_BUILD,,,868,
+RUPTL-JAMALI-GI-0388,Jawa Barat Eksisting/Baru,150,Extension,2.0,2026,Planned,Jawa Barat,NEW_BUILD,,,868,
+RUPTL-JAMALI-GI-0389,Jawa Barat Eksisting/Baru,150,Extension,2.0,2032,Planned,Jawa Barat,NEW_BUILD,,,868,
+RUPTL-JAMALI-GI-0390,Jawa Barat Eksisting/Baru,150,Extension,2.0,2034,Planned,Jawa Barat,NEW_BUILD,,,868,
+RUPTL-JAMALI-GI-0391,Jawa Barat Eksisting/Baru,150,Extension,2.0,2034,Planned,Jawa Barat,NEW_BUILD,,,868,
+RUPTL-JAMALI-GI-0392,Jawa Barat Eksisting/Baru,150,Extension,2.0,2028,Planned,Jawa Barat,NEW_BUILD,,,868,
+RUPTL-JAMALI-GI-0393,Jawa Barat Eksisting/Baru,150,Extension,2.0,2030,Planned,Jawa Barat,NEW_BUILD,,,868,
+RUPTL-JAMALI-GI-0394,PLTS+BESS Jawa Barat (Kuota) VIA,150,New,2.0,2030,Planned,Jawa Barat,NEW_BUILD,,,868,
+RUPTL-JAMALI-GI-0395,Jawa Barat Eksisting/Baru,150,Extension,2.0,2028,Planned,Jawa Barat,NEW_BUILD,,,868,
+RUPTL-JAMALI-GI-0396,BESS Smoothing Tersebar (1),150,New,2.0,,Planned,Jawa Barat,NEW_BUILD,,,868,
+RUPTL-JAMALI-GI-0397,Jawa Barat Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Barat,NEW_BUILD,,,868,
+RUPTL-JAMALI-GI-0398,Jawa Barat Eksisting/Baru,150,Extension,2.0,2029,Planned,Jawa Barat,NEW_BUILD,,,869,
+RUPTL-JAMALI-GI-0399,Jawa Barat Eksisting/Baru,150,Extension,2.0,2029,Planned,Jawa Barat,NEW_BUILD,,,869,
+RUPTL-JAMALI-GI-0400,Jawa Barat Eksisting/Baru,150,Extension,2.0,2030,Planned,Jawa Barat,NEW_BUILD,,,869,
+RUPTL-JAMALI-GI-0401,Jawa Barat Eksisting/Baru,150,Extension,2.0,2030,Planned,Jawa Barat,NEW_BUILD,,,869,
+RUPTL-JAMALI-GI-0402,Jawa Barat Eksisting/Baru,150,Extension,2.0,2031,Planned,Jawa Barat,NEW_BUILD,,,869,
+RUPTL-JAMALI-GI-0403,Jawa Barat Eksisting/Baru,150,Extension,2.0,2030,Planned,Jawa Barat,NEW_BUILD,,,869,
+RUPTL-JAMALI-GI-0404,Jawa Barat Eksisting/Baru,150,Extension,2.0,2031,Planned,Jawa Barat,NEW_BUILD,,,869,
+RUPTL-JAMALI-GI-0405,Jawa Barat Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Barat,NEW_BUILD,,,869,
+RUPTL-JAMALI-GI-0406,Jawa Barat Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Barat,NEW_BUILD,,,869,
+RUPTL-JAMALI-GI-0407,Jawa Barat Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Barat,NEW_BUILD,,,869,
+RUPTL-JAMALI-GI-0408,Jawa Barat Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Barat,NEW_BUILD,,,869,
+RUPTL-JAMALI-GI-0409,Jawa Barat Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Barat,NEW_BUILD,,,869,
+RUPTL-JAMALI-GI-0410,Jawa Barat Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Barat,NEW_BUILD,,,869,
+RUPTL-JAMALI-GI-0411,Jawa Barat Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Barat,NEW_BUILD,,,869,
+RUPTL-JAMALI-GI-0412,Jawa Barat Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Barat,NEW_BUILD,,,869,
+RUPTL-JAMALI-GI-0413,Jawa Barat Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Barat,NEW_BUILD,,,869,
+RUPTL-JAMALI-GI-0414,Jawa Barat Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Barat,NEW_BUILD,,,869,
+RUPTL-JAMALI-GI-0415,Jawa Barat Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Barat,NEW_BUILD,,,869,
+RUPTL-JAMALI-GI-0416,Jawa Barat Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Barat,NEW_BUILD,,,869,
+RUPTL-JAMALI-GI-0417,Jawa Barat Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Barat,NEW_BUILD,,,869,
+RUPTL-JAMALI-GI-0418,Jawa Barat Eksisting/Baru,150,Extension,2.0,2032,Planned,Jawa Barat,NEW_BUILD,,,869,
+RUPTL-JAMALI-GI-0419,Jawa Barat Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Barat,NEW_BUILD,,,869,
+RUPTL-JAMALI-GI-0420,Jawa Barat Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Barat,NEW_BUILD,,,869,
+RUPTL-JAMALI-GI-0421,Jawa Barat Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Barat,NEW_BUILD,,,869,
+RUPTL-JAMALI-GI-0422,Jawa Barat Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Barat,NEW_BUILD,,,869,
+RUPTL-JAMALI-GI-0423,Jawa Barat Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Barat,NEW_BUILD,,,869,
+RUPTL-JAMALI-GI-0424,Jawa Barat Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Barat,NEW_BUILD,,,869,
+RUPTL-JAMALI-GI-0425,Jawa Barat Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Barat,NEW_BUILD,,,869,
+RUPTL-JAMALI-GI-0426,Jawa Barat Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Barat,NEW_BUILD,,,869,
+RUPTL-JAMALI-GI-0427,Jawa Barat Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Barat,NEW_BUILD,,,869,
+RUPTL-JAMALI-GI-0428,BESS Smoothing Tersebar (1),150,New,2.0,,Planned,Jawa Barat,NEW_BUILD,,,869,
+RUPTL-JAMALI-GI-0429,Jawa Barat Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Barat,NEW_BUILD,,,869,
+RUPTL-JAMALI-GI-0430,Jawa Barat Eksisting/Baru,150,Extension,2.0,2033,Planned,Jawa Barat,NEW_BUILD,,,869,
+RUPTL-JAMALI-GI-0431,Jawa Barat Eksisting/Baru,150,Extension,2.0,2033,Planned,Jawa Barat,NEW_BUILD,,,869,
+RUPTL-JAMALI-GI-0432,Jawa Barat Eksisting/Baru,150,Extension,2.0,2033,Planned,Jawa Barat,NEW_BUILD,,,870,
+RUPTL-JAMALI-GI-0433,Jawa Barat Eksisting/Baru,150,Extension,2.0,2033,Planned,Jawa Barat,NEW_BUILD,,,870,
+RUPTL-JAMALI-GI-0434,PLTP Jawa-Bali (Kuota) Tersebar,150/20,New,60.0,2033,Planned,Jawa Barat,NEW_BUILD,,,870,
+RUPTL-JAMALI-GI-0435,Jawa Barat Eksisting/Baru,150,Extension,2.0,2033,Planned,Jawa Barat,NEW_BUILD,,,870,
+RUPTL-JAMALI-GI-0436,Jawa Barat Eksisting/Baru,150,Extension,2.0,2033,Planned,Jawa Barat,NEW_BUILD,,,870,
+RUPTL-JAMALI-GI-0437,Jawa Barat Eksisting/Baru,150,Extension,2.0,2033,Planned,Jawa Barat,NEW_BUILD,,,870,
+RUPTL-JAMALI-GI-0438,Jawa Barat Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Barat,NEW_BUILD,,,870,
+RUPTL-JAMALI-GI-0439,Jawa Barat Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Barat,NEW_BUILD,,,870,
+RUPTL-JAMALI-GI-0440,Jawa Barat Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Barat,NEW_BUILD,,,870,
+RUPTL-JAMALI-GI-0441,Jawa Barat Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Barat,NEW_BUILD,,,870,
+RUPTL-JAMALI-GI-0442,Jawa Barat Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Barat,NEW_BUILD,,,870,
+RUPTL-JAMALI-GI-0443,Jawa Barat Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Barat,NEW_BUILD,,,870,
+RUPTL-JAMALI-GI-0444,Jawa Barat Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Barat,NEW_BUILD,,,870,
+RUPTL-JAMALI-GI-0445,Jawa Barat Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Barat,NEW_BUILD,,,870,
+RUPTL-JAMALI-GI-0446,Jawa Barat Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Barat,NEW_BUILD,,,870,
+RUPTL-JAMALI-GI-0447,BESS Smoothing Tersebar (2),150,New,2.0,,Planned,Jawa Barat,NEW_BUILD,,,870,
+RUPTL-JAMALI-GI-0448,Jawa Barat Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Barat,NEW_BUILD,,,870,
+RUPTL-JAMALI-GI-0449,BESS Smoothing Tersebar (2),150,New,2.0,2034,Planned,Jawa Barat,NEW_BUILD,,,870,
+RUPTL-JAMALI-GI-0450,Jawa Barat Eksisting/Baru,150,Extension,2.0,2034,Planned,Jawa Barat,NEW_BUILD,,,870,
+RUPTL-JAMALI-GI-0451,PLTU Indramayu / Sumur Adem,150,Extension,1.0,2025,Planned,Jawa Barat,NEW_BUILD,,,870,
+RUPTL-JAMALI-GI-0452,Dawuan,150,Extension,1.0,2025,Planned,Jawa Barat,EXISTING_EXT,GI-JMB-0183,Dawuan,870,
+RUPTL-JAMALI-GI-0453,Patuha,150,Extension,,2026,Planned,Jawa Barat,EXISTING_EXT,GI-JMB-0234,Patuha,870,
+RUPTL-JAMALI-GI-0454,Cimanggis,150/20,Extension,60.0,2027,Planned,Jawa Barat,NEW_BUILD,,,870,
+RUPTL-JAMALI-GI-0455,PLTA Jatigede / Parakan Kondang Baru,150/20,Extension,60.0,2027,Planned,Jawa Barat,NEW_BUILD,,,870,
+RUPTL-JAMALI-GI-0456,Fajar Surya Wisesa II / Telaga Murni,150/20,New,120.0,2028,Planned,Jawa Barat,NEW_BUILD,,,870,
+RUPTL-JAMALI-GI-0457,Bengkok Baru / Dago II,150/20,New,60.0,2029,Planned,Jawa Barat,NEW_BUILD,,,870,
+RUPTL-JAMALI-GI-0458,KTT Data Center,150/20,New,120.0,2030,Planned,Jawa Barat,NEW_BUILD,,,870,
+RUPTL-JAMALI-GI-0459,Gandamekar II / Cibuntu,150/20,Extension,60.0,2030,Planned,Jawa Barat,NEW_BUILD,,,870,
+RUPTL-JAMALI-GI-0460,Jawa Barat Eksisting/Baru,150,Extension,2.0,2028,Planned,Jawa Barat,NEW_BUILD,,,870,
+RUPTL-JAMALI-GI-0461,Jatiluhur PS,500,New,4.0,2031,Planned,Jawa Barat,NEW_BUILD,,,870,
+RUPTL-JAMALI-GI-0462,BESS Jawa-Bali (Kuota) Tersebar I,150,New,2.0,,Planned,Jawa Barat,NEW_BUILD,,,870,
+RUPTL-JAMALI-GI-0463,Jawa Barat Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Barat,NEW_BUILD,,,870,
+RUPTL-JAMALI-GI-0464,BESS Jawa-Bali (Kuota) Tersebar I,150,New,2.0,,Planned,Jawa Barat,NEW_BUILD,,,870,
+RUPTL-JAMALI-GI-0465,Jawa Barat Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Barat,NEW_BUILD,,,870,
+RUPTL-JAMALI-GI-0466,BESS Jawa-Bali (Kuota) Tersebar IIIB,150,New,2.0,,Planned,Jawa Barat,NEW_BUILD,,,871,Tabel B3.15
+RUPTL-JAMALI-GI-0467,Jawa Barat Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Barat,NEW_BUILD,,,871,Tabel B3.15
+RUPTL-JAMALI-GI-0468,Jawa Barat Eksisting/Baru,150,Extension,2.0,2034,Planned,Jawa Barat,NEW_BUILD,,,871,Tabel B3.15
+RUPTL-JAMALI-GI-0469,Jawa-Bali (Kuota) Tersebar IVB,150,New,2.0,2034,Planned,Jawa Barat,NEW_BUILD,,,871,Tabel B3.15
+RUPTL-JAMALI-GI-0470,Jawa Barat Eksisting/Baru,150,Extension,2.0,2034,Planned,Jawa Barat,NEW_BUILD,,,871,Tabel B3.15
+RUPTL-JAMALI-GI-0471,Jawa-Bali (Kuota) Tersebar IVB,150,New,2.0,2034,Planned,Jawa Barat,NEW_BUILD,,,871,Tabel B3.15
+RUPTL-JAMALI-GI-0472,Jawa Barat Eksisting/Baru,150,Extension,2.0,2034,Planned,Jawa Barat,NEW_BUILD,,,871,Tabel B3.15
+RUPTL-JAMALI-GI-0473,Jawa-Bali (Kuota) Tersebar IVB,150,New,2.0,2034,Planned,Jawa Barat,NEW_BUILD,,,871,Tabel B3.15
+RUPTL-JAMALI-GI-0474,Bogor X,150/20,New,120.0,2031,Planned,Jawa Barat,RECLASSIFY_NEW,GI-JMB-0149,Bogor Baru,871,Tabel B3.15
+RUPTL-JAMALI-GI-0475,Citereup,500,Extension,1.0,2031,Planned,Jawa Barat,NEW_BUILD,,,871,Tabel B3.15
+RUPTL-JAMALI-GI-0476,Cibonong,500,Extension,1.0,2031,Planned,Jawa Barat,NEW_BUILD,,,871,Tabel B3.15
+RUPTL-JAMALI-GI-0477,Bogor X,500/150,New,1000.0,2031,Planned,Jawa Barat,RECLASSIFY_NEW,GI-JMB-0149,Bogor Baru,871,Tabel B3.15
+RUPTL-JAMALI-GI-0478,Bogor X (Converter Station),500/150 DC,New,2.0,2031,Planned,Jawa Barat,NEW_BUILD,,,871,Tabel B3.15
+RUPTL-JAMALI-GI-0479,Medari,150,Extension,2.0,2025,Planned,Jawa Tengah,NEW_BUILD,,,891,Tabel B4.14
+RUPTL-JAMALI-GI-0480,Beringin,150,Uprate,2.0,2025,Construction,Jawa Tengah,NEW_BUILD,,,891,Tabel B4.14
+RUPTL-JAMALI-GI-0481,Jelok,150,Uprate,2.0,2025,Construction,Jawa Tengah,EXISTING_UPRATE,GI-JMB-0295,Jelok,891,Tabel B4.14
+RUPTL-JAMALI-GI-0482,Kaliwungu,150,Uprate,2.0,2025,Construction,Jawa Tengah,EXISTING_UPRATE,GI-JMB-0300,Kaliwungu,891,Tabel B4.14
+RUPTL-JAMALI-GI-0483,Weleri,150,Uprate,2.0,2025,Planned,Jawa Tengah,EXISTING_UPRATE,GI-JMB-0352,Weleri,891,Tabel B4.14
+RUPTL-JAMALI-GI-0484,Gombong,150/20,Uprate,60.0,2025,Planned,Jawa Tengah,EXISTING_UPRATE,GI-JMB-0291,Gombong,891,Tabel B4.14
+RUPTL-JAMALI-GI-0485,Jepara,150/20,Extension,60.0,2025,Planned,Jawa Tengah,EXISTING_EXT,GI-JMB-0296,Jepara,891,Tabel B4.14
+RUPTL-JAMALI-GI-0486,KIT Batang,150,Extension,3.0,2025,Planned,Jawa Tengah,NEW_BUILD,,,891,Tabel B4.14
+RUPTL-JAMALI-GI-0487,KIT Batang,150/20,New,120.0,2025,Construction,Jawa Tengah,NEW_BUILD,,,891,Tabel B4.14
+RUPTL-JAMALI-GI-0488,KEK Kendal,150/20,New,240.0,2025,Construction,Jawa Tengah,NEW_BUILD,,,891,Tabel B4.14
+RUPTL-JAMALI-GI-0489,Kudus,150/20,Extension,60.0,2025,Planned,Jawa Tengah,EXISTING_EXT,GI-JMB-0308,Kudus,891,Tabel B4.14
+RUPTL-JAMALI-GI-0490,Kudus II / Nalumsari,150/20,New,60.0,2025,Construction,Jawa Tengah,NEW_BUILD,,,891,Tabel B4.14
+RUPTL-JAMALI-GI-0491,KIT Batang,150,Extension,2.0,2025,Planned,Jawa Tengah,NEW_BUILD,,,891,Tabel B4.14
+RUPTL-JAMALI-GI-0492,Pati,150/20,Extension,60.0,2025,Planned,Jawa Tengah,EXISTING_EXT,GI-JMB-0319,Pati,891,Tabel B4.14
+RUPTL-JAMALI-GI-0493,Pati,150,Extension,2.0,2025,Planned,Jawa Tengah,EXISTING_EXT,GI-JMB-0319,Pati,891,Tabel B4.14
+RUPTL-JAMALI-GI-0494,Pati II / Trangkil,150/20,New,60.0,2025,Planned,Jawa Tengah,NEW_BUILD,,,891,Tabel B4.14
+RUPTL-JAMALI-GI-0495,Rawalo / Kesugihan,500,Extension,2.0,2025,Planned,Jawa Tengah,NEW_BUILD,,,891,Tabel B4.14
+RUPTL-JAMALI-GI-0496,Pedan,500,Extension,,2025,Planned,Jawa Tengah,EXISTING_EXT,GI-JMB-0320,Pedan,891,Tabel B4.14
+RUPTL-JAMALI-GI-0497,Ungaran,500,Extension,,2025,Planned,Jawa Tengah,EXISTING_EXT,GI-JMB-0349,Ungaran,891,Tabel B4.14
+RUPTL-JAMALI-GI-0498,Ampel / Tuntang,500/150,Extension,1000.0,2026,Planned,Jawa Tengah,NEW_BUILD,,,891,Tabel B4.14
+RUPTL-JAMALI-GI-0499,Ampel New / Tuntang New,150,Extension,,2026,Planned,Jawa Tengah,NEW_BUILD,,,891,Tabel B4.14
+RUPTL-JAMALI-GI-0500,Banyudono,150,Uprate,2.0,2026,Planned,Jawa Tengah,EXISTING_UPRATE,GI-JMB-0277,Banyudono,891,Tabel B4.14
+RUPTL-JAMALI-GI-0501,Jajar,150,Uprate,2.0,2026,Planned,Jawa Tengah,EXISTING_UPRATE,GI-JMB-0293,Jajar,891,Tabel B4.14
+RUPTL-JAMALI-GI-0502,Cepu,150/20,Extension,30.0,2026,Planned,Jawa Tengah,EXISTING_EXT,GI-JMB-0288,Cepu,891,Tabel B4.14
+RUPTL-JAMALI-GI-0503,Kedungombo,150,Uprate,2.0,2026,Planned,Jawa Tengah,EXISTING_UPRATE,GI-JMB-0303,Kedungombo,891,Tabel B4.14
+RUPTL-JAMALI-GI-0504,Purwodadi,150,Uprate,2.0,2026,Planned,Jawa Tengah,EXISTING_UPRATE,GI-JMB-0328,Purwodadi,891,Tabel B4.14
+RUPTL-JAMALI-GI-0505,Gondangrejo,150,Uprate,2.0,2026,Planned,Jawa Tengah,EXISTING_UPRATE,GI-JMB-0292,Gondangrejo,891,Tabel B4.14
+RUPTL-JAMALI-GI-0506,Jajar,150,Uprate,2.0,2026,Planned,Jawa Tengah,EXISTING_UPRATE,GI-JMB-0293,Jajar,891,Tabel B4.14
+RUPTL-JAMALI-GI-0507,Jekulo,150/20,Extension,60.0,2026,Planned,Jawa Tengah,EXISTING_EXT,GI-JMB-0294,Jekulo,891,Tabel B4.14
+RUPTL-JAMALI-GI-0508,Pekalongan II / Comal,150/20,Extension,60.0,2026,Planned,Jawa Tengah,NEW_BUILD,,,891,Tabel B4.14
+RUPTL-JAMALI-GI-0509,BSB (Bukit Semarang Baru),150,Extension,4.0,2026,Planned,Jawa Tengah,NEW_BUILD,,,891,Tabel B4.14
+RUPTL-JAMALI-GI-0510,Pandean Lamper,150,Uprate,2.0,2026,Planned,Jawa Tengah,NEW_BUILD,,,891,Tabel B4.14
+RUPTL-JAMALI-GI-0511,Pudak Payung,150,Uprate,2.0,2026,Planned,Jawa Tengah,NEW_BUILD,,,891,Tabel B4.14
+RUPTL-JAMALI-GI-0512,Pudak Payung,150,Uprate,2.0,2026,Planned,Jawa Tengah,NEW_BUILD,,,891,Tabel B4.14
+RUPTL-JAMALI-GI-0513,Ungaran,150,Uprate,2.0,2026,Planned,Jawa Tengah,EXISTING_UPRATE,GI-JMB-0349,Ungaran,891,Tabel B4.14
+RUPTL-JAMALI-GI-0514,Kedungombo,150,Extension,2.0,2026,Planned,Jawa Tengah,EXISTING_EXT,GI-JMB-0303,Kedungombo,891,Tabel B4.14
+RUPTL-JAMALI-GI-0515,Sragen,150,Extension,2.0,2026,Planned,Jawa Tengah,EXISTING_EXT,GI-JMB-0342,Sragen,891,Tabel B4.14
+RUPTL-JAMALI-GI-0516,Lomanis,150,Extension,2.0,2026,Planned,Jawa Tengah,EXISTING_EXT,GI-JMB-0309,Lomanis,891,Tabel B4.14
+RUPTL-JAMALI-GI-0517,Srondol,150/20,Uprate,60.0,2026,Planned,Jawa Tengah,EXISTING_UPRATE,GI-JMB-0343,Srondol,891,Tabel B4.14
+RUPTL-JAMALI-GI-0518,Jelok,150,Uprate,2.0,2027,Planned,Jawa Tengah,EXISTING_UPRATE,GI-JMB-0295,Jelok,891,Tabel B4.14
+RUPTL-JAMALI-GI-0519,Sanggrahan,150,Uprate,2.0,2027,Planned,Jawa Tengah,EXISTING_UPRATE,GI-JMB-0334,Sanggrahan,891,Tabel B4.14
+RUPTL-JAMALI-GI-0520,Bumiayu,150,Uprate,2.0,2027,Planned,Jawa Tengah,EXISTING_UPRATE,GI-JMB-0287,Bumiayu,891,Tabel B4.14
+RUPTL-JAMALI-GI-0521,Kalibakal,150,Uprate,2.0,2027,Planned,Jawa Tengah,EXISTING_UPRATE,GI-JMB-0298,Kalibakal,891,Tabel B4.14
+RUPTL-JAMALI-GI-0522,Blora,150,Extension,2.0,2027,Planned,Jawa Tengah,EXISTING_EXT,GI-JMB-0281,Blora,891,Tabel B4.14
+RUPTL-JAMALI-GI-0523,Purwodadi,150,Extension,2.0,2027,Planned,Jawa Tengah,EXISTING_EXT,GI-JMB-0328,Purwodadi,891,Tabel B4.14
+RUPTL-JAMALI-GI-0524,Majenang,150/20,Uprate,60.0,2027,Planned,Jawa Tengah,EXISTING_UPRATE,GI-JMB-0310,Majenang,891,Tabel B4.14
+RUPTL-JAMALI-GI-0525,Pedan,150,Extension,2.0,2027,Planned,Jawa Tengah,EXISTING_EXT,GI-JMB-0320,Pedan,892,
+RUPTL-JAMALI-GI-0526,Solo Baru,150,Extension,2.0,2027,Planned,Jawa Tengah,NEW_BUILD,,,892,
+RUPTL-JAMALI-GI-0527,Batang / Pemalang,500/150,Extension,1000.0,2027,Planned,Jawa Tengah,NEW_BUILD,,,892,
+RUPTL-JAMALI-GI-0528,Batang New,150,Extension,4.0,2027,Planned,Jawa Tengah,EXISTING_EXT,GI-JMB-0278,Batang,892,
+RUPTL-JAMALI-GI-0529,Comal,150,Extension,2.0,2027,Planned,Jawa Tengah,EXISTING_EXT,GI-JMB-0289,Comal,892,
+RUPTL-JAMALI-GI-0530,KIT Batang,150/20,Extension,60.0,2027,Planned,Jawa Tengah,NEW_BUILD,,,892,
+RUPTL-JAMALI-GI-0531,PLTU Cilacap,500,Extension,2.0,2027,Planned,Jawa Tengah,NEW_BUILD,,,892,
+RUPTL-JAMALI-GI-0532,Kesugihan / Rawalo,150,Uprate,2.0,2027,Planned,Jawa Tengah,NEW_BUILD,,,892,
+RUPTL-JAMALI-GI-0533,Batang New,150,Extension,2.0,2027,Planned,Jawa Tengah,EXISTING_EXT,GI-JMB-0278,Batang,892,
+RUPTL-JAMALI-GI-0534,Dieng,150,Extension,2.0,2027,Planned,Jawa Tengah,EXISTING_EXT,GI-JMB-0290,Dieng,892,
+RUPTL-JAMALI-GI-0535,Garung,150,Extension,2.0,2027,Planned,Jawa Tengah,NEW_BUILD,,,892,
+RUPTL-JAMALI-GI-0536,Wonosobo,150,Uprate,2.0,2027,Planned,Jawa Tengah,EXISTING_UPRATE,GI-JMB-0355,Wonosobo,892,
+RUPTL-JAMALI-GI-0537,Rawalo,150,Uprate,1.0,2027,Planned,Jawa Tengah,EXISTING_UPRATE,GI-JMB-0331,Rawalo,892,
+RUPTL-JAMALI-GI-0538,Rawalo,150,Extension,1.0,2027,Planned,Jawa Tengah,EXISTING_EXT,GI-JMB-0331,Rawalo,892,
+RUPTL-JAMALI-GI-0539,Balapulang,150,Uprate,2.0,2027,Planned,Jawa Tengah,EXISTING_UPRATE,GI-JMB-0276,Balapulang,892,
+RUPTL-JAMALI-GI-0540,Bumiayu,150,Uprate,2.0,2027,Planned,Jawa Tengah,EXISTING_UPRATE,GI-JMB-0287,Bumiayu,892,
+RUPTL-JAMALI-GI-0541,Gondangrejo,150,Uprate,2.0,2027,Planned,Jawa Tengah,EXISTING_UPRATE,GI-JMB-0292,Gondangrejo,892,
+RUPTL-JAMALI-GI-0542,Palur,150,Uprate,2.0,2027,Planned,Jawa Tengah,EXISTING_UPRATE,GI-JMB-0317,Palur,892,
+RUPTL-JAMALI-GI-0543,Medari,150,Uprate,1.0,2028,Planned,Jawa Tengah,NEW_BUILD,,,892,
+RUPTL-JAMALI-GI-0544,Sanggrahan,150,Uprate,2.0,2028,Planned,Jawa Tengah,EXISTING_UPRATE,GI-JMB-0334,Sanggrahan,892,
+RUPTL-JAMALI-GI-0545,Rawalo / Kesugihan,500/150,Extension,1000.0,2028,Construction,Jawa Tengah,NEW_BUILD,,,892,
+RUPTL-JAMALI-GI-0546,Kesugihan,150,Extension,2.0,2028,Planned,Jawa Tengah,EXISTING_EXT,GI-JMB-0304,Kesugihan,892,
+RUPTL-JAMALI-GI-0547,Purworejo,150,Extension,2.0,2028,Planned,Jawa Tengah,EXISTING_EXT,GI-JMB-0329,Purworejo,892,
+RUPTL-JAMALI-GI-0548,Sragen,150,Uprate,2.0,2028,Planned,Jawa Tengah,EXISTING_UPRATE,GI-JMB-0342,Sragen,892,
+RUPTL-JAMALI-GI-0549,Pandean Lamper,150,Uprate,2.0,2028,Planned,Jawa Tengah,NEW_BUILD,,,892,
+RUPTL-JAMALI-GI-0550,Ungaran,150,Uprate,2.0,2028,Planned,Jawa Tengah,EXISTING_UPRATE,GI-JMB-0349,Ungaran,892,
+RUPTL-JAMALI-GI-0551,Weleri,500/150,New,1000.0,2028,Planned,Jawa Tengah,RECLASSIFY_NEW,GI-JMB-0352,Weleri,892,
+RUPTL-JAMALI-GI-0552,Batang,150,Extension,2.0,2028,Planned,Jawa Tengah,EXISTING_EXT,GI-JMB-0278,Batang,892,
+RUPTL-JAMALI-GI-0553,Kaliwungu,150,Extension,2.0,2028,Planned,Jawa Tengah,EXISTING_EXT,GI-JMB-0300,Kaliwungu,892,
+RUPTL-JAMALI-GI-0554,KEK Kendal,150,Extension,2.0,2028,Planned,Jawa Tengah,NEW_BUILD,,,892,
+RUPTL-JAMALI-GI-0555,KTT Seafer Kendal,150,New,6.0,2028,Planned,Jawa Tengah,NEW_BUILD,,,892,
+RUPTL-JAMALI-GI-0556,Weleri II,150,New,2.0,2028,Planned,Jawa Tengah,RECLASSIFY_NEW,GI-JMB-0352,Weleri,892,
+RUPTL-JAMALI-GI-0557,Kalisari,150,Extension,2.0,2028,Planned,Jawa Tengah,EXISTING_EXT,GI-JMB-0299,Kalisari,892,
+RUPTL-JAMALI-GI-0558,Pandean Lamper,150,Extension,2.0,2028,Planned,Jawa Tengah,NEW_BUILD,,,892,
+RUPTL-JAMALI-GI-0559,Simpang Lima,150,Extension,4.0,2028,Planned,Jawa Tengah,NEW_BUILD,,,892,
+RUPTL-JAMALI-GI-0560,Lomanis,150,Uprate,2.0,2028,Planned,Jawa Tengah,EXISTING_UPRATE,GI-JMB-0309,Lomanis,892,
+RUPTL-JAMALI-GI-0561,Semen Nusantara,150,Uprate,2.0,2028,Planned,Jawa Tengah,EXISTING_UPRATE,GI-JMB-0339,Semen Nusantara,892,
+RUPTL-JAMALI-GI-0562,Purwodadi,500/150,New,1000.0,2028,Planned,Jawa Tengah,RECLASSIFY_NEW,GI-JMB-0328,Purwodadi,892,
+RUPTL-JAMALI-GI-0563,Purwodadi,150,Extension,2.0,2028,Planned,Jawa Tengah,EXISTING_EXT,GI-JMB-0328,Purwodadi,892,
+RUPTL-JAMALI-GI-0564,Sayung,150,Extension,2.0,2028,Planned,Jawa Tengah,EXISTING_EXT,GI-JMB-0335,Sayung,892,
+RUPTL-JAMALI-GI-0565,Balapulang,150,Uprate,2.0,2028,Planned,Jawa Tengah,EXISTING_UPRATE,GI-JMB-0276,Balapulang,892,
+RUPTL-JAMALI-GI-0566,Kebasen,150,Uprate,2.0,2028,Planned,Jawa Tengah,EXISTING_UPRATE,GI-JMB-0301,Kebasen,892,
+RUPTL-JAMALI-GI-0567,Sragen,150/20,Extension,60.0,2028,Planned,Jawa Tengah,EXISTING_EXT,GI-JMB-0342,Sragen,892,
+RUPTL-JAMALI-GI-0568,Kentungan,150,Uprate,2.0,2029,Planned,Jawa Tengah,NEW_BUILD,,,892,
+RUPTL-JAMALI-GI-0569,Medari,150,Uprate,1.0,2029,Planned,Jawa Tengah,NEW_BUILD,,,892,
+RUPTL-JAMALI-GI-0570,Mranggen,150/20,Extension,60.0,2029,Planned,Jawa Tengah,EXISTING_EXT,GI-JMB-0314,Mranggen,892,
+RUPTL-JAMALI-GI-0571,Palur II / Karanganyar,150/20,New,60.0,2029,Planned,Jawa Tengah,NEW_BUILD,,,892,
+RUPTL-JAMALI-GI-0572,Balapulang,150,Extension,2.0,2029,Planned,Jawa Tengah,EXISTING_EXT,GI-JMB-0276,Balapulang,893,
+RUPTL-JAMALI-GI-0573,Purbalingga II / Belik,150/20,New,60.0,2029,Planned,Jawa Tengah,NEW_BUILD,,,893,
+RUPTL-JAMALI-GI-0574,Bantul,150,Uprate,2.0,2029,Planned,Jawa Tengah,NEW_BUILD,,,893,
+RUPTL-JAMALI-GI-0575,Purworejo,150,Uprate,2.0,2029,Planned,Jawa Tengah,EXISTING_UPRATE,GI-JMB-0329,Purworejo,893,
+RUPTL-JAMALI-GI-0576,Wates,150,Uprate,2.0,2029,Planned,Jawa Tengah,NEW_BUILD,,,893,
+RUPTL-JAMALI-GI-0577,Wates,150,Uprate,2.0,2029,Planned,Jawa Tengah,NEW_BUILD,,,893,
+RUPTL-JAMALI-GI-0578,Jelok,150,Uprate,2.0,2030,Planned,Jawa Tengah,EXISTING_UPRATE,GI-JMB-0295,Jelok,893,
+RUPTL-JAMALI-GI-0579,Ungaran,150,Uprate,2.0,2030,Planned,Jawa Tengah,EXISTING_UPRATE,GI-JMB-0349,Ungaran,893,
+RUPTL-JAMALI-GI-0580,Lomanis,150/20,Uprate,60.0,2030,Planned,Jawa Tengah,EXISTING_UPRATE,GI-JMB-0309,Lomanis,893,
+RUPTL-JAMALI-GI-0581,Bumiayu,150,Extension,2.0,2031,Planned,Jawa Tengah,EXISTING_EXT,GI-JMB-0287,Bumiayu,893,
+RUPTL-JAMALI-GI-0582,PLTP Baturaden / Slamet,150/20,New,60.0,2031,Planned,Jawa Tengah,NEW_BUILD,,,893,
+RUPTL-JAMALI-GI-0583,Bawen,150/20,Extension,60.0,2031,Planned,Jawa Tengah,EXISTING_EXT,GI-JMB-0280,Bawen,893,
+RUPTL-JAMALI-GI-0584,Sanggrahan II / Rajeg,150/20,New,60.0,2031,Planned,Jawa Tengah,NEW_BUILD,,,893,
+RUPTL-JAMALI-GI-0585,Tambak Lorok II / Gajah,150/20,New,60.0,2031,Planned,Jawa Tengah,NEW_BUILD,,,893,
+RUPTL-JAMALI-GI-0586,Bawen,150,Extension,2.0,2031,Planned,Jawa Tengah,EXISTING_EXT,GI-JMB-0280,Bawen,893,
+RUPTL-JAMALI-GI-0587,PLTP Ungaran,150/20,New,60.0,2031,Planned,Jawa Tengah,RECLASSIFY_NEW,GI-JMB-0349,Ungaran,893,
+RUPTL-JAMALI-GI-0588,Matenggeng PLTA PS,500,New,4.0,2032,Planned,Jawa Tengah,NEW_BUILD,,,893,
+RUPTL-JAMALI-GI-0589,Switching Kendal,500,New,4.0,2032,Planned,Jawa Tengah,NEW_BUILD,,,893,
+RUPTL-JAMALI-GI-0590,Tambak Lorok,500/150,New,1000.0,2032,Planned,Jawa Tengah,NEW_BUILD,,,893,
+RUPTL-JAMALI-GI-0591,Tambak Lorok,150,Extension,,2032,Planned,Jawa Tengah,NEW_BUILD,,,893,
+RUPTL-JAMALI-GI-0592,Rembang,500,Extension,2.0,2033,Planned,Jawa Tengah,EXISTING_EXT,GI-JMB-0333,Rembang,893,
+RUPTL-JAMALI-GI-0593,Tanjung Jati,500,Extension,2.0,2033,Planned,Jawa Tengah,EXISTING_EXT,GI-JMB-0346,Tanjung Jati,893,
+RUPTL-JAMALI-GI-0594,Rembang,500/150,New,1000.0,2033,Planned,Jawa Tengah,RECLASSIFY_NEW,GI-JMB-0333,Rembang,893,
+RUPTL-JAMALI-GI-0595,Pekalongan II / Comal,150,Extension,2.0,2033,Planned,Jawa Tengah,NEW_BUILD,,,893,
+RUPTL-JAMALI-GI-0596,Pekalongan III / Kajen,150/20,New,60.0,2033,Planned,Jawa Tengah,NEW_BUILD,,,893,
+RUPTL-JAMALI-GI-0597,Purwodadi,150,Extension,2.0,2033,Planned,Jawa Tengah,EXISTING_EXT,GI-JMB-0328,Purwodadi,893,
+RUPTL-JAMALI-GI-0598,Purwodadi II / Wirosari,150/20,New,60.0,2033,Planned,Jawa Tengah,NEW_BUILD,,,893,
+RUPTL-JAMALI-GI-0599,Pekalongan,150/20,Extension,60.0,2034,Planned,Jawa Tengah,EXISTING_EXT,GI-JMB-0322,Pekalongan,893,
+RUPTL-JAMALI-GI-0600,Jawa Tengah Eksisting/Baru,150,Extension,2.0,2025,Planned,Jawa Tengah,NEW_BUILD,,,893,
+RUPTL-JAMALI-GI-0601,PLTS Jawa Tengah (Kuota) II,150,New,2.0,2025,Planned,Jawa Tengah,NEW_BUILD,,,893,
+RUPTL-JAMALI-GI-0602,Jawa Tengah Eksisting/Baru,150,Extension,2.0,2025,Planned,Jawa Tengah,NEW_BUILD,,,893,
+RUPTL-JAMALI-GI-0603,PLTS Jawa Tengah (Kuota) IV,150,New,2.0,2025,Planned,Jawa Tengah,NEW_BUILD,,,893,
+RUPTL-JAMALI-GI-0604,Jawa Tengah Eksisting/Baru,150,Extension,2.0,2034,Planned,Jawa Tengah,NEW_BUILD,,,893,
+RUPTL-JAMALI-GI-0605,Jawa Tengah Eksisting/Baru,150,Extension,2.0,2030,Planned,Jawa Tengah,NEW_BUILD,,,893,
+RUPTL-JAMALI-GI-0606,Jawa Tengah Eksisting/Baru,150,Extension,2.0,2027,Planned,Jawa Tengah,NEW_BUILD,,,893,
+RUPTL-JAMALI-GI-0607,PLTS Jawa Tengah (Kuota) IIIB,150,New,2.0,2027,Planned,Jawa Tengah,NEW_BUILD,,,893,
+RUPTL-JAMALI-GI-0608,Jawa Tengah Eksisting/Baru,150,Extension,2.0,2032,Planned,Jawa Tengah,NEW_BUILD,,,893,
+RUPTL-JAMALI-GI-0609,Jawa Tengah Eksisting/Baru,150,Extension,2.0,2028,Planned,Jawa Tengah,NEW_BUILD,,,893,
+RUPTL-JAMALI-GI-0610,Jawa Tengah Eksisting/Baru,150,Extension,2.0,2028,Planned,Jawa Tengah,NEW_BUILD,,,893,
+RUPTL-JAMALI-GI-0611,PLTS Jawa Tengah (Kuota) IIIA,150,New,2.0,2028,Planned,Jawa Tengah,NEW_BUILD,,,894,
+RUPTL-JAMALI-GI-0612,Jawa Tengah Eksisting/Baru,150,Extension,2.0,2031,Planned,Jawa Tengah,NEW_BUILD,,,894,
+RUPTL-JAMALI-GI-0613,Jawa Tengah Eksisting/Baru,150,Extension,2.0,2031,Planned,Jawa Tengah,NEW_BUILD,,,894,
+RUPTL-JAMALI-GI-0614,Jawa Tengah Eksisting/Baru,150,Extension,2.0,2032,Planned,Jawa Tengah,NEW_BUILD,,,894,
+RUPTL-JAMALI-GI-0615,BESS Smoothing Tersebar (1),150,New,2.0,,Planned,Jawa Tengah,NEW_BUILD,,,894,
+RUPTL-JAMALI-GI-0616,Jawa Tengah Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Tengah,NEW_BUILD,,,894,
+RUPTL-JAMALI-GI-0617,BESS Smoothing Tersebar (2),150,New,2.0,,Planned,Jawa Tengah,NEW_BUILD,,,894,
+RUPTL-JAMALI-GI-0618,Jawa Tengah Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Tengah,NEW_BUILD,,,894,
+RUPTL-JAMALI-GI-0619,Jawa Tengah Eksisting/Baru,150,Extension,2.0,2030,Planned,Jawa Tengah,NEW_BUILD,,,894,
+RUPTL-JAMALI-GI-0620,Jawa Tengah Eksisting/Baru,150,Extension,2.0,2030,Planned,Jawa Tengah,NEW_BUILD,,,894,
+RUPTL-JAMALI-GI-0621,Jawa Tengah Eksisting/Baru,150,Extension,2.0,2031,Planned,Jawa Tengah,NEW_BUILD,,,894,
+RUPTL-JAMALI-GI-0622,Jawa Tengah Eksisting/Baru,150,Extension,2.0,2030,Planned,Jawa Tengah,NEW_BUILD,,,894,
+RUPTL-JAMALI-GI-0623,BESS Jawa-Bali (Kuota) Tersebar I (1),150,New,2.0,,Planned,Jawa Tengah,NEW_BUILD,,,894,
+RUPTL-JAMALI-GI-0624,Jawa Tengah Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Tengah,NEW_BUILD,,,894,
+RUPTL-JAMALI-GI-0625,BESS Jawa-Bali (Kuota) Tersebar I (2),150,New,2.0,,Planned,Jawa Tengah,NEW_BUILD,,,894,
+RUPTL-JAMALI-GI-0626,Jawa Tengah Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Tengah,NEW_BUILD,,,894,
+RUPTL-JAMALI-GI-0627,Jawa Tengah Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Tengah,NEW_BUILD,,,894,
+RUPTL-JAMALI-GI-0628,Jawa Tengah Eksisting/Baru,150,Extension,2.0,2031,Planned,Jawa Tengah,NEW_BUILD,,,894,
+RUPTL-JAMALI-GI-0629,Jawa Tengah Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Tengah,NEW_BUILD,,,894,
+RUPTL-JAMALI-GI-0630,Jawa Tengah Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Tengah,NEW_BUILD,,,894,
+RUPTL-JAMALI-GI-0631,Jawa Tengah Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Tengah,NEW_BUILD,,,894,
+RUPTL-JAMALI-GI-0632,Jawa Tengah Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Tengah,NEW_BUILD,,,894,
+RUPTL-JAMALI-GI-0633,Jawa Tengah Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Tengah,NEW_BUILD,,,894,
+RUPTL-JAMALI-GI-0634,Jawa Tengah Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Tengah,NEW_BUILD,,,894,
+RUPTL-JAMALI-GI-0635,Jawa Tengah Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Tengah,NEW_BUILD,,,894,
+RUPTL-JAMALI-GI-0636,Jawa Tengah Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Tengah,NEW_BUILD,,,894,
+RUPTL-JAMALI-GI-0637,Jawa Tengah Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Tengah,NEW_BUILD,,,894,
+RUPTL-JAMALI-GI-0638,Jawa Tengah Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Tengah,NEW_BUILD,,,894,
+RUPTL-JAMALI-GI-0639,Jawa Tengah Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Tengah,NEW_BUILD,,,894,
+RUPTL-JAMALI-GI-0640,Jawa Tengah Eksisting/Baru,150,Extension,2.0,2032,Planned,Jawa Tengah,NEW_BUILD,,,894,
+RUPTL-JAMALI-GI-0641,PLTP Jawa-Bali (Kuota) Tersebar (1),150/20,New,60.0,2032,Planned,Jawa Tengah,NEW_BUILD,,,894,
+RUPTL-JAMALI-GI-0642,Jawa Tengah Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Tengah,NEW_BUILD,,,894,
+RUPTL-JAMALI-GI-0643,Jawa Tengah Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Tengah,NEW_BUILD,,,894,
+RUPTL-JAMALI-GI-0644,Jawa Tengah Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Tengah,NEW_BUILD,,,895,
+RUPTL-JAMALI-GI-0645,Jawa Tengah Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Tengah,NEW_BUILD,,,895,
+RUPTL-JAMALI-GI-0646,Jawa Tengah Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Tengah,NEW_BUILD,,,895,
+RUPTL-JAMALI-GI-0647,Jawa Tengah Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Tengah,NEW_BUILD,,,895,
+RUPTL-JAMALI-GI-0648,Jawa Tengah Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Tengah,NEW_BUILD,,,895,
+RUPTL-JAMALI-GI-0649,Jawa Tengah Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Tengah,NEW_BUILD,,,895,
+RUPTL-JAMALI-GI-0650,Jawa Tengah Eksisting/Baru,150,Extension,2.0,2033,Planned,Jawa Tengah,NEW_BUILD,,,895,
+RUPTL-JAMALI-GI-0651,Jawa Tengah Eksisting/Baru,150,Extension,2.0,2033,Planned,Jawa Tengah,NEW_BUILD,,,895,
+RUPTL-JAMALI-GI-0652,Jawa Tengah Eksisting/Baru,150,Extension,2.0,2033,Planned,Jawa Tengah,NEW_BUILD,,,895,
+RUPTL-JAMALI-GI-0653,Jawa Tengah Eksisting/Baru,150,Extension,2.0,2033,Planned,Jawa Tengah,NEW_BUILD,,,895,
+RUPTL-JAMALI-GI-0654,Jawa Tengah Eksisting/Baru,150,Extension,2.0,2033,Planned,Jawa Tengah,NEW_BUILD,,,895,
+RUPTL-JAMALI-GI-0655,Jawa Tengah Eksisting/Baru,150,Extension,2.0,2033,Planned,Jawa Tengah,NEW_BUILD,,,895,
+RUPTL-JAMALI-GI-0656,Jawa Tengah Eksisting/Baru,150,Extension,2.0,2033,Planned,Jawa Tengah,NEW_BUILD,,,895,
+RUPTL-JAMALI-GI-0657,Jawa Tengah Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Tengah,NEW_BUILD,,,895,
+RUPTL-JAMALI-GI-0658,Jawa Tengah Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Tengah,NEW_BUILD,,,895,
+RUPTL-JAMALI-GI-0659,Jawa Tengah Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Tengah,NEW_BUILD,,,895,
+RUPTL-JAMALI-GI-0660,Jawa Tengah Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Tengah,NEW_BUILD,,,895,
+RUPTL-JAMALI-GI-0661,Jawa Tengah Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Tengah,NEW_BUILD,,,895,
+RUPTL-JAMALI-GI-0662,Jawa Tengah Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Tengah,NEW_BUILD,,,895,
+RUPTL-JAMALI-GI-0663,Jawa Tengah Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Tengah,NEW_BUILD,,,895,
+RUPTL-JAMALI-GI-0664,Jawa Tengah Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Tengah,NEW_BUILD,,,895,
+RUPTL-JAMALI-GI-0665,Jawa Tengah Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Tengah,NEW_BUILD,,,895,
+RUPTL-JAMALI-GI-0666,BESS Jawa-Bali (Kuota) Tersebar IVC (1),150,New,2.0,,Planned,Jawa Tengah,NEW_BUILD,,,895,
+RUPTL-JAMALI-GI-0667,Jawa Tengah Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Tengah,NEW_BUILD,,,895,
+RUPTL-JAMALI-GI-0668,BESS Jawa-Bali (Kuota) Tersebar IVC (2),150,New,2.0,,Planned,Jawa Tengah,NEW_BUILD,,,895,
+RUPTL-JAMALI-GI-0669,Jawa Tengah Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Tengah,NEW_BUILD,,,895,
+RUPTL-JAMALI-GI-0670,Jawa Tengah Eksisting/Baru,150,Extension,2.0,2034,Planned,Jawa Tengah,NEW_BUILD,,,895,
+RUPTL-JAMALI-GI-0671,Jawa Tengah Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Tengah,NEW_BUILD,,,895,
+RUPTL-JAMALI-GI-0672,Jawa Tengah Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Tengah,NEW_BUILD,,,895,
+RUPTL-JAMALI-GI-0673,Jawa Tengah Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Tengah,NEW_BUILD,,,895,
+RUPTL-JAMALI-GI-0674,Jawa Tengah Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Tengah,NEW_BUILD,,,895,
+RUPTL-JAMALI-GI-0675,Jawa Tengah Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Tengah,NEW_BUILD,,,895,
+RUPTL-JAMALI-GI-0676,Jawa Tengah Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Tengah,NEW_BUILD,,,895,
+RUPTL-JAMALI-GI-0677,Jawa Tengah Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Tengah,NEW_BUILD,,,896,Tabel B4.15
+RUPTL-JAMALI-GI-0678,Jawa Tengah Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Tengah,NEW_BUILD,,,896,Tabel B4.15
+RUPTL-JAMALI-GI-0679,Tanjung Jati B,150/20,Extension,60.0,2026,Planned,Jawa Tengah,EXISTING_EXT,GI-JMB-0346,Tanjung Jati,896,Tabel B4.15
+RUPTL-JAMALI-GI-0680,Brebes II / Ketanggungan,150/20,New,60.0,2027,Planned,Jawa Tengah,NEW_BUILD,,,896,Tabel B4.15
+RUPTL-JAMALI-GI-0681,Pandean Lamper,150/20,Extension,60.0,2027,Construction,Jawa Tengah,NEW_BUILD,,,896,Tabel B4.15
+RUPTL-JAMALI-GI-0682,Pandean Lamper II / Banget Ayu,150/20,New,60.0,2027,Planned,Jawa Tengah,NEW_BUILD,,,896,Tabel B4.15
+RUPTL-JAMALI-GI-0683,BESS Jawa Tengah (Kuota) IIIC,150,New,2.0,,Planned,Jawa Tengah,NEW_BUILD,,,896,Tabel B4.15
+RUPTL-JAMALI-GI-0684,Jawa Tengah Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Tengah,NEW_BUILD,,,896,Tabel B4.15
+RUPTL-JAMALI-GI-0685,Bantul,150/20,Extension,60.0,2026,Planned,Daerah Istimewa Yogyakarta,NEW_BUILD,,,903,Tabel B5.13
+RUPTL-JAMALI-GI-0686,Bantul,150,Extension,2.0,2026,Planned,Daerah Istimewa Yogyakarta,NEW_BUILD,,,903,Tabel B5.13
+RUPTL-JAMALI-GI-0687,Kentungan II / Kalasan,150,Extension,4.0,2026,Planned,Daerah Istimewa Yogyakarta,NEW_BUILD,,,903,Tabel B5.13
+RUPTL-JAMALI-GI-0688,Pedan,150,Extension,2.0,2026,Planned,Daerah Istimewa Yogyakarta,NEW_BUILD,,,903,Tabel B5.13
+RUPTL-JAMALI-GI-0689,Bantul II / Tuksono,150/20,New,60.0,2030,Planned,Daerah Istimewa Yogyakarta,NEW_BUILD,,,903,Tabel B5.13
+RUPTL-JAMALI-GI-0690,DI Yogyakarta Eksisting/Baru,150,Extension,2.0,2033,Planned,Daerah Istimewa Yogyakarta,NEW_BUILD,,,903,Tabel B5.13
+RUPTL-JAMALI-GI-0691,DI Yogyakarta Eksisting/Baru,150,Extension,2.0,,Planned,Daerah Istimewa Yogyakarta,NEW_BUILD,,,903,Tabel B5.13
+RUPTL-JAMALI-GI-0692,DI Yogyakarta Eksisting/Baru,150,Extension,2.0,,Planned,Daerah Istimewa Yogyakarta,NEW_BUILD,,,903,Tabel B5.13
+RUPTL-JAMALI-GI-0693,DI Yogyakarta Eksisting/Baru,150,Extension,2.0,,Planned,Daerah Istimewa Yogyakarta,NEW_BUILD,,,903,Tabel B5.13
+RUPTL-JAMALI-GI-0694,Bangil,500/150,New,500.0,2025,Construction,Jawa Timur,RECLASSIFY_NEW,GI-JMB-0471,Bangil,928,Tabel B6.14
+RUPTL-JAMALI-GI-0695,Bangil,150,Uprate,2.0,2025,Planned,Jawa Timur,EXISTING_UPRATE,GI-JMB-0471,Bangil,928,Tabel B6.14
+RUPTL-JAMALI-GI-0696,Bulukandang,150,Uprate,1.0,2025,Planned,Jawa Timur,EXISTING_UPRATE,GI-JMB-0452,Bulukandang,928,Tabel B6.14
+RUPTL-JAMALI-GI-0697,Kebon agung,150,Uprate,2.0,2025,Planned,Jawa Timur,NEW_BUILD,,,928,Tabel B6.14
+RUPTL-JAMALI-GI-0698,Lawang,150,Uprate,1.0,2025,Planned,Jawa Timur,EXISTING_UPRATE,GI-JMB-0424,Lawang,928,Tabel B6.14
+RUPTL-JAMALI-GI-0699,Bangil New,150/20,New,60.0,2025,Planned,Jawa Timur,RECLASSIFY_NEW,GI-JMB-0471,Bangil,928,Tabel B6.14
+RUPTL-JAMALI-GI-0700,Banyuwangi,150/20,Uprate,60.0,2025,Planned,Jawa Timur,EXISTING_UPRATE,GI-JMB-0450,Banyuwangi,928,Tabel B6.14
+RUPTL-JAMALI-GI-0701,Bungah,150,Extension,4.0,2025,Planned,Jawa Timur,EXISTING_EXT,GI-JMB-0366,Bungah,928,Tabel B6.14
+RUPTL-JAMALI-GI-0702,Bungah,150/20,Extension,60.0,2025,Planned,Jawa Timur,EXISTING_EXT,GI-JMB-0366,Bungah,928,Tabel B6.14
+RUPTL-JAMALI-GI-0703,Ponorogo,150/70,Extension,100.0,2025,Planned,Jawa Timur,NEW_BUILD,,,928,Tabel B6.14
+RUPTL-JAMALI-GI-0704,Ngimbang,500/150,Extension,500.0,2025,Committed,Jawa Timur,EXISTING_EXT,GI-JMB-0401,Ngimbang,928,Tabel B6.14
+RUPTL-JAMALI-GI-0705,Genteng,150/20,Extension,60.0,2025,Planned,Jawa Timur,EXISTING_EXT,GI-JMB-0454,Genteng,928,Tabel B6.14
+RUPTL-JAMALI-GI-0706,Banyuwangi,150,Extension,2.0,2025,Construction,Jawa Timur,EXISTING_EXT,GI-JMB-0450,Banyuwangi,928,Tabel B6.14
+RUPTL-JAMALI-GI-0707,PLTP Ijen,150/20,New,60.0,2025,Construction,Jawa Timur,NEW_BUILD,,,928,Tabel B6.14
+RUPTL-JAMALI-GI-0708,Kasih Jatim,150/20,Uprate,60.0,2025,Planned,Jawa Timur,NEW_BUILD,,,928,Tabel B6.14
+RUPTL-JAMALI-GI-0709,Bangkalan,150,Uprate,2.0,2025,Planned,Jawa Timur,EXISTING_UPRATE,GI-JMB-0365,Bangkalan,928,Tabel B6.14
+RUPTL-JAMALI-GI-0710,Perak,150,Uprate,1.0,2025,Construction,Jawa Timur,EXISTING_UPRATE,GI-JMB-0480,Perak,928,Tabel B6.14
+RUPTL-JAMALI-GI-0711,Tandes,150,Uprate,2.0,2025,Construction,Jawa Timur,EXISTING_UPRATE,GI-JMB-0379,Tandes,928,Tabel B6.14
+RUPTL-JAMALI-GI-0712,Babat / Baureno,150,Uprate,2.0,2025,Construction,Jawa Timur,NEW_BUILD,,,928,Tabel B6.14
+RUPTL-JAMALI-GI-0713,Cerme,150,Uprate,2.0,2025,Construction,Jawa Timur,EXISTING_UPRATE,GI-JMB-0367,Cerme,928,Tabel B6.14
+RUPTL-JAMALI-GI-0714,Lamongan,150,Uprate,2.0,2025,Construction,Jawa Timur,EXISTING_UPRATE,GI-JMB-0391,Lamongan,929,
+RUPTL-JAMALI-GI-0715,Lamongan,150,Uprate,2.0,2025,Construction,Jawa Timur,EXISTING_UPRATE,GI-JMB-0391,Lamongan,929,
+RUPTL-JAMALI-GI-0716,Ngoro,150/20,Extension,60.0,2025,Planned,Jawa Timur,EXISTING_EXT,GI-JMB-0427,Ngoro,929,
+RUPTL-JAMALI-GI-0717,Mojoagung,150,Uprate,2.0,2025,Construction,Jawa Timur,EXISTING_UPRATE,GI-JMB-0425,Mojoagung,929,
+RUPTL-JAMALI-GI-0718,PLTS Karangkates,150,New,2.0,2025,Construction,Jawa Timur,RECLASSIFY_NEW,GI-JMB-0437,Karangkates,929,
+RUPTL-JAMALI-GI-0719,Sutami,150,Extension,2.0,2025,Construction,Jawa Timur,NEW_BUILD,,,929,
+RUPTL-JAMALI-GI-0720,Kediri,150,Extension,2.0,2025,Planned,Jawa Timur,EXISTING_EXT,GI-JMB-0388,Kediri,929,
+RUPTL-JAMALI-GI-0721,Sekarputih / Mojokerto,150/20,Extension,60.0,2025,Planned,Jawa Timur,NEW_BUILD,,,929,
+RUPTL-JAMALI-GI-0722,Situbondo,150/20,Uprate,60.0,2025,Planned,Jawa Timur,EXISTING_UPRATE,GI-JMB-0468,Situbondo,929,
+RUPTL-JAMALI-GI-0723,Tarik,70/20,Uprate,30.0,2025,Construction,Jawa Timur,EXISTING_UPRATE,GI-JMB-0443,Tarik,929,
+RUPTL-JAMALI-GI-0724,Tulungagung II,150/20,Extension,60.0,2025,Committed,Jawa Timur,EXISTING_EXT,GI-JMB-0413,PLTA Tulungagung,929,
+RUPTL-JAMALI-GI-0725,PLTA Tulungagung,70/20,Extension,30.0,2025,Planned,Jawa Timur,EXISTING_EXT,GI-JMB-0413,PLTA Tulungagung,929,
+RUPTL-JAMALI-GI-0726,Driyorejo,150/70,Uprate,100.0,2025,Planned,Jawa Timur,EXISTING_UPRATE,GI-JMB-0446,Driyorejo,929,
+RUPTL-JAMALI-GI-0727,Krian,500,Extension,1.0,2025,Planned,Jawa Timur,EXISTING_EXT,GI-JMB-0449,Krian,929,
+RUPTL-JAMALI-GI-0728,Waru,500/150,New,1000.0,2025,Construction,Jawa Timur,RECLASSIFY_NEW,GI-JMB-0499,Waru,929,
+RUPTL-JAMALI-GI-0729,Waru New,150/20,New,60.0,2025,Planned,Jawa Timur,RECLASSIFY_NEW,GI-JMB-0499,Waru,929,
+RUPTL-JAMALI-GI-0730,Paiton,500,Extension,3.0,2025,Construction,Jawa Timur,EXISTING_EXT,GI-JMB-0463,Paiton,929,
+RUPTL-JAMALI-GI-0731,Watudodol / Kalipuro,500/150,New,1000.0,2025,Construction,Jawa Timur,NEW_BUILD,,,929,
+RUPTL-JAMALI-GI-0732,Kalipuro New,150/20,New,60.0,2025,Construction,Jawa Timur,NEW_BUILD,,,929,
+RUPTL-JAMALI-GI-0733,Bangil,500/150,Extension,500.0,2026,Planned,Jawa Timur,EXISTING_EXT,GI-JMB-0471,Bangil,929,
+RUPTL-JAMALI-GI-0734,Gempol / New Porong,150,Extension,2.0,2026,Planned,Jawa Timur,NEW_BUILD,,,929,
+RUPTL-JAMALI-GI-0735,Paciran,150,Extension,4.0,2026,Planned,Jawa Timur,EXISTING_EXT,GI-JMB-0402,Paciran,929,
+RUPTL-JAMALI-GI-0736,Tuban,150,Extension,2.0,2026,Planned,Jawa Timur,NEW_BUILD,,,929,
+RUPTL-JAMALI-GI-0737,Rejoso,150,Extension,2.0,2026,Planned,Jawa Timur,NEW_BUILD,,,929,
+RUPTL-JAMALI-GI-0738,Segoromadu,150/70,Extension,100.0,2026,Planned,Jawa Timur,EXISTING_EXT,GI-JMB-0376,Segoromadu,929,
+RUPTL-JAMALI-GI-0739,Cerme,150,Extension,,2026,Planned,Jawa Timur,EXISTING_EXT,GI-JMB-0367,Cerme,929,
+RUPTL-JAMALI-GI-0740,KI Tuban,150,New,3.0,2026,Planned,Jawa Timur,NEW_BUILD,,,929,
+RUPTL-JAMALI-GI-0741,Mliwang,150,Extension,2.0,2026,Planned,Jawa Timur,EXISTING_EXT,GI-JMB-0394,Mliwang,929,
+RUPTL-JAMALI-GI-0742,Wlingi,150,Extension,2.0,2026,Planned,Jawa Timur,EXISTING_EXT,GI-JMB-0434,Wlingi,929,
+RUPTL-JAMALI-GI-0743,Wlingi II,150,Extension,2.0,2026,Planned,Jawa Timur,EXISTING_EXT,GI-JMB-0434,Wlingi,929,
+RUPTL-JAMALI-GI-0744,Madiun,500/150,New,1000.0,2026,Planned,Jawa Timur,NEW_BUILD,,,929,
+RUPTL-JAMALI-GI-0745,Manisrejo,150,Uprate,2.0,2026,Planned,Jawa Timur,EXISTING_UPRATE,GI-JMB-0392,Manisrejo,929,
+RUPTL-JAMALI-GI-0746,Ngawi,150,Uprate,2.0,2026,Planned,Jawa Timur,EXISTING_UPRATE,GI-JMB-0400,Ngawi,929,
+RUPTL-JAMALI-GI-0747,Madiun,150/20,New,60.0,2026,Planned,Jawa Timur,NEW_BUILD,,,929,
+RUPTL-JAMALI-GI-0748,Bangkalan,150,Extension,2.0,2026,Planned,Jawa Timur,EXISTING_EXT,GI-JMB-0365,Bangkalan,929,
+RUPTL-JAMALI-GI-0749,Guluk Guluk,150,Extension,2.0,2026,Planned,Jawa Timur,EXISTING_EXT,GI-JMB-0369,Guluk-Guluk,929,
+RUPTL-JAMALI-GI-0750,Kertosono,150,Extension,2.0,2026,Planned,Jawa Timur,EXISTING_EXT,GI-JMB-0389,Kertosono,929,
+RUPTL-JAMALI-GI-0751,Ngimbang,500,Extension,2.0,2026,Planned,Jawa Timur,EXISTING_EXT,GI-JMB-0401,Ngimbang,929,
+RUPTL-JAMALI-GI-0752,Jawa Timur Eksisiting,150,Extension,2.0,2028,Planned,Jawa Timur,NEW_BUILD,,,929,
+RUPTL-JAMALI-GI-0753,PLTS+BESS Jawa Timur (Kuota) IVA,150,New,2.0,2028,Planned,Jawa Timur,NEW_BUILD,,,929,
+RUPTL-JAMALI-GI-0754,Jawa Timur Eksisiting,150,Extension,2.0,2028,Planned,Jawa Timur,NEW_BUILD,,,930,
+RUPTL-JAMALI-GI-0755,PLTS+BESS Jawa Timur (Kuota) V,150,New,2.0,2028,Planned,Jawa Timur,NEW_BUILD,,,930,
+RUPTL-JAMALI-GI-0756,PLTU Paiton II,150/20,New,60.0,2026,Planned,Jawa Timur,RECLASSIFY_NEW,GI-JMB-0463,Paiton,930,
+RUPTL-JAMALI-GI-0757,Pier,150,Extension,2.0,2026,Planned,Jawa Timur,EXISTING_EXT,GI-JMB-0464,Pier,930,
+RUPTL-JAMALI-GI-0758,Driyorejo,150,Extension,2.0,2026,Planned,Jawa Timur,EXISTING_EXT,GI-JMB-0446,Driyorejo,930,
+RUPTL-JAMALI-GI-0759,Kerek,150,Uprate,4.0,2026,Planned,Jawa Timur,NEW_BUILD,,,930,
+RUPTL-JAMALI-GI-0760,Tuban,150,Uprate,2.0,2026,Planned,Jawa Timur,NEW_BUILD,,,930,
+RUPTL-JAMALI-GI-0761,Manisrejo,150,Extension,2.0,2026,Construction,Jawa Timur,EXISTING_EXT,GI-JMB-0392,Manisrejo,930,
+RUPTL-JAMALI-GI-0762,Caruban Baru,150/20,New,120.0,2026,Construction,Jawa Timur,RECLASSIFY_NEW,GI-JMB-0406,Caruban,930,
+RUPTL-JAMALI-GI-0763,Caruban Baru,150,Extension,2.0,2026,Planned,Jawa Timur,EXISTING_EXT,GI-JMB-0406,Caruban,930,
+RUPTL-JAMALI-GI-0764,Kertosono,150,Extension,2.0,2026,Planned,Jawa Timur,EXISTING_EXT,GI-JMB-0389,Kertosono,930,
+RUPTL-JAMALI-GI-0765,Sidoarjo,150/20,Extension,60.0,2026,Planned,Jawa Timur,EXISTING_EXT,GI-JMB-0483,Sidoarjo,930,
+RUPTL-JAMALI-GI-0766,Jenu / TPPI,150,New,4.0,2026,Planned,Jawa Timur,NEW_BUILD,,,930,
+RUPTL-JAMALI-GI-0767,Mliwang,150,Extension,2.0,2026,Planned,Jawa Timur,EXISTING_EXT,GI-JMB-0394,Mliwang,930,
+RUPTL-JAMALI-GI-0768,Petrokimia,150,Extension,2.0,2027,Planned,Jawa Timur,EXISTING_EXT,GI-JMB-0373,Petrokimia,930,
+RUPTL-JAMALI-GI-0769,BSI,150,New,3.0,2027,Planned,Jawa Timur,NEW_BUILD,,,930,
+RUPTL-JAMALI-GI-0770,Genteng,150,Extension,2.0,2027,Planned,Jawa Timur,EXISTING_EXT,GI-JMB-0454,Genteng,930,
+RUPTL-JAMALI-GI-0771,Genteng,150,Extension,2.0,2027,Planned,Jawa Timur,EXISTING_EXT,GI-JMB-0454,Genteng,930,
+RUPTL-JAMALI-GI-0772,Dolopo Baru,150/20,New,60.0,2027,Planned,Jawa Timur,RECLASSIFY_NEW,GI-JMB-0407,Dolopo,930,
+RUPTL-JAMALI-GI-0773,Kalisari,150,Extension,2.0,2027,Planned,Jawa Timur,EXISTING_EXT,GI-JMB-0478,Kalisari,930,
+RUPTL-JAMALI-GI-0774,Cerme,150,Uprate,2.0,2027,Planned,Jawa Timur,EXISTING_UPRATE,GI-JMB-0367,Cerme,930,
+RUPTL-JAMALI-GI-0775,Manyar,150,Uprate,2.0,2027,Planned,Jawa Timur,EXISTING_UPRATE,GI-JMB-0370,Manyar,930,
+RUPTL-JAMALI-GI-0776,Buduran,150,Extension,2.0,2027,Planned,Jawa Timur,EXISTING_EXT,GI-JMB-0476,Buduran,930,
+RUPTL-JAMALI-GI-0777,Surabaya Selatan,150,Extension,2.0,2027,Planned,Jawa Timur,EXISTING_EXT,GI-JMB-0485,Surabaya Selatan,930,
+RUPTL-JAMALI-GI-0778,Kalanganyar,150/20,New,60.0,2027,Planned,Jawa Timur,NEW_BUILD,,,930,
+RUPTL-JAMALI-GI-0779,Kalanganyar,500/275,New,1000.0,2027,Planned,Jawa Timur,NEW_BUILD,,,930,
+RUPTL-JAMALI-GI-0780,Kasih Jatim,150/20,Extension,60.0,2027,Planned,Jawa Timur,NEW_BUILD,,,930,
+RUPTL-JAMALI-GI-0781,Bangkalan,150,Extension,2.0,2027,Planned,Jawa Timur,EXISTING_EXT,GI-JMB-0365,Bangkalan,930,
+RUPTL-JAMALI-GI-0782,Ujung,150,Uprate,2.0,2027,Planned,Jawa Timur,EXISTING_UPRATE,GI-JMB-0497,Ujung,930,
+RUPTL-JAMALI-GI-0783,Bangkalan,150,Uprate,2.0,2027,Planned,Jawa Timur,EXISTING_UPRATE,GI-JMB-0365,Bangkalan,930,
+RUPTL-JAMALI-GI-0784,Sampang,150,Uprate,2.0,2027,Planned,Jawa Timur,EXISTING_UPRATE,GI-JMB-0375,Sampang,930,
+RUPTL-JAMALI-GI-0785,Magetan Baru,150/20,New,120.0,2027,Planned,Jawa Timur,RECLASSIFY_NEW,GI-JMB-0409,Magetan,930,
+RUPTL-JAMALI-GI-0786,New Ngoro,500/150,New,1000.0,2027,Planned,Jawa Timur,RECLASSIFY_NEW,GI-JMB-0427,Ngoro,930,
+RUPTL-JAMALI-GI-0787,New Ngoro,150/20,New,120.0,2027,Planned,Jawa Timur,RECLASSIFY_NEW,GI-JMB-0427,Ngoro,930,
+RUPTL-JAMALI-GI-0788,Bulukandang,150,Extension,2.0,2027,Planned,Jawa Timur,EXISTING_EXT,GI-JMB-0452,Bulukandang,930,
+RUPTL-JAMALI-GI-0789,Suryazigzag,150,Extension,2.0,2027,Planned,Jawa Timur,NEW_BUILD,,,930,
+RUPTL-JAMALI-GI-0790,Paiton Baru / Besuki,150/20,New,60.0,2027,Planned,Jawa Timur,NEW_BUILD,,,930,
+RUPTL-JAMALI-GI-0791,Banyuwangi,150,Uprate,2.0,2027,Planned,Jawa Timur,EXISTING_UPRATE,GI-JMB-0450,Banyuwangi,930,
+RUPTL-JAMALI-GI-0792,Genteng,150,Uprate,2.0,2027,Planned,Jawa Timur,EXISTING_UPRATE,GI-JMB-0454,Genteng,930,
+RUPTL-JAMALI-GI-0793,Jember,150,Uprate,2.0,2027,Planned,Jawa Timur,EXISTING_UPRATE,GI-JMB-0457,Jember,930,
+RUPTL-JAMALI-GI-0794,Gresik,500,Extension,2.0,2027,Planned,Jawa Timur,EXISTING_EXT,GI-JMB-0380,Gresik,930,
+RUPTL-JAMALI-GI-0795,Kalanganyar Switching Point,275,New,2.0,2027,Construction,Jawa Timur,NEW_BUILD,,,930,
+RUPTL-JAMALI-GI-0796,Surabaya Selatan,275/150,New,1000.0,2027,Construction,Jawa Timur,RECLASSIFY_NEW,GI-JMB-0485,Surabaya Selatan,931,
+RUPTL-JAMALI-GI-0797,Surabaya Selatan,150,Extension,2.0,2027,Planned,Jawa Timur,EXISTING_EXT,GI-JMB-0485,Surabaya Selatan,931,
+RUPTL-JAMALI-GI-0798,Surabaya Selatan,150,Extension,,2027,Construction,Jawa Timur,EXISTING_EXT,GI-JMB-0485,Surabaya Selatan,931,
+RUPTL-JAMALI-GI-0799,Ngimbang,500,Extension,2.0,2028,Planned,Jawa Timur,EXISTING_EXT,GI-JMB-0401,Ngimbang,931,
+RUPTL-JAMALI-GI-0800,Tanjung Awar- Awar,500/150,New,1500.0,2028,Planned,Jawa Timur,NEW_BUILD,,,931,
+RUPTL-JAMALI-GI-0801,New Tanjung Awar-Awar,150/20,New,60.0,2028,Planned,Jawa Timur,NEW_BUILD,,,931,
+RUPTL-JAMALI-GI-0802,Driyorejo II / Wringinanom,150/20,Extension,60.0,2028,Planned,Jawa Timur,NEW_BUILD,,,931,
+RUPTL-JAMALI-GI-0803,Ngimbang,500/150,Extension,500.0,2028,Planned,Jawa Timur,EXISTING_EXT,GI-JMB-0401,Ngimbang,931,
+RUPTL-JAMALI-GI-0804,Lamongan,150,Extension,2.0,2028,Planned,Jawa Timur,EXISTING_EXT,GI-JMB-0391,Lamongan,931,
+RUPTL-JAMALI-GI-0805,Ngimbang,150,Extension,,2028,Planned,Jawa Timur,EXISTING_EXT,GI-JMB-0401,Ngimbang,931,
+RUPTL-JAMALI-GI-0806,Ngimbang,150,Extension,2.0,2028,Planned,Jawa Timur,EXISTING_EXT,GI-JMB-0401,Ngimbang,931,
+RUPTL-JAMALI-GI-0807,Gresik Baru,150,Extension,2.0,2028,Planned,Jawa Timur,EXISTING_EXT,GI-JMB-0380,Gresik,931,
+RUPTL-JAMALI-GI-0808,Sawahan II,150,New,8.0,2028,Planned,Jawa Timur,RECLASSIFY_NEW,GI-JMB-0495,Sawahan,931,
+RUPTL-JAMALI-GI-0809,Jember II / Arjasa,150/20,New,60.0,2028,Planned,Jawa Timur,NEW_BUILD,,,931,
+RUPTL-JAMALI-GI-0810,Cerme,150,Uprate,2.0,2028,Planned,Jawa Timur,EXISTING_UPRATE,GI-JMB-0367,Cerme,931,
+RUPTL-JAMALI-GI-0811,Segoromadu,150,Uprate,2.0,2028,Planned,Jawa Timur,EXISTING_UPRATE,GI-JMB-0376,Segoromadu,931,
+RUPTL-JAMALI-GI-0812,Jenu / TPPI,150,Extension,2.0,2028,Planned,Jawa Timur,NEW_BUILD,,,931,
+RUPTL-JAMALI-GI-0813,New Tanjung Awar - Awar,150,Extension,2.0,2028,Planned,Jawa Timur,NEW_BUILD,,,931,
+RUPTL-JAMALI-GI-0814,New Porong,150,Extension,2.0,2028,Planned,Jawa Timur,EXISTING_EXT,GI-JMB-0462,New Porong,931,
+RUPTL-JAMALI-GI-0815,Ngoro,150,Extension,2.0,2028,Planned,Jawa Timur,EXISTING_EXT,GI-JMB-0427,Ngoro,931,
+RUPTL-JAMALI-GI-0816,Pamekasan,150,Uprate,4.0,2028,Planned,Jawa Timur,EXISTING_UPRATE,GI-JMB-0372,Pamekasan,931,
+RUPTL-JAMALI-GI-0817,Sampang,150,Uprate,2.0,2028,Planned,Jawa Timur,EXISTING_UPRATE,GI-JMB-0375,Sampang,931,
+RUPTL-JAMALI-GI-0818,Sutami,150,Extension,2.0,2028,Planned,Jawa Timur,NEW_BUILD,,,931,
+RUPTL-JAMALI-GI-0819,Wlingi,150,Extension,2.0,2028,Planned,Jawa Timur,EXISTING_EXT,GI-JMB-0434,Wlingi,931,
+RUPTL-JAMALI-GI-0820,Mojoagung,150,Uprate,2.0,2028,Planned,Jawa Timur,EXISTING_UPRATE,GI-JMB-0425,Mojoagung,931,
+RUPTL-JAMALI-GI-0821,Sekarputih / Mojokerto,150,Uprate,2.0,2028,Construction,Jawa Timur,NEW_BUILD,,,931,
+RUPTL-JAMALI-GI-0822,Guluk-Guluk,150,Extension,2.0,2028,Planned,Jawa Timur,EXISTING_EXT,GI-JMB-0369,Guluk-Guluk,931,
+RUPTL-JAMALI-GI-0823,PLTG/GU Madura,150,New,2.0,2028,Planned,Jawa Timur,NEW_BUILD,,,931,
+RUPTL-JAMALI-GI-0824,Sumenep,150,Uprate,2.0,2028,Planned,Jawa Timur,EXISTING_UPRATE,GI-JMB-0378,Sumenep,931,
+RUPTL-JAMALI-GI-0825,Kerek,150,Uprate,2.0,2028,Planned,Jawa Timur,NEW_BUILD,,,931,
+RUPTL-JAMALI-GI-0826,Mliwang,150,Uprate,2.0,2028,Planned,Jawa Timur,EXISTING_UPRATE,GI-JMB-0394,Mliwang,931,
+RUPTL-JAMALI-GI-0827,Blitar,150,New,,2028,Planned,Jawa Timur,RECLASSIFY_NEW,GI-JMB-0405,Blitar Baru,931,
+RUPTL-JAMALI-GI-0828,Waru Switching Point,275,Extension,2.0,2029,Planned,Jawa Timur,NEW_BUILD,,,931,
+RUPTL-JAMALI-GI-0829,Batu Marmar,150/20,New,60.0,2029,Planned,Jawa Timur,NEW_BUILD,,,931,
+RUPTL-JAMALI-GI-0830,Tanjung Bumi,150/20,New,60.0,2029,Planned,Jawa Timur,NEW_BUILD,,,931,
+RUPTL-JAMALI-GI-0831,Mantingan,150/20,New,60.0,2029,Planned,Jawa Timur,NEW_BUILD,,,931,
+RUPTL-JAMALI-GI-0832,Waru,500/275,New,1000.0,2029,Planned,Jawa Timur,RECLASSIFY_NEW,GI-JMB-0499,Waru,931,
+RUPTL-JAMALI-GI-0833,Kalanganyar,500/150,Extension,1000.0,2030,Planned,Jawa Timur,NEW_BUILD,,,931,
+RUPTL-JAMALI-GI-0834,Kenjeran,150,Extension,2.0,2030,Planned,Jawa Timur,EXISTING_EXT,GI-JMB-0479,Kenjeran,931,
+RUPTL-JAMALI-GI-0835,Undaan,150,Extension,2.0,2030,Planned,Jawa Timur,EXISTING_EXT,GI-JMB-0498,Undaan,931,
+RUPTL-JAMALI-GI-0836,Kupang,150,Extension,2.0,2030,Planned,Jawa Timur,EXISTING_EXT,GI-JMB-0493,Kupang,931,
+RUPTL-JAMALI-GI-0837,Wonokromo,150,Extension,2.0,2030,Planned,Jawa Timur,EXISTING_EXT,GI-JMB-0501,Wonokromo,931,
+RUPTL-JAMALI-GI-0838,Simpang,150,Extension,2.0,2030,Planned,Jawa Timur,EXISTING_EXT,GI-JMB-0496,Simpang,932,
+RUPTL-JAMALI-GI-0839,Undaan,150,Extension,2.0,2030,Planned,Jawa Timur,EXISTING_EXT,GI-JMB-0498,Undaan,932,
+RUPTL-JAMALI-GI-0840,Petrokimia,150/20,Uprate,60.0,2030,Planned,Jawa Timur,EXISTING_UPRATE,GI-JMB-0373,Petrokimia,932,
+RUPTL-JAMALI-GI-0841,Gondangwetan,150,Uprate,2.0,2030,Planned,Jawa Timur,EXISTING_UPRATE,GI-JMB-0455,Gondangwetan,932,
+RUPTL-JAMALI-GI-0842,Probolinggo,150,Uprate,2.0,2030,Planned,Jawa Timur,EXISTING_UPRATE,GI-JMB-0465,Probolinggo,932,
+RUPTL-JAMALI-GI-0843,Sekarputih II / Gondang,150/20,New,120.0,2030,Planned,Jawa Timur,NEW_BUILD,,,932,
+RUPTL-JAMALI-GI-0844,Dolopo Baru,150,Extension,2.0,2030,Planned,Jawa Timur,EXISTING_EXT,GI-JMB-0407,Dolopo,932,
+RUPTL-JAMALI-GI-0845,PLTP Wilis / Ngebel,150/20,New,60.0,2030,Planned,Jawa Timur,NEW_BUILD,,,932,
+RUPTL-JAMALI-GI-0846,Mojoagung,150/20,Uprate,60.0,2031,Planned,Jawa Timur,EXISTING_UPRATE,GI-JMB-0425,Mojoagung,932,
+RUPTL-JAMALI-GI-0847,Sedati,150/20,Extension,60.0,2031,Planned,Jawa Timur,EXISTING_EXT,GI-JMB-0482,Sedati,932,
+RUPTL-JAMALI-GI-0848,Sidoarjo,150/20,Extension,60.0,2031,Planned,Jawa Timur,EXISTING_EXT,GI-JMB-0483,Sidoarjo,932,
+RUPTL-JAMALI-GI-0849,Balongbendo,150,Extension,2.0,2031,Planned,Jawa Timur,EXISTING_EXT,GI-JMB-0419,Balongbendo,932,
+RUPTL-JAMALI-GI-0850,Wonoayu,150/20,New,120.0,2031,Planned,Jawa Timur,NEW_BUILD,,,932,
+RUPTL-JAMALI-GI-0851,Pacitan,150,Extension,2.0,2032,Planned,Jawa Timur,EXISTING_EXT,GI-JMB-0416,PLTU Pacitan,932,
+RUPTL-JAMALI-GI-0852,Babadan,150/20,Extension,60.0,2033,Planned,Jawa Timur,EXISTING_EXT,GI-JMB-0475,Babadan,932,
+RUPTL-JAMALI-GI-0853,Kasih Jatim,150,Extension,2.0,2033,Planned,Jawa Timur,NEW_BUILD,,,932,
+RUPTL-JAMALI-GI-0854,Balong Panggang,150/20,New,60.0,2033,Planned,Jawa Timur,NEW_BUILD,,,932,
+RUPTL-JAMALI-GI-0855,Tanjung Awar- Awar,500,Extension,2.0,2033,Planned,Jawa Timur,NEW_BUILD,,,932,
+RUPTL-JAMALI-GI-0856,Grindulu PLTA PS,500,New,4.0,2033,Planned,Jawa Timur,NEW_BUILD,,,932,
+RUPTL-JAMALI-GI-0857,Grindulu Switching,500,New,4.0,2033,Planned,Jawa Timur,NEW_BUILD,,,932,
+RUPTL-JAMALI-GI-0858,Trenggalek Baru,150/20,New,60.0,2033,Planned,Jawa Timur,RECLASSIFY_NEW,GI-JMB-0414,Trenggalek,932,
+RUPTL-JAMALI-GI-0859,Simpang,150,Extension,2.0,2033,Planned,Jawa Timur,EXISTING_EXT,GI-JMB-0496,Simpang,932,
+RUPTL-JAMALI-GI-0860,Undaan,150,Extension,2.0,2033,Planned,Jawa Timur,EXISTING_EXT,GI-JMB-0498,Undaan,932,
+RUPTL-JAMALI-GI-0861,Tunjungan,150/20,New,60.0,2033,Planned,Jawa Timur,NEW_BUILD,,,932,
+RUPTL-JAMALI-GI-0862,Bangil New,150/20,Extension,60.0,2034,Planned,Jawa Timur,EXISTING_EXT,GI-JMB-0471,Bangil,932,
+RUPTL-JAMALI-GI-0863,Bungah,150/20,Extension,60.0,2034,Planned,Jawa Timur,EXISTING_EXT,GI-JMB-0366,Bungah,932,
+RUPTL-JAMALI-GI-0864,Driyorejo II / Wringinanom,150/20,Extension,60.0,2034,Planned,Jawa Timur,NEW_BUILD,,,932,
+RUPTL-JAMALI-GI-0865,Kraksaan,150/20,Extension,60.0,2034,Planned,Jawa Timur,EXISTING_EXT,GI-JMB-0459,Kraksaan,932,
+RUPTL-JAMALI-GI-0866,Probolinggo II / Tongas,150/20,New,120.0,2034,Planned,Jawa Timur,NEW_BUILD,,,932,
+RUPTL-JAMALI-GI-0867,KIS,150,Extension,2.0,2034,Planned,Jawa Timur,EXISTING_EXT,GI-JMB-0458,KIS,932,
+RUPTL-JAMALI-GI-0868,Sidoarjo II,150/20,New,120.0,2034,Planned,Jawa Timur,RECLASSIFY_NEW,GI-JMB-0483,Sidoarjo,932,
+RUPTL-JAMALI-GI-0869,Jawa Timur Eksisiting,150,Extension,2.0,2025,Planned,Jawa Timur,NEW_BUILD,,,932,
+RUPTL-JAMALI-GI-0870,Jawa Timur Eksisiting,150,Extension,2.0,2025,Planned,Jawa Timur,NEW_BUILD,,,932,
+RUPTL-JAMALI-GI-0871,Jawa Timur Eksisiting,150,Extension,2.0,2025,Planned,Jawa Timur,NEW_BUILD,,,932,
+RUPTL-JAMALI-GI-0872,PLTS Jawa Timur (Kuota) IVD,150,New,2.0,2025,Planned,Jawa Timur,NEW_BUILD,,,932,
+RUPTL-JAMALI-GI-0873,Jawa Timur Eksisiting,150,Extension,2.0,2034,Planned,Jawa Timur,NEW_BUILD,,,932,
+RUPTL-JAMALI-GI-0874,BESS Smoothing Tersebar (1),150,New,2.0,,Planned,Jawa Timur,NEW_BUILD,,,933,
+RUPTL-JAMALI-GI-0875,Jawa Timur Eksisiting,150,Extension,2.0,,Planned,Jawa Timur,NEW_BUILD,,,933,
+RUPTL-JAMALI-GI-0876,BESS Smoothing Tersebar (2),150,New,2.0,,Planned,Jawa Timur,NEW_BUILD,,,933,
+RUPTL-JAMALI-GI-0877,Jawa Timur Eksisiting,150,Extension,2.0,,Planned,Jawa Timur,NEW_BUILD,,,933,
+RUPTL-JAMALI-GI-0878,Jawa Timur Eksisting/Baru,150,Extension,2.0,2033,Planned,Jawa Timur,NEW_BUILD,,,933,
+RUPTL-JAMALI-GI-0879,Jawa Timur Eksisiting/Baru,150,Extension,2.0,2027,Planned,Jawa Timur,NEW_BUILD,,,933,
+RUPTL-JAMALI-GI-0880,PLTS Jawa Timur (Kuota) I,150,New,2.0,2027,Planned,Jawa Timur,NEW_BUILD,,,933,
+RUPTL-JAMALI-GI-0881,Jawa Timur Eksisting/Baru,150,Extension,2.0,2029,Planned,Jawa Timur,NEW_BUILD,,,933,
+RUPTL-JAMALI-GI-0882,PLTG Jawa Bali-4,150/20,New,60.0,2029,Planned,Jawa Timur,NEW_BUILD,,,933,
+RUPTL-JAMALI-GI-0883,Jawa Timur Eksisiting,150,Extension,2.0,2030,Planned,Jawa Timur,NEW_BUILD,,,933,
+RUPTL-JAMALI-GI-0884,Jawa Timur Eksisting/Baru,150,Extension,2.0,2030,Planned,Jawa Timur,NEW_BUILD,,,933,
+RUPTL-JAMALI-GI-0885,Jawa Timur Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Timur,NEW_BUILD,,,933,
+RUPTL-JAMALI-GI-0886,Jawa Timur Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Timur,NEW_BUILD,,,933,
+RUPTL-JAMALI-GI-0887,Jawa Timur Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Timur,NEW_BUILD,,,933,
+RUPTL-JAMALI-GI-0888,Jawa Timur Eksisting/Baru,150,Extension,2.0,2030,Planned,Jawa Timur,NEW_BUILD,,,933,
+RUPTL-JAMALI-GI-0889,Jawa Timur Eksisiting,150,Extension,2.0,,Planned,Jawa Timur,NEW_BUILD,,,933,
+RUPTL-JAMALI-GI-0890,Jawa Timur Eksisiting,150,Extension,2.0,2034,Planned,Jawa Timur,NEW_BUILD,,,933,
+RUPTL-JAMALI-GI-0891,Jawa Timur Eksisiting,150,Extension,2.0,,Planned,Jawa Timur,NEW_BUILD,,,933,
+RUPTL-JAMALI-GI-0892,Jawa Timur Eksisiting,150,Extension,2.0,,Planned,Jawa Timur,NEW_BUILD,,,933,
+RUPTL-JAMALI-GI-0893,Jawa Timur Eksisiting,150,Extension,2.0,,Planned,Jawa Timur,NEW_BUILD,,,933,
+RUPTL-JAMALI-GI-0894,Jawa Timur Eksisiting,150,Extension,2.0,,Planned,Jawa Timur,NEW_BUILD,,,933,
+RUPTL-JAMALI-GI-0895,Jawa Timur Eksisiting,150,Extension,2.0,,Planned,Jawa Timur,NEW_BUILD,,,933,
+RUPTL-JAMALI-GI-0896,BESS Smoothing Tersebar (1),150,New,2.0,,Planned,Jawa Timur,NEW_BUILD,,,933,
+RUPTL-JAMALI-GI-0897,Jawa Timur Eksisiting,150,Extension,2.0,,Planned,Jawa Timur,NEW_BUILD,,,933,
+RUPTL-JAMALI-GI-0898,BESS Smoothing Tersebar (2),150,New,2.0,,Planned,Jawa Timur,NEW_BUILD,,,933,
+RUPTL-JAMALI-GI-0899,Jawa Timur Eksisiting,150,Extension,2.0,,Planned,Jawa Timur,NEW_BUILD,,,933,
+RUPTL-JAMALI-GI-0900,BESS Smoothing Tersebar (1),150,New,2.0,,Planned,Jawa Timur,NEW_BUILD,,,933,
+RUPTL-JAMALI-GI-0901,Jawa Timur Eksisiting,150,Extension,2.0,,Planned,Jawa Timur,NEW_BUILD,,,933,
+RUPTL-JAMALI-GI-0902,BESS Smoothing Tersebar (2),150,New,2.0,,Planned,Jawa Timur,NEW_BUILD,,,933,
+RUPTL-JAMALI-GI-0903,Jawa Timur Eksisiting,150,Extension,2.0,,Planned,Jawa Timur,NEW_BUILD,,,933,
+RUPTL-JAMALI-GI-0904,Jawa Timur Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Timur,NEW_BUILD,,,933,
+RUPTL-JAMALI-GI-0905,Jawa Timur Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Timur,NEW_BUILD,,,934,
+RUPTL-JAMALI-GI-0906,Jawa Timur Eksisting/Baru,150,Extension,2.0,2031,Planned,Jawa Timur,NEW_BUILD,,,934,
+RUPTL-JAMALI-GI-0907,Jawa Timur Eksisting/Baru,150,Extension,2.0,2031,Planned,Jawa Timur,NEW_BUILD,,,934,
+RUPTL-JAMALI-GI-0908,Jawa Timur Eksisiting,150,Extension,2.0,,Planned,Jawa Timur,NEW_BUILD,,,934,
+RUPTL-JAMALI-GI-0909,Jawa Timur Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Timur,NEW_BUILD,,,934,
+RUPTL-JAMALI-GI-0910,Jawa Timur Eksisting/Baru,150,Extension,2.0,2032,Planned,Jawa Timur,NEW_BUILD,,,934,
+RUPTL-JAMALI-GI-0911,Jawa Timur Eksisiting,150,Extension,2.0,,Planned,Jawa Timur,NEW_BUILD,,,934,
+RUPTL-JAMALI-GI-0912,Jawa Timur Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Timur,NEW_BUILD,,,934,
+RUPTL-JAMALI-GI-0913,Jawa Timur Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Timur,NEW_BUILD,,,934,
+RUPTL-JAMALI-GI-0914,Jawa Timur Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Timur,NEW_BUILD,,,934,
+RUPTL-JAMALI-GI-0915,Jawa Timur Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Timur,NEW_BUILD,,,934,
+RUPTL-JAMALI-GI-0916,Jawa Timur Eksisting/Baru,150/20,New,60.0,2033,Planned,Jawa Timur,NEW_BUILD,,,934,
+RUPTL-JAMALI-GI-0917,Jawa Timur Eksisting/Baru,150,Extension,2.0,2033,Planned,Jawa Timur,NEW_BUILD,,,934,
+RUPTL-JAMALI-GI-0918,Jawa Timur Eksisting/Baru,150,Extension,2.0,2033,Planned,Jawa Timur,NEW_BUILD,,,934,
+RUPTL-JAMALI-GI-0919,Jawa Timur Eksisting/Baru,150,Extension,2.0,2033,Planned,Jawa Timur,NEW_BUILD,,,934,
+RUPTL-JAMALI-GI-0920,Jawa Timur Eksisiting,150,Extension,2.0,,Planned,Jawa Timur,NEW_BUILD,,,934,
+RUPTL-JAMALI-GI-0921,Jawa Timur Eksisiting,150,Extension,2.0,,Planned,Jawa Timur,NEW_BUILD,,,934,
+RUPTL-JAMALI-GI-0922,Jawa Timur Eksisiting,150,Extension,2.0,,Planned,Jawa Timur,NEW_BUILD,,,934,
+RUPTL-JAMALI-GI-0923,Jawa Timur Eksisiting,150,Extension,2.0,,Planned,Jawa Timur,NEW_BUILD,,,934,
+RUPTL-JAMALI-GI-0924,Jawa Timur Eksisiting,150,Extension,2.0,,Planned,Jawa Timur,NEW_BUILD,,,934,
+RUPTL-JAMALI-GI-0925,BESS Smoothing Tersebar (1),150,New,2.0,2034,Planned,Jawa Timur,NEW_BUILD,,,934,
+RUPTL-JAMALI-GI-0926,Jawa Timur Eksisiting,150,Extension,2.0,2034,Planned,Jawa Timur,NEW_BUILD,,,934,
+RUPTL-JAMALI-GI-0927,BESS Smoothing Tersebar (2),150,New,2.0,2034,Planned,Jawa Timur,NEW_BUILD,,,934,
+RUPTL-JAMALI-GI-0928,Jawa Timur Eksisiting,150,Extension,2.0,2034,Planned,Jawa Timur,NEW_BUILD,,,934,
+RUPTL-JAMALI-GI-0929,Paiton,500/150,Extension,500.0,2026,Planned,Jawa Timur,EXISTING_EXT,GI-JMB-0463,Paiton,934,
+RUPTL-JAMALI-GI-0930,Paiton,150,Extension,,2026,Planned,Jawa Timur,EXISTING_EXT,GI-JMB-0463,Paiton,934,
+RUPTL-JAMALI-GI-0931,Jember,150,Uprate,2.0,2026,Planned,Jawa Timur,EXISTING_UPRATE,GI-JMB-0457,Jember,934,
+RUPTL-JAMALI-GI-0932,Lumajang,150,Uprate,2.0,2026,Planned,Jawa Timur,EXISTING_UPRATE,GI-JMB-0460,Lumajang,934,
+RUPTL-JAMALI-GI-0933,Tanggul,150,Uprate,2.0,2026,Planned,Jawa Timur,EXISTING_UPRATE,GI-JMB-0469,Tanggul,934,
+RUPTL-JAMALI-GI-0934,Tanggul,150,Uprate,2.0,2026,Planned,Jawa Timur,EXISTING_UPRATE,GI-JMB-0469,Tanggul,934,
+RUPTL-JAMALI-GI-0935,Paiton,150,Uprate,2.0,2026,Planned,Jawa Timur,EXISTING_UPRATE,GI-JMB-0463,Paiton,934,
+RUPTL-JAMALI-GI-0936,Situbondo,150,Uprate,2.0,2026,Planned,Jawa Timur,EXISTING_UPRATE,GI-JMB-0468,Situbondo,934,
+RUPTL-JAMALI-GI-0937,Driyorejo II / Wringinanom,150/20,New,120.0,2026,Planned,Jawa Timur,NEW_BUILD,,,934,
+RUPTL-JAMALI-GI-0938,Gondang Wetan,150/20,Extension,60.0,2026,Planned,Jawa Timur,NEW_BUILD,,,934,
+RUPTL-JAMALI-GI-0939,Ngawi,150/20,Extension,60.0,2026,Planned,Jawa Timur,EXISTING_EXT,GI-JMB-0400,Ngawi,934,
+RUPTL-JAMALI-GI-0940,Pier,150/20,Extension,60.0,2026,Planned,Jawa Timur,EXISTING_EXT,GI-JMB-0464,Pier,935,
+RUPTL-JAMALI-GI-0941,Sukorejo,150/20,New,60.0,2027,Planned,Jawa Timur,RECLASSIFY_NEW,GI-JMB-0470,Sukorejo,935,
+RUPTL-JAMALI-GI-0942,Sengkaling,150,Extension,2.0,2027,Planned,Jawa Timur,EXISTING_EXT,GI-JMB-0431,Sengkaling,935,
+RUPTL-JAMALI-GI-0943,Blimbing Baru,150/20,New,180.0,2027,Planned,Jawa Timur,RECLASSIFY_NEW,GI-JMB-0436,Blimbing,935,
+RUPTL-JAMALI-GI-0944,Kasih Jatim,150/20,Extension,60.0,2027,Planned,Jawa Timur,NEW_BUILD,,,935,
+RUPTL-JAMALI-GI-0945,Menganti,150/20,New,120.0,2029,Planned,Jawa Timur,NEW_BUILD,,,935,
+RUPTL-JAMALI-GI-0946,Dhanapura,150/20,New,60.0,2030,Planned,Jawa Timur,NEW_BUILD,,,935,
+RUPTL-JAMALI-GI-0947,Pier II,150/20,New,60.0,2030,Planned,Jawa Timur,RECLASSIFY_NEW,GI-JMB-0464,Pier,935,
+RUPTL-JAMALI-GI-0948,Jawa Timur Eksisiting,150,Extension,2.0,2027,Planned,Jawa Timur,NEW_BUILD,,,935,
+RUPTL-JAMALI-GI-0949,PLTS Jawa Timur (Kuota) IVB,150,New,2.0,2027,Planned,Jawa Timur,NEW_BUILD,,,935,
+RUPTL-JAMALI-GI-0950,Jawa Timur Eksisiting,150,Extension,2.0,2028,Planned,Jawa Timur,NEW_BUILD,,,935,
+RUPTL-JAMALI-GI-0951,PLTS Jawa Timur (Kuota) IVC,150,New,2.0,2028,Planned,Jawa Timur,NEW_BUILD,,,935,
+RUPTL-JAMALI-GI-0952,Jawa Timur Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Timur,NEW_BUILD,,,935,
+RUPTL-JAMALI-GI-0953,Jawa Timur Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Timur,NEW_BUILD,,,935,
+RUPTL-JAMALI-GI-0954,Jawa Timur Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Timur,NEW_BUILD,,,935,
+RUPTL-JAMALI-GI-0955,Jawa Timur Eksisiting,150,Extension,2.0,,Planned,Jawa Timur,NEW_BUILD,,,935,
+RUPTL-JAMALI-GI-0956,Jawa Timur Eksisiting,150,Extension,2.0,,Planned,Jawa Timur,NEW_BUILD,,,935,
+RUPTL-JAMALI-GI-0957,Jawa Timur Eksisiting,150,Extension,2.0,,Planned,Jawa Timur,NEW_BUILD,,,935,
+RUPTL-JAMALI-GI-0958,Jawa Timur Eksisiting,150,Extension,2.0,,Planned,Jawa Timur,NEW_BUILD,,,935,
+RUPTL-JAMALI-GI-0959,Jawa Timur Eksisiting,150,Extension,2.0,,Planned,Jawa Timur,NEW_BUILD,,,935,
+RUPTL-JAMALI-GI-0960,BESS Jawa-Bali (Kuota) Tersebar IIID (1),150,New,2.0,,Planned,Jawa Timur,NEW_BUILD,,,935,
+RUPTL-JAMALI-GI-0961,Jawa Timur Eksisiting,150,Extension,2.0,,Planned,Jawa Timur,NEW_BUILD,,,935,
+RUPTL-JAMALI-GI-0962,BESS Jawa-Bali (Kuota) Tersebar IIID (2),150,New,2.0,,Planned,Jawa Timur,NEW_BUILD,,,935,
+RUPTL-JAMALI-GI-0963,Jawa Timur Eksisiting,150,Extension,2.0,,Planned,Jawa Timur,NEW_BUILD,,,935,
+RUPTL-JAMALI-GI-0964,BESS Jawa-Bali (Kuota) Tersebar IIID (3),150,New,2.0,,Planned,Jawa Timur,NEW_BUILD,,,935,
+RUPTL-JAMALI-GI-0965,Jawa Timur Eksisiting,150,Extension,2.0,,Planned,Jawa Timur,NEW_BUILD,,,935,
+RUPTL-JAMALI-GI-0966,Jawa Timur Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Timur,NEW_BUILD,,,935,
+RUPTL-JAMALI-GI-0967,Jawa Timur Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Timur,NEW_BUILD,,,935,
+RUPTL-JAMALI-GI-0968,Jawa Timur Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Timur,NEW_BUILD,,,935,
+RUPTL-JAMALI-GI-0969,Jawa Timur Eksisting/Baru,150,Extension,2.0,,Planned,Jawa Timur,NEW_BUILD,,,935,
+RUPTL-JAMALI-GI-0970,Negara,150,Extension,2.0,2025,Construction,Bali,EXISTING_EXT,GI-JMB-0511,Negara,948,Tabel B7.13
+RUPTL-JAMALI-GI-0971,Kubu,150,Extension,2.0,2025,Construction,Bali,EXISTING_EXT,GI-JMB-0510,Kubu,948,Tabel B7.13
+RUPTL-JAMALI-GI-0972,Pemecutan Kelod,150,Extension,2.0,2025,Planned,Bali,EXISTING_EXT,GI-JMB-0517,Pemecutan Kelod,948,Tabel B7.13
+RUPTL-JAMALI-GI-0973,Pesanggaran,150/20,Extension,60.0,2026,Planned,Bali,EXISTING_EXT,GI-JMB-0518,Pesanggaran,948,Tabel B7.13
+RUPTL-JAMALI-GI-0974,Antosari / Gilimanuk,150,Extension,,2026,Planned,Bali,NEW_BUILD,,,948,Tabel B7.13
+RUPTL-JAMALI-GI-0975,Pesanggaran III / Bali Turtle,150/20,New,60.0,2027,Planned,Bali,NEW_BUILD,,,948,Tabel B7.13
+RUPTL-JAMALI-GI-0976,Kubu,150,Extension,2.0,2029,Planned,Bali,EXISTING_EXT,GI-JMB-0510,Kubu,948,Tabel B7.13
+RUPTL-JAMALI-GI-0977,Pemaron,150,Extension,2.0,2029,Planned,Bali,EXISTING_EXT,GI-JMB-0516,Pemaron,948,Tabel B7.13
+RUPTL-JAMALI-GI-0978,PLTGU Jawa Bali-3,150/20,New,60.0,2028,Planned,Bali,NEW_BUILD,,,948,Tabel B7.13
+RUPTL-JAMALI-GI-0979,Tinga - Tinga,150/20,New,60.0,2028,Planned,Bali,NEW_BUILD,,,948,Tabel B7.13
+RUPTL-JAMALI-GI-0980,Pesanggaran,150,Uprate,6.0,2027,Planned,Bali,EXISTING_UPRATE,GI-JMB-0518,Pesanggaran,948,Tabel B7.13
+RUPTL-JAMALI-GI-0981,Gianyar II / Bangli,150,Extension,2.0,2028,Planned,Bali,NEW_BUILD,,,948,Tabel B7.13
+RUPTL-JAMALI-GI-0982,Gianyar II / Bangli,150/20,New,120.0,2028,Planned,Bali,NEW_BUILD,,,948,Tabel B7.13
+RUPTL-JAMALI-GI-0983,Sanur,150,Extension,2.0,2027,Planned,Bali,EXISTING_EXT,GI-JMB-0519,Sanur,948,Tabel B7.13
+RUPTL-JAMALI-GI-0984,PLTGU Jawa-Bali 2,150/20,New,60.0,2027,Planned,Bali,NEW_BUILD,,,948,Tabel B7.13
+RUPTL-JAMALI-GI-0985,Baturiti,150,Extension,2.0,2028,Planned,Bali,EXISTING_EXT,GI-JMB-0505,Baturiti,948,Tabel B7.13
+RUPTL-JAMALI-GI-0986,PLTP Bedugul,150/20,New,60.0,2028,Planned,Bali,NEW_BUILD,,,948,Tabel B7.13
+RUPTL-JAMALI-GI-0987,Baturiti,150,Uprate,4.0,2028,Planned,Bali,EXISTING_UPRATE,GI-JMB-0505,Baturiti,948,Tabel B7.13
+RUPTL-JAMALI-GI-0988,Payangan,150,Uprate,2.0,2028,Planned,Bali,EXISTING_UPRATE,GI-JMB-0514,Payangan,948,Tabel B7.13
+RUPTL-JAMALI-GI-0989,Pemaron,150,Uprate,2.0,2028,Planned,Bali,EXISTING_UPRATE,GI-JMB-0516,Pemaron,948,Tabel B7.13
+RUPTL-JAMALI-GI-0990,Kapal II / Tanah Lot,150/20,Extension,60.0,2029,Planned,Bali,NEW_BUILD,,,948,Tabel B7.13
+RUPTL-JAMALI-GI-0991,Padangsambian,150,Extension,2.0,2029,Planned,Bali,NEW_BUILD,,,948,Tabel B7.13
+RUPTL-JAMALI-GI-0992,Padangsambian II / Canggu,150/20,New,120.0,2029,Planned,Bali,NEW_BUILD,,,948,Tabel B7.13
+RUPTL-JAMALI-GI-0993,Pemecutan Kelod II,150/20,New,120.0,2029,Planned,Bali,RECLASSIFY_NEW,GI-JMB-0517,Pemecutan Kelod,948,Tabel B7.13
+RUPTL-JAMALI-GI-0994,Antosari / Gilimanuk,500/150,New,1000.0,2030,Planned,Bali,NEW_BUILD,,,948,Tabel B7.13
+RUPTL-JAMALI-GI-0995,Antosari (Ekstension),150/20,Extension,60.0,2030,Planned,Bali,NEW_BUILD,,,948,Tabel B7.13
+RUPTL-JAMALI-GI-0996,Kapal,150,Extension,,2030,Planned,Bali,EXISTING_EXT,GI-JMB-0509,Kapal,948,Tabel B7.13
+RUPTL-JAMALI-GI-0997,New Sanur,150/20,New,60.0,2030,Planned,Bali,RECLASSIFY_NEW,GI-JMB-0519,Sanur,948,Tabel B7.13
+RUPTL-JAMALI-GI-0998,Payangan,150/20,Extension,60.0,2032,Planned,Bali,EXISTING_EXT,GI-JMB-0514,Payangan,948,Tabel B7.13
+RUPTL-JAMALI-GI-0999,Nusa Dua II / Pecatu,150/20,Extension,60.0,2033,Planned,Bali,NEW_BUILD,,,948,Tabel B7.13
+RUPTL-JAMALI-GI-1000,Padangsambian II / Canggu,150/20,Extension,60.0,2033,Planned,Bali,NEW_BUILD,,,949,
+RUPTL-JAMALI-GI-1001,Pesanggaran III / Bali Turtle,150/20,Extension,60.0,2033,Planned,Bali,NEW_BUILD,,,949,
+RUPTL-JAMALI-GI-1002,New Sanur,150/20,Extension,60.0,2034,Planned,Bali,EXISTING_EXT,GI-JMB-0519,Sanur,949,
+RUPTL-JAMALI-GI-1003,Bali Eksisting/Baru,150,Extension,2.0,2026,Planned,Bali,NEW_BUILD,,,949,
+RUPTL-JAMALI-GI-1004,PLTS Bali (Kuota) III,150,New,4.0,2026,Planned,Bali,NEW_BUILD,,,949,
+RUPTL-JAMALI-GI-1005,Bali Eksisting/Baru,150,Extension,2.0,2034,Planned,Bali,NEW_BUILD,,,949,
+RUPTL-JAMALI-GI-1006,Bali Eksisting/Baru,150,Extension,2.0,2034,Planned,Bali,NEW_BUILD,,,949,
+RUPTL-JAMALI-GI-1007,Bali Eksisting/Baru,150,Extension,2.0,2030,Planned,Bali,NEW_BUILD,,,949,
+RUPTL-JAMALI-GI-1008,Bali Eksisting/Baru,150,New,2.0,,Planned,Bali,NEW_BUILD,,,949,
+RUPTL-JAMALI-GI-1009,Bali Eksisting/Baru,150,Extension,2.0,,Planned,Bali,NEW_BUILD,,,949,
+RUPTL-JAMALI-GI-1010,Bali Eksisting/Baru,150,Extension,2.0,,Planned,Bali,NEW_BUILD,,,949,
+RUPTL-JAMALI-GI-1011,Bali Eksisting/Baru,150,Extension,2.0,2033,Planned,Bali,NEW_BUILD,,,949,
+RUPTL-JAMALI-GI-1012,Bali Eksisting/Baru,150,Extension,2.0,,Planned,Bali,NEW_BUILD,,,949,
+RUPTL-JAMALI-GI-1013,Bali Eksisting,150,Extension,2.0,,Planned,Bali,NEW_BUILD,,,949,
+RUPTL-JAMALI-GI-1014,Bali Eksisting,150,Extension,2.0,2034,Planned,Bali,NEW_BUILD,,,949,
+RUPTL-JAMALI-GI-1015,Antosari / Gilimanuk,500/150,Extension,1000.0,2031,Planned,Bali,NEW_BUILD,,,949,
+RUPTL-JAMALI-GI-1016,Antosari (Ekstension),150,Extension,4.0,2031,Planned,Bali,NEW_BUILD,,,949,
+RUPTL-JAMALI-GI-1017,Antosari (Ekstension),150,Extension,,2031,Planned,Bali,NEW_BUILD,,,949,
+RUPTL-JAMALI-GI-1018,Padangsambian II / Canggu,150,Extension,6.0,2031,Planned,Bali,NEW_BUILD,,,949,
+RUPTL-JAMALI-GI-1019,Pemecutan Kelod II,150,Extension,6.0,2031,Planned,Bali,EXISTING_EXT,GI-JMB-0517,Pemecutan Kelod,949,
+RUPTL-JAMALI-GI-1020,Bali Eksisting/Baru,150,Extension,2.0,,Planned,Bali,NEW_BUILD,,,949,
+RUPTL-JAMALI-GI-1021,BESS Bali (Kuota) Tersebar VII,150,New,2.0,,Planned,Bali,NEW_BUILD,,,949,
+RUPTL-JAMALI-GI-1022,Bali Eksisting/Baru,150,Extension,2.0,,Planned,Bali,NEW_BUILD,,,949,
+RUPTL-JAMALI-GI-1023,Bali Eksisting/Baru,150,Extension,2.0,2034,Planned,Bali,NEW_BUILD,,,949,
+RUPTL-JAMALI-GI-1024,Bali Eksisting/Baru,150,New,2.0,2034,Planned,Bali,NEW_BUILD,,,949,
+RUPTL-JAMALI-GI-1025,Bali Eksisting/Baru,150,Extension,2.0,2034,Planned,Bali,NEW_BUILD,,,949,
+RUPTL-JAMALI-GI-1026,Bali Eksisting/Baru,150,New,2.0,2034,Planned,Bali,NEW_BUILD,,,949,
+RUPTL-JAMALI-GI-1027,Tinga - Tinga,150,Extension,2.0,2029,Planned,Bali,NEW_BUILD,,,949,
+RUPTL-JAMALI-GI-1028,PLTGU Jawa Bali-6,150/20,New,60.0,2029,Planned,Bali,NEW_BUILD,,,949,
+RUPTL-JAMALI-GI-1029,Gianyar,150/20,Extension,60.0,2026,Planned,Bali,EXISTING_EXT,GI-JMB-0507,Gianyar,949,
+RUPTL-JAMALI-GI-1030,Amlapura,150,Uprate,2.0,2028,Planned,Bali,EXISTING_UPRATE,GI-JMB-0502,Amlapura,949,
+RUPTL-JAMALI-GI-1031,Gianyar,150,Uprate,2.0,2028,Planned,Bali,EXISTING_UPRATE,GI-JMB-0507,Gianyar,949,
+RUPTL-JAMALI-GI-1032,Kubu,150/20,Extension,180.0,2025,Planned,Bali,EXISTING_EXT,GI-JMB-0510,Kubu,949,
+RUPTL-JAMALI-GI-1033,BESS Bali (Kuota) III,150,New,2.0,2026,Planned,Bali,NEW_BUILD,,,949,
