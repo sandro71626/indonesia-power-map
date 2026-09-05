@@ -126,6 +126,12 @@
                transition: transform 0.15s ease; }
   .gi-marker.gitet { outline: 1.5px solid rgba(0,0,0,0.7); outline-offset: 2px; }
 
+  /* Planned RUPTL variants — hollow/outlined dari existing marker style.
+     Border keep colored per PLT-type/voltage, fill diringankan/transparent.
+     Zero new color introduced. */
+  .plant-marker.planned { border-width: 2px; opacity: 0.9; }
+  .gi-marker.planned { border-width: 2px; background: transparent !important; }
+
   /* A3 — marker scaling per zoom tier */
   #map.z-low .plant-marker, #map.z-low .gi-marker { transform: scale(0.68); }
   #map.z-mid .plant-marker, #map.z-mid .gi-marker { transform: scale(0.86); }
@@ -523,6 +529,9 @@
           <span class="sw-line" style="background:#1f77b4;height:2px"></span> 150 kV</label>
         <label><input type="checkbox" class="sub-trm" value="70" checked>
           <span class="sw-line" style="background:#2ca02c;height:1.5px"></span> 70 kV</label>
+        <label><input type="checkbox" id="m-trm-planned">
+          <span class="sw-line" style="border-top:2px dashed #666;height:0"></span>
+          <span data-i18n="sidebar.layer.planned_trm">Rencana RUPTL</span></label>
       </div>
     </div>
 
@@ -561,6 +570,9 @@
           <span class="sw-dot" style="background:#d97706"></span> Captive</label>
         <label><input type="checkbox" class="sub-gen-role" value="Community" checked>
           <span class="sw-dot" style="background:#2ca02c"></span> Community</label>
+        <label><input type="checkbox" id="m-gen-planned">
+          <span class="sw-dot" style="background:transparent;border:1.5px solid #666"></span>
+          <span data-i18n="sidebar.layer.planned_gen">Rencana RUPTL</span></label>
       </div>
     </div>
 
@@ -706,7 +718,25 @@
       <li><strong>Kotak dengan border ganda</strong> menandai GITET (500 kV).</li>
       <li><strong>Garis</strong> menandai saluran transmisi. Warna dan ketebalan
           merepresentasikan kelas tegangan (500/275/150/70 kV).</li>
+      <li><strong>Simbol hollow (border saja)</strong> dan <strong>garis putus-putus</strong>
+          menandai aset <em>rencana</em> dari RUPTL 2025-2034 (belum operasional).
+          Aktifkan di section Layer melalui checkbox "Rencana RUPTL".</li>
     </ul>
+
+    <h3 data-i18n="about.matching_heading">Tentang Pencocokan Data (RUPTL ↔ OSM)</h3>
+    <p data-i18n-html="about.body.matching">Peta ini menggabungkan dua sumber: baseline lapangan dari OpenStreetMap
+    (aset yang sudah dipetakan) dengan rencana resmi dari RUPTL PLN 2025-2034.
+    Untuk tiap aset, pipeline mencocokkan nama, lokasi, dan kapasitas antara
+    kedua sumber, lalu men-tag hasilnya sebagai <em>cocok pasti</em> (koordinat
+    dan tipe konsisten), <em>kemungkinan cocok</em> (nama mirip, jarak wajar),
+    atau <em>tidak ada di RUPTL</em> (mungkin captive/off-grid atau di luar
+    scope RUPTL). Aset yang muncul di RUPTL tapi belum ada di OSM ditampilkan
+    sebagai <em>rencana baru</em> (planned).</p>
+    <p data-i18n-html="about.body.matching_conflict">Bila kapasitas atau jenis aset berbeda antara OSM dan RUPTL,
+    indikator peringatan akan muncul di panel detail (<span style="color:#c0392b">⚠</span>).
+    Untuk beberapa aset rencana, koordinat yang tersedia hanya estimasi tingkat
+    provinsi karena RUPTL tidak selalu mencantumkan lokasi presisi;
+    keterangan ini juga muncul di panel detail.</p>
 
     <h3 data-i18n="about.license_heading">Lisensi</h3>
     <p data-i18n-html="about.body.license">Proyek open-source untuk kepentingan publik. Data turunan tunduk pada
@@ -888,7 +918,9 @@ const TRANSLATIONS = {
     'sidebar.layer.b100': '100–500 MW',
     'sidebar.layer.b20': '20–100 MW',
     'sidebar.layer.b0': '< 20 MW / tak tercatat',
-    'sidebar.layer.note': 'Kotak = GI · garis = transmisi · lingkaran = pembangkit. Border ganda = 500/275 kV.',
+    'sidebar.layer.planned_trm': 'Rencana RUPTL',
+    'sidebar.layer.planned_gen': 'Rencana RUPTL',
+    'sidebar.layer.note': 'Kotak = GI · garis = transmisi · lingkaran = pembangkit. Border ganda = 500/275 kV. Rencana RUPTL bertampilan hollow/dashed.',
     'sidebar.planttype': 'Jenis pembangkit',
     'sidebar.planttype.note': 'Klik untuk sembunyikan/tampilkan jenis. Ukuran simbol ∝ kapasitas MW.',
     'sidebar.filter': 'Filter',
@@ -928,6 +960,23 @@ const TRANSLATIONS = {
     'detail.field.method': 'Metode',
     'detail.field.length': 'Panjang',
     'detail.field.osm_id': 'OSM ID',
+    'detail.field.endpoints': 'Endpoint',
+    // RUPTL sub-section — muncul kalau feature ada match ke RUPTL 2025-2034
+    'detail.ruptl.section': 'RUPTL 2025-2034',
+    'detail.ruptl.field.tier': 'Status match',
+    'detail.ruptl.field.id': 'ID RUPTL',
+    'detail.ruptl.field.status': 'Tahap pembangunan',
+    'detail.ruptl.field.action': 'Jenis pekerjaan',
+    'detail.ruptl.field.cod': 'Target COD',
+    'detail.ruptl.field.capacity': 'Kapasitas (RUPTL)',
+    'detail.ruptl.field.length': 'Panjang (RUPTL)',
+    'detail.ruptl.field.voltage': 'Tegangan (RUPTL)',
+    'detail.ruptl.field.source_page': 'Sumber RUPTL',
+    'detail.ruptl.field.page': 'hal.',
+    'detail.warn.capacity_conflict': '⚠ Perbedaan kapasitas: OSM {ipm} MW · RUPTL {ruptl} MW',
+    'detail.warn.capacity_conflict_simple': '⚠ Terdapat perbedaan kapasitas antara OSM dan RUPTL.',
+    'detail.warn.type_conflict': '⚠ Perbedaan jenis: OSM {ipm} · RUPTL {ruptl}',
+    'detail.warn.location_precision': 'ⓘ Presisi lokasi: estimasi tingkat provinsi (bukan titik pasti pembangkit).',
     'detail.connections.title': 'Saluran transmisi tersambung',
     'detail.connections.empty': 'Tidak terdeteksi saluran di sekitar GI ini.',
     'detail.connections.count': 'Saluran transmisi tersambung ({n})',
@@ -940,6 +989,7 @@ const TRANSLATIONS = {
     'about.source_heading': 'Sumber data',
     'about.naming_heading': 'Catatan penamaan',
     'about.symbol_heading': 'Konvensi simbol',
+    'about.matching_heading': 'Tentang Pencocokan Data (RUPTL ↔ OSM)',
     'about.license_heading': 'Lisensi',
     'about.feedback_heading': 'Feedback & Kontak',
     'about.close_button': 'Mengerti, mulai eksplorasi',
@@ -1012,7 +1062,24 @@ const TRANSLATIONS = {
       <li><strong>Kotak</strong> menandai gardu induk (substation).</li>
       <li><strong>Kotak dengan border ganda</strong> menandai GITET (500 kV).</li>
       <li><strong>Garis</strong> menandai saluran transmisi. Warna dan ketebalan
-          merepresentasikan kelas tegangan (500/275/150/70 kV).</li>`,
+          merepresentasikan kelas tegangan (500/275/150/70 kV).</li>
+      <li><strong>Simbol hollow (border saja)</strong> dan <strong>garis putus-putus</strong>
+          menandai aset <em>rencana</em> dari RUPTL 2025-2034 (belum operasional).
+          Aktifkan di section Layer melalui checkbox "Rencana RUPTL".</li>`,
+    'about.matching_heading': 'Tentang Pencocokan Data (RUPTL ↔ OSM)',
+    'about.body.matching': `Peta ini menggabungkan dua sumber: baseline lapangan dari OpenStreetMap
+    (aset yang sudah dipetakan) dengan rencana resmi dari RUPTL PLN 2025-2034.
+    Untuk tiap aset, pipeline mencocokkan nama, lokasi, dan kapasitas antara
+    kedua sumber, lalu men-tag hasilnya sebagai <em>cocok pasti</em> (koordinat
+    dan tipe konsisten), <em>kemungkinan cocok</em> (nama mirip, jarak wajar),
+    atau <em>tidak ada di RUPTL</em> (mungkin captive/off-grid atau di luar
+    scope RUPTL). Aset yang muncul di RUPTL tapi belum ada di OSM ditampilkan
+    sebagai <em>rencana baru</em> (planned).`,
+    'about.body.matching_conflict': `Bila kapasitas atau jenis aset berbeda antara OSM dan RUPTL,
+    indikator peringatan akan muncul di panel detail (<span style="color:#c0392b">⚠</span>).
+    Untuk beberapa aset rencana, koordinat yang tersedia hanya estimasi tingkat
+    provinsi karena RUPTL tidak selalu mencantumkan lokasi presisi;
+    keterangan ini juga muncul di panel detail.`,
     'about.body.license': `Proyek open-source untuk kepentingan publik. Data turunan tunduk pada
     lisensi sumber asal: OSM mengikuti ODbL, sedangkan data RUPTL adalah
     dokumen publik PLN/ESDM.`,
@@ -1112,7 +1179,9 @@ const TRANSLATIONS = {
     'sidebar.layer.b100': '100–500 MW',
     'sidebar.layer.b20': '20–100 MW',
     'sidebar.layer.b0': '< 20 MW / unrecorded',
-    'sidebar.layer.note': 'Square = substation · line = transmission · circle = power plant. Double border = 500/275 kV.',
+    'sidebar.layer.planned_trm': 'RUPTL planned',
+    'sidebar.layer.planned_gen': 'RUPTL planned',
+    'sidebar.layer.note': 'Square = substation · line = transmission · circle = power plant. Double border = 500/275 kV. RUPTL planned assets appear hollow/dashed.',
     'sidebar.planttype': 'Plant type',
     'sidebar.planttype.note': 'Click to hide/show type. Symbol size ∝ MW capacity.',
     'sidebar.filter': 'Filter',
@@ -1150,6 +1219,23 @@ const TRANSLATIONS = {
     'detail.field.method': 'Method',
     'detail.field.length': 'Length',
     'detail.field.osm_id': 'OSM ID',
+    'detail.field.endpoints': 'Endpoints',
+    // RUPTL sub-section — appears when feature has a match in RUPTL 2025-2034
+    'detail.ruptl.section': 'RUPTL 2025-2034',
+    'detail.ruptl.field.tier': 'Match status',
+    'detail.ruptl.field.id': 'RUPTL ID',
+    'detail.ruptl.field.status': 'Development phase',
+    'detail.ruptl.field.action': 'Work type',
+    'detail.ruptl.field.cod': 'Target COD',
+    'detail.ruptl.field.capacity': 'Capacity (RUPTL)',
+    'detail.ruptl.field.length': 'Length (RUPTL)',
+    'detail.ruptl.field.voltage': 'Voltage (RUPTL)',
+    'detail.ruptl.field.source_page': 'RUPTL source',
+    'detail.ruptl.field.page': 'p.',
+    'detail.warn.capacity_conflict': '⚠ Capacity mismatch: OSM {ipm} MW · RUPTL {ruptl} MW',
+    'detail.warn.capacity_conflict_simple': '⚠ Capacity differs between OSM and RUPTL.',
+    'detail.warn.type_conflict': '⚠ Type mismatch: OSM {ipm} · RUPTL {ruptl}',
+    'detail.warn.location_precision': 'ⓘ Location precision: province-level estimate (not the exact plant site).',
     'detail.connections.title': 'Connected transmission lines',
     'detail.connections.empty': 'No transmission lines detected near this substation.',
     'detail.connections.count': 'Connected transmission lines ({n})',
@@ -1160,6 +1246,7 @@ const TRANSLATIONS = {
     'about.source_heading': 'Data sources',
     'about.naming_heading': 'Naming notes',
     'about.symbol_heading': 'Symbol conventions',
+    'about.matching_heading': 'About Data Matching (RUPTL ↔ OSM)',
     'about.license_heading': 'License',
     'about.feedback_heading': 'Feedback & Contact',
     'about.close_button': 'Got it, start exploring',
@@ -1234,7 +1321,24 @@ const TRANSLATIONS = {
       <li><strong>Square with double border</strong> denotes a GITET (500 kV
           extra-high-voltage substation).</li>
       <li><strong>Line</strong> denotes a transmission line. Colour and
-          thickness represent the voltage class (500/275/150/70 kV).</li>`,
+          thickness represent the voltage class (500/275/150/70 kV).</li>
+      <li><strong>Hollow (outline-only) symbols</strong> and <strong>dashed lines</strong>
+          denote <em>planned</em> assets from RUPTL 2025-2034 (not yet operational).
+          Enable them in the Layer section via the "RUPTL planned" checkbox.</li>`,
+    'about.matching_heading': 'About Data Matching (RUPTL ↔ OSM)',
+    'about.body.matching': `This map combines two sources: an on-the-ground baseline from OpenStreetMap
+    (assets already mapped) and the official plan from RUPTL PLN 2025-2034.
+    For each asset, the pipeline matches names, locations, and capacities across
+    both sources, then tags the result as <em>confirmed match</em> (coordinates
+    and type consistent), <em>probable match</em> (similar name, reasonable
+    distance), or <em>not in RUPTL</em> (may be captive/off-grid or outside
+    RUPTL scope). Assets that appear in RUPTL but not yet in OSM are shown
+    as <em>new planned</em> assets.`,
+    'about.body.matching_conflict': `When an asset's capacity or type differs between OSM and RUPTL,
+    a warning indicator appears in the detail panel (<span style="color:#c0392b">⚠</span>).
+    For some planned assets, only a province-level coordinate estimate is available
+    because RUPTL does not always list a precise location; this is also noted
+    in the detail panel.`,
     'about.body.license': `An open-source project for the public benefit. Derivative data is subject
     to the license of the original source: OSM follows ODbL, while RUPTL data
     is a public document from PLN/ESDM.`,
@@ -1615,12 +1719,23 @@ function diameterForMW(mw) {
   if (mw < 500) return 24; if (mw < 1000) return 30; if (mw < 2000) return 36;
   return 42;
 }
-function plantIcon(type, mw) {
+function plantIcon(type, mw, planned) {
   const d = diameterForMW(mw);
   const color = PLANT_COLORS[type] || '#999';
   const label = PLANT_LABEL[type] || '?';
-  const textColor = DARK_TEXT.has(type) ? '#222' : '#fff';
   const fontSize = Math.max(8, Math.min(13, d * 0.36));
+  if (planned) {
+    // Hollow variant: warna type di border, fill transparent-ish, label
+    // muted supaya subtle. Shape + size + letter tetap sama untuk
+    // instant recognizability.
+    return L.divIcon({ className: '',
+      html: `<div class="plant-marker planned" style="width:${d}px;height:${d}px;
+          background:rgba(255,255,255,0.55);border-color:${color};
+          color:${color};font-size:${fontSize}px;
+          box-shadow:0 1px 3px rgba(0,0,0,0.15);">${label}</div>`,
+      iconSize: [d, d], iconAnchor: [d/2, d/2] });
+  }
+  const textColor = DARK_TEXT.has(type) ? '#222' : '#fff';
   return L.divIcon({ className: '',
     html: `<div class="plant-marker" style="width:${d}px;height:${d}px;
         background:${color};color:${textColor};font-size:${fontSize}px;
@@ -1657,6 +1772,128 @@ function giIcon(voltage, mva) {
 function dpRow(label, value) {
   return (value || value === 0) ? `<tr><td>${label}</td><td>${value}</td></tr>` : '';
 }
+
+// ============================================================
+// RUPTL sub-section untuk detail panel — muncul kalau feature punya
+// match_tier atau ruptl_id. Format konsisten dengan .dp-conn (h5
+// uppercase + sub-table dpRow), warning pakai .dp-warn color yang sudah
+// dipakai untuk warning lain. Zero new component pattern.
+// ============================================================
+const TIER_LABEL = {
+  'CONFIRMED_MATCH': 'Cocok pasti',
+  'PROBABLE_MATCH':  'Kemungkinan cocok',
+  'AMBIGUOUS':       'Ambigu',
+  'CONFLICT':        'Konflik',
+  'UPRATE_TARGET':   'Target uprating',
+  'PLANNED_RUPTL':   'Rencana baru',
+  'UNMATCHED_RUPTL': 'Rencana baru',
+  'UNMATCHED_IPM':   'Tidak ada di RUPTL',
+  'UNMATCHED_BASELINE': 'Tidak ada di RUPTL',
+  'BASELINE_UNRESOLVED': '',
+  'BASELINE':        '',
+};
+const TIER_LABEL_EN = {
+  'CONFIRMED_MATCH': 'Confirmed match',
+  'PROBABLE_MATCH':  'Probable match',
+  'AMBIGUOUS':       'Ambiguous',
+  'CONFLICT':        'Conflict',
+  'UPRATE_TARGET':   'Uprating target',
+  'PLANNED_RUPTL':   'New planned line',
+  'UNMATCHED_RUPTL': 'New planned asset',
+  'UNMATCHED_IPM':   'Not in RUPTL',
+  'UNMATCHED_BASELINE': 'Not in RUPTL',
+  'BASELINE_UNRESOLVED': '',
+  'BASELINE':        '',
+};
+function tierLabel(tier) {
+  const dict = currentLanguage === 'en' ? TIER_LABEL_EN : TIER_LABEL;
+  return dict[tier] || tier || '';
+}
+
+// Return HTML string (possibly empty) untuk RUPTL sub-section.
+// Kind: 'gen' | 'sub' | 'trm'. Property yang di-baca:
+//   match_tier, ruptl_id, status, target_cod_year, action_type,
+//   capacity_mw_ruptl, voltage_kv_ruptl, length_km_ruptl,
+//   has_*_conflict, coord_confidence, source_page, source_table
+function ruptlSectionHTML(p, kind) {
+  const tier = p.match_tier;
+  const ruptlId = p.ruptl_id;
+  // Skip section kalau tidak ada info RUPTL sama sekali. BASELINE tier
+  // (transmission OSM yang tidak match ke RUPTL apapun) juga di-skip.
+  if (!ruptlId && (!tier || tier === 'BASELINE' || tier === 'BASELINE_UNRESOLVED'
+                    || tier === 'UNMATCHED_IPM')) {
+    return '';
+  }
+
+  const rows = [];
+  if (tier) rows.push(dpRow(t('detail.ruptl.field.tier'), tierLabel(tier)));
+  if (ruptlId) rows.push(dpRow(t('detail.ruptl.field.id'), ruptlId));
+  // Status (dari RUPTL — Konstruksi/Rencana/Committed/dll)
+  const rStatus = p.status_ruptl || (tier === 'PLANNED_RUPTL' || tier === 'UNMATCHED_RUPTL' ? p.status : '');
+  if (rStatus) rows.push(dpRow(t('detail.ruptl.field.status'), rStatus));
+  // Action type (untuk transmission planned: New/Ext/Uprate)
+  if (p.action_type_ruptl || (kind === 'trm' && p.action_type)) {
+    rows.push(dpRow(t('detail.ruptl.field.action'),
+      p.action_type_ruptl || p.action_type));
+  }
+  // Target COD tahun
+  const cod = p.target_cod_year_ruptl || p.target_cod_year;
+  if (cod) rows.push(dpRow(t('detail.ruptl.field.cod'), cod));
+  // Kapasitas RUPTL (untuk generator)
+  if (kind === 'gen' && p.capacity_mw_ruptl) {
+    rows.push(dpRow(t('detail.ruptl.field.capacity'),
+      parseFloat(p.capacity_mw_ruptl).toLocaleString(
+        currentLanguage === 'id' ? 'id-ID' : 'en-US') + ' MW'));
+  }
+  // Panjang RUPTL (untuk transmission)
+  if (kind === 'trm' && (p.length_km_ruptl || (tier === 'PLANNED_RUPTL' && p.length_km))) {
+    rows.push(dpRow(t('detail.ruptl.field.length'),
+      parseFloat(p.length_km_ruptl || p.length_km).toFixed(1) + ' km'));
+  }
+  // Voltage RUPTL (untuk transmission)
+  if (kind === 'trm' && (p.voltage_kv_ruptl || (tier === 'PLANNED_RUPTL' && p.voltage_kv))) {
+    rows.push(dpRow(t('detail.ruptl.field.voltage'),
+      (p.voltage_kv_ruptl || p.voltage_kv) + ' kV'));
+  }
+  // Source page reference (helpful buat verifikasi manual ke PDF)
+  if (p.source_page) {
+    rows.push(dpRow(t('detail.ruptl.field.source_page'),
+      (p.source_table ? p.source_table + ', ' : '') +
+      t('detail.ruptl.field.page') + ' ' + p.source_page));
+  }
+
+  // Warnings (subtle, muted red, muncul hanya kalau memang ada conflict)
+  const warns = [];
+  if (p.has_capacity_conflict === 'true' || p.has_capacity_conflict === true) {
+    const ipmMw = p.capacity_mw_ipm ? parseFloat(p.capacity_mw_ipm) : null;
+    const rupMw = p.capacity_mw_ruptl ? parseFloat(p.capacity_mw_ruptl) : null;
+    if (ipmMw !== null && rupMw !== null) {
+      warns.push(t('detail.warn.capacity_conflict',
+        {ipm: ipmMw, ruptl: rupMw}));
+    } else {
+      warns.push(t('detail.warn.capacity_conflict_simple'));
+    }
+  }
+  if (p.has_type_conflict === 'true' || p.has_type_conflict === true) {
+    warns.push(t('detail.warn.type_conflict',
+      {ipm: p.type_ipm || '?', ruptl: p.type_ruptl || '?'}));
+  }
+  if (p.coord_confidence === 'low' || p.coord_source === 'province_centroid') {
+    warns.push(t('detail.warn.location_precision'));
+  }
+
+  if (!rows.length && !warns.length) return '';
+
+  let html = '<div class="dp-conn"><h5>' + t('detail.ruptl.section') + '</h5>';
+  if (rows.length) {
+    html += '<table class="dp-table">' + rows.join('') + '</table>';
+  }
+  for (const w of warns) {
+    html += '<div class="dp-warn">' + w + '</div>';
+  }
+  html += '</div>';
+  return html;
+}
 function subDetailHTML(p) {
   return `<table class="dp-table">
     ${dpRow(t('detail.field.id'), p.id)}
@@ -1668,6 +1905,7 @@ function subDetailHTML(p) {
     ${dpRow(t('detail.field.source'), p.source_id + (p.source_table ? ' (' + p.source_table + ')' : ''))}
     ${dpRow(t('detail.field.coordinate'), p.match_source)}
   </table>
+  ${ruptlSectionHTML(p, 'sub')}
   `;
 }
 function genDetailHTML(p) {
@@ -1695,18 +1933,26 @@ function genDetailHTML(p) {
     ${dpRow(t('detail.field.method'), p.method)}
     ${dpRow(t('detail.field.source'), p.source_id)}
   </table>
+  ${ruptlSectionHTML(p, 'gen')}
   `;
 }
 function trmDetailHTML(p) {
-  return `<table class="dp-table">
+  // Untuk transmission PLANNED_RUPTL: length/voltage baseline tidak ada
+  // (feature dari RUPTL, bukan OSM), jadi tampilkan hanya kalau ada.
+  const hasBase = p.osm_id || p.length_km || p.voltage_kv_all;
+  const baseTable = hasBase ? `<table class="dp-table">
     ${dpRow(t('detail.field.id'), p.id)}
     ${dpRow(t('detail.field.system'), p.system)}
-    ${dpRow(t('detail.field.voltage_class'), '<strong>' + p.voltage_class + '</strong>')}
-    ${dpRow(t('detail.field.voltage'), p.voltage_kv_all + ' kV')}
-    ${dpRow(t('detail.field.length'), parseFloat(p.length_km).toFixed(1) + ' km')}
+    ${dpRow(t('detail.field.voltage_class'), p.voltage_class ? '<strong>' + p.voltage_class + '</strong>' : '')}
+    ${dpRow(t('detail.field.voltage'), p.voltage_kv_all ? p.voltage_kv_all + ' kV' : '')}
+    ${dpRow(t('detail.field.length'), p.length_km ? parseFloat(p.length_km).toFixed(1) + ' km' : '')}
+    ${p.circuit_from_name || p.circuit_to_name ?
+      dpRow(t('detail.field.endpoints'),
+        (p.circuit_from_name || '?') + ' — ' + (p.circuit_to_name || '?')) : ''}
     ${dpRow(t('detail.field.osm_id'), p.osm_id)}
     ${dpRow(t('detail.field.source'), p.source_id)}
-  </table>`;
+  </table>` : '';
+  return baseTable + ruptlSectionHTML(p, 'trm');
 }
 
 // --- Highlight koneksi GI <-> transmisi (inferensi via kedekatan ujung garis) ---
@@ -1793,7 +2039,19 @@ function showDetail(ft) {
     clearHighlight();
   } else {
     document.getElementById('dp-kind').textContent = t('detail.kind.trm');
-    document.getElementById('dp-title').textContent = t('detail.transmisi_prefix') + ' ' + p.voltage_class;
+    // Untuk planned RUPTL: title lebih informatif "GI A — GI B" (kalau ada).
+    // Untuk baseline: title "Transmisi <kV>" seperti sebelumnya.
+    let title;
+    if (p.match_tier === 'PLANNED_RUPTL' && (p.from_bus || p.to_bus)) {
+      title = (p.from_bus || '?') + ' — ' + (p.to_bus || '?');
+    } else if (p.circuit_from_name && p.circuit_to_name) {
+      // Baseline dengan endpoint enrichment — tampilkan endpoint names.
+      title = p.circuit_from_name + ' — ' + p.circuit_to_name
+              + ' · ' + (p.voltage_class || '');
+    } else {
+      title = t('detail.transmisi_prefix') + ' ' + (p.voltage_class || '');
+    }
+    document.getElementById('dp-title').textContent = title;
     body.innerHTML = trmDetailHTML(p);
     // Highlight ruas transmisi yang sedang ditampilkan di detail panel,
     // mirror behaviour klik GI. Pakai highlightLines([ft]) supaya semua
@@ -1852,11 +2110,18 @@ function buildFeatures() {
     for (const f of data.transmission.features) {
       const p = f.properties;
       const latlngs = f.geometry.coordinates.map(c => [c[1], c[0]]);
-      const layer = L.polyline(latlngs, {
+      // Planned RUPTL transmission: warna voltage tetap, dashArray + lower
+      // opacity supaya visually distinct dari existing OSM lines.
+      const isPlanned = p.match_tier === 'PLANNED_RUPTL';
+      const opts = {
         renderer: lineRenderer,
-        color: p.color || '#666', weight: p.weight || 1.5, opacity: 0.85,
-      });
-      const rec = { kind:'trm', region, tier:trmTier(p), props:p, layer, visible:false };
+        color: p.color || '#666', weight: p.weight || 1.5,
+        opacity: isPlanned ? 0.55 : 0.85,
+      };
+      if (isPlanned) opts.dashArray = '5, 5';
+      const layer = L.polyline(latlngs, opts);
+      const rec = { kind:'trm', region, tier:trmTier(p), props:p, layer,
+                    visible:false, planned:isPlanned };
       layer.on('click', () => showDetail(rec));
       features.push(rec);
     }
@@ -1877,8 +2142,13 @@ function buildFeatures() {
       const p = f.properties;
       const [lon, lat] = f.geometry.coordinates;
       const tier = genTier(p);
-      const m = L.marker([lat, lon], { icon: plantIcon(p.type, parseFloat(p.capacity_mw)) });
-      const rec = { kind:'gen', region, tier, props:p, layer:m, visible:false };
+      // Planned RUPTL generator: hollow marker variant (border colored,
+      // fill semi-transparent). Keep letter + size supaya recognizable.
+      const isPlanned = p.match_tier === 'UNMATCHED_RUPTL';
+      const m = L.marker([lat, lon],
+        { icon: plantIcon(p.type, parseFloat(p.capacity_mw), isPlanned) });
+      const rec = { kind:'gen', region, tier, props:p, layer:m,
+                    visible:false, planned:isPlanned };
       m.on('click', () => showDetail(rec));
       if (tier === 'backbone' && p.name && p.name !== '(unnamed)')
         m.bindTooltip(p.name, {permanent:true, direction:'top', className:'feat-label', offset:[0,-4]});
@@ -1945,6 +2215,11 @@ function applyFilters() {
   const genBkt  = checkedSet('.sub-gen');     // sub-layer bucket kapasitas pembangkit
   const genRole = checkedSet('.sub-gen-role'); // sub-layer peran pembangkit (Utility/Captive/Community)
   const typesOn = checkedSet('.f-type');      // toggle jenis pembangkit (legend interaktif)
+  // Planned RUPTL toggles — default off (opt-in). Kontrol visibility
+  // planned assets terpisah dari layer utama supaya user bisa fokus ke
+  // existing infrastructure by default, planned muncul saat diminta.
+  const trmPlannedOn = document.getElementById('m-trm-planned').checked;
+  const genPlannedOn = document.getElementById('m-gen-planned').checked;
   const province = document.getElementById('f-province').value;
   // Compute province bounds sekali (dipakai passProvince untuk filter
   // transmisi via bbox intersection). Null kalau tidak ada Province Filter.
@@ -1966,7 +2241,14 @@ function applyFilters() {
       layerVis = genBkt.has(capacityBucket(ft.props.capacity_mw))
               && genRole.has(getRole(ft.props));
     }
-    const vis = regionOn[ft.region] && layerVis
+    // Planned gate: kalau feature planned tapi toggle-nya off, sembunyikan
+    // (regardless of other filter). Existing feature tidak terpengaruh.
+    let plannedGate = true;
+    if (ft.planned) {
+      if (ft.kind === 'trm') plannedGate = trmPlannedOn;
+      else if (ft.kind === 'gen') plannedGate = genPlannedOn;
+    }
+    const vis = regionOn[ft.region] && layerVis && plannedGate
       && (ft.kind !== 'gen' || typesOn.has(ft.props.type))
       && passProvince(ft, province, provinceBounds);
     if (vis !== ft.visible) {
@@ -2113,6 +2395,15 @@ function setupFilters() {
   // features dan setStyle/addLayer hanya dipanggil saat visibility berubah.
   document.querySelectorAll('.sub-gen-role').forEach(c =>
     c.addEventListener('change', applyFilters));
+
+  // Planned RUPTL toggles — standalone (bukan bagian dari master m-trm/m-gen
+  // supaya master toggle tidak accidentally hide/show planned assets).
+  // Default off; user opt-in secara sadar karena planned data punya lokasi
+  // approximate untuk sebagian besar rows.
+  ['m-trm-planned', 'm-gen-planned'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.addEventListener('change', applyFilters);
+  });
 
   // Reset filter (jenis pembangkit & provinsi & peran)
   document.getElementById('f-reset').addEventListener('click', () => {

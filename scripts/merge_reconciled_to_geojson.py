@@ -116,13 +116,21 @@ def merge(region: str, project_root: Path) -> int:
     print(f"    matched to IPM id: {len(by_ipm_id)}")
     print(f"    unmatched RUPTL:   {len(unmatched_ruptl_rows)}")
 
-    # Load RUPTL geocoded CSV for coord_confidence lookup
+    # Load RUPTL geocoded CSV for coord_confidence + source_page/table lookup
+    # (fields yang tidak ada di reconciled CSV, penting untuk popup context).
     coord_conf_by_ruptl_id: dict[str, str] = {}
+    ruptl_extra_by_id: dict[str, dict] = {}
     if ruptl_csv_path.exists():
         for r in load_csv(ruptl_csv_path):
             rid = r.get("id", "").strip()
             if rid:
                 coord_conf_by_ruptl_id[rid] = (r.get("coord_confidence") or "").strip()
+                ruptl_extra_by_id[rid] = {
+                    "source_page": r.get("source_page", ""),
+                    "source_table": r.get("source_table", ""),
+                    "target_cod_year": r.get("target_cod_year", ""),
+                    "developer": r.get("developer", ""),
+                }
 
     # Enrich matched baseline features
     enriched_count = 0
@@ -191,6 +199,12 @@ def merge(region: str, project_root: Path) -> int:
         props["ipm_id"] = ""  # explicit: tidak ada IPM baseline pair
         props["coord_confidence"] = coord_conf
         props["is_placeholder"] = is_placeholder
+        # Inject source_page/table + target_cod_year dari raw RUPTL CSV
+        # (fields yang di-drop di reconciled CSV tapi useful untuk popup).
+        extra = ruptl_extra_by_id.get(ruptl_id, {})
+        for k, v in extra.items():
+            if v and not props.get(k):
+                props[k] = v
         # Ensure numeric-ish fields casted properly
         cap = parse_float(props.get("capacity_mw"))
         if cap is not None:
