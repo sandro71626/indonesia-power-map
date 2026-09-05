@@ -282,8 +282,25 @@ def reconcile(region: str, project_root: Path,
         print("\n(dry-run — pass --write to update .reconciled.geojson + report)")
         return 0
 
-    # Append PLANNED_RUPTL features (RUPTL rows with UNMATCHED_RUPTL + endpoints resolvable)
+    # Append PLANNED_RUPTL features (RUPTL rows with UNMATCHED_RUPTL + endpoints resolvable).
+    # Skip rows dengan endpoint generic (Inc./Tx./Tersebar/Eksisting/Kuota) —
+    # itu bukan real substation, gazetteer match jadi salah dan garis
+    # digambar random. Tetap ada di CSV untuk manual review.
+    import re as _re
+    GENERIC_ENDPOINT_TOKENS_LOCAL = frozenset({
+        "inc", "tx", "kuota", "tersebar", "eksisting", "eksisiting",
+        "existing", "tap",
+    })
+
+    def _is_generic(name: str) -> bool:
+        if not name:
+            return True
+        n = name.lower()
+        return any(_re.search(rf"\b{tok}\b", n)
+                   for tok in GENERIC_ENDPOINT_TOKENS_LOCAL)
+
     added_planned = 0
+    skipped_generic = 0
     for res in ruptl_results:
         if res["tier"] != TIER_UNMATCHED_RUPTL:
             continue
@@ -292,6 +309,9 @@ def reconcile(region: str, project_root: Path,
         if not fp or not tp:
             continue
         r = res["rup"]
+        if _is_generic(r.get("from_bus", "")) or _is_generic(r.get("to_bus", "")):
+            skipped_generic += 1
+            continue
         coords = [[fp["lon"], fp["lat"]], [tp["lon"], tp["lat"]]]
         planned_feat = {
             "type": "Feature",
@@ -323,6 +343,9 @@ def reconcile(region: str, project_root: Path,
         added_planned += 1
 
     print(f"\n  added {added_planned} PLANNED_RUPTL features (new lines)")
+    if skipped_generic:
+        print(f"  skipped {skipped_generic} rows dengan endpoint generic "
+              f"(Inc./Tx./Kuota/Tersebar) — tersedia di CSV untuk review")
 
     baseline["features"] = features
     out_path.write_text(json.dumps(baseline, ensure_ascii=False),

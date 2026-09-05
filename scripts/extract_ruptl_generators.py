@@ -210,14 +210,41 @@ def is_total_row(cells: list[str], colmap: dict) -> bool:
 # Value parsers
 # ------------------------------------------------------------
 def parse_all_numbers(s: str) -> list[float]:
-    """Extract semua angka dari sel (mungkin multi-unit '45 43')."""
+    """Extract semua angka dari sel (mungkin multi-unit '45 43').
+
+    Handle 3 format:
+      - "120.0"       → 120.0     (English decimal — 1-2 digit setelah .)
+      - "1.234"       → 1234      (Indonesian thousands — 3+ digit setelah .)
+      - "1.234,56"    → 1234.56   (Indonesian: . thousands, , decimal)
+      - "45,5"        → 45.5      (Indonesian decimal-only)
+      - "1200"        → 1200.0    (integer, no separator)
+    """
     if not s:
         return []
     s = s.replace("*", "")
     out = []
-    for m in re.finditer(r"(\d[\d.]*(?:,\d+)?)", s):
+    for m in re.finditer(r"(\d[\d.,]*)", s):
+        token = m.group(1)
         try:
-            out.append(float(m.group(1).replace(".", "").replace(",", ".")))
+            if "," in token:
+                # Indonesian: . = thousands, , = decimal
+                cleaned = token.replace(".", "").replace(",", ".")
+            elif "." in token:
+                # Ambiguous: decimal atau thousands separator?
+                parts = token.split(".")
+                last = parts[-1]
+                # Kalau bagian setelah . panjangnya 1-2 digit → decimal
+                # Kalau 3+ digit → thousands separator
+                if len(parts) == 2 and len(last) <= 2:
+                    cleaned = token  # English decimal
+                elif all(len(p) == 3 for p in parts[1:]):
+                    cleaned = token.replace(".", "")  # thousands
+                else:
+                    # Mixed/ambiguous — treat . as decimal for last segment
+                    cleaned = "".join(parts[:-1]) + "." + last
+            else:
+                cleaned = token
+            out.append(float(cleaned))
         except ValueError:
             pass
     return out
