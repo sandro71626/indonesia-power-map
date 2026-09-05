@@ -78,6 +78,16 @@ NAME_STOPWORDS: frozenset[str] = frozenset({
     # Cardinal directions yang sering muncul di RUPTL row Lokasi
     "utara", "selatan", "barat", "timur", "tengah",
     "north", "south", "east", "west", "central",
+    # Province & pulau names — muncul sebagai generic label di RUPTL
+    # ("Banten (Kuota) II", "Jawa-Bali Tersebar", "Sumatera Kuota").
+    # Nama plant proper biasanya specific ke lokasi (Suralaya, Cirata),
+    # bukan ke provinsi.
+    "jawa", "bali", "banten", "sumatera", "sumatra",
+    "kalimantan", "sulawesi", "papua", "maluku",
+    "aceh", "riau", "jambi", "bengkulu", "lampung",
+    "gorontalo", "yogyakarta",
+    # RUPTL aggregate/placeholder terms
+    "kuota", "quota", "ftp",
 })
 
 

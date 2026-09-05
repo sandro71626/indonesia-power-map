@@ -164,6 +164,11 @@ def find_match(ruptl_row: dict, index: dict, opts: argparse.Namespace) -> dict:
     r_lon = parse_float(ruptl_row.get("lon") or ruptl_row.get("longitude"))
     r_lat = parse_float(ruptl_row.get("lat") or ruptl_row.get("latitude"))
     r_mw = parse_float(ruptl_row.get("capacity_mw"))
+    # Gate: coord confidence dari geocode_ruptl_generators.py. Kalau
+    # "low" (province centroid + jitter — bukan geolokasi real), jangan
+    # trigger CONFIRMED palsu — treat as no coord.
+    if (ruptl_row.get("coord_confidence") or "").strip().lower() == "low":
+        r_lon = r_lat = None
 
     # Kandidat: batasi ke provinsi yang sama untuk hindari cross-province match.
     # Fallback: kalau RUPTL tidak punya provinsi, seluruh IPM rows.
