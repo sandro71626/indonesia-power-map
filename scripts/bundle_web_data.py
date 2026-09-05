@@ -44,18 +44,28 @@ def main():
     #   substations -> substations_<region>.geojson
     #   generators  -> generators_<region>.geojson
     #   transmission-> transmission_<region>.geojson
+    #
+    # Prefer `.reconciled.geojson` bila ada — dihasilkan oleh
+    # scripts/merge_reconciled_to_geojson.py yang inject match_tier,
+    # provenance _source companions, dan conflict flags dari reconciler.
+    # Frontend backward-compat: property tambahan bersifat additive.
     sources = {}
     for layer in LAYERS:
-        p = GJ_DIR / f"{layer}_{region}.geojson"
-        if not p.exists():
-            raise FileNotFoundError(f"Missing: {p}")
-        sources[layer] = p
+        recon = GJ_DIR / f"{layer}_{region}.reconciled.geojson"
+        base = GJ_DIR / f"{layer}_{region}.geojson"
+        if recon.exists():
+            sources[layer] = recon
+        elif base.exists():
+            sources[layer] = base
+        else:
+            raise FileNotFoundError(f"Missing: {base}")
 
     payloads = {}
     for layer in LAYERS:
         payloads[layer] = load_compact(sources[layer])
         n = len(json.loads(payloads[layer]).get('features', []))
-        print(f"  {layer:<13} {n:>5} features  ({sources[layer].stat().st_size:>9} bytes)")
+        tag = " [reconciled]" if sources[layer].name.endswith(".reconciled.geojson") else ""
+        print(f"  {layer:<13} {n:>5} features  ({sources[layer].stat().st_size:>9} bytes){tag}")
 
     # --- 1. Write web/data_<region>.js ---
     js_path = WEB / f"data_{region}.js"
