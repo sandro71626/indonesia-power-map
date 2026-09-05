@@ -63,7 +63,7 @@ def is_transmission_header(head_norm: list[str]) -> bool:
     has_dari = "transmisi dari" in joined or "dari" in head_norm
     has_ke = "transmisi ke" in joined or "ke" in head_norm
     has_length_or_kv = ("panjang" in joined or "kms" in joined
-                        or "tegangan" in joined)
+                        or "tegangan" in joined or "tegang" in joined)
     return has_dari and has_ke and has_length_or_kv
 
 
@@ -85,7 +85,10 @@ def transmission_column_map(head_norm: list[str]) -> dict[str, Optional[int]]:
         # Cari "ke" as exact/word match saja (bukan substring dari "kesatuan")
         idx["ke"] = next((i for i, x in enumerate(head_norm)
                            if x == "ke" or x.startswith("ke ")), None)
-    idx["tegangan"] = find("tegangan", "kv")
+    # pdfplumber kadang split "Tegangan" jadi "Tegang\nan" → setelah
+    # normalize whitespace jadi "tegang an" → tidak match "tegangan".
+    # Cover both full ("tegangan") dan partial ("tegang") + fallback "kv".
+    idx["tegangan"] = find("tegangan", "tegang", "kv")
     idx["lingkup"] = find("lingkup", "scope")
     idx["panjang"] = find("panjang", "kms")
     cods = [i for i, x in enumerate(head_norm) if "cod" in x]
