@@ -276,6 +276,19 @@
                   background: #1f77b4; color: white; border: none; border-radius: 4px;
                   cursor: pointer; font-size: 13px; font-weight: 600; }
   .modal .close:hover { background: #155a85; }
+  /* Download Data card — 3 buah di download-modal, satu per dataset. */
+  .modal .dl-card { background: #fafafa; border: 1px solid #e8e8e8;
+                    border-radius: 6px; padding: 12px 14px; margin: 10px 0;
+                    transition: border-color 0.12s, background 0.12s; }
+  .modal .dl-card:hover { border-color: #1f77b4; background: #f7faff; }
+  .modal .dl-card h4 { margin: 0 0 4px; font-size: 13px; font-weight: 600; color: #222; }
+  .modal .dl-card p { margin: 0 0 8px; font-size: 12px; color: #666; line-height: 1.5; }
+  .modal .dl-card button.action { display: inline-block; background: #1f77b4;
+                                   color: white; border: none; padding: 6px 12px;
+                                   border-radius: 4px; cursor: pointer;
+                                   font-size: 12px; font-weight: 500;
+                                   transition: background 0.12s; }
+  .modal .dl-card button.action:hover { background: #155a85; }
   .footer a { color: #1f77b4; cursor: pointer; text-decoration: underline; }
   .footer .attribution { margin-top: 5px; padding-top: 5px;
                          border-top: 1px solid rgba(0,0,0,0.08);
@@ -409,6 +422,10 @@
             data-i18n="menu.province_label"
             data-i18n-title="menu.province_title"
             title="Profil ringkas per provinsi">📊 Profil Provinsi</button>
+    <button class="menu-btn" id="menu-download"
+            data-i18n="menu.download_label"
+            data-i18n-title="menu.download_title"
+            title="Unduh dataset lengkap dalam format CSV">⬇ Unduh Data</button>
     <!-- Language switcher — inline di menu bar. Toggle sederhana ID/EN.
          Klik = switch bahasa + persist ke localStorage. -->
     <select class="menu-btn" id="lang-select"
@@ -741,6 +758,47 @@
   <div class="modal" id="regional-content"></div>
 </div>
 
+<!-- Download Data modal: 3 kartu (Generators / Substations / Transmission
+     Lines), masing-masing tombol trigger download CSV. Content statis
+     (tidak perlu re-render saat data berubah karena data disusun
+     on-demand saat klik). Reuse CSS class .modal. -->
+<div class="modal-backdrop" id="download-modal"
+     onclick="if(event.target===this)this.classList.remove('show')">
+  <div class="modal">
+    <h2 data-i18n="download.title">Unduh Data</h2>
+    <p data-i18n="download.subtitle" style="font-size:12px;color:#666;margin:4px 0 12px;">
+      Unduh dataset lengkap peta ini sebagai file CSV. Data yang diunduh
+      adalah seluruh dataset saat ini (belum difilter).</p>
+
+    <div class="dl-card">
+      <h4 data-i18n="download.gen.title">Pembangkit (Generators)</h4>
+      <p data-i18n="download.gen.desc">Daftar pembangkit dengan kapasitas, jenis teknologi, sumber energi, peran, operator, dan koordinat.</p>
+      <button class="action" id="dl-gen" data-i18n="download.gen.button">⬇ Unduh CSV Pembangkit</button>
+    </div>
+
+    <div class="dl-card">
+      <h4 data-i18n="download.sub.title">Gardu Induk (Substations)</h4>
+      <p data-i18n="download.sub.desc">Daftar gardu induk dengan tegangan, kapasitas trafo, provinsi, dan koordinat.</p>
+      <button class="action" id="dl-sub" data-i18n="download.sub.button">⬇ Unduh CSV Gardu Induk</button>
+    </div>
+
+    <div class="dl-card">
+      <h4 data-i18n="download.trm.title">Saluran Transmisi (Transmission Lines)</h4>
+      <p data-i18n="download.trm.desc">Daftar saluran transmisi dengan kelas tegangan, panjang, dan koordinat endpoint.</p>
+      <button class="action" id="dl-trm" data-i18n="download.trm.button">⬇ Unduh CSV Saluran Transmisi</button>
+    </div>
+
+    <p class="dl-note" data-i18n="download.note" style="font-size:11px;color:#888;margin-top:14px;">
+      File CSV di-encoding UTF-8 (dengan BOM) supaya karakter Indonesia
+      dan tanda baca khusus tetap benar saat dibuka di Excel/LibreOffice.
+      Kolom yang tidak tersedia di data sumber dikosongkan (bukan diisi
+      dugaan).</p>
+
+    <button class="close" onclick="document.getElementById('download-modal').classList.remove('show')"
+            data-i18n="download.close">Tutup</button>
+  </div>
+</div>
+
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="data_jamali.js"></script>
 <script src="data_sumatra.js"></script>
@@ -777,7 +835,23 @@ const TRANSLATIONS = {
     'menu.province_title': 'Profil ringkas per provinsi',
     'menu.region_label': '🗺️ Profil Region',
     'menu.region_title': 'Profil ringkas per region (JAMALI, Sumatra, dst.)',
+    'menu.download_label': '⬇ Unduh Data',
+    'menu.download_title': 'Unduh dataset lengkap (CSV): Pembangkit, Gardu Induk, Transmisi',
     'menu.context_anchor_title': 'Kembali ke Profil Provinsi yang sedang aktif',
+    // Download Data modal
+    'download.title': 'Unduh Data',
+    'download.subtitle': 'Unduh dataset lengkap peta ini sebagai file CSV. Data yang diunduh adalah seluruh dataset saat ini (belum difilter).',
+    'download.gen.title': 'Pembangkit (Generators)',
+    'download.gen.desc': 'Daftar pembangkit dengan kapasitas, jenis teknologi, sumber energi, peran, operator, dan koordinat.',
+    'download.gen.button': '⬇ Unduh CSV Pembangkit',
+    'download.sub.title': 'Gardu Induk (Substations)',
+    'download.sub.desc': 'Daftar gardu induk dengan tegangan, kapasitas trafo, provinsi, dan koordinat.',
+    'download.sub.button': '⬇ Unduh CSV Gardu Induk',
+    'download.trm.title': 'Saluran Transmisi (Transmission Lines)',
+    'download.trm.desc': 'Daftar saluran transmisi dengan kelas tegangan, panjang, dan koordinat endpoint.',
+    'download.trm.button': '⬇ Unduh CSV Saluran Transmisi',
+    'download.note': 'File CSV di-encoding UTF-8 (dengan BOM) supaya karakter Indonesia dan tanda baca khusus tetap benar saat dibuka di Excel/LibreOffice. Kolom yang tidak tersedia di data sumber dikosongkan (bukan diisi dugaan).',
+    'download.close': 'Tutup',
     'menu.breadcrumb_region_title': 'Kembali ke Regional Profile — Province Profile ditutup, filter region tetap aktif',
     'menu.breadcrumb_province_title': 'Buka kembali Province Profile',
     // Regional Profile — mirror Province Profile, plus section Kontribusi Provinsi
@@ -988,7 +1062,22 @@ const TRANSLATIONS = {
     'menu.province_title': 'Concise per-province profile',
     'menu.region_label': '🗺️ Regional Profile',
     'menu.region_title': 'Concise per-region profile (JAMALI, Sumatra, etc.)',
+    'menu.download_label': '⬇ Download Data',
+    'menu.download_title': 'Download the complete dataset (CSV): Generators, Substations, Transmission Lines',
     'menu.context_anchor_title': 'Return to active Province Profile',
+    'download.title': 'Download Data',
+    'download.subtitle': 'Download this map\'s complete dataset as CSV files. The download contains the entire current dataset (unfiltered).',
+    'download.gen.title': 'Generators',
+    'download.gen.desc': 'List of generators with capacity, technology type, energy source, role, operator, and coordinates.',
+    'download.gen.button': '⬇ Download Generators CSV',
+    'download.sub.title': 'Substations',
+    'download.sub.desc': 'List of substations with voltage, transformer capacity, province, and coordinates.',
+    'download.sub.button': '⬇ Download Substations CSV',
+    'download.trm.title': 'Transmission Lines',
+    'download.trm.desc': 'List of transmission lines with voltage class, length, and endpoint coordinates.',
+    'download.trm.button': '⬇ Download Transmission Lines CSV',
+    'download.note': 'CSV files are encoded in UTF-8 (with BOM) so Indonesian characters and special punctuation remain correct when opened in Excel/LibreOffice. Columns unavailable in the source data are left blank (not inferred).',
+    'download.close': 'Close',
     'menu.breadcrumb_region_title': 'Return to Regional Profile — closes Province Profile, region filter stays active',
     'menu.breadcrumb_province_title': 'Reopen Province Profile',
     'region.picker.title': 'Regional Profile',
@@ -2922,8 +3011,10 @@ document.addEventListener('keydown', e => {
     const statsM = document.getElementById('stats-modal');
     const provM  = document.getElementById('province-modal');
     const regM   = document.getElementById('regional-modal');
+    const dlM    = document.getElementById('download-modal');
     if (provM.classList.contains('show')) provM.classList.remove('show');
     else if (regM && regM.classList.contains('show')) regM.classList.remove('show');
+    else if (dlM && dlM.classList.contains('show')) dlM.classList.remove('show');
     else if (statsM.classList.contains('show')) statsM.classList.remove('show');
     else if (aboutM.classList.contains('show')) aboutM.classList.remove('show');
     else closeDetail();
@@ -2962,6 +3053,15 @@ document.addEventListener('keydown', e => {
     renderRegionPicker();
     document.getElementById('regional-modal').classList.add('show');
   });
+
+  // Unduh Data — buka modal dengan 3 kartu dataset (Pembangkit, Gardu Induk,
+  // Transmisi). Masing-masing kartu punya tombol CSV download.
+  document.getElementById('menu-download').addEventListener('click', () => {
+    document.getElementById('download-modal').classList.add('show');
+  });
+  document.getElementById('dl-gen').addEventListener('click', () => downloadGeneratorsCSV());
+  document.getElementById('dl-sub').addEventListener('click', () => downloadSubstationsCSV());
+  document.getElementById('dl-trm').addEventListener('click', () => downloadTransmissionCSV());
 
   // Home — kembali ke tampilan awal eksplorasi (lihat goHome() untuk detail).
   // TIDAK reload halaman; disclaimer/about modal tidak dimunculkan ulang.
@@ -3407,6 +3507,176 @@ function exitRegionContext() {
   CURRENT_REGION_CONTEXT = null;
   clearRegionFilter();
   updateBreadcrumb();
+}
+
+// ============================================================
+// DOWNLOAD DATA — CSV export dari data yang sudah loaded di memori
+// ============================================================
+// Prinsip:
+// - Pakai in-memory `features` (tidak duplicate data)
+// - Modular: csvEscape / rowsToCSV / triggerCSVDownload = utilities generik.
+//   buildGeneratorRows / buildSubstationRows / buildTransmissionRows =
+//   row builder yang terima feature list (default = seluruh features, tapi
+//   masa depan bisa dilempar subset untuk Download Current View, Province
+//   download, dst).
+// - Kolom yang tidak ada di data sumber dikosongkan (bukan diisi dugaan),
+//   sesuai spec.
+
+// --- CSV utilities ---
+function csvEscape(v) {
+  if (v == null) return '';
+  const s = String(v);
+  // Escape jika ada koma, quote, atau newline
+  if (/[",\n\r]/.test(s)) return '"' + s.replace(/"/g, '""') + '"';
+  return s;
+}
+function rowsToCSV(headers, rows) {
+  const lines = [headers.map(csvEscape).join(',')];
+  for (const row of rows) {
+    lines.push(headers.map(h => csvEscape(row[h])).join(','));
+  }
+  return lines.join('\r\n');  // CRLF supaya kompatibel Excel Windows
+}
+function triggerCSVDownload(filename, csvContent) {
+  // Prepend BOM untuk UTF-8 supaya karakter Indonesia dan tanda baca
+  // khusus terbuka benar di Excel/LibreOffice.
+  const blob = new Blob(['﻿' + csvContent],
+    {type: 'text/csv;charset=utf-8'});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = filename;
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  // Delay revoke supaya browser sempat trigger download stream
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
+}
+
+// --- Row builders per feature kind ---
+// Signature: buildXxxRows(featureList) → array of plain objects.
+// Reusable: caller bisa lempar seluruh `features` atau subset (mis. filtered).
+function buildGeneratorRows(featureList) {
+  const rows = [];
+  for (const f of featureList) {
+    if (f.kind !== 'gen') continue;
+    const p = f.props || {};
+    const ll = (f.layer && typeof f.layer.getLatLng === 'function')
+      ? f.layer.getLatLng() : null;
+    rows.push({
+      generator_id: p.id || '',
+      name: p.name || '',
+      province: p.province || '',
+      region: f.region || '',
+      power_system: p.system || '',
+      technology: p.type || '',
+      fuel: p.osm_source || '',
+      capacity_mw: p.capacity_mw || '',
+      role: p.role || '',
+      owner: '',                     // tidak tersedia di data sumber
+      operator: p.operator || '',
+      latitude: ll ? ll.lat : '',
+      longitude: ll ? ll.lng : '',
+      source_name: p.source_id || '',
+      source_url: '',                // tidak tersedia
+      source_year: '',               // tidak tersedia
+      last_verified: '',             // tidak tersedia
+    });
+  }
+  return rows;
+}
+function buildSubstationRows(featureList) {
+  const rows = [];
+  for (const f of featureList) {
+    if (f.kind !== 'sub') continue;
+    const p = f.props || {};
+    const ll = (f.layer && typeof f.layer.getLatLng === 'function')
+      ? f.layer.getLatLng() : null;
+    rows.push({
+      substation_id: p.id || '',
+      name: p.name || '',
+      province: p.province || '',
+      region: f.region || '',
+      power_system: p.system || '',
+      voltage_kv: p.voltage || '',        // format 'X/Y kV' asli
+      substation_type: '',                // tidak tersedia
+      capacity_mva: p.capacity_mva || '',
+      latitude: ll ? ll.lat : '',
+      longitude: ll ? ll.lng : '',
+      source_name: p.source_id || '',
+      source_url: '',
+      source_year: '',
+      last_verified: '',
+    });
+  }
+  return rows;
+}
+function buildTransmissionRows(featureList) {
+  const rows = [];
+  for (const f of featureList) {
+    if (f.kind !== 'trm') continue;
+    const p = f.props || {};
+    const lls = (f.layer && typeof f.layer.getLatLngs === 'function')
+      ? f.layer.getLatLngs() : [];
+    const from = lls[0] || null;
+    const to = lls[lls.length - 1] || null;
+    rows.push({
+      transmission_id: p.id || '',
+      name: '',                             // tidak tersedia di OSM tag
+      region: f.region || '',
+      province_from: '',                    // tidak tersedia (lintas provinsi)
+      province_to: '',                      // tidak tersedia
+      power_system: '',                     // tidak tersedia per-line
+      voltage_kv: p.voltage_kv_max || '',
+      from_substation: '',                  // tidak tersedia (nama endpoint)
+      to_substation: '',                    // tidak tersedia
+      length_km: p.length_km || '',
+      from_latitude: from ? from.lat : '',
+      from_longitude: from ? from.lng : '',
+      to_latitude: to ? to.lat : '',
+      to_longitude: to ? to.lng : '',
+      source_name: p.source_id || '',
+      source_url: '',
+      source_year: '',
+      last_verified: '',
+    });
+  }
+  return rows;
+}
+
+// --- CSV schema headers (urutan kolom sesuai spec) ---
+const CSV_HEADERS = {
+  generators: ['generator_id','name','province','region','power_system',
+               'technology','fuel','capacity_mw','role','owner','operator',
+               'latitude','longitude','source_name','source_url','source_year',
+               'last_verified'],
+  substations: ['substation_id','name','province','region','power_system',
+                'voltage_kv','substation_type','capacity_mva','latitude',
+                'longitude','source_name','source_url','source_year',
+                'last_verified'],
+  transmission: ['transmission_id','name','region','province_from','province_to',
+                 'power_system','voltage_kv','from_substation','to_substation',
+                 'length_km','from_latitude','from_longitude','to_latitude',
+                 'to_longitude','source_name','source_url','source_year',
+                 'last_verified'],
+};
+
+// --- High-level download functions per dataset ---
+// Signature konsisten: (scope = features) — masa depan tinggal lempar subset.
+function downloadGeneratorsCSV(scope) {
+  const rows = buildGeneratorRows(scope || features);
+  const csv = rowsToCSV(CSV_HEADERS.generators, rows);
+  triggerCSVDownload('indonesia_power_map_generators.csv', csv);
+}
+function downloadSubstationsCSV(scope) {
+  const rows = buildSubstationRows(scope || features);
+  const csv = rowsToCSV(CSV_HEADERS.substations, rows);
+  triggerCSVDownload('indonesia_power_map_substations.csv', csv);
+}
+function downloadTransmissionCSV(scope) {
+  const rows = buildTransmissionRows(scope || features);
+  const csv = rowsToCSV(CSV_HEADERS.transmission, rows);
+  triggerCSVDownload('indonesia_power_map_transmission_lines.csv', csv);
 }
 
 // Semi reset filter eksplorasi (dipakai oleh Context Anchor click).
