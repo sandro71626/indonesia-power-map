@@ -1,0 +1,23 @@
+id,name,from_bus,to_bus,voltage_kv,action_type,circuits,line_type,length_km,target_cod_year,status,province,region_key,source_page,source_table
+RUPTL-NTT-T-0001,PLTMG Kupang Peaker / Panaf — GI Naibonat,PLTMG Kupang Peaker / Panaf,GI Naibonat,150,New,2,SUTT,50.0,2025,Construction,Nusa Tenggara Timur,ntt,1184,Tabel C12.14
+RUPTL-NTT-T-0002,GI Waingapu — Shrimp Farming,GI Waingapu,Shrimp Farming,70,New,2,SUTT,56.0,2026,Committed,Nusa Tenggara Timur,ntt,1184,Tabel C12.14
+RUPTL-NTT-T-0003,GI Waingapu — PLTMG Waingapu,GI Waingapu,PLTMG Waingapu,70,New,2,SUTT,51.8,2026,Committed,Nusa Tenggara Timur,ntt,1184,Tabel C12.14
+RUPTL-NTT-T-0004,GI Amfoang — GI Kefamenanu,GI Amfoang,GI Kefamenanu,150,New,2,SUTT,252.0,2027,Committed,Nusa Tenggara Timur,ntt,1184,Tabel C12.14
+RUPTL-NTT-T-0005,GI Kefamenanu — GI Malaka,GI Kefamenanu,GI Malaka,150,New,2,SUTT,100.0,2027,Committed,Nusa Tenggara Timur,ntt,1184,Tabel C12.14
+RUPTL-NTT-T-0006,GI Kupang / Maulafa Baru — GI Naibonat,GI Kupang / Maulafa Baru,GI Naibonat,150,New,2,SUTT,20.0,2027,Committed,Nusa Tenggara Timur,ntt,1184,Tabel C12.14
+RUPTL-NTT-T-0007,GI Malaka — GI Atambua,GI Malaka,GI Atambua,150,New,2,SUTT,96.0,2027,Committed,Nusa Tenggara Timur,ntt,1184,Tabel C12.14
+RUPTL-NTT-T-0008,GI Naibonat — GI Amfoang,GI Naibonat,GI Amfoang,150,New,2,SUTT,108.0,2027,Committed,Nusa Tenggara Timur,ntt,1184,Tabel C12.14
+RUPTL-NTT-T-0009,PLTB Timor (Kuota) — GI Eksisting /,PLTB Timor (Kuota),GI Eksisting /,70/150,New,2,SUTT,10.0,2027,Planned,Nusa Tenggara Timur,ntt,1184,Tabel C12.14
+RUPTL-NTT-T-0010,PLTS + BESS Flores (Kuota) Tersebar 20 MW — GI Eksisting / GI Rencana Sistem Flores,PLTS + BESS Flores (Kuota) Tersebar 20 MW,GI Eksisting / GI Rencana Sistem Flores,70/150,New,2,SUTT,10.0,2027,Planned,Nusa Tenggara Timur,ntt,1185,
+RUPTL-NTT-T-0011,PLTMG Maumere — GI Larantuka,PLTMG Maumere,GI Larantuka,150,New,2,SUTT,212.0,2028,Planned,Nusa Tenggara Timur,ntt,1185,
+RUPTL-NTT-T-0012,PLTMG Waingapu — GI Tambolaka,PLTMG Waingapu,GI Tambolaka,70,New,2,SUTT,190.0,2028,Planned,Nusa Tenggara Timur,ntt,1185,
+RUPTL-NTT-T-0013,GI Waikabubak — GI Tambolaka,GI Waikabubak,GI Tambolaka,70,New,2,SUTT,50.0,2028,Planned,Nusa Tenggara Timur,ntt,1185,
+RUPTL-NTT-T-0014,PLTA Flores (Kuota) Tersebar 16 MW — GI Eksisting / GI Rencana Sistem Flores,PLTA Flores (Kuota) Tersebar 16 MW,GI Eksisting / GI Rencana Sistem Flores,70/150,New,2,SUTT,20.0,2029,Planned,Nusa Tenggara Timur,ntt,1185,
+RUPTL-NTT-T-0015,"PLTP Ulumbu — PLTP Ulumbu 5,6",PLTP Ulumbu,"PLTP Ulumbu 5,6",70,New,2,SUTT,20.0,2030,Planned,Nusa Tenggara Timur,ntt,1185,
+RUPTL-NTT-T-0016,PLTP Mataloko — Inc. 2 Phi (Bajawa- Ropa),PLTP Mataloko,Inc. 2 Phi (Bajawa- Ropa),70,New,4,SUTT,30.0,2031,Planned,Nusa Tenggara Timur,ntt,1185,
+RUPTL-NTT-T-0017,PLTB + BESS Timor (Kuota) Tersebar 22 MW — GI Eksisting / GI Rencana Sistem Timor,PLTB + BESS Timor (Kuota) Tersebar 22 MW,GI Eksisting / GI Rencana Sistem Timor,70/150,New,2,SUTT,10.0,2032,Planned,Nusa Tenggara Timur,ntt,1185,
+RUPTL-NTT-T-0018,PLTP Flores (Kuota) Tersebar 40 MW — GI Eksisting / GI Rencana Sistem Flores,PLTP Flores (Kuota) Tersebar 40 MW,GI Eksisting / GI Rencana Sistem Flores,70/150,New,2,SUTT,20.0,2032,Planned,Nusa Tenggara Timur,ntt,1185,
+RUPTL-NTT-T-0019,PLTS + BESS Timor (Kuota) Tersebar 20 MW — GI Eksisting / GI Rencana Sistem Timor,PLTS + BESS Timor (Kuota) Tersebar 20 MW,GI Eksisting / GI Rencana Sistem Timor,70/150,New,2,SUTT,10.0,2032,Planned,Nusa Tenggara Timur,ntt,1185,
+RUPTL-NTT-T-0020,PLTP Oka Ile Ange — Inc. 1 Phi (PLTMG Maumere - Larantuka),PLTP Oka Ile Ange,Inc. 1 Phi (PLTMG Maumere - Larantuka),150,New,2,SUTT,5.0,2033,Planned,Nusa Tenggara Timur,ntt,1185,
+RUPTL-NTT-T-0021,PLTP Flores (Kuota) Tersebar 30 MW — GI Eksisting / GI Rencana Sistem Flores,PLTP Flores (Kuota) Tersebar 30 MW,GI Eksisting / GI Rencana Sistem Flores,70/150,New,2,SUTT,20.0,2033,Planned,Nusa Tenggara Timur,ntt,1185,
+RUPTL-NTT-T-0022,PLTS + BESS Timor (Kuota) Tersebar 50 MW Total — GI Eksisting / GI Rencana Sistem Timor,PLTS + BESS Timor (Kuota) Tersebar 50 MW Total,GI Eksisting / GI Rencana Sistem Timor,70/150,New,2,SUTT,1251.0,2033,Planned,Nusa Tenggara Timur,ntt,1185,

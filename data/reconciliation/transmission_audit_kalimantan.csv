@@ -1,0 +1,6 @@
+severity,ruptl_id,from_bus,to_bus,voltage_kv,length_km,straight_km,ratio,action_type,target_cod_year,province,source_page,issues
+2,RUPTL-KALIMANTAN-T-0001,Sandai,Tayan,150,332.0,142.44,2.33,New,2025,Kalimantan Barat,739,LENGTH_OUTLIER
+2,RUPTL-KALIMANTAN-T-0054,Buntok,Palangkaraya,150,300.0,131.79,2.28,New,2030,Kalimantan Tengah,768,LENGTH_OUTLIER
+2,RUPTL-KALIMANTAN-T-0068,Muara Wahau,Sangatta,150,256.0,145.45,1.76,New,2026,Kalimantan Timur,786,LENGTH_OUTLIER
+2,RUPTL-KALIMANTAN-T-0112,Muara Wahau,Tanjung Redeb,150,304.0,249.07,1.22,New,2032,Kalimantan Timur,788,LENGTH_OUTLIER
+2,RUPTL-KALIMANTAN-T-0034,Tarjun,Sei Durian,150,169.0,156.74,1.08,New,2026,Kalimantan Selatan,754,LENGTH_OUTLIER

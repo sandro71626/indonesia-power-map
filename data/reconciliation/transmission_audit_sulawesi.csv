@@ -1,0 +1,7 @@
+severity,ruptl_id,from_bus,to_bus,voltage_kv,length_km,straight_km,ratio,action_type,target_cod_year,province,source_page,issues
+3,RUPTL-SULAWESI-T-0109,GITET Kolaka Smelter,GITET Kendari,275,420.0,92.02,4.56,,2029,Sulawesi Tenggara,1044,"RATIO_TOO_HIGH,LENGTH_OUTLIER"
+3,RUPTL-SULAWESI-T-0001,Tanjung Merah,Bitung Baru,150,40.0,9.56,4.19,New,2025,Sulawesi Utara,966,"RATIO_TOO_HIGH,GENERIC_ENDPOINT"
+3,RUPTL-SULAWESI-T-0063,Punagaya,Bantaeng switching,150,132.0,43.93,3.0,,2025,Sulawesi Selatan,1021,RATIO_TOO_HIGH
+2,RUPTL-SULAWESI-T-0069,GITET Palopo,GITET Bakaru 2,275,210.0,77.07,2.72,,2028,Sulawesi Selatan,1022,LENGTH_OUTLIER
+2,RUPTL-SULAWESI-T-0082,Masamba,Makale,150,170.0,78.85,2.16,,2031,Sulawesi Selatan,1023,LENGTH_OUTLIER
+1,RUPTL-SULAWESI-T-0073,GITET Daya Baru,Daya Baru,150,14.0,0.0,,,2028,Sulawesi Selatan,1022,GENERIC_ENDPOINT

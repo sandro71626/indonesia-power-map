@@ -1,283 +1,283 @@
-id,name,type,capacity_mw,province,region_key,status,target_cod_year,cod_re_base,cod_ared,developer,source_table,source_page
-RUPTL-JAMALI-P-0001,Sunter Jawa-Bali (Kuota),PLTSA,35.0,Dki Jakarta,jamali,Planned,2028,2028 2029,2028 2029,IPP,Tabel B1.9,818
-RUPTL-JAMALI-P-0002,Tersebar,PLTSA,150.0,Dki Jakarta,jamali,Planned,,,,IPP,Tabel B1.9,818
-RUPTL-JAMALI-P-0003,Jawa-9,PLTU,1000.0,Banten,jamali,Construction,2025,2025,2025,IPP,Tabel B2.11,830
-RUPTL-JAMALI-P-0004,Jawa-10,PLTU,1000.0,Banten,jamali,Construction,2025,2025,2025,IPP,Tabel B2.11,830
-RUPTL-JAMALI-P-0005,Cikotok,PLTM,4.2,Banten,jamali,Construction,2026,2026,2026,IPP,Tabel B2.11,830
-RUPTL-JAMALI-P-0006,Banten (Kuota) II,PLTS,50.0,Banten,jamali,Planned,2026,2026,2026,IPP,Tabel B2.11,830
-RUPTL-JAMALI-P-0007,Cikamunding,PLTM,6.0,Banten,jamali,Planned,2027,2027,2027,IPP,Tabel B2.11,830
-RUPTL-JAMALI-P-0008,Nagajaya,PLTM,6.0,Banten,jamali,Planned,2027,2027,2027,IPP,Tabel B2.11,830
-RUPTL-JAMALI-P-0009,Bulakan,PLTM,3.0,Banten,jamali,Planned,2027,2027,2027,IPP,Tabel B2.11,830
-RUPTL-JAMALI-P-0010,Jawa-Bali (Kuota) Tersebar,PLTM,4.4,Banten,jamali,Planned,2027,2027,2027,IPP,Tabel B2.11,830
-RUPTL-JAMALI-P-0011,Banten (Kuota) Tersebar 1,PLTSA,40.0,Banten,jamali,Planned,2028,2028,2028,IPP,Tabel B2.11,830
-RUPTL-JAMALI-P-0012,Banten (Kuota) IVA,PLTS,50.0,Banten,jamali,Planned,2028,2028,2028,IPP,Tabel B2.11,830
-RUPTL-JAMALI-P-0013,Banten (Kuota) VI,PLTS,40.0,Banten,jamali,Planned,2028,2028,2028,IPP,Tabel B2.11,830
-RUPTL-JAMALI-P-0014,Cibareno 1,PLTM,5.0,Banten,jamali,Planned,2028,2028,2028,IPP,Tabel B2.11,830
-RUPTL-JAMALI-P-0015,Jawa-Bali (Kuota) Tersebar,PLTM,6.0,Banten,jamali,Planned,2028,2028,2028,IPP,Tabel B2.11,830
-RUPTL-JAMALI-P-0016,Karian,PLTM,1.8,Banten,jamali,Planned,2028,2028,2028,IPP,Tabel B2.11,830
-RUPTL-JAMALI-P-0017,Banten,PLTB,100.0,Banten,jamali,Planned,2028,2028,2028,PLN,Tabel B2.11,830
-RUPTL-JAMALI-P-0018,Banten,PLTB,100.0,Banten,jamali,Planned,2029,2029,2029,PLN,,831
-RUPTL-JAMALI-P-0019,Banten (Kuota) III,?,80.0,Banten,jamali,Planned,2030,2030,2027,IPP,,831
-RUPTL-JAMALI-P-0020,Banten (Kuota) IVC,PLTS,50.0,Banten,jamali,Planned,2030,2030,2029,IPP,,831
-RUPTL-JAMALI-P-0021,Banten (Kuota) Tersebar 2,PLTSA,40.0,Banten,jamali,Planned,2030,2030,2030,IPP,,831
-RUPTL-JAMALI-P-0022,Banten (Kuota) IVB,PLTS,50.0,Banten,jamali,Planned,2030,2030,2030,IPP,,831
-RUPTL-JAMALI-P-0023,Banten (Kuota) VII,PLTS,50.0,Banten,jamali,Planned,2030,2030,2030,IPP,,831
-RUPTL-JAMALI-P-0024,Rawadano (FTP2),PLTP,30.0,Banten,jamali,Proposed,2030,2030,2030,IPP,,831
-RUPTL-JAMALI-P-0025,Jawa-5,PLTGU,1000.0,Banten,jamali,Planned,2030,2030,2030,IPP,,831
-RUPTL-JAMALI-P-0026,Jawa-Bali-7,PLTGU,500.0,Banten,jamali,Planned,2030,2030,,SH-PLN,,831
-RUPTL-JAMALI-P-0027,Rawadano (FTP2),PLTP,80.0,Banten,jamali,Proposed,2032,2032,2032,IPP,,831
-RUPTL-JAMALI-P-0028,Jawa-Bali (Kuota) Tersebar,PLTP,35.0,Banten,jamali,Planned,2033,2033,2033,IPP,,831
-RUPTL-JAMALI-P-0029,Banten (Kuota) V,PLTS,45.0,Banten,jamali,Planned,2034,2034,2031,IPP,,831
-RUPTL-JAMALI-P-0030,Jawa-Bali (Kuota) Tersebar III,PLTB,300.0,Banten,jamali,Planned,2034,2034,2034,IPP,,831
-RUPTL-JAMALI-P-0031,Jawa-Bali (Kuota) Tersebar IVA,?,250.0,Banten,jamali,Planned,2034,2034,2034,SH-PLN,,831
-RUPTL-JAMALI-P-0032,BESS Smoothing Tersebar,?,100.0,Banten,jamali,Planned,2028,,2028,PLN,,831
-RUPTL-JAMALI-P-0033,BESS Smoothing Tersebar,?,100.0,Banten,jamali,Planned,2032,,2032,PLN,,831
-RUPTL-JAMALI-P-0034,Jawa-Bali (Kuota) Tersebar II,PLTB,300.0,Banten,jamali,Planned,2030,,2030,IPP,,831
-RUPTL-JAMALI-P-0035,Jawa-Bali (Kuota) Tersebar IIIA,?,300.0,Banten,jamali,Planned,2032,,2032,SH-PLN,,831
-RUPTL-JAMALI-P-0036,Banten (Kuota) Tersebar IX,PLTS,110.0,Banten,jamali,Planned,2033,,2033,IPP,,831
-RUPTL-JAMALI-P-0037,Banten (Kuota) Tersebar X,PLTS,150.0,Banten,jamali,Planned,2034,,2034,IPP,,831
-RUPTL-JAMALI-P-0038,Jawa-Bali (Kuota) Tersebar IV,PLTB,600.0,Banten,jamali,Planned,2034,,2034,IPP,,831
-RUPTL-JAMALI-P-0039,Lisdes,PLTS,0.2,Banten,jamali,Planned,2027,2027,2027,PLN,,831
-RUPTL-JAMALI-P-0040,Isolated Banten,?,0.2,Banten,jamali,Planned,2027,2027,2027,IPP,,831
-RUPTL-JAMALI-P-0041,Isolated Banten,PLTS,0.7,Banten,jamali,Planned,2027,2027,2027,IPP,,831
-RUPTL-JAMALI-P-0042,Muara Tawar Add-on Blok 4,PLTGU,250.0,Jawa Barat,jamali,Construction,2025,2025,2025,SH-PLN,Tabel B3.10,849
-RUPTL-JAMALI-P-0043,Pareang,PLTM,2.8,Jawa Barat,jamali,Planned,2025,2025,2025,IPP,Tabel B3.10,849
-RUPTL-JAMALI-P-0044,Saguling,PLTS,60.0,Jawa Barat,jamali,Planned,2025,2025,2025,SH-PLN,Tabel B3.10,849
-RUPTL-JAMALI-P-0045,Jawa Barat (Kuota) IV,PLTS,100.0,Jawa Barat,jamali,Planned,2025,2025,2025,IPP,Tabel B3.10,849
-RUPTL-JAMALI-P-0046,Gunung Salak Small Scale Binary,PLTP,15.0,Jawa Barat,jamali,Construction,2025,2025,2025,IPP,Tabel B3.10,849
-RUPTL-JAMALI-P-0047,Jayamukti,PLTM,2.3,Jawa Barat,jamali,Construction,2026,2026,2026,IPP,Tabel B3.10,849
-RUPTL-JAMALI-P-0048,Kertamukti,PLTM,6.3,Jawa Barat,jamali,Construction,2026,2026,2026,IPP,Tabel B3.10,849
-RUPTL-JAMALI-P-0049,Jawa-Bali (Kuota) Tersebar I,PLTB,150.0,Jawa Barat,jamali,Planned,2026,2026,2026,IPP,Tabel B3.10,849
-RUPTL-JAMALI-P-0050,Gunung Salak 7,PLTP,40.0,Jawa Barat,jamali,Proposed,2026,2026,2026,IPP,Tabel B3.10,849
-RUPTL-JAMALI-P-0051,Patuha (FTP2),PLTP,55.0,Jawa Barat,jamali,Construction,2026,2026,2026,IPP,Tabel B3.10,849
-RUPTL-JAMALI-P-0052,Wayang Windu (FTP2),PLTP,30.0,Jawa Barat,jamali,Proposed,2027,2027,2026,IPP,,850
-RUPTL-JAMALI-P-0053,Jawa Barat (Kuota) VA,?,100.0,Jawa Barat,jamali,Planned,2027,2027,2026,SH-PLN,,850
-RUPTL-JAMALI-P-0054,Jawa-Bali (Kuota) Tersebar,PLTM,74.7,Jawa Barat,jamali,Planned,2027,2027,2027,IPP,,850
-RUPTL-JAMALI-P-0055,Cilongsong,PLTM,2.4,Jawa Barat,jamali,Planned,2027,2027,2027,IPP,,850
-RUPTL-JAMALI-P-0056,Talaga 2,PLTM,2.0,Jawa Barat,jamali,Planned,2027,2027,2027,IPP,,850
-RUPTL-JAMALI-P-0057,Jawa-Bali (Kuota) Tersebar,PLTP,5.0,Jawa Barat,jamali,Planned,2027,2027,2027,IPP,,850
-RUPTL-JAMALI-P-0058,Pasirhanjuang,PLTM,4.4,Jawa Barat,jamali,Planned,2027,2027,2027,IPP,,850
-RUPTL-JAMALI-P-0059,Cihaur,PLTM,3.0,Jawa Barat,jamali,Planned,2027,2027,2027,IPP,,850
-RUPTL-JAMALI-P-0060,Cibuni (FTP2),PLTP,10.0,Jawa Barat,jamali,Proposed,2028,2028,2028,IPP,,850
-RUPTL-JAMALI-P-0061,Jawa Barat (Kuota) VII,PLTS,40.0,Jawa Barat,jamali,Planned,2028,2028,2028,IPP,,850
-RUPTL-JAMALI-P-0062,Upper Cisokan Pump Storage (FTP2),?,260.0,Jawa Barat,jamali,Construction,2028,2028,2028,PLN,,850
-RUPTL-JAMALI-P-0063,Upper Cisokan Pump Storage (FTP2),?,260.0,Jawa Barat,jamali,Construction,2028,2028,2028,PLN,,850
-RUPTL-JAMALI-P-0064,Upper Cisokan Pump Storage (FTP2),?,260.0,Jawa Barat,jamali,Construction,2028,2028,2028,PLN,,850
-RUPTL-JAMALI-P-0065,Upper Cisokan Pump Storage (FTP2),?,260.0,Jawa Barat,jamali,Construction,2028,2028,2028,PLN,,850
-RUPTL-JAMALI-P-0066,Jawa Barat (Kuota) Tersebar,PLTSA,90.0,Jawa Barat,jamali,Planned,2028,2028,2028,IPP,,850
-RUPTL-JAMALI-P-0067,Wayang Windu,PLTP,30.0,Jawa Barat,jamali,Planned,2028,2028,2028,IPP,,850
-RUPTL-JAMALI-P-0068,Caringin,PLTM,6.5,Jawa Barat,jamali,Planned,2028,2028,2028,IPP,,850
-RUPTL-JAMALI-P-0069,Cipanas,PLTM,3.0,Jawa Barat,jamali,Planned,2028,2028,2028,IPP,,850
-RUPTL-JAMALI-P-0070,Sadawarna,PLTM,2.0,Jawa Barat,jamali,Planned,2028,2028,2028,IPP,,850
-RUPTL-JAMALI-P-0071,Jawa-Bali (Kuota) Tersebar,PLTM,6.4,Jawa Barat,jamali,Planned,2028,2028,2028,IPP,,850
-RUPTL-JAMALI-P-0072,Jawa Barat (Kuota) VB,?,80.0,Jawa Barat,jamali,Planned,2028,2028,2028,IPP,,850
-RUPTL-JAMALI-P-0073,Jawa-4,PLTGU,1000.0,Jawa Barat,jamali,Planned,2029,2029,2029,IPP,,850
-RUPTL-JAMALI-P-0074,Jawa-Bali (Kuota) Tersebar,PLTA,50.0,Jawa Barat,jamali,Planned,2029,2029,2029,IPP,,850
-RUPTL-JAMALI-P-0075,Jawa-Bali (Kuota) Tersebar,PLTP,25.0,Jawa Barat,jamali,Planned,2029,2029,2029,IPP,,850
-RUPTL-JAMALI-P-0076,Jawa-Bali-5,PLTG,300.0,Jawa Barat,jamali,Planned,2029,2029,2029,SH-PLN,,850
-RUPTL-JAMALI-P-0077,Jawa Barat (Kuota) VIA,PLTS,100.0,Jawa Barat,jamali,Planned,2030,2030,2028,SH-PLN,,850
-RUPTL-JAMALI-P-0078,Jawa Barat (Kuota) IIA,PLTS,60.0,Jawa Barat,jamali,Planned,2030,2030,2029,IPP,,850
-RUPTL-JAMALI-P-0079,Jawa Barat (Kuota) VIII,PLTS,40.0,Jawa Barat,jamali,Planned,2030,2030,2029,IPP,,850
-RUPTL-JAMALI-P-0080,Jawa Barat (Kuota) IIIB,PLTS,40.0,Jawa Barat,jamali,Planned,2030,2030,2030,IPP,,850
-RUPTL-JAMALI-P-0081,Jawa-Bali (Kuota) Tersebar,PLTP,25.0,Jawa Barat,jamali,Planned,2030,2030,2030,IPP,,850
-RUPTL-JAMALI-P-0082,Leuwikeris,PLTM,7.4,Jawa Barat,jamali,Planned,2030,2030,2030,IPP,,850
-RUPTL-JAMALI-P-0083,Jawa-Bali (Kuota) Tersebar II,PLTB,75.0,Jawa Barat,jamali,Planned,2031,2031,2030,IPP,,850
-RUPTL-JAMALI-P-0084,Jawa Barat (Kuota) VIB,PLTS,40.0,Jawa Barat,jamali,Planned,2031,2031,2030,IPP,,851
-RUPTL-JAMALI-P-0085,Jawa-Bali (Kuota) Tersebar,PLTP,40.0,Jawa Barat,jamali,Planned,2031,2031,2031,IPP,,851
-RUPTL-JAMALI-P-0086,Jawa-Bali (Kuota) Tersebar,?,190.0,Jawa Barat,jamali,Planned,2031,2031,2031,IPP,,851
-RUPTL-JAMALI-P-0087,Jawa-Bali (Kuota) Tersebar,?,190.0,Jawa Barat,jamali,Planned,2031,2031,2031,IPP,,851
-RUPTL-JAMALI-P-0088,Jawa-Bali (Kuota) Tersebar,?,190.0,Jawa Barat,jamali,Planned,2031,2031,2031,IPP,,851
-RUPTL-JAMALI-P-0089,Jawa-Bali (Kuota) Tersebar,?,190.0,Jawa Barat,jamali,Planned,2031,2031,2031,IPP,,851
-RUPTL-JAMALI-P-0090,Jawa-Bali (Kuota) Tersebar III,PLTB,150.0,Jawa Barat,jamali,Planned,2032,2032,2027,IPP,,851
-RUPTL-JAMALI-P-0091,Gunung Salak 8,PLTP,63.0,Jawa Barat,jamali,Proposed,2032,2032,2032,IPP,,851
-RUPTL-JAMALI-P-0092,Tangkuban Perahu (FTP2),PLTP,20.0,Jawa Barat,jamali,Proposed,2032,2032,2032,SH-PLN,,851
-RUPTL-JAMALI-P-0093,Tangkuban Perahu (FTP2),PLTP,20.0,Jawa Barat,jamali,Proposed,2032,2032,2032,SH-PLN,,851
-RUPTL-JAMALI-P-0094,Patuha (FTP2),PLTP,55.0,Jawa Barat,jamali,Proposed,2032,2032,2032,IPP,,851
-RUPTL-JAMALI-P-0095,Jawa-Bali (Kuota) Tersebar,PLTP,25.0,Jawa Barat,jamali,Planned,2033,2033,2033,IPP,,851
-RUPTL-JAMALI-P-0096,Jawa-Bali (Kuota) Tersebar,PLTP,55.0,Jawa Barat,jamali,Planned,2033,2033,2033,IPP,,851
-RUPTL-JAMALI-P-0097,Jawa-Bali (Kuota) Tersebar,PLTP,55.0,Jawa Barat,jamali,Planned,2033,2033,2033,IPP,,851
-RUPTL-JAMALI-P-0098,Jawa-Bali (Kuota) Tersebar,PLTP,20.0,Jawa Barat,jamali,Planned,2033,2033,2033,IPP,,851
-RUPTL-JAMALI-P-0099,Jawa-Bali (Kuota) Tersebar,PLTP,55.0,Jawa Barat,jamali,Planned,2033,2033,2033,IPP,,851
-RUPTL-JAMALI-P-0100,Jawa-Bali (Kuota) Tersebar,PLTP,30.0,Jawa Barat,jamali,Planned,2033,2033,2033,IPP,,851
-RUPTL-JAMALI-P-0101,Patuha (FTP2),PLTP,55.0,Jawa Barat,jamali,Proposed,2033,2033,2033,IPP,,851
-RUPTL-JAMALI-P-0102,Wayang Windu,PLTP,120.0,Jawa Barat,jamali,Planned,2033,2033,2033,IPP,,851
-RUPTL-JAMALI-P-0103,Jawa Barat (Kuota) Tersebar IX,PLTS,190.0,Jawa Barat,jamali,Planned,2034,2034,2027,IPP,,851
-RUPTL-JAMALI-P-0104,BESS Smoothing Tersebar,?,150.0,Jawa Barat,jamali,Planned,2034,2034,2034,PLN,,851
-RUPTL-JAMALI-P-0105,Jawa-Bali (Kuota) Tersebar IVB,?,250.0,Jawa Barat,jamali,Planned,2034,2034,2034,SH-PLN,,851
-RUPTL-JAMALI-P-0106,Jawa-6,PLTGU,1000.0,Jawa Barat,jamali,Planned,2034,2034,,IPP,,851
-RUPTL-JAMALI-P-0107,BESS Smoothing Tersebar,?,100.0,Jawa Barat,jamali,Planned,2029,,2029,PLN,,851
-RUPTL-JAMALI-P-0108,Jawa Barat (Kuota) Tersebar X,PLTS,977.0,Jawa Barat,jamali,Planned,2031,,2031,IPP,,851
-RUPTL-JAMALI-P-0109,Jawa-Bali (Kuota) Tersebar IV,PLTB,200.0,Jawa Barat,jamali,Planned,2031,,2031,IPP,,851
-RUPTL-JAMALI-P-0110,Jawa-Bali (Kuota) Tersebar V,PLTB,200.0,Jawa Barat,jamali,Planned,2031,,2031,IPP,,852
-RUPTL-JAMALI-P-0111,Jawa Barat (Kuota) Tersebar XI,PLTS,977.0,Jawa Barat,jamali,Planned,2032,,2032,IPP,,852
-RUPTL-JAMALI-P-0112,BESS Jawa Bali (Kuota) Tersebar II,?,200.0,Jawa Barat,jamali,Planned,2032,,2032,SH-PLN,,852
-RUPTL-JAMALI-P-0113,BESS Jawa Bali (Kuota) Tersebar IIIB,?,100.0,Jawa Barat,jamali,Planned,2032,,2032,SH-PLN,,852
-RUPTL-JAMALI-P-0114,Jawa Barat (Kuota) Tersebar XII,PLTS,977.0,Jawa Barat,jamali,Planned,2033,,2033,IPP,,852
-RUPTL-JAMALI-P-0115,BESS Smoothing Tersebar,?,150.0,Jawa Barat,jamali,Planned,2033,,2033,PLN,,852
-RUPTL-JAMALI-P-0116,BESS Smoothing Tersebar,?,100.0,Jawa Barat,jamali,Planned,2034,,2034,PLN,,852
-RUPTL-JAMALI-P-0117,Harjosari,PLTM,9.9,Jawa Tengah,jamali,Construction,2025,2025,2025,IPP,Tabel B4.9,880
-RUPTL-JAMALI-P-0118,Banyubiru,PLTM,0.17,Jawa Tengah,jamali,Planned,2025,2025,2025,IPP,Tabel B4.9,880
-RUPTL-JAMALI-P-0119,Jawa Tengah (Kuota) II,PLTS,100.0,Jawa Tengah,jamali,Planned,2025,2025,2025,SH-PLN,Tabel B4.9,880
-RUPTL-JAMALI-P-0120,Jawa Tengah (Kuota) IV,PLTS,100.0,Jawa Tengah,jamali,Planned,2025,2025,2025,SH-PLN,Tabel B4.9,880
-RUPTL-JAMALI-P-0121,Gerak Serayu,PLTM,4.98,Jawa Tengah,jamali,Planned,2026,2026,2026,IPP,,881
-RUPTL-JAMALI-P-0122,Jatibarang,PLTM,1.5,Jawa Tengah,jamali,Planned,2026,2026,2026,IPP,,881
-RUPTL-JAMALI-P-0123,Dieng (FTP2),PLTP,55.0,Jawa Tengah,jamali,Construction,2027,2027,2027,IPP,,881
-RUPTL-JAMALI-P-0124,Jawa-Bali (Kuota) Tersebar,PLTM,149.0,Jawa Tengah,jamali,Planned,2027,2027,2027,IPP,,881
-RUPTL-JAMALI-P-0125,Jawa Tengah (Kuota) IIIB,PLTS,50.0,Jawa Tengah,jamali,Planned,2027,2027,2027,SH-PLN,,881
-RUPTL-JAMALI-P-0126,Dieng (FTP2),PLTP,35.0,Jawa Tengah,jamali,Construction,2028,2028,2028,IPP,,881
-RUPTL-JAMALI-P-0127,Jawa Tengah (Kuota) IIIA,PLTS,50.0,Jawa Tengah,jamali,Planned,2028,2028,2028,SH-PLN,,881
-RUPTL-JAMALI-P-0128,Jawa-Bali (Kuota) Tersebar,PLTM,0.7,Jawa Tengah,jamali,Planned,2028,2028,2028,IPP,,881
-RUPTL-JAMALI-P-0129,Jawa Tengah (Kuota) IIIC,?,90.0,Jawa Tengah,jamali,Planned,2030,2030,2027,IPP,,881
-RUPTL-JAMALI-P-0130,Dieng (FTP2),PLTP,55.0,Jawa Tengah,jamali,Construction,2030,2030,2030,IPP,,881
-RUPTL-JAMALI-P-0131,Dieng (FTP2),PLTP,55.0,Jawa Tengah,jamali,Construction,2030,2030,2030,IPP,,881
-RUPTL-JAMALI-P-0132,Jawa-Bali (Kuota) Tersebar,PLTM,5.0,Jawa Tengah,jamali,Planned,2030,2030,2030,IPP,,881
-RUPTL-JAMALI-P-0133,Jawa Tengah (Kuota) Tersebar,PLTSA,20.0,Jawa Tengah,jamali,Planned,2030,2030,2030,IPP,,881
-RUPTL-JAMALI-P-0134,Jawa Tengah (Kuota) Tersebar,PLTSA,5.0,Jawa Tengah,jamali,Planned,2030,2030,2030,IPP,,881
-RUPTL-JAMALI-P-0135,Jawa Tengah (Kuota) I,?,50.0,Jawa Tengah,jamali,Planned,2031,2031,2028,IPP,,881
-RUPTL-JAMALI-P-0136,Jawa-Bali (Kuota) Tersebar I,PLTB,60.0,Jawa Tengah,jamali,Planned,2031,2031,2029,IPP,,881
-RUPTL-JAMALI-P-0137,Jawa Tengah (Kuota) V,PLTS,40.0,Jawa Tengah,jamali,Planned,2031,2031,2030,IPP,,881
-RUPTL-JAMALI-P-0138,Baturaden (FTP2),PLTP,110.0,Jawa Tengah,jamali,Proposed,2031,2031,2031,IPP,,881
-RUPTL-JAMALI-P-0139,Baturaden (FTP2),PLTP,75.0,Jawa Tengah,jamali,Proposed,2031,2031,2031,IPP,,881
-RUPTL-JAMALI-P-0140,Ungaran (FTP2),PLTP,55.0,Jawa Tengah,jamali,Proposed,2031,2031,2031,SH-PLN,,881
-RUPTL-JAMALI-P-0141,Jawa-Bali (Kuota) Tersebar II,PLTB,50.0,Jawa Tengah,jamali,Planned,2032,2032,2028,IPP,,881
-RUPTL-JAMALI-P-0142,Jawa-Bali (Kuota) Tersebar III,PLTB,50.0,Jawa Tengah,jamali,Planned,2032,2032,2029,IPP,,881
-RUPTL-JAMALI-P-0143,Baturaden (FTP2),PLTP,35.0,Jawa Tengah,jamali,Proposed,2032,2032,2032,IPP,,881
-RUPTL-JAMALI-P-0144,Jawa-Bali (Kuota) Tersebar,PLTP,45.0,Jawa Tengah,jamali,Planned,2032,2032,2032,IPP,,881
-RUPTL-JAMALI-P-0145,Matenggeng PS,?,235.8,Jawa Tengah,jamali,Planned,2032,2032,2032,PLN,,881
-RUPTL-JAMALI-P-0146,Matenggeng PS,?,235.8,Jawa Tengah,jamali,Planned,2032,2032,2032,PLN,,881
-RUPTL-JAMALI-P-0147,Matenggeng PS,?,235.8,Jawa Tengah,jamali,Planned,2032,2032,2032,PLN,,881
-RUPTL-JAMALI-P-0148,Matenggeng PS,?,235.8,Jawa Tengah,jamali,Planned,2032,2032,2032,PLN,,881
-RUPTL-JAMALI-P-0149,Dieng (FTP2),PLTP,55.0,Jawa Tengah,jamali,Construction,2033,2033,2033,IPP,,881
-RUPTL-JAMALI-P-0150,Dieng (FTP2),PLTP,55.0,Jawa Tengah,jamali,Construction,2033,2033,2033,IPP,,881
-RUPTL-JAMALI-P-0151,Dieng (FTP2),PLTP,35.0,Jawa Tengah,jamali,Construction,2033,2033,2033,IPP,,881
-RUPTL-JAMALI-P-0152,Jawa-Bali (Kuota) Tersebar,PLTP,40.0,Jawa Tengah,jamali,Planned,2033,2033,2033,IPP,,881
-RUPTL-JAMALI-P-0153,Jawa-Bali (Kuota) Tersebar,PLTP,20.0,Jawa Tengah,jamali,Planned,2033,2033,2033,IPP,,881
-RUPTL-JAMALI-P-0154,Jawa-Bali (Kuota) Tersebar,PLTP,55.0,Jawa Tengah,jamali,Planned,2033,2033,2033,IPP,,881
-RUPTL-JAMALI-P-0155,Jawa-Bali (Kuota) Tersebar,PLTP,10.0,Jawa Tengah,jamali,Planned,2033,2033,2033,IPP,,881
-RUPTL-JAMALI-P-0156,Jawa Tengah (Kuota) Tersebar IX,PLTS,57.0,Jawa Tengah,jamali,Planned,2034,2034,2026,IPP,Tabel B4.10,882
-RUPTL-JAMALI-P-0157,Jawa Tengah (Kuota) VI,PLTS,50.0,Jawa Tengah,jamali,Planned,2034,2034,2034,IPP,Tabel B4.10,882
-RUPTL-JAMALI-P-0158,Jawa-Bali (Kuota) Tersebar IVC,?,250.0,Jawa Tengah,jamali,Planned,2034,2034,2034,SH-PLN,Tabel B4.10,882
-RUPTL-JAMALI-P-0159,BESS Smoothing Tersebar,?,250.0,Jawa Tengah,jamali,Planned,2030,,2030,PLN,Tabel B4.10,882
-RUPTL-JAMALI-P-0160,BESS Jawa- Bali (Kuota) Tersebar I,?,200.0,Jawa Tengah,jamali,Planned,2031,,2031,SH-PLN,Tabel B4.10,882
-RUPTL-JAMALI-P-0161,Jawa-Bali (Kuota) Tersebar IV,PLTB,100.0,Jawa Tengah,jamali,Planned,2031,,2031,IPP,Tabel B4.10,882
-RUPTL-JAMALI-P-0162,Jawa Tengah (Kuota) Tersebar X,PLTS,786.0,Jawa Tengah,jamali,Planned,2031,,2031,IPP,Tabel B4.10,882
-RUPTL-JAMALI-P-0163,BESS Jawa- Bali (Kuota) Tersebar IIIC,?,100.0,Jawa Tengah,jamali,Planned,2032,,2032,SH-PLN,Tabel B4.10,882
-RUPTL-JAMALI-P-0164,Jawa-Bali (Kuota) Tersebar V,PLTB,200.0,Jawa Tengah,jamali,Planned,2032,,2032,IPP,Tabel B4.10,882
-RUPTL-JAMALI-P-0165,Jawa-Bali (Kuota) Tersebar VI,PLTB,200.0,Jawa Tengah,jamali,Planned,2032,,2032,IPP,Tabel B4.10,882
-RUPTL-JAMALI-P-0166,Jawa-Bali (Kuota) Tersebar VII,PLTB,200.0,Jawa Tengah,jamali,Planned,2032,,2032,IPP,Tabel B4.10,882
-RUPTL-JAMALI-P-0167,Jawa Tengah (Kuota) Tersebar XI,PLTS,786.0,Jawa Tengah,jamali,Planned,2032,,2032,IPP,Tabel B4.10,882
-RUPTL-JAMALI-P-0168,Jawa Tengah (Kuota) VII,PLTS,65.0,Jawa Tengah,jamali,Planned,2033,,2033,IPP,Tabel B4.10,882
-RUPTL-JAMALI-P-0169,Jawa Tengah (Kuota) Tersebar XII,PLTS,786.0,Jawa Tengah,jamali,Planned,2033,,2033,IPP,Tabel B4.10,882
-RUPTL-JAMALI-P-0170,Jawa Tengah (Kuota) Tersebar XIII,PLTS,786.0,Jawa Tengah,jamali,Planned,2034,,2034,IPP,Tabel B4.10,882
-RUPTL-JAMALI-P-0171,Lisdes,PLTS,1.2,Jawa Tengah,jamali,Planned,2025,2025,2025,PLN,Tabel B4.10,882
-RUPTL-JAMALI-P-0172,Isolated Jateng,?,3.0,Jawa Tengah,jamali,Planned,2026,2026,2026,SH-PLN,Tabel B4.10,882
-RUPTL-JAMALI-P-0173,Isolated Jateng,PLTS,7.2,Jawa Tengah,jamali,Planned,2026,2026,2026,SH-PLN,Tabel B4.10,882
-RUPTL-JAMALI-P-0174,Isolated Jateng,PLTB,2.2,Jawa Tengah,jamali,Planned,2026,2026,2026,SH-PLN,Tabel B4.10,882
-RUPTL-JAMALI-P-0175,Isolated Jateng,PLTS,3.6,Jawa Tengah,jamali,Planned,2030,2030,2030,SH-PLN,Tabel B4.10,882
-RUPTL-JAMALI-P-0176,Isolated Jateng,?,1.0,Jawa Tengah,jamali,Planned,2030,2030,2030,SH-PLN,Tabel B4.10,882
-RUPTL-JAMALI-P-0177,Jawa-Bali (Kuota) Tersebar I,PLTB,50.0,Daerah Istimewa Yogyakarta,jamali,Planned,2033,2033,2028,IPP,Tabel B5.9,901
-RUPTL-JAMALI-P-0178,Jawa-Bali (Kuota) Tersebar II,PLTB,200.0,Daerah Istimewa Yogyakarta,jamali,Planned,2032,,2032,IPP,Tabel B5.9,901
-RUPTL-JAMALI-P-0179,Jawa-Bali (Kuota) Tersebar III,PLTB,100.0,Daerah Istimewa Yogyakarta,jamali,Planned,2033,,2033,IPP,Tabel B5.9,901
-RUPTL-JAMALI-P-0180,Jawa-Bali (Kuota) Tersebar IV,PLTB,100.0,Daerah Istimewa Yogyakarta,jamali,Planned,2033,,2033,IPP,Tabel B5.9,901
-RUPTL-JAMALI-P-0181,Jawa Timur (Kuota) IVD,?,50.0,Jawa Timur,jamali,Planned,2025,2025,2025,SH-PLN,Tabel B6.9,913
-RUPTL-JAMALI-P-0182,Karangkates,PLTS,100.0,Jawa Timur,jamali,Planned,2025,,2025,SH-PLN,Tabel B6.9,913
-RUPTL-JAMALI-P-0183,Jawa Timur (Kuota) IVD,PLTS,50.0,Jawa Timur,jamali,Planned,2025,,2025,SH-PLN,Tabel B6.9,913
-RUPTL-JAMALI-P-0184,Jawa Timur (Kuota) IIB,PLTS,50.0,Jawa Timur,jamali,Planned,2025,,2025,IPP,Tabel B6.9,913
-RUPTL-JAMALI-P-0185,Ijen (FTP2),PLTP,30.0,Jawa Timur,jamali,Construction,2025,,2025,IPP,Tabel B6.9,913
-RUPTL-JAMALI-P-0186,Jawa Timur (Kuota) IIA,PLTS,50.0,Jawa Timur,jamali,Planned,2025,,2025,IPP,Tabel B6.9,913
-RUPTL-JAMALI-P-0187,Jatimlerek,PLTM,1.73,Jawa Timur,jamali,Planned,2026,,2026,IPP,Tabel B6.9,913
-RUPTL-JAMALI-P-0188,Jawa-3,PLTGU,800.0,Jawa Timur,jamali,Planned,2027,,2027,SH-PLN,Tabel B6.9,913
-RUPTL-JAMALI-P-0189,Jawa Timur (Kuota) I,?,50.0,Jawa Timur,jamali,Planned,2027,,2027,SH-PLN,Tabel B6.9,913
-RUPTL-JAMALI-P-0190,Jawa Timur (Kuota) I,PLTS,50.0,Jawa Timur,jamali,Planned,2027,2027,2027,SH-PLN,,914
-RUPTL-JAMALI-P-0191,Jawa-Bali (Kuota) Tersebar,PLTM,7.4,Jawa Timur,jamali,Planned,2027,,2027,IPP,,914
-RUPTL-JAMALI-P-0192,Jawa-Bali (Kuota) Tersebar,PLTM,3.5,Jawa Timur,jamali,Planned,2027,,2027,IPP,,914
-RUPTL-JAMALI-P-0193,Jawa-Bali (Kuota) Tersebar,PLTM,4.6,Jawa Timur,jamali,Planned,2027,,2027,IPP,,914
-RUPTL-JAMALI-P-0194,Jawa-Bali (Kuota) Tersebar,PLTM,3.75,Jawa Timur,jamali,Planned,2027,,2027,IPP,,914
-RUPTL-JAMALI-P-0195,Jawa-Bali (Kuota) Tersebar,PLTM,3.5,Jawa Timur,jamali,Planned,2027,,2027,IPP,,914
-RUPTL-JAMALI-P-0196,Jawa-Bali (Kuota) Tersebar,PLTM,3.5,Jawa Timur,jamali,Planned,2027,,2027,IPP,,914
-RUPTL-JAMALI-P-0197,Jawa-Bali (Kuota) Tersebar,PLTM,3.26,Jawa Timur,jamali,Planned,2027,,2027,IPP,,914
-RUPTL-JAMALI-P-0198,Jawa-Bali (Kuota) Tersebar,PLTM,3.16,Jawa Timur,jamali,Planned,2027,,2027,IPP,,914
-RUPTL-JAMALI-P-0199,Jawa-Bali (Kuota) Tersebar,PLTM,3.1,Jawa Timur,jamali,Planned,2027,,2027,IPP,,914
-RUPTL-JAMALI-P-0200,Jawa-Bali (Kuota) Tersebar,PLTM,3.07,Jawa Timur,jamali,Planned,2027,,2027,IPP,,914
-RUPTL-JAMALI-P-0201,Jawa-Bali (Kuota) Tersebar,PLTM,2.18,Jawa Timur,jamali,Planned,2027,,2027,IPP,,914
-RUPTL-JAMALI-P-0202,Jawa-Bali (Kuota) Tersebar,PLTM,2.12,Jawa Timur,jamali,Planned,2027,,2027,IPP,,914
-RUPTL-JAMALI-P-0203,Jawa-Bali (Kuota) Tersebar,PLTM,1.41,Jawa Timur,jamali,Planned,2027,,2027,IPP,,914
-RUPTL-JAMALI-P-0204,Ijen (FTP2),PLTP,30.0,Jawa Timur,jamali,Proposed,2027,,2027,IPP,,914
-RUPTL-JAMALI-P-0205,Ijen (FTP2),PLTP,50.0,Jawa Timur,jamali,Proposed,2027,,2027,IPP,,914
-RUPTL-JAMALI-P-0206,Jawa-Bali (Kuota) Tersebar,PLTM,0.38,Jawa Timur,jamali,Planned,2027,,2027,IPP,,914
-RUPTL-JAMALI-P-0207,Jawa-Bali (Kuota) Tersebar,PLTM,0.56,Jawa Timur,jamali,Planned,2027,,2027,IPP,,914
-RUPTL-JAMALI-P-0208,Jawa-Bali (Kuota) Tersebar,PLTM,0.26,Jawa Timur,jamali,Planned,2027,,2027,IPP,,914
-RUPTL-JAMALI-P-0209,Jawa-Bali (Kuota) Tersebar,PLTM,0.38,Jawa Timur,jamali,Planned,2027,,2027,IPP,,914
-RUPTL-JAMALI-P-0210,Jawa Timur (Kuota) IVB,PLTS,50.0,Jawa Timur,jamali,Planned,2027,,2027,SH-PLN,,914
-RUPTL-JAMALI-P-0211,Jawa Timur (Kuota) V,?,100.0,Jawa Timur,jamali,Planned,2026,,2026,SH-PLN,,914
-RUPTL-JAMALI-P-0212,Jawa Timur (Kuota) IVA,?,100.0,Jawa Timur,jamali,Planned,2026,,2026,SH-PLN,,914
-RUPTL-JAMALI-P-0213,Madura,?,100.0,Jawa Timur,jamali,Planned,2028,,2028,SH-PLN,,914
-RUPTL-JAMALI-P-0214,Madura,?,100.0,Jawa Timur,jamali,Planned,2029,,2029,SH-PLN,,914
-RUPTL-JAMALI-P-0215,Jawa-Bali-4,PLTG,300.0,Jawa Timur,jamali,Planned,2029,,2029,SH-PLN,,914
-RUPTL-JAMALI-P-0216,Madura,?,100.0,Jawa Timur,jamali,Planned,2030,,2030,SH-PLN,,914
-RUPTL-JAMALI-P-0217,Madura,?,165.0,Jawa Timur,jamali,Planned,2030,,2030,SH-PLN,,915
-RUPTL-JAMALI-P-0218,Jawa-Bali (Kuota) Tersebar II,PLTB,80.0,Jawa Timur,jamali,Planned,2030,,2030,IPP,,915
-RUPTL-JAMALI-P-0219,Telaga Ngebel (FTP2),PLTP,55.0,Jawa Timur,jamali,Proposed,2031,,2031,IPP,,915
-RUPTL-JAMALI-P-0220,Telaga Ngebel (FTP2),PLTP,55.0,Jawa Timur,jamali,Proposed,2031,,2031,IPP,,915
-RUPTL-JAMALI-P-0221,Jawa-Bali (Kuota) Tersebar,PLTP,60.0,Jawa Timur,jamali,Planned,2032,,2032,IPP,,915
-RUPTL-JAMALI-P-0222,Jawa-Bali (Kuota) Tersebar I,PLTB,100.0,Jawa Timur,jamali,Planned,2027,,2027,IPP,,915
-RUPTL-JAMALI-P-0223,Grindulu,?,250.0,Jawa Timur,jamali,Planned,2033,,2033,SH-PLN,,915
-RUPTL-JAMALI-P-0224,Grindulu,?,250.0,Jawa Timur,jamali,Planned,2033,,2033,SH-PLN,,915
-RUPTL-JAMALI-P-0225,Grindulu,?,250.0,Jawa Timur,jamali,Planned,2033,,2033,SH-PLN,,915
-RUPTL-JAMALI-P-0226,Grindulu,?,250.0,Jawa Timur,jamali,Planned,2033,,2033,SH-PLN,,915
-RUPTL-JAMALI-P-0227,Jawa-Bali (Kuota) Tersebar,PLTP,60.0,Jawa Timur,jamali,Planned,2033,,2033,IPP,,915
-RUPTL-JAMALI-P-0228,Jawa-Bali (Kuota) Tersebar,PLTP,55.0,Jawa Timur,jamali,Planned,2033,,2033,IPP,,915
-RUPTL-JAMALI-P-0229,Jawa-Bali (Kuota) Tersebar,PLTP,55.0,Jawa Timur,jamali,Planned,2033,,2033,IPP,,915
-RUPTL-JAMALI-P-0230,Jawa-Bali (Kuota) Tersebar,PLTP,20.0,Jawa Timur,jamali,Planned,2033,,2033,IPP,,915
-RUPTL-JAMALI-P-0231,Jawa-Bali (Kuota) Tersebar,PLTP,20.0,Jawa Timur,jamali,Planned,2033,,2033,IPP,,915
-RUPTL-JAMALI-P-0232,Jawa Timur (Kuota) Tersebar XI,PLTS,66.0,Jawa Timur,jamali,Planned,2026,,2026,IPP,,915
-RUPTL-JAMALI-P-0233,Jawa Timur (Kuota) VIII,PLTS,50.0,Jawa Timur,jamali,Planned,2030,,2030,IPP,,915
-RUPTL-JAMALI-P-0234,Jawa-Bali (Kuota) Tersebar IVD,?,250.0,Jawa Timur,jamali,Planned,2034,,2034,SH-PLN,,915
-RUPTL-JAMALI-P-0235,BESS Smoothing Tersebar,?,250.0,Jawa Timur,jamali,Planned,2027,,2027,PLN,,915
-RUPTL-JAMALI-P-0236,Jawa Timur (Kuota) Tersebar XII,PLTS,525.0,Jawa Timur,jamali,Planned,2030,,2030,IPP,,915
-RUPTL-JAMALI-P-0237,Jawa Timur (Kuota) VII,PLTS,50.0,Jawa Timur,jamali,Planned,2030,,2030,IPP,,915
-RUPTL-JAMALI-P-0238,Jawa-Bali (Kuota) Tersebar IV,PLTB,200.0,Jawa Timur,jamali,Planned,2030,,2030,IPP,,915
-RUPTL-JAMALI-P-0239,Jawa-Bali (Kuota) Tersebar V,PLTB,200.0,Jawa Timur,jamali,Planned,2030,,2030,IPP,,915
-RUPTL-JAMALI-P-0240,Jawa-Bali (Kuota) Tersebar III,PLTB,200.0,Jawa Timur,jamali,Planned,2030,,2030,IPP,,915
-RUPTL-JAMALI-P-0241,Jawa Timur (Kuota) IX,PLTS,50.0,Jawa Timur,jamali,Planned,2031,,2031,IPP,,915
-RUPTL-JAMALI-P-0242,BESS Smoothing Tersebar,?,400.0,Jawa Timur,jamali,Planned,2031,,2031,PLN,,915
-RUPTL-JAMALI-P-0243,Jawa-Bali (Kuota) Tersebar VII,PLTB,100.0,Jawa Timur,jamali,Planned,2031,,2031,IPP,,916
-RUPTL-JAMALI-P-0244,Jawa-Bali (Kuota) Tersebar VI,PLTB,100.0,Jawa Timur,jamali,Planned,2031,,2031,IPP,,916
-RUPTL-JAMALI-P-0245,Jawa Timur (Kuota) X,PLTS,50.0,Jawa Timur,jamali,Planned,2032,,2032,IPP,,916
-RUPTL-JAMALI-P-0246,Jawa-Bali (Kuota) Tersebar VIII,PLTB,100.0,Jawa Timur,jamali,Planned,2032,,2032,IPP,,916
-RUPTL-JAMALI-P-0247,Jawa-Bali (Kuota) Tersebar X,PLTB,200.0,Jawa Timur,jamali,Planned,2033,,2033,IPP,,916
-RUPTL-JAMALI-P-0248,Jawa-Bali (Kuota) Tersebar XI,PLTB,200.0,Jawa Timur,jamali,Planned,2033,,2033,IPP,,916
-RUPTL-JAMALI-P-0249,Jawa-Bali (Kuota) Tersebar XII,PLTB,200.0,Jawa Timur,jamali,Planned,2033,,2033,IPP,,916
-RUPTL-JAMALI-P-0250,Jawa-Bali (Kuota) Tersebar IX,PLTB,200.0,Jawa Timur,jamali,Planned,2033,,2033,IPP,,916
-RUPTL-JAMALI-P-0251,Jawa Timur (Kuota) Tersebar XIII,PLTS,525.0,Jawa Timur,jamali,Planned,2033,,2033,IPP,,916
-RUPTL-JAMALI-P-0252,BESS Jawa- Bali (Kuota) Tersebar IIID,?,300.0,Jawa Timur,jamali,Planned,2033,,2033,SH-PLN,,916
-RUPTL-JAMALI-P-0253,Lisdes,PLTS,1.2,Jawa Timur,jamali,Planned,2025,,2025,PLN,,916
-RUPTL-JAMALI-P-0254,Lisdes,PLTS,4.0,Jawa Timur,jamali,Planned,2025,,2025,PLN,,916
-RUPTL-JAMALI-P-0255,Isolated Jatim,PLTS,0.8,Jawa Timur,jamali,Planned,2026,,2026,PLN,,916
-RUPTL-JAMALI-P-0256,Isolated Jatim,?,1.5,Jawa Timur,jamali,Planned,2027,,2027,PLN,,916
-RUPTL-JAMALI-P-0257,Isolated Jatim,PLTS,1.5,Jawa Timur,jamali,Planned,2027,,2027,PLN,,916
-RUPTL-JAMALI-P-0258,Lisdes,PLTS,4.88,Jawa Timur,jamali,Planned,2027,,2027,PLN,,916
-RUPTL-JAMALI-P-0259,Isolated Jatim,?,0.075,Jawa Timur,jamali,Planned,2027,,2027,PLN,,916
-RUPTL-JAMALI-P-0260,Isolated Jatim,?,3.0,Jawa Timur,jamali,Planned,2028,,2028,SH-PLN,,916
-RUPTL-JAMALI-P-0261,Isolated Jatim,?,3.0,Jawa Timur,jamali,Planned,2028,,2028,SH-PLN,,916
-RUPTL-JAMALI-P-0262,Isolated Jatim,?,3.0,Jawa Timur,jamali,Planned,2029,,2029,SH-PLN,,916
-RUPTL-JAMALI-P-0263,Isolated Jatim,PLTMG,7868.0,Jawa Timur,jamali,Planned,2032,,2032,SH-PLN,,916
-RUPTL-JAMALI-P-0264,Titab,PLTM,1.27,Bali,jamali,Construction,2025,2025,2025,IPP,Tabel B7.9,943
-RUPTL-JAMALI-P-0265,Bali Timur,PLTS,25.0,Bali,jamali,Construction,2025,2025,2025,IPP,Tabel B7.9,943
-RUPTL-JAMALI-P-0266,Bali Barat,PLTS,25.0,Bali,jamali,Planned,2025,2025,2025,IPP,Tabel B7.9,943
-RUPTL-JAMALI-P-0267,Bali,PLTMG,200.0,Bali,jamali,Planned,2026,2026,2026,SH-PLN,Tabel B7.9,943
-RUPTL-JAMALI-P-0268,Bali (Kuota) III,PLTS,50.0,Bali,jamali,Planned,2026,2026,2026,SH-PLN,Tabel B7.9,943
-RUPTL-JAMALI-P-0269,Jawa-Bali-2,PLTGU,450.0,Bali,jamali,Planned,2027,2027,2027,SH-PLN,Tabel B7.9,943
-RUPTL-JAMALI-P-0270,Jawa-Bali-3,PLTGU,450.0,Bali,jamali,Planned,2028,2028,2028,IPP,Tabel B7.9,943
-RUPTL-JAMALI-P-0271,Jawa-Bali-6,PLTGU,450.0,Bali,jamali,Planned,2029,2029,2029,IPP,Tabel B7.9,943
-RUPTL-JAMALI-P-0272,Bedugul,PLTP,5.0,Bali,jamali,Proposed,2028,2028,2028,IPP,Tabel B7.9,943
-RUPTL-JAMALI-P-0273,Bedugul,PLTP,60.0,Bali,jamali,Proposed,2030,2030,2030,IPP,Tabel B7.9,943
-RUPTL-JAMALI-P-0274,Bedugul,PLTP,55.0,Bali,jamali,Planned,2033,2033,2033,IPP,Tabel B7.9,943
-RUPTL-JAMALI-P-0275,Bedugul,PLTP,55.0,Bali,jamali,Planned,2033,2033,2033,IPP,Tabel B7.9,943
-RUPTL-JAMALI-P-0276,Bali (Kuota) V,PLTS,25.0,Bali,jamali,Planned,2034,2034,2034,IPP,,944
-RUPTL-JAMALI-P-0277,Bali (Kuota) IX,?,100.0,Bali,jamali,Planned,2033,,2033,SH-PLN,,944
-RUPTL-JAMALI-P-0278,Bali (Kuota) VI,PLTS,25.0,Bali,jamali,Planned,2034,,2034,IPP,,944
-RUPTL-JAMALI-P-0279,Isolated Bali,PLTB,10.0,Bali,jamali,Planned,2026,2026,2026,SH-PLN,,944
-RUPTL-JAMALI-P-0280,Isolated Bali,?,7.5,Bali,jamali,Planned,2026,2026,2026,SH-PLN,,944
-RUPTL-JAMALI-P-0281,Isolated Bali,PLTS,4.5,Bali,jamali,Planned,2026,2026,2026,SH-PLN,,944
-RUPTL-JAMALI-P-0282,Isolated Bali,?,3.5,Bali,jamali,Planned,2028,2028,2028,PLN,,944
+id,name,type,capacity_mw,province,region_key,status,target_cod_year,cod_re_base,cod_ared,developer,source_table,source_page,lat,lon,coord_source,coord_confidence
+RUPTL-JAMALI-P-0001,Sunter Jawa-Bali (Kuota),PLTSA,35.0,Dki Jakarta,jamali,Planned,2028,2028 2029,2028 2029,IPP,Tabel B1.9,818,-6.189644,106.777948,province_centroid,low
+RUPTL-JAMALI-P-0002,Tersebar,PLTSA,150.0,Dki Jakarta,jamali,Planned,,,,IPP,Tabel B1.9,818,-6.021344,106.702155,province_centroid,low
+RUPTL-JAMALI-P-0003,Jawa-9,PLTU,1000.0,Banten,jamali,Construction,2025,2025,2025,IPP,Tabel B2.11,830,-6.257013,106.036013,province_centroid,low
+RUPTL-JAMALI-P-0004,Jawa-10,PLTU,1000.0,Banten,jamali,Construction,2025,2025,2025,IPP,Tabel B2.11,830,-6.359439,106.223833,province_centroid,low
+RUPTL-JAMALI-P-0005,Cikotok,PLTM,4.2,Banten,jamali,Construction,2026,2026,2026,IPP,Tabel B2.11,830,-6.433912,106.323098,province_centroid,low
+RUPTL-JAMALI-P-0006,Banten (Kuota) II,PLTS,50.0,Banten,jamali,Planned,2026,2026,2026,IPP,Tabel B2.11,830,-6.321409,105.941339,province_centroid,low
+RUPTL-JAMALI-P-0007,Cikamunding,PLTM,6.0,Banten,jamali,Planned,2027,2027,2027,IPP,Tabel B2.11,830,-6.349233,106.375033,province_centroid,low
+RUPTL-JAMALI-P-0008,Nagajaya,PLTM,6.0,Banten,jamali,Planned,2027,2027,2027,IPP,Tabel B2.11,830,-6.524413,106.041711,province_centroid,low
+RUPTL-JAMALI-P-0009,Bulakan,PLTM,3.0,Banten,jamali,Planned,2027,2027,2027,IPP,Tabel B2.11,830,-6.371990,106.164468,province_centroid,low
+RUPTL-JAMALI-P-0010,Jawa-Bali (Kuota) Tersebar,PLTM,4.4,Banten,jamali,Planned,2027,2027,2027,IPP,Tabel B2.11,830,-6.259233,106.018163,province_centroid,low
+RUPTL-JAMALI-P-0011,Banten (Kuota) Tersebar 1,PLTSA,40.0,Banten,jamali,Planned,2028,2028,2028,IPP,Tabel B2.11,830,-6.432688,106.291178,province_centroid,low
+RUPTL-JAMALI-P-0012,Banten (Kuota) IVA,PLTS,50.0,Banten,jamali,Planned,2028,2028,2028,IPP,Tabel B2.11,830,-6.460209,106.164764,province_centroid,low
+RUPTL-JAMALI-P-0013,Banten (Kuota) VI,PLTS,40.0,Banten,jamali,Planned,2028,2028,2028,IPP,Tabel B2.11,830,-6.400198,106.073630,province_centroid,low
+RUPTL-JAMALI-P-0014,Cibareno 1,PLTM,5.0,Banten,jamali,Planned,2028,2028,2028,IPP,Tabel B2.11,830,-6.621698,106.247498,province_centroid,low
+RUPTL-JAMALI-P-0015,Jawa-Bali (Kuota) Tersebar,PLTM,6.0,Banten,jamali,Planned,2028,2028,2028,IPP,Tabel B2.11,830,-6.379035,106.252385,province_centroid,low
+RUPTL-JAMALI-P-0016,Karian,PLTM,1.8,Banten,jamali,Planned,2028,2028,2028,IPP,Tabel B2.11,830,-6.215347,106.332501,province_centroid,low
+RUPTL-JAMALI-P-0017,Banten,PLTB,100.0,Banten,jamali,Planned,2028,2028,2028,PLN,Tabel B2.11,830,-6.502693,106.183226,province_centroid,low
+RUPTL-JAMALI-P-0018,Banten,PLTB,100.0,Banten,jamali,Planned,2029,2029,2029,PLN,,831,-6.380403,106.068304,province_centroid,low
+RUPTL-JAMALI-P-0019,Banten (Kuota) III,?,80.0,Banten,jamali,Planned,2030,2030,2027,IPP,,831,-6.315436,106.373479,province_centroid,low
+RUPTL-JAMALI-P-0020,Banten (Kuota) IVC,PLTS,50.0,Banten,jamali,Planned,2030,2030,2029,IPP,,831,-6.499552,106.103399,province_centroid,low
+RUPTL-JAMALI-P-0021,Banten (Kuota) Tersebar 2,PLTSA,40.0,Banten,jamali,Planned,2030,2030,2030,IPP,,831,-6.508116,106.174957,province_centroid,low
+RUPTL-JAMALI-P-0022,Banten (Kuota) IVB,PLTS,50.0,Banten,jamali,Planned,2030,2030,2030,IPP,,831,-6.527128,106.228789,province_centroid,low
+RUPTL-JAMALI-P-0023,Banten (Kuota) VII,PLTS,50.0,Banten,jamali,Planned,2030,2030,2030,IPP,,831,-6.456051,106.334604,province_centroid,low
+RUPTL-JAMALI-P-0024,Rawadano (FTP2),PLTP,30.0,Banten,jamali,Proposed,2030,2030,2030,IPP,,831,-6.621409,106.175204,province_centroid,low
+RUPTL-JAMALI-P-0025,Jawa-5,PLTGU,1000.0,Banten,jamali,Planned,2030,2030,2030,IPP,,831,-6.583778,106.077280,province_centroid,low
+RUPTL-JAMALI-P-0026,Jawa-Bali-7,PLTGU,500.0,Banten,jamali,Planned,2030,2030,,SH-PLN,,831,-6.477613,106.018011,province_centroid,low
+RUPTL-JAMALI-P-0027,Rawadano (FTP2),PLTP,80.0,Banten,jamali,Proposed,2032,2032,2032,IPP,,831,-6.556560,106.081136,province_centroid,low
+RUPTL-JAMALI-P-0028,Jawa-Bali (Kuota) Tersebar,PLTP,35.0,Banten,jamali,Planned,2033,2033,2033,IPP,,831,-6.571949,106.342364,province_centroid,low
+RUPTL-JAMALI-P-0029,Banten (Kuota) V,PLTS,45.0,Banten,jamali,Planned,2034,2034,2031,IPP,,831,-6.236132,106.048412,province_centroid,low
+RUPTL-JAMALI-P-0030,Jawa-Bali (Kuota) Tersebar III,PLTB,300.0,Banten,jamali,Planned,2034,2034,2034,IPP,,831,-6.268134,106.314767,province_centroid,low
+RUPTL-JAMALI-P-0031,Jawa-Bali (Kuota) Tersebar IVA,?,250.0,Banten,jamali,Planned,2034,2034,2034,SH-PLN,,831,-6.460450,106.215324,province_centroid,low
+RUPTL-JAMALI-P-0032,BESS Smoothing Tersebar,?,100.0,Banten,jamali,Planned,2028,,2028,PLN,,831,-6.448923,106.083501,province_centroid,low
+RUPTL-JAMALI-P-0033,BESS Smoothing Tersebar,?,100.0,Banten,jamali,Planned,2032,,2032,PLN,,831,-6.190892,106.056626,province_centroid,low
+RUPTL-JAMALI-P-0034,Jawa-Bali (Kuota) Tersebar II,PLTB,300.0,Banten,jamali,Planned,2030,,2030,IPP,,831,-6.310123,105.939559,province_centroid,low
+RUPTL-JAMALI-P-0035,Jawa-Bali (Kuota) Tersebar IIIA,?,300.0,Banten,jamali,Planned,2032,,2032,SH-PLN,,831,-6.425980,105.979968,province_centroid,low
+RUPTL-JAMALI-P-0036,Banten (Kuota) Tersebar IX,PLTS,110.0,Banten,jamali,Planned,2033,,2033,IPP,,831,-6.305188,106.290065,province_centroid,low
+RUPTL-JAMALI-P-0037,Banten (Kuota) Tersebar X,PLTS,150.0,Banten,jamali,Planned,2034,,2034,IPP,,831,-6.621540,106.302382,province_centroid,low
+RUPTL-JAMALI-P-0038,Jawa-Bali (Kuota) Tersebar IV,PLTB,600.0,Banten,jamali,Planned,2034,,2034,IPP,,831,-6.514962,106.341189,province_centroid,low
+RUPTL-JAMALI-P-0039,Lisdes,PLTS,0.2,Banten,jamali,Planned,2027,2027,2027,PLN,,831,-6.561110,106.340336,province_centroid,low
+RUPTL-JAMALI-P-0040,Isolated Banten,?,0.2,Banten,jamali,Planned,2027,2027,2027,IPP,,831,-6.449246,106.246419,province_centroid,low
+RUPTL-JAMALI-P-0041,Isolated Banten,PLTS,0.7,Banten,jamali,Planned,2027,2027,2027,IPP,,831,-6.446222,106.059492,province_centroid,low
+RUPTL-JAMALI-P-0042,Muara Tawar Add-on Blok 4,PLTGU,250.0,Jawa Barat,jamali,Construction,2025,2025,2025,SH-PLN,Tabel B3.10,849,-7.134255,107.823045,province_centroid,low
+RUPTL-JAMALI-P-0043,Pareang,PLTM,2.8,Jawa Barat,jamali,Planned,2025,2025,2025,IPP,Tabel B3.10,849,-6.824378,107.488156,province_centroid,low
+RUPTL-JAMALI-P-0044,Saguling,PLTS,60.0,Jawa Barat,jamali,Planned,2025,2025,2025,SH-PLN,Tabel B3.10,849,-6.864614,107.350105,gazetteer_generator:GEN-JMB-0068,high
+RUPTL-JAMALI-P-0045,Jawa Barat (Kuota) IV,PLTS,100.0,Jawa Barat,jamali,Planned,2025,2025,2025,IPP,Tabel B3.10,849,-6.742434,107.632716,province_centroid,low
+RUPTL-JAMALI-P-0046,Gunung Salak Small Scale Binary,PLTP,15.0,Jawa Barat,jamali,Construction,2025,2025,2025,IPP,Tabel B3.10,849,-6.873577,107.700583,province_centroid,low
+RUPTL-JAMALI-P-0047,Jayamukti,PLTM,2.3,Jawa Barat,jamali,Construction,2026,2026,2026,IPP,Tabel B3.10,849,-7.039032,107.769310,province_centroid,low
+RUPTL-JAMALI-P-0048,Kertamukti,PLTM,6.3,Jawa Barat,jamali,Construction,2026,2026,2026,IPP,Tabel B3.10,849,-6.860586,107.545473,province_centroid,low
+RUPTL-JAMALI-P-0049,Jawa-Bali (Kuota) Tersebar I,PLTB,150.0,Jawa Barat,jamali,Planned,2026,2026,2026,IPP,Tabel B3.10,849,-6.874883,107.446174,province_centroid,low
+RUPTL-JAMALI-P-0050,Gunung Salak 7,PLTP,40.0,Jawa Barat,jamali,Proposed,2026,2026,2026,IPP,Tabel B3.10,849,-6.741674,106.646661,gazetteer_generator:GEN-JMB-0096,high
+RUPTL-JAMALI-P-0051,Patuha (FTP2),PLTP,55.0,Jawa Barat,jamali,Construction,2026,2026,2026,IPP,Tabel B3.10,849,-7.184003,107.422562,gazetteer_generator:GEN-JMB-0094,high
+RUPTL-JAMALI-P-0052,Wayang Windu (FTP2),PLTP,30.0,Jawa Barat,jamali,Proposed,2027,2027,2026,IPP,,850,-7.197972,107.625978,gazetteer_generator:GEN-JMB-0025,high
+RUPTL-JAMALI-P-0053,Jawa Barat (Kuota) VA,?,100.0,Jawa Barat,jamali,Planned,2027,2027,2026,SH-PLN,,850,-6.867405,107.443053,province_centroid,low
+RUPTL-JAMALI-P-0054,Jawa-Bali (Kuota) Tersebar,PLTM,74.7,Jawa Barat,jamali,Planned,2027,2027,2027,IPP,,850,-7.131127,107.497593,province_centroid,low
+RUPTL-JAMALI-P-0055,Cilongsong,PLTM,2.4,Jawa Barat,jamali,Planned,2027,2027,2027,IPP,,850,-6.753651,107.826276,province_centroid,low
+RUPTL-JAMALI-P-0056,Talaga 2,PLTM,2.0,Jawa Barat,jamali,Planned,2027,2027,2027,IPP,,850,-7.005634,107.489400,province_centroid,low
+RUPTL-JAMALI-P-0057,Jawa-Bali (Kuota) Tersebar,PLTP,5.0,Jawa Barat,jamali,Planned,2027,2027,2027,IPP,,850,-6.797902,107.802240,province_centroid,low
+RUPTL-JAMALI-P-0058,Pasirhanjuang,PLTM,4.4,Jawa Barat,jamali,Planned,2027,2027,2027,IPP,,850,-7.010610,107.650346,province_centroid,low
+RUPTL-JAMALI-P-0059,Cihaur,PLTM,3.0,Jawa Barat,jamali,Planned,2027,2027,2027,IPP,,850,-6.944578,107.550360,province_centroid,low
+RUPTL-JAMALI-P-0060,Cibuni (FTP2),PLTP,10.0,Jawa Barat,jamali,Proposed,2028,2028,2028,IPP,,850,-6.761067,107.760890,province_centroid,low
+RUPTL-JAMALI-P-0061,Jawa Barat (Kuota) VII,PLTS,40.0,Jawa Barat,jamali,Planned,2028,2028,2028,IPP,,850,-6.802335,107.844256,province_centroid,low
+RUPTL-JAMALI-P-0062,Upper Cisokan Pump Storage (FTP2),?,260.0,Jawa Barat,jamali,Construction,2028,2028,2028,PLN,,850,-6.825519,107.723636,province_centroid,low
+RUPTL-JAMALI-P-0063,Upper Cisokan Pump Storage (FTP2),?,260.0,Jawa Barat,jamali,Construction,2028,2028,2028,PLN,,850,-6.882010,107.574293,province_centroid,low
+RUPTL-JAMALI-P-0064,Upper Cisokan Pump Storage (FTP2),?,260.0,Jawa Barat,jamali,Construction,2028,2028,2028,PLN,,850,-6.968704,107.602583,province_centroid,low
+RUPTL-JAMALI-P-0065,Upper Cisokan Pump Storage (FTP2),?,260.0,Jawa Barat,jamali,Construction,2028,2028,2028,PLN,,850,-7.101778,107.447549,province_centroid,low
+RUPTL-JAMALI-P-0066,Jawa Barat (Kuota) Tersebar,PLTSA,90.0,Jawa Barat,jamali,Planned,2028,2028,2028,IPP,,850,-6.749781,107.561825,province_centroid,low
+RUPTL-JAMALI-P-0067,Wayang Windu,PLTP,30.0,Jawa Barat,jamali,Planned,2028,2028,2028,IPP,,850,-7.197972,107.625978,gazetteer_generator:GEN-JMB-0025,high
+RUPTL-JAMALI-P-0068,Caringin,PLTM,6.5,Jawa Barat,jamali,Planned,2028,2028,2028,IPP,,850,-7.036880,107.401174,province_centroid,low
+RUPTL-JAMALI-P-0069,Cipanas,PLTM,3.0,Jawa Barat,jamali,Planned,2028,2028,2028,IPP,,850,-6.837409,107.396913,province_centroid,low
+RUPTL-JAMALI-P-0070,Sadawarna,PLTM,2.0,Jawa Barat,jamali,Planned,2028,2028,2028,IPP,,850,-6.986952,107.776293,province_centroid,low
+RUPTL-JAMALI-P-0071,Jawa-Bali (Kuota) Tersebar,PLTM,6.4,Jawa Barat,jamali,Planned,2028,2028,2028,IPP,,850,-7.107215,107.801010,province_centroid,low
+RUPTL-JAMALI-P-0072,Jawa Barat (Kuota) VB,?,80.0,Jawa Barat,jamali,Planned,2028,2028,2028,IPP,,850,-6.771872,107.417732,province_centroid,low
+RUPTL-JAMALI-P-0073,Jawa-4,PLTGU,1000.0,Jawa Barat,jamali,Planned,2029,2029,2029,IPP,,850,-7.026804,107.613258,province_centroid,low
+RUPTL-JAMALI-P-0074,Jawa-Bali (Kuota) Tersebar,PLTA,50.0,Jawa Barat,jamali,Planned,2029,2029,2029,IPP,,850,-6.840908,107.744545,province_centroid,low
+RUPTL-JAMALI-P-0075,Jawa-Bali (Kuota) Tersebar,PLTP,25.0,Jawa Barat,jamali,Planned,2029,2029,2029,IPP,,850,-7.012569,107.646415,province_centroid,low
+RUPTL-JAMALI-P-0076,Jawa-Bali-5,PLTG,300.0,Jawa Barat,jamali,Planned,2029,2029,2029,SH-PLN,,850,-6.751218,107.791462,province_centroid,low
+RUPTL-JAMALI-P-0077,Jawa Barat (Kuota) VIA,PLTS,100.0,Jawa Barat,jamali,Planned,2030,2030,2028,SH-PLN,,850,-7.123058,107.812261,province_centroid,low
+RUPTL-JAMALI-P-0078,Jawa Barat (Kuota) IIA,PLTS,60.0,Jawa Barat,jamali,Planned,2030,2030,2029,IPP,,850,-6.988059,107.666519,province_centroid,low
+RUPTL-JAMALI-P-0079,Jawa Barat (Kuota) VIII,PLTS,40.0,Jawa Barat,jamali,Planned,2030,2030,2029,IPP,,850,-6.991331,107.743748,province_centroid,low
+RUPTL-JAMALI-P-0080,Jawa Barat (Kuota) IIIB,PLTS,40.0,Jawa Barat,jamali,Planned,2030,2030,2030,IPP,,850,-6.905332,107.742414,province_centroid,low
+RUPTL-JAMALI-P-0081,Jawa-Bali (Kuota) Tersebar,PLTP,25.0,Jawa Barat,jamali,Planned,2030,2030,2030,IPP,,850,-6.869130,107.829919,province_centroid,low
+RUPTL-JAMALI-P-0082,Leuwikeris,PLTM,7.4,Jawa Barat,jamali,Planned,2030,2030,2030,IPP,,850,-7.111861,107.740387,province_centroid,low
+RUPTL-JAMALI-P-0083,Jawa-Bali (Kuota) Tersebar II,PLTB,75.0,Jawa Barat,jamali,Planned,2031,2031,2030,IPP,,850,-6.729533,107.815375,province_centroid,low
+RUPTL-JAMALI-P-0084,Jawa Barat (Kuota) VIB,PLTS,40.0,Jawa Barat,jamali,Planned,2031,2031,2030,IPP,,851,-6.731945,107.804453,province_centroid,low
+RUPTL-JAMALI-P-0085,Jawa-Bali (Kuota) Tersebar,PLTP,40.0,Jawa Barat,jamali,Planned,2031,2031,2031,IPP,,851,-6.780478,107.661852,province_centroid,low
+RUPTL-JAMALI-P-0086,Jawa-Bali (Kuota) Tersebar,?,190.0,Jawa Barat,jamali,Planned,2031,2031,2031,IPP,,851,-6.759315,107.795387,province_centroid,low
+RUPTL-JAMALI-P-0087,Jawa-Bali (Kuota) Tersebar,?,190.0,Jawa Barat,jamali,Planned,2031,2031,2031,IPP,,851,-6.849520,107.476856,province_centroid,low
+RUPTL-JAMALI-P-0088,Jawa-Bali (Kuota) Tersebar,?,190.0,Jawa Barat,jamali,Planned,2031,2031,2031,IPP,,851,-6.949864,107.833582,province_centroid,low
+RUPTL-JAMALI-P-0089,Jawa-Bali (Kuota) Tersebar,?,190.0,Jawa Barat,jamali,Planned,2031,2031,2031,IPP,,851,-7.098926,107.614653,province_centroid,low
+RUPTL-JAMALI-P-0090,Jawa-Bali (Kuota) Tersebar III,PLTB,150.0,Jawa Barat,jamali,Planned,2032,2032,2027,IPP,,851,-7.050599,107.612371,province_centroid,low
+RUPTL-JAMALI-P-0091,Gunung Salak 8,PLTP,63.0,Jawa Barat,jamali,Proposed,2032,2032,2032,IPP,,851,-6.741674,106.646661,gazetteer_generator:GEN-JMB-0096,high
+RUPTL-JAMALI-P-0092,Tangkuban Perahu (FTP2),PLTP,20.0,Jawa Barat,jamali,Proposed,2032,2032,2032,SH-PLN,,851,-6.958641,107.445796,province_centroid,low
+RUPTL-JAMALI-P-0093,Tangkuban Perahu (FTP2),PLTP,20.0,Jawa Barat,jamali,Proposed,2032,2032,2032,SH-PLN,,851,-6.994376,107.696246,province_centroid,low
+RUPTL-JAMALI-P-0094,Patuha (FTP2),PLTP,55.0,Jawa Barat,jamali,Proposed,2032,2032,2032,IPP,,851,-7.184003,107.422562,gazetteer_generator:GEN-JMB-0094,high
+RUPTL-JAMALI-P-0095,Jawa-Bali (Kuota) Tersebar,PLTP,25.0,Jawa Barat,jamali,Planned,2033,2033,2033,IPP,,851,-6.701008,107.481434,province_centroid,low
+RUPTL-JAMALI-P-0096,Jawa-Bali (Kuota) Tersebar,PLTP,55.0,Jawa Barat,jamali,Planned,2033,2033,2033,IPP,,851,-7.103813,107.840249,province_centroid,low
+RUPTL-JAMALI-P-0097,Jawa-Bali (Kuota) Tersebar,PLTP,55.0,Jawa Barat,jamali,Planned,2033,2033,2033,IPP,,851,-6.912026,107.422227,province_centroid,low
+RUPTL-JAMALI-P-0098,Jawa-Bali (Kuota) Tersebar,PLTP,20.0,Jawa Barat,jamali,Planned,2033,2033,2033,IPP,,851,-6.926371,107.705023,province_centroid,low
+RUPTL-JAMALI-P-0099,Jawa-Bali (Kuota) Tersebar,PLTP,55.0,Jawa Barat,jamali,Planned,2033,2033,2033,IPP,,851,-6.744750,107.678513,province_centroid,low
+RUPTL-JAMALI-P-0100,Jawa-Bali (Kuota) Tersebar,PLTP,30.0,Jawa Barat,jamali,Planned,2033,2033,2033,IPP,,851,-6.840571,107.682520,province_centroid,low
+RUPTL-JAMALI-P-0101,Patuha (FTP2),PLTP,55.0,Jawa Barat,jamali,Proposed,2033,2033,2033,IPP,,851,-7.184003,107.422562,gazetteer_generator:GEN-JMB-0094,high
+RUPTL-JAMALI-P-0102,Wayang Windu,PLTP,120.0,Jawa Barat,jamali,Planned,2033,2033,2033,IPP,,851,-7.197972,107.625978,gazetteer_generator:GEN-JMB-0025,high
+RUPTL-JAMALI-P-0103,Jawa Barat (Kuota) Tersebar IX,PLTS,190.0,Jawa Barat,jamali,Planned,2034,2034,2027,IPP,,851,-6.814789,107.467536,province_centroid,low
+RUPTL-JAMALI-P-0104,BESS Smoothing Tersebar,?,150.0,Jawa Barat,jamali,Planned,2034,2034,2034,PLN,,851,-6.925842,107.407759,province_centroid,low
+RUPTL-JAMALI-P-0105,Jawa-Bali (Kuota) Tersebar IVB,?,250.0,Jawa Barat,jamali,Planned,2034,2034,2034,SH-PLN,,851,-6.778766,107.504212,province_centroid,low
+RUPTL-JAMALI-P-0106,Jawa-6,PLTGU,1000.0,Jawa Barat,jamali,Planned,2034,2034,,IPP,,851,-6.829443,107.632922,province_centroid,low
+RUPTL-JAMALI-P-0107,BESS Smoothing Tersebar,?,100.0,Jawa Barat,jamali,Planned,2029,,2029,PLN,,851,-7.126289,107.599813,province_centroid,low
+RUPTL-JAMALI-P-0108,Jawa Barat (Kuota) Tersebar X,PLTS,977.0,Jawa Barat,jamali,Planned,2031,,2031,IPP,,851,-6.963411,107.555700,province_centroid,low
+RUPTL-JAMALI-P-0109,Jawa-Bali (Kuota) Tersebar IV,PLTB,200.0,Jawa Barat,jamali,Planned,2031,,2031,IPP,,851,-6.753795,107.481984,province_centroid,low
+RUPTL-JAMALI-P-0110,Jawa-Bali (Kuota) Tersebar V,PLTB,200.0,Jawa Barat,jamali,Planned,2031,,2031,IPP,,852,-7.032461,107.635019,province_centroid,low
+RUPTL-JAMALI-P-0111,Jawa Barat (Kuota) Tersebar XI,PLTS,977.0,Jawa Barat,jamali,Planned,2032,,2032,IPP,,852,-6.699709,107.457453,province_centroid,low
+RUPTL-JAMALI-P-0112,BESS Jawa Bali (Kuota) Tersebar II,?,200.0,Jawa Barat,jamali,Planned,2032,,2032,SH-PLN,,852,-7.010006,107.656154,province_centroid,low
+RUPTL-JAMALI-P-0113,BESS Jawa Bali (Kuota) Tersebar IIIB,?,100.0,Jawa Barat,jamali,Planned,2032,,2032,SH-PLN,,852,-6.921580,107.545088,province_centroid,low
+RUPTL-JAMALI-P-0114,Jawa Barat (Kuota) Tersebar XII,PLTS,977.0,Jawa Barat,jamali,Planned,2033,,2033,IPP,,852,-6.824020,107.420825,province_centroid,low
+RUPTL-JAMALI-P-0115,BESS Smoothing Tersebar,?,150.0,Jawa Barat,jamali,Planned,2033,,2033,PLN,,852,-7.006108,107.540332,province_centroid,low
+RUPTL-JAMALI-P-0116,BESS Smoothing Tersebar,?,100.0,Jawa Barat,jamali,Planned,2034,,2034,PLN,,852,-6.862311,107.591545,province_centroid,low
+RUPTL-JAMALI-P-0117,Harjosari,PLTM,9.9,Jawa Tengah,jamali,Construction,2025,2025,2025,IPP,Tabel B4.9,880,-7.136700,110.504787,province_centroid,low
+RUPTL-JAMALI-P-0118,Banyubiru,PLTM,0.17,Jawa Tengah,jamali,Planned,2025,2025,2025,IPP,Tabel B4.9,880,-6.964049,110.503845,province_centroid,low
+RUPTL-JAMALI-P-0119,Jawa Tengah (Kuota) II,PLTS,100.0,Jawa Tengah,jamali,Planned,2025,2025,2025,SH-PLN,Tabel B4.9,880,-7.032658,110.511598,province_centroid,low
+RUPTL-JAMALI-P-0120,Jawa Tengah (Kuota) IV,PLTS,100.0,Jawa Tengah,jamali,Planned,2025,2025,2025,SH-PLN,Tabel B4.9,880,-7.140171,110.555100,province_centroid,low
+RUPTL-JAMALI-P-0121,Gerak Serayu,PLTM,4.98,Jawa Tengah,jamali,Planned,2026,2026,2026,IPP,,881,-7.250776,110.219716,province_centroid,low
+RUPTL-JAMALI-P-0122,Jatibarang,PLTM,1.5,Jawa Tengah,jamali,Planned,2026,2026,2026,IPP,,881,-6.979864,110.348646,province_centroid,low
+RUPTL-JAMALI-P-0123,Dieng (FTP2),PLTP,55.0,Jawa Tengah,jamali,Construction,2027,2027,2027,IPP,,881,-7.226286,109.897291,gazetteer_generator:GEN-JMB-0119,high
+RUPTL-JAMALI-P-0124,Jawa-Bali (Kuota) Tersebar,PLTM,149.0,Jawa Tengah,jamali,Planned,2027,2027,2027,IPP,,881,-7.116451,110.634555,province_centroid,low
+RUPTL-JAMALI-P-0125,Jawa Tengah (Kuota) IIIB,PLTS,50.0,Jawa Tengah,jamali,Planned,2027,2027,2027,SH-PLN,,881,-7.186978,110.450501,province_centroid,low
+RUPTL-JAMALI-P-0126,Dieng (FTP2),PLTP,35.0,Jawa Tengah,jamali,Construction,2028,2028,2028,IPP,,881,-7.226286,109.897291,gazetteer_generator:GEN-JMB-0119,high
+RUPTL-JAMALI-P-0127,Jawa Tengah (Kuota) IIIA,PLTS,50.0,Jawa Tengah,jamali,Planned,2028,2028,2028,SH-PLN,,881,-7.149608,110.447195,province_centroid,low
+RUPTL-JAMALI-P-0128,Jawa-Bali (Kuota) Tersebar,PLTM,0.7,Jawa Tengah,jamali,Planned,2028,2028,2028,IPP,,881,-7.008327,110.372283,province_centroid,low
+RUPTL-JAMALI-P-0129,Jawa Tengah (Kuota) IIIC,?,90.0,Jawa Tengah,jamali,Planned,2030,2030,2027,IPP,,881,-7.333298,110.496628,province_centroid,low
+RUPTL-JAMALI-P-0130,Dieng (FTP2),PLTP,55.0,Jawa Tengah,jamali,Construction,2030,2030,2030,IPP,,881,-7.226286,109.897291,gazetteer_generator:GEN-JMB-0119,high
+RUPTL-JAMALI-P-0131,Dieng (FTP2),PLTP,55.0,Jawa Tengah,jamali,Construction,2030,2030,2030,IPP,,881,-7.226286,109.897291,gazetteer_generator:GEN-JMB-0119,high
+RUPTL-JAMALI-P-0132,Jawa-Bali (Kuota) Tersebar,PLTM,5.0,Jawa Tengah,jamali,Planned,2030,2030,2030,IPP,,881,-7.025187,110.258165,province_centroid,low
+RUPTL-JAMALI-P-0133,Jawa Tengah (Kuota) Tersebar,PLTSA,20.0,Jawa Tengah,jamali,Planned,2030,2030,2030,IPP,,881,-7.095645,110.460055,province_centroid,low
+RUPTL-JAMALI-P-0134,Jawa Tengah (Kuota) Tersebar,PLTSA,5.0,Jawa Tengah,jamali,Planned,2030,2030,2030,IPP,,881,-7.319764,110.399433,province_centroid,low
+RUPTL-JAMALI-P-0135,Jawa Tengah (Kuota) I,?,50.0,Jawa Tengah,jamali,Planned,2031,2031,2028,IPP,,881,-7.209392,110.381266,province_centroid,low
+RUPTL-JAMALI-P-0136,Jawa-Bali (Kuota) Tersebar I,PLTB,60.0,Jawa Tengah,jamali,Planned,2031,2031,2029,IPP,,881,-7.059052,110.219819,province_centroid,low
+RUPTL-JAMALI-P-0137,Jawa Tengah (Kuota) V,PLTS,40.0,Jawa Tengah,jamali,Planned,2031,2031,2030,IPP,,881,-7.300814,110.328218,province_centroid,low
+RUPTL-JAMALI-P-0138,Baturaden (FTP2),PLTP,110.0,Jawa Tengah,jamali,Proposed,2031,2031,2031,IPP,,881,-7.356364,110.274063,province_centroid,low
+RUPTL-JAMALI-P-0139,Baturaden (FTP2),PLTP,75.0,Jawa Tengah,jamali,Proposed,2031,2031,2031,IPP,,881,-7.173376,110.414011,province_centroid,low
+RUPTL-JAMALI-P-0140,Ungaran (FTP2),PLTP,55.0,Jawa Tengah,jamali,Proposed,2031,2031,2031,SH-PLN,,881,-7.157363,110.409193,gazetteer_substation:GI-JMB-0349,medium
+RUPTL-JAMALI-P-0141,Jawa-Bali (Kuota) Tersebar II,PLTB,50.0,Jawa Tengah,jamali,Planned,2032,2032,2028,IPP,,881,-7.123572,110.443346,province_centroid,low
+RUPTL-JAMALI-P-0142,Jawa-Bali (Kuota) Tersebar III,PLTB,50.0,Jawa Tengah,jamali,Planned,2032,2032,2029,IPP,,881,-6.950368,110.432305,gazetteer_substation:GI-JMB-0345,medium
+RUPTL-JAMALI-P-0143,Baturaden (FTP2),PLTP,35.0,Jawa Tengah,jamali,Proposed,2032,2032,2032,IPP,,881,-7.244419,110.391789,province_centroid,low
+RUPTL-JAMALI-P-0144,Jawa-Bali (Kuota) Tersebar,PLTP,45.0,Jawa Tengah,jamali,Planned,2032,2032,2032,IPP,,881,-7.158591,110.373692,province_centroid,low
+RUPTL-JAMALI-P-0145,Matenggeng PS,?,235.8,Jawa Tengah,jamali,Planned,2032,2032,2032,PLN,,881,-7.220919,110.349195,province_centroid,low
+RUPTL-JAMALI-P-0146,Matenggeng PS,?,235.8,Jawa Tengah,jamali,Planned,2032,2032,2032,PLN,,881,-6.929160,110.372352,province_centroid,low
+RUPTL-JAMALI-P-0147,Matenggeng PS,?,235.8,Jawa Tengah,jamali,Planned,2032,2032,2032,PLN,,881,-7.354227,110.546453,province_centroid,low
+RUPTL-JAMALI-P-0148,Matenggeng PS,?,235.8,Jawa Tengah,jamali,Planned,2032,2032,2032,PLN,,881,-7.049092,110.196772,province_centroid,low
+RUPTL-JAMALI-P-0149,Dieng (FTP2),PLTP,55.0,Jawa Tengah,jamali,Construction,2033,2033,2033,IPP,,881,-7.226286,109.897291,gazetteer_generator:GEN-JMB-0119,high
+RUPTL-JAMALI-P-0150,Dieng (FTP2),PLTP,55.0,Jawa Tengah,jamali,Construction,2033,2033,2033,IPP,,881,-7.226286,109.897291,gazetteer_generator:GEN-JMB-0119,high
+RUPTL-JAMALI-P-0151,Dieng (FTP2),PLTP,35.0,Jawa Tengah,jamali,Construction,2033,2033,2033,IPP,,881,-7.226286,109.897291,gazetteer_generator:GEN-JMB-0119,high
+RUPTL-JAMALI-P-0152,Jawa-Bali (Kuota) Tersebar,PLTP,40.0,Jawa Tengah,jamali,Planned,2033,2033,2033,IPP,,881,-7.005124,110.293130,province_centroid,low
+RUPTL-JAMALI-P-0153,Jawa-Bali (Kuota) Tersebar,PLTP,20.0,Jawa Tengah,jamali,Planned,2033,2033,2033,IPP,,881,-7.259052,110.613076,province_centroid,low
+RUPTL-JAMALI-P-0154,Jawa-Bali (Kuota) Tersebar,PLTP,55.0,Jawa Tengah,jamali,Planned,2033,2033,2033,IPP,,881,-7.091473,110.535442,province_centroid,low
+RUPTL-JAMALI-P-0155,Jawa-Bali (Kuota) Tersebar,PLTP,10.0,Jawa Tengah,jamali,Planned,2033,2033,2033,IPP,,881,-7.141703,110.216801,province_centroid,low
+RUPTL-JAMALI-P-0156,Jawa Tengah (Kuota) Tersebar IX,PLTS,57.0,Jawa Tengah,jamali,Planned,2034,2034,2026,IPP,Tabel B4.10,882,-7.032947,110.256880,province_centroid,low
+RUPTL-JAMALI-P-0157,Jawa Tengah (Kuota) VI,PLTS,50.0,Jawa Tengah,jamali,Planned,2034,2034,2034,IPP,Tabel B4.10,882,-7.330095,110.640487,province_centroid,low
+RUPTL-JAMALI-P-0158,Jawa-Bali (Kuota) Tersebar IVC,?,250.0,Jawa Tengah,jamali,Planned,2034,2034,2034,SH-PLN,Tabel B4.10,882,-6.967898,110.253416,province_centroid,low
+RUPTL-JAMALI-P-0159,BESS Smoothing Tersebar,?,250.0,Jawa Tengah,jamali,Planned,2030,,2030,PLN,Tabel B4.10,882,-7.286827,110.357464,province_centroid,low
+RUPTL-JAMALI-P-0160,BESS Jawa- Bali (Kuota) Tersebar I,?,200.0,Jawa Tengah,jamali,Planned,2031,,2031,SH-PLN,Tabel B4.10,882,-7.008918,110.545704,province_centroid,low
+RUPTL-JAMALI-P-0161,Jawa-Bali (Kuota) Tersebar IV,PLTB,100.0,Jawa Tengah,jamali,Planned,2031,,2031,IPP,Tabel B4.10,882,-7.225833,110.617956,province_centroid,low
+RUPTL-JAMALI-P-0162,Jawa Tengah (Kuota) Tersebar X,PLTS,786.0,Jawa Tengah,jamali,Planned,2031,,2031,IPP,Tabel B4.10,882,-7.042040,110.630033,province_centroid,low
+RUPTL-JAMALI-P-0163,BESS Jawa- Bali (Kuota) Tersebar IIIC,?,100.0,Jawa Tengah,jamali,Planned,2032,,2032,SH-PLN,Tabel B4.10,882,-6.969905,110.634741,province_centroid,low
+RUPTL-JAMALI-P-0164,Jawa-Bali (Kuota) Tersebar V,PLTB,200.0,Jawa Tengah,jamali,Planned,2032,,2032,IPP,Tabel B4.10,882,-7.348831,110.237476,province_centroid,low
+RUPTL-JAMALI-P-0165,Jawa-Bali (Kuota) Tersebar VI,PLTB,200.0,Jawa Tengah,jamali,Planned,2032,,2032,IPP,Tabel B4.10,882,-7.366915,110.290806,province_centroid,low
+RUPTL-JAMALI-P-0166,Jawa-Bali (Kuota) Tersebar VII,PLTB,200.0,Jawa Tengah,jamali,Planned,2032,,2032,IPP,Tabel B4.10,882,-7.193590,110.319998,province_centroid,low
+RUPTL-JAMALI-P-0167,Jawa Tengah (Kuota) Tersebar XI,PLTS,786.0,Jawa Tengah,jamali,Planned,2032,,2032,IPP,Tabel B4.10,882,-7.226995,110.626651,province_centroid,low
+RUPTL-JAMALI-P-0168,Jawa Tengah (Kuota) VII,PLTS,65.0,Jawa Tengah,jamali,Planned,2033,,2033,IPP,Tabel B4.10,882,-6.999522,110.544116,province_centroid,low
+RUPTL-JAMALI-P-0169,Jawa Tengah (Kuota) Tersebar XII,PLTS,786.0,Jawa Tengah,jamali,Planned,2033,,2033,IPP,Tabel B4.10,882,-6.956557,110.376757,province_centroid,low
+RUPTL-JAMALI-P-0170,Jawa Tengah (Kuota) Tersebar XIII,PLTS,786.0,Jawa Tengah,jamali,Planned,2034,,2034,IPP,Tabel B4.10,882,-7.307694,110.547800,province_centroid,low
+RUPTL-JAMALI-P-0171,Lisdes,PLTS,1.2,Jawa Tengah,jamali,Planned,2025,2025,2025,PLN,Tabel B4.10,882,-7.145030,110.355010,province_centroid,low
+RUPTL-JAMALI-P-0172,Isolated Jateng,?,3.0,Jawa Tengah,jamali,Planned,2026,2026,2026,SH-PLN,Tabel B4.10,882,-7.133366,110.393384,province_centroid,low
+RUPTL-JAMALI-P-0173,Isolated Jateng,PLTS,7.2,Jawa Tengah,jamali,Planned,2026,2026,2026,SH-PLN,Tabel B4.10,882,-7.241594,110.329655,province_centroid,low
+RUPTL-JAMALI-P-0174,Isolated Jateng,PLTB,2.2,Jawa Tengah,jamali,Planned,2026,2026,2026,SH-PLN,Tabel B4.10,882,-7.362592,110.288751,province_centroid,low
+RUPTL-JAMALI-P-0175,Isolated Jateng,PLTS,3.6,Jawa Tengah,jamali,Planned,2030,2030,2030,SH-PLN,Tabel B4.10,882,-7.339167,110.373005,province_centroid,low
+RUPTL-JAMALI-P-0176,Isolated Jateng,?,1.0,Jawa Tengah,jamali,Planned,2030,2030,2030,SH-PLN,Tabel B4.10,882,-7.355574,110.624720,province_centroid,low
+RUPTL-JAMALI-P-0177,Jawa-Bali (Kuota) Tersebar I,PLTB,50.0,Daerah Istimewa Yogyakarta,jamali,Planned,2033,2033,2028,IPP,Tabel B5.9,901,-7.912096,110.637090,province_centroid,low
+RUPTL-JAMALI-P-0178,Jawa-Bali (Kuota) Tersebar II,PLTB,200.0,Daerah Istimewa Yogyakarta,jamali,Planned,2032,,2032,IPP,Tabel B5.9,901,-7.900501,110.421652,province_centroid,low
+RUPTL-JAMALI-P-0179,Jawa-Bali (Kuota) Tersebar III,PLTB,100.0,Daerah Istimewa Yogyakarta,jamali,Planned,2033,,2033,IPP,Tabel B5.9,901,-7.654023,110.255799,province_centroid,low
+RUPTL-JAMALI-P-0180,Jawa-Bali (Kuota) Tersebar IV,PLTB,100.0,Daerah Istimewa Yogyakarta,jamali,Planned,2033,,2033,IPP,Tabel B5.9,901,-7.818901,110.477979,province_centroid,low
+RUPTL-JAMALI-P-0181,Jawa Timur (Kuota) IVD,?,50.0,Jawa Timur,jamali,Planned,2025,2025,2025,SH-PLN,Tabel B6.9,913,-7.615398,112.731332,province_centroid,low
+RUPTL-JAMALI-P-0182,Karangkates,PLTS,100.0,Jawa Timur,jamali,Planned,2025,,2025,SH-PLN,Tabel B6.9,913,-8.161356,112.444183,gazetteer_substation:GI-JMB-0437,medium
+RUPTL-JAMALI-P-0183,Jawa Timur (Kuota) IVD,PLTS,50.0,Jawa Timur,jamali,Planned,2025,,2025,SH-PLN,Tabel B6.9,913,-7.579601,112.551347,province_centroid,low
+RUPTL-JAMALI-P-0184,Jawa Timur (Kuota) IIB,PLTS,50.0,Jawa Timur,jamali,Planned,2025,,2025,IPP,Tabel B6.9,913,-7.316538,112.969342,province_centroid,low
+RUPTL-JAMALI-P-0185,Ijen (FTP2),PLTP,30.0,Jawa Timur,jamali,Construction,2025,,2025,IPP,Tabel B6.9,913,-8.056624,114.167528,gazetteer_generator:GEN-JMB-0130,high
+RUPTL-JAMALI-P-0186,Jawa Timur (Kuota) IIA,PLTS,50.0,Jawa Timur,jamali,Planned,2025,,2025,IPP,Tabel B6.9,913,-7.751366,112.835779,province_centroid,low
+RUPTL-JAMALI-P-0187,Jatimlerek,PLTM,1.73,Jawa Timur,jamali,Planned,2026,,2026,IPP,Tabel B6.9,913,-7.627969,112.619242,province_centroid,low
+RUPTL-JAMALI-P-0188,Jawa-3,PLTGU,800.0,Jawa Timur,jamali,Planned,2027,,2027,SH-PLN,Tabel B6.9,913,-7.353407,112.741106,province_centroid,low
+RUPTL-JAMALI-P-0189,Jawa Timur (Kuota) I,?,50.0,Jawa Timur,jamali,Planned,2027,,2027,SH-PLN,Tabel B6.9,913,-7.387375,112.542274,province_centroid,low
+RUPTL-JAMALI-P-0190,Jawa Timur (Kuota) I,PLTS,50.0,Jawa Timur,jamali,Planned,2027,2027,2027,SH-PLN,,914,-7.353627,112.668702,province_centroid,low
+RUPTL-JAMALI-P-0191,Jawa-Bali (Kuota) Tersebar,PLTM,7.4,Jawa Timur,jamali,Planned,2027,,2027,IPP,,914,-7.472329,112.726122,province_centroid,low
+RUPTL-JAMALI-P-0192,Jawa-Bali (Kuota) Tersebar,PLTM,3.5,Jawa Timur,jamali,Planned,2027,,2027,IPP,,914,-7.598194,112.531256,province_centroid,low
+RUPTL-JAMALI-P-0193,Jawa-Bali (Kuota) Tersebar,PLTM,4.6,Jawa Timur,jamali,Planned,2027,,2027,IPP,,914,-7.512724,112.731160,province_centroid,low
+RUPTL-JAMALI-P-0194,Jawa-Bali (Kuota) Tersebar,PLTM,3.75,Jawa Timur,jamali,Planned,2027,,2027,IPP,,914,-7.461923,112.823517,province_centroid,low
+RUPTL-JAMALI-P-0195,Jawa-Bali (Kuota) Tersebar,PLTM,3.5,Jawa Timur,jamali,Planned,2027,,2027,IPP,,914,-7.532945,112.801358,province_centroid,low
+RUPTL-JAMALI-P-0196,Jawa-Bali (Kuota) Tersebar,PLTM,3.5,Jawa Timur,jamali,Planned,2027,,2027,IPP,,914,-7.492193,112.826926,province_centroid,low
+RUPTL-JAMALI-P-0197,Jawa-Bali (Kuota) Tersebar,PLTM,3.26,Jawa Timur,jamali,Planned,2027,,2027,IPP,,914,-7.634017,112.715310,province_centroid,low
+RUPTL-JAMALI-P-0198,Jawa-Bali (Kuota) Tersebar,PLTM,3.16,Jawa Timur,jamali,Planned,2027,,2027,IPP,,914,-7.408339,112.940865,province_centroid,low
+RUPTL-JAMALI-P-0199,Jawa-Bali (Kuota) Tersebar,PLTM,3.1,Jawa Timur,jamali,Planned,2027,,2027,IPP,,914,-7.374377,112.760716,province_centroid,low
+RUPTL-JAMALI-P-0200,Jawa-Bali (Kuota) Tersebar,PLTM,3.07,Jawa Timur,jamali,Planned,2027,,2027,IPP,,914,-7.613294,112.841594,province_centroid,low
+RUPTL-JAMALI-P-0201,Jawa-Bali (Kuota) Tersebar,PLTM,2.18,Jawa Timur,jamali,Planned,2027,,2027,IPP,,914,-7.681677,112.697550,province_centroid,low
+RUPTL-JAMALI-P-0202,Jawa-Bali (Kuota) Tersebar,PLTM,2.12,Jawa Timur,jamali,Planned,2027,,2027,IPP,,914,-7.618786,112.792415,province_centroid,low
+RUPTL-JAMALI-P-0203,Jawa-Bali (Kuota) Tersebar,PLTM,1.41,Jawa Timur,jamali,Planned,2027,,2027,IPP,,914,-7.379574,112.856007,province_centroid,low
+RUPTL-JAMALI-P-0204,Ijen (FTP2),PLTP,30.0,Jawa Timur,jamali,Proposed,2027,,2027,IPP,,914,-8.056624,114.167528,gazetteer_generator:GEN-JMB-0130,high
+RUPTL-JAMALI-P-0205,Ijen (FTP2),PLTP,50.0,Jawa Timur,jamali,Proposed,2027,,2027,IPP,,914,-8.056624,114.167528,gazetteer_generator:GEN-JMB-0130,high
+RUPTL-JAMALI-P-0206,Jawa-Bali (Kuota) Tersebar,PLTM,0.38,Jawa Timur,jamali,Planned,2027,,2027,IPP,,914,-7.681168,112.635215,province_centroid,low
+RUPTL-JAMALI-P-0207,Jawa-Bali (Kuota) Tersebar,PLTM,0.56,Jawa Timur,jamali,Planned,2027,,2027,IPP,,914,-7.322339,112.781693,province_centroid,low
+RUPTL-JAMALI-P-0208,Jawa-Bali (Kuota) Tersebar,PLTM,0.26,Jawa Timur,jamali,Planned,2027,,2027,IPP,,914,-7.568240,112.525943,province_centroid,low
+RUPTL-JAMALI-P-0209,Jawa-Bali (Kuota) Tersebar,PLTM,0.38,Jawa Timur,jamali,Planned,2027,,2027,IPP,,914,-7.713418,112.798361,province_centroid,low
+RUPTL-JAMALI-P-0210,Jawa Timur (Kuota) IVB,PLTS,50.0,Jawa Timur,jamali,Planned,2027,,2027,SH-PLN,,914,-7.565167,112.916170,province_centroid,low
+RUPTL-JAMALI-P-0211,Jawa Timur (Kuota) V,?,100.0,Jawa Timur,jamali,Planned,2026,,2026,SH-PLN,,914,-7.419432,112.769871,province_centroid,low
+RUPTL-JAMALI-P-0212,Jawa Timur (Kuota) IVA,?,100.0,Jawa Timur,jamali,Planned,2026,,2026,SH-PLN,,914,-7.706077,112.881212,province_centroid,low
+RUPTL-JAMALI-P-0213,Madura,?,100.0,Jawa Timur,jamali,Planned,2028,,2028,SH-PLN,,914,-7.584000,112.548020,province_centroid,low
+RUPTL-JAMALI-P-0214,Madura,?,100.0,Jawa Timur,jamali,Planned,2029,,2029,SH-PLN,,914,-7.455167,112.845546,province_centroid,low
+RUPTL-JAMALI-P-0215,Jawa-Bali-4,PLTG,300.0,Jawa Timur,jamali,Planned,2029,,2029,SH-PLN,,914,-7.423219,112.901976,province_centroid,low
+RUPTL-JAMALI-P-0216,Madura,?,100.0,Jawa Timur,jamali,Planned,2030,,2030,SH-PLN,,914,-7.403733,112.868269,province_centroid,low
+RUPTL-JAMALI-P-0217,Madura,?,165.0,Jawa Timur,jamali,Planned,2030,,2030,SH-PLN,,915,-7.645929,112.792855,province_centroid,low
+RUPTL-JAMALI-P-0218,Jawa-Bali (Kuota) Tersebar II,PLTB,80.0,Jawa Timur,jamali,Planned,2030,,2030,IPP,,915,-7.598214,112.875933,province_centroid,low
+RUPTL-JAMALI-P-0219,Telaga Ngebel (FTP2),PLTP,55.0,Jawa Timur,jamali,Proposed,2031,,2031,IPP,,915,-7.596221,112.702299,province_centroid,low
+RUPTL-JAMALI-P-0220,Telaga Ngebel (FTP2),PLTP,55.0,Jawa Timur,jamali,Proposed,2031,,2031,IPP,,915,-7.747311,112.615620,province_centroid,low
+RUPTL-JAMALI-P-0221,Jawa-Bali (Kuota) Tersebar,PLTP,60.0,Jawa Timur,jamali,Planned,2032,,2032,IPP,,915,-7.569504,112.776861,province_centroid,low
+RUPTL-JAMALI-P-0222,Jawa-Bali (Kuota) Tersebar I,PLTB,100.0,Jawa Timur,jamali,Planned,2027,,2027,IPP,,915,-7.482529,112.818981,province_centroid,low
+RUPTL-JAMALI-P-0223,Grindulu,?,250.0,Jawa Timur,jamali,Planned,2033,,2033,SH-PLN,,915,-7.510002,112.582311,province_centroid,low
+RUPTL-JAMALI-P-0224,Grindulu,?,250.0,Jawa Timur,jamali,Planned,2033,,2033,SH-PLN,,915,-7.661222,112.628796,province_centroid,low
+RUPTL-JAMALI-P-0225,Grindulu,?,250.0,Jawa Timur,jamali,Planned,2033,,2033,SH-PLN,,915,-7.374707,112.769458,province_centroid,low
+RUPTL-JAMALI-P-0226,Grindulu,?,250.0,Jawa Timur,jamali,Planned,2033,,2033,SH-PLN,,915,-7.579931,112.657038,province_centroid,low
+RUPTL-JAMALI-P-0227,Jawa-Bali (Kuota) Tersebar,PLTP,60.0,Jawa Timur,jamali,Planned,2033,,2033,IPP,,915,-7.433206,112.844701,province_centroid,low
+RUPTL-JAMALI-P-0228,Jawa-Bali (Kuota) Tersebar,PLTP,55.0,Jawa Timur,jamali,Planned,2033,,2033,IPP,,915,-7.333708,112.864840,province_centroid,low
+RUPTL-JAMALI-P-0229,Jawa-Bali (Kuota) Tersebar,PLTP,55.0,Jawa Timur,jamali,Planned,2033,,2033,IPP,,915,-7.385773,112.823682,province_centroid,low
+RUPTL-JAMALI-P-0230,Jawa-Bali (Kuota) Tersebar,PLTP,20.0,Jawa Timur,jamali,Planned,2033,,2033,IPP,,915,-7.510414,112.793219,province_centroid,low
+RUPTL-JAMALI-P-0231,Jawa-Bali (Kuota) Tersebar,PLTP,20.0,Jawa Timur,jamali,Planned,2033,,2033,IPP,,915,-7.387629,112.793460,province_centroid,low
+RUPTL-JAMALI-P-0232,Jawa Timur (Kuota) Tersebar XI,PLTS,66.0,Jawa Timur,jamali,Planned,2026,,2026,IPP,,915,-7.732285,112.535174,province_centroid,low
+RUPTL-JAMALI-P-0233,Jawa Timur (Kuota) VIII,PLTS,50.0,Jawa Timur,jamali,Planned,2030,,2030,IPP,,915,-7.752685,112.667444,province_centroid,low
+RUPTL-JAMALI-P-0234,Jawa-Bali (Kuota) Tersebar IVD,?,250.0,Jawa Timur,jamali,Planned,2034,,2034,SH-PLN,,915,-7.442313,112.557018,province_centroid,low
+RUPTL-JAMALI-P-0235,BESS Smoothing Tersebar,?,250.0,Jawa Timur,jamali,Planned,2027,,2027,PLN,,915,-7.385897,112.538178,province_centroid,low
+RUPTL-JAMALI-P-0236,Jawa Timur (Kuota) Tersebar XII,PLTS,525.0,Jawa Timur,jamali,Planned,2030,,2030,IPP,,915,-7.526697,112.660894,province_centroid,low
+RUPTL-JAMALI-P-0237,Jawa Timur (Kuota) VII,PLTS,50.0,Jawa Timur,jamali,Planned,2030,,2030,IPP,,915,-7.583072,112.593213,province_centroid,low
+RUPTL-JAMALI-P-0238,Jawa-Bali (Kuota) Tersebar IV,PLTB,200.0,Jawa Timur,jamali,Planned,2030,,2030,IPP,,915,-7.323474,112.535497,province_centroid,low
+RUPTL-JAMALI-P-0239,Jawa-Bali (Kuota) Tersebar V,PLTB,200.0,Jawa Timur,jamali,Planned,2030,,2030,IPP,,915,-7.464727,112.846763,province_centroid,low
+RUPTL-JAMALI-P-0240,Jawa-Bali (Kuota) Tersebar III,PLTB,200.0,Jawa Timur,jamali,Planned,2030,,2030,IPP,,915,-7.574453,112.664083,province_centroid,low
+RUPTL-JAMALI-P-0241,Jawa Timur (Kuota) IX,PLTS,50.0,Jawa Timur,jamali,Planned,2031,,2031,IPP,,915,-7.473580,112.689645,province_centroid,low
+RUPTL-JAMALI-P-0242,BESS Smoothing Tersebar,?,400.0,Jawa Timur,jamali,Planned,2031,,2031,PLN,,915,-7.312153,112.702911,province_centroid,low
+RUPTL-JAMALI-P-0243,Jawa-Bali (Kuota) Tersebar VII,PLTB,100.0,Jawa Timur,jamali,Planned,2031,,2031,IPP,,916,-7.729625,112.906327,province_centroid,low
+RUPTL-JAMALI-P-0244,Jawa-Bali (Kuota) Tersebar VI,PLTB,100.0,Jawa Timur,jamali,Planned,2031,,2031,IPP,,916,-7.686000,112.809688,province_centroid,low
+RUPTL-JAMALI-P-0245,Jawa Timur (Kuota) X,PLTS,50.0,Jawa Timur,jamali,Planned,2032,,2032,IPP,,916,-7.455077,112.545024,province_centroid,low
+RUPTL-JAMALI-P-0246,Jawa-Bali (Kuota) Tersebar VIII,PLTB,100.0,Jawa Timur,jamali,Planned,2032,,2032,IPP,,916,-7.574721,112.933621,province_centroid,low
+RUPTL-JAMALI-P-0247,Jawa-Bali (Kuota) Tersebar X,PLTB,200.0,Jawa Timur,jamali,Planned,2033,,2033,IPP,,916,-7.658129,112.901138,province_centroid,low
+RUPTL-JAMALI-P-0248,Jawa-Bali (Kuota) Tersebar XI,PLTB,200.0,Jawa Timur,jamali,Planned,2033,,2033,IPP,,916,-7.357125,112.746446,province_centroid,low
+RUPTL-JAMALI-P-0249,Jawa-Bali (Kuota) Tersebar XII,PLTB,200.0,Jawa Timur,jamali,Planned,2033,,2033,IPP,,916,-7.617796,112.967740,province_centroid,low
+RUPTL-JAMALI-P-0250,Jawa-Bali (Kuota) Tersebar IX,PLTB,200.0,Jawa Timur,jamali,Planned,2033,,2033,IPP,,916,-7.619968,112.717633,province_centroid,low
+RUPTL-JAMALI-P-0251,Jawa Timur (Kuota) Tersebar XIII,PLTS,525.0,Jawa Timur,jamali,Planned,2033,,2033,IPP,,916,-7.378336,112.670757,province_centroid,low
+RUPTL-JAMALI-P-0252,BESS Jawa- Bali (Kuota) Tersebar IIID,?,300.0,Jawa Timur,jamali,Planned,2033,,2033,SH-PLN,,916,-7.648726,112.534624,province_centroid,low
+RUPTL-JAMALI-P-0253,Lisdes,PLTS,1.2,Jawa Timur,jamali,Planned,2025,,2025,PLN,,916,-7.728615,112.616053,province_centroid,low
+RUPTL-JAMALI-P-0254,Lisdes,PLTS,4.0,Jawa Timur,jamali,Planned,2025,,2025,PLN,,916,-7.665195,112.610382,province_centroid,low
+RUPTL-JAMALI-P-0255,Isolated Jatim,PLTS,0.8,Jawa Timur,jamali,Planned,2026,,2026,PLN,,916,-7.501046,112.851416,province_centroid,low
+RUPTL-JAMALI-P-0256,Isolated Jatim,?,1.5,Jawa Timur,jamali,Planned,2027,,2027,PLN,,916,-7.697520,112.761327,province_centroid,low
+RUPTL-JAMALI-P-0257,Isolated Jatim,PLTS,1.5,Jawa Timur,jamali,Planned,2027,,2027,PLN,,916,-7.644912,112.880511,province_centroid,low
+RUPTL-JAMALI-P-0258,Lisdes,PLTS,4.88,Jawa Timur,jamali,Planned,2027,,2027,PLN,,916,-7.633254,112.626081,province_centroid,low
+RUPTL-JAMALI-P-0259,Isolated Jatim,?,0.075,Jawa Timur,jamali,Planned,2027,,2027,PLN,,916,-7.620965,112.826163,province_centroid,low
+RUPTL-JAMALI-P-0260,Isolated Jatim,?,3.0,Jawa Timur,jamali,Planned,2028,,2028,SH-PLN,,916,-7.417281,112.922101,province_centroid,low
+RUPTL-JAMALI-P-0261,Isolated Jatim,?,3.0,Jawa Timur,jamali,Planned,2028,,2028,SH-PLN,,916,-7.751565,112.666214,province_centroid,low
+RUPTL-JAMALI-P-0262,Isolated Jatim,?,3.0,Jawa Timur,jamali,Planned,2029,,2029,SH-PLN,,916,-7.458555,112.769781,province_centroid,low
+RUPTL-JAMALI-P-0263,Isolated Jatim,PLTMG,7868.0,Jawa Timur,jamali,Planned,2032,,2032,SH-PLN,,916,-7.728856,112.653849,province_centroid,low
+RUPTL-JAMALI-P-0264,Titab,PLTM,1.27,Bali,jamali,Construction,2025,2025,2025,IPP,Tabel B7.9,943,-8.333254,115.161867,province_centroid,low
+RUPTL-JAMALI-P-0265,Bali Timur,PLTS,25.0,Bali,jamali,Construction,2025,2025,2025,IPP,Tabel B7.9,943,-8.197692,115.048313,province_centroid,low
+RUPTL-JAMALI-P-0266,Bali Barat,PLTS,25.0,Bali,jamali,Planned,2025,2025,2025,IPP,Tabel B7.9,943,-8.512627,115.228050,province_centroid,low
+RUPTL-JAMALI-P-0267,Bali,PLTMG,200.0,Bali,jamali,Planned,2026,2026,2026,SH-PLN,Tabel B7.9,943,-8.534320,115.363819,province_centroid,low
+RUPTL-JAMALI-P-0268,Bali (Kuota) III,PLTS,50.0,Bali,jamali,Planned,2026,2026,2026,SH-PLN,Tabel B7.9,943,-8.620477,114.971235,province_centroid,low
+RUPTL-JAMALI-P-0269,Jawa-Bali-2,PLTGU,450.0,Bali,jamali,Planned,2027,2027,2027,SH-PLN,Tabel B7.9,943,-8.427109,115.000014,province_centroid,low
+RUPTL-JAMALI-P-0270,Jawa-Bali-3,PLTGU,450.0,Bali,jamali,Planned,2028,2028,2028,IPP,Tabel B7.9,943,-8.252946,115.381264,province_centroid,low
+RUPTL-JAMALI-P-0271,Jawa-Bali-6,PLTGU,450.0,Bali,jamali,Planned,2029,2029,2029,IPP,Tabel B7.9,943,-8.376481,115.184989,province_centroid,low
+RUPTL-JAMALI-P-0272,Bedugul,PLTP,5.0,Bali,jamali,Proposed,2028,2028,2028,IPP,Tabel B7.9,943,-8.317294,114.989697,province_centroid,low
+RUPTL-JAMALI-P-0273,Bedugul,PLTP,60.0,Bali,jamali,Proposed,2030,2030,2030,IPP,Tabel B7.9,943,-8.255895,115.257771,province_centroid,low
+RUPTL-JAMALI-P-0274,Bedugul,PLTP,55.0,Bali,jamali,Planned,2033,2033,2033,IPP,Tabel B7.9,943,-8.574006,115.404386,province_centroid,low
+RUPTL-JAMALI-P-0275,Bedugul,PLTP,55.0,Bali,jamali,Planned,2033,2033,2033,IPP,Tabel B7.9,943,-8.348547,115.197100,province_centroid,low
+RUPTL-JAMALI-P-0276,Bali (Kuota) V,PLTS,25.0,Bali,jamali,Planned,2034,2034,2034,IPP,,944,-8.350328,115.284556,province_centroid,low
+RUPTL-JAMALI-P-0277,Bali (Kuota) IX,?,100.0,Bali,jamali,Planned,2033,,2033,SH-PLN,,944,-8.570721,115.139536,province_centroid,low
+RUPTL-JAMALI-P-0278,Bali (Kuota) VI,PLTS,25.0,Bali,jamali,Planned,2034,,2034,IPP,,944,-8.225659,114.984597,province_centroid,low
+RUPTL-JAMALI-P-0279,Isolated Bali,PLTB,10.0,Bali,jamali,Planned,2026,2026,2026,SH-PLN,,944,-8.231673,115.187175,province_centroid,low
+RUPTL-JAMALI-P-0280,Isolated Bali,?,7.5,Bali,jamali,Planned,2026,2026,2026,SH-PLN,,944,-8.585114,115.283738,province_centroid,low
+RUPTL-JAMALI-P-0281,Isolated Bali,PLTS,4.5,Bali,jamali,Planned,2026,2026,2026,SH-PLN,,944,-8.244251,115.222194,province_centroid,low
+RUPTL-JAMALI-P-0282,Isolated Bali,?,3.5,Bali,jamali,Planned,2028,2028,2028,PLN,,944,-8.411067,114.975311,province_centroid,low

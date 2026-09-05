@@ -1,0 +1,4 @@
+severity,ruptl_id,from_bus,to_bus,voltage_kv,length_km,straight_km,ratio,action_type,target_cod_year,province,source_page,issues
+3,RUPTL-MALUKU-T-0012,GI Jailolo,GI Malifut,150,160.0,38.85,4.12,New,2025,Maluku Utara,1099,"RATIO_TOO_HIGH,LENGTH_OUTLIER"
+3,RUPTL-MALUKU-T-0011,GI Jailolo,GI Sofifi,150,160.0,42.55,3.76,New,2025,Maluku Utara,1099,"RATIO_TOO_HIGH,LENGTH_OUTLIER"
+3,RUPTL-MALUKU-T-0013,GI Malifut,GI Tobelo,150,240.0,67.73,3.54,New,2025,Maluku Utara,1099,"RATIO_TOO_HIGH,LENGTH_OUTLIER"

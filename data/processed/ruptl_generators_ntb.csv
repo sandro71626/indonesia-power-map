@@ -1,0 +1,42 @@
+id,name,type,capacity_mw,province,region_key,status,target_cod_year,cod_re_base,cod_ared,developer,source_table,source_page,lat,lon,coord_source,coord_confidence
+RUPTL-NTB-P-0001,Lombok (FTP2),PLTU,52.0,Nusa Tenggara Barat,ntb,Construction,2025,2025,,PLN,Tabel C11.11,1158,-8.432905,116.705479,gazetteer_generator:GEN-NTB-0007,high
+RUPTL-NTB-P-0002,Sedau Kumbi,PLTM,1.3,Nusa Tenggara Barat,ntb,Construction,2025,2025,,IPP,Tabel C11.11,1158,-8.826555,117.321095,province_centroid,low
+RUPTL-NTB-P-0003,Sumbawa 2,PLTMG,30.0,Nusa Tenggara Barat,ntb,Construction,2025,2025,,PLN,Tabel C11.11,1158,-8.741145,116.777658,gazetteer_generator:GEN-NTB-0008,high
+RUPTL-NTB-P-0004,Kokok Babak,PLTM,2.3,Nusa Tenggara Barat,ntb,Planned,2027,2027,,IPP,Tabel C11.11,1158,-8.661444,117.402153,province_centroid,low
+RUPTL-NTB-P-0005,Dedieselisasi,PLTS,0.429,Nusa Tenggara Barat,ntb,Planned,2027,2027,,IPP,Tabel C11.11,1158,-8.616080,117.136505,province_centroid,low
+RUPTL-NTB-P-0006,Sumbawa-Bima (Kuota) Tersebar,PLTS,10.0,Nusa Tenggara Barat,ntb,Planned,2026,2026,,IPP,Tabel C11.11,1158,-8.411003,118.699984,gazetteer_generator:GEN-NTB-0006,high
+RUPTL-NTB-P-0007,Lombok (Kuota) Tersebar,PLTM,0.5,Nusa Tenggara Barat,ntb,Construction,2028,2028,,IPP,Tabel C11.11,1158,-8.432905,116.705479,gazetteer_generator:GEN-NTB-0007,high
+RUPTL-NTB-P-0008,Lombok (Kuota) Tersebar,PLTM,0.25,Nusa Tenggara Barat,ntb,Construction,2028,2028,,IPP,Tabel C11.11,1158,-8.432905,116.705479,gazetteer_generator:GEN-NTB-0007,high
+RUPTL-NTB-P-0009,Lombok (Kuota) Tersebar,PLTM,0.45,Nusa Tenggara Barat,ntb,Construction,2028,2028,,IPP,Tabel C11.11,1158,-8.432905,116.705479,gazetteer_generator:GEN-NTB-0007,high
+RUPTL-NTB-P-0010,Lombok (Kuota) Tersebar,PLTM,0.55,Nusa Tenggara Barat,ntb,Construction,2028,2028,,IPP,Tabel C11.11,1158,-8.432905,116.705479,gazetteer_generator:GEN-NTB-0007,high
+RUPTL-NTB-P-0011,Lombok 2,PLTMG,52.0,Nusa Tenggara Barat,ntb,Planned,2026,2026,,PLN SH,Tabel C11.11,1158,-8.432905,116.705479,gazetteer_generator:GEN-NTB-0007,high
+RUPTL-NTB-P-0012,Sumbawa 3,PLTMG,50.0,Nusa Tenggara Barat,ntb,Planned,2026,2026,,PLN SH,Tabel C11.11,1158,-8.741145,116.777658,gazetteer_generator:GEN-NTB-0008,high
+RUPTL-NTB-P-0013,Sumbawa-Bima (Kuota) Tersebar,PLTBM,10.0,Nusa Tenggara Barat,ntb,Planned,2029,2029,,IPP,Tabel C11.11,1158,-8.411003,118.699984,gazetteer_generator:GEN-NTB-0006,high
+RUPTL-NTB-P-0014,Lombok (Kuota) Tersebar,PLTM,2.6,Nusa Tenggara Barat,ntb,Planned,2028,2028,,IPP,Tabel C11.11,1158,-8.432905,116.705479,gazetteer_generator:GEN-NTB-0007,high
+RUPTL-NTB-P-0015,Lombok (Kuota) Tersebar,PLTM,1.98,Nusa Tenggara Barat,ntb,Planned,2028,2028,,IPP,Tabel C11.11,1158,-8.432905,116.705479,gazetteer_generator:GEN-NTB-0007,high
+RUPTL-NTB-P-0016,Lombok (Kuota) Tersebar,PLTS,20.0,Nusa Tenggara Barat,ntb,Planned,2028,2028,,IPP,Tabel C11.11,1158,-8.432905,116.705479,gazetteer_generator:GEN-NTB-0007,high
+RUPTL-NTB-P-0017,Lombok (Kuota) Tersebar,PLTS,30.0,Nusa Tenggara Barat,ntb,Planned,2030,2030,,IPP,Tabel C11.11,1158,-8.432905,116.705479,gazetteer_generator:GEN-NTB-0007,high
+RUPTL-NTB-P-0018,Lombok (Kuota) Tersebar,PLTS,50.0,Nusa Tenggara Barat,ntb,Planned,2033,2033,,IPP,Tabel C11.11,1158,-8.432905,116.705479,gazetteer_generator:GEN-NTB-0007,high
+RUPTL-NTB-P-0019,Pandanduri,PLTM,0.58,Nusa Tenggara Barat,ntb,Construction,2025,2025,,IPP,Tabel C11.11,1158,-8.621111,117.584461,province_centroid,low
+RUPTL-NTB-P-0020,Sumbawa 4,PLTMG,50.0,Nusa Tenggara Barat,ntb,Planned,2027,2027,,PLN SH,Tabel C11.11,1158,-8.741145,116.777658,gazetteer_generator:GEN-NTB-0008,high
+RUPTL-NTB-P-0021,Sumbawa-Bima (Kuota) Tersebar,PLTM,2.54,Nusa Tenggara Barat,ntb,Planned,2028,2028,,IPP,Tabel C11.11,1158,-8.411003,118.699984,gazetteer_generator:GEN-NTB-0006,high
+RUPTL-NTB-P-0022,Sumbawa-Bima (Kuota) Tersebar,PLTM,6.3,Nusa Tenggara Barat,ntb,Planned,2027,2027,,IPP,Tabel C11.11,1158,-8.411003,118.699984,gazetteer_generator:GEN-NTB-0006,high
+RUPTL-NTB-P-0023,Sumbawa-Bima (Kuota) Tersebar,PLTM,3.84,Nusa Tenggara Barat,ntb,Planned,2028,2028,,IPP,Tabel C11.11,1158,-8.411003,118.699984,gazetteer_generator:GEN-NTB-0006,high
+RUPTL-NTB-P-0024,Sumbawa-Bima (Kuota) Tersebar,PLTS,50.0,Nusa Tenggara Barat,ntb,Planned,2027,2027,,IPP,Tabel C11.11,1158,-8.411003,118.699984,gazetteer_generator:GEN-NTB-0006,high
+RUPTL-NTB-P-0025,Sumbawa-Bima (Kuota) Tersebar,PLTS,50.0,Nusa Tenggara Barat,ntb,Planned,2029,2029,,IPP,Tabel C11.11,1158,-8.411003,118.699984,gazetteer_generator:GEN-NTB-0006,high
+RUPTL-NTB-P-0026,Sumbawa-Bima (Kuota) Tersebar,PLTS,50.0,Nusa Tenggara Barat,ntb,Planned,2031,2031,,IPP,Tabel C11.11,1158,-8.411003,118.699984,gazetteer_generator:GEN-NTB-0006,high
+RUPTL-NTB-P-0027,Bima 2,PLTMG,17.0,Nusa Tenggara Barat,ntb,Planned,2029,2029,,PLN SH,Tabel C11.11,1158,-8.411003,118.699984,gazetteer_generator:GEN-NTB-0006,high
+RUPTL-NTB-P-0028,Bima (FTP 1),PLTU,12.0,Nusa Tenggara Barat,ntb,Construction,2026,2026,,PLN,Tabel C11.11,1158,-8.411003,118.699984,gazetteer_generator:GEN-NTB-0006,high
+RUPTL-NTB-P-0029,Sumbawa 5,PLTMG,50.0,Nusa Tenggara Barat,ntb,Planned,2031,2031,,PLN SH,Tabel C11.11,1158,-8.741145,116.777658,gazetteer_generator:GEN-NTB-0008,high
+RUPTL-NTB-P-0030,Sumbawa 6,PLTMG,50.0,Nusa Tenggara Barat,ntb,Planned,2034,2034,,PLN SH,Tabel C11.11,1158,-8.741145,116.777658,gazetteer_generator:GEN-NTB-0008,high
+RUPTL-NTB-P-0031,Sumbawa-Bima (Kuota) Tersebar,?,10.0,Nusa Tenggara Barat,ntb,Planned,2028,2028,,IPP,Tabel C11.11,1158,-8.411003,118.699984,gazetteer_generator:GEN-NTB-0006,high
+RUPTL-NTB-P-0032,Sumbawa-Bima (Kuota) Tersebar,PLTS,10.0,Nusa Tenggara Barat,ntb,Planned,2028,2028,,IPP,Tabel C11.11,1158,-8.411003,118.699984,gazetteer_generator:GEN-NTB-0006,high
+RUPTL-NTB-P-0033,Lombok 3,PLTMG,52.0,Nusa Tenggara Barat,ntb,Planned,2027,2027,,PLN SH,Tabel C11.11,1158,-8.432905,116.705479,gazetteer_generator:GEN-NTB-0007,high
+RUPTL-NTB-P-0034,Lombok 4,PLTMG,52.0,Nusa Tenggara Barat,ntb,Planned,2030,2030,,PLN SH,,1159,-8.432905,116.705479,gazetteer_generator:GEN-NTB-0007,high
+RUPTL-NTB-P-0035,Lombok 5,PLTMG,52.0,Nusa Tenggara Barat,ntb,Planned,2033,2033,,PLN SH,,1159,-8.432905,116.705479,gazetteer_generator:GEN-NTB-0007,high
+RUPTL-NTB-P-0036,Lombok (Kuota) Tersebar,PLTB,30.0,Nusa Tenggara Barat,ntb,Planned,2027,2027,,IPP,,1159,-8.432905,116.705479,gazetteer_generator:GEN-NTB-0007,high
+RUPTL-NTB-P-0037,Lombok (Kuota) Tersebar,PLTB,30.0,Nusa Tenggara Barat,ntb,Planned,2028,2028,,IPP,,1159,-8.432905,116.705479,gazetteer_generator:GEN-NTB-0007,high
+RUPTL-NTB-P-0038,Lombok (Kuota) Tersebar,?,10.0,Nusa Tenggara Barat,ntb,Planned,2028,2028,,IPP,,1159,-8.432905,116.705479,gazetteer_generator:GEN-NTB-0007,high
+RUPTL-NTB-P-0039,Lombok (Kuota) Tersebar,PLTP,10.0,Nusa Tenggara Barat,ntb,Planned,2033,2033,,IPP,,1159,-8.432905,116.705479,gazetteer_generator:GEN-NTB-0007,high
+RUPTL-NTB-P-0040,Isolated Nusa Tenggara Barat,PLTS,5.983,Nusa Tenggara Barat,ntb,Planned,2030,2030,,IPP,,1159,-8.862571,117.206366,province_centroid,low
+RUPTL-NTB-P-0041,Isolated Nusa Tenggara Barat,PLTS,7.1684,Nusa Tenggara Barat,ntb,Planned,2033,2033,,IPP,,1159,-8.729819,117.358610,province_centroid,low

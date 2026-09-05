@@ -1,0 +1,18 @@
+id,name,from_bus,to_bus,voltage_kv,action_type,circuits,line_type,length_km,target_cod_year,status,province,region_key,source_page,source_table
+RUPTL-PAPUA-T-0001,PLTS + BESS Timika (Kuota) Tersebar 20 MW — GI Eksisting / GI Rencana Sistem Timika,PLTS + BESS Timika (Kuota) Tersebar 20 MW,GI Eksisting / GI Rencana Sistem Timika,150,New,2,SUTT,10.0,2028,Planned,Papua,papua,1124,Tabel C9.13
+RUPTL-PAPUA-T-0002,PLTS + BESS Jayapura (Kuota) Tersebar 50 MW — GI Eksisting / GI Rencana Sistem Jayapura,PLTS + BESS Jayapura (Kuota) Tersebar 50 MW,GI Eksisting / GI Rencana Sistem Jayapura,70/ 150,New,2,SUTT,10.0,2028,Planned,Papua,papua,1124,Tabel C9.13
+RUPTL-PAPUA-T-0003,PLTS + BESS Jayapura (Kuota) Tersebar 50 MW — GI Eksisting / GI Rencana Sistem Jayapura,PLTS + BESS Jayapura (Kuota) Tersebar 50 MW,GI Eksisting / GI Rencana Sistem Jayapura,70/ 150,New,2,SUTT,10.0,2030,Planned,Papua,papua,1124,Tabel C9.13
+RUPTL-PAPUA-T-0004,GI Karubaga — GI Mulia,GI Karubaga,GI Mulia,150,New,2,SUTT,120.0,2030,Planned,Papua,papua,1124,Tabel C9.13
+RUPTL-PAPUA-T-0005,GI Mulia — GI Ilaga,GI Mulia,GI Ilaga,150,New,2,SUTT,80.0,2030,Planned,Papua,papua,1124,Tabel C9.13
+RUPTL-PAPUA-T-0006,GI Wamena — GI Elelim,GI Wamena,GI Elelim,150,New,2,SUTT,122.0,2030,Planned,Papua,papua,1124,Tabel C9.13
+RUPTL-PAPUA-T-0007,GI Wamena — GI Karubaga,GI Wamena,GI Karubaga,150,New,2,SUTT,140.0,2030,Planned,Papua,papua,1124,Tabel C9.13
+RUPTL-PAPUA-T-0008,PLTA Baliem — GI Wamena,PLTA Baliem,GI Wamena,150,New,2,SUTT,50.0,2030,Planned,Papua,papua,1124,Tabel C9.13
+RUPTL-PAPUA-T-0009,PLTA Baliem — GI Sumohai,PLTA Baliem,GI Sumohai,150,New,2,SUTT,50.0,2030,Planned,Papua,papua,1124,Tabel C9.13
+RUPTL-PAPUA-T-0010,GI Jayapura (Skyland) — GI Angkasa,GI Jayapura (Skyland),GI Angkasa,150,New,2,SUTT,20.0,2031,Planned,Papua,papua,1124,Tabel C9.13
+RUPTL-PAPUA-T-0011,PLTU Holtekamp — GI Angkasa,PLTU Holtekamp,GI Angkasa,150,New,2,SUTT,60.0,2031,Planned,Papua,papua,1124,Tabel C9.13
+RUPTL-PAPUA-T-0012,GI Angkasa — GI Sentani Baru,GI Angkasa,GI Sentani Baru,150,New,2,SUTT,72.0,2033,Planned,Papua,papua,1124,Tabel C9.13
+RUPTL-PAPUA-T-0013,PLTMG Manokwari — GI Manokwari,PLTMG Manokwari,GI Manokwari,150,New,2,SUTT,24.0,2025,Construction,Papua Barat,papua,1146,Tabel C10.13
+RUPTL-PAPUA-T-0014,PLTMG Manokwari — GI Prafi,PLTMG Manokwari,GI Prafi,150,New,2,SUTT,80.0,2026,Committed,Papua Barat,papua,1146,Tabel C10.13
+RUPTL-PAPUA-T-0015,PLTS + BESS Sorong (Kuota) Tersebar 20 MW — GI Eksisting / GI Rencana Sistem Sorong,PLTS + BESS Sorong (Kuota) Tersebar 20 MW,GI Eksisting / GI Rencana Sistem Sorong,150,New,2,SUTT,10.0,2028,Planned,Papua Barat,papua,1146,Tabel C10.13
+RUPTL-PAPUA-T-0016,PLTMG Manokwari — GI Ransiki,PLTMG Manokwari,GI Ransiki,150,New,2,SUTT,150.0,2029,Planned,Papua Barat,papua,1146,Tabel C10.13
+RUPTL-PAPUA-T-0017,PLTS + BESS Sorong (Kuota) Tersebar 20 MW Total — GI Eksisting / GI Rencana Sistem Sorong,PLTS + BESS Sorong (Kuota) Tersebar 20 MW Total,GI Eksisting / GI Rencana Sistem Sorong,150,New,2,SUTT,264.0,2030,Planned,Papua Barat,papua,1146,Tabel C10.13

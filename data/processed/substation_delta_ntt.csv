@@ -1,0 +1,29 @@
+ruptl_id,name,voltage_kv,action_type,capacity_mva,target_cod_year,status,province,classification,baseline_id,baseline_name,source_page,source_table
+RUPTL-NTT-GI-0001,Naibonat,150/70,,60.0,2025,Construction,Nusa Tenggara Timur,ORPHAN,GI-NTT-0005,Naibonat,1186,Tabel C12.17
+RUPTL-NTT-GI-0002,Naibonat,150/70,,60.0,2025,Committed,Nusa Tenggara Timur,ORPHAN,GI-NTT-0005,Naibonat,1186,Tabel C12.17
+RUPTL-NTT-GI-0003,Bolok,150/70,,60.0,2025,Committed,Nusa Tenggara Timur,ORPHAN,GI-NTT-0003,Bolok,1186,Tabel C12.17
+RUPTL-NTT-GI-0004,Ropa,70/20,,30.0,2025,Committed,Nusa Tenggara Timur,ORPHAN,GI-NTT-0012,Ropa,1186,Tabel C12.17
+RUPTL-NTT-GI-0005,Waingapu,70,,2.0,2026,Committed,Nusa Tenggara Timur,ORPHAN,,,1186,Tabel C12.17
+RUPTL-NTT-GI-0006,Waingapu,70/20,,30.0,2026,Committed,Nusa Tenggara Timur,ORPHAN,,,1186,Tabel C12.17
+RUPTL-NTT-GI-0007,PLTMG Waingapu,70/20,,30.0,2026,Committed,Nusa Tenggara Timur,ORPHAN,,,1186,Tabel C12.17
+RUPTL-NTT-GI-0008,Naibonat,150,,2.0,2027,Committed,Nusa Tenggara Timur,ORPHAN,GI-NTT-0005,Naibonat,1186,Tabel C12.17
+RUPTL-NTT-GI-0009,Naibonat,150,,2.0,2027,Committed,Nusa Tenggara Timur,ORPHAN,GI-NTT-0005,Naibonat,1186,Tabel C12.17
+RUPTL-NTT-GI-0010,Malaka,150,,2.0,2027,Committed,Nusa Tenggara Timur,ORPHAN,,,1186,Tabel C12.17
+RUPTL-NTT-GI-0011,Maumere,150/20,,30.0,2027,Committed,Nusa Tenggara Timur,ORPHAN,GI-NTT-0009,PLTMG Maumere,1186,Tabel C12.17
+RUPTL-NTT-GI-0012,Malaka,150/20,,30.0,2027,Committed,Nusa Tenggara Timur,ORPHAN,,,1186,Tabel C12.17
+RUPTL-NTT-GI-0013,Kupang / Maulafa Baru,150/20,,60.0,2027,Committed,Nusa Tenggara Timur,ORPHAN,,,1186,Tabel C12.17
+RUPTL-NTT-GI-0014,Amfoang,150/20,,30.0,2027,Committed,Nusa Tenggara Timur,ORPHAN,,,1186,Tabel C12.17
+RUPTL-NTT-GI-0015,Kefamenanu,150/70,,60.0,2027,Committed,Nusa Tenggara Timur,ORPHAN,GI-NTT-0007,Kefamenanu,1186,Tabel C12.17
+RUPTL-NTT-GI-0016,Atambua,150/70,,60.0,2027,Committed,Nusa Tenggara Timur,ORPHAN,GI-NTT-0008,Atambua,1186,Tabel C12.17
+RUPTL-NTT-GI-0017,Atambua,70/20,,30.0,2027,Committed,Nusa Tenggara Timur,ORPHAN,GI-NTT-0008,Atambua,1186,Tabel C12.17
+RUPTL-NTT-GI-0018,PLTMG Maumere,150,,2.0,2028,Planned,Nusa Tenggara Timur,ORPHAN,GI-NTT-0009,PLTMG Maumere,1186,Tabel C12.17
+RUPTL-NTT-GI-0019,Larantuka,150/20,,30.0,2028,Planned,Nusa Tenggara Timur,ORPHAN,,,1186,Tabel C12.17
+RUPTL-NTT-GI-0020,PLTMG Waingapu,70,,2.0,2028,Planned,Nusa Tenggara Timur,ORPHAN,,,1186,Tabel C12.17
+RUPTL-NTT-GI-0021,Waitabula/ Tambolaka,70/20,,30.0,2028,Planned,Nusa Tenggara Timur,ORPHAN,,,1186,Tabel C12.17
+RUPTL-NTT-GI-0022,Waikabubak,70/20,,30.0,2028,Planned,Nusa Tenggara Timur,ORPHAN,,,1186,Tabel C12.17
+RUPTL-NTT-GI-0023,Labuan Bajo,70/20,,60.0,2031,Planned,Nusa Tenggara Timur,ORPHAN,GI-NTT-0018,Labuan Bajo,1186,Tabel C12.17
+RUPTL-NTT-GI-0024,Ruteng,70/20,,30.0,2032,Planned,Nusa Tenggara Timur,ORPHAN,GI-NTT-0017,Ruteng,1187,Tabel C12.20
+RUPTL-NTT-GI-0025,Bajawa,70/20,,30.0,2032,Planned,Nusa Tenggara Timur,ORPHAN,GI-NTT-0015,Bajawa,1187,Tabel C12.20
+RUPTL-NTT-GI-0026,Kefamenanu,70/20,,30.0,2033,Planned,Nusa Tenggara Timur,ORPHAN,GI-NTT-0007,Kefamenanu,1187,Tabel C12.20
+RUPTL-NTT-GI-0027,Waingapu,70/20,,30.0,2034,Planned,Nusa Tenggara Timur,ORPHAN,,,1187,Tabel C12.20
+RUPTL-NTT-GI-0028,Nonohonis,70/20,,30.0,2034,Planned,Nusa Tenggara Timur,ORPHAN,GI-NTT-0006,Nonohonis,1187,Tabel C12.20

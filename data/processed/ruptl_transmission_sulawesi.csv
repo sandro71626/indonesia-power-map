@@ -1,0 +1,112 @@
+id,name,from_bus,to_bus,voltage_kv,action_type,circuits,line_type,length_km,target_cod_year,status,province,region_key,source_page,source_table
+RUPTL-SULAWESI-T-0001,Tanjung Merah — Bitung Baru,Tanjung Merah,Bitung Baru,150,New,2,SUTT,40.0,2025,Committed,Sulawesi Utara,sulawesi,966,Tabel C1.18
+RUPTL-SULAWESI-T-0002,PLTMG Minahasa — Likupang,PLTMG Minahasa,Likupang,150,New,2,SUTT,1.0,2026,Construction,Sulawesi Utara,sulawesi,966,Tabel C1.18
+RUPTL-SULAWESI-T-0003,Belang — Tutuyan,Belang,Tutuyan,150,New,2,SUTT,80.0,2027,Planned,Sulawesi Utara,sulawesi,966,Tabel C1.18
+RUPTL-SULAWESI-T-0004,Kema (PLTU Sulut 3) — Belang,Kema (PLTU Sulut 3),Belang,150,New,2,SUTT,110.0,2027,Planned,Sulawesi Utara,sulawesi,966,Tabel C1.18
+RUPTL-SULAWESI-T-0005,Likupang — Bitung Baru,Likupang,Bitung Baru,150,,1,SUTT,32.0,2027,Planned,Sulawesi Utara,sulawesi,966,Tabel C1.18
+RUPTL-SULAWESI-T-0006,Molibagu — Botupingge,Molibagu,Botupingge,150,New,2,SUTT,206.0,2027,Planned,Sulawesi Utara,sulawesi,966,Tabel C1.18
+RUPTL-SULAWESI-T-0007,Tutuyan — Molibagu,Tutuyan,Molibagu,150,New,2,SUTT,160.0,2027,Planned,Sulawesi Utara,sulawesi,966,Tabel C1.18
+RUPTL-SULAWESI-T-0008,Lolak — Kawasan Industri Boalangan Mongondow (KIMO),Lolak,Kawasan Industri Boalangan Mongondow (KIMO),150,New,2,SUTT,8.0,2027,Planned,Sulawesi Utara,sulawesi,966,Tabel C1.18
+RUPTL-SULAWESI-T-0009,PLTP Sulbagut (Kuota) Tersebar 30 MW — GI Eksisting / New Sistem Sulbagut,PLTP Sulbagut (Kuota) Tersebar 30 MW,GI Eksisting / New Sistem Sulbagut,150,New,2,SUTT,20.0,2027,Planned,Sulawesi Utara,sulawesi,966,Tabel C1.18
+RUPTL-SULAWESI-T-0010,PLTP Sulbagut (Kuota) Tersebar 40 MW — GI Eksisting / New Sistem Sulbagut,PLTP Sulbagut (Kuota) Tersebar 40 MW,GI Eksisting / New Sistem Sulbagut,150,New,2,SUTT,20.0,2028,Planned,Sulawesi Utara,sulawesi,966,Tabel C1.18
+RUPTL-SULAWESI-T-0011,PLTBm Sulbagut (Kuota) Tersebar 50 MW — GI Eksisting / New Sistem Sulbagut,PLTBm Sulbagut (Kuota) Tersebar 50 MW,GI Eksisting / New Sistem Sulbagut,150,New,2,SUTT,10.0,2028,Planned,Sulawesi Utara,sulawesi,966,Tabel C1.18
+RUPTL-SULAWESI-T-0012,PLTS+BESS Sulbagut (Kuota) Tersebar 15 MW — GI Eksisting / New Sistem Sulbagut,PLTS+BESS Sulbagut (Kuota) Tersebar 15 MW,GI Eksisting / New Sistem Sulbagut,150,New,2,SUTT,10.0,,Planned,Sulawesi Utara,sulawesi,966,Tabel C1.18
+RUPTL-SULAWESI-T-0013,PLTB + BESS Sulbagut (Kuota) Tersebar 60 MW — GI Eksisting / New Sistem Sulbagut,PLTB + BESS Sulbagut (Kuota) Tersebar 60 MW,GI Eksisting / New Sistem Sulbagut,150,New,2,SUTT,10.0,,Planned,Sulawesi Utara,sulawesi,966,Tabel C1.18
+RUPTL-SULAWESI-T-0014,PLTS+BESS Sulbagut (Kuota) Tersebar 17 MW — GI Eksisting / New Sistem Sulbagut,PLTS+BESS Sulbagut (Kuota) Tersebar 17 MW,GI Eksisting / New Sistem Sulbagut,150,New,2,SUTT,10.0,,Planned,Sulawesi Utara,sulawesi,966,Tabel C1.18
+RUPTL-SULAWESI-T-0015,PLTBm Sulbagut (Kuota) Tersebar Tambahan 20 MW — GI Eksisting / New Sistem Sulbagut,PLTBm Sulbagut (Kuota) Tersebar Tambahan 20 MW,GI Eksisting / New Sistem Sulbagut,150,New,2,SUTT,10.0,2029,Planned,Sulawesi Utara,sulawesi,966,Tabel C1.18
+RUPTL-SULAWESI-T-0016,PLTB + BESS Sulbagut (Kuota) Tersebar Tambahan 20 MW — GI Eksisting / New Sistem Sulbagut,PLTB + BESS Sulbagut (Kuota) Tersebar Tambahan 20 MW,GI Eksisting / New Sistem Sulbagut,150,New,2,SUTT,10.0,,Planned,Sulawesi Utara,sulawesi,966,Tabel C1.18
+RUPTL-SULAWESI-T-0017,PLTA Poigar-2 — GI Eksisting / New Sistem Sulbagut,PLTA Poigar-2,GI Eksisting / New Sistem Sulbagut,150,New,2,SUTT,20.0,2029,Planned,Sulawesi Utara,sulawesi,966,Tabel C1.18
+RUPTL-SULAWESI-T-0018,PLTA Sawangan — Sawangan,PLTA Sawangan,Sawangan,70,New,2,SUTT,5.7,2030,Committed,Sulawesi Utara,sulawesi,966,Tabel C1.18
+RUPTL-SULAWESI-T-0019,PLTA Sulbagut (Kuota) — GI Eksisting / New Sistem Sulbagut,PLTA Sulbagut (Kuota),GI Eksisting / New Sistem Sulbagut,150,New,2,SUTT,20.0,2031,Planned,Sulawesi Utara,sulawesi,966,Tabel C1.18
+RUPTL-SULAWESI-T-0020,PLTS+BESS Sulbagut (Kuota) Tersebar 20 MW — GI Eksisting / New Sistem Sulbagut,PLTS+BESS Sulbagut (Kuota) Tersebar 20 MW,GI Eksisting / New Sistem Sulbagut,150,New,2,SUTT,10.0,,Planned,Sulawesi Utara,sulawesi,967,Tabel C1.19
+RUPTL-SULAWESI-T-0021,PLTP Kotamobagu 1 — Otam,PLTP Kotamobagu 1,Otam,150,New,2,SUTT,20.0,2031,Planned,Sulawesi Utara,sulawesi,967,Tabel C1.19
+RUPTL-SULAWESI-T-0022,PLTP Sulbagut (Kuota) Tersebar 65 MW — GI Eksisting / New Sistem Sulbagut,PLTP Sulbagut (Kuota) Tersebar 65 MW,GI Eksisting / New Sistem Sulbagut,150,New,2,SUTT,20.0,2032,Planned,Sulawesi Utara,sulawesi,967,Tabel C1.19
+RUPTL-SULAWESI-T-0023,PLTS+BESS Sulbagut (Kuota) Tersebar 20 MW — GI Eksisting / New Sistem Sulbagut,PLTS+BESS Sulbagut (Kuota) Tersebar 20 MW,GI Eksisting / New Sistem Sulbagut,150,New,2,SUTT,10.0,,Planned,Sulawesi Utara,sulawesi,967,Tabel C1.19
+RUPTL-SULAWESI-T-0024,PLTA Sulbagut (Kuota) Tersebar 100 MW TOTAL: — GI Eksisting / New Sistem Sulbagut,PLTA Sulbagut (Kuota) Tersebar 100 MW TOTAL:,GI Eksisting / New Sistem Sulbagut,150,New,2,SUTT,682.7,2034,Planned,Sulawesi Utara,sulawesi,967,Tabel C1.19
+RUPTL-SULAWESI-T-0025,Andowia (sisi 150 kV GITET Andowia) — PT Vale Indonesia,Andowia (sisi 150 kV GITET Andowia),PT Vale Indonesia,150,New,2,SUTT,31.0,2027,Planned,Sulawesi Tengah,sulawesi,977,Tabel C2.10
+RUPTL-SULAWESI-T-0026,Bungku (sisi 150 kV GITET Bungku) — PT Hengjaya Mineralindo,Bungku (sisi 150 kV GITET Bungku),PT Hengjaya Mineralindo,150,New,2,SUTT,9.0,2027,Planned,Sulawesi Tengah,sulawesi,977,Tabel C2.10
+RUPTL-SULAWESI-T-0027,Bungku (sisi 150 kV GITET Bungku) — PT Sarana Mineralindo Perkasa,Bungku (sisi 150 kV GITET Bungku),PT Sarana Mineralindo Perkasa,150,New,2,SUTT,82.0,2027,Planned,Sulawesi Tengah,sulawesi,977,Tabel C2.10
+RUPTL-SULAWESI-T-0028,Kolonedale — PT Enam Sembilan Kawasan Industri (ESKI),Kolonedale,PT Enam Sembilan Kawasan Industri (ESKI),150,New,2,SUTT,18.0,2029,Planned,Sulawesi Tengah,sulawesi,977,Tabel C2.10
+RUPTL-SULAWESI-T-0029,Kolonedale — Tentena,Kolonedale,Tentena,150,New,2,SUTT,130.0,2025,Construction,Sulawesi Tengah,sulawesi,984,Tabel C2.16
+RUPTL-SULAWESI-T-0030,Kolonedale — Bungku,Kolonedale,Bungku,150,New,2,SUTT,180.0,2025,Construction,Sulawesi Tengah,sulawesi,984,Tabel C2.16
+RUPTL-SULAWESI-T-0031,PLTMG Luwuk — Luwuk,PLTMG Luwuk,Luwuk,150,New,2,SUTT,80.0,2025,Construction,Sulawesi Tengah,sulawesi,985,
+RUPTL-SULAWESI-T-0032,PLTMG Luwuk — Toili,PLTMG Luwuk,Toili,150,New,2,SUTT,100.0,2025,Construction,Sulawesi Tengah,sulawesi,985,
+RUPTL-SULAWESI-T-0033,Ampana — Bunta,Ampana,Bunta,150,New,2,SUTT,170.0,2025,Committed,Sulawesi Tengah,sulawesi,985,
+RUPTL-SULAWESI-T-0034,Bunta — Luwuk,Bunta,Luwuk,150,New,2,SUTT,190.0,2025,Committed,Sulawesi Tengah,sulawesi,985,
+RUPTL-SULAWESI-T-0035,Leok — Tolinggula,Leok,Tolinggula,150,New,2,SUTT,220.0,2025,Committed,Sulawesi Tengah,sulawesi,985,
+RUPTL-SULAWESI-T-0036,Moutong — Tolitoli,Moutong,Tolitoli,150,New,2,SUTT,310.0,2025,Committed,Sulawesi Tengah,sulawesi,985,
+RUPTL-SULAWESI-T-0037,Pelanggan PT ACN — Bungku,Pelanggan PT ACN,Bungku,150,New,2,SUTT,76.0,2025,Construction,Sulawesi Tengah,sulawesi,985,
+RUPTL-SULAWESI-T-0038,Poso — Ampana,Poso,Ampana,150,New,2,SUTT,248.0,2025,Committed,Sulawesi Tengah,sulawesi,985,
+RUPTL-SULAWESI-T-0039,Tambu — PLTU Palu 3,Tambu,PLTU Palu 3,150,New,2,SUTT,82.0,2025,Construction,Sulawesi Tengah,sulawesi,985,
+RUPTL-SULAWESI-T-0040,Toili — Ampana,Toili,Ampana,150,New,2,SUTT,228.0,2025,Committed,Sulawesi Tengah,sulawesi,985,
+RUPTL-SULAWESI-T-0041,Tolitoli — Leok,Tolitoli,Leok,150,New,2,SUTT,216.0,2025,Committed,Sulawesi Tengah,sulawesi,985,
+RUPTL-SULAWESI-T-0042,Bangkir — Incomer 2 Phi (Moutong - Toli-Toli),Bangkir,Incomer 2 Phi (Moutong - Toli-Toli),150,New,2,SUTT,180.0,2026,Committed,Sulawesi Tengah,sulawesi,985,
+RUPTL-SULAWESI-T-0043,Kalora — Incomer Single Phi (Poso-Palu Baru),Kalora,Incomer Single Phi (Poso-Palu Baru),150,New,2,SUTT,10.0,2027,Planned,Sulawesi Tengah,sulawesi,985,
+RUPTL-SULAWESI-T-0044,Bungku (sisi 150 kV GITET Bungku) — PT Hengjaya Mineralindo,Bungku (sisi 150 kV GITET Bungku),PT Hengjaya Mineralindo,150,New,2,SUTT,9.0,2027,Planned,Sulawesi Tengah,sulawesi,985,
+RUPTL-SULAWESI-T-0045,Bungku (sisi 150 kV GITET Bungku) — PT Sarana Mineralindo Perkasa,Bungku (sisi 150 kV GITET Bungku),PT Sarana Mineralindo Perkasa,150,New,2,SUTT,82.0,2027,Planned,Sulawesi Tengah,sulawesi,985,
+RUPTL-SULAWESI-T-0046,Tambu — Bangkir,Tambu,Bangkir,150,New,2,SUTT,180.0,2028,Planned,Sulawesi Tengah,sulawesi,985,
+RUPTL-SULAWESI-T-0047,Kolonedale — PT Enam Sembilan Kawasan Industri (ESKI),Kolonedale,PT Enam Sembilan Kawasan Industri (ESKI),150,New,2,SUTT,18.0,2029,Planned,Sulawesi Tengah,sulawesi,985,
+RUPTL-SULAWESI-T-0048,Petobo — Incomer 1 phi (Talise- Palu Baru),Petobo,Incomer 1 phi (Talise- Palu Baru),150,New,2,SUTT,10.0,2031,Planned,Sulawesi Tengah,sulawesi,985,
+RUPTL-SULAWESI-T-0049,Sigi — Incomer 1 phi (Palu Baru - Poso),Sigi,Incomer 1 phi (Palu Baru - Poso),150,New,2,SUTT,30.0,2031,Planned,Sulawesi Tengah,sulawesi,985,
+RUPTL-SULAWESI-T-0050,GITET Tentena — GITET Lariang,GITET Tentena,GITET Lariang,275,New,2,SUTET,250.0,2031,Planned,Sulawesi Tengah,sulawesi,985,
+RUPTL-SULAWESI-T-0051,Bungku (sisi 150 kV GITET Bungku) Total — PT Sulawesi Cahaya Mineral,Bungku (sisi 150 kV GITET Bungku) Total,PT Sulawesi Cahaya Mineral,150,New,2,SUTT,3159.0,2031,Planned,Sulawesi Tengah,sulawesi,985,
+RUPTL-SULAWESI-T-0052,Marisa TIP 205 (Incomer 1 phi (Pelanggan PT BJA - Marisa)) — Moutong,Marisa TIP 205 (Incomer 1 phi (Pelanggan PT BJA - Marisa)),Moutong,150,New,2,SUTT,140.0,2025,Construction,Gorontalo,sulawesi,997,Tabel C3.12
+RUPTL-SULAWESI-T-0053,Pelanggan PT GSM — Marisa,Pelanggan PT GSM,Marisa,150,New,2,SUTT,28.0,2025,Committed,Gorontalo,sulawesi,997,Tabel C3.12
+RUPTL-SULAWESI-T-0054,Pelanggan PT Gorontalo Mineral — Botupingge,Pelanggan PT Gorontalo Mineral,Botupingge,150,New,2,SUTT,64.0,2027,Planned,Gorontalo,sulawesi,997,Tabel C3.12
+RUPTL-SULAWESI-T-0055,PLTS+BESS Sulbagut (Kuota) Tersebar 51 MW TOTAL — GI Eksisting / New Sistem Sulbagut,PLTS+BESS Sulbagut (Kuota) Tersebar 51 MW TOTAL,GI Eksisting / New Sistem Sulbagut,150,New,2,SUTT,242.0,,Planned,Gorontalo,sulawesi,997,Tabel C3.12
+RUPTL-SULAWESI-T-0056,Bantaeng Switching — PT Buttatoa Smelter Pratama,Bantaeng Switching,PT Buttatoa Smelter Pratama,150,New,2,SUTT,2.0,2027,Planned,Sulawesi Selatan,sulawesi,1010,Tabel C4.11
+RUPTL-SULAWESI-T-0057,Malili — PT Huayou Int Mining (Maili),Malili,PT Huayou Int Mining (Maili),150,New,2,SUTT,27.0,2027,Planned,Sulawesi Selatan,sulawesi,1010,Tabel C4.11
+RUPTL-SULAWESI-T-0058,Bantaeng Switching — PT Huadi Dowstone,Bantaeng Switching,PT Huadi Dowstone,150,New,2,SUTT,2.0,2027,Planned,Sulawesi Selatan,sulawesi,1010,Tabel C4.11
+RUPTL-SULAWESI-T-0059,Bantaeng Switching — PT Huadi 6 (Yatai SS),Bantaeng Switching,PT Huadi 6 (Yatai SS),150,New,2,SUTT,2.0,2027,Planned,Sulawesi Selatan,sulawesi,1010,Tabel C4.11
+RUPTL-SULAWESI-T-0060,Malili — PT Indo Nickel Industri (Citra Lampia),Malili,PT Indo Nickel Industri (Citra Lampia),150,New,2,SUTT,30.0,2028,Planned,Sulawesi Selatan,sulawesi,1010,Tabel C4.11
+RUPTL-SULAWESI-T-0061,GITET Malili — Malili,GITET Malili,Malili,150,New,2,SUTT,10.0,2029,Planned,Sulawesi Selatan,sulawesi,1010,Tabel C4.11
+RUPTL-SULAWESI-T-0062,Bantaeng Switching — PT Huadi 4 (Hengsheng) Tahap 2,Bantaeng Switching,PT Huadi 4 (Hengsheng) Tahap 2,150,New,2,SUTT,2.0,2032,Planned,Sulawesi Selatan,sulawesi,1010,Tabel C4.11
+RUPTL-SULAWESI-T-0063,Punagaya — Bantaeng switching,Punagaya,Bantaeng switching,150,,,,132.0,2025,Planned,Sulawesi Selatan,sulawesi,1021,Tabel C4.17
+RUPTL-SULAWESI-T-0064,Bengo — Soppeng,Bengo,Soppeng,150,,,,74.0,2025,Construction,Sulawesi Selatan,sulawesi,1021,Tabel C4.17
+RUPTL-SULAWESI-T-0065,GITET Wotu — GITET Bungku,GITET Wotu,GITET Bungku,275,,,,478.0,2026,Planned,Sulawesi Selatan,sulawesi,1021,Tabel C4.17
+RUPTL-SULAWESI-T-0066,Bantaeng Switching — PT Huadi Dowstone,Bantaeng Switching,PT Huadi Dowstone,150,,,,2.0,2027,Planned,Sulawesi Selatan,sulawesi,1021,Tabel C4.17
+RUPTL-SULAWESI-T-0067,P S 4 — Bantaeng Switching,P S 4,Bantaeng Switching,150,New,2,SUTT,10.0,2027,Planned,Sulawesi Selatan,sulawesi,1021,Tabel C4.17
+RUPTL-SULAWESI-T-0068,GITET Bakaru 2 — GITET Sidrap,GITET Bakaru 2,GITET Sidrap,275,,,,130.0,2028,Committed,Sulawesi Selatan,sulawesi,1022,
+RUPTL-SULAWESI-T-0069,GITET Palopo — GITET Bakaru 2,GITET Palopo,GITET Bakaru 2,275,,,,210.0,2028,Committed,Sulawesi Selatan,sulawesi,1022,
+RUPTL-SULAWESI-T-0070,GITET Bakaru 2 — Bakaru,GITET Bakaru 2,Bakaru,150,,,,2.0,2028,Committed,Sulawesi Selatan,sulawesi,1022,
+RUPTL-SULAWESI-T-0071,G B S — Bantaeng Switching,G B S,Bantaeng Switching,150,,,,14.0,2028,Committed,Sulawesi Selatan,sulawesi,1022,
+RUPTL-SULAWESI-T-0072,PLTA Bakaru 2 — GITET Bakaru 2,PLTA Bakaru 2,GITET Bakaru 2,275,,,,6.0,2028,Planned,Sulawesi Selatan,sulawesi,1022,
+RUPTL-SULAWESI-T-0073,GITET Daya Baru — Daya Baru,GITET Daya Baru,Daya Baru,150,,,,14.0,2028,Committed,Sulawesi Selatan,sulawesi,1022,
+RUPTL-SULAWESI-T-0074,GITET Sidrap — Sidrap,GITET Sidrap,Sidrap,150,,,,6.0,2028,Committed,Sulawesi Selatan,sulawesi,1022,
+RUPTL-SULAWESI-T-0075,P S ( T T 2 — GI Eksisting / New Sistem Sulbagsel,P S ( T T 2,GI Eksisting / New Sistem Sulbagsel,150,New,2,SUTT,10.0,,Planned,Sulawesi Selatan,sulawesi,1022,
+RUPTL-SULAWESI-T-0076,P S ( T T 2 — GI Eksisting / New Sistem Sulbagsel,P S ( T T 2,GI Eksisting / New Sistem Sulbagsel,150,New,2,SUTT,10.0,,Planned,Sulawesi Selatan,sulawesi,1022,
+RUPTL-SULAWESI-T-0077,GITET Wotu — GITET Malili,GITET Wotu,GITET Malili,275,,,,116.0,2029,Planned,Sulawesi Selatan,sulawesi,1022,
+RUPTL-SULAWESI-T-0078,GITET Malili — Malili,GITET Malili,Malili,150,,,,10.0,2029,Planned,Sulawesi Selatan,sulawesi,1022,
+RUPTL-SULAWESI-T-0079,P S ( T T 5 — GI Eksisting / New Sistem Sulbagsel,P S ( T T 5,GI Eksisting / New Sistem Sulbagsel,150,New,2,SUTT,10.0,,Planned,Sulawesi Selatan,sulawesi,1023,
+RUPTL-SULAWESI-T-0080,P S ( T T I — GI / GITET Eksisting / New Sistem Sulbagsel,P S ( T T I,GI / GITET Eksisting / New Sistem Sulbagsel,150/275,New,2,SUTT,20.0,2030,Planned,Sulawesi Selatan,sulawesi,1023,
+RUPTL-SULAWESI-T-0081,P S ( T T 1 — GI Eksisting / New Sistem Sulbagsel,P S ( T T 1,GI Eksisting / New Sistem Sulbagsel,150,New,2,SUTT,10.0,,Planned,Sulawesi Selatan,sulawesi,1023,
+RUPTL-SULAWESI-T-0082,Masamba — Makale,Masamba,Makale,150,,,,170.0,2031,Planned,Sulawesi Selatan,sulawesi,1023,
+RUPTL-SULAWESI-T-0083,GITET Seko — GITET Palopo,GITET Seko,GITET Palopo,275,,,,190.0,2031,Planned,Sulawesi Selatan,sulawesi,1023,
+RUPTL-SULAWESI-T-0084,P S ( T T I — GI / GITET Eksisting / New Sistem Sulbagsel,P S ( T T I,GI / GITET Eksisting / New Sistem Sulbagsel,150/275,New,2,SUTT,20.0,2031,Planned,Sulawesi Selatan,sulawesi,1023,
+RUPTL-SULAWESI-T-0085,P S ( T T 2 — GI Eksisting / New Sistem Sulbagsel,P S ( T T 2,GI Eksisting / New Sistem Sulbagsel,150,New,2,SUTT,10.0,,Planned,Sulawesi Selatan,sulawesi,1023,
+RUPTL-SULAWESI-T-0086,P S ( T T I — GI Eksisting / New Sistem Sulbagsel,P S ( T T I,GI Eksisting / New Sistem Sulbagsel,150,New,2,SUTT,10.0,,Planned,Sulawesi Selatan,sulawesi,1023,
+RUPTL-SULAWESI-T-0087,B S ( G — PT Huadi 4 (Hengshe,B S ( G,PT Huadi 4 (Hengshe,150,New,2,SUTT,2.0,2032,Planned,Sulawesi Selatan,sulawesi,1023,
+RUPTL-SULAWESI-T-0088,P S ( T T I — GI / GITET Eksisting / New Sistem Sulbagsel,P S ( T T I,GI / GITET Eksisting / New Sistem Sulbagsel,150/275,New,2,SUTT,20.0,2032,Planned,Sulawesi Selatan,sulawesi,1024,
+RUPTL-SULAWESI-T-0089,P S ( T T I — GI / GITET Eksisting / New Sistem Sulbagsel,P S ( T T I,GI / GITET Eksisting / New Sistem Sulbagsel,150/275,New,2,SUTT,20.0,2033,Planned,Sulawesi Selatan,sulawesi,1024,
+RUPTL-SULAWESI-T-0090,P S ( T T 2 — GI Eksisting / New Sistem Sulbagsel,P S ( T T 2,GI Eksisting / New Sistem Sulbagsel,150,New,2,SUTT,10.0,,Planned,Sulawesi Selatan,sulawesi,1024,
+RUPTL-SULAWESI-T-0091,P S ( T T 3 — GI Eksisting / New Sistem Sulbagsel,P S ( T T 3,GI Eksisting / New Sistem Sulbagsel,150,New,2,SUTT,10.0,,Planned,Sulawesi Selatan,sulawesi,1024,
+RUPTL-SULAWESI-T-0092,P S ( T 8 — GI Eksisting / New Sistem Sulbagsel,P S ( T 8,GI Eksisting / New Sistem Sulbagsel,150,New,2,SUTT,20.0,2033,Planned,Sulawesi Selatan,sulawesi,1024,
+RUPTL-SULAWESI-T-0093,Kendari (sisi 150 kV GITET Kendari) — PT Industri Smelter Nusantara (ISN),Kendari (sisi 150 kV GITET Kendari),PT Industri Smelter Nusantara (ISN),150,New,2,SUTT,60.0,2027,Planned,Sulawesi Tenggara,sulawesi,1034,Tabel C5.9
+RUPTL-SULAWESI-T-0094,Inc. 1 Phi (Malili - Lasusua) — PT Kovalen Mining,Inc. 1 Phi (Malili - Lasusua),PT Kovalen Mining,150,New,2,SUTT,2.0,2027,Planned,Sulawesi Tenggara,sulawesi,1034,Tabel C5.9
+RUPTL-SULAWESI-T-0095,Andowia (sisi 150 kV GITET Andowia) — PT Nikel Prima Gemilang,Andowia (sisi 150 kV GITET Andowia),PT Nikel Prima Gemilang,150,New,2,SUTT,25.0,2027,Planned,Sulawesi Tenggara,sulawesi,1034,Tabel C5.9
+RUPTL-SULAWESI-T-0096,Kendari (sisi 150 kV GITET Kendari) — PT Jaya Makmur,Kendari (sisi 150 kV GITET Kendari),PT Jaya Makmur,150,New,2,SUTT,54.0,2030,Planned,Sulawesi Tenggara,sulawesi,1034,Tabel C5.9
+RUPTL-SULAWESI-T-0097,Andowia (sisi 150 kV GITET Andowia) — PT Huayou Int Mining (Konawe Utara),Andowia (sisi 150 kV GITET Andowia),PT Huayou Int Mining (Konawe Utara),150,New,2,SUTT,10.0,2031,Planned,Sulawesi Tenggara,sulawesi,1035,Tabel C5.12
+RUPTL-SULAWESI-T-0098,Bungku (sisi 150 kV GITET Bungku) — PT Sulawesi Cahaya Mineral,Bungku (sisi 150 kV GITET Bungku),PT Sulawesi Cahaya Mineral,150,New,2,SUTT,80.0,2031,Planned,Sulawesi Tenggara,sulawesi,1035,Tabel C5.12
+RUPTL-SULAWESI-T-0099,Kendari (sisi 150 kV GITET Kendari) — KI Kendari,Kendari (sisi 150 kV GITET Kendari),KI Kendari,150,New,2,SUTT,38.0,2031,Planned,Sulawesi Tenggara,sulawesi,1035,Tabel C5.12
+RUPTL-SULAWESI-T-0100,Batu Putih — PT Celebessi Metalindo Utama,Batu Putih,PT Celebessi Metalindo Utama,150,New,2,SUTT,8.0,2031,Planned,Sulawesi Tenggara,sulawesi,1035,Tabel C5.12
+RUPTL-SULAWESI-T-0101,GITET Andowia — GITET Kendari,GITET Andowia,GITET Kendari,275,,,,258.0,2026,Planned,Sulawesi Tenggara,sulawesi,1043,Tabel C5.16
+RUPTL-SULAWESI-T-0102,GITET Bungku — GITET Andowia,GITET Bungku,GITET Andowia,275,,,,232.0,2026,Planned,Sulawesi Tenggara,sulawesi,1043,Tabel C5.16
+RUPTL-SULAWESI-T-0103,Inc. 1 Phi (Malili - Lasusua) — PT Kovalen Mining,Inc. 1 Phi (Malili - Lasusua),PT Kovalen Mining,150,New,2,SUTT,2.0,2027,Planned,Sulawesi Tenggara,sulawesi,1043,Tabel C5.16
+RUPTL-SULAWESI-T-0104,PLTA Watunohu — Lasusua,PLTA Watunohu,Lasusua,150,,,,80.0,2028,Committed,Sulawesi Tenggara,sulawesi,1043,Tabel C5.16
+RUPTL-SULAWESI-T-0105,T P 1 S — T P 1 G,T P 1 S,T P 1 G,150,New,2,SUTT,5.0,2028,Planned,Sulawesi Tenggara,sulawesi,1044,
+RUPTL-SULAWESI-T-0106,T P 1 G — T P 2 G,T P 1 G,T P 2 G,150,New,2,SUTT,12.0,2028,Planned,Sulawesi Tenggara,sulawesi,1044,
+RUPTL-SULAWESI-T-0107,T P 2 G — T P 2,T P 2 G,T P 2,150,New,2,SUTT,13.0,2028,Planned,Sulawesi Tenggara,sulawesi,1044,
+RUPTL-SULAWESI-T-0108,T P 2 — Raha,T P 2,Raha,150,New,2,SUTT,66.0,2028,Planned,Sulawesi Tenggara,sulawesi,1044,
+RUPTL-SULAWESI-T-0109,GITET Kolaka Smelter — GITET Kendari,GITET Kolaka Smelter,GITET Kendari,275,,,,420.0,2029,Planned,Sulawesi Tenggara,sulawesi,1044,
+RUPTL-SULAWESI-T-0110,Pomalaa Switching — P (,Pomalaa Switching,P (,150,,,,14.0,2029,Planned,Sulawesi Tenggara,sulawesi,1044,
+RUPTL-SULAWESI-T-0111,PLTGU / G / M G Sulbagsel 3 600MW — G E S S,PLTGU / G / M G Sulbagsel 3 600MW,G E S S,150,New,2,SUTT,10.0,2030,Planned,Sulawesi Tenggara,sulawesi,1044,

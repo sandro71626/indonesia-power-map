@@ -1,0 +1,175 @@
+id,name,from_bus,to_bus,voltage_kv,action_type,circuits,line_type,length_km,target_cod_year,status,province,region_key,source_page,source_table
+RUPTL-KALIMANTAN-T-0001,Sandai — Tayan,Sandai,Tayan,150,New,2,SUTT,332.0,2025,Construction,Kalimantan Barat,kalimantan,739,Tabel A11.13
+RUPTL-KALIMANTAN-T-0002,Air Upas — Inc 2 phi (Kendawangan - Sukamara),Air Upas,Inc 2 phi (Kendawangan - Sukamara),150,New,4,SUTT,20.0,2025,Committed,Kalimantan Barat,kalimantan,739,Tabel A11.13
+RUPTL-KALIMANTAN-T-0003,Ambawang — Inc 2 phi (Siantan- Tayan),Ambawang,Inc 2 phi (Siantan- Tayan),150,New,4,SUTT,14.0,2025,Committed,Kalimantan Barat,kalimantan,739,Tabel A11.13
+RUPTL-KALIMANTAN-T-0004,Sintang — Nanga Pinoh,Sintang,Nanga Pinoh,150,New,2,SUTT,112.0,2025,Committed,Kalimantan Barat,kalimantan,739,Tabel A11.13
+RUPTL-KALIMANTAN-T-0005,Parit Baru — Siantan,Parit Baru,Siantan,150,,2,SUTT,35.0,2026,Planned,Kalimantan Barat,kalimantan,739,Tabel A11.13
+RUPTL-KALIMANTAN-T-0006,Simpang Silat — Putussibau,Simpang Silat,Putussibau,150,New,2,SUTT,332.0,2026,Committed,Kalimantan Barat,kalimantan,739,Tabel A11.13
+RUPTL-KALIMANTAN-T-0007,Sintang — Simpang Silat,Sintang,Simpang Silat,150,New,2,SUTT,110.0,2026,Committed,Kalimantan Barat,kalimantan,739,Tabel A11.13
+RUPTL-KALIMANTAN-T-0008,Simpang Tanjung — Inc 2 Phi (Tayan- Sanggau),Simpang Tanjung,Inc 2 Phi (Tayan- Sanggau),150,New,4,SUTT,8.0,2026,Committed,Kalimantan Barat,kalimantan,739,Tabel A11.13
+RUPTL-KALIMANTAN-T-0009,Simpang Tanjung — Sekayam,Simpang Tanjung,Sekayam,150,New,2,SUTT,130.0,2026,Committed,Kalimantan Barat,kalimantan,739,Tabel A11.13
+RUPTL-KALIMANTAN-T-0010,PLTGU Kalbar- 1 — Inc 2 Phi ( Ketapang - Kendawangan),PLTGU Kalbar- 1,Inc 2 Phi ( Ketapang - Kendawangan),150,New,4,SUTT,5.6,2026,Planned,Kalimantan Barat,kalimantan,739,Tabel A11.13
+RUPTL-KALIMANTAN-T-0011,Kalbar-1 (PLTS+BESS) — GI Eksisting / Baru Sistem Khatulistiwa,Kalbar-1 (PLTS+BESS),GI Eksisting / Baru Sistem Khatulistiwa,150,New,2,SUTT,10.0,2026,Planned,Kalimantan Barat,kalimantan,739,Tabel A11.13
+RUPTL-KALIMANTAN-T-0012,Badau — Simpang Silat,Badau,Simpang Silat,150,New,2,SUTT,204.0,2026,Committed,Kalimantan Barat,kalimantan,739,Tabel A11.13
+RUPTL-KALIMANTAN-T-0013,Tayan — PLTS Kalbar,Tayan,PLTS Kalbar,150,New,2,SUTT,10.0,,Planned,Kalimantan Barat,kalimantan,739,Tabel A11.13
+RUPTL-KALIMANTAN-T-0014,Ambawang — Sei raya,Ambawang,Sei raya,150,New,2,SKTT,16.0,2027,Planned,Kalimantan Barat,kalimantan,739,Tabel A11.13
+RUPTL-KALIMANTAN-T-0015,Siantan — Tayan,Siantan,Tayan,150,,2,SUTT,200.0,2028,Planned,Kalimantan Barat,kalimantan,739,Tabel A11.13
+RUPTL-KALIMANTAN-T-0016,Ambawang — Rasau,Ambawang,Rasau,150,New,2,SUTT,100.0,2028,Planned,Kalimantan Barat,kalimantan,739,Tabel A11.13
+RUPTL-KALIMANTAN-T-0017,Kotabaru — Rasau,Kotabaru,Rasau,150,New,2,SUTT,60.0,2028,Planned,Kalimantan Barat,kalimantan,739,Tabel A11.13
+RUPTL-KALIMANTAN-T-0018,Parit Baru — Kota Baru,Parit Baru,Kota Baru,150,,2,SUTT,40.0,2028,Planned,Kalimantan Barat,kalimantan,739,Tabel A11.13
+RUPTL-KALIMANTAN-T-0019,Tepuai — Inc 1 Phi (Simpang Silat- Putussibau),Tepuai,Inc 1 Phi (Simpang Silat- Putussibau),150,New,2,SUTT,2.5,2028,Planned,Kalimantan Barat,kalimantan,739,Tabel A11.13
+RUPTL-KALIMANTAN-T-0020,Inc 2 Phi (Singkawang - Mempawah) — Kijing,Inc 2 Phi (Singkawang - Mempawah),Kijing,150,New,4,SUTT,4.0,2028,Planned,Kalimantan Barat,kalimantan,739,Tabel A11.13
+RUPTL-KALIMANTAN-T-0021,Kalbar-2 (PLTS+BESS) — GI Eksisting / Baru Sistem Khatulistiwa,Kalbar-2 (PLTS+BESS),GI Eksisting / Baru Sistem Khatulistiwa,150,New,2,SUTT,10.0,,Planned,Kalimantan Barat,kalimantan,740,Tabel A11.15
+RUPTL-KALIMANTAN-T-0022,PLTA Khatulistiwa (Kuota) Tersebar 150 MW — GI Eksisting / Baru Sistem Khatulistiwa,PLTA Khatulistiwa (Kuota) Tersebar 150 MW,GI Eksisting / Baru Sistem Khatulistiwa,150,New,2,SUTT,20.0,2030,Planned,Kalimantan Barat,kalimantan,740,Tabel A11.15
+RUPTL-KALIMANTAN-T-0023,Nanga Pinoh — Kota Baru 2,Nanga Pinoh,Kota Baru 2,150,New,2,SUTT,144.0,2031,Planned,Kalimantan Barat,kalimantan,740,Tabel A11.15
+RUPTL-KALIMANTAN-T-0024,GI Eksisting / Baru Sistem Khatulistiwa — PLTA Khatulistiwa (Kuota) Tersebar 100 MW,GI Eksisting / Baru Sistem Khatulistiwa,PLTA Khatulistiwa (Kuota) Tersebar 100 MW,150,New,2,SUTT,20.0,2032,Planned,Kalimantan Barat,kalimantan,740,Tabel A11.15
+RUPTL-KALIMANTAN-T-0025,Kalimantan (Kuota) Tersebar New EBT — GI Eksisting / Baru Sistem Kalimantan,Kalimantan (Kuota) Tersebar New EBT,GI Eksisting / Baru Sistem Kalimantan,150,New,2,SUTT,20.0,,Planned,Kalimantan Barat,kalimantan,740,Tabel A11.15
+RUPTL-KALIMANTAN-T-0026,PLTG / GU Kalbar-2 — Mempawah / S enggiring,PLTG / GU Kalbar-2,Mempawah / S enggiring,150,New,2,SUTT,6.0,2030,Planned,Kalimantan Barat,kalimantan,740,Tabel A11.15
+RUPTL-KALIMANTAN-T-0027,PLTMG Kalbar- 3 — GI Eksisting / Baru Sistem Khatulistiwa,PLTMG Kalbar- 3,GI Eksisting / Baru Sistem Khatulistiwa,150,New,2,SUTT,10.0,2029,Planned,Kalimantan Barat,kalimantan,740,Tabel A11.15
+RUPTL-KALIMANTAN-T-0028,PLTA Khatulistiwa (Kuota) Tersebar 100 MW — GI Eksisting / Baru Sistem Khatulistiwa,PLTA Khatulistiwa (Kuota) Tersebar 100 MW,GI Eksisting / Baru Sistem Khatulistiwa,150,New,2,SUTT,20.0,2033,Planned,Kalimantan Barat,kalimantan,740,Tabel A11.15
+RUPTL-KALIMANTAN-T-0029,PLTA Khatulistiwa (Kuota) Tersebar 100 MW Jumlah — GI Eksisting / Baru Sistem Khatulistiwa,PLTA Khatulistiwa (Kuota) Tersebar 100 MW Jumlah,GI Eksisting / Baru Sistem Khatulistiwa,150,New,2,SUTT,1905.1,2034,Planned,Kalimantan Barat,kalimantan,740,Tabel A11.15
+RUPTL-KALIMANTAN-T-0030,Asam-asam — Satui,Asam-asam,Satui,150,,2,SUTT,128.0,2025,Construction,Kalimantan Selatan,kalimantan,753,Tabel A12.12
+RUPTL-KALIMANTAN-T-0031,Satui — Batulicin,Satui,Batulicin,150,,2,SUTT,150.0,2025,Construction,Kalimantan Selatan,kalimantan,753,Tabel A12.12
+RUPTL-KALIMANTAN-T-0032,Batulicin Baru — Inc 2 Phi (Batulicin - Tarjun),Batulicin Baru,Inc 2 Phi (Batulicin - Tarjun),150,New,4,SUTT,2.0,2025,Construction,Kalimantan Selatan,kalimantan,753,Tabel A12.12
+RUPTL-KALIMANTAN-T-0033,Inc 2 Phi (Batulicin - Pulau Laut) — Selaru,Inc 2 Phi (Batulicin - Pulau Laut),Selaru,150,New,4,SUTT,1.0,2025,Construction,Kalimantan Selatan,kalimantan,754,Tabel A12.15
+RUPTL-KALIMANTAN-T-0034,Tarjun — Sei Durian,Tarjun,Sei Durian,150,New,2,SUTT,169.0,2026,Planned,Kalimantan Selatan,kalimantan,754,Tabel A12.15
+RUPTL-KALIMANTAN-T-0035,PLTB Tanah Laut — Inc 2 phi (Mantuil-Asam- Asam),PLTB Tanah Laut,Inc 2 phi (Mantuil-Asam- Asam),150,New,2,SUTT,20.0,2026,Planned,Kalimantan Selatan,kalimantan,754,Tabel A12.15
+RUPTL-KALIMANTAN-T-0036,Tarjun — PLTG / GU Kalselteng,Tarjun,PLTG / GU Kalselteng,150,New,2,SUTT,6.0,2027,Planned,Kalimantan Selatan,kalimantan,754,Tabel A12.15
+RUPTL-KALIMANTAN-T-0037,PLTG / GU Kalselteng — Pulau Laut / L. Point Tarjun,PLTG / GU Kalselteng,Pulau Laut / L. Point Tarjun,150,New,2,SUTT,6.0,2028,Planned,Kalimantan Selatan,kalimantan,754,Tabel A12.15
+RUPTL-KALIMANTAN-T-0038,Seberang Barito — Kayutangi,Seberang Barito,Kayutangi,150,,2,SUTT,38.0,2028,Planned,Kalimantan Selatan,kalimantan,754,Tabel A12.15
+RUPTL-KALIMANTAN-T-0039,L. Point Pulau Laut — Pulau Laut,L. Point Pulau Laut,Pulau Laut,150,New,2,SUTT,3.0,2028,Planned,Kalimantan Selatan,kalimantan,754,Tabel A12.15
+RUPTL-KALIMANTAN-T-0040,L. Point Tarjun — L. Point Pulau Laut,L. Point Tarjun,L. Point Pulau Laut,150,New,2,SKLT,8.0,2028,Planned,Kalimantan Selatan,kalimantan,754,Tabel A12.15
+RUPTL-KALIMANTAN-T-0041,Rantau — Inc 1 phi (Barikin - Cempaka),Rantau,Inc 1 phi (Barikin - Cempaka),150,New,2,SUTT,1.0,2028,Planned,Kalimantan Selatan,kalimantan,754,Tabel A12.15
+RUPTL-KALIMANTAN-T-0042,Sei Tabuk — Mantuil,Sei Tabuk,Mantuil,150,New,2,SUTT,20.0,2030,Planned,Kalimantan Selatan,kalimantan,754,Tabel A12.15
+RUPTL-KALIMANTAN-T-0043,Cempaka — Ulin (GIS),Cempaka,Ulin (GIS),150,New,2,SUTT,63.0,2030,Planned,Kalimantan Selatan,kalimantan,754,Tabel A12.15
+RUPTL-KALIMANTAN-T-0044,Barikin — Amuntai,Barikin,Amuntai,150,,2,SUTT,60.0,2030,Planned,Kalimantan Selatan,kalimantan,754,Tabel A12.15
+RUPTL-KALIMANTAN-T-0045,Puruk Cahu — Kuala Kurun,Puruk Cahu,Kuala Kurun,150,New,2,SUTT,94.0,2025,Construction,Kalimantan Tengah,kalimantan,767,Tabel A13.12
+RUPTL-KALIMANTAN-T-0046,Pangkalan Bun — PT KLM,Pangkalan Bun,PT KLM,150,New,2,SUTT,22.0,2025,Construction,Kalimantan Tengah,kalimantan,767,Tabel A13.12
+RUPTL-KALIMANTAN-T-0047,Sebabi — Inc 2 phi (Pangkalan Banteng - Sampit),Sebabi,Inc 2 phi (Pangkalan Banteng - Sampit),150,New,4,SUTT,1.0,2027,Planned,Kalimantan Tengah,kalimantan,767,Tabel A13.12
+RUPTL-KALIMANTAN-T-0048,Kalseltengtimra-5 (PLTS+BESS) 100 MW — GI Eksisting / Baru Sistem Kalseltengtimra,Kalseltengtimra-5 (PLTS+BESS) 100 MW,GI Eksisting / Baru Sistem Kalseltengtimra,150,New,2,SUTT,10.0,,Planned,Kalimantan Tengah,kalimantan,767,Tabel A13.12
+RUPTL-KALIMANTAN-T-0049,Sudan — Add Inc 2 phi,Sudan,Add Inc 2 phi,150,New,2,SUTT,1.0,2029,Planned,Kalimantan Tengah,kalimantan,767,Tabel A13.12
+RUPTL-KALIMANTAN-T-0050,PLTU Kalselteng 3 — Kasongan,PLTU Kalselteng 3,Kasongan,150,New,2,SUTT,40.0,2029,Planned,Kalimantan Tengah,kalimantan,767,Tabel A13.12
+RUPTL-KALIMANTAN-T-0051,Buntok — Tamiang Layang,Buntok,Tamiang Layang,150,New,2,SUTT,92.0,2030,Planned,Kalimantan Tengah,kalimantan,767,Tabel A13.12
+RUPTL-KALIMANTAN-T-0052,Amuntai — Tamiang Layang,Amuntai,Tamiang Layang,150,New,2,SUTT,81.0,2030,Planned,Kalimantan Tengah,kalimantan,767,Tabel A13.12
+RUPTL-KALIMANTAN-T-0053,Timpah — Inc 2 phi (Buntok- Palangkaraya),Timpah,Inc 2 phi (Buntok- Palangkaraya),150,New,4,SUTT,1.0,2030,Planned,Kalimantan Tengah,kalimantan,768,Tabel A13.15
+RUPTL-KALIMANTAN-T-0054,Buntok — Palangkaraya,Buntok,Palangkaraya,150,New,2,SUTT,300.0,2030,Planned,Kalimantan Tengah,kalimantan,768,Tabel A13.15
+RUPTL-KALIMANTAN-T-0055,PLTU MT Hybrid Kalselteng 4 — GI Eksisting / Baru Sistem Kalseltengtimra,PLTU MT Hybrid Kalselteng 4,GI Eksisting / Baru Sistem Kalseltengtimra,150,New,2,SUTT,10.0,2032,Planned,Kalimantan Tengah,kalimantan,768,Tabel A13.15
+RUPTL-KALIMANTAN-T-0056,Kotabaru II — Kasongan,Kotabaru II,Kasongan,150,New,2,SUTT,486.0,2033,Planned,Kalimantan Tengah,kalimantan,768,Tabel A13.15
+RUPTL-KALIMANTAN-T-0057,PLTG / GU Kalteng — Pangkalan Bun,PLTG / GU Kalteng,Pangkalan Bun,150,New,2,SUTT,26.0,2027,Planned,Kalimantan Tengah,kalimantan,768,Tabel A13.15
+RUPTL-KALIMANTAN-T-0058,GI PLTGU Kaltim -1 — GI 150 kV Sisipan Sanga-sanga - Bukuan,GI PLTGU Kaltim -1,GI 150 kV Sisipan Sanga-sanga - Bukuan,150,New,2,SUTT,17.0,2027,Planned,Kalimantan Timur,kalimantan,778,Tabel A14.9
+RUPTL-KALIMANTAN-T-0059,GITET KFI — GITET Embalut,GITET KFI,GITET Embalut,500,New,2,SUTET,90.0,2031,Planned,Kalimantan Timur,kalimantan,778,Tabel A14.9
+RUPTL-KALIMANTAN-T-0060,GITET KFI — GITET Balikpapan,GITET KFI,GITET Balikpapan,500,New,2,SUTET,157.0,2031,Planned,Kalimantan Timur,kalimantan,778,Tabel A14.9
+RUPTL-KALIMANTAN-T-0061,Inc 2 Phi (Kariangau- Petung) — Tempadung,Inc 2 Phi (Kariangau- Petung),Tempadung,150,New,4,SUTT,4.0,2025,Construction,Kalimantan Timur,kalimantan,785,Tabel A14.16
+RUPTL-KALIMANTAN-T-0062,Tempadung — MMP,Tempadung,MMP,150,New,2,SUTT,6.0,2025,Construction,Kalimantan Timur,kalimantan,785,Tabel A14.16
+RUPTL-KALIMANTAN-T-0063,Tanjung Redeb — Talisayan,Tanjung Redeb,Talisayan,150,New,2,SUTT,210.0,2025,Construction,Kalimantan Timur,kalimantan,785,Tabel A14.16
+RUPTL-KALIMANTAN-T-0064,Talisayan — Maloy,Talisayan,Maloy,150,New,2,SUTT,234.0,2025,Construction,Kalimantan Timur,kalimantan,785,Tabel A14.16
+RUPTL-KALIMANTAN-T-0065,Bontang Lestari (ex Bontang Koala) — Inc 2 Phi (PLTU Kaltim 2 (FTP 2) - Bontang),Bontang Lestari (ex Bontang Koala),Inc 2 Phi (PLTU Kaltim 2 (FTP 2) - Bontang),150,New,4,SUTT,10.0,2025,Planned,Kalimantan Timur,kalimantan,786,
+RUPTL-KALIMANTAN-T-0066,PLTS IKN — GIS 4 IKN KIPP / Sepaku,PLTS IKN,GIS 4 IKN KIPP / Sepaku,150,New,2,SKTT,26.0,2026,Planned,Kalimantan Timur,kalimantan,786,
+RUPTL-KALIMANTAN-T-0067,Tanah Grogot — Sei Durian,Tanah Grogot,Sei Durian,150,New,2,SUTT,140.0,2026,Planned,Kalimantan Timur,kalimantan,786,
+RUPTL-KALIMANTAN-T-0068,Muara Wahau — Sangatta,Muara Wahau,Sangatta,150,New,2,SUTT,256.0,2026,Committed,Kalimantan Timur,kalimantan,786,
+RUPTL-KALIMANTAN-T-0069,Samboja — Inc 2 Phi (Karangjoang- Harapan Baru),Samboja,Inc 2 Phi (Karangjoang- Harapan Baru),150,New,4,SUTT,8.0,2026,Committed,Kalimantan Timur,kalimantan,786,
+RUPTL-KALIMANTAN-T-0070,Sambutan — PLTGU Kaltim-1,Sambutan,PLTGU Kaltim-1,150,New,2,SUTT,30.0,2026,Planned,Kalimantan Timur,kalimantan,786,
+RUPTL-KALIMANTAN-T-0071,PLTGU Kaltim-1 — KFI,PLTGU Kaltim-1,KFI,150,New,2,SUTT,10.0,2026,Planned,Kalimantan Timur,kalimantan,786,
+RUPTL-KALIMANTAN-T-0072,Melak — Kotabangun,Melak,Kotabangun,150,New,2,SUTT,334.0,2027,Committed,Kalimantan Timur,kalimantan,786,
+RUPTL-KALIMANTAN-T-0073,Kuaro — Tx Kuaro,Kuaro,Tx Kuaro,150,New,2,SUTT,280.0,2027,Committed,Kalimantan Timur,kalimantan,786,
+RUPTL-KALIMANTAN-T-0074,Tx Kuaro — GIS 4 IKN KIPP / Sepaku,Tx Kuaro,GIS 4 IKN KIPP / Sepaku,150,New,2,SKTT,6.0,2027,Committed,Kalimantan Timur,kalimantan,786,
+RUPTL-KALIMANTAN-T-0075,Tenggarong / Bukit Biru — GI 1 K-IKN,Tenggarong / Bukit Biru,GI 1 K-IKN,150,New,2,SUTT,126.0,2027,Committed,Kalimantan Timur,kalimantan,786,
+RUPTL-KALIMANTAN-T-0076,Embalut — Tengkawang,Embalut,Tengkawang,150,,2,SUTT,32.0,2027,Committed,Kalimantan Timur,kalimantan,786,
+RUPTL-KALIMANTAN-T-0077,Tengkawang — Harapan Baru,Tengkawang,Harapan Baru,150,,2,SUTT,16.6,2027,Planned,Kalimantan Timur,kalimantan,786,
+RUPTL-KALIMANTAN-T-0078,GIS 4 IKN KIPP / Sepaku — GI 1 K-IKN,GIS 4 IKN KIPP / Sepaku,GI 1 K-IKN,150,New,2,SKTT,44.0,2027,Committed,Kalimantan Timur,kalimantan,786,
+RUPTL-KALIMANTAN-T-0079,Embalut — Bukit Biru,Embalut,Bukit Biru,150,,2,SUTT,40.0,2027,Planned,Kalimantan Timur,kalimantan,786,
+RUPTL-KALIMANTAN-T-0080,Kalseltengtimra -1 (PLTS+BESS) 50 MW — GI Eksisting / Baru Sistem Kalseltengtimra,Kalseltengtimra -1 (PLTS+BESS) 50 MW,GI Eksisting / Baru Sistem Kalseltengtimra,150,New,2,SUTT,10.0,2027,Planned,Kalimantan Timur,kalimantan,786,
+RUPTL-KALIMANTAN-T-0081,GI PLTGU Kaltim-1 — GI 150 kV Sisipan Sanga- sanga - Bukuan,GI PLTGU Kaltim-1,GI 150 kV Sisipan Sanga- sanga - Bukuan,150,New,2,SUTT,17.0,2027,Planned,Kalimantan Timur,kalimantan,786,
+RUPTL-KALIMANTAN-T-0082,Tanjung Redeb — PLTG / GU Kaltara / Kaltimra,Tanjung Redeb,PLTG / GU Kaltara / Kaltimra,150,New,2,SUTT,30.0,2027,Planned,Kalimantan Timur,kalimantan,786,
+RUPTL-KALIMANTAN-T-0083,PLTMG Bangkanai — Melak,PLTMG Bangkanai,Melak,150,New,2,SUTT,210.0,2028,Planned,Kalimantan Timur,kalimantan,786,
+RUPTL-KALIMANTAN-T-0084,Sepaso — Inc 2 phi (Sanggata- Maloy),Sepaso,Inc 2 phi (Sanggata- Maloy),150,New,4,SUTT,2.0,2028,Planned,Kalimantan Timur,kalimantan,786,
+RUPTL-KALIMANTAN-T-0085,BWP 9 — Inc 2 phi (Senipah-Muara Jawa),BWP 9,Inc 2 phi (Senipah-Muara Jawa),150,New,4,SUTT,1.0,2028,Planned,Kalimantan Timur,kalimantan,786,
+RUPTL-KALIMANTAN-T-0086,GI 1 K-IKN — GI 2 K-IKN,GI 1 K-IKN,GI 2 K-IKN,150,New,2,SUTT,21.6,2028,Planned,Kalimantan Timur,kalimantan,786,
+RUPTL-KALIMANTAN-T-0087,Kalseltengtimra -2 (PLTS+BESS) 150 MW — GI Eksisting / Baru Sistem Kalseltengtimra,Kalseltengtimra -2 (PLTS+BESS) 150 MW,GI Eksisting / Baru Sistem Kalseltengtimra,150,New,2,SUTT,10.0,,Planned,Kalimantan Timur,kalimantan,786,
+RUPTL-KALIMANTAN-T-0088,Manggarsari — New Balikpapan,Manggarsari,New Balikpapan,150,,2,SUTT,24.0,2030,Planned,Kalimantan Timur,kalimantan,787,
+RUPTL-KALIMANTAN-T-0089,New Balikpapan — Balikpapan (Eks. GIS Balikpapan),New Balikpapan,Balikpapan (Eks. GIS Balikpapan),150,New,2,SKTT,20.0,2030,Planned,Kalimantan Timur,kalimantan,787,
+RUPTL-KALIMANTAN-T-0090,Samarinda (Ex.GIS) — New Samarinda,Samarinda (Ex.GIS),New Samarinda,150,New,2,SKTT,30.0,2030,Planned,Kalimantan Timur,kalimantan,787,
+RUPTL-KALIMANTAN-T-0091,GIS 3 KIPP — GIS 4 IKN KIPP / Sepaku,GIS 3 KIPP,GIS 4 IKN KIPP / Sepaku,150,New,2,SKTT,7.0,2030,Planned,Kalimantan Timur,kalimantan,787,
+RUPTL-KALIMANTAN-T-0092,GIS 3 KIPP — Tx 4,GIS 3 KIPP,Tx 4,150,New,2,SKTT,12.0,2030,Planned,Kalimantan Timur,kalimantan,787,
+RUPTL-KALIMANTAN-T-0093,Tx 4 — GI 1 K-IKN,Tx 4,GI 1 K-IKN,150,New,2,SUTT,12.0,2030,Planned,Kalimantan Timur,kalimantan,787,
+RUPTL-KALIMANTAN-T-0094,GIS 3 KIPP — PLTS IKN,GIS 3 KIPP,PLTS IKN,150,New,2,SKTT,20.0,2030,Planned,Kalimantan Timur,kalimantan,787,
+RUPTL-KALIMANTAN-T-0095,PLTS Kalseltengtimra (Kuota) Tersebar 30 MW — GI Eksisting / Baru Sistem Kalseltengtimra,PLTS Kalseltengtimra (Kuota) Tersebar 30 MW,GI Eksisting / Baru Sistem Kalseltengtimra,150,New,2,SUTT,10.0,2030,Planned,Kalimantan Timur,kalimantan,787,
+RUPTL-KALIMANTAN-T-0096,Kalseltengtimra -4 (PLTS+BESS) 50 MW — GI Eksisting / Baru Sistem Kalseltengtimra,Kalseltengtimra -4 (PLTS+BESS) 50 MW,GI Eksisting / Baru Sistem Kalseltengtimra,150,New,2,SUTT,10.0,,Planned,Kalimantan Timur,kalimantan,787,
+RUPTL-KALIMANTAN-T-0097,GITET Embalut — GITET IKN 1,GITET Embalut,GITET IKN 1,500,New,2,SUTET,150.0,2031,Planned,Kalimantan Timur,kalimantan,787,
+RUPTL-KALIMANTAN-T-0098,GITET IKN 1 — GITET Balikpapan,GITET IKN 1,GITET Balikpapan,500,New,2,SUTET,150.0,2031,Planned,Kalimantan Timur,kalimantan,787,
+RUPTL-KALIMANTAN-T-0099,Industri (Coastal Road) — Petung (Coastal Road),Industri (Coastal Road),Petung (Coastal Road),150,New,2,SUTT,90.0,2031,Planned,Kalimantan Timur,kalimantan,787,
+RUPTL-KALIMANTAN-T-0100,New Balikpapan — Industri,New Balikpapan,Industri,150,,2,SUTT,22.0,2031,Planned,Kalimantan Timur,kalimantan,787,
+RUPTL-KALIMANTAN-T-0101,GITET KFI — GITET Embalut,GITET KFI,GITET Embalut,500,New,2,SUTET,90.0,2031,Planned,Kalimantan Timur,kalimantan,787,
+RUPTL-KALIMANTAN-T-0102,GITET KFI — GITET Balikpapan,GITET KFI,GITET Balikpapan,500,New,2,SUTET,157.0,2031,Planned,Kalimantan Timur,kalimantan,787,
+RUPTL-KALIMANTAN-T-0103,Melak — Ujoh Bilang,Melak,Ujoh Bilang,150,New,2,SUTT,150.0,2031,Planned,Kalimantan Timur,kalimantan,787,
+RUPTL-KALIMANTAN-T-0104,GI Maloy — PT Ganda Alam Makmur,GI Maloy,PT Ganda Alam Makmur,150,New,2,SUTT,15.0,2032,Planned,Kalimantan Timur,kalimantan,787,
+RUPTL-KALIMANTAN-T-0105,Bangkanai — PT Manoor Bulan Lestari (MBL),Bangkanai,PT Manoor Bulan Lestari (MBL),150,New,2,SUTT,28.0,2032,Planned,Kalimantan Timur,kalimantan,787,
+RUPTL-KALIMANTAN-T-0106,Melak — PT Indo Tambangraya Megah,Melak,PT Indo Tambangraya Megah,150,New,2,SUTT,12.0,2032,Planned,Kalimantan Timur,kalimantan,787,
+RUPTL-KALIMANTAN-T-0107,Bontang — PT Badak,Bontang,PT Badak,150,New,2,SUTT,14.0,2032,Planned,Kalimantan Timur,kalimantan,787,
+RUPTL-KALIMANTAN-T-0108,Kembang Janggut — Kotabangun,Kembang Janggut,Kotabangun,150,New,2,SUTT,190.0,2032,Planned,Kalimantan Timur,kalimantan,787,
+RUPTL-KALIMANTAN-T-0109,Kembang Janggut — Muara Bengkal,Kembang Janggut,Muara Bengkal,150,New,2,SUTT,200.0,2032,Planned,Kalimantan Timur,kalimantan,787,
+RUPTL-KALIMANTAN-T-0110,Muara Bengkal — Muara Wahau,Muara Bengkal,Muara Wahau,150,New,2,SUTT,240.0,2032,Planned,Kalimantan Timur,kalimantan,787,
+RUPTL-KALIMANTAN-T-0111,PLTA Tabang 1 — Kembang Janggut,PLTA Tabang 1,Kembang Janggut,150,New,2,SUTT,160.0,2032,Planned,Kalimantan Timur,kalimantan,787,
+RUPTL-KALIMANTAN-T-0112,Muara Wahau — Tanjung Redeb,Muara Wahau,Tanjung Redeb,150,New,2,SUTT,304.0,2032,Planned,Kalimantan Timur,kalimantan,788,Tabel A14.19
+RUPTL-KALIMANTAN-T-0113,Tanjung Redeb — Tanjung Batu (Derawan),Tanjung Redeb,Tanjung Batu (Derawan),150,New,2,SUTT,100.0,2032,Planned,Kalimantan Timur,kalimantan,788,Tabel A14.19
+RUPTL-KALIMANTAN-T-0114,PLTA Kelai — Inc 2 Phi (Muara Wahau - Tanjung Redeb),PLTA Kelai,Inc 2 Phi (Muara Wahau - Tanjung Redeb),150,New,4,SUTT,6.0,2032,Planned,Kalimantan Timur,kalimantan,788,Tabel A14.19
+RUPTL-KALIMANTAN-T-0115,PLTA Kelai 2 — PLTA Kelai,PLTA Kelai 2,PLTA Kelai,150,New,2,SUTT,42.0,2032,Planned,Kalimantan Timur,kalimantan,788,Tabel A14.19
+RUPTL-KALIMANTAN-T-0116,PLTS Kalseltengtimra (Kuota) Tersebar 50 MW — GI Eksisting / Baru Sistem Kalseltengtimra,PLTS Kalseltengtimra (Kuota) Tersebar 50 MW,GI Eksisting / Baru Sistem Kalseltengtimra,150,New,2,SUTT,10.0,2033,Planned,Kalimantan Timur,kalimantan,788,Tabel A14.19
+RUPTL-KALIMANTAN-T-0117,PLTA Kalseltengtimra (Kuota) Tersebar 125 MW — GI Eksisting / Baru Sistem Kalseltengtimra*,PLTA Kalseltengtimra (Kuota) Tersebar 125 MW,GI Eksisting / Baru Sistem Kalseltengtimra*,150,New,4,SUTT,20.0,2034,Planned,Kalimantan Timur,kalimantan,788,Tabel A14.19
+RUPTL-KALIMANTAN-T-0118,GI 3 K-IKN — Inc 2 Phi (Bukit Biru - GI 1 K- IKN),GI 3 K-IKN,Inc 2 Phi (Bukit Biru - GI 1 K- IKN),150,New,4,SUTT,4357.2,2034,Planned,Kalimantan Timur,kalimantan,788,Tabel A14.19
+RUPTL-KALIMANTAN-T-0119,Tanjung Selor — Tidang Pale,Tanjung Selor,Tidang Pale,150,New,2,SUTT,226.0,2025,Construction,Kalimantan Utara,kalimantan,806,Tabel A15.12
+RUPTL-KALIMANTAN-T-0120,Sekatak — Inc 2 phi (Tanjung Selor – Tidung Pale),Sekatak,Inc 2 phi (Tanjung Selor – Tidung Pale),150,New,4,SUTT,4.0,2026,Committed,Kalimantan Utara,kalimantan,806,Tabel A15.12
+RUPTL-KALIMANTAN-T-0121,Sekatak — Landing Point Apas Payau,Sekatak,Landing Point Apas Payau,150,New,2,SUTT,112.0,2026,Committed,Kalimantan Utara,kalimantan,806,Tabel A15.12
+RUPTL-KALIMANTAN-T-0122,Landing Point Apas Payau — Landing Point Juata,Landing Point Apas Payau,Landing Point Juata,150,New,2,SKLT,4.4,2026,Committed,Kalimantan Utara,kalimantan,806,Tabel A15.12
+RUPTL-KALIMANTAN-T-0123,Landing Point Juata — Tarakan,Landing Point Juata,Tarakan,150,New,2,SUTT,40.0,2026,Committed,Kalimantan Utara,kalimantan,806,Tabel A15.12
+RUPTL-KALIMANTAN-T-0124,Inc 2 Phi (L.Point Juata - Tarakan) — PLTMG Tarakan,Inc 2 Phi (L.Point Juata - Tarakan),PLTMG Tarakan,150,New,4,SUTT,2.0,2027,Planned,Kalimantan Utara,kalimantan,806,Tabel A15.12
+RUPTL-KALIMANTAN-T-0125,Landing Point Tinabasan — Landing Point Nunukan,Landing Point Tinabasan,Landing Point Nunukan,150,New,2,SKLT,8.8,2028,Planned,Kalimantan Utara,kalimantan,806,Tabel A15.12
+RUPTL-KALIMANTAN-T-0126,Malinau — Landing Point Tinabasan,Malinau,Landing Point Tinabasan,150,New,2,SUTT,342.0,2028,Planned,Kalimantan Utara,kalimantan,806,Tabel A15.12
+RUPTL-KALIMANTAN-T-0127,Landing Point Nunukan — Nunukan,Landing Point Nunukan,Nunukan,150,New,2,SUTT,12.0,2028,Planned,Kalimantan Utara,kalimantan,806,Tabel A15.12
+RUPTL-KALIMANTAN-T-0128,Kalseltengtimra-3 (PLTS+BESS) 150 MW — GI Eksisting / Baru Sistem Kalseltengtimra,Kalseltengtimra-3 (PLTS+BESS) 150 MW,GI Eksisting / Baru Sistem Kalseltengtimra,150,New,2,SUTT,10.0,,Planned,Kalimantan Utara,kalimantan,806,Tabel A15.12
+RUPTL-KALIMANTAN-T-0129,GITET Kaltara — GITET TJ. Selor,GITET Kaltara,GITET TJ. Selor,500,New,2,SUTET,80.0,2031,Planned,Kalimantan Utara,kalimantan,806,Tabel A15.12
+RUPTL-KALIMANTAN-T-0130,GITET TJ. Selor — GITET Embalut,GITET TJ. Selor,GITET Embalut,500,New,2,SUTET,760.0,2031,Planned,Kalimantan Utara,kalimantan,806,Tabel A15.12
+RUPTL-KALIMANTAN-T-0131,PLTA Kalseltengtimra (Kuota) Tersebar 300 MW — GI Eksisting / Baru Sistem Kalseltengtimra,PLTA Kalseltengtimra (Kuota) Tersebar 300 MW,GI Eksisting / Baru Sistem Kalseltengtimra,150,New,2,SUTT,20.0,2031,Planned,Kalimantan Utara,kalimantan,806,Tabel A15.12
+RUPTL-KALIMANTAN-T-0132,PLTA Kalseltengtimra — GI Eksisting / Baru,PLTA Kalseltengtimra,GI Eksisting / Baru,150,New,2,SUTT,20.0,2031,Planned,Kalimantan Utara,kalimantan,806,Tabel A15.12
+RUPTL-KALIMANTAN-T-0133,Sebuku — Inc 2 phi (Malinau - Nunukan),Sebuku,Inc 2 phi (Malinau - Nunukan),150,New,4,SUTT,2.0,2032,Planned,Kalimantan Utara,kalimantan,807,Tabel A15.15
+RUPTL-KALIMANTAN-T-0134,PLTA Kalseltengtimra (Kuota) Tersebar 200 MW — GI Eksisting / Baru Sistem Kalseltengtimra,PLTA Kalseltengtimra (Kuota) Tersebar 200 MW,GI Eksisting / Baru Sistem Kalseltengtimra,150,New,2,SUTT,20.0,,Planned,Kalimantan Utara,kalimantan,807,Tabel A15.15
+RUPTL-KALIMANTAN-T-0135,Sei Menggaris — Tidang Pale,Sei Menggaris,Tidang Pale,150,New,2,SUTT,164.0,2033,Planned,Kalimantan Utara,kalimantan,807,Tabel A15.15
+RUPTL-KALIMANTAN-T-0136,PLTA Kalseltengtimra (Kuota) Tersebar 200 MW — GI Eksisting / Baru Sistem Kalseltengtimra,PLTA Kalseltengtimra (Kuota) Tersebar 200 MW,GI Eksisting / Baru Sistem Kalseltengtimra,150,New,2,SUTT,20.0,,Planned,Kalimantan Utara,kalimantan,807,Tabel A15.15
+RUPTL-KALIMANTAN-T-0137,Sei Menggaris — Landing Point Sei Menggaris,Sei Menggaris,Landing Point Sei Menggaris,150,New,2,SUTT,69.0,2034,Planned,Kalimantan Utara,kalimantan,807,Tabel A15.15
+RUPTL-KALIMANTAN-T-0138,Landing Point Seimenggaris — Landing Point Nunukan 2,Landing Point Seimenggaris,Landing Point Nunukan 2,150,New,2,SKLT,8.8,2034,Planned,Kalimantan Utara,kalimantan,807,Tabel A15.15
+RUPTL-KALIMANTAN-T-0139,GITET Tanjung Selor — Sabah,GITET Tanjung Selor,Sabah,275,New,2,SUTET,464.0,2034,Planned,Kalimantan Utara,kalimantan,807,Tabel A15.15
+RUPTL-KALIMANTAN-T-0140,Landing Point Nunukan 2 — Nunukan,Landing Point Nunukan 2,Nunukan,150,New,2,SUTT,12.0,2034,Planned,Kalimantan Utara,kalimantan,807,Tabel A15.15
+RUPTL-KALIMANTAN-T-0141,PLTS Kalseltengtimra (Kuota) Tersebar 50 MW — GI Eksisting / Baru Sistem Kalseltengtimra,PLTS Kalseltengtimra (Kuota) Tersebar 50 MW,GI Eksisting / Baru Sistem Kalseltengtimra,150,New,2,SUTT,10.0,2034,Planned,Kalimantan Utara,kalimantan,807,Tabel A15.15
+RUPTL-KALIMANTAN-T-0142,PLTA Kalseltengtimra (Kuota) Tersebar 400 MW Jumlah — GI Eksisting / Baru Sistem Kalseltengtimra,PLTA Kalseltengtimra (Kuota) Tersebar 400 MW Jumlah,GI Eksisting / Baru Sistem Kalseltengtimra,500,New,2,SUTET,1867.0,2032,Planned,Kalimantan Utara,kalimantan,807,Tabel A15.15
+RUPTL-KALIMANTAN-T-0143,Gandul II / Pamulang — Inc. (Serpong - Petukangan | Bintaro),Gandul II / Pamulang,Inc. (Serpong - Petukangan | Bintaro),150,New,4,SUTT,80.0,2025,Planned,Kalimantan Utara,kalimantan,819,Tabel B1.11
+RUPTL-KALIMANTAN-T-0144,Budi Kemuliaan — Kebon Sirih,Budi Kemuliaan,Kebon Sirih,150,New,2,SKTT,4.0,2025,Planned,Kalimantan Utara,kalimantan,819,Tabel B1.11
+RUPTL-KALIMANTAN-T-0145,Muara Karang Lama — Budi Kemuliaan,Muara Karang Lama,Budi Kemuliaan,150,New,2,SKTT,24.0,2025,Planned,Kalimantan Utara,kalimantan,819,Tabel B1.11
+RUPTL-KALIMANTAN-T-0146,Kebon Jeruk — Duri Kosambi,Kebon Jeruk,Duri Kosambi,150,New,2,SKTT,20.0,2025,Planned,Kalimantan Utara,kalimantan,819,Tabel B1.11
+RUPTL-KALIMANTAN-T-0147,Priok — Muara Tawar,Priok,Muara Tawar,500,New,2,SUTET,30.0,2025,Construction,Kalimantan Utara,kalimantan,819,Tabel B1.11
+RUPTL-KALIMANTAN-T-0148,Setiabudi II / Casablanca — Inc. (Cawang - Abadi Guna Papan | Taman Rasuna),Setiabudi II / Casablanca,Inc. (Cawang - Abadi Guna Papan | Taman Rasuna),150,New,4,SKTT,4.0,2026,Planned,Kalimantan Utara,kalimantan,819,Tabel B1.11
+RUPTL-KALIMANTAN-T-0149,Manggarai — Dukuh Atas,Manggarai,Dukuh Atas,150,New,1,SKTT,3.0,2026,Planned,Kalimantan Utara,kalimantan,819,Tabel B1.11
+RUPTL-KALIMANTAN-T-0150,Cawang Lama — Tx. Cawang Lama,Cawang Lama,Tx. Cawang Lama,150,New,2,SUTT,9.1,2026,Construction,Kalimantan Utara,kalimantan,819,Tabel B1.11
+RUPTL-KALIMANTAN-T-0151,Duren Tiga II / Ragunan — Tx. Ragunan,Duren Tiga II / Ragunan,Tx. Ragunan,150,New,2,SUTT,2.6,2026,Construction,Kalimantan Utara,kalimantan,819,Tabel B1.11
+RUPTL-KALIMANTAN-T-0152,Tx Cawang Lama — Tx. Ragunan,Tx Cawang Lama,Tx. Ragunan,150,New,2,SKTT,3.6,2026,Planned,Kalimantan Utara,kalimantan,819,Tabel B1.11
+RUPTL-KALIMANTAN-T-0153,Danayasa — Abadi Guna Papan,Danayasa,Abadi Guna Papan,150,New,2,SKTT,4.0,2026,Planned,Kalimantan Utara,kalimantan,819,Tabel B1.11
+RUPTL-KALIMANTAN-T-0154,Cawang Baru — Gandul,Cawang Baru,Gandul,500,New,2,,44.0,2026,Planned,Kalimantan Utara,kalimantan,819,Tabel B1.11
+RUPTL-KALIMANTAN-T-0155,Ancol II / Pinangsia — Angke,Ancol II / Pinangsia,Angke,150,New,2,SKTT,10.0,2027,Planned,Kalimantan Utara,kalimantan,819,Tabel B1.11
+RUPTL-KALIMANTAN-T-0156,Gambir Lama II — Inc. (Kebon Sirih - Gambir Lama),Gambir Lama II,Inc. (Kebon Sirih - Gambir Lama),150,New,2,SKTT,1.0,2027,Planned,Kalimantan Utara,kalimantan,819,Tabel B1.11
+RUPTL-KALIMANTAN-T-0157,Angke — Ancol,Angke,Ancol,150,New,2,SKTT,11.8,2027,Planned,Kalimantan Utara,kalimantan,819,Tabel B1.11
+RUPTL-KALIMANTAN-T-0158,Ancol — Kemayoran,Ancol,Kemayoran,150,New,2,SKTT,9.6,2027,Planned,Kalimantan Utara,kalimantan,819,Tabel B1.11
+RUPTL-KALIMANTAN-T-0159,Kemayoran — Tx. Kemayoran,Kemayoran,Tx. Kemayoran,150,New,2,SKTT,10.0,2027,Planned,Kalimantan Utara,kalimantan,819,Tabel B1.11
+RUPTL-KALIMANTAN-T-0160,Muara Karang Lama — Duri Kosambi,Muara Karang Lama,Duri Kosambi,150,New,2,SKTT,38.0,2027,Planned,Kalimantan Utara,kalimantan,819,Tabel B1.11
+RUPTL-KALIMANTAN-T-0161,Petukangan — PLTD Senayan,Petukangan,PLTD Senayan,150,New,2,SKTT,19.0,2027,Planned,Kalimantan Utara,kalimantan,819,Tabel B1.11
+RUPTL-KALIMANTAN-T-0162,Manggarai — Gedung Pola,Manggarai,Gedung Pola,150,New,1,SKTT,3.5,2027,Planned,Kalimantan Utara,kalimantan,819,Tabel B1.11
+RUPTL-KALIMANTAN-T-0163,Duri Kosambi — Kembangan,Duri Kosambi,Kembangan,150,New,2,SKTT,13.6,2027,Planned,Kalimantan Utara,kalimantan,819,Tabel B1.11
+RUPTL-KALIMANTAN-T-0164,Priok — Muara karang,Priok,Muara karang,500,New,2,SUTET,20.0,2027,Planned,Kalimantan Utara,kalimantan,820,Tabel B1.14
+RUPTL-KALIMANTAN-T-0165,Mampang Baru II — Inc. (Mampang - Karet Lama),Mampang Baru II,Inc. (Mampang - Karet Lama),150,New,4,SUTT,6.4,2028,Planned,Kalimantan Utara,kalimantan,820,Tabel B1.14
+RUPTL-KALIMANTAN-T-0166,PLTSA Sunter — Kemayoran,PLTSA Sunter,Kemayoran,150,New,1,SUTT,3.0,2028,Planned,Kalimantan Utara,kalimantan,820,Tabel B1.14
+RUPTL-KALIMANTAN-T-0167,Rasuna Said — Cawang,Rasuna Said,Cawang,275,New,2,,20.0,2028,Planned,Kalimantan Utara,kalimantan,820,Tabel B1.14
+RUPTL-KALIMANTAN-T-0168,Citra Garden — Kapuk / PIK,Citra Garden,Kapuk / PIK,150,New,2,SUTT,18.0,2032,Planned,Kalimantan Utara,kalimantan,820,Tabel B1.14
+RUPTL-KALIMANTAN-T-0169,Taman Rasuna II / Benhil — Karet Lama,Taman Rasuna II / Benhil,Karet Lama,150,New,2,SKTT,10.0,2033,Planned,Kalimantan Utara,kalimantan,820,Tabel B1.14
+RUPTL-KALIMANTAN-T-0170,Semanggi Barat II / Petamburan — Karet Lama,Semanggi Barat II / Petamburan,Karet Lama,150,New,2,SKTT,3.0,2034,Planned,Kalimantan Utara,kalimantan,820,Tabel B1.14
+RUPTL-KALIMANTAN-T-0171,PLTSa DKI Jakarta (Kuota) Tersebar 1 — DKI Jakarta Eksisting / Baru,PLTSa DKI Jakarta (Kuota) Tersebar 1,DKI Jakarta Eksisting / Baru,150,New,2,SUTT,10.0,2029,Planned,Kalimantan Utara,kalimantan,820,Tabel B1.14
+RUPTL-KALIMANTAN-T-0172,PLTSa DKI Jakarta (Kuota) Tersebar 1 — DKI Jakarta Eksisting / Baru,PLTSa DKI Jakarta (Kuota) Tersebar 1,DKI Jakarta Eksisting / Baru,150,New,2,SUTT,10.0,2029,Planned,Kalimantan Utara,kalimantan,820,Tabel B1.14
+RUPTL-KALIMANTAN-T-0173,PLTSa DKI Jakarta (Kuota) Tersebar 1 — DKI Jakarta Eksisting / Baru,PLTSa DKI Jakarta (Kuota) Tersebar 1,DKI Jakarta Eksisting / Baru,150,New,2,SUTT,10.0,2029,Planned,Kalimantan Utara,kalimantan,820,Tabel B1.14
+RUPTL-KALIMANTAN-T-0174,Pondok Kelapa II — Inc. (Pondok Kelapa - Jatiwaringin),Pondok Kelapa II,Inc. (Pondok Kelapa - Jatiwaringin),150,New,4,SUTT,4.0,2026,Planned,Kalimantan Utara,kalimantan,820,Tabel B1.14

@@ -1,0 +1,100 @@
+ruptl_id,name,voltage_kv,action_type,capacity_mva,target_cod_year,status,province,classification,baseline_id,baseline_name,source_page,source_table
+RUPTL-SULAWESI-GI-0001,Bitung Baru,150/70,New,60.0,2025,Committed,Sulawesi Utara,RECLASSIFY_NEW,GI-SLW-0003,Bitung,967,Tabel C1.19
+RUPTL-SULAWESI-GI-0002,Bitung Baru,150/20,New,60.0,2025,Committed,Sulawesi Utara,RECLASSIFY_NEW,GI-SLW-0003,Bitung,967,Tabel C1.19
+RUPTL-SULAWESI-GI-0003,Tanjung Merah,150,Extension,2.0,2025,Committed,Sulawesi Utara,EXISTING_EXT,GI-SLW-0014,Tanjung Merah,967,Tabel C1.19
+RUPTL-SULAWESI-GI-0004,Likupang,150,Extension,2.0,2026,Construction,Sulawesi Utara,EXISTING_EXT,GI-SLW-0013,Likupang,968,Tabel C1.22
+RUPTL-SULAWESI-GI-0005,Belang,150/20,New,30.0,2027,Planned,Sulawesi Utara,NEW_BUILD,,,968,Tabel C1.22
+RUPTL-SULAWESI-GI-0006,Belang,150,Extension,2.0,2027,Planned,Sulawesi Utara,NEW_BUILD,,,968,Tabel C1.22
+RUPTL-SULAWESI-GI-0007,Kema (PLTU Sulut 3),150,Extension,2.0,2027,Planned,Sulawesi Utara,NEW_BUILD,,,968,Tabel C1.22
+RUPTL-SULAWESI-GI-0008,Likupang,150,Extension,2.0,2027,Planned,Sulawesi Utara,EXISTING_EXT,GI-SLW-0013,Likupang,968,Tabel C1.22
+RUPTL-SULAWESI-GI-0009,Molibagu,150,Extension,2.0,2027,Planned,Sulawesi Utara,EXISTING_EXT,GI-SLW-0019,Molibagu,968,Tabel C1.22
+RUPTL-SULAWESI-GI-0010,Molibagu,150,Extension,2.0,2027,Planned,Sulawesi Utara,EXISTING_EXT,GI-SLW-0019,Molibagu,968,Tabel C1.22
+RUPTL-SULAWESI-GI-0011,Tutuyan,150,Extension,2.0,2027,Planned,Sulawesi Utara,NEW_BUILD,,,968,Tabel C1.22
+RUPTL-SULAWESI-GI-0012,Tutuyan,150,Extension,2.0,2027,Planned,Sulawesi Utara,NEW_BUILD,,,968,Tabel C1.22
+RUPTL-SULAWESI-GI-0013,Lolak,150,Extension,2.0,2027,Planned,Sulawesi Utara,EXISTING_EXT,GI-SLW-0016,Lolak,968,Tabel C1.22
+RUPTL-SULAWESI-GI-0014,Sawangan,70,Extension,2.0,2030,Committed,Sulawesi Utara,EXISTING_EXT,GI-SLW-0002,Sawangan,968,Tabel C1.22
+RUPTL-SULAWESI-GI-0015,Otam,150,Extension,3.0,2031,Planned,Sulawesi Utara,EXISTING_EXT,GI-SLW-0015,Otam,968,Tabel C1.22
+RUPTL-SULAWESI-GI-0016,Sario (GIS)/Manado Kota TOTAL :,150/20,Extension,270.0,2033,Planned,Sulawesi Utara,NEW_BUILD,,,968,Tabel C1.22
+RUPTL-SULAWESI-GI-0017,Andowia (sisi 150 kV GITET Andowia),150,Extension,2.0,2027,Planned,Sulawesi Tengah,NEW_BUILD,,,977,Tabel C2.10
+RUPTL-SULAWESI-GI-0018,Bungku (sisi 150 kV GITET Bungku),150,Extension,2.0,2027,Planned,Sulawesi Tengah,NEW_BUILD,,,977,Tabel C2.10
+RUPTL-SULAWESI-GI-0019,Bungku (sisi 150 kV GITET Bungku),150,Extension,2.0,2027,Planned,Sulawesi Tengah,NEW_BUILD,,,977,Tabel C2.10
+RUPTL-SULAWESI-GI-0020,Kolonedale,150,Extension,2.0,2029,Planned,Sulawesi Tengah,EXISTING_EXT,GI-SLW-0036,Kolonedale,977,Tabel C2.10
+RUPTL-SULAWESI-GI-0021,GITET Bungku,275/150,Extension,252.0,2031,Planned,Sulawesi Tengah,NEW_BUILD,,,977,Tabel C2.10
+RUPTL-SULAWESI-GI-0022,Bungku,150/20,New,30.0,2025,Construction,Sulawesi Tengah,NEW_BUILD,,,986,Tabel C2.19
+RUPTL-SULAWESI-GI-0023,Tentena,150,Extension,2.0,2025,Construction,Sulawesi Tengah,EXISTING_EXT,GI-SLW-0029,Tentena,986,Tabel C2.19
+RUPTL-SULAWESI-GI-0024,Ampana,150,Extension,2.0,2025,Construction,Sulawesi Tengah,NEW_BUILD,,,986,Tabel C2.19
+RUPTL-SULAWESI-GI-0025,Ampana,150/20,New,30.0,2025,Construction,Sulawesi Tengah,NEW_BUILD,,,986,Tabel C2.19
+RUPTL-SULAWESI-GI-0026,Bunta,150/20,New,30.0,2025,Construction,Sulawesi Tengah,NEW_BUILD,,,986,Tabel C2.19
+RUPTL-SULAWESI-GI-0027,Bungku,150,Extension,2.0,2025,Construction,Sulawesi Tengah,NEW_BUILD,,,986,Tabel C2.19
+RUPTL-SULAWESI-GI-0028,GITET Tentena,275/150,Extension,250.0,2025,Committed,Sulawesi Tengah,EXISTING_EXT,GI-SLW-0029,Tentena,986,Tabel C2.19
+RUPTL-SULAWESI-GI-0029,GITET Tentena,275/150,Extension,250.0,2025,Committed,Sulawesi Tengah,EXISTING_EXT,GI-SLW-0029,Tentena,986,Tabel C2.19
+RUPTL-SULAWESI-GI-0030,Leok/Buol,150/20,New,30.0,2025,Construction,Sulawesi Tengah,NEW_BUILD,,,986,Tabel C2.19
+RUPTL-SULAWESI-GI-0031,Moutong,150/20,New,30.0,2025,Construction,Sulawesi Tengah,RECLASSIFY_NEW,GI-SLW-0038,Moutong,986,Tabel C2.19
+RUPTL-SULAWESI-GI-0032,Moutong,150,Extension,2.0,2025,Construction,Sulawesi Tengah,EXISTING_EXT,GI-SLW-0038,Moutong,986,Tabel C2.19
+RUPTL-SULAWESI-GI-0033,Poso,150,Extension,2.0,2025,Committed,Sulawesi Tengah,EXISTING_EXT,GI-SLW-0030,Poso,986,Tabel C2.19
+RUPTL-SULAWESI-GI-0034,Tambu,150/20,New,30.0,2025,Construction,Sulawesi Tengah,NEW_BUILD,,,986,Tabel C2.19
+RUPTL-SULAWESI-GI-0035,Toili,150,Extension,2.0,2025,Construction,Sulawesi Tengah,EXISTING_EXT,GI-SLW-0031,Toili,986,Tabel C2.19
+RUPTL-SULAWESI-GI-0036,Tolitoli,150/20,New,30.0,2025,Construction,Sulawesi Tengah,NEW_BUILD,,,986,Tabel C2.19
+RUPTL-SULAWESI-GI-0037,Tolitoli,150,Extension,2.0,2025,Construction,Sulawesi Tengah,NEW_BUILD,,,986,Tabel C2.19
+RUPTL-SULAWESI-GI-0038,Bangkir,150/20,New,30.0,2026,Construction,Sulawesi Tengah,RECLASSIFY_NEW,GI-SLW-0037,Bangkir,987,Tabel C2.22
+RUPTL-SULAWESI-GI-0039,Bangkir,150,Extension,2.0,2026,Construction,Sulawesi Tengah,EXISTING_EXT,GI-SLW-0037,Bangkir,987,Tabel C2.22
+RUPTL-SULAWESI-GI-0040,Bangkir,150,Extension,2.0,2026,Construction,Sulawesi Tengah,EXISTING_EXT,GI-SLW-0037,Bangkir,987,Tabel C2.22
+RUPTL-SULAWESI-GI-0041,GITET Bungku,275/150,New,250.0,2026,Planned,Sulawesi Tengah,NEW_BUILD,,,987,Tabel C2.22
+RUPTL-SULAWESI-GI-0042,Bungku,150/20,Extension,30.0,2026,Committed,Sulawesi Tengah,NEW_BUILD,,,987,Tabel C2.22
+RUPTL-SULAWESI-GI-0043,Kalora,150/20,New,30.0,2027,Planned,Sulawesi Tengah,NEW_BUILD,,,987,Tabel C2.22
+RUPTL-SULAWESI-GI-0044,Bungku (sisi 150 kV GITET Bungku),150,Extension,2.0,2027,Planned,Sulawesi Tengah,NEW_BUILD,,,987,Tabel C2.22
+RUPTL-SULAWESI-GI-0045,Bungku (sisi 150 kV GITET Bungku),150,Extension,2.0,2027,Planned,Sulawesi Tengah,NEW_BUILD,,,987,Tabel C2.22
+RUPTL-SULAWESI-GI-0046,Bangkir,150,Extension,2.0,2028,Planned,Sulawesi Tengah,EXISTING_EXT,GI-SLW-0037,Bangkir,987,Tabel C2.22
+RUPTL-SULAWESI-GI-0047,GITET Bungku,275/150,Extension,250.0,2028,Planned,Sulawesi Tengah,NEW_BUILD,,,987,Tabel C2.22
+RUPTL-SULAWESI-GI-0048,Tambu,150,Extension,2.0,2028,Planned,Sulawesi Tengah,NEW_BUILD,,,987,Tabel C2.22
+RUPTL-SULAWESI-GI-0049,Kolonedale,150,Extension,2.0,2029,Planned,Sulawesi Tengah,EXISTING_EXT,GI-SLW-0036,Kolonedale,987,Tabel C2.22
+RUPTL-SULAWESI-GI-0050,GITET Tentena,275,Extension,2.0,2031,Planned,Sulawesi Tengah,EXISTING_EXT,GI-SLW-0029,Tentena,987,Tabel C2.22
+RUPTL-SULAWESI-GI-0051,Sigi,150/20,New,30.0,2031,Planned,Sulawesi Tengah,NEW_BUILD,,,987,Tabel C2.22
+RUPTL-SULAWESI-GI-0052,GITET Bungku,275/150,Extension,250.0,2031,Planned,Sulawesi Tengah,NEW_BUILD,,,987,Tabel C2.22
+RUPTL-SULAWESI-GI-0053,Marisa,150,Extension,2.0,2025,Committed,Gorontalo,EXISTING_EXT,GI-SLW-0042,Marisa,998,Tabel C3.15
+RUPTL-SULAWESI-GI-0054,Tolinggula,150,Extension,2.0,2025,Construction,Gorontalo,EXISTING_EXT,GI-SLW-0046,Tolinggula,998,Tabel C3.15
+RUPTL-SULAWESI-GI-0055,Botupingge,150,Extension,2.0,2027,Planned,Gorontalo,EXISTING_EXT,GI-SLW-0041,Botupingge,998,Tabel C3.15
+RUPTL-SULAWESI-GI-0056,Botupingge,150,Extension,2.0,2027,Planned,Gorontalo,EXISTING_EXT,GI-SLW-0041,Botupingge,998,Tabel C3.15
+RUPTL-SULAWESI-GI-0057,Anggrek (PLTU Gorontalo),150/20,Extension,30.0,2027,Planned,Gorontalo,EXISTING_EXT,GI-SLW-0043,Anggrek (PLTU Gorontalo),998,Tabel C3.15
+RUPTL-SULAWESI-GI-0058,Bantaeng Switching,150,Extension,2.0,2027,Planned,Sulawesi Selatan,EXISTING_EXT,GI-SLW-0071,Bantaeng,1011,Tabel C4.12
+RUPTL-SULAWESI-GI-0059,Malili,150,Extension,2.0,2027,Planned,Sulawesi Selatan,EXISTING_EXT,GI-SLW-0081,Malili,1011,Tabel C4.12
+RUPTL-SULAWESI-GI-0060,Bantaeng Switching,150,Extension,2.0,2027,Planned,Sulawesi Selatan,EXISTING_EXT,GI-SLW-0071,Bantaeng,1011,Tabel C4.12
+RUPTL-SULAWESI-GI-0061,Bantaeng Switching,150,Extension,8.0,2027,Planned,Sulawesi Selatan,EXISTING_EXT,GI-SLW-0071,Bantaeng,1011,Tabel C4.12
+RUPTL-SULAWESI-GI-0062,Malili,150,Extension,2.0,2028,Planned,Sulawesi Selatan,EXISTING_EXT,GI-SLW-0081,Malili,1011,Tabel C4.12
+RUPTL-SULAWESI-GI-0063,GITET Malili,275/150,New,252.0,2029,Planned,Sulawesi Selatan,RECLASSIFY_NEW,GI-SLW-0081,Malili,1011,Tabel C4.12
+RUPTL-SULAWESI-GI-0064,Bantaeng Switching,150,Extension,8.0,2032,Planned,Sulawesi Selatan,EXISTING_EXT,GI-SLW-0071,Bantaeng,1011,Tabel C4.12
+RUPTL-SULAWESI-GI-0065,Kendari (sisi 150 kV GITET Kendari),150,Extension,2.0,2027,Planned,Sulawesi Tenggara,EXISTING_EXT,GI-SLW-0090,Kendari 150 kV,1035,Tabel C5.12
+RUPTL-SULAWESI-GI-0066,Andowia (sisi 150 kV GITET Andowia),150,Extension,2.0,2027,Planned,Sulawesi Tenggara,NEW_BUILD,,,1035,Tabel C5.12
+RUPTL-SULAWESI-GI-0067,Pomalaa Switching,150,New,6.0,2029,Planned,Sulawesi Tenggara,NEW_BUILD,,,1035,Tabel C5.12
+RUPTL-SULAWESI-GI-0068,Kendari (sisi 150 kV GITET Kendari),150,Extension,2.0,2030,Planned,Sulawesi Tenggara,EXISTING_EXT,GI-SLW-0090,Kendari 150 kV,1035,Tabel C5.12
+RUPTL-SULAWESI-GI-0069,Andowia (sisi 150 kV GITET Andowia),150,Extension,2.0,2031,Planned,Sulawesi Tenggara,NEW_BUILD,,,1035,Tabel C5.12
+RUPTL-SULAWESI-GI-0070,Bungku (sisi 150 kV GITET Bungku),150,Extension,2.0,2031,Planned,Sulawesi Tenggara,NEW_BUILD,,,1035,Tabel C5.12
+RUPTL-SULAWESI-GI-0071,GITET Andowia,275/150,Extension,252.0,2031,Planned,Sulawesi Tenggara,NEW_BUILD,,,1035,Tabel C5.12
+RUPTL-SULAWESI-GI-0072,Kendari (sisi 150 kV GITET Kendari),150,Extension,2.0,2031,Planned,Sulawesi Tenggara,EXISTING_EXT,GI-SLW-0090,Kendari 150 kV,1035,Tabel C5.12
+RUPTL-SULAWESI-GI-0073,Batu Putih,150,New,6.0,2031,Planned,Sulawesi Tenggara,NEW_BUILD,,,1035,Tabel C5.12
+RUPTL-SULAWESI-GI-0074,Andowia (sisi 150 kV GITET Andowia),150,New,4.0,2025,Planned,Sulawesi Tenggara,NEW_BUILD,,,1045,Tabel C5.19
+RUPTL-SULAWESI-GI-0075,Unaaha,150/20,Extension,30.0,2025,Committed,Sulawesi Tenggara,EXISTING_EXT,GI-SLW-0093,Unaaha,1045,Tabel C5.19
+RUPTL-SULAWESI-GI-0076,Kolaka,150/20,Extension,30.0,2025,Committed,Sulawesi Tenggara,EXISTING_EXT,GI-SLW-0091,Kolaka,1045,Tabel C5.19
+RUPTL-SULAWESI-GI-0077,GITET Andowia,275/150,New,250.0,2026,Planned,Sulawesi Tenggara,NEW_BUILD,,,1045,Tabel C5.19
+RUPTL-SULAWESI-GI-0078,GITET Kendari,275/150,New,250.0,2026,Planned,Sulawesi Tenggara,NEW_BUILD,,,1045,Tabel C5.19
+RUPTL-SULAWESI-GI-0079,Andowia (sisi 150 kV GITET Andowia),150,Extension,2.0,2027,Planned,Sulawesi Tenggara,NEW_BUILD,,,1045,Tabel C5.19
+RUPTL-SULAWESI-GI-0080,Kendari (sisi 150 kV GITET Kendari),150,Extension,2.0,2027,Planned,Sulawesi Tenggara,EXISTING_EXT,GI-SLW-0090,Kendari 150 kV,1045,Tabel C5.19
+RUPTL-SULAWESI-GI-0081,Andowia (sisi 150 kV GITET Andowia),150,Extension,2.0,2027,Planned,Sulawesi Tenggara,NEW_BUILD,,,1045,Tabel C5.19
+RUPTL-SULAWESI-GI-0082,Kolaka Smelter,150,Extension,202.0,2027,Planned,Sulawesi Tenggara,NEW_BUILD,,,1045,Tabel C5.19
+RUPTL-SULAWESI-GI-0083,Kolaka Smelter,150,Extension,302.0,2027,Planned,Sulawesi Tenggara,NEW_BUILD,,,1045,Tabel C5.19
+RUPTL-SULAWESI-GI-0084,Andowia (Sisi 150 kV GITET Andowia),150,Extension,302.0,2027,Planned,Sulawesi Tenggara,NEW_BUILD,,,1046,Tabel C5.22
+RUPTL-SULAWESI-GI-0085,Bau Bau,150/20,Extension,60.0,2028,Planned,Sulawesi Tenggara,NEW_BUILD,,,1046,Tabel C5.22
+RUPTL-SULAWESI-GI-0086,Andolo,150,Extension,3.0,2028,Planned,Sulawesi Tenggara,EXISTING_EXT,GI-SLW-0096,Andolo,1046,Tabel C5.22
+RUPTL-SULAWESI-GI-0087,Lasusua,150,Extension,2.0,2028,Committed,Sulawesi Tenggara,EXISTING_EXT,GI-SLW-0092,Lasusua,1046,Tabel C5.22
+RUPTL-SULAWESI-GI-0088,Raha,150,Extension,4.0,2028,Planned,Sulawesi Tenggara,EXISTING_EXT,GI-SLW-0099,Raha,1046,Tabel C5.22
+RUPTL-SULAWESI-GI-0089,GITET Andowia,275/150,Extension,250.0,2028,Planned,Sulawesi Tenggara,NEW_BUILD,,,1046,Tabel C5.22
+RUPTL-SULAWESI-GI-0090,GITET Kendari,275/150,Extension,250.0,2028,Planned,Sulawesi Tenggara,NEW_BUILD,,,1046,Tabel C5.22
+RUPTL-SULAWESI-GI-0091,Kolaka Smelter,150,Extension,2.0,2029,Planned,Sulawesi Tenggara,NEW_BUILD,,,1046,Tabel C5.22
+RUPTL-SULAWESI-GI-0092,GITET Kendari,275,Extension,2.0,2029,Planned,Sulawesi Tenggara,NEW_BUILD,,,1046,Tabel C5.22
+RUPTL-SULAWESI-GI-0093,GITET Kolaka Smelter,275/150,New,252.0,2029,Planned,Sulawesi Tenggara,NEW_BUILD,,,1046,Tabel C5.22
+RUPTL-SULAWESI-GI-0094,Pomalaa Switching,150,New,6.0,2029,Planned,Sulawesi Tenggara,NEW_BUILD,,,1046,Tabel C5.22
+RUPTL-SULAWESI-GI-0095,Kendari (sisi 150 kV GITET Kendari),150,Extension,2.0,2030,Planned,Sulawesi Tenggara,EXISTING_EXT,GI-SLW-0090,Kendari 150 kV,1046,Tabel C5.22
+RUPTL-SULAWESI-GI-0096,Andowia (sisi 150 kV GITET Andowia),150,Extension,2.0,2031,Planned,Sulawesi Tenggara,NEW_BUILD,,,1046,Tabel C5.22
+RUPTL-SULAWESI-GI-0097,GITET Andowia,275/150,Extension,252.0,2031,Planned,Sulawesi Tenggara,NEW_BUILD,,,1046,Tabel C5.22
+RUPTL-SULAWESI-GI-0098,Kendari (sisi 150 kV GITET Kendari),150,Extension,2.0,2031,Planned,Sulawesi Tenggara,EXISTING_EXT,GI-SLW-0090,Kendari 150 kV,1046,Tabel C5.22
+RUPTL-SULAWESI-GI-0099,Batu Putih,150,New,6.0,2031,Planned,Sulawesi Tenggara,NEW_BUILD,,,1046,Tabel C5.22

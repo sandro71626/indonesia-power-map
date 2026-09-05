@@ -1,0 +1,108 @@
+id,name,type,capacity_mw,province,region_key,status,target_cod_year,cod_re_base,cod_ared,developer,source_table,source_page,lat,lon,coord_source,coord_confidence
+RUPTL-KALIMANTAN-P-0001,Kuala Mandor,PLTBM,5.0,Kalimantan Barat,kalimantan,Construction,2025,2025,,IPP,Tabel A11.11,735,-0.206777,111.573348,province_centroid,low
+RUPTL-KALIMANTAN-P-0002,Kalbar-1,PLTGU,250.0,Kalimantan Barat,kalimantan,Planned,2026,2026,,SH-PLN,Tabel A11.11,735,-0.001087,109.327622,gazetteer_generator:GEN-KLM-0001,high
+RUPTL-KALIMANTAN-P-0003,Kalbar-1 (PLTS+BESS),PLTS,80.0,Kalimantan Barat,kalimantan,Planned,,,,IPP,Tabel A11.11,735,-0.001087,109.327622,gazetteer_generator:GEN-KLM-0001,high
+RUPTL-KALIMANTAN-P-0004,Kalbar-1 (PLTS+BESS),?,50.0,Kalimantan Barat,kalimantan,Planned,,,,IPP,Tabel A11.11,735,-0.001087,109.327622,gazetteer_generator:GEN-KLM-0001,high
+RUPTL-KALIMANTAN-P-0005,Kalbar-1 (PLTS+BESS),PLTS,40.0,Kalimantan Barat,kalimantan,Planned,,,,IPP,Tabel A11.11,735,-0.001087,109.327622,gazetteer_generator:GEN-KLM-0001,high
+RUPTL-KALIMANTAN-P-0006,Kalbar-1 (PLTS+BESS),?,25.0,Kalimantan Barat,kalimantan,Planned,,,,IPP,Tabel A11.11,735,-0.001087,109.327622,gazetteer_generator:GEN-KLM-0001,high
+RUPTL-KALIMANTAN-P-0007,Setanggi,PLTM,5.0,Kalimantan Barat,kalimantan,Committed,2027,2027,,IPP,Tabel A11.11,735,-0.120648,111.296044,province_centroid,low
+RUPTL-KALIMANTAN-P-0008,Manajur,PLTM,5.0,Kalimantan Barat,kalimantan,Committed,2027,2027,,IPP,Tabel A11.11,735,-0.377800,111.699247,province_centroid,low
+RUPTL-KALIMANTAN-P-0009,Kalbar-2,?,100.0,Kalimantan Barat,kalimantan,Planned,2027,2027,,IPP,Tabel A11.11,735,-0.001087,109.327622,gazetteer_generator:GEN-KLM-0001,high
+RUPTL-KALIMANTAN-P-0010,Kalbar,PLTS,50.0,Kalimantan Barat,kalimantan,Planned,2028,2028,,SH-PLN,Tabel A11.11,735,-0.001087,109.327622,gazetteer_generator:GEN-KLM-0001,high
+RUPTL-KALIMANTAN-P-0011,Khatulistiwa (Kuota) Tersebar,PLTM,16.0,Kalimantan Barat,kalimantan,Planned,2028,2028,,IPP,Tabel A11.11,735,-0.192914,111.256536,province_centroid,low
+RUPTL-KALIMANTAN-P-0012,Kalimantan (Kuota) Tersebar,?,7.5,Kalimantan Barat,kalimantan,Planned,2029,2029,,IPP,Tabel A11.11,735,-0.223267,111.634906,province_centroid,low
+RUPTL-KALIMANTAN-P-0013,Kalbar,PLTM,2.0,Kalimantan Barat,kalimantan,Planned,2029,2029,,PLN,Tabel A11.11,735,-0.001087,109.327622,gazetteer_generator:GEN-KLM-0001,high
+RUPTL-KALIMANTAN-P-0014,Kalbar-2 (PLTS+BESS),PLTS,80.0,Kalimantan Barat,kalimantan,Planned,,,,IPP,Tabel A11.11,735,-0.001087,109.327622,gazetteer_generator:GEN-KLM-0001,high
+RUPTL-KALIMANTAN-P-0015,Kalbar-2 (PLTS+BESS),?,50.0,Kalimantan Barat,kalimantan,Planned,,,,IPP,Tabel A11.11,735,-0.001087,109.327622,gazetteer_generator:GEN-KLM-0001,high
+RUPTL-KALIMANTAN-P-0016,Kalbar-3,PLTMG,50.0,Kalimantan Barat,kalimantan,Planned,2029,2029,,IPP,Tabel A11.11,735,-0.001087,109.327622,gazetteer_generator:GEN-KLM-0001,high
+RUPTL-KALIMANTAN-P-0017,Kalimantan (Kuota) Tersebar,?,17.0,Kalimantan Barat,kalimantan,Planned,2030,2030,,IPP,Tabel A11.11,735,-0.082357,111.542013,province_centroid,low
+RUPTL-KALIMANTAN-P-0018,Kalbar-2 (PLTS+BESS),PLTS,160.0,Kalimantan Barat,kalimantan,Planned,,,,IPP,Tabel A11.11,735,-0.001087,109.327622,gazetteer_generator:GEN-KLM-0001,high
+RUPTL-KALIMANTAN-P-0019,Kalbar-2 (PLTS+BESS),?,100.0,Kalimantan Barat,kalimantan,Planned,,,,IPP,Tabel A11.11,735,-0.001087,109.327622,gazetteer_generator:GEN-KLM-0001,high
+RUPTL-KALIMANTAN-P-0020,Parit Baru (FTP1),PLTU,50.0,Kalimantan Barat,kalimantan,Construction,2030,2030,,PLN,Tabel A11.11,735,0.058676,109.203259,gazetteer_generator:GEN-KLM-0022,high
+RUPTL-KALIMANTAN-P-0021,Parit Baru (FTP1),PLTU,50.0,Kalimantan Barat,kalimantan,Construction,2030,2030,,PLN,Tabel A11.11,735,0.058676,109.203259,gazetteer_generator:GEN-KLM-0022,high
+RUPTL-KALIMANTAN-P-0022,Pantai Kura- Kura (FTP1),PLTU,27.5,Kalimantan Barat,kalimantan,Construction,2030,2030,,PLN,Tabel A11.11,735,-0.075339,111.285603,province_centroid,low
+RUPTL-KALIMANTAN-P-0023,Pantai Kura- Kura (FTP1),PLTU,27.5,Kalimantan Barat,kalimantan,Construction,2030,2030,,PLN,Tabel A11.11,735,-0.413321,111.572303,province_centroid,low
+RUPTL-KALIMANTAN-P-0024,Khatulistiwa (Kuota) Tersebar,PLTA,150.0,Kalimantan Barat,kalimantan,Planned,2030,2030,,IPP,Tabel A11.11,735,-0.361764,111.592167,province_centroid,low
+RUPTL-KALIMANTAN-P-0025,Kalimantan (Kuota) Tersebar,?,10.0,Kalimantan Barat,kalimantan,Planned,2031,2031,,IPP,Tabel A11.11,735,-0.441948,111.329853,province_centroid,low
+RUPTL-KALIMANTAN-P-0026,Kalimantan (Kuota) Tersebar,?,4.0,Kalimantan Barat,kalimantan,Planned,2031,2031,,IPP,Tabel A11.11,735,-0.193519,111.558777,province_centroid,low
+RUPTL-KALIMANTAN-P-0027,Khatulistiwa (Kuota) Tersebar,PLTA,100.0,Kalimantan Barat,kalimantan,Planned,2032,2032,,IPP,Tabel A11.11,735,-0.119617,111.439194,province_centroid,low
+RUPTL-KALIMANTAN-P-0028,Kalimantan (Kuota) Tersebar,?,16.0,Kalimantan Barat,kalimantan,Planned,2032,2032,,IPP,Tabel A11.11,735,-0.497746,111.562041,province_centroid,low
+RUPTL-KALIMANTAN-P-0029,Kalimantan (Kuota) Tersebar,?,5.0,Kalimantan Barat,kalimantan,Planned,2033,2033,,IPP,Tabel A11.11,735,-0.118022,111.336981,province_centroid,low
+RUPTL-KALIMANTAN-P-0030,Kalimantan (Kuota) Tersebar,?,1.2,Kalimantan Barat,kalimantan,Planned,2033,2033,,IPP,Tabel A11.11,735,-0.438580,111.423097,province_centroid,low
+RUPTL-KALIMANTAN-P-0031,PLTN Kalimantan (Kuota) tersebar New EBT*),PLTN,250.0,Kalimantan Barat,kalimantan,Planned,,,,IPP,,736,-0.475855,111.654783,province_centroid,low
+RUPTL-KALIMANTAN-P-0032,Khatulistiwa (Kuota) Tersebar,PLTA,100.0,Kalimantan Barat,kalimantan,Planned,2033,2033,,IPP,,736,-0.393979,111.660880,province_centroid,low
+RUPTL-KALIMANTAN-P-0033,Khatulistiwa (Kuota) Tersebar,PLTA,100.0,Kalimantan Barat,kalimantan,Planned,2034,2034,,IPP,,736,-0.399238,111.519221,province_centroid,low
+RUPTL-KALIMANTAN-P-0034,Lisdes Kalbar,PLTS,1.9,Kalimantan Barat,kalimantan,Planned,2025,2025,,PLN,,736,-0.001087,109.327622,gazetteer_generator:GEN-KLM-0001,high
+RUPTL-KALIMANTAN-P-0035,Dedieselisasi,PLTS,21.6,Kalimantan Barat,kalimantan,Planned,2027,2027,,IPP,,736,-0.318978,111.572592,province_centroid,low
+RUPTL-KALIMANTAN-P-0036,Tanah Laut,PLTB,70.0,Kalimantan Selatan,kalimantan,Planned,2026,2026,,IPP,Tabel A12.10,751,-3.235936,115.145818,province_centroid,low
+RUPTL-KALIMANTAN-P-0037,Kalselteng*),?,100.0,Kalimantan Selatan,kalimantan,Planned,2027,2027,,SH-PLN,Tabel A12.10,751,-2.944322,115.265998,province_centroid,low
+RUPTL-KALIMANTAN-P-0038,Kalseltengtimra (Kuota) Tersebar,PLTM,2.7,Kalimantan Selatan,kalimantan,Planned,2029,2029,,IPP,Tabel A12.10,751,-2.953147,115.269022,province_centroid,low
+RUPTL-KALIMANTAN-P-0039,Kalimantan-1,PLTGU,150.0,Kalimantan Selatan,kalimantan,Planned,2028,2028,,SH-PLN,Tabel A12.10,751,-3.052336,115.423631,province_centroid,low
+RUPTL-KALIMANTAN-P-0040,Add-On Kalselteng*),PLTGU,50.0,Kalimantan Selatan,kalimantan,Planned,,,,SH-PLN,Tabel A12.10,751,-2.871224,115.272287,province_centroid,low
+RUPTL-KALIMANTAN-P-0041,Kotabaru,PLTU,14.0,Kalimantan Selatan,kalimantan,Construction,2030,2030,,PLN,Tabel A12.10,751,-2.978956,115.476947,province_centroid,low
+RUPTL-KALIMANTAN-P-0042,Lisdes Kalsel,PLTS,4.9,Kalimantan Selatan,kalimantan,Planned,2026,2026,,PLN,Tabel A12.10,751,-3.134575,115.299980,province_centroid,low
+RUPTL-KALIMANTAN-P-0043,Lisdes Kalsel,PLTS,0.6,Kalimantan Selatan,kalimantan,Planned,2027,2027,,PLN,Tabel A12.10,751,-3.057697,115.188323,province_centroid,low
+RUPTL-KALIMANTAN-P-0044,Isolated Kalsel,PLTS,0.8,Kalimantan Selatan,kalimantan,Planned,2030,2030,,IPP,Tabel A12.10,751,-3.016918,115.508702,province_centroid,low
+RUPTL-KALIMANTAN-P-0045,Kalseltengtimra- 5 (PLTS+BESS),PLTS,160.0,Kalimantan Tengah,kalimantan,Planned,,,,IPP,Tabel A13.11,765,-1.574860,113.319588,province_centroid,low
+RUPTL-KALIMANTAN-P-0046,Kalseltengtimra- 5 (PLTS+BESS),?,100.0,Kalimantan Tengah,kalimantan,Planned,,,,IPP,Tabel A13.11,765,-1.526603,113.386699,province_centroid,low
+RUPTL-KALIMANTAN-P-0047,Kalselteng 3,PLTU,200.0,Kalimantan Tengah,kalimantan,Committed,2029,2029,,IPP,Tabel A13.11,765,-1.373302,113.567473,gazetteer_generator:GEN-KLM-0032,high
+RUPTL-KALIMANTAN-P-0048,Kalimantan (Kuota) Tersebar2),PLTBG,3.8,Kalimantan Tengah,kalimantan,Planned,2029,2029,,IPP,Tabel A13.11,765,-1.754598,113.562079,province_centroid,low
+RUPTL-KALIMANTAN-P-0049,Kalimantan-2,PLTG,100.0,Kalimantan Tengah,kalimantan,Planned,2029,2029,,SH-PLN,Tabel A13.11,765,-1.696264,113.550669,province_centroid,low
+RUPTL-KALIMANTAN-P-0050,Sampit,PLTU,50.0,Kalimantan Tengah,kalimantan,Construction,2030,2030,,PLN,Tabel A13.11,765,-2.481698,112.920845,gazetteer_substation:GI-KLM-0062,medium
+RUPTL-KALIMANTAN-P-0051,MT Hybrid Kalselteng 4,PLTS,40.0,Kalimantan Tengah,kalimantan,Planned,2032,2032,,IPP,Tabel A13.11,765,-1.373302,113.567473,gazetteer_generator:GEN-KLM-0032,high
+RUPTL-KALIMANTAN-P-0052,MT Hybrid Kalselteng 4,?,25.0,Kalimantan Tengah,kalimantan,Planned,2032,2032,,IPP,Tabel A13.11,765,-1.373302,113.567473,gazetteer_generator:GEN-KLM-0032,high
+RUPTL-KALIMANTAN-P-0053,MT Hybrid Kalselteng 4,PLTU,200.0,Kalimantan Tengah,kalimantan,Planned,2032,2032,,IPP,Tabel A13.11,765,-1.373302,113.567473,gazetteer_generator:GEN-KLM-0032,high
+RUPTL-KALIMANTAN-P-0054,Muara Juloi,PLTA,3401.0,Kalimantan Tengah,kalimantan,Planned,2032,2032 2033,,SH-PLN,Tabel A13.11,765,-0.867552,114.865896,gazetteer_substation:GI-KLM-0050,medium
+RUPTL-KALIMANTAN-P-0055,Lisdes Kalteng,PLTS,0.6,Kalimantan Tengah,kalimantan,Planned,2026,2026,,PLN,Tabel A13.11,765,-2.824546,114.211797,gazetteer_generator:GEN-KLM-0041,high
+RUPTL-KALIMANTAN-P-0056,Lisdes Kalteng,PLTS,13.8,Kalimantan Tengah,kalimantan,Planned,2027,2027,,PLN,Tabel A13.11,765,-2.824546,114.211797,gazetteer_generator:GEN-KLM-0041,high
+RUPTL-KALIMANTAN-P-0057,Dedieselisasi,PLTS,0.8,Kalimantan Tengah,kalimantan,Planned,2027,2027,,IPP,Tabel A13.11,765,-1.897838,113.182754,province_centroid,low
+RUPTL-KALIMANTAN-P-0058,Isolated Kalteng,PLTS,0.2,Kalimantan Tengah,kalimantan,Planned,2030,2030,,IPP,Tabel A13.11,765,-2.824546,114.211797,gazetteer_generator:GEN-KLM-0041,high
+RUPTL-KALIMANTAN-P-0059,Kalimantan,PLTGU,400.0,Kalimantan Timur,kalimantan,Planned,2027,2027,,SH-PLN,Tabel A14.9,778,0.347436,116.243924,province_centroid,low
+RUPTL-KALIMANTAN-P-0060,IKN,PLTS,50.0,Kalimantan Timur,kalimantan,Construction,2025,2025,,IPP,Tabel A14.14,781,-0.989802,116.638296,gazetteer_generator:GEN-KLM-0052,high
+RUPTL-KALIMANTAN-P-0061,Kaltim Peaker 2,PLTG,100.0,Kalimantan Timur,kalimantan,Planned,2026,2026,,SH-PLN,Tabel A14.14,781,-1.170085,116.788460,gazetteer_generator:GEN-KLM-0011,high
+RUPTL-KALIMANTAN-P-0062,Kaltim-1,PLTGU,250.0,Kalimantan Timur,kalimantan,Planned,2026,2026,,SH-PLN,Tabel A14.14,781,-1.170085,116.788460,gazetteer_generator:GEN-KLM-0011,high
+RUPTL-KALIMANTAN-P-0063,Kaltara/ Kaltimra***),?,100.0,Kalimantan Timur,kalimantan,Planned,2027,2027,,SH-PLN,Tabel A14.14,781,0.413365,116.442302,province_centroid,low
+RUPTL-KALIMANTAN-P-0064,Kaltim Add on Blok 2,PLTGU,80.0,Kalimantan Timur,kalimantan,Planned,2027,2027,,SH-PLN,Tabel A14.14,781,0.489301,116.445464,province_centroid,low
+RUPTL-KALIMANTAN-P-0065,Kalseltengtimra-1 (PLTS+BESS),PLTS,80.0,Kalimantan Timur,kalimantan,Planned,2027,2027,,SH-PLN,Tabel A14.14,781,0.454351,116.603179,province_centroid,low
+RUPTL-KALIMANTAN-P-0066,Kalseltengtimra-1 (PLTS+BESS),?,50.0,Kalimantan Timur,kalimantan,Planned,2027,2027,,SH-PLN,Tabel A14.14,781,0.593618,116.488580,province_centroid,low
+RUPTL-KALIMANTAN-P-0067,Kalseltengtimra-2 (PLTS+BESS),PLTS,240.0,Kalimantan Timur,kalimantan,Planned,,,,IPP,,782,0.433009,116.260310,province_centroid,low
+RUPTL-KALIMANTAN-P-0068,Kalseltengtimra-2 (PLTS+BESS),?,150.0,Kalimantan Timur,kalimantan,Planned,,,,IPP,,782,0.617413,116.506726,province_centroid,low
+RUPTL-KALIMANTAN-P-0069,Kalseltengtimra (Kuota) Tersebar,PLTS,15.0,Kalimantan Timur,kalimantan,Planned,2029,2029,,IPP,,782,0.333517,116.436343,province_centroid,low
+RUPTL-KALIMANTAN-P-0070,Kalseltengtimra (Kuota) Tersebar,PLTM,0.15,Kalimantan Timur,kalimantan,Planned,2029,2029,,IPP,,782,0.447518,116.342927,province_centroid,low
+RUPTL-KALIMANTAN-P-0071,Add-On Kaltara/ Kaltimra***),PLTGU,50.0,Kalimantan Timur,kalimantan,Planned,,,,SH-PLN,,782,0.471231,116.196952,province_centroid,low
+RUPTL-KALIMANTAN-P-0072,Kalimantan (Kuota) Tersebar,?,10.0,Kalimantan Timur,kalimantan,Planned,2030,2030,,IPP,,782,0.650412,116.271431,province_centroid,low
+RUPTL-KALIMANTAN-P-0073,Kalseltengtimra (Kuota) Tersebar,PLTS,30.0,Kalimantan Timur,kalimantan,Planned,2030,2030,,IPP,,782,0.465417,116.565142,province_centroid,low
+RUPTL-KALIMANTAN-P-0074,Kalseltengtimra-4 (PLTS+BESS),PLTS,40.0,Kalimantan Timur,kalimantan,Planned,,,,IPP,,782,0.523359,116.591020,province_centroid,low
+RUPTL-KALIMANTAN-P-0075,Kalseltengtimra-4 (PLTS+BESS),?,25.0,Kalimantan Timur,kalimantan,Planned,,,,IPP,,782,0.644316,116.474916,province_centroid,low
+RUPTL-KALIMANTAN-P-0076,Kelai,PLTA,45.0,Kalimantan Timur,kalimantan,Planned,2032,2032,,SH-PLN,,782,0.466503,116.504272,province_centroid,low
+RUPTL-KALIMANTAN-P-0077,Tabang 1,PLTA,101.0,Kalimantan Timur,kalimantan,Planned,2032,2032,,SH-PLN,,782,0.492367,116.325125,province_centroid,low
+RUPTL-KALIMANTAN-P-0078,Tanah Grogot**,PLTU,14.0,Kalimantan Timur,kalimantan,Committed,2030,2030,,IPP,,782,-1.898819,116.165644,gazetteer_substation:GI-KLM-0091,medium
+RUPTL-KALIMANTAN-P-0079,Kelai 2,PLTA,65.0,Kalimantan Timur,kalimantan,Planned,2032,2032,,SH-PLN,,782,0.523043,116.463705,province_centroid,low
+RUPTL-KALIMANTAN-P-0080,Lambakan,PLTA,15.0,Kalimantan Timur,kalimantan,Planned,2033,2033,,SH-PLN,,782,0.423695,116.467039,province_centroid,low
+RUPTL-KALIMANTAN-P-0081,Kalseltengtimra (Kuota) Tersebar,PLTS,50.0,Kalimantan Timur,kalimantan,Planned,2033,2033,,IPP,,782,0.616650,116.585322,province_centroid,low
+RUPTL-KALIMANTAN-P-0082,Kalseltengtimra (Kuota) Tersebar,PLTA,125.0,Kalimantan Timur,kalimantan,Planned,2034,2034,,IPP,,782,0.624665,116.360942,province_centroid,low
+RUPTL-KALIMANTAN-P-0083,PLTN Kalimantan (Kuota) tersebar New EBT*),PLTN,250.0,Kalimantan Timur,kalimantan,Planned,,,,IPP,,782,0.539284,116.544048,province_centroid,low
+RUPTL-KALIMANTAN-P-0084,Lisdes Kaltim,PLTS,1.3,Kalimantan Timur,kalimantan,Planned,2025,2025,,PLN,,782,-1.170085,116.788460,gazetteer_generator:GEN-KLM-0011,high
+RUPTL-KALIMANTAN-P-0085,Lisdes Kaltim,PLTS,10.5,Kalimantan Timur,kalimantan,Planned,2026,2026,,PLN,,782,-1.170085,116.788460,gazetteer_generator:GEN-KLM-0011,high
+RUPTL-KALIMANTAN-P-0086,Lisdes Kaltim,PLTS,12.1,Kalimantan Timur,kalimantan,Planned,2027,2027,,PLN,,782,-1.170085,116.788460,gazetteer_generator:GEN-KLM-0011,high
+RUPTL-KALIMANTAN-P-0087,Dedieselisasi,PLTS,0.9,Kalimantan Timur,kalimantan,Planned,2027,2027,,IPP,,782,0.745677,116.597213,province_centroid,low
+RUPTL-KALIMANTAN-P-0088,Isolated Kaltim,PLTS,7.7,Kalimantan Timur,kalimantan,Planned,2030,2030,,IPP,,782,-1.170085,116.788460,gazetteer_generator:GEN-KLM-0011,high
+RUPTL-KALIMANTAN-P-0089,Tarakan,PLTMG,50.0,Kalimantan Utara,kalimantan,Planned,2027,2027,,SH-PLN,Tabel A15.11,803,2.906985,116.651027,province_centroid,low
+RUPTL-KALIMANTAN-P-0090,Kaltara/ Kaltimra*),?,100.0,Kalimantan Utara,kalimantan,Planned,2027,2027,,SH-PLN,Tabel A15.11,803,3.291060,116.602563,province_centroid,low
+RUPTL-KALIMANTAN-P-0091,Kalseltengtimra-3 (PLTS+BESS),PLTS,240.0,Kalimantan Utara,kalimantan,Planned,,,,IPP,Tabel A15.11,803,2.854363,116.597237,province_centroid,low
+RUPTL-KALIMANTAN-P-0092,Kalseltengtimra-3 (PLTS+BESS),?,150.0,Kalimantan Utara,kalimantan,Planned,,,,IPP,Tabel A15.11,803,2.985740,116.830263,province_centroid,low
+RUPTL-KALIMANTAN-P-0093,Add-On Kaltara/Kaltimra*),PLTGU,50.0,Kalimantan Utara,kalimantan,Planned,,,,SH-PLN,Tabel A15.11,803,3.291094,116.855419,province_centroid,low
+RUPTL-KALIMANTAN-P-0094,Tanjung Selor,PLTU,14.0,Kalimantan Utara,kalimantan,Construction,2030,2030,,PLN,Tabel A15.11,803,2.813471,117.367163,gazetteer_generator:GEN-KLM-0023,high
+RUPTL-KALIMANTAN-P-0095,Kalseltengtimra (Kuota) Tersebar,PLTA,300.0,Kalimantan Utara,kalimantan,Planned,2031,2031,,IPP,Tabel A15.11,803,2.911240,116.864465,province_centroid,low
+RUPTL-KALIMANTAN-P-0096,Kalseltengtimra (Kuota) Tersebar,PLTA,200.0,Kalimantan Utara,kalimantan,Planned,2031,2031,,IPP,Tabel A15.11,803,3.210876,116.605533,province_centroid,low
+RUPTL-KALIMANTAN-P-0097,Kalseltengtimra (Kuota) Tersebar,PLTA,200.0,Kalimantan Utara,kalimantan,Planned,2032,2032,,IPP,Tabel A15.11,803,3.229482,116.794687,province_centroid,low
+RUPTL-KALIMANTAN-P-0098,Kalseltengtimra (Kuota) Tersebar,PLTA,200.0,Kalimantan Utara,kalimantan,Planned,2032,2032,,IPP,Tabel A15.11,803,2.915323,116.873998,province_centroid,low
+RUPTL-KALIMANTAN-P-0099,Kalseltengtimra (Kuota) Tersebar,PLTS,50.0,Kalimantan Utara,kalimantan,Planned,2034,2034,,IPP,Tabel A15.11,803,2.948315,116.490769,province_centroid,low
+RUPTL-KALIMANTAN-P-0100,Nunukan 2,PLTMG,10.0,Kalimantan Utara,kalimantan,Construction,2025,2025,,PLN,Tabel A15.11,803,3.014821,116.803698,province_centroid,low
+RUPTL-KALIMANTAN-P-0101,Lisdes Kaltara,PLTS,2.0,Kalimantan Utara,kalimantan,Planned,2025,2025,,PLN,Tabel A15.11,803,3.080448,116.837851,province_centroid,low
+RUPTL-KALIMANTAN-P-0102,Lisdes Kaltara,PLTS,1.5,Kalimantan Utara,kalimantan,Planned,2026,2026,,PLN,Tabel A15.11,803,3.100112,116.831947,province_centroid,low
+RUPTL-KALIMANTAN-P-0103,Lisdes Kaltara,PLTS,0.9,Kalimantan Utara,kalimantan,Planned,2027,2027,,PLN,Tabel A15.11,803,3.033276,116.806488,province_centroid,low
+RUPTL-KALIMANTAN-P-0104,Paramayo,PLTM,0.76,Kalimantan Utara,kalimantan,Planned,2027,2027,,PLN,Tabel A15.11,803,3.092352,116.677125,province_centroid,low
+RUPTL-KALIMANTAN-P-0105,Isolated Kaltara,PLTS,5.1,Kalimantan Utara,kalimantan,Planned,2030,2030,,IPP,Tabel A15.11,803,3.138555,116.689635,province_centroid,low
+RUPTL-KALIMANTAN-P-0106,Sunter Jawa-Bali (Kuota),PLTSA,35.0,Kalimantan Utara,kalimantan,Planned,2028,2028 2029,2028 2029,IPP,Tabel B1.9,818,3.239558,116.632456,province_centroid,low
+RUPTL-KALIMANTAN-P-0107,Tersebar,PLTSA,150.0,Kalimantan Utara,kalimantan,Planned,,,,IPP,Tabel B1.9,818,2.847895,116.899560,province_centroid,low

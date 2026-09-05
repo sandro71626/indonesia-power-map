@@ -1,0 +1,412 @@
+ruptl_id,name,voltage_kv,action_type,capacity_mva,target_cod_year,status,province,classification,baseline_id,baseline_name,source_page,source_table
+RUPTL-SUMATRA-GI-0001,GITET Sumatera 2,500/275,New,501.0,2033,Planned,Aceh,NEW_BUILD,,,612,Tabel A1.15
+RUPTL-SUMATRA-GI-0002,Nagan Raya,275/150,Extension,251.0,2025,Planned,Aceh,EXISTING_EXT,GI-SMT-0010,PLTU Nagan Raya,612,Tabel A1.15
+RUPTL-SUMATRA-GI-0003,Sigli,275/150,Extension,251.0,2025,Planned,Aceh,EXISTING_EXT,GI-SMT-0006,Sigli,612,Tabel A1.15
+RUPTL-SUMATRA-GI-0004,Arun (Arah Sigli),275,Extension,2.0,2026,Planned,Aceh,NEW_BUILD,,,613,Tabel A1.18
+RUPTL-SUMATRA-GI-0005,Ulee Kareng,275/150,Extension,251.0,2027,Planned,Aceh,EXISTING_EXT,GI-SMT-0018,Ulee Kareng,613,Tabel A1.18
+RUPTL-SUMATRA-GI-0006,Arun,275/150,Extension,251.0,2027,Planned,Aceh,EXISTING_EXT,GI-SMT-0011,Arun,613,Tabel A1.18
+RUPTL-SUMATRA-GI-0007,Arun (Arah KTT AGI),275,Extension,2.0,2030,Planned,Aceh,NEW_BUILD,,,613,Tabel A1.18
+RUPTL-SUMATRA-GI-0008,GITET Sumatera 2,275,New,2.0,2033,Planned,Aceh,NEW_BUILD,,,613,Tabel A1.18
+RUPTL-SUMATRA-GI-0009,GITET Sumatera 3,275,New,2.0,2033,Planned,Aceh,NEW_BUILD,,,613,Tabel A1.18
+RUPTL-SUMATRA-GI-0010,Blang Pidie,150/20,Extension,31.0,2025,Planned,Aceh,EXISTING_EXT,GI-SMT-0013,Blang Pidie,613,Tabel A1.18
+RUPTL-SUMATRA-GI-0011,Blang Pidie (Arah Tapak Tuan),150,Extension,2.0,2025,Construction,Aceh,NEW_BUILD,,,613,Tabel A1.18
+RUPTL-SUMATRA-GI-0012,Krueng Raya,150/20,Extension,61.0,2025,Planned,Aceh,EXISTING_EXT,GI-SMT-0019,Krueng Raya,613,Tabel A1.18
+RUPTL-SUMATRA-GI-0013,Peusangan-1,150,New,4.0,2025,Construction,Aceh,NEW_BUILD,,,613,Tabel A1.18
+RUPTL-SUMATRA-GI-0014,Peusangan-2,150,New,4.0,2025,Construction,Aceh,NEW_BUILD,,,613,Tabel A1.18
+RUPTL-SUMATRA-GI-0015,Sigli,150/20,Uprate,61.0,2025,Construction,Aceh,EXISTING_UPRATE,GI-SMT-0006,Sigli,613,Tabel A1.18
+RUPTL-SUMATRA-GI-0016,Takengon,150/20,Extension,61.0,2025,Planned,Aceh,EXISTING_EXT,GI-SMT-0016,Takengon,613,Tabel A1.18
+RUPTL-SUMATRA-GI-0017,Tapak Tuan,150/20,New,31.0,2025,Construction,Aceh,NEW_BUILD,,,613,Tabel A1.18
+RUPTL-SUMATRA-GI-0018,Arun (Arah GI Switching PIM & Pupuk Indonesia JV),150,Extension,2.0,2026,Planned,Aceh,NEW_BUILD,,,613,Tabel A1.18
+RUPTL-SUMATRA-GI-0019,Banda Aceh (Arah Lampisang/PLTB Aceh),150,Extension,2.0,2026,Planned,Aceh,NEW_BUILD,,,613,Tabel A1.18
+RUPTL-SUMATRA-GI-0020,Lampisang/PLTB Aceh,150/20,New,61.0,2026,Planned,Aceh,NEW_BUILD,,,613,Tabel A1.18
+RUPTL-SUMATRA-GI-0021,GI Switching PIM & Pupuk Indonesia JV,150,New,4.0,2026,Planned,Aceh,NEW_BUILD,,,613,Tabel A1.18
+RUPTL-SUMATRA-GI-0022,Calang,150/20,New,31.0,2027,Planned,Aceh,NEW_BUILD,,,613,Tabel A1.18
+RUPTL-SUMATRA-GI-0023,Meulaboh (Arah Calang),150,Extension,2.0,2027,Planned,Aceh,NEW_BUILD,,,613,Tabel A1.18
+RUPTL-SUMATRA-GI-0024,Subulussalam (Arah Tapak Tuan),150,Extension,2.0,2027,Planned,Aceh,NEW_BUILD,,,613,Tabel A1.18
+RUPTL-SUMATRA-GI-0025,Tapak Tuan (Arah Subulussalam),150,Extension,2.0,2027,Planned,Aceh,NEW_BUILD,,,613,Tabel A1.18
+RUPTL-SUMATRA-GI-0026,GI Switching Kota Fajar,150,New,6.0,2027,Planned,Aceh,NEW_BUILD,,,613,Tabel A1.18
+RUPTL-SUMATRA-GI-0027,Ulee Kareng,150/20,Extension,61.0,2028,Planned,Aceh,EXISTING_EXT,GI-SMT-0018,Ulee Kareng,613,Tabel A1.18
+RUPTL-SUMATRA-GI-0028,Blangkejeren,150/20,New,31.0,2029,Planned,Aceh,NEW_BUILD,,,613,Tabel A1.18
+RUPTL-SUMATRA-GI-0029,Kumbih,150,New,4.0,2029,Construction,Aceh,NEW_BUILD,,,613,Tabel A1.18
+RUPTL-SUMATRA-GI-0030,Takengon (Arah Blangkejeren),150,Extension,2.0,2029,Planned,Aceh,NEW_BUILD,,,613,Tabel A1.18
+RUPTL-SUMATRA-GI-0031,Kutacane,150/20,Extension,61.0,2030,Planned,Aceh,EXISTING_EXT,GI-SMT-0014,Kutacane,613,Tabel A1.18
+RUPTL-SUMATRA-GI-0032,Lampisang/PLTB Aceh,150/20,Extension,61.0,2031,Planned,Aceh,NEW_BUILD,,,613,Tabel A1.18
+RUPTL-SUMATRA-GI-0033,Calang (Arah Lampisang/PLTB Aceh),150,Extension,2.0,2032,Planned,Aceh,NEW_BUILD,,,613,Tabel A1.18
+RUPTL-SUMATRA-GI-0034,Lampisang/PLTB Aceh (Arah Calang),150,Extension,2.0,2032,Planned,Aceh,NEW_BUILD,,,613,Tabel A1.18
+RUPTL-SUMATRA-GI-0035,Blangkejeren (Arah Kutacane),150,Extension,2.0,2032,Planned,Aceh,NEW_BUILD,,,613,Tabel A1.18
+RUPTL-SUMATRA-GI-0036,Kutacane (Arah Blangkejeren),150,Extension,2.0,2032,Planned,Aceh,NEW_BUILD,,,613,Tabel A1.18
+RUPTL-SUMATRA-GI-0037,Singkil (Arah Parlilitan),150,Extension,2.0,2032,Planned,Aceh,NEW_BUILD,,,613,Tabel A1.18
+RUPTL-SUMATRA-GI-0038,Tapak Tuan (Arah KTT Anvaya),150,Extension,2.0,2033,Planned,Aceh,NEW_BUILD,,,613,Tabel A1.18
+RUPTL-SUMATRA-GI-0039,Meulaboh (Arah KTT Powerindo Cipta Energy),150,Extension,2.0,2033,Planned,Aceh,NEW_BUILD,,,613,Tabel A1.18
+RUPTL-SUMATRA-GI-0040,Panton Labu,150/20,Uprate,61.0,2033,Planned,Aceh,NEW_BUILD,,,613,Tabel A1.18
+RUPTL-SUMATRA-GI-0041,Rantau Prapat,500/275,New,501.0,2028,Planned,Sumatera Utara,NEW_BUILD,,,628,Tabel A2.17
+RUPTL-SUMATRA-GI-0042,Galang,500/275,New,502.0,2028,Planned,Sumatera Utara,RECLASSIFY_NEW,GI-SMT-0058,Galang,628,Tabel A2.17
+RUPTL-SUMATRA-GI-0043,Rantau Prapat,500/275,Extension,501.0,2030,Planned,Sumatera Utara,NEW_BUILD,,,628,Tabel A2.17
+RUPTL-SUMATRA-GI-0044,Inalum/Kuala Tanjung*,500/275,New,503.0,2032,Planned,Sumatera Utara,NEW_BUILD,,,628,Tabel A2.17
+RUPTL-SUMATRA-GI-0045,GITET Sumatera 1,500,New,4.0,2033,Planned,Sumatera Utara,NEW_BUILD,,,628,Tabel A2.17
+RUPTL-SUMATRA-GI-0046,PLTA Pump Storage,500,Extension,2.0,2033,Planned,Sumatera Utara,NEW_BUILD,,,628,Tabel A2.17
+RUPTL-SUMATRA-GI-0047,PLTA Pump Storage-1,500,New,2.0,2033,Planned,Sumatera Utara,NEW_BUILD,,,628,Tabel A2.17
+RUPTL-SUMATRA-GI-0048,Galang (Arah Pump Storage),500,Extension,2.0,2033,Planned,Sumatera Utara,NEW_BUILD,,,628,Tabel A2.17
+RUPTL-SUMATRA-GI-0049,Pangkalan Susu (Arah Arun),275,Extension,2.0,2026,Planned,Sumatera Utara,NEW_BUILD,,,628,Tabel A2.17
+RUPTL-SUMATRA-GI-0050,Pangkalan Susu (Arah Medan Barat),275,Extension,2.0,2026,Planned,Sumatera Utara,NEW_BUILD,,,628,Tabel A2.17
+RUPTL-SUMATRA-GI-0051,Medan Barat,275/150,New,501.0,2026,Committed,Sumatera Utara,NEW_BUILD,,,628,Tabel A2.17
+RUPTL-SUMATRA-GI-0052,Batang Toru,275,New,4.0,2026,Construction,Sumatera Utara,NEW_BUILD,,,628,Tabel A2.17
+RUPTL-SUMATRA-GI-0053,Medan Barat,275/150,Extension,501.0,2028,Planned,Sumatera Utara,NEW_BUILD,,,628,Tabel A2.17
+RUPTL-SUMATRA-GI-0054,Rantau Prapat,275/150,New,251.0,2028,Planned,Sumatera Utara,NEW_BUILD,,,628,Tabel A2.17
+RUPTL-SUMATRA-GI-0055,Rantau Prapat (Arah Sarulla),275,Extension,2.0,2028,Planned,Sumatera Utara,NEW_BUILD,,,628,Tabel A2.17
+RUPTL-SUMATRA-GI-0056,Sarulla (Arah Rantau Prapat),275,Extension,2.0,2028,Planned,Sumatera Utara,NEW_BUILD,,,628,Tabel A2.17
+RUPTL-SUMATRA-GI-0057,Galang,275,Extension,2.0,2028,Planned,Sumatera Utara,EXISTING_EXT,GI-SMT-0058,Galang,628,Tabel A2.17
+RUPTL-SUMATRA-GI-0058,Rantau Prapat,275/150,Extension,251.0,2030,Planned,Sumatera Utara,NEW_BUILD,,,628,Tabel A2.17
+RUPTL-SUMATRA-GI-0059,Medan Timur,275/150,New,251.0,2032,Planned,Sumatera Utara,NEW_BUILD,,,628,Tabel A2.17
+RUPTL-SUMATRA-GI-0060,Galang (Arah Medan Timur),275,Extension,2.0,2032,Planned,Sumatera Utara,NEW_BUILD,,,628,Tabel A2.17
+RUPTL-SUMATRA-GI-0061,Medan Timur,275/150,Extension,251.0,2033,Planned,Sumatera Utara,NEW_BUILD,,,628,Tabel A2.17
+RUPTL-SUMATRA-GI-0062,Glugur,150/20,Extension,61.0,2025,Construction,Sumatera Utara,EXISTING_EXT,GI-SMT-0021,Glugur,628,Tabel A2.17
+RUPTL-SUMATRA-GI-0063,PLTA Asahan III,150/20,New,31.0,2025,Construction,Sumatera Utara,NEW_BUILD,,,628,Tabel A2.17
+RUPTL-SUMATRA-GI-0064,Simangkok (Arah PLTA Asahan III),150,Extension,2.0,2025,Construction,Sumatera Utara,NEW_BUILD,,,628,Tabel A2.17
+RUPTL-SUMATRA-GI-0065,Dolok Sanggul,150/20,Extension,61.0,2025,Planned,Sumatera Utara,EXISTING_EXT,GI-SMT-0056,Dolok Sanggul,628,Tabel A2.17
+RUPTL-SUMATRA-GI-0066,KIM,150/20,Extension,61.0,2025,Planned,Sumatera Utara,EXISTING_EXT,GI-SMT-0027,KIM,628,Tabel A2.17
+RUPTL-SUMATRA-GI-0067,Payapasir,150/20,Extension,61.0,2025,Planned,Sumatera Utara,NEW_BUILD,,,628,Tabel A2.17
+RUPTL-SUMATRA-GI-0068,Medan Barat,150/20,New,61.0,2026,Planned,Sumatera Utara,NEW_BUILD,,,628,Tabel A2.17
+RUPTL-SUMATRA-GI-0069,Natal,150/20,New,31.0,2026,Committed,Sumatera Utara,NEW_BUILD,,,628,Tabel A2.17
+RUPTL-SUMATRA-GI-0070,PLTP Sorik Merapi (Arah Natal),150,Extension,2.0,2026,Committed,Sumatera Utara,NEW_BUILD,,,628,Tabel A2.17
+RUPTL-SUMATRA-GI-0071,Gunung Para,150/20,Extension,61.0,2026,Planned,Sumatera Utara,EXISTING_EXT,GI-SMT-0042,Gunung Para,628,Tabel A2.17
+RUPTL-SUMATRA-GI-0072,GIS Kesawan,150/20,New,62.0,2027,Planned,Sumatera Utara,NEW_BUILD,,,628,Tabel A2.17
+RUPTL-SUMATRA-GI-0073,GIS Kesawan (Arah Listrik),150,Extension,1.0,2027,Planned,Sumatera Utara,NEW_BUILD,,,628,Tabel A2.17
+RUPTL-SUMATRA-GI-0074,Glugur (Arah Kesawan),150,Extension,2.0,2027,Planned,Sumatera Utara,NEW_BUILD,,,628,Tabel A2.17
+RUPTL-SUMATRA-GI-0075,Listrik (Arah Kesawan),150,Extension,1.0,2027,Planned,Sumatera Utara,NEW_BUILD,,,628,Tabel A2.17
+RUPTL-SUMATRA-GI-0076,Medan Timur,150/20,New,62.0,2027,Planned,Sumatera Utara,NEW_BUILD,,,628,Tabel A2.17
+RUPTL-SUMATRA-GI-0077,GI/GIS Pancing,150/20,New,61.0,2027,Planned,Sumatera Utara,NEW_BUILD,,,628,Tabel A2.17
+RUPTL-SUMATRA-GI-0078,Medan Timur (Arah Pancing),150,Extension,2.0,2027,Planned,Sumatera Utara,NEW_BUILD,,,628,Tabel A2.17
+RUPTL-SUMATRA-GI-0079,Parlilitan,150/20,New,61.0,2027,Planned,Sumatera Utara,NEW_BUILD,,,628,Tabel A2.17
+RUPTL-SUMATRA-GI-0080,Dolok Sanggul (Arah Parlilitan),150,Extension,2.0,2027,Planned,Sumatera Utara,NEW_BUILD,,,628,Tabel A2.17
+RUPTL-SUMATRA-GI-0081,Kuala,150/20,New,61.0,2027,Construction,Sumatera Utara,NEW_BUILD,,,628,Tabel A2.17
+RUPTL-SUMATRA-GI-0082,Binjai (Arah Kuala),150,Extension,2.0,2027,Planned,Sumatera Utara,NEW_BUILD,,,628,Tabel A2.17
+RUPTL-SUMATRA-GI-0083,Perawang,500/275,Extension,501.0,2025,Planned,Riau,EXISTING_EXT,GI-SMT-0089,Perawang,641,Tabel A3.16
+RUPTL-SUMATRA-GI-0084,Peranap,500/150,Extension,501.0,2028,Planned,Riau,NEW_BUILD,,,641,Tabel A3.16
+RUPTL-SUMATRA-GI-0085,Perawang (Arah Rantau Prapat),500,Extension,2.0,2028,Planned,Riau,NEW_BUILD,,,641,Tabel A3.16
+RUPTL-SUMATRA-GI-0086,Peranap (Arah Konverter)*,500*,Extension,2.0,2031,Planned,Riau,NEW_BUILD,,,641,Tabel A3.16
+RUPTL-SUMATRA-GI-0087,Peranap (Konverter)*,500 *,New,1500.0,2031,Planned,Riau,NEW_BUILD,,,641,Tabel A3.16
+RUPTL-SUMATRA-GI-0088,LP Sungai Guntung (Arah Rempang/Tanjung Gundap)*,500 *,New,4.0,2031,Planned,Riau,NEW_BUILD,,,641,Tabel A3.16
+RUPTL-SUMATRA-GI-0089,Peranap (Arah Konverter)*,500*,Extension,2.0,2032,Planned,Riau,NEW_BUILD,,,641,Tabel A3.16
+RUPTL-SUMATRA-GI-0090,LP Sungai Guntung (Arah Rempang)*,500 *,Extension,4.0,2032,Planned,Riau,NEW_BUILD,,,641,Tabel A3.16
+RUPTL-SUMATRA-GI-0091,Peranap (Konverter)*,500 *,Extension,1500.0,2032,Planned,Riau,NEW_BUILD,,,641,Tabel A3.16
+RUPTL-SUMATRA-GI-0092,Perawang (HVDC) (Arah Peninsular)*,500*,Extension,2.0,2034,Planned,Riau,NEW_BUILD,,,641,Tabel A3.16
+RUPTL-SUMATRA-GI-0093,Perawang (Ex New Garuda Sakti),275/150,Extension,251.0,2025,Planned,Riau,NEW_BUILD,,,641,Tabel A3.16
+RUPTL-SUMATRA-GI-0094,Perawang (Ex New Garuda Sakti),275/150,Extension,251.0,2027,Planned,Riau,NEW_BUILD,,,641,Tabel A3.16
+RUPTL-SUMATRA-GI-0095,Bagan Siapi-Api,150/20,Extension,61.0,2025,Planned,Riau,EXISTING_EXT,GI-SMT-0092,Bagan Siapi-Api,641,Tabel A3.16
+RUPTL-SUMATRA-GI-0096,Dumai (Arah Lubuk Gaung),150,Extension,2.0,2025,Construction,Riau,NEW_BUILD,,,641,Tabel A3.16
+RUPTL-SUMATRA-GI-0097,KID (Arah Pakning),150,Extension,2.0,2025,Planned,Riau,NEW_BUILD,,,641,Tabel A3.16
+RUPTL-SUMATRA-GI-0098,Lubuk Gaung,150/20,New,62.0,2025,Construction,Riau,NEW_BUILD,,,641,Tabel A3.16
+RUPTL-SUMATRA-GI-0099,Pakning,150/20,New,61.0,2025,Planned,Riau,NEW_BUILD,,,641,Tabel A3.16
+RUPTL-SUMATRA-GI-0100,Pasir Putih,150/20,Extension,61.0,2025,Planned,Riau,EXISTING_EXT,GI-SMT-0086,Pasir Putih,641,Tabel A3.16
+RUPTL-SUMATRA-GI-0101,Sorek,150/20,New,61.0,2025,Construction,Riau,NEW_BUILD,,,641,Tabel A3.16
+RUPTL-SUMATRA-GI-0102,Bangkinang (Arah Lipat Kain),150,Extension,2.0,2026,Planned,Riau,NEW_BUILD,,,641,Tabel A3.16
+RUPTL-SUMATRA-GI-0103,Bengkalis,150/20,New,32.0,2026,Planned,Riau,NEW_BUILD,,,641,Tabel A3.16
+RUPTL-SUMATRA-GI-0104,Lipat Kain,150/20,New,31.0,2026,Committed,Riau,NEW_BUILD,,,641,Tabel A3.16
+RUPTL-SUMATRA-GI-0105,Selat Panjang (Arah TBK),150,Extension,2.0,2026,Committed,Riau,NEW_BUILD,,,641,Tabel A3.16
+RUPTL-SUMATRA-GI-0106,Selat Panjang,150/20,New,31.0,2026,Planned,Riau,NEW_BUILD,,,641,Tabel A3.16
+RUPTL-SUMATRA-GI-0107,Siak Sri Indra Pura (Arah Pakning),150,Extension,2.0,2026,Planned,Riau,EXISTING_EXT,GI-SMT-0095,Siak Sri Indra Pura,641,Tabel A3.16
+RUPTL-SUMATRA-GI-0108,Siak Sri Indra Pura (Arah Selat Panjang),150,Extension,2.0,2026,Planned,Riau,NEW_BUILD,,,641,Tabel A3.16
+RUPTL-SUMATRA-GI-0109,Bangkinang (Arah Petapahan),150,Extension,2.0,2027,Planned,Riau,NEW_BUILD,,,641,Tabel A3.16
+RUPTL-SUMATRA-GI-0110,KID,150/20,Extension,61.0,2027,Planned,Riau,EXISTING_EXT,GI-SMT-0084,KID,641,Tabel A3.16
+RUPTL-SUMATRA-GI-0111,PHR-1/Balam,150/115,New,126.0,2027,Planned,Riau,NEW_BUILD,,,641,Tabel A3.16
+RUPTL-SUMATRA-GI-0112,PHR-2/Petapahan,150/115,New,126.0,2027,Planned,Riau,NEW_BUILD,,,641,Tabel A3.16
+RUPTL-SUMATRA-GI-0113,GI Switching Balam,150/20,New,31.0,2027,Planned,Riau,NEW_BUILD,,,641,Tabel A3.16
+RUPTL-SUMATRA-GI-0114,PHR-1/Balam,150/20,New,4.0,2027,Planned,Riau,NEW_BUILD,,,642,Tabel A3.18
+RUPTL-SUMATRA-GI-0115,PHR-2/Petapahan,150/20,New,4.0,2027,Planned,Riau,NEW_BUILD,,,642,Tabel A3.18
+RUPTL-SUMATRA-GI-0116,Selat Panjang,150/20,Extension,31.0,2027,Planned,Riau,NEW_BUILD,,,642,Tabel A3.18
+RUPTL-SUMATRA-GI-0117,Dumai,150/20,Uprate,61.0,2028,Planned,Riau,EXISTING_UPRATE,GI-SMT-0081,Dumai,642,Tabel A3.18
+RUPTL-SUMATRA-GI-0118,Lipat Kain,150/20,Extension,31.0,2028,Committed,Riau,NEW_BUILD,,,642,Tabel A3.18
+RUPTL-SUMATRA-GI-0119,Peranap,150/20,New,31.0,2028,Planned,Riau,NEW_BUILD,,,642,Tabel A3.18
+RUPTL-SUMATRA-GI-0120,Tanjung Palas,150,New,6.0,2028,Planned,Riau,NEW_BUILD,,,642,Tabel A3.18
+RUPTL-SUMATRA-GI-0121,Garuda Sakti,150/20,Extension,61.0,2029,Planned,Riau,EXISTING_EXT,GI-SMT-0077,Garuda Sakti,642,Tabel A3.18
+RUPTL-SUMATRA-GI-0122,GIS Kota Pekan Baru,150/20,Extension,61.0,2030,Planned,Riau,NEW_BUILD,,,642,Tabel A3.18
+RUPTL-SUMATRA-GI-0123,New Garuda Sakti,150/20,Extension,61.0,2030,Planned,Riau,EXISTING_EXT,GI-SMT-0077,Garuda Sakti,642,Tabel A3.18
+RUPTL-SUMATRA-GI-0124,Tenayan,150/20,Extension,61.0,2030,Planned,Riau,EXISTING_EXT,GI-SMT-0091,Tenayan,642,Tabel A3.18
+RUPTL-SUMATRA-GI-0125,Bengkalis,150/20,Extension,61.0,2031,Planned,Riau,NEW_BUILD,,,642,Tabel A3.18
+RUPTL-SUMATRA-GI-0126,Tembilahan (Arah GI Switching Pelangiran),150,Extension,2.0,2033,Planned,Riau,NEW_BUILD,,,642,Tabel A3.18
+RUPTL-SUMATRA-GI-0127,GI Switching Pelangiran,150,New,4.0,2033,Planned,Riau,NEW_BUILD,,,642,Tabel A3.18
+RUPTL-SUMATRA-GI-0128,GI Switching Pelangiran,150/20,Extension,32.0,2033,Planned,Riau,NEW_BUILD,,,642,Tabel A3.18
+RUPTL-SUMATRA-GI-0129,Dumai,150/20,Extension,61.0,2033,Planned,Riau,EXISTING_EXT,GI-SMT-0081,Dumai,642,Tabel A3.18
+RUPTL-SUMATRA-GI-0130,Pasir Putih,150/20,Extension,61.0,2033,Planned,Riau,EXISTING_EXT,GI-SMT-0086,Pasir Putih,642,Tabel A3.18
+RUPTL-SUMATRA-GI-0131,Teluk Kuantan,150/20,Uprate,61.0,2033,Planned,Riau,EXISTING_UPRATE,GI-SMT-0085,Teluk Kuantan,642,Tabel A3.18
+RUPTL-SUMATRA-GI-0132,Tembilahan,150/20,Extension,61.0,2033,Planned,Riau,EXISTING_EXT,GI-SMT-0094,Tembilahan,642,Tabel A3.18
+RUPTL-SUMATRA-GI-0133,Garuda Sakti,150/20,Extension,61.0,2034,Planned,Riau,EXISTING_EXT,GI-SMT-0077,Garuda Sakti,642,Tabel A3.18
+RUPTL-SUMATRA-GI-0134,Pasir Pangarayan,150/20,Uprate,61.0,2034,Planned,Riau,NEW_BUILD,,,642,Tabel A3.18
+RUPTL-SUMATRA-GI-0135,Rengat,150/20,Extension,61.0,2034,Planned,Riau,EXISTING_EXT,GI-SMT-0090,Rengat,642,Tabel A3.18
+RUPTL-SUMATRA-GI-0136,Teluk Lembu,150/20,Extension,61.0,2034,Planned,Riau,EXISTING_EXT,GI-SMT-0078,Teluk Lembu,642,Tabel A3.18
+RUPTL-SUMATRA-GI-0137,Peranap,500,Extension,6.0,2032,Planned,Kepulauan Riau,NEW_BUILD,,,649,Tabel A4.12
+RUPTL-SUMATRA-GI-0138,LP Sungai Guntung,500 DC,Extension,8.0,2032,Planned,Kepulauan Riau,NEW_BUILD,,,649,Tabel A4.12
+RUPTL-SUMATRA-GI-0139,Peranap (Konverter),500 DC,Extension,1500.0,2032,Planned,Kepulauan Riau,NEW_BUILD,,,649,Tabel A4.12
+RUPTL-SUMATRA-GI-0140,Rempang/Tanjung Gundap (Konverter),500 DC,Extension,1500.0,2032,Planned,Kepulauan Riau,NEW_BUILD,,,649,Tabel A4.12
+RUPTL-SUMATRA-GI-0141,Rempang/Tanjung Gundap,500,Extension,8.0,2032,Planned,Kepulauan Riau,NEW_BUILD,,,649,Tabel A4.12
+RUPTL-SUMATRA-GI-0142,LP Sabang Mas,500,New,9.0,2032,Planned,Kepulauan Riau,NEW_BUILD,,,649,Tabel A4.12
+RUPTL-SUMATRA-GI-0143,LP Ngenang,500,New,9.0,2032,Planned,Kepulauan Riau,RECLASSIFY_NEW,GI-SMT-0096,Ngenang,649,Tabel A4.12
+RUPTL-SUMATRA-GI-0144,Ngenang,500,New,9.0,2032,Planned,Kepulauan Riau,RECLASSIFY_NEW,GI-SMT-0096,Ngenang,649,Tabel A4.12
+RUPTL-SUMATRA-GI-0145,LP Tanjung Taloh,500,New,9.0,2032,Planned,Kepulauan Riau,NEW_BUILD,,,649,Tabel A4.12
+RUPTL-SUMATRA-GI-0146,GITET Bintan,500/150,New,264.0,2032,Planned,Kepulauan Riau,NEW_BUILD,,,649,Tabel A4.12
+RUPTL-SUMATRA-GI-0147,Rempang/Tanjung Gundap (Konverter)*,500,New,1500.0,2031,Planned,Kepulauan Riau,NEW_BUILD,,,653,Tabel A4.19
+RUPTL-SUMATRA-GI-0148,Rempang/Tanjung Gundap,500/150,New,503.0,2031,Planned,Kepulauan Riau,NEW_BUILD,,,653,Tabel A4.19
+RUPTL-SUMATRA-GI-0149,Rempang/Tanjung Gundap (Konverter)**,500,Extension,1500.0,2032,Planned,Kepulauan Riau,NEW_BUILD,,,653,Tabel A4.19
+RUPTL-SUMATRA-GI-0150,Tanjung Balai Karimun,150/20,New,32.0,2026,Committed,Kepulauan Riau,NEW_BUILD,,,653,Tabel A4.19
+RUPTL-SUMATRA-GI-0151,Air Raja,150/20,Extension,61.0,2030,Planned,Kepulauan Riau,EXISTING_EXT,GI-SMT-0099,Air Raja,653,Tabel A4.19
+RUPTL-SUMATRA-GI-0152,Sribintan (Arah KTT BRC),150,Extension,2.0,2030,Planned,Kepulauan Riau,NEW_BUILD,,,653,Tabel A4.19
+RUPTL-SUMATRA-GI-0153,Tanjung Balai Karimun,150/20,Extension,61.0,2032,Planned,Kepulauan Riau,NEW_BUILD,,,654,Tabel A4.22
+RUPTL-SUMATRA-GI-0154,Rempang/Tanjung Gundap **,500,Extension,4.0,2032,Planned,Kepulauan Riau,NEW_BUILD,,,654,Tabel A4.22
+RUPTL-SUMATRA-GI-0155,LP Sabang Mas **,500,New,4.0,2032,Planned,Kepulauan Riau,NEW_BUILD,,,654,Tabel A4.22
+RUPTL-SUMATRA-GI-0156,LP Ngenang **,500,New,4.0,2032,Planned,Kepulauan Riau,RECLASSIFY_NEW,GI-SMT-0096,Ngenang,654,Tabel A4.22
+RUPTL-SUMATRA-GI-0157,Ngenang **,500,New,4.0,2032,Planned,Kepulauan Riau,RECLASSIFY_NEW,GI-SMT-0096,Ngenang,654,Tabel A4.22
+RUPTL-SUMATRA-GI-0158,LP Tanjung Taloh **,500,New,4.0,2032,Planned,Kepulauan Riau,NEW_BUILD,,,654,Tabel A4.22
+RUPTL-SUMATRA-GI-0159,GITET Bintan **,500/150,New,251.0,2032,Planned,Kepulauan Riau,NEW_BUILD,,,654,Tabel A4.22
+RUPTL-SUMATRA-GI-0160,Kelapa,150/20,Extension,61.0,2025,Planned,Kepulauan Bangka Belitung,EXISTING_EXT,GI-SMT-0104,Kelapa,666,Tabel A5.17
+RUPTL-SUMATRA-GI-0161,Sungailiat,150/20,Uprate,61.0,2025,Planned,Kepulauan Bangka Belitung,EXISTING_UPRATE,GI-SMT-0102,Sungailiat,666,Tabel A5.17
+RUPTL-SUMATRA-GI-0162,Kelapa (Arah Belinyu),150,Extension,2.0,2026,Planned,Kepulauan Bangka Belitung,NEW_BUILD,,,666,Tabel A5.17
+RUPTL-SUMATRA-GI-0163,Belinyu,150/20,New,31.0,2026,Planned,Kepulauan Bangka Belitung,NEW_BUILD,,,666,Tabel A5.17
+RUPTL-SUMATRA-GI-0164,Koba,150/20,Extension,31.0,2026,Planned,Kepulauan Bangka Belitung,EXISTING_EXT,GI-SMT-0106,Koba,666,Tabel A5.17
+RUPTL-SUMATRA-GI-0165,Toboali,150/20,Extension,61.0,2027,Planned,Kepulauan Bangka Belitung,EXISTING_EXT,GI-SMT-0107,Toboali,666,Tabel A5.17
+RUPTL-SUMATRA-GI-0166,Koba (Arah LP Bangka),150,Extension,2.0,2028,Planned,Kepulauan Bangka Belitung,NEW_BUILD,,,666,Tabel A5.17
+RUPTL-SUMATRA-GI-0167,Air Anyir (Arah Pangkal Pinang-2),150,Extension,2.0,2028,Planned,Kepulauan Bangka Belitung,NEW_BUILD,,,666,Tabel A5.17
+RUPTL-SUMATRA-GI-0168,Pangkal Pinang 2,150/20,New,61.0,2028,Planned,Kepulauan Bangka Belitung,NEW_BUILD,,,666,Tabel A5.17
+RUPTL-SUMATRA-GI-0169,Toboali,150/20,Extension,61.0,2031,Planned,Kepulauan Bangka Belitung,EXISTING_EXT,GI-SMT-0107,Toboali,666,Tabel A5.17
+RUPTL-SUMATRA-GI-0170,Koba,150/20,Uprate,61.0,2032,Planned,Kepulauan Bangka Belitung,EXISTING_UPRATE,GI-SMT-0106,Koba,666,Tabel A5.17
+RUPTL-SUMATRA-GI-0171,Pangkal Pinang,150/20,Extension,61.0,2034,Planned,Kepulauan Bangka Belitung,NEW_BUILD,,,666,Tabel A5.17
+RUPTL-SUMATRA-GI-0172,Dukong,70/20,Extension,31.0,2025,Planned,Kepulauan Bangka Belitung,EXISTING_EXT,GI-SMT-0108,Dukong,666,Tabel A5.17
+RUPTL-SUMATRA-GI-0173,Manggar,70/20,Extension,31.0,2025,Planned,Kepulauan Bangka Belitung,EXISTING_EXT,GI-SMT-0110,Manggar,666,Tabel A5.17
+RUPTL-SUMATRA-GI-0174,"Dukong (Arah PLTMG Belitung 1,2)",70,Extension,2.0,2027,Planned,Kepulauan Bangka Belitung,NEW_BUILD,,,666,Tabel A5.17
+RUPTL-SUMATRA-GI-0175,Dukong,70/20,Uprate,61.0,2028,Planned,Kepulauan Bangka Belitung,EXISTING_UPRATE,GI-SMT-0108,Dukong,666,Tabel A5.17
+RUPTL-SUMATRA-GI-0176,Manggar,70/20,Uprate,31.0,2031,Planned,Kepulauan Bangka Belitung,EXISTING_UPRATE,GI-SMT-0110,Manggar,666,Tabel A5.17
+RUPTL-SUMATRA-GI-0177,Dukong,70/20,Extension,61.0,2034,Planned,Kepulauan Bangka Belitung,EXISTING_EXT,GI-SMT-0108,Dukong,666,Tabel A5.17
+RUPTL-SUMATRA-GI-0178,Sungai Rumbai,275/150,Extension,251.0,2027,Planned,Sumatera Barat,NEW_BUILD,,,677,Tabel A6.15
+RUPTL-SUMATRA-GI-0179,GIS Kota Padang,150/20,New,61.0,2025,Planned,Sumatera Barat,NEW_BUILD,,,677,Tabel A6.15
+RUPTL-SUMATRA-GI-0180,Ujung Gading,150/20,New,31.0,2026,Committed,Sumatera Barat,NEW_BUILD,,,677,Tabel A6.15
+RUPTL-SUMATRA-GI-0181,Simpang Empat (Arah Ujung Gading),150,Extension,2.0,2026,Planned,Sumatera Barat,NEW_BUILD,,,677,Tabel A6.15
+RUPTL-SUMATRA-GI-0182,Payakumbuh,150/20,Uprate,61.0,2027,Planned,Sumatera Barat,EXISTING_UPRATE,GI-SMT-0122,Payakumbuh,677,Tabel A6.15
+RUPTL-SUMATRA-GI-0183,Tapan (Arah Sungai Penuh),150,Extension,2.0,2028,Planned,Sumatera Barat,NEW_BUILD,,,677,Tabel A6.15
+RUPTL-SUMATRA-GI-0184,Bingkuang (GI/GIS),150/20,New,61.0,2029,Planned,Sumatera Barat,NEW_BUILD,,,677,Tabel A6.15
+RUPTL-SUMATRA-GI-0185,Masang 2,150/20,New,31.0,2029,Planned,Sumatera Barat,NEW_BUILD,,,677,Tabel A6.15
+RUPTL-SUMATRA-GI-0186,Pangkalan,150/20,New,61.0,2029,Planned,Sumatera Barat,NEW_BUILD,,,677,Tabel A6.15
+RUPTL-SUMATRA-GI-0187,GI Switching Tigo Nagari,150/20,New,31.0,2029,Planned,Sumatera Barat,NEW_BUILD,,,677,Tabel A6.15
+RUPTL-SUMATRA-GI-0188,Muara Laboh,150/20,Extension,31.0,2030,Planned,Sumatera Barat,NEW_BUILD,,,677,Tabel A6.15
+RUPTL-SUMATRA-GI-0189,Solok,150/20,Uprate,61.0,2030,Planned,Sumatera Barat,EXISTING_UPRATE,GI-SMT-0119,Solok,677,Tabel A6.15
+RUPTL-SUMATRA-GI-0190,Batusangkar,150/20,Uprate,61.0,2031,Planned,Sumatera Barat,NEW_BUILD,,,677,Tabel A6.15
+RUPTL-SUMATRA-GI-0191,GIS Kota Padang,150/20,Extension,61.0,2031,Planned,Sumatera Barat,NEW_BUILD,,,677,Tabel A6.15
+RUPTL-SUMATRA-GI-0192,PIP,150/20,Uprate,61.0,2031,Planned,Sumatera Barat,EXISTING_UPRATE,GI-SMT-0111,PIP,677,Tabel A6.15
+RUPTL-SUMATRA-GI-0193,Bingkuang (GI/GIS),150/20,Extension,61.0,2034,Planned,Sumatera Barat,NEW_BUILD,,,677,Tabel A6.15
+RUPTL-SUMATRA-GI-0194,Maninjau,150/20,Uprate,61.0,2034,Planned,Sumatera Barat,EXISTING_UPRATE,GI-SMT-0115,Maninjau,677,Tabel A6.15
+RUPTL-SUMATRA-GI-0195,Payakumbuh,150/20,Extension,61.0,2034,Planned,Sumatera Barat,EXISTING_EXT,GI-SMT-0122,Payakumbuh,677,Tabel A6.15
+RUPTL-SUMATRA-GI-0196,New Aurduri (Arah Muara Enim),500,Extension,2.0,2026,Planned,Jambi,NEW_BUILD,,,688,Tabel A7.15
+RUPTL-SUMATRA-GI-0197,New Aurduri,500/275,Extension,501.0,2027,Planned,Jambi,EXISTING_EXT,GI-SMT-0138,New Aurduri,688,Tabel A7.15
+RUPTL-SUMATRA-GI-0198,New Aurduri (Arah PLTU Jambi-1),500,Extension,2.0,2030,Committed,Jambi,EXISTING_EXT,GI-SMT-0138,New Aurduri,688,Tabel A7.15
+RUPTL-SUMATRA-GI-0199,New Aurduri (Arah PLTU Jambi-2),500,Extension,2.0,2032,Planned,Jambi,EXISTING_EXT,GI-SMT-0138,New Aurduri,688,Tabel A7.15
+RUPTL-SUMATRA-GI-0200,New Aurduri (Arah KTT Sembcorp)*,275,Extension,2.0,2027,Planned,Jambi,NEW_BUILD,,,688,Tabel A7.15
+RUPTL-SUMATRA-GI-0201,Merangin,150,New,4.0,2025,Construction,Jambi,NEW_BUILD,,,688,Tabel A7.15
+RUPTL-SUMATRA-GI-0202,Kuala Tungkal (Arah Pelabuhan Dagang),150,Extension,2.0,2025,Construction,Jambi,NEW_BUILD,,,688,Tabel A7.15
+RUPTL-SUMATRA-GI-0203,Sarolangun (Arah Muara Rupit),150,Extension,2.0,2025,Construction,Jambi,NEW_BUILD,,,688,Tabel A7.15
+RUPTL-SUMATRA-GI-0204,Pelabuhan Dagang,150/20,New,31.0,2025,Construction,Jambi,NEW_BUILD,,,688,Tabel A7.15
+RUPTL-SUMATRA-GI-0205,Seko,150/20,New,61.0,2026,Planned,Jambi,NEW_BUILD,,,688,Tabel A7.15
+RUPTL-SUMATRA-GI-0206,Payoselincah (Arah GIS Kota Jambi),150,Extension,2.0,2027,Planned,Jambi,NEW_BUILD,,,688,Tabel A7.15
+RUPTL-SUMATRA-GI-0207,GIS Kota Jambi,150/20,New,62.0,2027,Planned,Jambi,NEW_BUILD,,,688,Tabel A7.15
+RUPTL-SUMATRA-GI-0208,New Aurduri,150/20,Extension,61.0,2027,Planned,Jambi,EXISTING_EXT,GI-SMT-0138,New Aurduri,688,Tabel A7.15
+RUPTL-SUMATRA-GI-0209,Sungai Penuh (Arah Tapan),150,Extension,2.0,2028,Planned,Jambi,NEW_BUILD,,,688,Tabel A7.15
+RUPTL-SUMATRA-GI-0210,Sarolangun,150/20,Extension,31.0,2028,Planned,Jambi,EXISTING_EXT,GI-SMT-0137,Sarolangun,688,Tabel A7.15
+RUPTL-SUMATRA-GI-0211,Bangko,150/20,Uprate,61.0,2029,Planned,Jambi,EXISTING_UPRATE,GI-SMT-0140,Bangko,688,Tabel A7.15
+RUPTL-SUMATRA-GI-0212,Sei Gelam,150/20,Uprate,61.0,2029,Planned,Jambi,NEW_BUILD,,,688,Tabel A7.15
+RUPTL-SUMATRA-GI-0213,Pelabuhan Dagang,150/20,Extension,31.0,2032,Planned,Jambi,NEW_BUILD,,,688,Tabel A7.15
+RUPTL-SUMATRA-GI-0214,PLTP Sungai Penuh,150,New,2.0,2033,Planned,Jambi,RECLASSIFY_NEW,GI-SMT-0142,Sungai Penuh,688,Tabel A7.15
+RUPTL-SUMATRA-GI-0215,Sungai Penuh (Arah PLTP Sungai Penuh),150,Extension,2.0,2033,Planned,Jambi,NEW_BUILD,,,688,Tabel A7.15
+RUPTL-SUMATRA-GI-0216,Muara Enim,500,Extension,2.0,2031,Planned,Sumatera Selatan,NEW_BUILD,,,701,Tabel A8.15
+RUPTL-SUMATRA-GI-0217,Palembang-1/Palembang Utara/Kenten,275/150,New,501.0,2025,Construction,Sumatera Selatan,NEW_BUILD,,,701,Tabel A8.15
+RUPTL-SUMATRA-GI-0218,Gumawang (Arah Muara Enim),275,Extension,1.0,2025,Construction,Sumatera Selatan,NEW_BUILD,,,701,Tabel A8.15
+RUPTL-SUMATRA-GI-0219,Muara Enim (Arah Gumawang),275,Extension,1.0,2025,Construction,Sumatera Selatan,NEW_BUILD,,,701,Tabel A8.15
+RUPTL-SUMATRA-GI-0220,Betung (Arah Kenten),275,Extension,2.0,2025,Construction,Sumatera Selatan,NEW_BUILD,,,701,Tabel A8.15
+RUPTL-SUMATRA-GI-0221,Betung (Arah PLTU Sumsel-1),275,Extension,2.0,2025,Construction,Sumatera Selatan,NEW_BUILD,,,701,Tabel A8.15
+RUPTL-SUMATRA-GI-0222,Gumawang (Arah Lampung-1),275,Extension,2.0,2025,Construction,Sumatera Selatan,EXISTING_EXT,GI-SMT-0169,Gumawang,701,Tabel A8.15
+RUPTL-SUMATRA-GI-0223,Palembang-1/Palembang Utara/Kenten,275/150,Extension,501.0,2027,Planned,Sumatera Selatan,NEW_BUILD,,,701,Tabel A8.15
+RUPTL-SUMATRA-GI-0224,Tugumulyo,150/20,New,61.0,2025,Construction,Sumatera Selatan,NEW_BUILD,,,701,Tabel A8.15
+RUPTL-SUMATRA-GI-0225,Tebing Tinggi (Arah Lubuk Linggau),150,Extension,1.0,2025,Construction,Sumatera Selatan,NEW_BUILD,,,701,Tabel A8.15
+RUPTL-SUMATRA-GI-0226,Lubuk Linggau (Arah Tebing Tinggi),150,Extension,1.0,2025,Construction,Sumatera Selatan,NEW_BUILD,,,701,Tabel A8.15
+RUPTL-SUMATRA-GI-0227,Gumawang (Arah Tugumulyo),150,Extension,2.0,2025,Planned,Sumatera Selatan,NEW_BUILD,,,701,Tabel A8.15
+RUPTL-SUMATRA-GI-0228,Sekayu,150/20,Extension,61.0,2025,Planned,Sumatera Selatan,EXISTING_EXT,GI-SMT-0163,Sekayu,701,Tabel A8.15
+RUPTL-SUMATRA-GI-0229,Baturaja (Arah PLTU Sumbagsel-1),150,Extension,2.0,2025,Committed,Sumatera Selatan,NEW_BUILD,,,701,Tabel A8.15
+RUPTL-SUMATRA-GI-0230,Muara Rupit,150/20,New,31.0,2025,Construction,Sumatera Selatan,NEW_BUILD,,,701,Tabel A8.15
+RUPTL-SUMATRA-GI-0231,Sungai Lilin,150/20,Extension,61.0,2027,Planned,Sumatera Selatan,EXISTING_EXT,GI-SMT-0161,Sungai Lilin,701,Tabel A8.15
+RUPTL-SUMATRA-GI-0232,Pangkalan Balai,150/20,New,61.0,2027,Planned,Sumatera Selatan,NEW_BUILD,,,701,Tabel A8.15
+RUPTL-SUMATRA-GI-0233,Kenten,150/20,Extension,61.0,2027,Planned,Sumatera Selatan,EXISTING_EXT,GI-SMT-0164,Kenten,701,Tabel A8.15
+RUPTL-SUMATRA-GI-0234,Mariana (Arah LP Sumatera),150,Extension,2.0,2028,Planned,Sumatera Selatan,EXISTING_EXT,GI-SMT-0147,Mariana,701,Tabel A8.15
+RUPTL-SUMATRA-GI-0235,Martapura,150/20,Extension,61.0,2028,Planned,Sumatera Selatan,EXISTING_EXT,GI-SMT-0173,Martapura,701,Tabel A8.15
+RUPTL-SUMATRA-GI-0236,Tanjung Api-Api,150/20,Extension,31.0,2030,Planned,Sumatera Selatan,EXISTING_EXT,GI-SMT-0160,Tanjung Api-api,701,Tabel A8.15
+RUPTL-SUMATRA-GI-0237,Bukit Asam (Arah KI Tanjung Enim),150,Extension,2.0,2030,Planned,Sumatera Selatan,NEW_BUILD,,,701,Tabel A8.15
+RUPTL-SUMATRA-GI-0238,Bintuhan,150/20,New,61.0,2025,Construction,Bengkulu,NEW_BUILD,,,712,Tabel A9.14
+RUPTL-SUMATRA-GI-0239,Manna (Arah Bintuhan),150,Extension,2.0,2025,Construction,Bengkulu,NEW_BUILD,,,712,Tabel A9.14
+RUPTL-SUMATRA-GI-0240,Arga Makmur (Arah Muko Muko),150,Extension,2.0,2028,Planned,Bengkulu,NEW_BUILD,,,712,Tabel A9.14
+RUPTL-SUMATRA-GI-0241,Muko Muko (Arah Arga Makmur),150,Extension,2.0,2028,Planned,Bengkulu,NEW_BUILD,,,712,Tabel A9.14
+RUPTL-SUMATRA-GI-0242,PLTP Hululais,150/20,New,31.0,2028,Planned,Bengkulu,NEW_BUILD,,,712,Tabel A9.14
+RUPTL-SUMATRA-GI-0243,Pekalongan (Arah PLTP Hululais),150,Extension,2.0,2028,Planned,Bengkulu,NEW_BUILD,,,712,Tabel A9.14
+RUPTL-SUMATRA-GI-0244,Kepahiang,150/20,New,31.0,2028,Planned,Bengkulu,NEW_BUILD,,,712,Tabel A9.14
+RUPTL-SUMATRA-GI-0245,Pulo Baai,150/20,Extension,61.0,2030,Planned,Bengkulu,NEW_BUILD,,,712,Tabel A9.14
+RUPTL-SUMATRA-GI-0246,Bintuhan (Arah PLTP Danau Ranau),150,Extension,2.0,2033,Planned,Bengkulu,NEW_BUILD,,,712,Tabel A9.14
+RUPTL-SUMATRA-GI-0247,Sribawono,500/150,New,252.0,2031,Planned,Lampung,RECLASSIFY_NEW,GI-SMT-0195,Sribawono,724,Tabel A10.15
+RUPTL-SUMATRA-GI-0248,Sribawono,500,New,3000.0,2031,Planned,Lampung,RECLASSIFY_NEW,GI-SMT-0195,Sribawono,724,Tabel A10.15
+RUPTL-SUMATRA-GI-0249,LP Ketapang,500,New,4.0,2031,Planned,Lampung,RECLASSIFY_NEW,GI-SMT-0207,Ketapang,724,Tabel A10.15
+RUPTL-SUMATRA-GI-0250,Lampung-1,275/150,New,251.0,2025,Construction,Lampung,NEW_BUILD,,,724,Tabel A10.15
+RUPTL-SUMATRA-GI-0251,Lampung-1,275/150,Extension,251.0,2025,Planned,Lampung,NEW_BUILD,,,724,Tabel A10.15
+RUPTL-SUMATRA-GI-0252,Teluk Ratai,150/20,New,61.0,2025,Construction,Lampung,NEW_BUILD,,,724,Tabel A10.15
+RUPTL-SUMATRA-GI-0253,Seputih Banyak (Arah Dente Teladas),150,Extension,2.0,2025,Construction,Lampung,NEW_BUILD,,,724,Tabel A10.15
+RUPTL-SUMATRA-GI-0254,Dente Teladas (Arah Seputih Banyak),150,Extension,2.0,2025,Construction,Lampung,NEW_BUILD,,,724,Tabel A10.15
+RUPTL-SUMATRA-GI-0255,Gedong Tataan (Arah Teluk Ratai),150,Extension,2.0,2025,Construction,Lampung,NEW_BUILD,,,724,Tabel A10.15
+RUPTL-SUMATRA-GI-0256,Lampung-1,150/20,New,61.0,2025,Construction,Lampung,NEW_BUILD,,,724,Tabel A10.15
+RUPTL-SUMATRA-GI-0257,GIS Garuntang,150/20,New,61.0,2026,Planned,Lampung,NEW_BUILD,,,724,Tabel A10.15
+RUPTL-SUMATRA-GI-0258,New Tarahan (Arah Garuntang),150,Extension,2.0,2026,Planned,Lampung,NEW_BUILD,,,724,Tabel A10.15
+RUPTL-SUMATRA-GI-0259,Sribawono,150/20,Uprate,61.0,2026,Planned,Lampung,EXISTING_UPRATE,GI-SMT-0195,Sribawono,724,Tabel A10.15
+RUPTL-SUMATRA-GI-0260,Natar,150/20,Uprate,61.0,2027,Planned,Lampung,EXISTING_UPRATE,GI-SMT-0194,Natar,724,Tabel A10.15
+RUPTL-SUMATRA-GI-0261,GIS Garuntang (Arah Teluk Betung),150,Extension,2.0,2027,Planned,Lampung,NEW_BUILD,,,724,Tabel A10.15
+RUPTL-SUMATRA-GI-0262,Teluk Betung (Arah Garuntang),150,Extension,2.0,2027,Planned,Lampung,NEW_BUILD,,,724,Tabel A10.15
+RUPTL-SUMATRA-GI-0263,Liwa (Arah Krui),150,Extension,2.0,2027,Planned,Lampung,NEW_BUILD,,,724,Tabel A10.15
+RUPTL-SUMATRA-GI-0264,Krui,150/20,New,61.0,2027,Planned,Lampung,NEW_BUILD,,,724,Tabel A10.15
+RUPTL-SUMATRA-GI-0265,Traya,150/20,New,61.0,2027,Planned,Lampung,NEW_BUILD,,,724,Tabel A10.15
+RUPTL-SUMATRA-GI-0266,GIS Garuntang,150/20,Extension,61.0,2029,Planned,Lampung,NEW_BUILD,,,724,Tabel A10.15
+RUPTL-SUMATRA-GI-0267,Tayan (arah Sandai),150,Extension,2.0,2025,Construction,Lampung,NEW_BUILD,,,741,Tabel A11.16
+RUPTL-SUMATRA-GI-0268,Ambawang,150/20,New,60.0,2025,Planned,Lampung,NEW_BUILD,,,741,Tabel A11.16
+RUPTL-SUMATRA-GI-0269,Air Upas,150/20,New,30.0,2025,Committed,Lampung,NEW_BUILD,,,741,Tabel A11.16
+RUPTL-SUMATRA-GI-0270,Nanga Pinoh,150/20,New,30.0,2025,Committed,Lampung,NEW_BUILD,,,741,Tabel A11.16
+RUPTL-SUMATRA-GI-0271,Cendana/(Eks.Jeruju),150/20,Extension,60.0,2025,Committed,Lampung,NEW_BUILD,,,741,Tabel A11.16
+RUPTL-SUMATRA-GI-0272,Sekayam (Eks.Entikong),150/20,New,30.0,2026,Committed,Lampung,NEW_BUILD,,,741,Tabel A11.16
+RUPTL-SUMATRA-GI-0273,Putussibau,150/20,New,30.0,2026,Committed,Lampung,NEW_BUILD,,,741,Tabel A11.16
+RUPTL-SUMATRA-GI-0274,Simpang Tanjung,150/20,New,30.0,2026,Committed,Lampung,NEW_BUILD,,,741,Tabel A11.16
+RUPTL-SUMATRA-GI-0275,Simpang Silat,150/20,New,30.0,2026,Committed,Lampung,NEW_BUILD,,,741,Tabel A11.16
+RUPTL-SUMATRA-GI-0276,Badau,150/20,New,30.0,2027,Committed,Lampung,NEW_BUILD,,,741,Tabel A11.16
+RUPTL-SUMATRA-GI-0277,Tayan (Arah PLTS Kalbar),150,Extension,2.0,2028,Planned,Lampung,NEW_BUILD,,,741,Tabel A11.16
+RUPTL-SUMATRA-GI-0278,Ambawang (arah Seiraya),150,Extension,2.0,2028,Planned,Lampung,NEW_BUILD,,,741,Tabel A11.16
+RUPTL-SUMATRA-GI-0279,Sei Raya (arah Ambawang),150,Extension,2.0,2028,Planned,Lampung,NEW_BUILD,,,741,Tabel A11.16
+RUPTL-SUMATRA-GI-0280,Ambawang (arah Rasau),150,Extension,2.0,2028,Planned,Lampung,NEW_BUILD,,,741,Tabel A11.16
+RUPTL-SUMATRA-GI-0281,Kota Baru (Arah Rasau),150,Extension,2.0,2028,Planned,Lampung,NEW_BUILD,,,741,Tabel A11.16
+RUPTL-SUMATRA-GI-0282,Rasau,150/20,New,60.0,2028,Planned,Lampung,NEW_BUILD,,,741,Tabel A11.16
+RUPTL-SUMATRA-GI-0283,Rasau (arah Ambawang),150,Extension,2.0,2028,Planned,Lampung,NEW_BUILD,,,741,Tabel A11.16
+RUPTL-SUMATRA-GI-0284,Tepuai,150/20,New,30.0,2028,Planned,Lampung,NEW_BUILD,,,741,Tabel A11.16
+RUPTL-SUMATRA-GI-0285,Kijing,150/20,New,60.0,2028,Planned,Lampung,NEW_BUILD,,,741,Tabel A11.16
+RUPTL-SUMATRA-GI-0286,Ketapang,150/20,Extension,60.0,2029,Planned,Lampung,EXISTING_EXT,GI-SMT-0207,Ketapang,741,Tabel A11.16
+RUPTL-SUMATRA-GI-0287,Sekadau,150/20,Extension,30.0,2030,Planned,Lampung,NEW_BUILD,,,741,Tabel A11.16
+RUPTL-SUMATRA-GI-0288,Kota Baru 2,150/20,New,30.0,2031,Planned,Lampung,NEW_BUILD,,,741,Tabel A11.16
+RUPTL-SUMATRA-GI-0289,Nanga Pinoh (Arah Kota Baru 2),150,Extension,2.0,2031,Planned,Lampung,NEW_BUILD,,,741,Tabel A11.16
+RUPTL-SUMATRA-GI-0290,Tayan,150/20,Extension,60.0,2032,Planned,Lampung,NEW_BUILD,,,741,Tabel A11.16
+RUPTL-SUMATRA-GI-0291,GI Kotabaru 2 (Arah Kasongan),150,Extension,2.0,2033,Planned,Lampung,NEW_BUILD,,,741,Tabel A11.16
+RUPTL-SUMATRA-GI-0292,Sanggau,150/20,Extension,60.0,2034,Planned,Lampung,NEW_BUILD,,,741,Tabel A11.16
+RUPTL-SUMATRA-GI-0293,Mempawah/Senggiring (Arah PLTG/GU Kalbar-2) Jumlah,150,Extension,722.0,2030,Planned,Lampung,NEW_BUILD,,,741,Tabel A11.16
+RUPTL-SUMATRA-GI-0294,Satui,150/20,Extension,30.0,2025,Committed,Lampung,NEW_BUILD,,,755,Tabel A12.17
+RUPTL-SUMATRA-GI-0295,Batulicin Baru,150/20,New,60.0,2025,Construction,Lampung,NEW_BUILD,,,755,Tabel A12.17
+RUPTL-SUMATRA-GI-0296,Sei Bali,150/20,New,30.0,2025,Construction,Lampung,NEW_BUILD,,,755,Tabel A12.17
+RUPTL-SUMATRA-GI-0297,Selaru,150/20,New,10.0,2025,Construction,Lampung,NEW_BUILD,,,755,Tabel A12.17
+RUPTL-SUMATRA-GI-0298,Sei Durian,150/20,New,30.0,2026,Construction,Lampung,NEW_BUILD,,,755,Tabel A12.17
+RUPTL-SUMATRA-GI-0299,Sei Durian,150/20,Extension,30.0,2027,Planned,Lampung,NEW_BUILD,,,755,Tabel A12.17
+RUPTL-SUMATRA-GI-0300,Tarjun,150/20,Extension,30.0,2028,Planned,Lampung,NEW_BUILD,,,755,Tabel A12.17
+RUPTL-SUMATRA-GI-0301,Batulicin,150/20,Uprate,60.0,2028,Planned,Lampung,NEW_BUILD,,,755,Tabel A12.17
+RUPTL-SUMATRA-GI-0302,Rantau,150/20,Extension,60.0,2029,Planned,Lampung,NEW_BUILD,,,755,Tabel A12.17
+RUPTL-SUMATRA-GI-0303,Pulau Laut,150/20,Extension,30.0,2029,Planned,Lampung,NEW_BUILD,,,755,Tabel A12.17
+RUPTL-SUMATRA-GI-0304,Kandangan,150/20,Extension,30.0,2030,Planned,Lampung,NEW_BUILD,,,755,Tabel A12.17
+RUPTL-SUMATRA-GI-0305,Trisakti,150/20,Extension,60.0,2030,Planned,Lampung,NEW_BUILD,,,755,Tabel A12.17
+RUPTL-SUMATRA-GI-0306,Seberang Barito,150/20,Uprate,60.0,2031,Planned,Lampung,NEW_BUILD,,,755,Tabel A12.17
+RUPTL-SUMATRA-GI-0307,Mantuil,150/20,Uprate,60.0,2032,Planned,Lampung,NEW_BUILD,,,755,Tabel A12.17
+RUPTL-SUMATRA-GI-0308,Cempaka,150/20,Uprate,60.0,2033,Planned,Lampung,NEW_BUILD,,,755,Tabel A12.17
+RUPTL-SUMATRA-GI-0309,Pangkalan Bun (Arah KLM),150,Extension,2.0,2025,Construction,Lampung,NEW_BUILD,,,768,Tabel A13.15
+RUPTL-SUMATRA-GI-0310,Sebabi,150/20,New,60.0,2027,Planned,Lampung,NEW_BUILD,,,768,Tabel A13.15
+RUPTL-SUMATRA-GI-0311,Kasongan (Arah PLTU Kalselteng 3),150,Extension,2.0,2029,Planned,Lampung,NEW_BUILD,,,768,Tabel A13.15
+RUPTL-SUMATRA-GI-0312,Sudan (Inc 1 phi Parenggean - Sampit),150,Extension,2.0,2029,Planned,Lampung,NEW_BUILD,,,768,Tabel A13.15
+RUPTL-SUMATRA-GI-0313,Palangkaraya,150/20,Extension,60.0,2029,Planned,Lampung,NEW_BUILD,,,768,Tabel A13.15
+RUPTL-SUMATRA-GI-0314,Buntok (arah Tamiang),150,Extension,2.0,2030,Planned,Lampung,NEW_BUILD,,,768,Tabel A13.15
+RUPTL-SUMATRA-GI-0315,Tamiang Layang,150/20,New,30.0,2030,Planned,Lampung,NEW_BUILD,,,768,Tabel A13.15
+RUPTL-SUMATRA-GI-0316,Timpah,150/20,New,30.0,2030,Planned,Lampung,NEW_BUILD,,,768,Tabel A13.15
+RUPTL-SUMATRA-GI-0317,Palangkaraya (Arah Buntok),150,Extension,2.0,2030,Planned,Lampung,NEW_BUILD,,,768,Tabel A13.15
+RUPTL-SUMATRA-GI-0318,Buntok (arah Palangkaraya),150,Extension,2.0,2030,Planned,Lampung,NEW_BUILD,,,768,Tabel A13.15
+RUPTL-SUMATRA-GI-0319,Pangkalan Bun,150/20,Extension,60.0,2031,Planned,Lampung,NEW_BUILD,,,768,Tabel A13.15
+RUPTL-SUMATRA-GI-0320,New Palangkaraya,150/20,Extension,60.0,2031,Planned,Lampung,NEW_BUILD,,,768,Tabel A13.15
+RUPTL-SUMATRA-GI-0321,Muara Teweh,150/20,Extension,60.0,2031,Planned,Lampung,NEW_BUILD,,,768,Tabel A13.15
+RUPTL-SUMATRA-GI-0322,Selat,150/20,Uprate,60.0,2032,Planned,Lampung,NEW_BUILD,,,769,Tabel A13.18
+RUPTL-SUMATRA-GI-0323,GI Kasongan (Arah Kotabaru 2),150,Extension,2.0,2033,Planned,Lampung,NEW_BUILD,,,769,Tabel A13.18
+RUPTL-SUMATRA-GI-0324,Bagendang,150/20,Extension,60.0,2033,Planned,Lampung,NEW_BUILD,,,769,Tabel A13.18
+RUPTL-SUMATRA-GI-0325,Puruk Cahu,150/20,Extension,30.0,2034,Planned,Lampung,NEW_BUILD,,,769,Tabel A13.18
+RUPTL-SUMATRA-GI-0326,Buntok,150/20,Extension,30.0,2034,Planned,Lampung,NEW_BUILD,,,769,Tabel A13.18
+RUPTL-SUMATRA-GI-0327,Mintin (PLTU Pulang Pisau),150/20,Extension,30.0,2034,Planned,Lampung,NEW_BUILD,,,769,Tabel A13.18
+RUPTL-SUMATRA-GI-0328,Pulang Pisau,150/20,Uprate,30.0,2034,Planned,Lampung,NEW_BUILD,,,769,Tabel A13.18
+RUPTL-SUMATRA-GI-0329,Pangkalan Bun (Arah PLTG/GU Kalteng) Jumlah,150,Extension,602.0,2027,Planned,Lampung,NEW_BUILD,,,769,Tabel A13.18
+RUPTL-SUMATRA-GI-0330,GI 150 kV Sisipan Sanga-sanga - Bukuan,150,New,6.0,2027,Planned,Lampung,NEW_BUILD,,,779,Tabel A14.12
+RUPTL-SUMATRA-GI-0331,GI PLTGU Kaltim-1,150,Extension,2.0,2027,Planned,Lampung,NEW_BUILD,,,779,Tabel A14.12
+RUPTL-SUMATRA-GI-0332,GITET KFI,500,New,1000.0,2031,Planned,Lampung,NEW_BUILD,,,779,Tabel A14.12
+RUPTL-SUMATRA-GI-0333,GITET Embalut,500,Extension,2.0,2031,Planned,Lampung,NEW_BUILD,,,779,Tabel A14.12
+RUPTL-SUMATRA-GI-0334,GITET Balikpapan,500,Extension,2.0,2031,Planned,Lampung,NEW_BUILD,,,779,Tabel A14.12
+RUPTL-SUMATRA-GI-0335,GI Senipah,150/20,Extension,30.0,2025,Committed,Lampung,NEW_BUILD,,,789,Tabel A14.21
+RUPTL-SUMATRA-GI-0336,Tempadung,150/20,New,30.0,2025,Construction,Lampung,NEW_BUILD,,,789,Tabel A14.21
+RUPTL-SUMATRA-GI-0337,Tanjung Redeb (arah Talisayan),150,Extension,2.0,2025,Construction,Lampung,NEW_BUILD,,,789,Tabel A14.21
+RUPTL-SUMATRA-GI-0338,Talisayan,150/20,New,30.0,2025,Construction,Lampung,NEW_BUILD,,,789,Tabel A14.21
+RUPTL-SUMATRA-GI-0339,Bontang Lestari (Ex. Bontang Koala),150/20,New,60.0,2025,Planned,Lampung,NEW_BUILD,,,789,Tabel A14.21
+RUPTL-SUMATRA-GI-0340,Maloy (Arah Talisayan),150,Extension,2.0,2025,Construction,Lampung,NEW_BUILD,,,789,Tabel A14.21
+RUPTL-SUMATRA-GI-0341,Grogot (Arah Sei Durian),150,Extension,2.0,2026,Planned,Lampung,NEW_BUILD,,,789,Tabel A14.21
+RUPTL-SUMATRA-GI-0342,Muara Wahau (Arah Sangatta),150,Extension,2.0,2026,Committed,Lampung,NEW_BUILD,,,789,Tabel A14.21
+RUPTL-SUMATRA-GI-0343,Samboja,150/20,New,30.0,2026,Committed,Lampung,NEW_BUILD,,,789,Tabel A14.21
+RUPTL-SUMATRA-GI-0344,Sangatta (arah Muara Wahau),150,Extension,2.0,2026,Committed,Lampung,NEW_BUILD,,,789,Tabel A14.21
+RUPTL-SUMATRA-GI-0345,Maloy,150/20,Extension,30.0,2026,Planned,Lampung,NEW_BUILD,,,789,Tabel A14.21
+RUPTL-SUMATRA-GI-0346,Sambutan (Arah GI PLTG/GU Kaltim-1 ),150,Extension,2.0,2026,Planned,Lampung,NEW_BUILD,,,789,Tabel A14.21
+RUPTL-SUMATRA-GI-0347,GI PLTGU Kaltim-1,150,New,4.0,2026,Planned,Lampung,NEW_BUILD,,,789,Tabel A14.21
+RUPTL-SUMATRA-GI-0348,Kuaro (Arah GIS 4/Sepaku),150,Extension,2.0,2027,Committed,Lampung,NEW_BUILD,,,789,Tabel A14.21
+RUPTL-SUMATRA-GI-0349,Tenggarong/Bukit Biru (arah GI 1),150,Extension,2.0,2027,Committed,Lampung,NEW_BUILD,,,789,Tabel A14.21
+RUPTL-SUMATRA-GI-0350,GI 1 K-IKN,150/20,New,120.0,2027,Committed,Lampung,NEW_BUILD,,,789,Tabel A14.21
+RUPTL-SUMATRA-GI-0351,Sanga-Sanga (Muara Jawa),150/20,Extension,60.0,2027,Planned,Lampung,NEW_BUILD,,,789,Tabel A14.21
+RUPTL-SUMATRA-GI-0352,GI 150 kV Sisipan Sanga-Sanga- Bukuan,150,New,6.0,2027,Planned,Lampung,NEW_BUILD,,,789,Tabel A14.21
+RUPTL-SUMATRA-GI-0353,GI PLTGU Kaltim 1 (Arah GI Sisipan Sanga-Sanga - Bukuan),150,Extension,2.0,2027,Planned,Lampung,NEW_BUILD,,,789,Tabel A14.21
+RUPTL-SUMATRA-GI-0354,Tanjung Redeb (Arah PLTG/GU Kaltara/Kaltimra),150,New,2.0,2027,Planned,Lampung,NEW_BUILD,,,789,Tabel A14.21
+RUPTL-SUMATRA-GI-0355,Melak (arah Bangkanai),150,Extension,2.0,2028,Planned,Lampung,NEW_BUILD,,,789,Tabel A14.21
+RUPTL-SUMATRA-GI-0356,Sepaso,150/20,New,30.0,2028,Planned,Lampung,NEW_BUILD,,,789,Tabel A14.21
+RUPTL-SUMATRA-GI-0357,New Samarinda,150/20,Extension,60.0,2028,Planned,Lampung,NEW_BUILD,,,789,Tabel A14.21
+RUPTL-SUMATRA-GI-0358,GI BWP 9,150/20,New,120.0,2028,Planned,Lampung,NEW_BUILD,,,789,Tabel A14.21
+RUPTL-SUMATRA-GI-0359,GI 2 K-IKN,150/20,New,120.0,2028,Planned,Lampung,NEW_BUILD,,,789,Tabel A14.21
+RUPTL-SUMATRA-GI-0360,Samboja,150/20,Extension,30.0,2028,Planned,Lampung,NEW_BUILD,,,789,Tabel A14.21
+RUPTL-SUMATRA-GI-0361,Tenggarong/Bukit Biru,150/20,Uprate,60.0,2029,Planned,Lampung,NEW_BUILD,,,789,Tabel A14.21
+RUPTL-SUMATRA-GI-0362,Kotabangun,150/20,Extension,30.0,2029,Planned,Lampung,NEW_BUILD,,,789,Tabel A14.21
+RUPTL-SUMATRA-GI-0363,Sambera,150/20,Extension,60.0,2029,Planned,Lampung,NEW_BUILD,,,789,Tabel A14.21
+RUPTL-SUMATRA-GI-0364,New Balikpapan,150/20,Extension,60.0,2029,Planned,Lampung,NEW_BUILD,,,789,Tabel A14.21
+RUPTL-SUMATRA-GI-0365,Sangatta,150/20,Uprate,60.0,2029,Planned,Lampung,NEW_BUILD,,,790,
+RUPTL-SUMATRA-GI-0366,Tengkawang,150/20,Uprate,60.0,2029,Planned,Lampung,NEW_BUILD,,,790,
+RUPTL-SUMATRA-GI-0367,Balikpapan (Eks. GIS),150/20,New,60.0,2030,Planned,Lampung,NEW_BUILD,,,790,
+RUPTL-SUMATRA-GI-0368,New Samarinda (Arah Samarinda Ex. GIS),150,Extension,2.0,2030,Planned,Lampung,NEW_BUILD,,,790,
+RUPTL-SUMATRA-GI-0369,Samarinda (Eks.GIS ),150/20,New,60.0,2030,Planned,Lampung,NEW_BUILD,,,790,
+RUPTL-SUMATRA-GI-0370,New Balikpapan (Arah Balikpapan Ex. GIS),150,Extension,2.0,2030,Planned,Lampung,NEW_BUILD,,,790,
+RUPTL-SUMATRA-GI-0371,Tanjung Redeb,150/20,Uprate,60.0,2030,Planned,Lampung,NEW_BUILD,,,790,
+RUPTL-SUMATRA-GI-0372,GIS 3 KIPP,150/20,New,120.0,2030,Planned,Lampung,NEW_BUILD,,,790,
+RUPTL-SUMATRA-GI-0373,Karang Joang,150/20,Uprate,60.0,2030,Planned,Lampung,NEW_BUILD,,,790,
+RUPTL-SUMATRA-GI-0374,Samboja,150/20,Uprate,60.0,2031,Planned,Lampung,NEW_BUILD,,,790,
+RUPTL-SUMATRA-GI-0375,GITET Balikpapan,500,New,500.0,2031,Planned,Lampung,NEW_BUILD,,,790,
+RUPTL-SUMATRA-GI-0376,GITET Embalut,500,New,1000.0,2031,Planned,Lampung,NEW_BUILD,,,790,
+RUPTL-SUMATRA-GI-0377,GITET IKN 1,500,New,1000.0,2031,Planned,Lampung,NEW_BUILD,,,790,
+RUPTL-SUMATRA-GI-0378,Industri (arah Petung),150,Extension,2.0,2031,Planned,Lampung,NEW_BUILD,,,790,
+RUPTL-SUMATRA-GI-0379,Petung (arah Industri),150,Extension,2.0,2031,Planned,Lampung,NEW_BUILD,,,790,
+RUPTL-SUMATRA-GI-0380,Kuaro,150/20,Extension,30.0,2031,Planned,Lampung,NEW_BUILD,,,790,
+RUPTL-SUMATRA-GI-0381,GITET KFI,500,New,1000.0,2031,Planned,Lampung,NEW_BUILD,,,790,
+RUPTL-SUMATRA-GI-0382,GITET Embalut (Arah GITET KFI),500,Extension,2.0,2031,Planned,Lampung,NEW_BUILD,,,790,
+RUPTL-SUMATRA-GI-0383,GITET Balikpapan (Arah GITET KFI),500,Extension,2.0,2031,Planned,Lampung,NEW_BUILD,,,790,
+RUPTL-SUMATRA-GI-0384,Mahakam Ulu/ Ujoh Bilang,150/20,New,30.0,2031,Planned,Lampung,NEW_BUILD,,,790,
+RUPTL-SUMATRA-GI-0385,Melak (arah Ujoh Bilang),150,Extension,2.0,2031,Planned,Lampung,NEW_BUILD,,,790,
+RUPTL-SUMATRA-GI-0386,Maloy (Arah PT GAM),150,Extension,2.0,2032,Planned,Lampung,NEW_BUILD,,,790,
+RUPTL-SUMATRA-GI-0387,Bangkanai (Arah PT MBL),150,Extension,2.0,2032,Planned,Lampung,NEW_BUILD,,,790,
+RUPTL-SUMATRA-GI-0388,Melak (Arah PT ITM),150,Extension,2.0,2032,Planned,Lampung,NEW_BUILD,,,790,
+RUPTL-SUMATRA-GI-0389,Bontang (Arah PT Badak),150,Extension,2.0,2032,Planned,Lampung,NEW_BUILD,,,790,
+RUPTL-SUMATRA-GI-0390,Kotabangun (arah Kembang Janggut),150,Extension,2.0,2032,Planned,Lampung,NEW_BUILD,,,790,
+RUPTL-SUMATRA-GI-0391,Kembang Janggut,150/20,New,30.0,2032,Planned,Lampung,NEW_BUILD,,,790,
+RUPTL-SUMATRA-GI-0392,Kembang Janggut (arah Muara Bengkal),150,Extension,2.0,2032,Planned,Lampung,NEW_BUILD,,,790,
+RUPTL-SUMATRA-GI-0393,Muara Bengkal,150/20,New,30.0,2032,Planned,Lampung,NEW_BUILD,,,790,
+RUPTL-SUMATRA-GI-0394,Muara Wahau (Arah Muara Bengkal),150,Extension,2.0,2032,Planned,Lampung,NEW_BUILD,,,790,
+RUPTL-SUMATRA-GI-0395,Kembang Janggut (arah Tabang),150,Extension,2.0,2032,Planned,Lampung,NEW_BUILD,,,791,Tabel A14.22
+RUPTL-SUMATRA-GI-0396,Tanjung Redeb (arah Muara Wahau),150,Extension,2.0,2032,Planned,Lampung,NEW_BUILD,,,791,Tabel A14.22
+RUPTL-SUMATRA-GI-0397,Tanjung Batu/ Derawan,150/20,New,30.0,2032,Planned,Lampung,NEW_BUILD,,,791,Tabel A14.22
+RUPTL-SUMATRA-GI-0398,Tanjung Redeb (arah Tanjung Batu/Derawan),150,Extension,2.0,2032,Planned,Lampung,NEW_BUILD,,,791,Tabel A14.22
+RUPTL-SUMATRA-GI-0399,GIS 3 KIPP,150/20,Extension,60.0,2033,Planned,Lampung,NEW_BUILD,,,791,Tabel A14.22
+RUPTL-SUMATRA-GI-0400,Senipah,150/20,Uprate,60.0,2033,Planned,Lampung,NEW_BUILD,,,791,Tabel A14.22
+RUPTL-SUMATRA-GI-0401,Sekatak,150/20,New,30.0,2026,Committed,Lampung,NEW_BUILD,,,808,Tabel A15.17
+RUPTL-SUMATRA-GI-0402,Tarakan,150/20,New,120.0,2026,Committed,Lampung,NEW_BUILD,,,808,Tabel A15.17
+RUPTL-SUMATRA-GI-0403,Malinau (Arah Nunukan),150,Extension,2.0,2028,Planned,Lampung,NEW_BUILD,,,808,Tabel A15.17
+RUPTL-SUMATRA-GI-0404,Nunukan,150/20,New,60.0,2028,Planned,Lampung,NEW_BUILD,,,808,Tabel A15.17
+RUPTL-SUMATRA-GI-0405,GITET Kaltara,500,New,4.0,2031,Planned,Lampung,NEW_BUILD,,,808,Tabel A15.17
+RUPTL-SUMATRA-GI-0406,GITET Tj. Selor,500,New,500.0,2031,Planned,Lampung,NEW_BUILD,,,808,Tabel A15.17
+RUPTL-SUMATRA-GI-0407,Sebuku,150/20,New,30.0,2032,Planned,Lampung,NEW_BUILD,,,808,Tabel A15.17
+RUPTL-SUMATRA-GI-0408,Tidang Pale/Tana Tidung (arah Seimenggaris),150,Extension,2.0,2033,Planned,Lampung,NEW_BUILD,,,808,Tabel A15.17
+RUPTL-SUMATRA-GI-0409,Seimenggaris (Trafo Relokasi),150/20,New,10.0,2033,Planned,Lampung,NEW_BUILD,,,808,Tabel A15.17
+RUPTL-SUMATRA-GI-0410,Tarakan,150/20,Extension,60.0,2033,Planned,Lampung,NEW_BUILD,,,808,Tabel A15.17
+RUPTL-SUMATRA-GI-0411,GITET Tj. Selor (Arah Sabah),275,New,2.0,2034,Planned,Lampung,NEW_BUILD,,,808,Tabel A15.17

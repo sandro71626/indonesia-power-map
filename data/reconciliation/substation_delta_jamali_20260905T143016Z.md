@@ -1,0 +1,234 @@
+# Substation Delta Report — jamali
+
+- Generated: 2026-09-05T14:30:16.145116+00:00
+- Baseline substations: 522
+- RUPTL planning rows:   1033
+
+## Classification summary
+
+- **NEW_BUILD**: 633
+- **EXISTING_EXT**: 235
+- **EXISTING_UPRATE**: 112
+- **RECLASSIFY_NEW**: 53
+- **ORPHAN**: 0
+- **TOTAL**: 1033
+
+---
+
+## Details
+
+### NEW_BUILD (633)
+
+- **Karawang** (500/150 kV, 2000.0 MVA, COD 2027) — Jawa Barat, Planned
+- **Tanjung Awar- Awar** (500/150 kV, 1500.0 MVA, COD 2028) — Jawa Timur, Planned
+- **Rasuna Said** (275/150 kV, 1000.0 MVA, COD 2028) — Dki Jakarta, Planned
+- **Cibatu Baru II / Sukatani** (500/150 kV, 1000.0 MVA, COD 2026) — Jawa Barat, Planned
+- **KIIC** (500/150 kV, 1000.0 MVA, COD 2027) — Jawa Barat, Planned
+- **Karawang** (500/150 kV, 1000.0 MVA, COD 2028) — Jawa Barat, Planned
+- **Citeurup** (500/150 kV, 1000.0 MVA, COD 2028) — Jawa Barat, Planned
+- **Ampel / Tuntang** (500/150 kV, 1000.0 MVA, COD 2026) — Jawa Tengah, Planned
+- **Batang / Pemalang** (500/150 kV, 1000.0 MVA, COD 2027) — Jawa Tengah, Planned
+- **Rawalo / Kesugihan** (500/150 kV, 1000.0 MVA, COD 2028) — Jawa Tengah, Construction
+- **Tambak Lorok** (500/150 kV, 1000.0 MVA, COD 2032) — Jawa Tengah, Planned
+- **Watudodol / Kalipuro** (500/150 kV, 1000.0 MVA, COD 2025) — Jawa Timur, Construction
+- **Madiun** (500/150 kV, 1000.0 MVA, COD 2026) — Jawa Timur, Planned
+- **Kalanganyar** (500/275 kV, 1000.0 MVA, COD 2027) — Jawa Timur, Planned
+- **Kalanganyar** (500/150 kV, 1000.0 MVA, COD 2030) — Jawa Timur, Planned
+- **Antosari / Gilimanuk** (500/150 kV, 1000.0 MVA, COD 2030) — Bali, Planned
+- **Antosari / Gilimanuk** (500/150 kV, 1000.0 MVA, COD 2031) — Bali, Planned
+- **Suralaya Lama** (500/150 kV, 500.0 MVA, COD 2026) — Banten, Planned
+- **Cibatu Baru / Deltamas** (500/150 kV, 500.0 MVA, COD 2025) — Jawa Barat, Construction
+- **Cibatu Baru / Deltamas** (500/150 kV, 500.0 MVA, COD 2025) — Jawa Barat, Construction
+- **KEK Kendal** (150/20 kV, 240.0 MVA, COD 2025) — Jawa Tengah, Construction
+- **Sentul Baru / Cijayanti** (150/20 kV, 180.0 MVA, COD 2025) — Jawa Barat, Planned
+- **Subang Baru / Pamanukan** (150/20 kV, 180.0 MVA, COD 2025) — Jawa Barat, Construction
+- **Gandul II / Pamulang** (150/20 kV, 120.0 MVA, COD 2025) — Dki Jakarta, Planned
+- **Setiabudi II / Casablanca** (150/20 kV, 120.0 MVA, COD 2026) — Dki Jakarta, Planned
+- **Grogol II / Kedaung** (150/20 kV, 120.0 MVA, COD 2033) — Dki Jakarta, Planned
+- **Semanggi Barat II / Petamburan** (150/20 kV, 120.0 MVA, COD 2034) — Dki Jakarta, Planned
+- **Kuningan** (150/20 kV, 120.0 MVA, COD 2034) — Dki Jakarta, Planned
+- **Tanjung Lesung** (150/20 kV, 120.0 MVA, COD 2025) — Banten, Construction
+- **Tigaraksa II / Citra Maja** (150/20 kV, 120.0 MVA, COD 2025) — Banten, Planned
+- **Lippo Curug II** (150/20 kV, 120.0 MVA, COD 2033) — Banten, Planned
+- **Balongan** (150/20 kV, 120.0 MVA, COD 2025) — Jawa Barat, Construction
+- **JISC / MOS** (150/20 kV, 120.0 MVA, COD 2025) — Jawa Barat, Planned
+- **Cibadak Baru II / Lido** (150/20 kV, 120.0 MVA, COD 2026) — Jawa Barat, Planned
+- **Gandamekar II / Cibuntu** (150/20 kV, 120.0 MVA, COD 2026) — Jawa Barat, Planned
+- **Jababeka II / Pamahan** (150/20 kV, 120.0 MVA, COD 2026) — Jawa Barat, Planned
+- **Tamansari/ KNIC** (150/20 kV, 120.0 MVA, COD 2026) — Jawa Barat, Planned
+- **Pertiwi Lestari** (150/20 kV, 120.0 MVA, COD 2026) — Jawa Barat, Planned
+- **KIIC III** (150/20 kV, 120.0 MVA, COD 2027) — Jawa Barat, Planned
+- **Kadipaten Baru II / Kertajati** (150/20 kV, 120.0 MVA, COD 2027) — Jawa Barat, Planned
+- **Subang Smartpolitan / Metropolitan** (150/20 kV, 120.0 MVA, COD 2027) — Jawa Barat, Planned
+- **Kedung Badak Baru II / Kencana** (150/20 kV, 120.0 MVA, COD 2027) — Jawa Barat, Planned
+- **Padalarang Baru II / Ngamprah / Walini** (150/20 kV, 120.0 MVA, COD 2027) — Jawa Barat, Planned
+- **Patimban** (150/20 kV, 120.0 MVA, COD 2027) — Jawa Barat, Planned
+- **Sukarame** (150/20 kV, 120.0 MVA, COD 2027) — Jawa Barat, Planned
+- **Tenjo** (150/20 kV, 120.0 MVA, COD 2027) — Jawa Barat, Planned
+- **Ubrug New / Warung Kiara** (150/20 kV, 120.0 MVA, COD 2028) — Jawa Barat, Planned
+- **Citeurup** (150/20 kV, 120.0 MVA, COD 2028) — Jawa Barat, Planned
+- **Cibeureum II / Bandung Barat** (150/20 kV, 120.0 MVA, COD 2029) — Jawa Barat, Planned
+- **Lagadar II / Bojong** (150/20 kV, 120.0 MVA, COD 2029) — Jawa Barat, Planned
+- _(+583 more, see CSV)_
+
+### EXISTING_EXT (235)
+
+- **Cawang Baru** (500/150 kV, 1000.0 MVA, COD 2027) — Dki Jakarta, Planned ↔ baseline: GI-JMB-0008 'Cawang'
+- **Cawang** (500/275 kV, 1000.0 MVA, COD 2028) — Dki Jakarta, Planned ↔ baseline: GI-JMB-0008 'Cawang'
+- **Cikupa** (500/150 kV, 1000.0 MVA, COD 2030) — Banten, Planned ↔ baseline: GI-JMB-0092 'Cikupa'
+- **Tambun** (500/150 kV, 1000.0 MVA, COD 2025) — Jawa Barat, Planned ↔ baseline: GI-JMB-0225 'New Tambun'
+- **Cikalong** (500/150 kV, 1000.0 MVA, COD 2027) — Jawa Barat, Planned ↔ baseline: GI-JMB-0171 'Cikalong'
+- **Duri Kosambi** (500/150 kV, 500.0 MVA, COD 2027) — Dki Jakarta, Planned ↔ baseline: GI-JMB-0019 'Duri Kosambi'
+- **Duri Kosambi** (500/150 kV, 500.0 MVA, COD 2027) — Dki Jakarta, Planned ↔ baseline: GI-JMB-0019 'Duri Kosambi'
+- **Cilegon** (500/150 kV, 500.0 MVA, COD 2025) — Banten, Construction ↔ baseline: GI-JMB-0094 'Cilegon'
+- **Indramayu** (500/150 kV, 500.0 MVA, COD 2025) — Jawa Barat, Planned ↔ baseline: GI-JMB-0194 'Indramayu'
+- **Ngimbang** (500/150 kV, 500.0 MVA, COD 2025) — Jawa Timur, Committed ↔ baseline: GI-JMB-0401 'Ngimbang'
+- **Bangil** (500/150 kV, 500.0 MVA, COD 2026) — Jawa Timur, Planned ↔ baseline: GI-JMB-0471 'Bangil'
+- **Ngimbang** (500/150 kV, 500.0 MVA, COD 2028) — Jawa Timur, Planned ↔ baseline: GI-JMB-0401 'Ngimbang'
+- **Paiton** (500/150 kV, 500.0 MVA, COD 2026) — Jawa Timur, Planned ↔ baseline: GI-JMB-0463 'Paiton'
+- **Kubu** (150/20 kV, 180.0 MVA, COD 2025) — Bali, Planned ↔ baseline: GI-JMB-0510 'Kubu'
+- **Pondok Indah II / Cirendeu** (150/20 kV, 120.0 MVA, COD 2028) — Dki Jakarta, Planned ↔ baseline: GI-JMB-0064 'Pondok Indah 2 / Cirendeu'
+- **Wayang Windu** (150/70 kV, 100.0 MVA, COD 2027) — Jawa Barat, Planned ↔ baseline: GI-JMB-0274 'Wayang Windu'
+- **Segoromadu** (150/70 kV, 100.0 MVA, COD 2026) — Jawa Timur, Planned ↔ baseline: GI-JMB-0376 'Segoromadu'
+- **Senayan III / Ulujami** (150/20 kV, 60.0 MVA, COD 2026) — Dki Jakarta, Planned ↔ baseline: GI-JMB-0072 'Senayan III / Ulujami'
+- **Duren Tiga II / Ragunan** (150/20 kV, 60.0 MVA, COD 2027) — Dki Jakarta, Construction ↔ baseline: GI-JMB-0078 'Duren Tiga II / Ragunan'
+- **Harapan Indah** (150/20 kV, 60.0 MVA, COD 2029) — Dki Jakarta, Planned ↔ baseline: GI-JMB-0030 'Harapan Indah'
+- **Bintaro** (150/20 kV, 60.0 MVA, COD 2031) — Dki Jakarta, Planned ↔ baseline: GI-JMB-0005 'Bintaro'
+- **Gambir Baru** (150/20 kV, 60.0 MVA, COD 2033) — Dki Jakarta, Planned ↔ baseline: GI-JMB-0020 'Gambir Baru'
+- **Gambir Lama II** (150/20 kV, 60.0 MVA, COD 2033) — Dki Jakarta, Planned ↔ baseline: GI-JMB-0021 'Gambir Lama'
+- **Kandang Sapi** (150/20 kV, 60.0 MVA, COD 2033) — Dki Jakarta, Planned ↔ baseline: GI-JMB-0035 'Kandang Sapi'
+- **Mangga Besar** (150/20 kV, 60.0 MVA, COD 2034) — Dki Jakarta, Planned ↔ baseline: GI-JMB-0050 'Mangga Besar'
+- **Ancol** (150/20 kV, 60.0 MVA, COD 2032) — Dki Jakarta, Planned ↔ baseline: GI-JMB-0002 'Ancol'
+- **Puncak Ardi Mulya II / Modern** (150/20 kV, 60.0 MVA, COD 2025) — Banten, Planned ↔ baseline: GI-JMB-0120 'Puncak Ardi Mulya'
+- **Rangkasbitung Baru** (150/20 kV, 60.0 MVA, COD 2025) — Banten, Construction ↔ baseline: GI-JMB-0121 'Rangkasbitung Baru'
+- **Puncak Ardi Mulya II / Modern** (150/20 kV, 60.0 MVA, COD 2026) — Banten, Planned ↔ baseline: GI-JMB-0120 'Puncak Ardi Mulya'
+- **Teluk Naga II / Dadap** (150/20 kV, 60.0 MVA, COD 2028) — Banten, Planned ↔ baseline: GI-JMB-0138 'Teluk Naga II / Dadap'
+- **Serpong** (150/20 kV, 60.0 MVA, COD 2025) — Banten, Planned ↔ baseline: GI-JMB-0127 'Serpong'
+- **Gajah Tunggal** (150/20 kV, 60.0 MVA, COD 2026) — Banten, Planned ↔ baseline: GI-JMB-0099 'Gajah Tunggal'
+- **Cibatu** (150/20 kV, 60.0 MVA, COD 2025) — Jawa Barat, Construction ↔ baseline: GI-JMB-0162 'Cibatu'
+- **Kadipaten Baru** (150/20 kV, 60.0 MVA, COD 2025) — Jawa Barat, Committed ↔ baseline: GI-JMB-0199 'Kadipaten'
+- **Cikarang Baru Lippo** (150/20 kV, 60.0 MVA, COD 2026) — Jawa Barat, Planned ↔ baseline: GI-JMB-0173 'Cikarang Lippo'
+- **Bandung Timur Baru** (150/20 kV, 60.0 MVA, COD 2027) — Jawa Barat, Planned ↔ baseline: GI-JMB-0145 'Bandung Timur'
+- **Sukatani New** (150/20 kV, 60.0 MVA, COD 2027) — Jawa Barat, Planned ↔ baseline: GI-JMB-0255 'Sukatani'
+- **Cikarang Baru Lippo** (150/20 kV, 60.0 MVA, COD 2028) — Jawa Barat, Planned ↔ baseline: GI-JMB-0173 'Cikarang Lippo'
+- **Maligi** (150/20 kV, 60.0 MVA, COD 2028) — Jawa Barat, Planned ↔ baseline: GI-JMB-0217 'Maligi'
+- **Sukatani New** (150/20 kV, 60.0 MVA, COD 2028) — Jawa Barat, Planned ↔ baseline: GI-JMB-0255 'Sukatani'
+- **Telukjambe II** (150/20 kV, 60.0 MVA, COD 2028) — Jawa Barat, Planned ↔ baseline: GI-JMB-0270 'Telukjambe'
+- **Poncol Baru II** (150/20 kV, 60.0 MVA, COD 2029) — Jawa Barat, Planned ↔ baseline: GI-JMB-0240 'Poncol Baru II'
+- **Rengasdengklok Baru** (150/20 kV, 60.0 MVA, COD 2029) — Jawa Barat, Planned ↔ baseline: GI-JMB-0246 'Rengasdengklok'
+- **Arjawinangun Baru** (150/20 kV, 60.0 MVA, COD 2033) — Jawa Barat, Planned ↔ baseline: GI-JMB-0140 'Arjawinangun'
+- **Katulampa** (150/20 kV, 60.0 MVA, COD 2033) — Jawa Barat, Planned ↔ baseline: GI-JMB-0203 'Katulampa'
+- **Dayeuhkolot** (150/20 kV, 60.0 MVA, COD 2034) — Jawa Barat, Planned ↔ baseline: GI-JMB-0184 'Dayeuhkolot'
+- **Jepara** (150/20 kV, 60.0 MVA, COD 2025) — Jawa Tengah, Planned ↔ baseline: GI-JMB-0296 'Jepara'
+- **Kudus** (150/20 kV, 60.0 MVA, COD 2025) — Jawa Tengah, Planned ↔ baseline: GI-JMB-0308 'Kudus'
+- **Pati** (150/20 kV, 60.0 MVA, COD 2025) — Jawa Tengah, Planned ↔ baseline: GI-JMB-0319 'Pati'
+- **Jekulo** (150/20 kV, 60.0 MVA, COD 2026) — Jawa Tengah, Planned ↔ baseline: GI-JMB-0294 'Jekulo'
+- _(+185 more, see CSV)_
+
+### EXISTING_UPRATE (112)
+
+- **Suralaya Baru** (500/150 kV, 500.0 MVA, COD 2026) — Banten, Planned ↔ baseline: GI-JMB-0132 'Suralaya'
+- **Driyorejo** (150/70 kV, 100.0 MVA, COD 2025) — Jawa Timur, Planned ↔ baseline: GI-JMB-0446 'Driyorejo'
+- **Cirata Baru** (150/20 kV, 60.0 MVA, COD 2027) — Jawa Barat, Planned ↔ baseline: GI-JMB-0179 'Cirata'
+- **Gombong** (150/20 kV, 60.0 MVA, COD 2025) — Jawa Tengah, Planned ↔ baseline: GI-JMB-0291 'Gombong'
+- **Srondol** (150/20 kV, 60.0 MVA, COD 2026) — Jawa Tengah, Planned ↔ baseline: GI-JMB-0343 'Srondol'
+- **Majenang** (150/20 kV, 60.0 MVA, COD 2027) — Jawa Tengah, Planned ↔ baseline: GI-JMB-0310 'Majenang'
+- **Lomanis** (150/20 kV, 60.0 MVA, COD 2030) — Jawa Tengah, Planned ↔ baseline: GI-JMB-0309 'Lomanis'
+- **Banyuwangi** (150/20 kV, 60.0 MVA, COD 2025) — Jawa Timur, Planned ↔ baseline: GI-JMB-0450 'Banyuwangi'
+- **Situbondo** (150/20 kV, 60.0 MVA, COD 2025) — Jawa Timur, Planned ↔ baseline: GI-JMB-0468 'Situbondo'
+- **Petrokimia** (150/20 kV, 60.0 MVA, COD 2030) — Jawa Timur, Planned ↔ baseline: GI-JMB-0373 'Petrokimia'
+- **Mojoagung** (150/20 kV, 60.0 MVA, COD 2031) — Jawa Timur, Planned ↔ baseline: GI-JMB-0425 'Mojoagung'
+- **Tarik** (70/20 kV, 30.0 MVA, COD 2025) — Jawa Timur, Construction ↔ baseline: GI-JMB-0443 'Tarik'
+- **Pesanggaran** (150 kV, 6.0 MVA, COD 2027) — Bali, Planned ↔ baseline: GI-JMB-0518 'Pesanggaran'
+- **Pamekasan** (150 kV, 4.0 MVA, COD 2028) — Jawa Timur, Planned ↔ baseline: GI-JMB-0372 'Pamekasan'
+- **Baturiti** (150 kV, 4.0 MVA, COD 2028) — Bali, Planned ↔ baseline: GI-JMB-0505 'Baturiti'
+- **Budi Kemuliaan** (150 kV, 2.0 MVA, COD 2025) — Dki Jakarta, Planned ↔ baseline: GI-JMB-0007 'Budi Kemuliaan'
+- **Duri Kosambi** (150 kV, 2.0 MVA, COD 2027) — Dki Jakarta, Planned ↔ baseline: GI-JMB-0019 'Duri Kosambi'
+- **Kembangan** (150 kV, 2.0 MVA, COD 2027) — Dki Jakarta, Planned ↔ baseline: GI-JMB-0045 'Kembangan'
+- **Plumpang** (150 kV, 2.0 MVA, COD 2033) — Dki Jakarta, Planned ↔ baseline: GI-JMB-0062 'Plumpang'
+- **Cilegon** (500 kV, 2.0 MVA, COD 2025) — Banten, Construction ↔ baseline: GI-JMB-0094 'Cilegon'
+- **Cikande** (150 kV, 2.0 MVA, COD 2026) — Banten, Planned ↔ baseline: GI-JMB-0091 'Cikande'
+- **Rangkasbitung Baru** (150 kV, 2.0 MVA, COD 2030) — Banten, Planned ↔ baseline: GI-JMB-0121 'Rangkasbitung Baru'
+- **Saketi** (150 kV, 2.0 MVA, COD 2030) — Banten, Planned ↔ baseline: GI-JMB-0122 'Saketi'
+- **Tambun** (150 kV, 2.0 MVA, COD 2025) — Jawa Barat, Planned ↔ baseline: GI-JMB-0225 'New Tambun'
+- **Kamojang** (150 kV, 2.0 MVA, COD 2026) — Jawa Barat, Planned ↔ baseline: GI-JMB-0200 'Kamojang'
+- **Rancaekek** (150 kV, 2.0 MVA, COD 2026) — Jawa Barat, Construction ↔ baseline: GI-JMB-0244 'Rancaekek'
+- **Sunyaragi** (150 kV, 2.0 MVA, COD 2026) — Jawa Barat, Construction ↔ baseline: GI-JMB-0259 'Sunyaragi'
+- **Bogor Baru** (150 kV, 2.0 MVA, COD 2026) — Jawa Barat, Planned ↔ baseline: GI-JMB-0149 'Bogor Baru'
+- **Cianjur** (150 kV, 2.0 MVA, COD 2026) — Jawa Barat, Planned ↔ baseline: GI-JMB-0156 'Cianjur'
+- **Katulampa** (150 kV, 2.0 MVA, COD 2026) — Jawa Barat, Planned ↔ baseline: GI-JMB-0203 'Katulampa'
+- **Ciamis** (150 kV, 2.0 MVA, COD 2027) — Jawa Barat, Planned ↔ baseline: GI-JMB-0155 'Ciamis'
+- **Bandung Utara** (150 kV, 2.0 MVA, COD 2027) — Jawa Barat, Planned ↔ baseline: GI-JMB-0146 'Bandung Utara'
+- **Padalarang** (150 kV, 2.0 MVA, COD 2027) — Jawa Barat, Planned ↔ baseline: GI-JMB-0228 'Padalarang Baru'
+- **Cibatu** (150 kV, 2.0 MVA, COD 2027) — Jawa Barat, Planned ↔ baseline: GI-JMB-0162 'Cibatu'
+- **Mekarsari** (150 kV, 2.0 MVA, COD 2027) — Jawa Barat, Planned ↔ baseline: GI-JMB-0221 'Mekarsari'
+- **Mekarsari** (150 kV, 2.0 MVA, COD 2027) — Jawa Barat, Planned ↔ baseline: GI-JMB-0221 'Mekarsari'
+- **Pinayungan** (150 kV, 2.0 MVA, COD 2027) — Jawa Barat, Planned ↔ baseline: GI-JMB-0236 'Pinayungan'
+- **Kamojang** (150 kV, 2.0 MVA, COD 2029) — Jawa Barat, Planned ↔ baseline: GI-JMB-0200 'Kamojang'
+- **Maligi** (150 kV, 2.0 MVA, COD 2029) — Jawa Barat, Planned ↔ baseline: GI-JMB-0217 'Maligi'
+- **Parungmulya** (150 kV, 2.0 MVA, COD 2029) — Jawa Barat, Planned ↔ baseline: GI-JMB-0233 'Parungmulya'
+- **Cigereleng** (150 kV, 2.0 MVA, COD 2032) — Jawa Barat, Planned ↔ baseline: GI-JMB-0169 'Cigereleng'
+- **Lagadar** (150 kV, 2.0 MVA, COD 2032) — Jawa Barat, Planned ↔ baseline: GI-JMB-0212 'Lagadar'
+- **Cibinong** (150 kV, 2.0 MVA, COD 2033) — Jawa Barat, Planned ↔ baseline: GI-JMB-0165 'Cibinong'
+- **Jelok** (150 kV, 2.0 MVA, COD 2025) — Jawa Tengah, Construction ↔ baseline: GI-JMB-0295 'Jelok'
+- **Kaliwungu** (150 kV, 2.0 MVA, COD 2025) — Jawa Tengah, Construction ↔ baseline: GI-JMB-0300 'Kaliwungu'
+- **Weleri** (150 kV, 2.0 MVA, COD 2025) — Jawa Tengah, Planned ↔ baseline: GI-JMB-0352 'Weleri'
+- **Banyudono** (150 kV, 2.0 MVA, COD 2026) — Jawa Tengah, Planned ↔ baseline: GI-JMB-0277 'Banyudono'
+- **Jajar** (150 kV, 2.0 MVA, COD 2026) — Jawa Tengah, Planned ↔ baseline: GI-JMB-0293 'Jajar'
+- **Kedungombo** (150 kV, 2.0 MVA, COD 2026) — Jawa Tengah, Planned ↔ baseline: GI-JMB-0303 'Kedungombo'
+- **Purwodadi** (150 kV, 2.0 MVA, COD 2026) — Jawa Tengah, Planned ↔ baseline: GI-JMB-0328 'Purwodadi'
+- _(+62 more, see CSV)_
+
+### RECLASSIFY_NEW (53)
+
+- **Cikupa** (500/150 kV, 1000.0 MVA, COD 2025) — Banten, Construction ↔ baseline: GI-JMB-0092 'Cikupa'
+- **Cikande** (500/150 kV, 1000.0 MVA, COD 2026) — Banten, Construction ↔ baseline: GI-JMB-0091 'Cikande'
+- **Ubrug** (500/150 kV, 1000.0 MVA, COD 2028) — Jawa Barat, Planned ↔ baseline: GI-JMB-0271 'Ubrug'
+- **Bogor X** (500/150 kV, 1000.0 MVA, COD 2031) — Jawa Barat, Planned ↔ baseline: GI-JMB-0149 'Bogor Baru'
+- **Weleri** (500/150 kV, 1000.0 MVA, COD 2028) — Jawa Tengah, Planned ↔ baseline: GI-JMB-0352 'Weleri'
+- **Purwodadi** (500/150 kV, 1000.0 MVA, COD 2028) — Jawa Tengah, Planned ↔ baseline: GI-JMB-0328 'Purwodadi'
+- **Rembang** (500/150 kV, 1000.0 MVA, COD 2033) — Jawa Tengah, Planned ↔ baseline: GI-JMB-0333 'Rembang'
+- **Waru** (500/150 kV, 1000.0 MVA, COD 2025) — Jawa Timur, Construction ↔ baseline: GI-JMB-0499 'Waru'
+- **New Ngoro** (500/150 kV, 1000.0 MVA, COD 2027) — Jawa Timur, Planned ↔ baseline: GI-JMB-0427 'Ngoro'
+- **Surabaya Selatan** (275/150 kV, 1000.0 MVA, COD 2027) — Jawa Timur, Construction ↔ baseline: GI-JMB-0485 'Surabaya Selatan'
+- **Waru** (500/275 kV, 1000.0 MVA, COD 2029) — Jawa Timur, Planned ↔ baseline: GI-JMB-0499 'Waru'
+- **Bangil** (500/150 kV, 500.0 MVA, COD 2025) — Jawa Timur, Construction ↔ baseline: GI-JMB-0471 'Bangil'
+- **Blimbing Baru** (150/20 kV, 180.0 MVA, COD 2027) — Jawa Timur, Planned ↔ baseline: GI-JMB-0436 'Blimbing'
+- **Mampang Baru II** (150/20 kV, 120.0 MVA, COD 2028) — Dki Jakarta, Planned ↔ baseline: GI-JMB-0048 'Mampang Baru'
+- **Telukjambe II** (150/20 kV, 120.0 MVA, COD 2025) — Jawa Barat, Construction ↔ baseline: GI-JMB-0270 'Telukjambe'
+- **Babakan Baru** (150/20 kV, 120.0 MVA, COD 2026) — Jawa Barat, Construction ↔ baseline: GI-JMB-0142 'Babakan'
+- **Rengasdengklok Baru** (150/20 kV, 120.0 MVA, COD 2026) — Jawa Barat, Planned ↔ baseline: GI-JMB-0246 'Rengasdengklok'
+- **Malangbong Baru** (150/20 kV, 120.0 MVA, COD 2027) — Jawa Barat, Planned ↔ baseline: GI-JMB-0216 'Malangbong'
+- **Sumedang Baru** (150/20 kV, 120.0 MVA, COD 2027) — Jawa Barat, Construction ↔ baseline: GI-JMB-0258 'Sumedang'
+- **Cibinong II** (150/20 kV, 120.0 MVA, COD 2028) — Jawa Barat, Planned ↔ baseline: GI-JMB-0165 'Cibinong'
+- **Kracak Baru** (150/20 kV, 120.0 MVA, COD 2029) — Jawa Barat, Planned ↔ baseline: GI-JMB-0210 'Kracak'
+- **Peruri II** (150/20 kV, 120.0 MVA, COD 2029) — Jawa Barat, Planned ↔ baseline: GI-JMB-0235 'Peruri'
+- **Rancaekek II** (150/20 kV, 120.0 MVA, COD 2029) — Jawa Barat, Planned ↔ baseline: GI-JMB-0244 'Rancaekek'
+- **Bogor X** (150/20 kV, 120.0 MVA, COD 2031) — Jawa Barat, Planned ↔ baseline: GI-JMB-0149 'Bogor Baru'
+- **Caruban Baru** (150/20 kV, 120.0 MVA, COD 2026) — Jawa Timur, Construction ↔ baseline: GI-JMB-0406 'Caruban'
+- **Magetan Baru** (150/20 kV, 120.0 MVA, COD 2027) — Jawa Timur, Planned ↔ baseline: GI-JMB-0409 'Magetan'
+- **New Ngoro** (150/20 kV, 120.0 MVA, COD 2027) — Jawa Timur, Planned ↔ baseline: GI-JMB-0427 'Ngoro'
+- **Sidoarjo II** (150/20 kV, 120.0 MVA, COD 2034) — Jawa Timur, Planned ↔ baseline: GI-JMB-0483 'Sidoarjo'
+- **Pemecutan Kelod II** (150/20 kV, 120.0 MVA, COD 2029) — Bali, Planned ↔ baseline: GI-JMB-0517 'Pemecutan Kelod'
+- **Muara Karang New** (150/20 kV, 60.0 MVA, COD 2027) — Dki Jakarta, Construction ↔ baseline: GI-JMB-0054 'Muara Karang Baru'
+- **Pondok Kelapa II** (150/20 kV, 60.0 MVA, COD 2026) — Dki Jakarta, Construction ↔ baseline: GI-JMB-0065 'Pondok Kelapa'
+- **Cikupa New** (150/20 kV, 60.0 MVA, COD 2025) — Banten, Committed ↔ baseline: GI-JMB-0092 'Cikupa'
+- **Cikande New** (150/20 kV, 60.0 MVA, COD 2026) — Banten, Planned ↔ baseline: GI-JMB-0091 'Cikande'
+- **Pelabuhan Ratu Baru** (150/20 kV, 60.0 MVA, COD 2025) — Jawa Barat, Construction ↔ baseline: GI-JMB-0238 'PLTU Pelabuhan Ratu'
+- **Cikalong** (150/20 kV, 60.0 MVA, COD 2027) — Jawa Barat, Planned ↔ baseline: GI-JMB-0171 'Cikalong'
+- **Kuningan Baru** (150/20 kV, 60.0 MVA, COD 2027) — Jawa Barat, Planned ↔ baseline: GI-JMB-0211 'Kuningan'
+- **PLTP Ungaran** (150/20 kV, 60.0 MVA, COD 2031) — Jawa Tengah, Planned ↔ baseline: GI-JMB-0349 'Ungaran'
+- **Bangil New** (150/20 kV, 60.0 MVA, COD 2025) — Jawa Timur, Planned ↔ baseline: GI-JMB-0471 'Bangil'
+- **Waru New** (150/20 kV, 60.0 MVA, COD 2025) — Jawa Timur, Planned ↔ baseline: GI-JMB-0499 'Waru'
+- **PLTU Paiton II** (150/20 kV, 60.0 MVA, COD 2026) — Jawa Timur, Planned ↔ baseline: GI-JMB-0463 'Paiton'
+- **Dolopo Baru** (150/20 kV, 60.0 MVA, COD 2027) — Jawa Timur, Planned ↔ baseline: GI-JMB-0407 'Dolopo'
+- **Trenggalek Baru** (150/20 kV, 60.0 MVA, COD 2033) — Jawa Timur, Planned ↔ baseline: GI-JMB-0414 'Trenggalek'
+- **Sukorejo** (150/20 kV, 60.0 MVA, COD 2027) — Jawa Timur, Planned ↔ baseline: GI-JMB-0470 'Sukorejo'
+- **Pier II** (150/20 kV, 60.0 MVA, COD 2030) — Jawa Timur, Planned ↔ baseline: GI-JMB-0464 'Pier'
+- **New Sanur** (150/20 kV, 60.0 MVA, COD 2030) — Bali, Planned ↔ baseline: GI-JMB-0519 'Sanur'
+- **Sawahan II** (150 kV, 8.0 MVA, COD 2028) — Jawa Timur, Planned ↔ baseline: GI-JMB-0495 'Sawahan'
+- **Curug Switching** (150 kV, 6.0 MVA, COD 2030) — Banten, Planned ↔ baseline: GI-JMB-0098 'Curug'
+- **Cikalong** (500 kV, 4.0 MVA, COD 2027) — Jawa Barat, Planned ↔ baseline: GI-JMB-0171 'Cikalong'
+- **Cawang** (275 kV, 2.0 MVA, COD 2028) — Dki Jakarta, Planned ↔ baseline: GI-JMB-0008 'Cawang'
+- **Weleri II** (150 kV, 2.0 MVA, COD 2028) — Jawa Tengah, Planned ↔ baseline: GI-JMB-0352 'Weleri'
+- _(+3 more, see CSV)_

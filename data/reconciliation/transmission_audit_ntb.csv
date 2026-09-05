@@ -1,0 +1,2 @@
+severity,ruptl_id,from_bus,to_bus,voltage_kv,length_km,straight_km,ratio,action_type,target_cod_year,province,source_page,issues
+3,RUPTL-NTB-T-0001,GI Jeranjang,GI Sekotong,150,57.0,16.44,3.47,New,2025,Nusa Tenggara Barat,1161,RATIO_TOO_HIGH

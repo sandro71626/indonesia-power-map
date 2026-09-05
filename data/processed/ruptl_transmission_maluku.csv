@@ -1,0 +1,27 @@
+id,name,from_bus,to_bus,voltage_kv,action_type,circuits,line_type,length_km,target_cod_year,status,province,region_key,source_page,source_table
+RUPTL-MALUKU-T-0001,GI Masohi — GI Kairatu,GI Masohi,GI Kairatu,150,New,2,SUTT,210.0,2025,Construction,Maluku,maluku,1079,Tabel C7.16
+RUPTL-MALUKU-T-0002,GI Piru — GI Kairatu,GI Piru,GI Kairatu,150,New,2,SUTT,110.0,2025,Construction,Maluku,maluku,1079,Tabel C7.16
+RUPTL-MALUKU-T-0003,PLTMG Seram 2 — GI Masohi,PLTMG Seram 2,GI Masohi,150,New,2,SUTT,20.0,2026,Committed,Maluku,maluku,1079,Tabel C7.16
+RUPTL-MALUKU-T-0004,GI Mako — Inc.1 phi (Namrole- Namlea),GI Mako,Inc.1 phi (Namrole- Namlea),70,New,2,SUTT,2.0,2027,Committed,Maluku,maluku,1079,Tabel C7.16
+RUPTL-MALUKU-T-0005,PLTS + BESS Ambon (Kuota) Tersebar 30 MW — GI Eksisting / GI Rencana Sistem Ambon,PLTS + BESS Ambon (Kuota) Tersebar 30 MW,GI Eksisting / GI Rencana Sistem Ambon,150,New,2,SUTT,10.0,2027,Planned,Maluku,maluku,1079,Tabel C7.16
+RUPTL-MALUKU-T-0006,PLTP Buru (Kuota) Tersebar 20 MW — GI Eksisting / GI Rencana Sistem Buru,PLTP Buru (Kuota) Tersebar 20 MW,GI Eksisting / GI Rencana Sistem Buru,70,New,2,SUTT,20.0,2028,Planned,Maluku,maluku,1079,Tabel C7.16
+RUPTL-MALUKU-T-0007,GI Piru — GI Taniwel,GI Piru,GI Taniwel,150,New,2,SUTT,125.0,2029,Planned,Maluku,maluku,1079,Tabel C7.16
+RUPTL-MALUKU-T-0008,PLTP Seram (Kuota) Tersebar 25 MW — GI Eksisting / GI Rencana Sistem Seram,PLTP Seram (Kuota) Tersebar 25 MW,GI Eksisting / GI Rencana Sistem Seram,150,New,2,SUTT,20.0,2029,Planned,Maluku,maluku,1079,Tabel C7.16
+RUPTL-MALUKU-T-0009,PLTP Tulehu (FTP 2) — Inc. 1 Phi (Passo- Ambon),PLTP Tulehu (FTP 2),Inc. 1 Phi (Passo- Ambon),150,New,2,SUTT,10.0,2031,Planned,Maluku,maluku,1079,Tabel C7.16
+RUPTL-MALUKU-T-0010,PLTB Ambon (Kuota) Tersebar 30 MW — GI Eksisting / GI Rencana Sistem Ambon,PLTB Ambon (Kuota) Tersebar 30 MW,GI Eksisting / GI Rencana Sistem Ambon,150,New,2,SUTT,10.0,2031,Planned,Maluku,maluku,1079,Tabel C7.16
+RUPTL-MALUKU-T-0011,GI Jailolo — GI Sofifi,GI Jailolo,GI Sofifi,150,New,2,SUTT,160.0,2025,Construction,Maluku Utara,maluku,1099,Tabel C8.16
+RUPTL-MALUKU-T-0012,GI Jailolo — GI Malifut,GI Jailolo,GI Malifut,150,New,2,SUTT,160.0,2025,Construction,Maluku Utara,maluku,1099,Tabel C8.16
+RUPTL-MALUKU-T-0013,GI Malifut — GI Tobelo,GI Malifut,GI Tobelo,150,New,2,SUTT,240.0,2025,Construction,Maluku Utara,maluku,1099,Tabel C8.16
+RUPTL-MALUKU-T-0014,PLTMG Tobelo 2 — GI Tobelo,PLTMG Tobelo 2,GI Tobelo,150,New,2,SUTT,22.0,2025,Construction,Maluku Utara,maluku,1099,Tabel C8.16
+RUPTL-MALUKU-T-0015,GI Ternate 1 — GI Tidore,GI Ternate 1,GI Tidore,150,New,2,SUTT,20.0,2027,Committed,Maluku Utara,maluku,1099,Tabel C8.16
+RUPTL-MALUKU-T-0016,GI Ternate 1 — GI Tidore,GI Ternate 1,GI Tidore,150,New,2,SKLT,8.0,2027,Committed,Maluku Utara,maluku,1099,Tabel C8.16
+RUPTL-MALUKU-T-0017,PLTMG Tidore — Incomer 1 phi (GI Ternate - GI Tidore),PLTMG Tidore,Incomer 1 phi (GI Ternate - GI Tidore),150,New,2,SUTT,20.0,2027,Planned,Maluku Utara,maluku,1099,Tabel C8.16
+RUPTL-MALUKU-T-0018,PLTMG Halmahera 1 — Incomer 1 phi (GI Sofifi - GI Jailolo),PLTMG Halmahera 1,Incomer 1 phi (GI Sofifi - GI Jailolo),150,New,2,SUTT,10.0,2027,Planned,Maluku Utara,maluku,1099,Tabel C8.16
+RUPTL-MALUKU-T-0019,PLTS+BESS Halmahera (Kuota) Tersebar 100 MW — GI Eksisting / GI Rencana Sistem Halmahera,PLTS+BESS Halmahera (Kuota) Tersebar 100 MW,GI Eksisting / GI Rencana Sistem Halmahera,150,New,2,SUTT,10.0,2028,Planned,Maluku Utara,maluku,1099,Tabel C8.16
+RUPTL-MALUKU-T-0020,PLTS+BESS Halmahera (Kuota) Tersebar 50 MW — GI Eksisting / GI Rencana Sistem Halmahera,PLTS+BESS Halmahera (Kuota) Tersebar 50 MW,GI Eksisting / GI Rencana Sistem Halmahera,150,New,2,SUTT,10.0,2029,Planned,Maluku Utara,maluku,1099,Tabel C8.16
+RUPTL-MALUKU-T-0021,PLTBio Halmahera (Kuota) Tersebar 30 MW — GI Eksisting / GI Rencana Sistem Halmahera,PLTBio Halmahera (Kuota) Tersebar 30 MW,GI Eksisting / GI Rencana Sistem Halmahera,150,New,2,SUTT,10.0,2030,Planned,Maluku Utara,maluku,1099,Tabel C8.16
+RUPTL-MALUKU-T-0022,GI Maba — GI Sofifi,GI Maba,GI Sofifi,150,New,2,SUTT,300.0,2030,Planned,Maluku Utara,maluku,1099,Tabel C8.16
+RUPTL-MALUKU-T-0023,GI Ternate 2 — Incomer 1 phi (MPP Ternate - GI Ternate 1),GI Ternate 2,Incomer 1 phi (MPP Ternate - GI Ternate 1),150,New,2,SUTT,10.0,2032,Planned,Maluku Utara,maluku,1099,Tabel C8.16
+RUPTL-MALUKU-T-0024,PLTP Halmahera (Kuota) — GI Eksisting / GI Rencana,PLTP Halmahera (Kuota),GI Eksisting / GI Rencana,150,New,2,SUTT,20.0,2032,Planned,Maluku Utara,maluku,1099,Tabel C8.16
+RUPTL-MALUKU-T-0025,PLTP Halmahera (Kuota) Tersebar 50 MW — GI Eksisting / GI Rencana Sistem Halmahera,PLTP Halmahera (Kuota) Tersebar 50 MW,GI Eksisting / GI Rencana Sistem Halmahera,150,New,2,SUTT,20.0,2032,Planned,Maluku Utara,maluku,1100,Tabel C8.18
+RUPTL-MALUKU-T-0026,Inc. 2 Phi (Sofifi - Maba) Total — Kawasan Industri Buli (Feni Haltim),Inc. 2 Phi (Sofifi - Maba) Total,Kawasan Industri Buli (Feni Haltim),150,New,4,SUTT,1006.0,2033,Planned,Maluku Utara,maluku,1100,Tabel C8.18

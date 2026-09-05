@@ -1,0 +1,8 @@
+id,name,voltage_kv,action_type,capacity_mva,target_cod_year,status,province,region_key,source_page,source_table
+RUPTL-MALUKU-GI-0001,Kairatu,150/20,,30.0,2025,Construction,Maluku,maluku,1080,Tabel C7.19
+RUPTL-MALUKU-GI-0002,Masohi,150,,4.0,2026,Committed,Maluku,maluku,1080,Tabel C7.19
+RUPTL-MALUKU-GI-0003,Mako,70/20,,20.0,2027,Committed,Maluku,maluku,1080,Tabel C7.19
+RUPTL-MALUKU-GI-0004,Piru,150,,2.0,2029,Planned,Maluku,maluku,1080,Tabel C7.19
+RUPTL-MALUKU-GI-0005,Tobelo,150,,4.0,2025,Construction,Maluku Utara,maluku,1100,Tabel C8.18
+RUPTL-MALUKU-GI-0006,Tidore,150/20,,30.0,2027,Committed,Maluku Utara,maluku,1100,Tabel C8.18
+RUPTL-MALUKU-GI-0007,Maba,150/20,,30.0,2030,Planned,Maluku Utara,maluku,1100,Tabel C8.18

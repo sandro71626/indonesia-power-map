@@ -1,0 +1,84 @@
+id,name,type,capacity_mw,province,region_key,status,target_cod_year,cod_re_base,cod_ared,developer,source_table,source_page,lat,lon,coord_source,coord_confidence
+RUPTL-PAPUA-P-0001,Biak 3,PLTMG,15.0,Papua Pegunungan,papua,Committed,2026,2026,,SH-PLN,Tabel C9.10,1120,-4.143776,139.139202,province_centroid,low
+RUPTL-PAPUA-P-0002,Biak (Kuota) Tersebar,PLTS,10.0,Papua Pegunungan,papua,Planned,2028,2028,,IPP,Tabel C9.10,1120,-4.310764,139.054179,province_centroid,low
+RUPTL-PAPUA-P-0003,Wabudori,PLTM,3.0,Papua,papua,Planned,2029,2029,,PLN,,1121,-4.266333,138.134782,province_centroid,low
+RUPTL-PAPUA-P-0004,Lisdes,PLTS,0.213,Papua,papua,Planned,2025,2025,,PLN,,1121,-4.227388,138.014856,province_centroid,low
+RUPTL-PAPUA-P-0005,Lisdes,PLTS,0.25,Papua,papua,Planned,2025,2025,,PLN,,1121,-4.292589,138.045800,province_centroid,low
+RUPTL-PAPUA-P-0006,Lisdes Papua pegunungan,PLTS,1.494,Papua,papua,Planned,2025,2025,,PLN,,1121,-4.268938,137.934094,province_centroid,low
+RUPTL-PAPUA-P-0007,Lisdes Papua Tengah,PLTS,0.936,Papua,papua,Planned,2025,2025,,PLN,,1121,-4.300514,138.231029,province_centroid,low
+RUPTL-PAPUA-P-0008,Lisdes Papua Selatan,PLTS,4.16,Papua,papua,Planned,2025,2025,,PLN,,1121,-4.267274,138.155807,province_centroid,low
+RUPTL-PAPUA-P-0009,Lisdes,PLTS,0.705,Papua,papua,Planned,2026,2026,,PLN,,1121,-4.210198,138.217997,province_centroid,low
+RUPTL-PAPUA-P-0010,Lisdes Papua pegunungan,PLTS,0.43,Papua,papua,Planned,2026,2026,,PLN,,1121,-4.354621,138.254976,province_centroid,low
+RUPTL-PAPUA-P-0011,Lisdes Papua Tengah,PLTS,0.402,Papua,papua,Planned,2026,2026,,PLN,,1121,-4.292225,138.096202,province_centroid,low
+RUPTL-PAPUA-P-0012,Lisdes Papua Selatan,PLTS,1.076,Papua,papua,Planned,2026,2026,,PLN,,1121,-4.078024,138.018313,province_centroid,low
+RUPTL-PAPUA-P-0013,Lisdes,PLTS,2.475,Papua,papua,Planned,2027,2027,,PLN,,1121,-4.152971,137.954824,province_centroid,low
+RUPTL-PAPUA-P-0014,Lisdes Papua pegunungan,PLTS,133.013,Papua,papua,Planned,2027,2027,,PLN,,1121,-4.130983,138.164681,province_centroid,low
+RUPTL-PAPUA-P-0015,Lisdes Papua Tengah,PLTS,44.488,Papua,papua,Planned,2027,2027,,PLN,,1121,-4.492926,138.056103,province_centroid,low
+RUPTL-PAPUA-P-0016,Lisdes Papua Selatan,PLTS,8.031,Papua,papua,Planned,2027,2027,,PLN,,1121,-4.476059,138.058433,province_centroid,low
+RUPTL-PAPUA-P-0017,Isolated Papua,PLTS,3.186,Papua,papua,Planned,2028,2028,,IPP,,1121,-4.128880,137.982757,province_centroid,low
+RUPTL-PAPUA-P-0018,Isolated Papua Selatan,PLTS,4.3248,Papua,papua,Planned,2028,2028,,IPP,,1121,-4.381592,138.209997,province_centroid,low
+RUPTL-PAPUA-P-0019,Isolated Papua Tengah,PLTS,8.04,Papua,papua,Planned,2028,2028,,IPP,,1121,-4.092156,138.185644,province_centroid,low
+RUPTL-PAPUA-P-0020,Isolated Papua Pegunungan,PLTS,0.62,Papua,papua,Planned,2028,2028,,IPP,,1121,-4.241561,138.141298,province_centroid,low
+RUPTL-PAPUA-P-0021,Mamberamo Raya,PLTM,4.0,Papua,papua,Planned,2029,2029,,PLN,,1121,-4.435781,138.245697,province_centroid,low
+RUPTL-PAPUA-P-0022,Digoel,PLTM,3.0,Papua,papua,Planned,2029,2029,,PLN,,1121,-4.297029,137.898126,province_centroid,low
+RUPTL-PAPUA-P-0023,Jayapura,PLTMG,50.0,Papua,papua,Committed,2026,2026,,PLN,,1121,-2.616324,140.791304,gazetteer_generator:GEN-PAP-0006,high
+RUPTL-PAPUA-P-0024,Jayapura 2,PLTMG,50.0,Papua,papua,Planned,2027,2027,,SH-PLN,,1121,-2.616324,140.791304,gazetteer_generator:GEN-PAP-0006,high
+RUPTL-PAPUA-P-0025,Jayapura (Kuota) Tersebar,PLTS,50.0,Papua,papua,Planned,2028,2028,,IPP,,1121,-2.616324,140.791304,gazetteer_generator:GEN-PAP-0006,high
+RUPTL-PAPUA-P-0026,Jayapura (Kuota) Tersebar,PLTS,50.0,Papua,papua,Planned,2030,2030,,IPP,,1121,-2.616324,140.791304,gazetteer_generator:GEN-PAP-0006,high
+RUPTL-PAPUA-P-0027,Amai,PLTM,1.08,Papua,papua,Planned,2032,2032,,PLN,,1121,-4.284506,138.198257,province_centroid,low
+RUPTL-PAPUA-P-0028,Jayapura 3,PLTMG,50.0,Papua,papua,Planned,2034,2034,,SH-PLN,,1121,-2.616324,140.791304,gazetteer_generator:GEN-PAP-0006,high
+RUPTL-PAPUA-P-0029,Merauke 4,PLTMG,10.0,Papua,papua,Planned,2027,2027,,SH-PLN,,1121,-4.272285,138.228197,province_centroid,low
+RUPTL-PAPUA-P-0030,Merauke (Kuota) Tersebar,PLTS,10.0,Papua,papua,Planned,2028,2028,,IPP,,1121,-4.203291,137.900216,province_centroid,low
+RUPTL-PAPUA-P-0031,Merauke 3,PLTBM,10.0,Papua,papua,Planned,2029,2029,,IPP,,1121,-4.345747,138.226637,province_centroid,low
+RUPTL-PAPUA-P-0032,Merauke (Kuota) Tersebar,PLTS,10.0,Papua,papua,Planned,2030,2030,,IPP,,1121,-4.414549,138.012801,province_centroid,low
+RUPTL-PAPUA-P-0033,Kalibumi I,PLTM,6.35,Papua,papua,Planned,2027,2027,,PLN,,1121,-4.431169,138.011949,province_centroid,low
+RUPTL-PAPUA-P-0034,Nabire (Kuota) Tersebar,PLTS,10.0,Papua,papua,Planned,2028,2028,,IPP,,1121,-4.487461,138.246680,province_centroid,low
+RUPTL-PAPUA-P-0035,Nabire 3,PLTMG,10.0,Papua,papua,Planned,2030,2030,,SH-PLN,,1121,-4.446771,137.971650,province_centroid,low
+RUPTL-PAPUA-P-0036,Nabire (Kuota) Tersebar,PLTS,10.0,Papua,papua,Planned,2033,2033,,IPP,Tabel C9.10,1122,-4.479963,137.958350,province_centroid,low
+RUPTL-PAPUA-P-0037,Sarmi,PLTD,5.0,Papua,papua,Committed,2026,2026,,PLN,Tabel C9.10,1122,-4.249582,138.289830,province_centroid,low
+RUPTL-PAPUA-P-0038,Sarmi,PLTS,5.0,Papua,papua,Planned,2031,2031,,PLN,Tabel C9.10,1122,-4.104528,138.071856,province_centroid,low
+RUPTL-PAPUA-P-0039,Serui 1,PLTMG,10.0,Papua,papua,Construction,2025,2025,,PLN,Tabel C9.10,1122,-4.357088,137.871664,province_centroid,low
+RUPTL-PAPUA-P-0040,Serui,PLTS,5.0,Papua,papua,Planned,2027,2027,,SH-PLN,Tabel C9.10,1122,-4.442091,137.927448,province_centroid,low
+RUPTL-PAPUA-P-0041,Serui 2,PLTMG,10.0,Papua,papua,Planned,2028,2028,,SH-PLN,Tabel C9.10,1122,-4.089544,137.934988,province_centroid,low
+RUPTL-PAPUA-P-0042,Timika 2,PLTMG,30.0,Papua,papua,Committed,2026,2026,,SH-PLN,Tabel C9.10,1122,-4.753410,136.767577,gazetteer_generator:GEN-PAP-0008,high
+RUPTL-PAPUA-P-0043,Timika 2,PLTMG,10.0,Papua,papua,Committed,2026,2026,,SH-PLN,Tabel C9.10,1122,-4.753410,136.767577,gazetteer_generator:GEN-PAP-0008,high
+RUPTL-PAPUA-P-0044,Timika,PLTS,10.0,Papua,papua,Planned,2027,2027,,SH-PLN,Tabel C9.10,1122,-4.753410,136.767577,gazetteer_generator:GEN-PAP-0008,high
+RUPTL-PAPUA-P-0045,Timika 3,PLTMG,20.0,Papua,papua,Planned,2027,2027,,SH-PLN,Tabel C9.10,1122,-4.753410,136.767577,gazetteer_generator:GEN-PAP-0008,high
+RUPTL-PAPUA-P-0046,Timika (Kuota) Tersebar,PLTS,20.0,Papua,papua,Planned,2028,2028,,IPP,Tabel C9.10,1122,-4.753410,136.767577,gazetteer_generator:GEN-PAP-0008,high
+RUPTL-PAPUA-P-0047,Timika 4,PLTMG,10.0,Papua,papua,Planned,2031,2031,,SH-PLN,Tabel C9.10,1122,-4.753410,136.767577,gazetteer_generator:GEN-PAP-0008,high
+RUPTL-PAPUA-P-0048,Timika (Kuota) Tersebar,PLTS,10.0,Papua,papua,Planned,2033,2033,,IPP,Tabel C9.10,1122,-4.753410,136.767577,gazetteer_generator:GEN-PAP-0008,high
+RUPTL-PAPUA-P-0049,Uwe,PLTM,1.5,Papua,papua,Planned,2027,2027,,PLN,Tabel C9.10,1122,-4.194816,137.866818,province_centroid,low
+RUPTL-PAPUA-P-0050,Cascade Walesi,PLTM,6.0,Papua,papua,Planned,2029,2029,,PLN,Tabel C9.10,1122,-4.128400,138.956700,gazetteer_generator:GEN-PAP-0018,high
+RUPTL-PAPUA-P-0051,Walesi Blok II,PLTM,3.8,Papua,papua,Planned,2029,2029,,PLN,Tabel C9.10,1122,-4.128400,138.956700,gazetteer_generator:GEN-PAP-0018,high
+RUPTL-PAPUA-P-0052,Bintuni,PLTMG,10.0,Papua Barat Daya,papua,Committed,2026,2026,,SH-PLN,Tabel C10.11,1144,-1.130964,131.391398,province_centroid,low
+RUPTL-PAPUA-P-0053,Bintuni (Kuota) Tersebar,PLTS,5.0,Papua Barat Daya,papua,Planned,2028,2028,,IPP,Tabel C10.11,1144,-1.057097,131.430219,province_centroid,low
+RUPTL-PAPUA-P-0054,MPP Fak-Fak,PLTMG,10.0,Papua Barat Daya,papua,Planned,2025,2025,,PLN,Tabel C10.11,1144,-1.033652,131.129545,province_centroid,low
+RUPTL-PAPUA-P-0055,Fak-Fak,PLTMG,10.0,Papua Barat Daya,papua,Planned,2027,2027,,SH-PLN,Tabel C10.11,1144,-1.157255,131.371816,province_centroid,low
+RUPTL-PAPUA-P-0056,Fak-Fak (Kuota) Tersebar,PLTS,5.0,Papua Barat Daya,papua,Planned,2028,2028,,IPP,Tabel C10.11,1144,-0.894488,131.273163,province_centroid,low
+RUPTL-PAPUA-P-0057,Lisdes Papua Barat,PLTS,1.008,Papua Barat Daya,papua,Planned,2025,2025,,PLN,Tabel C10.11,1144,-1.046457,131.425888,province_centroid,low
+RUPTL-PAPUA-P-0058,Lisdes Papua Barat Daya,PLTS,0.71,Papua Barat Daya,papua,Planned,2025,2025,,PLN,Tabel C10.11,1144,-0.816654,131.156873,province_centroid,low
+RUPTL-PAPUA-P-0059,Lisdes Papua Barat,PLTS,0.562,Papua Barat Daya,papua,Planned,2026,2026,,PLN,Tabel C10.11,1144,-0.817864,131.192491,province_centroid,low
+RUPTL-PAPUA-P-0060,Lisdes Papua Barat Daya,PLTS,0.318,Papua Barat Daya,papua,Planned,2026,2026,,PLN,Tabel C10.11,1144,-0.937535,131.340371,province_centroid,low
+RUPTL-PAPUA-P-0061,Lisdes Papua Barat,PLTS,0.381,Papua Barat Daya,papua,Planned,2027,2027,,PLN,Tabel C10.11,1144,-1.047110,131.473156,province_centroid,low
+RUPTL-PAPUA-P-0062,Lisdes Papua Barat Daya,PLTS,2.051,Papua Barat Daya,papua,Planned,2027,2027,,PLN,Tabel C10.11,1144,-1.133322,131.364888,province_centroid,low
+RUPTL-PAPUA-P-0063,Isolated Papua Barat,PLTS,0.739,Papua Barat Daya,papua,Planned,2028,2028,,IPP,Tabel C10.11,1144,-1.149440,131.209805,province_centroid,low
+RUPTL-PAPUA-P-0064,Isolated Papua Barat Daya,PLTS,2.97561,Papua Barat Daya,papua,Planned,2028,2028,,IPP,Tabel C10.11,1144,-0.822730,131.374930,province_centroid,low
+RUPTL-PAPUA-P-0065,Kaimana,PLTMG,10.0,Papua Barat Daya,papua,Committed,2026,2026,,PLN,Tabel C10.11,1144,-1.046258,131.152729,province_centroid,low
+RUPTL-PAPUA-P-0066,Kaimana 2,PLTBM,10.0,Papua Barat Daya,papua,Planned,2031,2031,,IPP,Tabel C10.11,1144,-1.082576,131.244350,province_centroid,low
+RUPTL-PAPUA-P-0067,MPP Manokwari,PLTMG,20.0,Papua Barat Daya,papua,Construction,2025,2025,,SH-PLN,Tabel C10.11,1144,-1.216750,131.174146,province_centroid,low
+RUPTL-PAPUA-P-0068,Manokwari 3,PLTMG,20.0,Papua Barat Daya,papua,Committed,2026,2026,,SH-PLN,Tabel C10.11,1144,-0.834470,131.137738,province_centroid,low
+RUPTL-PAPUA-P-0069,Manokwari (Eks APBN),PLTS,1.0,Papua Barat Daya,papua,Planned,2026,2026,,IPP,Tabel C10.11,1144,-0.968974,131.216073,province_centroid,low
+RUPTL-PAPUA-P-0070,Warnasi Warkapi,PLTM,4.6,Papua Barat Daya,papua,Planned,2027,2027,,PLN,Tabel C10.11,1144,-0.783256,131.187721,province_centroid,low
+RUPTL-PAPUA-P-0071,Manokwari,PLTS,15.0,Papua Barat Daya,papua,Planned,2028,2028,,SH-PLN,Tabel C10.11,1144,-0.935645,131.316231,province_centroid,low
+RUPTL-PAPUA-P-0072,Manokwari (Kuota) Tersebar,PLTS,10.0,Papua Barat Daya,papua,Planned,2031,2031,,IPP,Tabel C10.11,1144,-0.919390,131.169555,province_centroid,low
+RUPTL-PAPUA-P-0073,Manokwari 4,PLTMG,20.0,Papua Barat Daya,papua,Planned,2031,2031,,SH-PLN,Tabel C10.11,1144,-1.178198,131.256963,province_centroid,low
+RUPTL-PAPUA-P-0074,Raja Ampat,PLTMG,10.0,Papua Barat Daya,papua,Committed,2026,2026,,PLN,Tabel C10.11,1144,-0.917548,131.077576,province_centroid,low
+RUPTL-PAPUA-P-0075,Raja Ampat (Kuota) Tersebar,PLTS,3.0,Papua Barat Daya,papua,Planned,2027,2027,,IPP,Tabel C10.11,1144,-0.949344,131.106512,province_centroid,low
+RUPTL-PAPUA-P-0076,Sorong (Ex Timika),PLTU,7.0,Papua Barat Daya,papua,Construction,2025,2025,,PLN,Tabel C10.11,1144,-1.106475,131.378861,province_centroid,low
+RUPTL-PAPUA-P-0077,Sorong (Ex Timika),PLTU,7.0,Papua Barat Daya,papua,Construction,2025,2025,,PLN,Tabel C10.11,1144,-0.921225,131.457774,province_centroid,low
+RUPTL-PAPUA-P-0078,Sorong (Ex Timika),PLTU,14.0,Papua Barat Daya,papua,Construction,2026,2026,,PLN,Tabel C10.11,1144,-0.987195,131.187611,province_centroid,low
+RUPTL-PAPUA-P-0079,Sorong,PLTMG,20.0,Papua Barat Daya,papua,Planned,2026,2026,,IPP,Tabel C10.11,1144,-1.045783,131.185487,province_centroid,low
+RUPTL-PAPUA-P-0080,Sorong 2,PLTMG,50.0,Papua Barat Daya,papua,Committed,2027,2027,,SH-PLN,Tabel C10.11,1144,-1.046285,131.473631,province_centroid,low
+RUPTL-PAPUA-P-0081,Sorong (Kuota) Tersebar,PLTS,20.0,Papua Barat Daya,papua,Planned,2028,2028,,IPP,Tabel C10.11,1144,-1.024242,131.376476,province_centroid,low
+RUPTL-PAPUA-P-0082,Sorong (Kuota) Tersebar,PLTS,20.0,Papua Barat Daya,papua,Planned,2030,2030,,IPP,Tabel C10.11,1144,-1.121555,131.122892,province_centroid,low
+RUPTL-PAPUA-P-0083,Teminabuan (Kuota) Tersebar,PLTS,3.0,Papua Barat Daya,papua,Planned,2028,2028,,IPP,Tabel C10.11,1144,-0.807334,131.141828,province_centroid,low

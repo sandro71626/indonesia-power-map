@@ -1,0 +1,5 @@
+severity,ruptl_id,from_bus,to_bus,voltage_kv,length_km,straight_km,ratio,action_type,target_cod_year,province,source_page,issues
+4,RUPTL-SUMATRA-T-0058,Kuala,Binjai,150,70.0,110.84,0.63,,2027,Sumatera Utara,626,RATIO_TOO_LOW
+3,RUPTL-SUMATRA-T-0182,Sribawono**,Ketapang**,500,200.0,46.78,4.28,,2031,Lampung,723,"RATIO_TOO_HIGH,LENGTH_OUTLIER"
+2,RUPTL-SUMATRA-T-0037,Galang,Rantau Prapat,500,440.0,181.65,2.42,,2028,Sumatera Utara,626,LENGTH_OUTLIER
+2,RUPTL-SUMATRA-T-0003,Arun,Sigli,275,294.0,125.7,2.34,,2026,Aceh,611,LENGTH_OUTLIER
