@@ -345,19 +345,27 @@ def extract_from_pdf(pdf_path: Path, region_key: str,
                 if m_tab:
                     table_id = f"Tabel {m_tab.group(1)}"
 
-                # Row-by-row parse (with continuation-line stitching)
+                # Row-by-row parse (with continuation-line stitching).
+                # pdfplumber kadang taruh nomor baris di col[0] atau col[1]
+                # (alternasi random per table). Cek keduanya.
                 last_row = None
                 for row in tab[1:]:
                     first = clean_cell(row[0] if row else "")
+                    second = clean_cell(row[1] if len(row) > 1 else "")
+                    row_no = None
                     if re.fullmatch(r"\d{1,3}", first or ""):
+                        row_no = first
+                    elif not first and re.fullmatch(r"\d{1,3}", second or ""):
+                        row_no = second
+                    if row_no is not None:
                         # New row entry
-                        key = (page_no, table_id, first)
+                        key = (page_no, table_id, row_no)
                         if key in seen_keys:
                             last_row = None
                             continue
                         seen_keys.add(key)
                         last_row = {
-                            "row_no": first,
+                            "row_no": row_no,
                             "col_lines": [cell_lines(c) for c in row],
                             "page_no": page_no,
                             "table_id": table_id,
@@ -365,7 +373,7 @@ def extract_from_pdf(pdf_path: Path, region_key: str,
                             "colmap": colmap,
                         }
                         rows_out.append(last_row)
-                    elif last_row is not None and not first:
+                    elif last_row is not None and row_no is None and not first:
                         # Continuation row: append to previous cell lines
                         for i, c in enumerate(row):
                             if i < len(last_row["col_lines"]):

@@ -1,22 +1,23 @@
 #!/usr/bin/env python3
-"""Extract Rincian Rencana Pembangunan Gardu Induk dari RUPTL 2025-2034.
+"""Extract Rincian Rencana Pembangunan Transmisi dari RUPTL 2025-2034.
 
-Beda dengan `extract_ruptl_generators.py` yang extract pembangkit, script ini
-target tabel **planning gardu induk** (New/Ext/Uprate) yang berisi info
-COD + status — bukan tabel summary yang sudah dipakai baseline.
+Target: tabel planning transmisi dengan kolom From/To/Tegangan/Lingkup/
+Panjang/COD/Status. Signature header:
 
-Signature header planning table (variasi antarprovinsi):
-    "No | Gardu Induk | Tegangan (kV) | Baru/Ext./Uprate | Kapasitas (MVA) | COD | Status"
-    "No | Nama GI    | Tegangan (kV) | Jenis           | Kapasitas (MVA) | Target COD"
+    "No | Transmisi Dari | Transmisi Ke | Tegangan | Lingkup | Panjang (Kms) | COD | Status"
 
-Output: data/processed/ruptl_substations_{region}.csv
+Kolom "Lingkup" berisi pattern kompak: "New, 4 cct, SUTT" atau
+"Ext, 2 cct, SKTT" — kita parse jadi action_type + circuits + line_type.
+
+Output: data/processed/ruptl_transmission_{region}.csv
 
 Schema:
-    id, name, voltage_kv, action_type, capacity_mva, target_cod_year,
-    status, province, region_key, source_page, source_table
+    id, name, from_bus, to_bus, voltage_kv, action_type, circuits,
+    line_type, length_km, target_cod_year, status, province, region_key,
+    source_page, source_table
 
 Usage:
-    python3 scripts/extract_ruptl_substations.py --region jamali \\
+    python3 scripts/extract_ruptl_transmission.py --region jamali \\
         --pdf data/raw/sources/RUPTL-2025-2034.pdf
 """
 from __future__ import annotations
@@ -39,7 +40,7 @@ ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT))
 from _shared.name_stem import normalize  # noqa: E402
 
-# Import shared utilities dari generator extractor (DRY — cell parsers sama).
+# Reuse cell parsers dari generator extractor
 from extract_ruptl_generators import (  # noqa: E402
     REGION_PROVINCES, DEFAULT_PAGES,
     clean_cell, cell_lines, stitch_lines,
@@ -48,51 +49,49 @@ from extract_ruptl_generators import (  # noqa: E402
 
 
 # ------------------------------------------------------------
-# Header detection — different from generator (no "Jenis Pembangkit")
+# Header detection
 # ------------------------------------------------------------
-def is_substation_header(head_norm: list[str]) -> bool:
-    """True kalau baris header menandai tabel planning gardu induk.
+def is_transmission_header(head_norm: list[str]) -> bool:
+    """True kalau baris header menandai tabel planning transmisi.
 
-    Signature: kolom "no" + ("gardu induk" atau "nama gi") + "tegangan" +
-    salah satu dari kapasitas MVA. Sengaja exclude tabel summary yang
-    tidak punya "baru", "ext", "uprate", "cod", atau "status".
+    Signature: kolom "no" + "transmisi dari" + "transmisi ke" + "tegangan"
+    atau ("dari"+"ke"+"panjang").
     """
     if not head_norm or head_norm[0] != "no":
         return False
     joined = " | ".join(head_norm)
-    has_name = any(k in joined for k in ("gardu induk", "nama gi"))
-    has_kv = "tegangan" in joined or "kv" in joined
-    has_action_or_cod = any(k in joined for k in
-                             ("baru", "ext", "uprate", "cod", "status",
-                              "target"))
-    return has_name and has_kv and has_action_or_cod
+    has_dari = "transmisi dari" in joined or "dari" in head_norm
+    has_ke = "transmisi ke" in joined or "ke" in head_norm
+    has_length_or_kv = ("panjang" in joined or "kms" in joined
+                        or "tegangan" in joined)
+    return has_dari and has_ke and has_length_or_kv
 
 
-def substation_column_map(head_norm: list[str]) -> dict[str, Optional[int]]:
-    """Peta nama kolom → indeks untuk tabel gardu induk."""
+def transmission_column_map(head_norm: list[str]) -> dict[str, Optional[int]]:
     idx: dict[str, Optional[int]] = {"no": 0}
 
-    def find(*keys: str, start: int = 0) -> Optional[int]:
+    def find(*keys: str) -> Optional[int]:
         for i, x in enumerate(head_norm):
-            if i < start or not x:
+            if not x:
                 continue
             for k in keys:
                 if k in x:
                     return i
         return None
 
-    idx["sistem"] = find("sistem")
-    idx["name"] = find("gardu induk", "nama gi", "nama")
-    idx["voltage"] = find("tegangan", " kv ", "kv")
-    idx["action"] = find("baru", "ext", "uprate", "jenis")
-    idx["capacity"] = find("kapasitas", "mva")
-    idx["trafo"] = find("trafo", "jumlah")
-    # COD: bisa muncul 2x (RE Base + ARED). Ambil yang paling akhir.
+    idx["dari"] = find("transmisi dari", "dari")
+    idx["ke"] = find("transmisi ke")
+    if idx["ke"] is None:
+        # Cari "ke" as exact/word match saja (bukan substring dari "kesatuan")
+        idx["ke"] = next((i for i, x in enumerate(head_norm)
+                           if x == "ke" or x.startswith("ke ")), None)
+    idx["tegangan"] = find("tegangan", "kv")
+    idx["lingkup"] = find("lingkup", "scope")
+    idx["panjang"] = find("panjang", "kms")
     cods = [i for i, x in enumerate(head_norm) if "cod" in x]
     idx["cod1"] = cods[0] if cods else None
     idx["cod2"] = cods[1] if len(cods) > 1 else None
     idx["status"] = find("status")
-    idx["target"] = find("target")
     return idx
 
 
@@ -100,7 +99,7 @@ TOTAL_KEYWORDS = frozenset({"total", "jumlah", "subtotal", "sub"})
 
 
 def is_total_row(cells: list[str], colmap: dict) -> bool:
-    for key in ("sistem", "name"):
+    for key in ("dari", "ke"):
         i = colmap.get(key)
         if i is None or i >= len(cells):
             continue
@@ -117,32 +116,59 @@ def is_total_row(cells: list[str], colmap: dict) -> bool:
 # Value parsers
 # ------------------------------------------------------------
 def parse_voltage(s: str) -> str:
-    """Extract voltage class string, e.g. '150/20 kV' → '150/20'."""
+    """Extract voltage class string, e.g. '150 kV' → '150'."""
     s = str(s or "").replace("kV", "").replace("KV", "").strip()
-    # Normalize whitespace
-    s = " ".join(s.split())
-    return s
+    return " ".join(s.split())
 
 
-def parse_capacity_mva(s: str) -> Optional[float]:
-    """Sum semua angka di kolom kapasitas (multi-trafo case)."""
+def parse_length_km(s: str) -> Optional[float]:
+    """Sum semua angka di kolom Panjang (multi-section case)."""
     v = parse_all_numbers(s)
     return sum(v) if v else None
 
 
-def normalize_action(s: str) -> str:
-    """Normalize action type: Baru → New, Ext./Extension → Extension,
-    Uprate/Uprating → Uprate. Fallback: return trimmed original."""
-    n = normalize(s)
-    if not n:
-        return ""
-    if "baru" in n or "new" in n:
-        return "New"
-    if "ext" in n:
-        return "Extension"
-    if "uprat" in n or "upr" in n:
-        return "Uprate"
-    return s.strip()
+# Lingkup pattern: "New, 4 cct, SUTT" atau "Ext, 2 cct, SKTT"
+LINGKUP_RE = re.compile(
+    r"(?P<action>New|Ext|Uprating|Uprate|Baru|Extension)?\s*,?\s*"
+    r"(?P<circuits>\d+)\s*/?\s*cct\s*,?\s*"
+    r"(?P<line_type>SUTT|SUTET|SKTT|SKLT|SUTM|SKTM)?",
+    re.IGNORECASE,
+)
+
+
+def parse_lingkup(s: str) -> tuple[str, str, str]:
+    """Parse Lingkup cell → (action_type, circuits, line_type)."""
+    if not s:
+        return "", "", ""
+    m = LINGKUP_RE.search(s)
+    if not m:
+        return "", "", ""
+    action = (m.group("action") or "").strip()
+    # Normalize action
+    a = action.lower()
+    if "new" in a or "baru" in a:
+        action = "New"
+    elif "uprat" in a:
+        action = "Uprate"
+    elif "ext" in a:
+        action = "Extension"
+    circuits = (m.group("circuits") or "").strip()
+    line_type = (m.group("line_type") or "").strip().upper()
+    return action, circuits, line_type
+
+
+def clean_bus_name(s: str) -> str:
+    """Clean 'Dari'/'Ke' cell — hilangkan garis miring gabungan pdfplumber,
+    normalisasi whitespace.
+
+    pdfplumber kadang encode "GI Gandul II / Pamulang" jadi "Gandul II /
+    Pamulang" (with / separator) — pertahankan tapi normalize whitespace.
+    """
+    s = str(s or "").strip()
+    # pdfplumber suka insert 2x slash: "//" → "/"
+    s = re.sub(r"/+", "/", s)
+    s = re.sub(r"\s*/\s*", " / ", s)
+    return " ".join(s.split())
 
 
 # ------------------------------------------------------------
@@ -159,7 +185,7 @@ def extract_from_pdf(pdf_path: Path, region_key: str,
     with pdfplumber.open(str(pdf_path)) as pdf:
         n_pages = len(pdf.pages)
         end = min(page_end, n_pages)
-        print(f"[extract_ruptl_sub] scanning pages {page_start}–{end} "
+        print(f"[extract_ruptl_trm] scanning pages {page_start}–{end} "
               f"({end - page_start + 1} pages)")
 
         for page_idx in range(page_start - 1, end):
@@ -178,13 +204,12 @@ def extract_from_pdf(pdf_path: Path, region_key: str,
                     continue
                 head = [clean_cell(c) for c in tab[0]]
                 head_norm = [normalize(x) for x in head]
-                if not is_substation_header(head_norm):
+                if not is_transmission_header(head_norm):
                     continue
-                colmap = substation_column_map(head_norm)
-                if colmap.get("name") is None:
+                colmap = transmission_column_map(head_norm)
+                if colmap.get("dari") is None or colmap.get("ke") is None:
                     continue
 
-                # Track table id (regex from context)
                 m_tab = re.search(r"Tabel\s+([A-C]\d+\.\d+[a-z]?)", page_text)
                 table_id = f"Tabel {m_tab.group(1)}" if m_tab else ""
 
@@ -204,7 +229,6 @@ def extract_from_pdf(pdf_path: Path, region_key: str,
                             continue
                         seen_keys.add(key)
                         last_row = {
-                            "row_no": row_no,
                             "col_lines": [cell_lines(c) for c in row],
                             "page_no": page_no,
                             "table_id": table_id,
@@ -228,23 +252,29 @@ def extract_from_pdf(pdf_path: Path, region_key: str,
             i = cmap.get(key)
             return cells[i] if (i is not None and i < len(cells)) else ""
 
-        name = pick("name")
-        if not name:
+        from_bus = clean_bus_name(pick("dari"))
+        to_bus = clean_bus_name(pick("ke"))
+        if not from_bus or not to_bus:
             continue
-        voltage = parse_voltage(pick("voltage"))
-        action = normalize_action(pick("action"))
-        capacity = parse_capacity_mva(pick("capacity"))
+
+        voltage = parse_voltage(pick("tegangan"))
+        length = parse_length_km(pick("panjang"))
+        action, circuits, line_type = parse_lingkup(pick("lingkup"))
         status_raw = pick("status")
-        cod_raw = pick("cod1") or pick("cod2") or pick("target")
+        cod_raw = pick("cod1") or pick("cod2")
         years = parse_years(cod_raw)
         first_year = years[0] if years else ""
 
         final.append({
-            "id": f"RUPTL-{region_key.upper()}-GI-{idx_counter:04d}",
-            "name": name,
+            "id": f"RUPTL-{region_key.upper()}-T-{idx_counter:04d}",
+            "name": f"{from_bus} — {to_bus}",
+            "from_bus": from_bus,
+            "to_bus": to_bus,
             "voltage_kv": voltage,
             "action_type": action,
-            "capacity_mva": capacity or "",
+            "circuits": circuits,
+            "line_type": line_type,
+            "length_km": length or "",
             "target_cod_year": first_year,
             "status": normalize_status(status_raw),
             "province": r["province"].title(),
@@ -264,8 +294,7 @@ def main() -> int:
     ap.add_argument("--region", required=True,
                     choices=sorted(REGION_PROVINCES.keys()))
     ap.add_argument("--pdf", type=Path, required=True)
-    ap.add_argument("--pages", type=str, default=None,
-                    help="Page range 'START-END'")
+    ap.add_argument("--pages", type=str, default=None)
     ap.add_argument("--out", type=Path, default=None)
     opts = ap.parse_args()
 
@@ -285,29 +314,34 @@ def main() -> int:
         return 2
 
     provinces = REGION_PROVINCES[opts.region]
-    print(f"[extract_ruptl_sub] region={opts.region} "
+    print(f"[extract_ruptl_trm] region={opts.region} "
           f"({len(provinces)} target provinces)")
 
     rows = extract_from_pdf(opts.pdf, opts.region, provinces, ps, pe)
-    print(f"\n  extracted {len(rows)} gardu induk rows")
+    print(f"\n  extracted {len(rows)} transmisi rows")
     if not rows:
         return 1
 
     from collections import Counter
     by_prov = Counter(r["province"] for r in rows)
     by_act = Counter(r["action_type"] for r in rows)
+    by_kv = Counter(r["voltage_kv"] for r in rows)
     print("\n  per province:")
     for prov, n in by_prov.most_common():
         print(f"    {prov:<40} {n:>4}")
     print("\n  per action:")
     for act, n in by_act.most_common():
         print(f"    {act or '(unknown)':<20} {n:>4}")
+    print("\n  per voltage (top 5):")
+    for kv, n in by_kv.most_common(5):
+        print(f"    {kv or '(unknown)':<20} {n:>4}")
 
     out_path = (opts.out if opts.out and opts.out.is_absolute() else
                 project_root / (opts.out or
-                                f"data/processed/ruptl_substations_{opts.region}.csv"))
+                                f"data/processed/ruptl_transmission_{opts.region}.csv"))
     out_path.parent.mkdir(parents=True, exist_ok=True)
-    headers = ["id", "name", "voltage_kv", "action_type", "capacity_mva",
+    headers = ["id", "name", "from_bus", "to_bus", "voltage_kv",
+               "action_type", "circuits", "line_type", "length_km",
                "target_cod_year", "status", "province", "region_key",
                "source_page", "source_table"]
     with out_path.open("w", encoding="utf-8", newline="") as f:

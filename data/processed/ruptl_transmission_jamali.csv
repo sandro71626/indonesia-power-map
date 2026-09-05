@@ -1,0 +1,537 @@
+id,name,from_bus,to_bus,voltage_kv,action_type,circuits,line_type,length_km,target_cod_year,status,province,region_key,source_page,source_table
+RUPTL-JAMALI-T-0001,Gandul II / Pamulang — Inc. (Serpong - Petukangan | Bintaro),Gandul II / Pamulang,Inc. (Serpong - Petukangan | Bintaro),150,New,4,SUTT,80.0,2025,Planned,Dki Jakarta,jamali,819,Tabel B1.11
+RUPTL-JAMALI-T-0002,Budi Kemuliaan — Kebon Sirih,Budi Kemuliaan,Kebon Sirih,150,New,2,SKTT,4.0,2025,Planned,Dki Jakarta,jamali,819,Tabel B1.11
+RUPTL-JAMALI-T-0003,Muara Karang Lama — Budi Kemuliaan,Muara Karang Lama,Budi Kemuliaan,150,New,2,SKTT,24.0,2025,Planned,Dki Jakarta,jamali,819,Tabel B1.11
+RUPTL-JAMALI-T-0004,Kebon Jeruk — Duri Kosambi,Kebon Jeruk,Duri Kosambi,150,New,2,SKTT,20.0,2025,Planned,Dki Jakarta,jamali,819,Tabel B1.11
+RUPTL-JAMALI-T-0005,Priok — Muara Tawar,Priok,Muara Tawar,500,New,2,SUTET,30.0,2025,Construction,Dki Jakarta,jamali,819,Tabel B1.11
+RUPTL-JAMALI-T-0006,Setiabudi II / Casablanca — Inc. (Cawang - Abadi Guna Papan | Taman Rasuna),Setiabudi II / Casablanca,Inc. (Cawang - Abadi Guna Papan | Taman Rasuna),150,New,4,SKTT,4.0,2026,Planned,Dki Jakarta,jamali,819,Tabel B1.11
+RUPTL-JAMALI-T-0007,Manggarai — Dukuh Atas,Manggarai,Dukuh Atas,150,New,1,SKTT,3.0,2026,Planned,Dki Jakarta,jamali,819,Tabel B1.11
+RUPTL-JAMALI-T-0008,Cawang Lama — Tx. Cawang Lama,Cawang Lama,Tx. Cawang Lama,150,New,2,SUTT,9.1,2026,Construction,Dki Jakarta,jamali,819,Tabel B1.11
+RUPTL-JAMALI-T-0009,Duren Tiga II / Ragunan — Tx. Ragunan,Duren Tiga II / Ragunan,Tx. Ragunan,150,New,2,SUTT,2.6,2026,Construction,Dki Jakarta,jamali,819,Tabel B1.11
+RUPTL-JAMALI-T-0010,Tx Cawang Lama — Tx. Ragunan,Tx Cawang Lama,Tx. Ragunan,150,New,2,SKTT,3.6,2026,Planned,Dki Jakarta,jamali,819,Tabel B1.11
+RUPTL-JAMALI-T-0011,Danayasa — Abadi Guna Papan,Danayasa,Abadi Guna Papan,150,New,2,SKTT,4.0,2026,Planned,Dki Jakarta,jamali,819,Tabel B1.11
+RUPTL-JAMALI-T-0012,Cawang Baru — Gandul,Cawang Baru,Gandul,500,New,2,,44.0,2026,Planned,Dki Jakarta,jamali,819,Tabel B1.11
+RUPTL-JAMALI-T-0013,Ancol II / Pinangsia — Angke,Ancol II / Pinangsia,Angke,150,New,2,SKTT,10.0,2027,Planned,Dki Jakarta,jamali,819,Tabel B1.11
+RUPTL-JAMALI-T-0014,Gambir Lama II — Inc. (Kebon Sirih - Gambir Lama),Gambir Lama II,Inc. (Kebon Sirih - Gambir Lama),150,New,2,SKTT,1.0,2027,Planned,Dki Jakarta,jamali,819,Tabel B1.11
+RUPTL-JAMALI-T-0015,Angke — Ancol,Angke,Ancol,150,New,2,SKTT,11.8,2027,Planned,Dki Jakarta,jamali,819,Tabel B1.11
+RUPTL-JAMALI-T-0016,Ancol — Kemayoran,Ancol,Kemayoran,150,New,2,SKTT,9.6,2027,Planned,Dki Jakarta,jamali,819,Tabel B1.11
+RUPTL-JAMALI-T-0017,Kemayoran — Tx. Kemayoran,Kemayoran,Tx. Kemayoran,150,New,2,SKTT,10.0,2027,Planned,Dki Jakarta,jamali,819,Tabel B1.11
+RUPTL-JAMALI-T-0018,Muara Karang Lama — Duri Kosambi,Muara Karang Lama,Duri Kosambi,150,New,2,SKTT,38.0,2027,Planned,Dki Jakarta,jamali,819,Tabel B1.11
+RUPTL-JAMALI-T-0019,Petukangan — PLTD Senayan,Petukangan,PLTD Senayan,150,New,2,SKTT,19.0,2027,Planned,Dki Jakarta,jamali,819,Tabel B1.11
+RUPTL-JAMALI-T-0020,Manggarai — Gedung Pola,Manggarai,Gedung Pola,150,New,1,SKTT,3.5,2027,Planned,Dki Jakarta,jamali,819,Tabel B1.11
+RUPTL-JAMALI-T-0021,Duri Kosambi — Kembangan,Duri Kosambi,Kembangan,150,New,2,SKTT,13.6,2027,Planned,Dki Jakarta,jamali,819,Tabel B1.11
+RUPTL-JAMALI-T-0022,Priok — Muara karang,Priok,Muara karang,500,New,2,SUTET,20.0,2027,Planned,Dki Jakarta,jamali,820,Tabel B1.14
+RUPTL-JAMALI-T-0023,Mampang Baru II — Inc. (Mampang - Karet Lama),Mampang Baru II,Inc. (Mampang - Karet Lama),150,New,4,SUTT,6.4,2028,Planned,Dki Jakarta,jamali,820,Tabel B1.14
+RUPTL-JAMALI-T-0024,PLTSA Sunter — Kemayoran,PLTSA Sunter,Kemayoran,150,New,1,SUTT,3.0,2028,Planned,Dki Jakarta,jamali,820,Tabel B1.14
+RUPTL-JAMALI-T-0025,Rasuna Said — Cawang,Rasuna Said,Cawang,275,New,2,,20.0,2028,Planned,Dki Jakarta,jamali,820,Tabel B1.14
+RUPTL-JAMALI-T-0026,Citra Garden — Kapuk / PIK,Citra Garden,Kapuk / PIK,150,New,2,SUTT,18.0,2032,Planned,Dki Jakarta,jamali,820,Tabel B1.14
+RUPTL-JAMALI-T-0027,Taman Rasuna II / Benhil — Karet Lama,Taman Rasuna II / Benhil,Karet Lama,150,New,2,SKTT,10.0,2033,Planned,Dki Jakarta,jamali,820,Tabel B1.14
+RUPTL-JAMALI-T-0028,Semanggi Barat II / Petamburan — Karet Lama,Semanggi Barat II / Petamburan,Karet Lama,150,New,2,SKTT,3.0,2034,Planned,Dki Jakarta,jamali,820,Tabel B1.14
+RUPTL-JAMALI-T-0029,PLTSa DKI Jakarta (Kuota) Tersebar 1 — DKI Jakarta Eksisting / Baru,PLTSa DKI Jakarta (Kuota) Tersebar 1,DKI Jakarta Eksisting / Baru,150,New,2,SUTT,10.0,2029,Planned,Dki Jakarta,jamali,820,Tabel B1.14
+RUPTL-JAMALI-T-0030,PLTSa DKI Jakarta (Kuota) Tersebar 1 — DKI Jakarta Eksisting / Baru,PLTSa DKI Jakarta (Kuota) Tersebar 1,DKI Jakarta Eksisting / Baru,150,New,2,SUTT,10.0,2029,Planned,Dki Jakarta,jamali,820,Tabel B1.14
+RUPTL-JAMALI-T-0031,PLTSa DKI Jakarta (Kuota) Tersebar 1 — DKI Jakarta Eksisting / Baru,PLTSa DKI Jakarta (Kuota) Tersebar 1,DKI Jakarta Eksisting / Baru,150,New,2,SUTT,10.0,2029,Planned,Dki Jakarta,jamali,820,Tabel B1.14
+RUPTL-JAMALI-T-0032,Pondok Kelapa II — Inc. (Pondok Kelapa - Jatiwaringin),Pondok Kelapa II,Inc. (Pondok Kelapa - Jatiwaringin),150,New,4,SUTT,4.0,2026,Planned,Dki Jakarta,jamali,820,Tabel B1.14
+RUPTL-JAMALI-T-0033,Cikupa — Inc. (Balaraja - Kembangan),Cikupa,Inc. (Balaraja - Kembangan),500,New,4,SUTET,4.0,2025,Construction,Banten,jamali,833,Tabel B2.13
+RUPTL-JAMALI-T-0034,Cikupa New — Tx. Cikupa New (Inc. Jatake - Jatake II),Cikupa New,Tx. Cikupa New (Inc. Jatake - Jatake II),150,New,4,SKTT,8.8,2025,Committed,Banten,jamali,833,Tabel B2.13
+RUPTL-JAMALI-T-0035,Tx. Cikupa New — Inc. (Jatake - Jatake II),Tx. Cikupa New,Inc. (Jatake - Jatake II),150,New,4,SUTT,2.4,2025,Committed,Banten,jamali,833,Tabel B2.13
+RUPTL-JAMALI-T-0036,LBE — Bojanegara,LBE,Bojanegara,500,,2,SUTET,35.0,2025,Construction,Banten,jamali,833,Tabel B2.13
+RUPTL-JAMALI-T-0037,PLTU Jawa-9 & Jawa-10 — Inc. (Suralaya Lama - Cilegon),PLTU Jawa-9 & Jawa-10,Inc. (Suralaya Lama - Cilegon),500,New,4,SUTET,8.0,2025,Construction,Banten,jamali,833,Tabel B2.13
+RUPTL-JAMALI-T-0038,Suralaya Lama — Cilegon,Suralaya Lama,Cilegon,500,,2,SUTET,26.0,2025,Construction,Banten,jamali,833,Tabel B2.13
+RUPTL-JAMALI-T-0039,Lautan Baja Indonesia / LBI — Inc - (PUCAM II / Modern - Kopo),Lautan Baja Indonesia / LBI,Inc - (PUCAM II / Modern - Kopo),150,New,2,SUTT,8.0,2025,Construction,Banten,jamali,833,Tabel B2.13
+RUPTL-JAMALI-T-0040,Serang Selatan / Baros — Serang,Serang Selatan / Baros,Serang,150,New,2,SUTT,20.0,2025,Construction,Banten,jamali,833,Tabel B2.13
+RUPTL-JAMALI-T-0041,Tanjung Lesung — Menes,Tanjung Lesung,Menes,150,New,2,SUTT,90.0,2025,Construction,Banten,jamali,833,Tabel B2.13
+RUPTL-JAMALI-T-0042,Tigaraksa II / Citra Maja — Tigaraksa,Tigaraksa II / Citra Maja,Tigaraksa,150,New,2,SUTT,20.0,2025,Construction,Banten,jamali,833,Tabel B2.13
+RUPTL-JAMALI-T-0043,Cikande — Inc. (Bojanegara - Balaraja),Cikande,Inc. (Bojanegara - Balaraja),500,New,4,SUTET,4.0,2026,Planned,Banten,jamali,833,Tabel B2.13
+RUPTL-JAMALI-T-0044,Cikande New — Inc. (Cikande – Indah Kiat | GMS),Cikande New,Inc. (Cikande – Indah Kiat | GMS),150,New,4,SUTT,4.0,2026,Planned,Banten,jamali,833,Tabel B2.13
+RUPTL-JAMALI-T-0045,Cikande New — Cikande,Cikande New,Cikande,150,,2,SUTT,9.0,2026,Planned,Banten,jamali,833,Tabel B2.13
+RUPTL-JAMALI-T-0046,Serang Selatan / Baros — Rangkas Baru,Serang Selatan / Baros,Rangkas Baru,150,New,2,SUTT,60.0,2026,Construction,Banten,jamali,833,Tabel B2.13
+RUPTL-JAMALI-T-0047,KEK PIK — Inc. (Lontar - Teluk Naga II / Dadap),KEK PIK,Inc. (Lontar - Teluk Naga II / Dadap),150,New,2,SUTT,2.0,2027,Planned,Banten,jamali,833,Tabel B2.13
+RUPTL-JAMALI-T-0048,Tigaraksa II — Kopo,Tigaraksa II,Kopo,150,New,2,SUTT,40.0,2028,Planned,Banten,jamali,833,Tabel B2.13
+RUPTL-JAMALI-T-0049,PLTB Banten — Tanjung Lesung,PLTB Banten,Tanjung Lesung,150,New,2,SUTT,10.0,2028,Planned,Banten,jamali,833,Tabel B2.13
+RUPTL-JAMALI-T-0050,Cikupa New — Curug Switching,Cikupa New,Curug Switching,150,New,2,SKTT,6.0,2030,Planned,Banten,jamali,833,Tabel B2.13
+RUPTL-JAMALI-T-0051,Curug Switching — Inc. (Cikupa - Lippo Curug),Curug Switching,Inc. (Cikupa - Lippo Curug),150,New,4,SKTT,2.0,2030,Planned,Banten,jamali,833,Tabel B2.13
+RUPTL-JAMALI-T-0052,PLTGU Jawa-5 — Cikande,PLTGU Jawa-5,Cikande,500,New,2,SUTET,34.6,2030,Planned,Banten,jamali,833,Tabel B2.13
+RUPTL-JAMALI-T-0053,PLTP Rawa Dano — Asahimas II / Anyer,PLTP Rawa Dano,Asahimas II / Anyer,150,New,2,SUTT,36.0,2030,Planned,Banten,jamali,833,Tabel B2.13
+RUPTL-JAMALI-T-0054,Rangkasbitung Baru — Saketi,Rangkasbitung Baru,Saketi,150,,2,SUTT,67.6,2030,Planned,Banten,jamali,833,Tabel B2.13
+RUPTL-JAMALI-T-0055,Lippo Curug II — Lippo Curug,Lippo Curug II,Lippo Curug,150,New,2,SUTT,10.0,2033,Planned,Banten,jamali,833,Tabel B2.13
+RUPTL-JAMALI-T-0056,PLTS Banten (Kuota) II — Banten Eksisting / Baru,PLTS Banten (Kuota) II,Banten Eksisting / Baru,150,New,2,SUTT,4.0,2026,Planned,Banten,jamali,833,Tabel B2.13
+RUPTL-JAMALI-T-0057,PLTS+BESS Banten (Kuota) III — Banten Eksisting / Baru,PLTS+BESS Banten (Kuota) III,Banten Eksisting / Baru,150,New,2,SUTT,32.0,2030,Planned,Banten,jamali,833,Tabel B2.13
+RUPTL-JAMALI-T-0058,BESS Smoothing Tersebar (1) — Banten Eksisting / Baru,BESS Smoothing Tersebar (1),Banten Eksisting / Baru,150,New,2,SUTT,20.0,,Planned,Banten,jamali,833,Tabel B2.13
+RUPTL-JAMALI-T-0059,PLTS Banten (Kuota) IVA — Banten Eksisting / Baru,PLTS Banten (Kuota) IVA,Banten Eksisting / Baru,150,New,2,SUTT,20.0,2028,Planned,Banten,jamali,833,Tabel B2.13
+RUPTL-JAMALI-T-0060,PLTS Banten (Kuota) VI — Banten Eksisting / Baru,PLTS Banten (Kuota) VI,Banten Eksisting / Baru,150,New,2,SUTT,10.0,2028,Planned,Banten,jamali,833,Tabel B2.13
+RUPTL-JAMALI-T-0061,PLTSa Banten (Kuota) Tersebar 1 — Banten Eksisting / Baru,PLTSa Banten (Kuota) Tersebar 1,Banten Eksisting / Baru,150,New,2,SUTT,10.0,2028,Planned,Banten,jamali,833,Tabel B2.13
+RUPTL-JAMALI-T-0062,PLTS Banten (Kuota) IVC — Banten Eksisting / Baru,PLTS Banten (Kuota) IVC,Banten Eksisting / Baru,150,New,2,SUTT,9.2,2030,Planned,Banten,jamali,833,Tabel B2.13
+RUPTL-JAMALI-T-0063,PLTB Jawa-Bali (Kuota) Tersebar II (1) — Banten Eksisting / Baru,PLTB Jawa-Bali (Kuota) Tersebar II (1),Banten Eksisting / Baru,150,New,2,SUTT,10.0,,Planned,Banten,jamali,833,Tabel B2.13
+RUPTL-JAMALI-T-0064,PLTS Banten (Kuota) IVB — Banten Eksisting / Baru,PLTS Banten (Kuota) IVB,Banten Eksisting / Baru,150,New,2,SUTT,2.0,2030,Planned,Banten,jamali,834,
+RUPTL-JAMALI-T-0065,PLTS Banten (Kuota) VII — Banten Eksisting / Baru,PLTS Banten (Kuota) VII,Banten Eksisting / Baru,150,New,2,SUTT,10.0,2030,Planned,Banten,jamali,834,
+RUPTL-JAMALI-T-0066,PLTSa Banten (Kuota) Tersebar 2 — Banten Eksisting / Baru,PLTSa Banten (Kuota) Tersebar 2,Banten Eksisting / Baru,150,New,2,SUTT,10.0,2030,Planned,Banten,jamali,834,
+RUPTL-JAMALI-T-0067,PLTS Banten (Kuota) V Eksis — Banten ting / Baru,PLTS Banten (Kuota) V Eksis,Banten ting / Baru,150,New,2,SUTT,10.0,2034,Planned,Banten,jamali,834,
+RUPTL-JAMALI-T-0068,BESS Smoothing Tersebar (2) — Banten Eksisting / Baru,BESS Smoothing Tersebar (2),Banten Eksisting / Baru,150,New,2,SUTT,20.0,,Planned,Banten,jamali,834,
+RUPTL-JAMALI-T-0069,PLTP Rawadano (FTP2) — Banten Eksisting / Baru,PLTP Rawadano (FTP2),Banten Eksisting / Baru,150,New,2,SUTT,20.0,2032,Planned,Banten,jamali,834,
+RUPTL-JAMALI-T-0070,PLTS Jawa-Bali (Kuota) Tersebar IX — Banten Eksisting / Baru,PLTS Jawa-Bali (Kuota) Tersebar IX,Banten Eksisting / Baru,150,New,2,SUTT,10.0,,Planned,Banten,jamali,834,
+RUPTL-JAMALI-T-0071,BESS Jawa-Bali (Kuota) Tersebar IVA (3) — Banten Eksisting / Baru,BESS Jawa-Bali (Kuota) Tersebar IVA (3),Banten Eksisting / Baru,150,New,2,SUTT,20.0,2034,Planned,Banten,jamali,834,
+RUPTL-JAMALI-T-0072,PLTB Jawa-Bali (Kuota) Tersebar III (1) — Banten Eksisting / Baru,PLTB Jawa-Bali (Kuota) Tersebar III (1),Banten Eksisting / Baru,150,New,2,SUTT,10.0,2034,Planned,Banten,jamali,834,
+RUPTL-JAMALI-T-0073,PLTB Jawa-Bali (Kuota) Tersebar IV (1) — Banten Eksisting / Baru,PLTB Jawa-Bali (Kuota) Tersebar IV (1),Banten Eksisting / Baru,150,New,2,SUTT,10.0,,Planned,Banten,jamali,834,
+RUPTL-JAMALI-T-0074,PLTS Jawa-Bali (Kuota) Tersebar X — Banten Eksisting / Baru,PLTS Jawa-Bali (Kuota) Tersebar X,Banten Eksisting / Baru,150,New,2,SUTT,10.0,,Planned,Banten,jamali,834,
+RUPTL-JAMALI-T-0075,PLTB Jawa-Bali (Kuota) Tersebar II (2) — Banten Eksisting / Baru,PLTB Jawa-Bali (Kuota) Tersebar II (2),Banten Eksisting / Baru,150,New,2,SUTT,10.0,,Planned,Banten,jamali,834,
+RUPTL-JAMALI-T-0076,PLTB Jawa-Bali (Kuota) Tersebar II (3) — Banten Eksisting / Baru,PLTB Jawa-Bali (Kuota) Tersebar II (3),Banten Eksisting / Baru,150,New,2,SUTT,10.0,,Planned,Banten,jamali,834,
+RUPTL-JAMALI-T-0077,BESS Jawa-Bali (Kuota) Tersebar IIIA (1) — Banten Eksisting / Baru,BESS Jawa-Bali (Kuota) Tersebar IIIA (1),Banten Eksisting / Baru,150,New,2,SUTT,20.0,,Planned,Banten,jamali,834,
+RUPTL-JAMALI-T-0078,BESS Jawa-Bali (Kuota) Tersebar IIIA (2) — Banten Eksisting / Baru,BESS Jawa-Bali (Kuota) Tersebar IIIA (2),Banten Eksisting / Baru,150,New,2,SUTT,20.0,,Planned,Banten,jamali,834,
+RUPTL-JAMALI-T-0079,BESS Jawa-Bali (Kuota) Tersebar IIIA (3) — Banten Eksisting / Baru,BESS Jawa-Bali (Kuota) Tersebar IIIA (3),Banten Eksisting / Baru,150,New,2,SUTT,20.0,,Planned,Banten,jamali,834,
+RUPTL-JAMALI-T-0080,BESS Jawa-Bali (Kuota) Tersebar IVA (1) — Banten Eksisting / Baru,BESS Jawa-Bali (Kuota) Tersebar IVA (1),Banten Eksisting / Baru,150,New,2,SUTT,20.0,2034,Planned,Banten,jamali,834,
+RUPTL-JAMALI-T-0081,BESS Jawa-Bali (Kuota) Tersebar IVA (2) — Banten Eksisting / Baru,BESS Jawa-Bali (Kuota) Tersebar IVA (2),Banten Eksisting / Baru,150,New,2,SUTT,20.0,2034,Planned,Banten,jamali,834,
+RUPTL-JAMALI-T-0082,PLTB Jawa-Bali (Kuota) Tersebar III (2) — Banten Eksisting / Baru,PLTB Jawa-Bali (Kuota) Tersebar III (2),Banten Eksisting / Baru,150,New,2,SUTT,10.0,2034,Planned,Banten,jamali,834,
+RUPTL-JAMALI-T-0083,PLTB Jawa-Bali (Kuota) Tersebar III (3) — Banten Eksisting / Baru,PLTB Jawa-Bali (Kuota) Tersebar III (3),Banten Eksisting / Baru,150,New,2,SUTT,10.0,2034,Planned,Banten,jamali,834,
+RUPTL-JAMALI-T-0084,PLTB Jawa-Bali (Kuota) Tersebar IV (2) — Banten Eksisting / Baru,PLTB Jawa-Bali (Kuota) Tersebar IV (2),Banten Eksisting / Baru,150,New,2,SUTT,10.0,,Planned,Banten,jamali,834,
+RUPTL-JAMALI-T-0085,PLTB Jawa-Bali (Kuota) Tersebar IV (3) — Banten Eksisting / Baru,PLTB Jawa-Bali (Kuota) Tersebar IV (3),Banten Eksisting / Baru,150,New,2,SUTT,10.0,,Planned,Banten,jamali,834,
+RUPTL-JAMALI-T-0086,PLTB Jawa-Bali (Kuota) Tersebar IV (4) — Banten Eksisting / Baru,PLTB Jawa-Bali (Kuota) Tersebar IV (4),Banten Eksisting / Baru,150,New,2,SUTT,10.0,,Planned,Banten,jamali,834,
+RUPTL-JAMALI-T-0087,PLTB Jawa-Bali (Kuota) Tersebar IV (5) — Banten Eksisting / Baru,PLTB Jawa-Bali (Kuota) Tersebar IV (5),Banten Eksisting / Baru,150,New,2,SUTT,10.0,,Planned,Banten,jamali,834,
+RUPTL-JAMALI-T-0088,PLTB Jawa-Bali (Kuota) Tersebar IV (6) — Banten Eksisting / Baru,PLTB Jawa-Bali (Kuota) Tersebar IV (6),Banten Eksisting / Baru,150,New,2,SUTT,10.0,,Planned,Banten,jamali,835,Tabel B2.15
+RUPTL-JAMALI-T-0089,Cilegon — Citereup,Cilegon,Citereup,500,New,1,SUTET,130.0,2031,Planned,Banten,jamali,838,Tabel B2.16
+RUPTL-JAMALI-T-0090,Bogor X — Tanjung Pucut / Salira,Bogor X,Tanjung Pucut / Salira,500 DC,New,2,SUTET,220.0,2031,Planned,Banten,jamali,838,Tabel B2.16
+RUPTL-JAMALI-T-0091,Tanjung Pucut / Salira — Ketapang,Tanjung Pucut / Salira,Ketapang,500 DC,New,2,SKLT,80.0,2031,Planned,Banten,jamali,838,Tabel B2.16
+RUPTL-JAMALI-T-0092,Muara Enim — Ketapang,Muara Enim,Ketapang,500 DC,New,2,SUTET,800.0,2031,Planned,Banten,jamali,838,Tabel B2.16
+RUPTL-JAMALI-T-0093,Balongan — Inc. (Jatibarang - Arjawinangun),Balongan,Inc. (Jatibarang - Arjawinangun),,New,4,SUTT,49.0,2025,Planned,Jawa Barat,jamali,854,Tabel B3.11
+RUPTL-JAMALI-T-0094,Cibatu Baru / Deltamas — Tx. THK,Cibatu Baru / Deltamas,Tx. THK,,New,2,SUTT,1.0,2025,Planned,Jawa Barat,jamali,854,Tabel B3.11
+RUPTL-JAMALI-T-0095,Depok II — Inc. (Tx. Cimanggis - Rawadenok (Depok III)),Depok II,Inc. (Tx. Cimanggis - Rawadenok (Depok III)),,New,2,SUTT,8.0,2025,Construction,Jawa Barat,jamali,854,Tabel B3.11
+RUPTL-JAMALI-T-0096,Telukjambe II — KTT Indah Kiat,Telukjambe II,KTT Indah Kiat,,New,1,SUTT,2.0,2025,Planned,Jawa Barat,jamali,854,Tabel B3.11
+RUPTL-JAMALI-T-0097,PLTA Jatigede / Parakan Kondang Baru — Inc. (Rancaekek - Sunyaragi),PLTA Jatigede / Parakan Kondang Baru,Inc. (Rancaekek - Sunyaragi),,New,4,SUTT,20.0,2025,Construction,Jawa Barat,jamali,854,Tabel B3.11
+RUPTL-JAMALI-T-0098,Jatiluhur Baru — Inc. (Padalarang - Tatajabar),Jatiluhur Baru,Inc. (Padalarang - Tatajabar),,New,4,SUTT,92.0,2025,Planned,Jawa Barat,jamali,854,Tabel B3.11
+RUPTL-JAMALI-T-0099,Jatiluhur Baru — PLTA Jatiluhur,Jatiluhur Baru,PLTA Jatiluhur,,New,2,SUTT,20.0,2025,Planned,Jawa Barat,jamali,854,Tabel B3.11
+RUPTL-JAMALI-T-0100,JISC / MOS — Jatiluhur Baru,JISC / MOS,Jatiluhur Baru,,New,2,SUTT,12.0,2025,Planned,Jawa Barat,jamali,854,Tabel B3.11
+RUPTL-JAMALI-T-0101,Switching Tegalluar — Inc. (Ujungberung - Gedebage),Switching Tegalluar,Inc. (Ujungberung - Gedebage),,New,4,SUTT,4.0,2025,Committed,Jawa Barat,jamali,854,Tabel B3.11
+RUPTL-JAMALI-T-0102,Switching Tegalluar — Traksi Tegalluar,Switching Tegalluar,Traksi Tegalluar,,New,2,SUTT,2.0,2025,Committed,Jawa Barat,jamali,854,Tabel B3.11
+RUPTL-JAMALI-T-0103,KTT Indorama Baru — Inc. (Padalarang Baru - Jatiluhur),KTT Indorama Baru,Inc. (Padalarang Baru - Jatiluhur),,New,4,SUTT,12.0,2025,Planned,Jawa Barat,jamali,854,Tabel B3.11
+RUPTL-JAMALI-T-0104,Muara Tawar — Inc. (Bekasi - Plumpang | Kandang Sapi),Muara Tawar,Inc. (Bekasi - Plumpang | Kandang Sapi),,New,4,SUTT,20.0,2025,Construction,Jawa Barat,jamali,854,Tabel B3.11
+RUPTL-JAMALI-T-0105,PLTU Pelabuhan Ratu — Pelabuhan Ratu Baru,PLTU Pelabuhan Ratu,Pelabuhan Ratu Baru,,New,2,SUTT,60.0,2025,Construction,Jawa Barat,jamali,854,Tabel B3.11
+RUPTL-JAMALI-T-0106,PLTS Saguling — Switching Rajamandala,PLTS Saguling,Switching Rajamandala,,New,2,SUTT,16.0,2025,Planned,Jawa Barat,jamali,854,Tabel B3.11
+RUPTL-JAMALI-T-0107,Switching Rajamandala — Inc.(Cigereleng - Rajamandala),Switching Rajamandala,Inc.(Cigereleng - Rajamandala),,New,2,SUTT,1.0,2025,Planned,Jawa Barat,jamali,854,Tabel B3.11
+RUPTL-JAMALI-T-0108,Switching Rajamandala — Inc.(Cigereleng - Sukaluyu),Switching Rajamandala,Inc.(Cigereleng - Sukaluyu),,New,2,SUTT,1.0,2025,Planned,Jawa Barat,jamali,854,Tabel B3.11
+RUPTL-JAMALI-T-0109,Switching Rajamandala — Rajamandala,Switching Rajamandala,Rajamandala,,New,2,SUTT,1.0,2025,Planned,Jawa Barat,jamali,854,Tabel B3.11
+RUPTL-JAMALI-T-0110,Sentul Baru / Cijayanti — Inc. (Bogor Baru - Sentul),Sentul Baru / Cijayanti,Inc. (Bogor Baru - Sentul),,New,4,SUTT,4.0,2025,Planned,Jawa Barat,jamali,854,Tabel B3.11
+RUPTL-JAMALI-T-0111,Cirata — Padalarang Baru,Cirata,Padalarang Baru,,New,1,SUTT,40.0,2025,Planned,Jawa Barat,jamali,855,
+RUPTL-JAMALI-T-0112,Subang Baru — Inc. (Sukamandi - Haurgeulis),Subang Baru,Inc. (Sukamandi - Haurgeulis),,New,4,SUTT,20.0,2025,Construction,Jawa Barat,jamali,855,
+RUPTL-JAMALI-T-0113,Sukatani New — Inc. (Bekasi - Sukatani),Sukatani New,Inc. (Bekasi - Sukatani),,New,4,SUTT,8.0,2025,Construction,Jawa Barat,jamali,855,
+RUPTL-JAMALI-T-0114,Kosambi Baru — Tx. New Sukatani,Kosambi Baru,Tx. New Sukatani,,,2,SUTT,60.0,2025,Construction,Jawa Barat,jamali,855,
+RUPTL-JAMALI-T-0115,Poncol Baru II — Tx. Jatiwaringin | Tambun II,Poncol Baru II,Tx. Jatiwaringin | Tambun II,,,2,SUTT,12.0,2025,Construction,Jawa Barat,jamali,855,
+RUPTL-JAMALI-T-0116,Tambun II / Tambun New / Pasar Kalong — Tambun,Tambun II / Tambun New / Pasar Kalong,Tambun,,New,2,SKTT,14.0,2025,Planned,Jawa Barat,jamali,855,
+RUPTL-JAMALI-T-0117,Tambun II / Tambun New / Pasar Kalong — Tx. Poncol Baru II,Tambun II / Tambun New / Pasar Kalong,Tx. Poncol Baru II,,New,2,SKTT,4.0,2025,Planned,Jawa Barat,jamali,855,
+RUPTL-JAMALI-T-0118,Telukjambe II — Telukjambe,Telukjambe II,Telukjambe,,New,2,SUTT,14.0,2025,Construction,Jawa Barat,jamali,855,
+RUPTL-JAMALI-T-0119,Muara Tawar — Bekasi,Muara Tawar,Bekasi,,New,2,SUTET,18.0,2025,Construction,Jawa Barat,jamali,855,
+RUPTL-JAMALI-T-0120,Switching Data Center — ADSI Deltamas,Switching Data Center,ADSI Deltamas,,New,2,SKTT,1.0,2026,Planned,Jawa Barat,jamali,855,
+RUPTL-JAMALI-T-0121,KIIC II / Margakaya — ADSI KIIC,KIIC II / Margakaya,ADSI KIIC,,New,2,SKTT,4.0,2026,Planned,Jawa Barat,jamali,855,
+RUPTL-JAMALI-T-0122,Telukjambe II — ADSI Suryacipta,Telukjambe II,ADSI Suryacipta,,New,2,SKTT,3.0,2026,Planned,Jawa Barat,jamali,855,
+RUPTL-JAMALI-T-0123,Babakan Baru — Inc. (CEP - Brebes),Babakan Baru,Inc. (CEP - Brebes),,New,4,SUTT,4.0,2026,Construction,Jawa Barat,jamali,855,
+RUPTL-JAMALI-T-0124,Bekasi Power — Jababeka II / Pamahan,Bekasi Power,Jababeka II / Pamahan,,New,2,SUTT,12.0,2026,Planned,Jawa Barat,jamali,855,
+RUPTL-JAMALI-T-0125,Cibatu Baru II / Sukatani — Sukatani New,Cibatu Baru II / Sukatani,Sukatani New,,New,2,SKTT,1.0,2026,Planned,Jawa Barat,jamali,855,
+RUPTL-JAMALI-T-0126,Sukatani New — Tx. Bekasi Power,Sukatani New,Tx. Bekasi Power,,New,2,SUTT,11.0,2026,Planned,Jawa Barat,jamali,855,
+RUPTL-JAMALI-T-0127,Tx. Bekasi Power — Bekasi Power,Tx. Bekasi Power,Bekasi Power,,New,2,SKTT,1.0,2026,Planned,Jawa Barat,jamali,855,
+RUPTL-JAMALI-T-0128,Cibadak Baru II / Lido — Inc. (Cibadak Baru - Ciawi),Cibadak Baru II / Lido,Inc. (Cibadak Baru - Ciawi),,New,4,SUTT,20.0,2026,Planned,Jawa Barat,jamali,855,
+RUPTL-JAMALI-T-0129,Gandamekar II / Cibuntu — Inc. (Tambun - Gandamekar),Gandamekar II / Cibuntu,Inc. (Tambun - Gandamekar),,New,4,SUTT,10.0,2026,Planned,Jawa Barat,jamali,855,
+RUPTL-JAMALI-T-0130,HLI — Heksa / AUA / AMI / Taman Mekar,HLI,Heksa / AUA / AMI / Taman Mekar,,New,1,SKTT,1.0,2026,Planned,Jawa Barat,jamali,855,
+RUPTL-JAMALI-T-0131,HLI — Tamansari / KNIC,HLI,Tamansari / KNIC,,New,1,SKTT,3.8,2026,Planned,Jawa Barat,jamali,855,
+RUPTL-JAMALI-T-0132,Sukatani New — Jababeka II / Pamahan,Sukatani New,Jababeka II / Pamahan,,New,2,SUTT,11.0,2026,Planned,Jawa Barat,jamali,855,
+RUPTL-JAMALI-T-0133,Jababeka II / Pamahan — Jababeka,Jababeka II / Pamahan,Jababeka,,New,2,SUTT,9.2,2026,Planned,Jawa Barat,jamali,855,
+RUPTL-JAMALI-T-0134,Bandung Selatan — Tx. Wayang Windu,Bandung Selatan,Tx. Wayang Windu,,New,2,SUTT,64.0,2026,Planned,Jawa Barat,jamali,855,
+RUPTL-JAMALI-T-0135,Tx. Wayang Windu — Kamojang,Tx. Wayang Windu,Kamojang,,New,2,SUTT,60.0,2026,Planned,Jawa Barat,jamali,855,
+RUPTL-JAMALI-T-0136,Tamansari / KNIC — KIIC II / Margakaya,Tamansari / KNIC,KIIC II / Margakaya,,New,2,SUTT,10.0,2026,Planned,Jawa Barat,jamali,855,
+RUPTL-JAMALI-T-0137,Cikarang — KTT Gunung Raja Paksi,Cikarang,KTT Gunung Raja Paksi,,New,1,SKTT,0.5,2026,Planned,Jawa Barat,jamali,855,
+RUPTL-JAMALI-T-0138,Rancaekek — Sunyaragi,Rancaekek,Sunyaragi,,New,2,SUTT,166.0,2026,Construction,Jawa Barat,jamali,855,
+RUPTL-JAMALI-T-0139,Salak Baru — Ciawi Baru,Salak Baru,Ciawi Baru,,New,2,SUTT,100.0,2026,Planned,Jawa Barat,jamali,855,
+RUPTL-JAMALI-T-0140,Bogor Baru — Katulampa,Bogor Baru,Katulampa,,,2,SUTT,5.0,2026,Planned,Jawa Barat,jamali,855,
+RUPTL-JAMALI-T-0141,Bogor X — Inc. (Bunar Baru - Kracak Baru),Bogor X,Inc. (Bunar Baru - Kracak Baru),150,New,4,SUTT,8.0,2031,Planned,Jawa Barat,jamali,871,Tabel B3.15
+RUPTL-JAMALI-T-0142,Bogor X — Inc. (Cilegon - Citereup),Bogor X,Inc. (Cilegon - Citereup),500,New,4,SUTET,120.0,2031,Planned,Jawa Barat,jamali,871,Tabel B3.15
+RUPTL-JAMALI-T-0143,Bogor X — Inc. (Depok - Cikalong),Bogor X,Inc. (Depok - Cikalong),500,New,4,SUTET,6.0,2031,Planned,Jawa Barat,jamali,871,Tabel B3.15
+RUPTL-JAMALI-T-0144,Citereup — Cibinong,Citereup,Cibinong,500,New,1,SUTET,6.0,2031,Planned,Jawa Barat,jamali,871,Tabel B3.15
+RUPTL-JAMALI-T-0145,Medari — Inc. (Sanggrahan - Kentungan),Medari,Inc. (Sanggrahan - Kentungan),150,New,2,SUTT,1.0,2025,Planned,Jawa Tengah,jamali,885,Tabel B4.11
+RUPTL-JAMALI-T-0146,Beringin — Jelok,Beringin,Jelok,150,,2,SUTT,16.0,2025,Construction,Jawa Tengah,jamali,885,Tabel B4.11
+RUPTL-JAMALI-T-0147,Weleri — Kaliwungu,Weleri,Kaliwungu,150,,2,SUTT,439.0,2025,Construction,Jawa Tengah,jamali,885,Tabel B4.11
+RUPTL-JAMALI-T-0148,KIT Batang — Inc. (Batang New - Weleri),KIT Batang,Inc. (Batang New - Weleri),150,New,2,SUTT,11.0,2025,Construction,Jawa Tengah,jamali,885,Tabel B4.11
+RUPTL-JAMALI-T-0149,KEK Kendal — Inc. (Weleri - Kaliwungu),KEK Kendal,Inc. (Weleri - Kaliwungu),150,New,4,SUTT,36.0,2025,Planned,Jawa Tengah,jamali,885,Tabel B4.11
+RUPTL-JAMALI-T-0150,Kudus II / Nalumsari — Inc. (Kudus - Jepara),Kudus II / Nalumsari,Inc. (Kudus - Jepara),150,New,4,SUTT,1.0,2025,Construction,Jawa Tengah,jamali,885,Tabel B4.11
+RUPTL-JAMALI-T-0151,KIT Batang — Inc. (Batang New - Weleri),KIT Batang,Inc. (Batang New - Weleri),150,New,2,SUTT,11.0,2025,Construction,Jawa Tengah,jamali,885,Tabel B4.11
+RUPTL-JAMALI-T-0152,Pati II / Trangkil — Pati,Pati II / Trangkil,Pati,150,New,2,SUTT,30.0,2025,Planned,Jawa Tengah,jamali,885,Tabel B4.11
+RUPTL-JAMALI-T-0153,Rawalo / Kesugihan — Inc. (PLTU Adipala - PLTU Cilacap),Rawalo / Kesugihan,Inc. (PLTU Adipala - PLTU Cilacap),500,New,2,SUTET,28.0,2025,Planned,Jawa Tengah,jamali,885,Tabel B4.11
+RUPTL-JAMALI-T-0154,PLTS Jawa Tengah (Kuota) II — Jawa Tengah Eksisting / Baru,PLTS Jawa Tengah (Kuota) II,Jawa Tengah Eksisting / Baru,150,New,2,SUTT,7.0,2025,Planned,Jawa Tengah,jamali,885,Tabel B4.11
+RUPTL-JAMALI-T-0155,PLTS Jawa Tengah (Kuota) IV — Jawa Tengah Eksisting / Baru,PLTS Jawa Tengah (Kuota) IV,Jawa Tengah Eksisting / Baru,150,New,2,SUTT,20.0,2025,Planned,Jawa Tengah,jamali,885,Tabel B4.11
+RUPTL-JAMALI-T-0156,Pedan — Ampel / Tuntang,Pedan,Ampel / Tuntang,500,New,1,SUTET,56.0,2025,Planned,Jawa Tengah,jamali,885,Tabel B4.11
+RUPTL-JAMALI-T-0157,Ungaran — Ampel / Tuntang,Ungaran,Ampel / Tuntang,500,New,1,SUTET,220.0,2025,Planned,Jawa Tengah,jamali,885,Tabel B4.11
+RUPTL-JAMALI-T-0158,Banyudono — Jajar,Banyudono,Jajar,150,,2,SUTT,14.0,2026,Planned,Jawa Tengah,jamali,885,Tabel B4.11
+RUPTL-JAMALI-T-0159,Purwodadi — Kedungombo,Purwodadi,Kedungombo,150,,2,SUTT,420.0,2026,Planned,Jawa Tengah,jamali,885,Tabel B4.11
+RUPTL-JAMALI-T-0160,Gondangrejo — Jajar,Gondangrejo,Jajar,150,,2,SUTT,189.0,2026,Planned,Jawa Tengah,jamali,885,Tabel B4.11
+RUPTL-JAMALI-T-0161,BSB (Bukit Semarang Baru) — Tx. (Ungaran - Weleri,BSB (Bukit Semarang Baru),Tx. (Ungaran - Weleri,150,New,4,SUTT,16.0,2026,Planned,Jawa Tengah,jamali,885,Tabel B4.11
+RUPTL-JAMALI-T-0162,Pudak Payung — Pandean Lamper,Pudak Payung,Pandean Lamper,150,,2,SUTT,279.0,2026,Planned,Jawa Tengah,jamali,885,Tabel B4.11
+RUPTL-JAMALI-T-0163,Ungaran — Pudak Payung,Ungaran,Pudak Payung,150,,2,SUTT,28.0,2026,Planned,Jawa Tengah,jamali,885,Tabel B4.11
+RUPTL-JAMALI-T-0164,Kedungombo — Sragen,Kedungombo,Sragen,150,New,2,SUTT,59.0,2026,Planned,Jawa Tengah,jamali,885,Tabel B4.11
+RUPTL-JAMALI-T-0165,Lomanis — Inc. (Semen Nusantara - Kesugihan / Rawalo),Lomanis,Inc. (Semen Nusantara - Kesugihan / Rawalo),150,New,2,SUTT,2.0,2026,Planned,Jawa Tengah,jamali,885,Tabel B4.11
+RUPTL-JAMALI-T-0166,Jelok — Sanggrahan,Jelok,Sanggrahan,150,,2,SUTT,860.0,2027,Planned,Jawa Tengah,jamali,885,Tabel B4.11
+RUPTL-JAMALI-T-0167,Kalibakal — Bumiayu,Kalibakal,Bumiayu,150,,2,SUTT,70.0,2027,Planned,Jawa Tengah,jamali,885,Tabel B4.11
+RUPTL-JAMALI-T-0168,Purwodadi — Blora,Purwodadi,Blora,150,New,2,SUTT,1200.0,2027,Planned,Jawa Tengah,jamali,885,Tabel B4.11
+RUPTL-JAMALI-T-0169,Pedan — Solo Baru,Pedan,Solo Baru,150,New,2,SUTT,31.0,2027,Planned,Jawa Tengah,jamali,885,Tabel B4.11
+RUPTL-JAMALI-T-0170,Batang New — Comal,Batang New,Comal,150,New,2,SUTT,60.0,2027,Planned,Jawa Tengah,jamali,885,Tabel B4.11
+RUPTL-JAMALI-T-0171,Batang New — KIT Batang,Batang New,KIT Batang,150,New,2,SUTT,40.0,2027,Planned,Jawa Tengah,jamali,885,Tabel B4.11
+RUPTL-JAMALI-T-0172,PLTU Cilacap — Tx. Rawalo / Kesugihan,PLTU Cilacap,Tx. Rawalo / Kesugihan,500,New,2,SUTET,7.0,2027,Planned,Jawa Tengah,jamali,885,Tabel B4.11
+RUPTL-JAMALI-T-0173,Kesugihan / Rawalo — Lomanis,Kesugihan / Rawalo,Lomanis,150,,2,SUTT,54.0,2027,Planned,Jawa Tengah,jamali,886,
+RUPTL-JAMALI-T-0174,Dieng — Batang New,Dieng,Batang New,150,New,2,SUTT,710.0,2027,Planned,Jawa Tengah,jamali,886,
+RUPTL-JAMALI-T-0175,Garung — Inc. (Dieng - Wonosobo),Garung,Inc. (Dieng - Wonosobo),150,New,2,SUTT,2.0,2027,Planned,Jawa Tengah,jamali,886,
+RUPTL-JAMALI-T-0176,Garung — Wonosobo,Garung,Wonosobo,150,,2,SUTT,11.0,2027,Planned,Jawa Tengah,jamali,886,
+RUPTL-JAMALI-T-0177,Rawalo — Inc. (Cilacap- Kalibakal),Rawalo,Inc. (Cilacap- Kalibakal),150,New,2,SUTT,40.0,2027,Planned,Jawa Tengah,jamali,886,
+RUPTL-JAMALI-T-0178,Bumiayu — Balapulang,Bumiayu,Balapulang,150,,2,SUTT,440.0,2027,Planned,Jawa Tengah,jamali,886,
+RUPTL-JAMALI-T-0179,Palur — Gondangrejo,Palur,Gondangrejo,150,,2,SUTT,12.0,2027,Planned,Jawa Tengah,jamali,886,
+RUPTL-JAMALI-T-0180,Sanggrahan — Medari,Sanggrahan,Medari,150,,2,SUTT,56.0,2028,Planned,Jawa Tengah,jamali,886,
+RUPTL-JAMALI-T-0181,Kesugihan — Purworejo,Kesugihan,Purworejo,150,New,2,SUTT,1900.0,2028,Planned,Jawa Tengah,jamali,886,
+RUPTL-JAMALI-T-0182,Masaran — Sragen,Masaran,Sragen,150,,2,SUTT,123.0,2028,Planned,Jawa Tengah,jamali,886,
+RUPTL-JAMALI-T-0183,Tambak Lorok III — Pandean Lamper,Tambak Lorok III,Pandean Lamper,150,,2,SUTT,126.0,2028,Planned,Jawa Tengah,jamali,886,
+RUPTL-JAMALI-T-0184,Tambak Lorok III — Ungaran,Tambak Lorok III,Ungaran,150,,2,SUTT,58.0,2028,Planned,Jawa Tengah,jamali,886,
+RUPTL-JAMALI-T-0185,Weleri — Inc. (Batang - Ungaran),Weleri,Inc. (Batang - Ungaran),500,New,4,SUTT,4.0,2028,Planned,Jawa Tengah,jamali,886,
+RUPTL-JAMALI-T-0186,Batang — Kaliwungu,Batang,Kaliwungu,150,New,2,SUTT,109.0,2028,Planned,Jawa Tengah,jamali,886,
+RUPTL-JAMALI-T-0187,KTT Seafer Kendal — KEK Kendal,KTT Seafer Kendal,KEK Kendal,150,New,2,SUTT,20.0,2028,Planned,Jawa Tengah,jamali,886,
+RUPTL-JAMALI-T-0188,Weleri II — KTT Seafer Kendal,Weleri II,KTT Seafer Kendal,150,New,2,SUTT,382.0,2028,Planned,Jawa Tengah,jamali,886,
+RUPTL-JAMALI-T-0189,Pandean Lamper — Simpang Lima,Pandean Lamper,Simpang Lima,150,New,2,SKTT,84.0,2028,Planned,Jawa Tengah,jamali,886,
+RUPTL-JAMALI-T-0190,Simpang Lima — Kalisari,Simpang Lima,Kalisari,150,New,2,SKTT,5.0,2028,Planned,Jawa Tengah,jamali,886,
+RUPTL-JAMALI-T-0191,Lomanis — Semen Nusantara,Lomanis,Semen Nusantara,150,,2,SUTT,9.0,2028,Planned,Jawa Tengah,jamali,886,
+RUPTL-JAMALI-T-0192,Purwodadi — Inc. (Tanjung Jati - Pemalang),Purwodadi,Inc. (Tanjung Jati - Pemalang),500,New,4,SUTET,14.0,2028,Planned,Jawa Tengah,jamali,886,
+RUPTL-JAMALI-T-0193,Purwodadi — Inc. (Unagaran - Krian|Ngimbang),Purwodadi,Inc. (Unagaran - Krian|Ngimbang),500,New,4,SUTET,12.0,2028,Planned,Jawa Tengah,jamali,886,
+RUPTL-JAMALI-T-0194,Purwodadi — Sayung,Purwodadi,Sayung,150,New,2,SUTT,92.0,2028,Planned,Jawa Tengah,jamali,886,
+RUPTL-JAMALI-T-0195,Balapulang — Kebasen,Balapulang,Kebasen,150,,2,SUTT,42.0,2028,Planned,Jawa Tengah,jamali,886,
+RUPTL-JAMALI-T-0196,Wates — Bantul,Wates,Bantul,150,,2,SUTT,20.0,2028,Planned,Jawa Tengah,jamali,886,
+RUPTL-JAMALI-T-0197,Medari — Kentungan,Medari,Kentungan,150,,2,SUTT,22.0,2029,Planned,Jawa Tengah,jamali,886,
+RUPTL-JAMALI-T-0198,Palur II / Karanganyar — Inc. (Masaran - Palur),Palur II / Karanganyar,Inc. (Masaran - Palur),150,New,2,SUTT,2.0,2029,Planned,Jawa Tengah,jamali,886,
+RUPTL-JAMALI-T-0199,Purbalingga II / Belik — Balapulang,Purbalingga II / Belik,Balapulang,150,New,2,SUTT,50.0,2029,Planned,Jawa Tengah,jamali,886,
+RUPTL-JAMALI-T-0200,Purworejo — Wates,Purworejo,Wates,150,,2,SUTT,20.0,2029,Planned,Jawa Tengah,jamali,886,
+RUPTL-JAMALI-T-0201,Ungaran — Jelok,Ungaran,Jelok,150,,2,SUTT,400.0,2030,Planned,Jawa Tengah,jamali,886,
+RUPTL-JAMALI-T-0202,PLTP Baturaden / Slamet — Bumiayu,PLTP Baturaden / Slamet,Bumiayu,150,New,2,SUTT,20.0,2031,Planned,Jawa Tengah,jamali,886,
+RUPTL-JAMALI-T-0203,Sanggrahan II / Rajeg — Inc. (Sanggrahan - Medari),Sanggrahan II / Rajeg,Inc. (Sanggrahan - Medari),150,New,4,SUTT,20.0,2031,Planned,Jawa Tengah,jamali,886,
+RUPTL-JAMALI-T-0204,Tambak Lorok II / Gajah — Inc. (Sayung - Kudus),Tambak Lorok II / Gajah,Inc. (Sayung - Kudus),150,New,4,SUTT,40.0,2031,Planned,Jawa Tengah,jamali,886,
+RUPTL-JAMALI-T-0205,PLTP Ungaran — Bawen,PLTP Ungaran,Bawen,150,New,2,SUTT,60.0,2031,Planned,Jawa Tengah,jamali,886,
+RUPTL-JAMALI-T-0206,Matenggeng PLTA PS — Inc. (Tasikmalaya - Kesugihan / Rawalo),Matenggeng PLTA PS,Inc. (Tasikmalaya - Kesugihan / Rawalo),500,New,4,SUTET,57.0,2032,Planned,Jawa Tengah,jamali,886,
+RUPTL-JAMALI-T-0207,Switching Kendal — Inc. (Ungaran - Mandirancan),Switching Kendal,Inc. (Ungaran - Mandirancan),500,New,4,SUTET,120.0,2032,Planned,Jawa Tengah,jamali,887,
+RUPTL-JAMALI-T-0208,Tambak Lorok — Switching Kendal,Tambak Lorok,Switching Kendal,500,New,2,SUTET,60.0,2032,Planned,Jawa Tengah,jamali,887,
+RUPTL-JAMALI-T-0209,Tanjung Jati — Rembang,Tanjung Jati,Rembang,500,New,2,SUTET,340.0,2033,Planned,Jawa Tengah,jamali,887,
+RUPTL-JAMALI-T-0210,Pekalongan III / Kajen — Pekalongan II / Comal,Pekalongan III / Kajen,Pekalongan II / Comal,150,New,2,SUTT,40.0,2033,Planned,Jawa Tengah,jamali,887,
+RUPTL-JAMALI-T-0211,Purwodadi II / Wirosari — Purwodadi,Purwodadi II / Wirosari,Purwodadi,150,New,2,SUTT,20.0,2033,Planned,Jawa Tengah,jamali,887,
+RUPTL-JAMALI-T-0212,PLTS Jawa Bali Tersebar IX — Jawa Tengah Eksisting / Baru,PLTS Jawa Bali Tersebar IX,Jawa Tengah Eksisting / Baru,150,New,2,SUTT,10.0,2034,Planned,Jawa Tengah,jamali,887,
+RUPTL-JAMALI-T-0213,PLTS+BESS Jawa Tengah (Kuota) IIIC — Jawa Tengah Eksisting / Baru,PLTS+BESS Jawa Tengah (Kuota) IIIC,Jawa Tengah Eksisting / Baru,150,New,2,SUTT,20.0,2030,Planned,Jawa Tengah,jamali,887,
+RUPTL-JAMALI-T-0214,PLTS Jawa Tengah (Kuota) IIIB — Jawa Tengah Eksisting / Baru,PLTS Jawa Tengah (Kuota) IIIB,Jawa Tengah Eksisting / Baru,150,New,2,SUTT,116.0,2027,Planned,Jawa Tengah,jamali,887,
+RUPTL-JAMALI-T-0215,PLTB Jawa- Bali (Kuota) Tersebar II — Jawa Tengah Eksisting / Baru,PLTB Jawa- Bali (Kuota) Tersebar II,Jawa Tengah Eksisting / Baru,150,New,2,SUTT,10.0,2032,Planned,Jawa Tengah,jamali,887,
+RUPTL-JAMALI-T-0216,PLTP Dieng (FTP2) — Jawa Tengah Eksisting / Baru,PLTP Dieng (FTP2),Jawa Tengah Eksisting / Baru,150,New,2,SUTT,20.0,2028,Planned,Jawa Tengah,jamali,887,
+RUPTL-JAMALI-T-0217,PLTS Jawa Tengah (Kuota) IIIA — Jawa Tengah Eksisting / Baru,PLTS Jawa Tengah (Kuota) IIIA,Jawa Tengah Eksisting / Baru,150,New,2,SUTT,14.0,2028,Planned,Jawa Tengah,jamali,887,
+RUPTL-JAMALI-T-0218,PLTS+BESS Jawa Tengah (Kuota) I — Jawa Tengah Eksisting / Baru,PLTS+BESS Jawa Tengah (Kuota) I,Jawa Tengah Eksisting / Baru,150,New,2,SUTT,14.0,2031,Planned,Jawa Tengah,jamali,887,
+RUPTL-JAMALI-T-0219,PLTB Jawa- Bali (Kuota) Tersebar I — Jawa Tengah Eksisting / Baru,PLTB Jawa- Bali (Kuota) Tersebar I,Jawa Tengah Eksisting / Baru,150,New,2,SUTT,10.0,2031,Planned,Jawa Tengah,jamali,887,
+RUPTL-JAMALI-T-0220,PLTB Jawa- Bali (Kuota) Tersebar III — Jawa Tengah Eksisting / Baru,PLTB Jawa- Bali (Kuota) Tersebar III,Jawa Tengah Eksisting / Baru,150,New,2,SUTT,10.0,2032,Planned,Jawa Tengah,jamali,887,
+RUPTL-JAMALI-T-0221,BESS Smoothing Tersebar (1) — Jawa Tengah Eksisting / Baru,BESS Smoothing Tersebar (1),Jawa Tengah Eksisting / Baru,150,New,2,SUTT,20.0,,Planned,Jawa Tengah,jamali,887,
+RUPTL-JAMALI-T-0222,BESS Smoothing Tersebar (2) — Jawa Tengah Eksisting / Baru,BESS Smoothing Tersebar (2),Jawa Tengah Eksisting / Baru,150,New,2,SUTT,20.0,,Planned,Jawa Tengah,jamali,887,
+RUPTL-JAMALI-T-0223,PLTP Dieng (FTP2) — Jawa Tengah Eksisting / Baru,PLTP Dieng (FTP2),Jawa Tengah Eksisting / Baru,150,New,2,SUTT,20.0,2030,Planned,Jawa Tengah,jamali,887,
+RUPTL-JAMALI-T-0224,PLTP Dieng (FTP2) — Jawa Tengah Eksisting / Baru,PLTP Dieng (FTP2),Jawa Tengah Eksisting / Baru,150,New,2,SUTT,20.0,2030,Planned,Jawa Tengah,jamali,887,
+RUPTL-JAMALI-T-0225,PLTS Jawa Tengah (Kuota) V — Jawa Tengah Eksisting / Baru,PLTS Jawa Tengah (Kuota) V,Jawa Tengah Eksisting / Baru,150,New,2,SUTT,10.0,2031,Planned,Jawa Tengah,jamali,887,
+RUPTL-JAMALI-T-0226,PLTSa Jawa- Bali (Kuota) Tersebar 1 — Jawa Tengah Eksisting / Baru,PLTSa Jawa- Bali (Kuota) Tersebar 1,Jawa Tengah Eksisting / Baru,150,New,2,SUTT,10.0,2030,Planned,Jawa Tengah,jamali,887,
+RUPTL-JAMALI-T-0227,BESS Jawa- Bali (Kuota) Tersebar I (1) — Jawa Tengah Eksisting / Baru,BESS Jawa- Bali (Kuota) Tersebar I (1),Jawa Tengah Eksisting / Baru,150,New,2,SUTT,10.0,,Planned,Jawa Tengah,jamali,887,
+RUPTL-JAMALI-T-0228,BESS Jawa- Bali (Kuota) Tersebar I (2) — Jawa Tengah Eksisting / Baru,BESS Jawa- Bali (Kuota) Tersebar I (2),Jawa Tengah Eksisting / Baru,150,New,2,SUTT,10.0,,Planned,Jawa Tengah,jamali,887,
+RUPTL-JAMALI-T-0229,PLTB Jawa- Bali (Kuota) Tersebar IV — Jawa Tengah Eksisting / Baru,PLTB Jawa- Bali (Kuota) Tersebar IV,Jawa Tengah Eksisting / Baru,150,New,2,SUTT,10.0,,Planned,Jawa Tengah,jamali,887,
+RUPTL-JAMALI-T-0230,PLTP Baturaden (FTP2) — Jawa Tengah Eksisting / Baru,PLTP Baturaden (FTP2),Jawa Tengah Eksisting / Baru,150,New,2,SUTT,20.0,2031,Planned,Jawa Tengah,jamali,887,
+RUPTL-JAMALI-T-0231,PLTS Jawa- Bali (Kuota) Tersebar X (1) — Jawa Tengah Eksisting / Baru,PLTS Jawa- Bali (Kuota) Tersebar X (1),Jawa Tengah Eksisting / Baru,150,New,2,SUTT,10.0,,Planned,Jawa Tengah,jamali,888,
+RUPTL-JAMALI-T-0232,PLTS Jawa- Bali (Kuota) Tersebar X (2) — Jawa Tengah Eksisting / Baru,PLTS Jawa- Bali (Kuota) Tersebar X (2),Jawa Tengah Eksisting / Baru,150,New,2,SUTT,10.0,,Planned,Jawa Tengah,jamali,888,
+RUPTL-JAMALI-T-0233,PLTS Jawa- Bali (Kuota) Tersebar X(3) — Jawa Tengah Eksisting / Baru,PLTS Jawa- Bali (Kuota) Tersebar X(3),Jawa Tengah Eksisting / Baru,150,New,2,SUTT,10.0,,Planned,Jawa Tengah,jamali,888,
+RUPTL-JAMALI-T-0234,PLTS Jawa- Bali (Kuota) Tersebar X (4) — Jawa Tengah Eksisting / Baru,PLTS Jawa- Bali (Kuota) Tersebar X (4),Jawa Tengah Eksisting / Baru,150,New,2,SUTT,10.0,,Planned,Jawa Tengah,jamali,888,
+RUPTL-JAMALI-T-0235,PLTS Jawa- Bali (Kuota) Tersebar X (5) — Jawa Tengah Eksisting / Baru,PLTS Jawa- Bali (Kuota) Tersebar X (5),Jawa Tengah Eksisting / Baru,150,New,2,SUTT,10.0,,Planned,Jawa Tengah,jamali,888,
+RUPTL-JAMALI-T-0236,PLTS Jawa- Bali (Kuota) Tersebar X(6) — Jawa Tengah Eksisting / Baru,PLTS Jawa- Bali (Kuota) Tersebar X(6),Jawa Tengah Eksisting / Baru,150,New,2,SUTT,10.0,,Planned,Jawa Tengah,jamali,888,
+RUPTL-JAMALI-T-0237,PLTS Jawa- Bali (Kuota) Tersebar X (7) — Jawa Tengah Eksisting / Baru,PLTS Jawa- Bali (Kuota) Tersebar X (7),Jawa Tengah Eksisting / Baru,150,New,2,SUTT,10.0,,Planned,Jawa Tengah,jamali,888,
+RUPTL-JAMALI-T-0238,PLTS Jawa- Bali (Kuota) Tersebar X (8) — Jawa Tengah Eksisting / Baru,PLTS Jawa- Bali (Kuota) Tersebar X (8),Jawa Tengah Eksisting / Baru,150,New,2,SUTT,10.0,,Planned,Jawa Tengah,jamali,888,
+RUPTL-JAMALI-T-0239,PLTB Jawa- Bali (Kuota) Tersebar V — Jawa Tengah Eksisting / Baru,PLTB Jawa- Bali (Kuota) Tersebar V,Jawa Tengah Eksisting / Baru,150,New,2,SUTT,10.0,,Planned,Jawa Tengah,jamali,888,
+RUPTL-JAMALI-T-0240,PLTB Jawa- Bali (Kuota) Tersebar VI — Jawa Tengah Eksisting / Baru,PLTB Jawa- Bali (Kuota) Tersebar VI,Jawa Tengah Eksisting / Baru,150,New,2,SUTT,10.0,,Planned,Jawa Tengah,jamali,888,
+RUPTL-JAMALI-T-0241,PLTB Jawa- Bali (Kuota) Tersebar VII — Jawa Tengah Eksisting / Baru,PLTB Jawa- Bali (Kuota) Tersebar VII,Jawa Tengah Eksisting / Baru,150,New,2,SUTT,10.0,,Planned,Jawa Tengah,jamali,888,
+RUPTL-JAMALI-T-0242,PLTP Baturaden (FTP2) — Jawa Tengah Eksisting / Baru,PLTP Baturaden (FTP2),Jawa Tengah Eksisting / Baru,150,New,2,SUTT,20.0,2032,Planned,Jawa Tengah,jamali,888,
+RUPTL-JAMALI-T-0243,PLTP Jawa- Bali (Kuota) Tersebar (1) — Inc. (Jawa Tengah Eksisting / Baru A - Jawa Tengah Eksisting / Baru B),PLTP Jawa- Bali (Kuota) Tersebar (1),Inc. (Jawa Tengah Eksisting / Baru A - Jawa Tengah Eksisting / Baru B),150,New,4,SUTT,64.0,2032,Planned,Jawa Tengah,jamali,888,
+RUPTL-JAMALI-T-0244,PLTS Jawa- Bali (Kuota) Tersebar XI (1) — Jawa Tengah Eksisting / Baru,PLTS Jawa- Bali (Kuota) Tersebar XI (1),Jawa Tengah Eksisting / Baru,150,New,2,SUTT,10.0,,Planned,Jawa Tengah,jamali,888,
+RUPTL-JAMALI-T-0245,PLTS Jawa- Bali (Kuota) Tersebar XI (2) — Jawa Tengah Eksisting / Baru,PLTS Jawa- Bali (Kuota) Tersebar XI (2),Jawa Tengah Eksisting / Baru,150,New,2,SUTT,10.0,,Planned,Jawa Tengah,jamali,888,
+RUPTL-JAMALI-T-0246,PLTS Jawa- Bali (Kuota) Tersebar XI (3) — Jawa Tengah Eksisting / Baru,PLTS Jawa- Bali (Kuota) Tersebar XI (3),Jawa Tengah Eksisting / Baru,150,New,2,SUTT,10.0,,Planned,Jawa Tengah,jamali,888,
+RUPTL-JAMALI-T-0247,PLTS Jawa- Bali (Kuota) Tersebar XI (4) — Jawa Tengah Eksisting / Baru,PLTS Jawa- Bali (Kuota) Tersebar XI (4),Jawa Tengah Eksisting / Baru,150,New,2,SUTT,10.0,,Planned,Jawa Tengah,jamali,888,
+RUPTL-JAMALI-T-0248,PLTS Jawa- Bali (Kuota) Tersebar XI (5) — Jawa Tengah Eksisting / Baru,PLTS Jawa- Bali (Kuota) Tersebar XI (5),Jawa Tengah Eksisting / Baru,150,New,2,SUTT,10.0,,Planned,Jawa Tengah,jamali,888,
+RUPTL-JAMALI-T-0249,PLTS Jawa- Bali (Kuota) Tersebar XI (6) — Jawa Tengah Eksisting / Baru,PLTS Jawa- Bali (Kuota) Tersebar XI (6),Jawa Tengah Eksisting / Baru,150,New,2,SUTT,10.0,,Planned,Jawa Tengah,jamali,888,
+RUPTL-JAMALI-T-0250,PLTS Jawa- Bali (Kuota) Tersebar XI (7) — Jawa Tengah Eksisting / Baru,PLTS Jawa- Bali (Kuota) Tersebar XI (7),Jawa Tengah Eksisting / Baru,150,New,2,SUTT,10.0,,Planned,Jawa Tengah,jamali,888,
+RUPTL-JAMALI-T-0251,PLTS Jawa- Bali (Kuota) Tersebar XI (8) — Jawa Tengah Eksisting / Baru,PLTS Jawa- Bali (Kuota) Tersebar XI (8),Jawa Tengah Eksisting / Baru,150,New,2,SUTT,10.0,,Planned,Jawa Tengah,jamali,888,
+RUPTL-JAMALI-T-0252,PLTP Dieng (FTP2) 1 — Jawa Tengah Eksisting / Baru,PLTP Dieng (FTP2) 1,Jawa Tengah Eksisting / Baru,150,New,2,SUTT,20.0,2033,Planned,Jawa Tengah,jamali,889,
+RUPTL-JAMALI-T-0253,PLTP Dieng (FTP2) 2 — Jawa Tengah Eksisting / Baru,PLTP Dieng (FTP2) 2,Jawa Tengah Eksisting / Baru,150,New,2,SUTT,20.0,2033,Planned,Jawa Tengah,jamali,889,
+RUPTL-JAMALI-T-0254,PLTP Dieng (FTP2) 3 — Jawa Tengah Eksisting / Baru,PLTP Dieng (FTP2) 3,Jawa Tengah Eksisting / Baru,150,New,2,SUTT,20.0,2033,Planned,Jawa Tengah,jamali,889,
+RUPTL-JAMALI-T-0255,PLTP Jawa- Bali (Kuota) Tersebar (3) — Jawa Tengah Eksisting / Baru,PLTP Jawa- Bali (Kuota) Tersebar (3),Jawa Tengah Eksisting / Baru,150,New,2,SUTT,20.0,2033,Planned,Jawa Tengah,jamali,889,
+RUPTL-JAMALI-T-0256,PLTP Jawa- Bali (Kuota) Tersebar (4) — Jawa Tengah Eksisting / Baru,PLTP Jawa- Bali (Kuota) Tersebar (4),Jawa Tengah Eksisting / Baru,150,New,2,SUTT,20.0,2033,Planned,Jawa Tengah,jamali,889,
+RUPTL-JAMALI-T-0257,PLTP Jawa- Bali (Kuota) Tersebar (2) — Jawa Tengah Eksisting / Baru,PLTP Jawa- Bali (Kuota) Tersebar (2),Jawa Tengah Eksisting / Baru,150,New,2,SUTT,4.0,2033,Planned,Jawa Tengah,jamali,889,
+RUPTL-JAMALI-T-0258,PLTP Jawa- Bali (Kuota) Tersebar (5) — Jawa Tengah Eksisting / Baru,PLTP Jawa- Bali (Kuota) Tersebar (5),Jawa Tengah Eksisting / Baru,150,New,2,SUTT,20.0,2033,Planned,Jawa Tengah,jamali,889,
+RUPTL-JAMALI-T-0259,PLTS Jawa Tengah (Kuota) VII — Jawa Tengah Eksisting / Baru,PLTS Jawa Tengah (Kuota) VII,Jawa Tengah Eksisting / Baru,150,New,2,SUTT,10.0,,Planned,Jawa Tengah,jamali,889,
+RUPTL-JAMALI-T-0260,PLTS Jawa- Bali (Kuota) Tersebar XII (1) — Jawa Tengah Eksisting / Baru,PLTS Jawa- Bali (Kuota) Tersebar XII (1),Jawa Tengah Eksisting / Baru,150,New,2,SUTT,10.0,,Planned,Jawa Tengah,jamali,889,
+RUPTL-JAMALI-T-0261,PLTS Jawa- Bali (Kuota) Tersebar XII (2) — Jawa Tengah Eksisting / Baru,PLTS Jawa- Bali (Kuota) Tersebar XII (2),Jawa Tengah Eksisting / Baru,150,New,2,SUTT,10.0,,Planned,Jawa Tengah,jamali,889,
+RUPTL-JAMALI-T-0262,PLTS Jawa- Bali (Kuota) Tersebar XII (3) — Jawa Tengah Eksisting / Baru,PLTS Jawa- Bali (Kuota) Tersebar XII (3),Jawa Tengah Eksisting / Baru,150,New,2,SUTT,10.0,,Planned,Jawa Tengah,jamali,889,
+RUPTL-JAMALI-T-0263,PLTS Jawa- Bali (Kuota) Tersebar XII (4) — Jawa Tengah Eksisting / Baru,PLTS Jawa- Bali (Kuota) Tersebar XII (4),Jawa Tengah Eksisting / Baru,150,New,2,SUTT,10.0,,Planned,Jawa Tengah,jamali,889,
+RUPTL-JAMALI-T-0264,PLTS Jawa- Bali (Kuota) Tersebar XII (5) — Jawa Tengah Eksisting / Baru,PLTS Jawa- Bali (Kuota) Tersebar XII (5),Jawa Tengah Eksisting / Baru,150,New,2,SUTT,10.0,,Planned,Jawa Tengah,jamali,889,
+RUPTL-JAMALI-T-0265,PLTS Jawa- Bali (Kuota) Tersebar XII (6) — Jawa Tengah Eksisting / Baru,PLTS Jawa- Bali (Kuota) Tersebar XII (6),Jawa Tengah Eksisting / Baru,150,New,2,SUTT,10.0,,Planned,Jawa Tengah,jamali,889,
+RUPTL-JAMALI-T-0266,PLTS Jawa- Bali (Kuota) Tersebar XII (7) — Jawa Tengah Eksisting / Baru,PLTS Jawa- Bali (Kuota) Tersebar XII (7),Jawa Tengah Eksisting / Baru,150,New,2,SUTT,10.0,,Planned,Jawa Tengah,jamali,889,
+RUPTL-JAMALI-T-0267,PLTS Jawa- Bali (Kuota) Tersebar XII (8) — Jawa Tengah Eksisting / Baru,PLTS Jawa- Bali (Kuota) Tersebar XII (8),Jawa Tengah Eksisting / Baru,150,New,2,SUTT,10.0,,Planned,Jawa Tengah,jamali,889,
+RUPTL-JAMALI-T-0268,BESS Jawa- Bali (Kuota) Tersebar IVC (1) — Jawa Tengah Eksisting / Baru,BESS Jawa- Bali (Kuota) Tersebar IVC (1),Jawa Tengah Eksisting / Baru,150,New,2,SUTT,10.0,,Planned,Jawa Tengah,jamali,889,
+RUPTL-JAMALI-T-0269,BESS Jawa- Bali (Kuota) Tersebar IVC (2) — Jawa Tengah Eksisting / Baru,BESS Jawa- Bali (Kuota) Tersebar IVC (2),Jawa Tengah Eksisting / Baru,150,New,2,SUTT,10.0,,Planned,Jawa Tengah,jamali,889,
+RUPTL-JAMALI-T-0270,PLTS Jawa Tengah (Kuota) VI — Jawa Tengah Eksisting,PLTS Jawa Tengah (Kuota) VI,Jawa Tengah Eksisting,150,New,2,SUTT,10.0,2034,Planned,Jawa Tengah,jamali,889,
+RUPTL-JAMALI-T-0271,PLTS Jawa Bali Tersebar XIII (1) — Jawa Tengah Eksisting,PLTS Jawa Bali Tersebar XIII (1),Jawa Tengah Eksisting,150,New,2,SUTT,10.0,,Planned,Jawa Tengah,jamali,890,Tabel B4.14
+RUPTL-JAMALI-T-0272,PLTS Jawa Bali Tersebar XIII (2) — Jawa Tengah Eksisting,PLTS Jawa Bali Tersebar XIII (2),Jawa Tengah Eksisting,150,New,2,SUTT,10.0,,Planned,Jawa Tengah,jamali,890,Tabel B4.14
+RUPTL-JAMALI-T-0273,PLTS Jawa Bali Tersebar XIII (3) — Jawa Tengah Eksisting,PLTS Jawa Bali Tersebar XIII (3),Jawa Tengah Eksisting,150,New,2,SUTT,10.0,,Planned,Jawa Tengah,jamali,890,Tabel B4.14
+RUPTL-JAMALI-T-0274,PLTS Jawa Bali Tersebar XIII (4) — Jawa Tengah Eksisting,PLTS Jawa Bali Tersebar XIII (4),Jawa Tengah Eksisting,150,New,2,SUTT,10.0,,Planned,Jawa Tengah,jamali,890,Tabel B4.14
+RUPTL-JAMALI-T-0275,PLTS Jawa Bali Tersebar XIII (5) — Jawa Tengah Eksisting,PLTS Jawa Bali Tersebar XIII (5),Jawa Tengah Eksisting,150,New,2,SUTT,10.0,,Planned,Jawa Tengah,jamali,890,Tabel B4.14
+RUPTL-JAMALI-T-0276,PLTS Jawa Bali Tersebar XIII (6) — Jawa Tengah Eksisting,PLTS Jawa Bali Tersebar XIII (6),Jawa Tengah Eksisting,150,New,2,SUTT,10.0,,Planned,Jawa Tengah,jamali,890,Tabel B4.14
+RUPTL-JAMALI-T-0277,PLTS Jawa Bali Tersebar XIII (7) — Jawa Tengah Eksisting,PLTS Jawa Bali Tersebar XIII (7),Jawa Tengah Eksisting,150,New,2,SUTT,10.0,,Planned,Jawa Tengah,jamali,890,Tabel B4.14
+RUPTL-JAMALI-T-0278,PLTS Jawa Bali Tersebar XIII (8) — Jawa Tengah Eksisting,PLTS Jawa Bali Tersebar XIII (8),Jawa Tengah Eksisting,150,New,2,SUTT,10.0,,Planned,Jawa Tengah,jamali,890,Tabel B4.14
+RUPTL-JAMALI-T-0279,Brebes II / Ketanggungan — Inc. (Brebes - CEP),Brebes II / Ketanggungan,Inc. (Brebes - CEP),150,New,4,SUTT,80.0,2027,Planned,Jawa Tengah,jamali,890,Tabel B4.14
+RUPTL-JAMALI-T-0280,Pandean Lamper II / Banget Ayu — Inc. (Tambak Lorok - Bawen),Pandean Lamper II / Banget Ayu,Inc. (Tambak Lorok - Bawen),150,New,2,SUTT,100.0,2027,Planned,Jawa Tengah,jamali,890,Tabel B4.14
+RUPTL-JAMALI-T-0281,BESS Jawa Tengah (Kuota) IIIC Total — Jawa Tengah Eksisting / Baru,BESS Jawa Tengah (Kuota) IIIC Total,Jawa Tengah Eksisting / Baru,150,New,2,SUTT,2611.0,,Planned,Jawa Tengah,jamali,890,Tabel B4.14
+RUPTL-JAMALI-T-0282,Kentungan II / Kalasan — Bantul,Kentungan II / Kalasan,Bantul,150,New,2,SUTT,30.0,2026,Planned,Daerah Istimewa Yogyakarta,jamali,902,Tabel B5.10
+RUPTL-JAMALI-T-0283,Pedan — Kentungan II / Kalasan,Pedan,Kentungan II / Kalasan,150,New,2,SUTT,63.2,2026,Planned,Daerah Istimewa Yogyakarta,jamali,902,Tabel B5.10
+RUPTL-JAMALI-T-0284,Bantul II / Tuksono — Inc. (Bantul - Wates | Purworejo),Bantul II / Tuksono,Inc. (Bantul - Wates | Purworejo),150,New,4,SUTT,4.0,2030,Planned,Daerah Istimewa Yogyakarta,jamali,902,Tabel B5.10
+RUPTL-JAMALI-T-0285,PLTB Jawa- Bali (Kuota) Tersebar I — DI Yogyakarta Eksisting / Baru,PLTB Jawa- Bali (Kuota) Tersebar I,DI Yogyakarta Eksisting / Baru,150,New,2,SUTT,46.0,2033,Planned,Daerah Istimewa Yogyakarta,jamali,902,Tabel B5.10
+RUPTL-JAMALI-T-0286,PLTB Jawa- Bali (Kuota) Tersebar II — DI Yogyakarta Eksisting / Baru,PLTB Jawa- Bali (Kuota) Tersebar II,DI Yogyakarta Eksisting / Baru,150,New,2,SUTT,10.0,,Planned,Daerah Istimewa Yogyakarta,jamali,902,Tabel B5.10
+RUPTL-JAMALI-T-0287,PLTB Jawa- Bali (Kuota) Tersebar III — DI Yogyakarta Eksisting / Baru,PLTB Jawa- Bali (Kuota) Tersebar III,DI Yogyakarta Eksisting / Baru,150,New,2,SUTT,10.0,,Planned,Daerah Istimewa Yogyakarta,jamali,902,Tabel B5.10
+RUPTL-JAMALI-T-0288,PLTB Jawa- Bali (Kuota) Tersebar IV Total — DI Yogyakarta Eksisting / Baru,PLTB Jawa- Bali (Kuota) Tersebar IV Total,DI Yogyakarta Eksisting / Baru,150,New,2,SUTT,107.0,,Planned,Daerah Istimewa Yogyakarta,jamali,902,Tabel B5.10
+RUPTL-JAMALI-T-0289,Bangil — Inc. (Paiton - Kediri),Bangil,Inc. (Paiton - Kediri),,New,4,SUTET,8.0,2025,Construction,Jawa Timur,jamali,918,Tabel B6.12
+RUPTL-JAMALI-T-0290,Bangil — Bulukandang,Bangil,Bulukandang,,,1,SUTT,27.8,2025,Construction,Jawa Timur,jamali,918,Tabel B6.12
+RUPTL-JAMALI-T-0291,Bangil — Lawang,Bangil,Lawang,,,1,SUTT,32.0,2025,Construction,Jawa Timur,jamali,918,Tabel B6.12
+RUPTL-JAMALI-T-0292,Bangil New — Inc. (Bangil - Gempol / New Porong),Bangil New,Inc. (Bangil - Gempol / New Porong),,New,4,SUTT,2.8,2025,Planned,Jawa Timur,jamali,918,Tabel B6.12
+RUPTL-JAMALI-T-0293,Bangil New — Inc. (Lawang - Bulu Kandang),Bangil New,Inc. (Lawang - Bulu Kandang),,New,2,SUTT,1.6,2025,Planned,Jawa Timur,jamali,918,Tabel B6.12
+RUPTL-JAMALI-T-0294,Bulukandang — Lawang,Bulukandang,Lawang,,,1,SUTT,20.9,2025,Construction,Jawa Timur,jamali,918,Tabel B6.12
+RUPTL-JAMALI-T-0295,Tx. Kebon Agung — Kebon Agung,Tx. Kebon Agung,Kebon Agung,,,2,SUTT,29.0,2025,Committed,Jawa Timur,jamali,918,Tabel B6.12
+RUPTL-JAMALI-T-0296,PLTP Ijen — Banyuwangi,PLTP Ijen,Banyuwangi,,New,2,SUTT,60.0,2025,Construction,Jawa Timur,jamali,918,Tabel B6.12
+RUPTL-JAMALI-T-0297,Bangkalan — T.22,Bangkalan,T.22,,New,2,SUTT,17.0,2025,Planned,Jawa Timur,jamali,919,
+RUPTL-JAMALI-T-0298,Kedinding — Tx. Bangkalan,Kedinding,Tx. Bangkalan,,New,2,SKTT,4.0,2025,Planned,Jawa Timur,jamali,919,
+RUPTL-JAMALI-T-0299,Kedinding — Tx. Kenjeran,Kedinding,Tx. Kenjeran,,New,1,SKTT,2.0,2025,Planned,Jawa Timur,jamali,919,
+RUPTL-JAMALI-T-0300,Kedinding — Tx. Ujung,Kedinding,Tx. Ujung,,New,1,SKTT,2.0,2025,Planned,Jawa Timur,jamali,919,
+RUPTL-JAMALI-T-0301,Babat / Baureno — Lamongan,Babat / Baureno,Lamongan,,,2,SUTT,63.0,2025,Construction,Jawa Timur,jamali,919,
+RUPTL-JAMALI-T-0302,Lamongan — Cerme,Lamongan,Cerme,,,2,SUTT,40.2,2025,Construction,Jawa Timur,jamali,919,
+RUPTL-JAMALI-T-0303,Paiton — T.11 Eksisting Grati,Paiton,T.11 Eksisting Grati,,New,2,SUTET,7.0,2025,Planned,Jawa Timur,jamali,919,
+RUPTL-JAMALI-T-0304,Kediri — Mojoagung,Kediri,Mojoagung,,,2,SUTT,98.0,2025,Construction,Jawa Timur,jamali,919,
+RUPTL-JAMALI-T-0305,PLTS Karangkates — Sutami,PLTS Karangkates,Sutami,,New,2,SUTT,10.0,2025,Construction,Jawa Timur,jamali,919,
+RUPTL-JAMALI-T-0306,Kediri — Tx. Mojoagung,Kediri,Tx. Mojoagung,,New,2,SUTT,2.0,2025,Planned,Jawa Timur,jamali,919,
+RUPTL-JAMALI-T-0307,Waru — Krian,Waru,Krian,,New,2,SUTET,45.0,2025,Construction,Jawa Timur,jamali,919,
+RUPTL-JAMALI-T-0308,Waru New — Waru,Waru New,Waru,,New,2,SKTT,1.0,2025,Planned,Jawa Timur,jamali,919,
+RUPTL-JAMALI-T-0309,Paiton — Watudodol / Kalipuro,Paiton,Watudodol / Kalipuro,,New,2,SUTET,262.0,2025,Construction,Jawa Timur,jamali,919,
+RUPTL-JAMALI-T-0310,Kalipuro New — Inc. (Situbondo - Banyuwangi),Kalipuro New,Inc. (Situbondo - Banyuwangi),,New,4,SUTT,20.0,2025,Construction,Jawa Timur,jamali,919,
+RUPTL-JAMALI-T-0311,Bangil — Inc. (Grati - Krian),Bangil,Inc. (Grati - Krian),,New,2,SUTET,10.0,2026,Planned,Jawa Timur,jamali,919,
+RUPTL-JAMALI-T-0312,New Porong — Tx. Bangil (T148A),New Porong,Tx. Bangil (T148A),,New,2,SUTT,23.2,2026,Construction,Jawa Timur,jamali,919,
+RUPTL-JAMALI-T-0313,Tx. Bangil (T148A) — Tx. Bangil New,Tx. Bangil (T148A),Tx. Bangil New,,New,2,SUTT,16.0,2026,Planned,Jawa Timur,jamali,919,
+RUPTL-JAMALI-T-0314,Tx. New Bangil — Blimbing Baru,Tx. New Bangil,Blimbing Baru,,New,2,SUTT,62.0,2026,Planned,Jawa Timur,jamali,919,
+RUPTL-JAMALI-T-0315,Bungah — Paciran,Bungah,Paciran,,New,2,SUTT,65.0,2026,Planned,Jawa Timur,jamali,919,
+RUPTL-JAMALI-T-0316,Tuban — Paciran,Tuban,Paciran,,New,2,SUTT,112.0,2026,Planned,Jawa Timur,jamali,919,
+RUPTL-JAMALI-T-0317,KI Tuban — Mliwang,KI Tuban,Mliwang,,New,2,SUTT,5.0,2026,Planned,Jawa Timur,jamali,919,
+RUPTL-JAMALI-T-0318,Wlingi II — Wlingi,Wlingi II,Wlingi,,New,2,SUTT,28.0,2026,Planned,Jawa Timur,jamali,919,
+RUPTL-JAMALI-T-0319,Madiun — Inc. (Pedan - Kediri),Madiun,Inc. (Pedan - Kediri),,New,4,SUTET,2.0,2026,Planned,Jawa Timur,jamali,919,
+RUPTL-JAMALI-T-0320,Madiun — Inc. (Ngawi - Manisrejo),Madiun,Inc. (Ngawi - Manisrejo),,New,4,SUTT,4.0,2026,Planned,Jawa Timur,jamali,920,
+RUPTL-JAMALI-T-0321,Manisrejo — Ngawi,Manisrejo,Ngawi,,,2,SUTT,64.6,2026,Planned,Jawa Timur,jamali,920,
+RUPTL-JAMALI-T-0322,Tx. Batu Marmar — Guluk Guluk,Tx. Batu Marmar,Guluk Guluk,,New,2,SUTT,66.0,2026,Planned,Jawa Timur,jamali,920,
+RUPTL-JAMALI-T-0323,Tx. Batu Marmar — Bangkalan,Tx. Batu Marmar,Bangkalan,,New,2,SUTT,185.0,2026,Planned,Jawa Timur,jamali,920,
+RUPTL-JAMALI-T-0324,Kertosono — Inc. (Kediri – Jayakertas),Kertosono,Inc. (Kediri – Jayakertas),,New,2,SUTT,1.0,2026,Planned,Jawa Timur,jamali,920,
+RUPTL-JAMALI-T-0325,Ngimbang — Inc. (Ungaran - Krian),Ngimbang,Inc. (Ungaran - Krian),,New,2,SUTET,2.0,2026,Planned,Jawa Timur,jamali,920,
+RUPTL-JAMALI-T-0326,PLTS+BESS Jawa Timur (Kuota) IVA — Jawa Timur Eksisting / Baru,PLTS+BESS Jawa Timur (Kuota) IVA,Jawa Timur Eksisting / Baru,,New,2,SUTT,20.0,2028,Planned,Jawa Timur,jamali,920,
+RUPTL-JAMALI-T-0327,PLTS+BESS Jawa Timur (Kuota) V — Jawa Timur Eksisting / Baru,PLTS+BESS Jawa Timur (Kuota) V,Jawa Timur Eksisting / Baru,,New,2,SUTT,11.0,2028,Planned,Jawa Timur,jamali,920,
+RUPTL-JAMALI-T-0328,PLTU Paiton II — Inc. (Paiton - Situbondo),PLTU Paiton II,Inc. (Paiton - Situbondo),,New,4,SUTT,4.0,2026,Planned,Jawa Timur,jamali,920,
+RUPTL-JAMALI-T-0329,Tuban — Kerek,Tuban,Kerek,,,2,SUTT,28.0,2026,Planned,Jawa Timur,jamali,920,
+RUPTL-JAMALI-T-0330,Caruban Baru — Manisrejo,Caruban Baru,Manisrejo,,New,2,SUTT,34.0,2026,Construction,Jawa Timur,jamali,920,
+RUPTL-JAMALI-T-0331,Caruban Baru — Tx. Nganjuk,Caruban Baru,Tx. Nganjuk,,New,2,SUTT,79.0,2026,Planned,Jawa Timur,jamali,920,
+RUPTL-JAMALI-T-0332,Tx. Nganjuk — Kertosono,Tx. Nganjuk,Kertosono,,New,2,SUTT,34.0,2026,Planned,Jawa Timur,jamali,920,
+RUPTL-JAMALI-T-0333,Jenu / TPPI — Mliwang,Jenu / TPPI,Mliwang,,New,2,SUTT,17.0,2026,Planned,Jawa Timur,jamali,920,
+RUPTL-JAMALI-T-0334,Genteng — BSI,Genteng,BSI,,New,2,SUTT,74.0,2027,Planned,Jawa Timur,jamali,920,
+RUPTL-JAMALI-T-0335,Genteng — Inc. (Jember - Banyuwangi),Genteng,Inc. (Jember - Banyuwangi),,New,2,SUTT,8.0,2027,Planned,Jawa Timur,jamali,920,
+RUPTL-JAMALI-T-0336,Dolopo Baru — Inc. (Manisrejo - Ponorogo),Dolopo Baru,Inc. (Manisrejo - Ponorogo),,New,4,SUTT,2.0,2027,Planned,Jawa Timur,jamali,920,
+RUPTL-JAMALI-T-0337,Kedinding — Kalisari,Kedinding,Kalisari,,New,2,SKTT,14.0,2027,Planned,Jawa Timur,jamali,920,
+RUPTL-JAMALI-T-0338,Manyar — Cerme,Manyar,Cerme,,,2,SUTT,15.3,2027,Planned,Jawa Timur,jamali,920,
+RUPTL-JAMALI-T-0339,Kalanganyar — Tx. Surabaya Selatan,Kalanganyar,Tx. Surabaya Selatan,,New,2,SKTT,37.0,2027,Planned,Jawa Timur,jamali,920,
+RUPTL-JAMALI-T-0340,Tx. Surabaya Selatan — Surabaya Selatan,Tx. Surabaya Selatan,Surabaya Selatan,,New,2,SUTT,11.0,2027,Planned,Jawa Timur,jamali,920,
+RUPTL-JAMALI-T-0341,Bangkalan — Sampang,Bangkalan,Sampang,,,2,SUTT,110.6,2027,Planned,Jawa Timur,jamali,920,
+RUPTL-JAMALI-T-0342,Magetan Baru — Dolopo Baru,Magetan Baru,Dolopo Baru,,New,2,SUTT,50.0,2027,Planned,Jawa Timur,jamali,920,
+RUPTL-JAMALI-T-0343,New Ngoro — Inc. (Bangil - Kediri),New Ngoro,Inc. (Bangil - Kediri),,New,4,SUTET,4.0,2027,Planned,Jawa Timur,jamali,921,
+RUPTL-JAMALI-T-0344,New Ngoro — Inc. (Sekarputih - Ngoro),New Ngoro,Inc. (Sekarputih - Ngoro),,New,4,SUTT,8.0,2027,Planned,Jawa Timur,jamali,921,
+RUPTL-JAMALI-T-0345,Ngoro — Sekarputih,Ngoro,Sekarputih,,,2,SUTT,44.0,2027,Planned,Jawa Timur,jamali,921,
+RUPTL-JAMALI-T-0346,Bulukandang — Inc. (Bangil – Lawang),Bulukandang,Inc. (Bangil – Lawang),,New,2,SUTT,6.0,2027,Planned,Jawa Timur,jamali,921,
+RUPTL-JAMALI-T-0347,Suryazigzag — Inc. (Banaran – New Nganjuk),Suryazigzag,Inc. (Banaran – New Nganjuk),,New,2,SUTT,3.0,2027,Planned,Jawa Timur,jamali,921,
+RUPTL-JAMALI-T-0348,Paiton Baru / Besuki — Inc. (Paiton - Situbondo),Paiton Baru / Besuki,Inc. (Paiton - Situbondo),,New,2,SUTT,5.0,2027,Planned,Jawa Timur,jamali,921,
+RUPTL-JAMALI-T-0349,Banyuwangi — Jember,Banyuwangi,Jember,,,1,SUTT,83.0,2027,Planned,Jawa Timur,jamali,921,
+RUPTL-JAMALI-T-0350,"Jember — Tx, Genteng",Jember,"Tx, Genteng",,,1,SUTT,66.9,2027,Planned,Jawa Timur,jamali,921,
+RUPTL-JAMALI-T-0351,Tx. Genteng — Banyuwangi,Tx. Genteng,Banyuwangi,,,1,SUTT,37.9,2027,Planned,Jawa Timur,jamali,921,
+RUPTL-JAMALI-T-0352,PLTGU Jawa-3 — Gresik,PLTGU Jawa-3,Gresik,,New,2,SUTET,2.0,2027,Planned,Jawa Timur,jamali,921,
+RUPTL-JAMALI-T-0353,Darmo Grande — Waru,Darmo Grande,Waru,,,2,SUTT,21.3,2027,Planned,Jawa Timur,jamali,921,
+RUPTL-JAMALI-T-0354,Krian — Darmo Grande,Krian,Darmo Grande,,,2,SUTT,9.1,2027,Planned,Jawa Timur,jamali,921,
+RUPTL-JAMALI-T-0355,Ujung — T.01 (Arah Perak),Ujung,T.01 (Arah Perak),,,2,SKTT,0.7,2027,Planned,Jawa Timur,jamali,921,
+RUPTL-JAMALI-T-0356,Kalanganyar — Grati,Kalanganyar,Grati,,New,2,SUTET,121.2,2027,Construction,Jawa Timur,jamali,921,
+RUPTL-JAMALI-T-0357,Kalanganyar Switching Point — LP Kalanganyar,Kalanganyar Switching Point,LP Kalanganyar,,New,2,SUTET,6.0,2027,Planned,Jawa Timur,jamali,921,
+RUPTL-JAMALI-T-0358,LP Gunung Anyar — Surabaya Selatan,LP Gunung Anyar,Surabaya Selatan,,New,2,SUTET,7.0,2027,Planned,Jawa Timur,jamali,921,
+RUPTL-JAMALI-T-0359,LP Kalanganyar — LP Gunung Anyar,LP Kalanganyar,LP Gunung Anyar,,New,2,SKLT,40.0,2027,Planned,Jawa Timur,jamali,921,
+RUPTL-JAMALI-T-0360,Rungkut — Surabaya Selatan,Rungkut,Surabaya Selatan,,New,2,SKTT,22.0,2027,Planned,Jawa Timur,jamali,921,
+RUPTL-JAMALI-T-0361,Waru — Rungkut,Waru,Rungkut,,New,2,SKTT,12.0,2027,Planned,Jawa Timur,jamali,921,
+RUPTL-JAMALI-T-0362,Tanjung Awar-Awar — Ngimbang,Tanjung Awar-Awar,Ngimbang,,New,2,SUTET,126.0,2028,Planned,Jawa Timur,jamali,921,
+RUPTL-JAMALI-T-0363,Tanjung Awar-Awar — New Tanjung Awar-Awar,Tanjung Awar-Awar,New Tanjung Awar-Awar,,New,2,SKTT,0.6,2028,Planned,Jawa Timur,jamali,921,
+RUPTL-JAMALI-T-0364,Tanjung Awar-Awar — NGRR,Tanjung Awar-Awar,NGRR,,New,2,SKTT,1.3,2028,Planned,Jawa Timur,jamali,921,
+RUPTL-JAMALI-T-0365,Tanjung Awar-Awar — Tuban,Tanjung Awar-Awar,Tuban,,New,2,SKTT,1.0,2028,Planned,Jawa Timur,jamali,921,
+RUPTL-JAMALI-T-0366,Ngimbang — Lamongan,Ngimbang,Lamongan,,New,2,SUTT,62.0,2028,Planned,Jawa Timur,jamali,922,
+RUPTL-JAMALI-T-0367,Gresik Baru — Tx. Sawahan,Gresik Baru,Tx. Sawahan,,New,2,SUTT,20.0,2028,Planned,Jawa Timur,jamali,922,
+RUPTL-JAMALI-T-0368,Tx. Sawahan — Sawahan II,Tx. Sawahan,Sawahan II,,New,2,SKTT,16.0,2028,Planned,Jawa Timur,jamali,922,
+RUPTL-JAMALI-T-0369,Jember II / Arjasa — Inc. (Bondowoso - Jember),Jember II / Arjasa,Inc. (Bondowoso - Jember),,New,4,SUTT,20.0,2028,Planned,Jawa Timur,jamali,922,
+RUPTL-JAMALI-T-0370,Cerme — Segoromadu,Cerme,Segoromadu,,,2,SUTT,19.0,2028,Planned,Jawa Timur,jamali,922,
+RUPTL-JAMALI-T-0371,New Tanjung Awar - Awar — Jenu,New Tanjung Awar - Awar,Jenu,,New,2,SKTT,24.0,2028,Planned,Jawa Timur,jamali,922,
+RUPTL-JAMALI-T-0372,Ngoro — New Porong,Ngoro,New Porong,,New,2,SUTT,20.0,2028,Planned,Jawa Timur,jamali,922,
+RUPTL-JAMALI-T-0373,Pamekasan — Guluk Guluk,Pamekasan,Guluk Guluk,,,2,SUTT,57.0,2028,Planned,Jawa Timur,jamali,922,
+RUPTL-JAMALI-T-0374,Sampang — Pamekasan,Sampang,Pamekasan,,,2,SUTT,53.4,2028,Planned,Jawa Timur,jamali,922,
+RUPTL-JAMALI-T-0375,Wlingi — Sutami,Wlingi,Sutami,,New,2,SUTT,48.0,2028,Planned,Jawa Timur,jamali,922,
+RUPTL-JAMALI-T-0376,Mojoagung — Sekarputih,Mojoagung,Sekarputih,,,2,SUTT,22.0,2028,Planned,Jawa Timur,jamali,922,
+RUPTL-JAMALI-T-0377,Guluk Guluk — Sumenep,Guluk Guluk,Sumenep,,,2,SUTT,36.9,2028,Planned,Jawa Timur,jamali,922,
+RUPTL-JAMALI-T-0378,PLTG / GU Madura — Guluk Guluk,PLTG / GU Madura,Guluk Guluk,,New,2,SUTT,46.0,2028,Planned,Jawa Timur,jamali,922,
+RUPTL-JAMALI-T-0379,Kerek — Mliwang,Kerek,Mliwang,,,2,SUTT,18.0,2028,Planned,Jawa Timur,jamali,922,
+RUPTL-JAMALI-T-0380,Waru — Buduran,Waru,Buduran,,,2,SUTT,21.0,2028,Planned,Jawa Timur,jamali,922,
+RUPTL-JAMALI-T-0381,Blitar — Inc. (tulungagung II - Wlingi II),Blitar,Inc. (tulungagung II - Wlingi II),,New,4,SUTT,1.0,2028,Planned,Jawa Timur,jamali,922,
+RUPTL-JAMALI-T-0382,Surabaya Selatan — Waru Switching Point,Surabaya Selatan,Waru Switching Point,,New,2,SUTET,28.0,2029,Planned,Jawa Timur,jamali,922,
+RUPTL-JAMALI-T-0383,Mantingan — Inc. (Sragen - Ngawi),Mantingan,Inc. (Sragen - Ngawi),,New,4,SUTT,20.0,2029,Planned,Jawa Timur,jamali,922,
+RUPTL-JAMALI-T-0384,Tandes — Sawahan,Tandes,Sawahan,,,2,SUTT,6.0,2029,Planned,Jawa Timur,jamali,922,
+RUPTL-JAMALI-T-0385,Grati — Gondangwetan,Grati,Gondangwetan,,,2,SUTT,42.0,2029,Planned,Jawa Timur,jamali,922,
+RUPTL-JAMALI-T-0386,Tanjung Bumi — Inc. (Bangkalan - Batu Marmar),Tanjung Bumi,Inc. (Bangkalan - Batu Marmar),,New,4,SUTT,20.0,2029,Planned,Jawa Timur,jamali,922,
+RUPTL-JAMALI-T-0387,Landing Point Banyuwangi — Gilimanuk,Landing Point Banyuwangi,Gilimanuk,,New,2,SKLT,13.0,2030,Planned,Jawa Timur,jamali,922,
+RUPTL-JAMALI-T-0388,Watudodol / Kalipuro — Landing Point Banyuwangi,Watudodol / Kalipuro,Landing Point Banyuwangi,,New,2,SUTET,9.6,2030,Planned,Jawa Timur,jamali,922,
+RUPTL-JAMALI-T-0389,Kalanganyar — Buduran,Kalanganyar,Buduran,,New,2,SKTT,9.0,2030,Planned,Jawa Timur,jamali,923,
+RUPTL-JAMALI-T-0390,Kediri — Jayakertas,Kediri,Jayakertas,,,1,SUTT,32.0,2030,Planned,Jawa Timur,jamali,923,
+RUPTL-JAMALI-T-0391,Kediri — Kertosono,Kediri,Kertosono,,,1,SUTT,30.4,2030,Planned,Jawa Timur,jamali,923,
+RUPTL-JAMALI-T-0392,Kertosono — Jayakertas,Kertosono,Jayakertas,,,1,SUTT,1.0,2030,Planned,Jawa Timur,jamali,923,
+RUPTL-JAMALI-T-0393,Undaan — Kenjeran,Undaan,Kenjeran,,New,2,SKTT,10.0,2030,Planned,Jawa Timur,jamali,923,
+RUPTL-JAMALI-T-0394,Wonokromo — Kupang,Wonokromo,Kupang,,New,2,SKTT,16.0,2030,Planned,Jawa Timur,jamali,923,
+RUPTL-JAMALI-T-0395,Undaan — Simpang,Undaan,Simpang,,New,2,SKTT,10.0,2030,Planned,Jawa Timur,jamali,923,
+RUPTL-JAMALI-T-0396,Probolinggo — Gondangwetan,Probolinggo,Gondangwetan,,,2,SUTT,68.0,2030,Planned,Jawa Timur,jamali,923,
+RUPTL-JAMALI-T-0397,Sekarputih II / Gondang — Inc. (Sekarputih - Ngoro),Sekarputih II / Gondang,Inc. (Sekarputih - Ngoro),,New,4,SUTT,8.0,2030,Planned,Jawa Timur,jamali,923,
+RUPTL-JAMALI-T-0398,PLTP Wilis / Ngebel — Dolopo Baru,PLTP Wilis / Ngebel,Dolopo Baru,,New,2,SUTT,50.0,2030,Planned,Jawa Timur,jamali,923,
+RUPTL-JAMALI-T-0399,Wonoayu — Balongbendo,Wonoayu,Balongbendo,,New,2,SUTT,20.0,2031,Planned,Jawa Timur,jamali,923,
+RUPTL-JAMALI-T-0400,Ponorogo — Trenggalek Baru,Ponorogo,Trenggalek Baru,,New,2,SUTT,70.0,2032,Planned,Jawa Timur,jamali,923,
+RUPTL-JAMALI-T-0401,Trenggalek Baru — PLTU Pacitan,Trenggalek Baru,PLTU Pacitan,,New,2,SUTT,84.0,2032,Planned,Jawa Timur,jamali,923,
+RUPTL-JAMALI-T-0402,Balong Panggang — Kasih Jatim,Balong Panggang,Kasih Jatim,,New,2,SUTT,70.0,2033,Planned,Jawa Timur,jamali,923,
+RUPTL-JAMALI-T-0403,Rembang — Tanjung Awar- Awar,Rembang,Tanjung Awar- Awar,,New,2,SUTET,340.0,2033,Planned,Jawa Timur,jamali,923,
+RUPTL-JAMALI-T-0404,Grindulu PLTA PS — Grindulu Switching,Grindulu PLTA PS,Grindulu Switching,,New,2,SUTET,182.0,2033,Planned,Jawa Timur,jamali,923,
+RUPTL-JAMALI-T-0405,Grindulu Switching — Inc. (Pedan - Kediri),Grindulu Switching,Inc. (Pedan - Kediri),,New,4,SUTET,20.0,2033,Planned,Jawa Timur,jamali,923,
+RUPTL-JAMALI-T-0406,Tunjungan — Simpang,Tunjungan,Simpang,,New,2,SKTT,20.0,2033,Planned,Jawa Timur,jamali,923,
+RUPTL-JAMALI-T-0407,Tunjungan — Undaan,Tunjungan,Undaan,,New,2,SKTT,20.0,2033,Planned,Jawa Timur,jamali,923,
+RUPTL-JAMALI-T-0408,Probolinggo II / Tongas — Inc. (Probolinggo - Gondangwetan),Probolinggo II / Tongas,Inc. (Probolinggo - Gondangwetan),,New,4,SUTT,12.0,2034,Planned,Jawa Timur,jamali,923,
+RUPTL-JAMALI-T-0409,Sidoarjo II — KIS,Sidoarjo II,KIS,,New,2,SUTT,10.0,2034,Planned,Jawa Timur,jamali,923,
+RUPTL-JAMALI-T-0410,PLTS Jawa Timur (Kuota) IIA — Jawa Timur Eksisting / Baru,PLTS Jawa Timur (Kuota) IIA,Jawa Timur Eksisting / Baru,,New,2,SUTT,1.0,2025,Planned,Jawa Timur,jamali,923,
+RUPTL-JAMALI-T-0411,PLTS Jawa Timur (Kuota) IIB — Jawa Timur Eksisting / Baru,PLTS Jawa Timur (Kuota) IIB,Jawa Timur Eksisting / Baru,,New,2,SUTT,48.6,2025,Planned,Jawa Timur,jamali,923,
+RUPTL-JAMALI-T-0412,PLTS Jawa Timur (Kuota) IVD — Jawa Timur Eksisiting / Baru,PLTS Jawa Timur (Kuota) IVD,Jawa Timur Eksisiting / Baru,,New,2,SUTT,2.6,2025,Planned,Jawa Timur,jamali,924,
+RUPTL-JAMALI-T-0413,PLTS Jawa- Bali (Kuota) Tersebar XI — Jawa Timur Eksisting / Baru,PLTS Jawa- Bali (Kuota) Tersebar XI,Jawa Timur Eksisting / Baru,,New,2,SUTT,10.0,2034,Planned,Jawa Timur,jamali,924,
+RUPTL-JAMALI-T-0414,BESS Smoothing Tersebar (1) — Jawa Timur Eksisting / Baru,BESS Smoothing Tersebar (1),Jawa Timur Eksisting / Baru,,New,2,SUTT,2.6,,Planned,Jawa Timur,jamali,924,
+RUPTL-JAMALI-T-0415,BESS Smoothing Tersebar (2) — Jawa Timur Eksisting / Baru,BESS Smoothing Tersebar (2),Jawa Timur Eksisting / Baru,,New,2,SUTT,2.6,,Planned,Jawa Timur,jamali,924,
+RUPTL-JAMALI-T-0416,PLTB Jawa- Bali (Kuota) Tersebar I — Jawa Timur Eksisting / Baru,PLTB Jawa- Bali (Kuota) Tersebar I,Jawa Timur Eksisting / Baru,,New,2,SUTT,10.0,2033,Planned,Jawa Timur,jamali,924,
+RUPTL-JAMALI-T-0417,PLTS Jawa Timur (Kuota) I — Jawa Timur Eksisiting / Baru,PLTS Jawa Timur (Kuota) I,Jawa Timur Eksisiting / Baru,,New,2,SUTT,2.6,2027,Planned,Jawa Timur,jamali,924,
+RUPTL-JAMALI-T-0418,PLTG Jawa Bali-4 — Jawa Timur Eksisting / Baru,PLTG Jawa Bali-4,Jawa Timur Eksisting / Baru,,New,2,SUTT,20.0,2029,Planned,Jawa Timur,jamali,924,
+RUPTL-JAMALI-T-0419,PLTS Jawa Timur (Kuota) VI — Jawa Timur Eksisting / Baru,PLTS Jawa Timur (Kuota) VI,Jawa Timur Eksisting / Baru,,New,2,SUTT,10.0,2030,Planned,Jawa Timur,jamali,924,
+RUPTL-JAMALI-T-0420,PLTB Jawa- Bali (Kuota) Tersebar II — Jawa Timur Eksisting / Baru,PLTB Jawa- Bali (Kuota) Tersebar II,Jawa Timur Eksisting / Baru,,New,2,SUTT,10.0,2030,Planned,Jawa Timur,jamali,924,
+RUPTL-JAMALI-T-0421,PLTB Jawa- Bali (Kuota) Tersebar III (1) — Jawa Timur Eksisting / Baru,PLTB Jawa- Bali (Kuota) Tersebar III (1),Jawa Timur Eksisting / Baru,,New,2,SUTT,10.0,,Planned,Jawa Timur,jamali,924,
+RUPTL-JAMALI-T-0422,PLTB Jawa- Bali (Kuota) Tersebar IV (1) — Jawa Timur Eksisting / Baru,PLTB Jawa- Bali (Kuota) Tersebar IV (1),Jawa Timur Eksisting / Baru,,New,2,SUTT,10.0,,Planned,Jawa Timur,jamali,924,
+RUPTL-JAMALI-T-0423,PLTB Jawa- Bali (Kuota) Tersebar V (1) — Jawa Timur Eksisting / Baru,PLTB Jawa- Bali (Kuota) Tersebar V (1),Jawa Timur Eksisting / Baru,,New,2,SUTT,10.0,,Planned,Jawa Timur,jamali,924,
+RUPTL-JAMALI-T-0424,PLTP Telaga Ngebel (FTP2) 1 — Jawa Timur Eksisting / Baru,PLTP Telaga Ngebel (FTP2) 1,Jawa Timur Eksisting / Baru,,New,2,SUTT,20.0,2030,Planned,Jawa Timur,jamali,924,
+RUPTL-JAMALI-T-0425,PLTS Jawa Timur (Kuota) VII — Jawa Timur Eksisting / Baru,PLTS Jawa Timur (Kuota) VII,Jawa Timur Eksisting / Baru,,New,2,SUTT,10.0,,Planned,Jawa Timur,jamali,924,
+RUPTL-JAMALI-T-0426,PLTS Jawa Timur (Kuota) VIII — Jawa Timur Eksisting / Baru,PLTS Jawa Timur (Kuota) VIII,Jawa Timur Eksisting / Baru,,New,2,SUTT,10.0,2034,Planned,Jawa Timur,jamali,924,
+RUPTL-JAMALI-T-0427,PLTS Jawa- Bali (Kuota) Tersebar XII (1) — Jawa Timur Eksisting / Baru,PLTS Jawa- Bali (Kuota) Tersebar XII (1),Jawa Timur Eksisting / Baru,,New,2,SUTT,10.0,,Planned,Jawa Timur,jamali,924,
+RUPTL-JAMALI-T-0428,PLTS Jawa- Bali (Kuota) Tersebar XII (2) — Jawa Timur Eksisting / Baru,PLTS Jawa- Bali (Kuota) Tersebar XII (2),Jawa Timur Eksisting / Baru,,New,2,SUTT,10.0,,Planned,Jawa Timur,jamali,924,
+RUPTL-JAMALI-T-0429,PLTS Jawa- Bali (Kuota) Tersebar XII (3) — Jawa Timur Eksisting / Baru,PLTS Jawa- Bali (Kuota) Tersebar XII (3),Jawa Timur Eksisting / Baru,,New,2,SUTT,10.0,,Planned,Jawa Timur,jamali,924,
+RUPTL-JAMALI-T-0430,PLTS Jawa- Bali (Kuota) Tersebar XII (4) — Jawa Timur Eksisting / Baru,PLTS Jawa- Bali (Kuota) Tersebar XII (4),Jawa Timur Eksisting / Baru,,New,2,SUTT,10.0,,Planned,Jawa Timur,jamali,924,
+RUPTL-JAMALI-T-0431,PLTS Jawa- Bali (Kuota) Tersebar XII (5) — Jawa Timur Eksisting / Baru,PLTS Jawa- Bali (Kuota) Tersebar XII (5),Jawa Timur Eksisting / Baru,,New,2,SUTT,10.0,,Planned,Jawa Timur,jamali,924,
+RUPTL-JAMALI-T-0432,BESS Smoothing Tersebar (1) — Jawa Timur Eksisting / Baru,BESS Smoothing Tersebar (1),Jawa Timur Eksisting / Baru,,New,2,SUTT,2.6,,Planned,Jawa Timur,jamali,925,
+RUPTL-JAMALI-T-0433,BESS Smoothing Tersebar (2) — Jawa Timur Eksisting / Baru,BESS Smoothing Tersebar (2),Jawa Timur Eksisting / Baru,,New,2,SUTT,2.6,,Planned,Jawa Timur,jamali,925,
+RUPTL-JAMALI-T-0434,BESS Smoothing Tersebar (1) — Jawa Timur Eksisting / Baru,BESS Smoothing Tersebar (1),Jawa Timur Eksisting / Baru,,New,2,SUTT,2.6,,Planned,Jawa Timur,jamali,925,
+RUPTL-JAMALI-T-0435,BESS Smoothing Tersebar (2) — Jawa Timur Eksisting / Baru,BESS Smoothing Tersebar (2),Jawa Timur Eksisting / Baru,,New,2,SUTT,2.6,,Planned,Jawa Timur,jamali,925,
+RUPTL-JAMALI-T-0436,PLTB Jawa- Bali (Kuota) Tersebar VI — Jawa Timur Eksisting / Baru,PLTB Jawa- Bali (Kuota) Tersebar VI,Jawa Timur Eksisting / Baru,,New,2,SUTT,10.0,,Planned,Jawa Timur,jamali,925,
+RUPTL-JAMALI-T-0437,PLTB Jawa- Bali (Kuota) Tersebar VII — Jawa Timur Eksisting / Baru,PLTB Jawa- Bali (Kuota) Tersebar VII,Jawa Timur Eksisting / Baru,,New,2,SUTT,10.0,,Planned,Jawa Timur,jamali,925,
+RUPTL-JAMALI-T-0438,PLTP Telaga Ngebel (FTP2) 2 — Jawa Timur Eksisting / Baru,PLTP Telaga Ngebel (FTP2) 2,Jawa Timur Eksisting / Baru,,New,2,SUTT,20.0,2031,Planned,Jawa Timur,jamali,925,
+RUPTL-JAMALI-T-0439,PLTP Telaga Ngebel (FTP2) 3 — Jawa Timur Eksisting / Baru,PLTP Telaga Ngebel (FTP2) 3,Jawa Timur Eksisting / Baru,,New,2,SUTT,20.0,2031,Planned,Jawa Timur,jamali,925,
+RUPTL-JAMALI-T-0440,PLTS Jawa Timur (Kuota) IX — Jawa Timur Eksisting / Baru,PLTS Jawa Timur (Kuota) IX,Jawa Timur Eksisting / Baru,,New,2,SUTT,10.0,,Planned,Jawa Timur,jamali,925,
+RUPTL-JAMALI-T-0441,PLTB Jawa- Bali (Kuota) Tersebar VIII — Jawa Timur Eksisting / Baru,PLTB Jawa- Bali (Kuota) Tersebar VIII,Jawa Timur Eksisting / Baru,,New,2,SUTT,10.0,,Planned,Jawa Timur,jamali,925,
+RUPTL-JAMALI-T-0442,PLTP Jawa- Bali (Kuota) Tersebar — Jawa Timur Eksisting / Baru,PLTP Jawa- Bali (Kuota) Tersebar,Jawa Timur Eksisting / Baru,,New,2,SUTT,74.0,2032,Planned,Jawa Timur,jamali,925,
+RUPTL-JAMALI-T-0443,PLTS Jawa Timur (Kuota) X — Jawa Timur Eksisting / Baru,PLTS Jawa Timur (Kuota) X,Jawa Timur Eksisting / Baru,,New,2,SUTT,10.0,,Planned,Jawa Timur,jamali,925,
+RUPTL-JAMALI-T-0444,PLTB Jawa- Bali (Kuota) Tersebar IX (1) — Jawa Timur Eksisting / Baru,PLTB Jawa- Bali (Kuota) Tersebar IX (1),Jawa Timur Eksisting / Baru,,New,2,SUTT,10.0,,Planned,Jawa Timur,jamali,925,
+RUPTL-JAMALI-T-0445,PLTB Jawa- Bali (Kuota) Tersebar X (1) — Jawa Timur Eksisting / Baru,PLTB Jawa- Bali (Kuota) Tersebar X (1),Jawa Timur Eksisting / Baru,,New,2,SUTT,10.0,,Planned,Jawa Timur,jamali,925,
+RUPTL-JAMALI-T-0446,PLTB Jawa- Bali (Kuota) Tersebar XI (1) — Jawa Timur Eksisting / Baru,PLTB Jawa- Bali (Kuota) Tersebar XI (1),Jawa Timur Eksisting / Baru,,New,2,SUTT,10.0,,Planned,Jawa Timur,jamali,925,
+RUPTL-JAMALI-T-0447,PLTB Jawa- Bali (Kuota) Tersebar XII (1) — Jawa Timur Eksisting / Baru,PLTB Jawa- Bali (Kuota) Tersebar XII (1),Jawa Timur Eksisting / Baru,,New,2,SUTT,10.0,,Planned,Jawa Timur,jamali,925,
+RUPTL-JAMALI-T-0448,PLTP Jawa- Bali (Kuota) Tersebar — Jawa Timur Eksisting / Baru,PLTP Jawa- Bali (Kuota) Tersebar,Jawa Timur Eksisting / Baru,,New,2,SUTT,60.0,2033,Planned,Jawa Timur,jamali,925,
+RUPTL-JAMALI-T-0449,PLTP Jawa- Bali (Kuota) Tersebar — Jawa Timur Eksisting / Baru,PLTP Jawa- Bali (Kuota) Tersebar,Jawa Timur Eksisting / Baru,,New,2,SUTT,20.0,2033,Planned,Jawa Timur,jamali,925,
+RUPTL-JAMALI-T-0450,PLTP Jawa- Bali (Kuota) Tersebar — Jawa Timur Eksisting / Baru,PLTP Jawa- Bali (Kuota) Tersebar,Jawa Timur Eksisting / Baru,,New,2,SUTT,60.0,2033,Planned,Jawa Timur,jamali,925,
+RUPTL-JAMALI-T-0451,PLTP Jawa- Bali (Kuota) Tersebar — Jawa Timur Eksisting / Baru,PLTP Jawa- Bali (Kuota) Tersebar,Jawa Timur Eksisting / Baru,,New,2,SUTT,10.0,2033,Planned,Jawa Timur,jamali,925,
+RUPTL-JAMALI-T-0452,PLTS Jawa- Bali (Kuota) Tersebar XIII (1) — Jawa Timur Eksisting / Baru,PLTS Jawa- Bali (Kuota) Tersebar XIII (1),Jawa Timur Eksisting / Baru,,New,2,SUTT,10.0,,Planned,Jawa Timur,jamali,925,
+RUPTL-JAMALI-T-0453,PLTS Jawa- Bali (Kuota) Tersebar XIII (2) — Jawa Timur Eksisting / Baru,PLTS Jawa- Bali (Kuota) Tersebar XIII (2),Jawa Timur Eksisting / Baru,,New,2,SUTT,10.0,,Planned,Jawa Timur,jamali,926,
+RUPTL-JAMALI-T-0454,PLTS Jawa- Bali (Kuota) Tersebar XIII (3) — Jawa Timur Eksisting / Baru,PLTS Jawa- Bali (Kuota) Tersebar XIII (3),Jawa Timur Eksisting / Baru,,New,2,SUTT,10.0,,Planned,Jawa Timur,jamali,926,
+RUPTL-JAMALI-T-0455,PLTS Jawa- Bali (Kuota) Tersebar XIII (4) — Jawa Timur Eksisting / Baru,PLTS Jawa- Bali (Kuota) Tersebar XIII (4),Jawa Timur Eksisting / Baru,,New,2,SUTT,10.0,,Planned,Jawa Timur,jamali,926,
+RUPTL-JAMALI-T-0456,PLTS Jawa- Bali (Kuota) Tersebar XIII (5) — Jawa Timur Eksisting / Baru,PLTS Jawa- Bali (Kuota) Tersebar XIII (5),Jawa Timur Eksisting / Baru,,New,2,SUTT,10.0,,Planned,Jawa Timur,jamali,926,
+RUPTL-JAMALI-T-0457,BESS Smoothing Tersebar (1) — Jawa Timur Eksisting / Baru,BESS Smoothing Tersebar (1),Jawa Timur Eksisting / Baru,,New,2,SUTT,2.6,2034,Planned,Jawa Timur,jamali,926,
+RUPTL-JAMALI-T-0458,BESS Smoothing Tersebar (2) — Jawa Timur Eksisting / Baru,BESS Smoothing Tersebar (2),Jawa Timur Eksisting / Baru,,New,2,SUTT,2.6,2034,Planned,Jawa Timur,jamali,926,
+RUPTL-JAMALI-T-0459,Lumajang — Tanggul,Lumajang,Tanggul,,,2,SUTT,65.0,2026,Planned,Jawa Timur,jamali,926,
+RUPTL-JAMALI-T-0460,Tanggul — Jember,Tanggul,Jember,,,2,SUTT,58.8,2026,Planned,Jawa Timur,jamali,926,
+RUPTL-JAMALI-T-0461,Paiton — Situbondo,Paiton,Situbondo,,,2,SUTT,107.6,2026,Planned,Jawa Timur,jamali,926,
+RUPTL-JAMALI-T-0462,Driyorejo II / Wringinanom — Inc. (Krian - Driyorejo),Driyorejo II / Wringinanom,Inc. (Krian - Driyorejo),,New,4,SUTT,20.0,2026,Planned,Jawa Timur,jamali,926,
+RUPTL-JAMALI-T-0463,Sukorejo — Inc. (Blimbing baru - New Bangil),Sukorejo,Inc. (Blimbing baru - New Bangil),,New,4,SUTT,2.0,2027,Planned,Jawa Timur,jamali,926,
+RUPTL-JAMALI-T-0464,Blimbing Baru — Tx. Kebon Agung,Blimbing Baru,Tx. Kebon Agung,,New,2,SUTT,45.4,2027,Planned,Jawa Timur,jamali,926,
+RUPTL-JAMALI-T-0465,Sengkaling — Tx. Lawang,Sengkaling,Tx. Lawang,,New,2,SUTT,16.0,2027,Planned,Jawa Timur,jamali,926,
+RUPTL-JAMALI-T-0466,Menganti — Inc. (Krian - Altaprima),Menganti,Inc. (Krian - Altaprima),,New,4,SUTT,20.0,2029,Planned,Jawa Timur,jamali,926,
+RUPTL-JAMALI-T-0467,Dhanapura — Inc. (Banaran - Manisrejo),Dhanapura,Inc. (Banaran - Manisrejo),,New,4,SUTT,5.8,2030,Planned,Jawa Timur,jamali,926,
+RUPTL-JAMALI-T-0468,Pier II — Inc. (Grati - Pier),Pier II,Inc. (Grati - Pier),,New,4,SUTT,10.0,2030,Planned,Jawa Timur,jamali,926,
+RUPTL-JAMALI-T-0469,PLTS Jawa Timur (Kuota) IVB — Jawa Timur Eksisting / Baru,PLTS Jawa Timur (Kuota) IVB,Jawa Timur Eksisting / Baru,,New,2,SUTT,32.0,2027,Planned,Jawa Timur,jamali,926,
+RUPTL-JAMALI-T-0470,PLTS Jawa Timur (Kuota) IVC — Jawa Timur Eksisting / Baru,PLTS Jawa Timur (Kuota) IVC,Jawa Timur Eksisting / Baru,,New,2,SUTT,2.6,2028,Planned,Jawa Timur,jamali,926,
+RUPTL-JAMALI-T-0471,PLTB Jawa- Bali (Kuota) Tersebar III (2) — Jawa Timur Eksisting / Baru,PLTB Jawa- Bali (Kuota) Tersebar III (2),Jawa Timur Eksisting / Baru,,New,2,SUTT,10.0,,Planned,Jawa Timur,jamali,926,
+RUPTL-JAMALI-T-0472,PLTB Jawa- Bali (Kuota) Tersebar IV (2) — Jawa Timur Eksisting / Baru,PLTB Jawa- Bali (Kuota) Tersebar IV (2),Jawa Timur Eksisting / Baru,,New,2,SUTT,10.0,,Planned,Jawa Timur,jamali,926,
+RUPTL-JAMALI-T-0473,PLTB Jawa- Bali (Kuota) Tersebar V (2) — Jawa Timur Eksisting / Baru,PLTB Jawa- Bali (Kuota) Tersebar V (2),Jawa Timur Eksisting / Baru,,New,2,SUTT,10.0,,Planned,Jawa Timur,jamali,927,
+RUPTL-JAMALI-T-0474,PLTS Jawa- Bali (Kuota) Tersebar XII (1) — Jawa Timur Eksisting / Baru,PLTS Jawa- Bali (Kuota) Tersebar XII (1),Jawa Timur Eksisting / Baru,,New,2,SUTT,10.0,,Planned,Jawa Timur,jamali,927,
+RUPTL-JAMALI-T-0475,PLTS Jawa- Bali (Kuota) Tersebar XII (2) — Jawa Timur Eksisting / Baru,PLTS Jawa- Bali (Kuota) Tersebar XII (2),Jawa Timur Eksisting / Baru,,New,2,SUTT,10.0,,Planned,Jawa Timur,jamali,927,
+RUPTL-JAMALI-T-0476,PLTS Jawa- Bali (Kuota) Tersebar XII (3) — Jawa Timur Eksisting / Baru,PLTS Jawa- Bali (Kuota) Tersebar XII (3),Jawa Timur Eksisting / Baru,,New,2,SUTT,10.0,,Planned,Jawa Timur,jamali,927,
+RUPTL-JAMALI-T-0477,PLTS Jawa- Bali (Kuota) Tersebar XII (4) — Jawa Timur Eksisting / Baru,PLTS Jawa- Bali (Kuota) Tersebar XII (4),Jawa Timur Eksisting / Baru,,New,2,SUTT,10.0,,Planned,Jawa Timur,jamali,927,
+RUPTL-JAMALI-T-0478,PLTS Jawa- Bali (Kuota) Tersebar XII (5) — Jawa Timur Eksisting / Baru,PLTS Jawa- Bali (Kuota) Tersebar XII (5),Jawa Timur Eksisting / Baru,,New,2,SUTT,10.0,,Planned,Jawa Timur,jamali,927,
+RUPTL-JAMALI-T-0479,BESS Jawa- Bali (Kuota) Tersebar IIID (1) — Jawa Timur Eksisting / Baru,BESS Jawa- Bali (Kuota) Tersebar IIID (1),Jawa Timur Eksisting / Baru,,New,2,SUTT,2.6,,Planned,Jawa Timur,jamali,927,
+RUPTL-JAMALI-T-0480,BESS Jawa- Bali (Kuota) Tersebar IIID (2) — Jawa Timur Eksisting / Baru,BESS Jawa- Bali (Kuota) Tersebar IIID (2),Jawa Timur Eksisting / Baru,,New,2,SUTT,2.6,,Planned,Jawa Timur,jamali,927,
+RUPTL-JAMALI-T-0481,BESS Jawa- Bali (Kuota) Tersebar IIID (3) — Jawa Timur Eksisting / Baru,BESS Jawa- Bali (Kuota) Tersebar IIID (3),Jawa Timur Eksisting / Baru,,New,2,SUTT,2.6,,Planned,Jawa Timur,jamali,927,
+RUPTL-JAMALI-T-0482,PLTB Jawa- Bali (Kuota) Tersebar IX 2) — Jawa Timur Eksisting / Baru,PLTB Jawa- Bali (Kuota) Tersebar IX 2),Jawa Timur Eksisting / Baru,,New,2,SUTT,10.0,,Planned,Jawa Timur,jamali,927,
+RUPTL-JAMALI-T-0483,PLTB Jawa- Bali (Kuota) Tersebar X (2) — Jawa Timur Eksisting / Baru,PLTB Jawa- Bali (Kuota) Tersebar X (2),Jawa Timur Eksisting / Baru,,New,2,SUTT,10.0,,Planned,Jawa Timur,jamali,927,
+RUPTL-JAMALI-T-0484,PLTB Jawa- Bali (Kuota) Tersebar XI (2) — Jawa Timur Eksisting / Baru,PLTB Jawa- Bali (Kuota) Tersebar XI (2),Jawa Timur Eksisting / Baru,,New,2,SUTT,10.0,,Planned,Jawa Timur,jamali,927,
+RUPTL-JAMALI-T-0485,PLTB Jawa- Bali (Kuota) Tersebar XII (2) Total — Jawa Timur Eksisting / Baru,PLTB Jawa- Bali (Kuota) Tersebar XII (2) Total,Jawa Timur Eksisting / Baru,,New,2,SUTT,4531.0,,Planned,Jawa Timur,jamali,927,
+RUPTL-JAMALI-T-0486,PLTS Bali Barat — Negara,PLTS Bali Barat,Negara,150,New,2,SUTT,10.92,2025,Construction,Bali,jamali,945,Tabel B7.11
+RUPTL-JAMALI-T-0487,PLTS Bali Timur — Kubu,PLTS Bali Timur,Kubu,150,New,2,SUTT,3.16,2025,Construction,Bali,jamali,945,Tabel B7.11
+RUPTL-JAMALI-T-0488,Nusa Dua — Tx. Pesanggaran,Nusa Dua,Tx. Pesanggaran,150,New,2,SUTT,17.3,2025,Planned,Bali,jamali,946,
+RUPTL-JAMALI-T-0489,Pesanggaran — Tx. Bandara,Pesanggaran,Tx. Bandara,150,New,2,SUTT,10.1,2025,Planned,Bali,jamali,946,
+RUPTL-JAMALI-T-0490,Tx. Kapal — Pemecutan Kelod,Tx. Kapal,Pemecutan Kelod,150,New,2,SKTT,32.2,2025,Planned,Bali,jamali,946,
+RUPTL-JAMALI-T-0491,PLTMG Bali (Pesanggaran) — Pesanggaran,PLTMG Bali (Pesanggaran),Pesanggaran,150,New,2,SKTT,1.0,2026,Planned,Bali,jamali,946,
+RUPTL-JAMALI-T-0492,Pesanggaran III / Bali Turtle — Inc. (Pesanggaran - Sanur),Pesanggaran III / Bali Turtle,Inc. (Pesanggaran - Sanur),150,New,4,SUTT,2.0,2027,Planned,Bali,jamali,946,
+RUPTL-JAMALI-T-0493,Kubu — Pemaron,Kubu,Pemaron,150,New,2,SUTT,105.6,2029,Planned,Bali,jamali,946,
+RUPTL-JAMALI-T-0494,PLTGU Jawa Bali-3 — Tinga - Tinga,PLTGU Jawa Bali-3,Tinga - Tinga,150,New,2,SUTT,2.0,2028,Planned,Bali,jamali,946,
+RUPTL-JAMALI-T-0495,Tinga - Tinga — Inc.(PLTU Celukan Bawang - Kapal),Tinga - Tinga,Inc.(PLTU Celukan Bawang - Kapal),150,New,4,SUTT,2.0,2028,Planned,Bali,jamali,946,
+RUPTL-JAMALI-T-0496,Tinga - Tinga — Tanah Lot,Tinga - Tinga,Tanah Lot,150,New,2,SUTT,123.6,2028,Planned,Bali,jamali,946,
+RUPTL-JAMALI-T-0497,Tx. Gilimanuk — Tx. Celukan Bawang,Tx. Gilimanuk,Tx. Celukan Bawang,150,New,1,SUTT,0.5,2028,Planned,Bali,jamali,946,
+RUPTL-JAMALI-T-0498,Pesanggaran — Padang Sambian,Pesanggaran,Padang Sambian,150,New,2,SKTT,7.89,2027,Planned,Bali,jamali,946,
+RUPTL-JAMALI-T-0499,Pesanggaran — Pemecutan Kelod,Pesanggaran,Pemecutan Kelod,150,New,2,SKTT,4.84,2027,Planned,Bali,jamali,946,
+RUPTL-JAMALI-T-0500,Gianyar II / Bangli — Gianyar,Gianyar II / Bangli,Gianyar,150,New,2,SUTT,10.0,2028,Planned,Bali,jamali,946,
+RUPTL-JAMALI-T-0501,PLTGU Jawa- Bali 2 — Inc.(Sanur- Pesanggaran),PLTGU Jawa- Bali 2,Inc.(Sanur- Pesanggaran),150,New,4,SUTT,5.4,2027,Planned,Bali,jamali,946,
+RUPTL-JAMALI-T-0502,PLTGU Jawa- Bali 2 — Sanur,PLTGU Jawa- Bali 2,Sanur,150,New,2,SUTT,4.6,2027,Planned,Bali,jamali,946,
+RUPTL-JAMALI-T-0503,PLTP Bedugul — Baturiti,PLTP Bedugul,Baturiti,150,New,2,SUTT,4.0,2028,Planned,Bali,jamali,946,
+RUPTL-JAMALI-T-0504,Baturiti — Payangan,Baturiti,Payangan,150,,1,SUTT,28.01,2028,Planned,Bali,jamali,946,
+RUPTL-JAMALI-T-0505,Payangan — Tx. Kapal,Payangan,Tx. Kapal,150,,1,SUTT,21.48,2028,Planned,Bali,jamali,946,
+RUPTL-JAMALI-T-0506,Pemaron — Baturiti,Pemaron,Baturiti,150,,2,SUTT,40.86,2028,Planned,Bali,jamali,946,
+RUPTL-JAMALI-T-0507,Tx. Kapal — Baturiti,Tx. Kapal,Baturiti,150,,1,SUTT,38.17,2028,Planned,Bali,jamali,946,
+RUPTL-JAMALI-T-0508,Padangsambian II / Canggu — Padangsambian,Padangsambian II / Canggu,Padangsambian,150,New,2,SKTT,17.6,2029,Planned,Bali,jamali,946,
+RUPTL-JAMALI-T-0509,Pemecutan Kelod II — Pemecutan Kelod,Pemecutan Kelod II,Pemecutan Kelod,150,New,2,SKTT,20.0,2029,Planned,Bali,jamali,946,
+RUPTL-JAMALI-T-0510,Gilimanuk — Antosari (Ekstension),Gilimanuk,Antosari (Ekstension),500,New,2,SUTET,151.2,2030,Planned,Bali,jamali,946,
+RUPTL-JAMALI-T-0511,Antosari (Ekstension) — Tx. Celukan Bawang,Antosari (Ekstension),Tx. Celukan Bawang,150,New,2,SUTT,1.4,2030,Planned,Bali,jamali,946,
+RUPTL-JAMALI-T-0512,Antosari (Ekstension) — Tx. Kapal,Antosari (Ekstension),Tx. Kapal,150,New,2,SUTT,2.0,2030,Planned,Bali,jamali,946,
+RUPTL-JAMALI-T-0513,Antosari (Ekstension) — Tx. Negara,Antosari (Ekstension),Tx. Negara,150,New,2,SUTT,2.0,2030,Planned,Bali,jamali,946,
+RUPTL-JAMALI-T-0514,Antosari (Ekstension) — Tx. Tanah Lot,Antosari (Ekstension),Tx. Tanah Lot,150,New,2,SUTT,1.0,2030,Planned,Bali,jamali,946,
+RUPTL-JAMALI-T-0515,New Sanur — Inc. (Gianyar - Sanur),New Sanur,Inc. (Gianyar - Sanur),150,New,2,SUTT,2.0,2030,Planned,Bali,jamali,946,
+RUPTL-JAMALI-T-0516,BESS Bali (Kuota) III — Bali Eksisting / Baru,BESS Bali (Kuota) III,Bali Eksisting / Baru,150,New,2,SUTT,10.0,2026,Planned,Bali,jamali,946,
+RUPTL-JAMALI-T-0517,PLTS Bali (Kuota) III — Inc.(Bali Eksisting / Baru A - Bali Eksisting / Baru B),PLTS Bali (Kuota) III,Inc.(Bali Eksisting / Baru A - Bali Eksisting / Baru B),150,New,4,SUTT,1.5,2026,Planned,Bali,jamali,946,
+RUPTL-JAMALI-T-0518,PLTS Jawa-Bali (Kuota) — Bali Eksisting / Baru,PLTS Jawa-Bali (Kuota),Bali Eksisting / Baru,150,New,2,SUTT,10.0,2034,Planned,Bali,jamali,946,
+RUPTL-JAMALI-T-0519,PLTS Jawa-Bali (Kuota) Tersebar VIII (2) — Bali Eksisting / Baru,PLTS Jawa-Bali (Kuota) Tersebar VIII (2),Bali Eksisting / Baru,150,New,2,SUTT,10.0,2034,Planned,Bali,jamali,947,Tabel B7.14
+RUPTL-JAMALI-T-0520,PLTP Bedugul 1 — Bali Eksisting / Baru,PLTP Bedugul 1,Bali Eksisting / Baru,150,New,2,SUTT,20.0,2030,Planned,Bali,jamali,947,Tabel B7.14
+RUPTL-JAMALI-T-0521,BESS Jawa- Bali (Kuota) Tersebar IX — Bali Eksisting / Baru,BESS Jawa- Bali (Kuota) Tersebar IX,Bali Eksisting / Baru,150,New,2,SUTT,10.0,,Planned,Bali,jamali,947,Tabel B7.14
+RUPTL-JAMALI-T-0522,PLTP Bedugul 2 — Bali Eksisting / Baru,PLTP Bedugul 2,Bali Eksisting / Baru,150,New,2,SUTT,20.0,2033,Planned,Bali,jamali,947,Tabel B7.14
+RUPTL-JAMALI-T-0523,PLTP Bedugul 3 — Bali Eksisting / Baru,PLTP Bedugul 3,Bali Eksisting / Baru,150,New,2,SUTT,20.0,2033,Planned,Bali,jamali,947,Tabel B7.14
+RUPTL-JAMALI-T-0524,PLTS Jawa-Bali (Kuota) Tersebar IX — Bali Eksisting / Baru,PLTS Jawa-Bali (Kuota) Tersebar IX,Bali Eksisting / Baru,150,New,2,SUTT,10.0,,Planned,Bali,jamali,947,Tabel B7.14
+RUPTL-JAMALI-T-0525,PLTS Jawa-Bali (Kuota) Tersebar V & VI — Bali Eksisting,PLTS Jawa-Bali (Kuota) Tersebar V & VI,Bali Eksisting,150,New,2,SUTT,10.0,,Planned,Bali,jamali,947,Tabel B7.14
+RUPTL-JAMALI-T-0526,PLTB Jawa-Bali (Kuota) Tersebar V — Bali Eksisting,PLTB Jawa-Bali (Kuota) Tersebar V,Bali Eksisting,150,New,2,SUTT,10.0,2034,Planned,Bali,jamali,947,Tabel B7.14
+RUPTL-JAMALI-T-0527,Antosari (Extension) — Padangsambian II,Antosari (Extension),Padangsambian II,150,New,2,SUTT,37.2,2031,Planned,Bali,jamali,947,Tabel B7.14
+RUPTL-JAMALI-T-0528,Antosari (Extension) — Tx. Pemecutan Kelod II,Antosari (Extension),Tx. Pemecutan Kelod II,150,New,2,SUTT,37.2,2031,Planned,Bali,jamali,947,Tabel B7.14
+RUPTL-JAMALI-T-0529,Padang Sambian II — Padang Sambian I,Padang Sambian II,Padang Sambian I,150,New,2,SKTT,18.92,2031,Planned,Bali,jamali,947,Tabel B7.14
+RUPTL-JAMALI-T-0530,Tx. Pemecutan Kelod II — Pemecutan Kelod I,Tx. Pemecutan Kelod II,Pemecutan Kelod I,150,New,2,SKTT,25.8,2031,Planned,Bali,jamali,947,Tabel B7.14
+RUPTL-JAMALI-T-0531,BESS Bali (Kuota) Tersebar VII — Bali Eksisting / Baru,BESS Bali (Kuota) Tersebar VII,Bali Eksisting / Baru,150,New,2,SUTT,10.0,,Planned,Bali,jamali,947,Tabel B7.14
+RUPTL-JAMALI-T-0532,BESS Bali (Kuota) Tersebar VII — Bali Eksisting / Baru,BESS Bali (Kuota) Tersebar VII,Bali Eksisting / Baru,150,New,2,SUTT,10.0,,Planned,Bali,jamali,947,Tabel B7.14
+RUPTL-JAMALI-T-0533,PLTS Jawa-Bali (Kuota) Tersebar VII (1) — Bali Eksisting / Baru,PLTS Jawa-Bali (Kuota) Tersebar VII (1),Bali Eksisting / Baru,150,New,2,SUTT,10.0,2034,Planned,Bali,jamali,947,Tabel B7.14
+RUPTL-JAMALI-T-0534,PLTS Jawa-Bali (Kuota) Tersebar VII (2) — Bali Eksisting / Baru,PLTS Jawa-Bali (Kuota) Tersebar VII (2),Bali Eksisting / Baru,150,New,2,SUTT,10.0,2034,Planned,Bali,jamali,947,Tabel B7.14
+RUPTL-JAMALI-T-0535,PLTGU Jawa Bali-6 — Tinga - Tinga,PLTGU Jawa Bali-6,Tinga - Tinga,150,New,2,SUTT,1.0,2029,Planned,Bali,jamali,947,Tabel B7.14
+RUPTL-JAMALI-T-0536,Amlapura — Gianyar,Amlapura,Gianyar,150,,2,SUTT,67.79,2028,Planned,Bali,jamali,947,Tabel B7.14
