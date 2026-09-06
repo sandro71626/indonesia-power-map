@@ -287,17 +287,16 @@
      modal + button pattern; year buttons pakai style compact yang match
      .menu-btn ukuran. Active year highlighted dengan .menu-btn.active
      color (#1f77b4 solid). */
-  .year-grid { display: grid; grid-template-columns: repeat(4, 1fr);
-               gap: 6px; margin: 4px 0; }
-  .year-btn { background: white; border: 1px solid #ccc; border-radius: 4px;
-              padding: 8px 4px; font-size: 12px; font-weight: 600;
-              cursor: pointer; color: #333;
-              transition: background 0.12s, border-color 0.12s, color 0.12s; }
-  .year-btn:hover { background: #f7faff; border-color: #1f77b4; color: #1f77b4; }
-  .year-btn.active { background: #1f77b4; color: white; border-color: #1f77b4; }
-  .year-btn-unspec { grid-column: span 4; font-size: 11px; font-weight: 400;
-                     color: #666; font-style: italic; }
-  .year-btn-unspec.active { color: white; font-style: normal; }
+  /* RUPTL Dev — mode tabs (All / Single Year / Year Range).
+     Reuse .year-btn visual language (compact button, active #1f77b4). */
+  .rd-mode-tabs { display: flex; gap: 4px; margin: 4px 0; }
+  .rd-mode-btn { flex: 1; background: white; border: 1px solid #ccc;
+                 border-radius: 4px; padding: 7px 6px; font-size: 12px;
+                 font-weight: 600; cursor: pointer; color: #333;
+                 transition: background 0.12s, border-color 0.12s, color 0.12s; }
+  .rd-mode-btn:hover { background: #f7faff; border-color: #1f77b4; color: #1f77b4; }
+  .rd-mode-btn.active { background: #1f77b4; color: white; border-color: #1f77b4; }
+  .rd-mode-panel { margin: 6px 0 0; padding: 8px 0 4px; }
   .rd-types { display: flex; gap: 16px; padding: 4px 0; }
   .rd-types label { display: flex; align-items: center; gap: 6px;
                     cursor: pointer; font-size: 12px; }
@@ -914,20 +913,32 @@
 
     <h3 style="margin:14px 0 6px;font-size:13px;font-weight:600;"
         data-i18n="ruptl_dev.year_heading">Target COD</h3>
-    <div class="year-grid" id="rd-year-grid">
-      <button class="year-btn active" data-year="all" data-i18n="ruptl_dev.year.all">Semua</button>
-      <button class="year-btn" data-year="2025">2025</button>
-      <button class="year-btn" data-year="2026">2026</button>
-      <button class="year-btn" data-year="2027">2027</button>
-      <button class="year-btn" data-year="2028">2028</button>
-      <button class="year-btn" data-year="2029">2029</button>
-      <button class="year-btn" data-year="2030">2030</button>
-      <button class="year-btn" data-year="2031">2031</button>
-      <button class="year-btn" data-year="2032">2032</button>
-      <button class="year-btn" data-year="2033">2033</button>
-      <button class="year-btn" data-year="2034">2034</button>
-      <button class="year-btn year-btn-unspec" data-year="unspecified"
-              data-i18n="ruptl_dev.year.unspec">Tahun tidak tercatat</button>
+    <div class="rd-mode-tabs" id="rd-mode-tabs">
+      <button class="rd-mode-btn active" data-mode="all"
+              data-i18n="ruptl_dev.mode.all">Semua</button>
+      <button class="rd-mode-btn" data-mode="single"
+              data-i18n="ruptl_dev.mode.single">Tahun Tunggal</button>
+      <button class="rd-mode-btn" data-mode="range"
+              data-i18n="ruptl_dev.mode.range">Rentang Tahun</button>
+    </div>
+    <div class="rd-mode-panel" id="rd-panel-single" style="display:none;">
+      <label style="font-size:12px;color:#666;">
+        <span data-i18n="ruptl_dev.mode.single_label">Tahun</span>
+        <select id="rd-single-year" style="margin-left:8px;padding:4px 8px;
+            font-size:12px;border:1px solid #ccc;border-radius:4px;"></select>
+      </label>
+    </div>
+    <div class="rd-mode-panel" id="rd-panel-range" style="display:none;">
+      <label style="font-size:12px;color:#666;display:inline-block;margin-right:14px;">
+        <span data-i18n="ruptl_dev.mode.range_from">Dari</span>
+        <select id="rd-range-from" style="margin-left:8px;padding:4px 8px;
+            font-size:12px;border:1px solid #ccc;border-radius:4px;"></select>
+      </label>
+      <label style="font-size:12px;color:#666;display:inline-block;">
+        <span data-i18n="ruptl_dev.mode.range_to">Sampai</span>
+        <select id="rd-range-to" style="margin-left:8px;padding:4px 8px;
+            font-size:12px;border:1px solid #ccc;border-radius:4px;"></select>
+      </label>
     </div>
 
     <h3 style="margin:14px 0 6px;font-size:13px;font-weight:600;"
@@ -1023,6 +1034,12 @@ const TRANSLATIONS = {
     'ruptl_dev.year_heading': 'Target COD',
     'ruptl_dev.year.all': 'Semua',
     'ruptl_dev.year.unspec': 'Tahun tidak tercatat',
+    'ruptl_dev.mode.all': 'Semua',
+    'ruptl_dev.mode.single': 'Tahun Tunggal',
+    'ruptl_dev.mode.range': 'Rentang Tahun',
+    'ruptl_dev.mode.single_label': 'Tahun',
+    'ruptl_dev.mode.range_from': 'Dari',
+    'ruptl_dev.mode.range_to': 'Sampai',
     'ruptl_dev.type_heading': 'Jenis Aset RUPTL',
     'ruptl_dev.type.gen': 'Pembangkit',
     'ruptl_dev.type.sub': 'Gardu Induk',
@@ -1310,6 +1327,12 @@ const TRANSLATIONS = {
     'ruptl_dev.year_heading': 'Target COD',
     'ruptl_dev.year.all': 'All',
     'ruptl_dev.year.unspec': 'Unspecified year',
+    'ruptl_dev.mode.all': 'All',
+    'ruptl_dev.mode.single': 'Single Year',
+    'ruptl_dev.mode.range': 'Year Range',
+    'ruptl_dev.mode.single_label': 'Year',
+    'ruptl_dev.mode.range_from': 'From',
+    'ruptl_dev.mode.range_to': 'To',
     'ruptl_dev.type_heading': 'RUPTL Asset Types',
     'ruptl_dev.type.gen': 'Generators',
     'ruptl_dev.type.sub': 'Substations',
@@ -2341,14 +2364,24 @@ const features = [];   // { kind, region, tier, props, layer, visible }
 // ============================================================
 // RUPTL DEVELOPMENT MODE — temporal filter by target COD year
 // ============================================================
-// State:
-//   RUPTL_DEV_YEAR: 'all' | '2025'..'2034' | 'unspecified'
-//   RUPTL_DEV_TYPES: {gen, sub, trm} booleans
-// Filter aktif kalau year != 'all' ATAU ada type OFF. Kalau active,
-// non-baseline features (yang punya ruptl_id / target_cod_year_ruptl)
-// di-filter berdasarkan tahun + type. Baseline OSM features tanpa RUPTL
-// entry TETAP tampil (konteks eksplorasi).
-let RUPTL_DEV_YEAR = 'all';
+// Valid year range untuk RUPTL 2025-2034. Centralized — kalau RUPTL
+// berikutnya di-integrate, tinggal update konstanta ini.
+const RUPTL_YEAR_MIN = 2025;
+const RUPTL_YEAR_MAX = 2034;
+const RUPTL_YEARS = [];
+for (let y = RUPTL_YEAR_MIN; y <= RUPTL_YEAR_MAX; y++) RUPTL_YEARS.push(y);
+
+// State (3 mode + companion selection):
+//   RUPTL_DEV_MODE: 'all' | 'single' | 'range'
+//   RUPTL_DEV_SINGLE_YEAR: int (only used when mode='single')
+//   RUPTL_DEV_RANGE_FROM/TO: int (only used when mode='range')
+//   RUPTL_DEV_TYPES: {gen, sub, trm} booleans — planned type visibility
+// Temporal filter aktif kalau mode != 'all'. State persist across
+// province/region changes (module-level, tidak di-reset).
+let RUPTL_DEV_MODE = 'all';
+let RUPTL_DEV_SINGLE_YEAR = 2029;   // sensible mid-range default
+let RUPTL_DEV_RANGE_FROM = RUPTL_YEAR_MIN;
+let RUPTL_DEV_RANGE_TO = RUPTL_YEAR_MAX;
 const RUPTL_DEV_TYPES = {gen: true, sub: true, trm: true};
 
 function isRuptlTagged(p) {
@@ -2356,20 +2389,40 @@ function isRuptlTagged(p) {
          || (p.target_cod_year || '').toString().trim()
          || (p.target_cod_year_ruptl || '').toString().trim());
 }
+// Canonical temporal getter — baca target_cod_year (planned) atau
+// target_cod_year_ruptl (enriched baseline dengan planned upgrade).
+// Return int year kalau valid 4-digit, atau null (unknown/unspecified).
+function getTargetCodYear(props) {
+  const y = (props.target_cod_year || props.target_cod_year_ruptl || '').toString().trim();
+  if (!y || !/^\d{4}$/.test(y)) return null;
+  return parseInt(y, 10);
+}
+// Backward-compat wrapper — return string form (jadi cocok dengan
+// existing chip/count consumer). Empty string = unknown.
 function getRuptlYear(p) {
-  const y = (p.target_cod_year || p.target_cod_year_ruptl || '').toString().trim();
-  return (y && /^\d{4}$/.test(y)) ? y : '';
+  const y = getTargetCodYear(p);
+  return y === null ? '' : y.toString();
 }
 function isRuptlDevActive() {
-  // Chip indicator — muncul saat year filter aktif. Type filter (planned
-  // toggle) tidak trigger chip karena sudah reflected di sidebar directly.
-  return RUPTL_DEV_YEAR !== 'all';
+  // Chip indicator — muncul saat mode filter aktif (Single atau Range).
+  return RUPTL_DEV_MODE !== 'all';
 }
-function ruptlDevPassesYear(ft) {
-  if (RUPTL_DEV_YEAR === 'all') return true;
-  const y = getRuptlYear(ft.props);
-  if (RUPTL_DEV_YEAR === 'unspecified') return !y;
-  return y === RUPTL_DEV_YEAR;
+// Temporal gate — dipakai di applyFilters. Return true kalau feature
+// lulus filter tahun current mode. Non-RUPTL baseline (isRuptlTagged
+// false) tidak di-filter oleh temporal — always pass.
+// Feature RUPTL-tagged tanpa tahun (unknown) → EXCLUDED dari Single/Range
+// (per requirement: "jangan otomatis memasukkan asset tanpa tahun ke
+// Single Year atau Year Range"). Dalam mode All → tetap tampil.
+function ruptlDevPassesTemporal(ft) {
+  if (RUPTL_DEV_MODE === 'all') return true;
+  if (!isRuptlTagged(ft.props)) return true;  // pure baseline lolos
+  const y = getTargetCodYear(ft.props);
+  if (y === null) return false;
+  if (RUPTL_DEV_MODE === 'single') return y === RUPTL_DEV_SINGLE_YEAR;
+  if (RUPTL_DEV_MODE === 'range') {
+    return y >= RUPTL_DEV_RANGE_FROM && y <= RUPTL_DEV_RANGE_TO;
+  }
+  return true;
 }
 function ruptlDevPassesType(ft) {
   if (ft.kind === 'gen') return RUPTL_DEV_TYPES.gen;
@@ -2395,6 +2448,10 @@ function activateRuptlDevMode() {
     const rdCb = document.getElementById('rd-type-' + kind);
     if (rdCb) rdCb.checked = true;
   });
+  // Temporal mode & selection TIDAK di-reset — persist dari session
+  // sebelumnya (kalau user tutup modal dengan mode=Range, buka lagi
+  // masih Range). Cuma sync UI ke state saat ini.
+  syncRuptlModeUI();
   applyFilters();
   updateRuptlDevChip();
 }
@@ -2406,10 +2463,11 @@ function activateRuptlDevMode() {
 // Beda dengan `deactivateRuptlDevMode` yang dipanggil dari global reset
 // (f-reset di sidebar, goHome) — global reset turn OFF planned toggles.
 function resetRuptlDev() {
-  RUPTL_DEV_YEAR = 'all';
+  RUPTL_DEV_MODE = 'all';
+  RUPTL_DEV_SINGLE_YEAR = 2029;
+  RUPTL_DEV_RANGE_FROM = RUPTL_YEAR_MIN;
+  RUPTL_DEV_RANGE_TO = RUPTL_YEAR_MAX;
   RUPTL_DEV_TYPES.gen = RUPTL_DEV_TYPES.sub = RUPTL_DEV_TYPES.trm = true;
-  document.querySelectorAll('#rd-year-grid .year-btn')
-    .forEach(b => b.classList.toggle('active', b.dataset.year === 'all'));
   ['gen', 'sub', 'trm'].forEach(k => {
     const cb = document.getElementById('rd-type-' + k);
     if (cb) cb.checked = true;
@@ -2418,6 +2476,7 @@ function resetRuptlDev() {
     const existing = document.getElementById('m-' + k + '-existing');
     if (existing) existing.checked = true;
   });
+  syncRuptlModeUI();
   applyFilters();
   updateRuptlDevCount();
   updateRuptlDevChip();
@@ -2428,10 +2487,11 @@ function resetRuptlDev() {
 // RUPTL Dev checkboxes OFF (sync). Kalau user habis reset lalu buka
 // modal lagi, `activateRuptlDevMode` akan turn semua ON kembali.
 function deactivateRuptlDevMode() {
-  RUPTL_DEV_YEAR = 'all';
+  RUPTL_DEV_MODE = 'all';
+  RUPTL_DEV_SINGLE_YEAR = 2029;
+  RUPTL_DEV_RANGE_FROM = RUPTL_YEAR_MIN;
+  RUPTL_DEV_RANGE_TO = RUPTL_YEAR_MAX;
   RUPTL_DEV_TYPES.gen = RUPTL_DEV_TYPES.sub = RUPTL_DEV_TYPES.trm = false;
-  document.querySelectorAll('#rd-year-grid .year-btn')
-    .forEach(b => b.classList.toggle('active', b.dataset.year === 'all'));
   ['gen', 'sub', 'trm'].forEach(k => {
     const cb = document.getElementById('rd-type-' + k);
     if (cb) cb.checked = false;
@@ -2441,9 +2501,40 @@ function deactivateRuptlDevMode() {
     const existing = document.getElementById('m-' + k + '-existing');
     if (existing) existing.checked = true;
   });
+  syncRuptlModeUI();
   applyFilters();
   updateRuptlDevCount();
   updateRuptlDevChip();
+}
+
+// Populate year <select> dropdowns + sync active mode-tab + show/hide
+// panel. Dipanggil dari activateRuptlDevMode/resetRuptlDev/deactivate
+// dan saat user klik mode-tab.
+function syncRuptlModeUI() {
+  // Populate dropdowns lazily (idempotent — cek populated dulu)
+  const single = document.getElementById('rd-single-year');
+  const rFrom = document.getElementById('rd-range-from');
+  const rTo = document.getElementById('rd-range-to');
+  [single, rFrom, rTo].forEach(sel => {
+    if (sel && sel.options.length === 0) {
+      RUPTL_YEARS.forEach(y => {
+        const opt = document.createElement('option');
+        opt.value = y; opt.textContent = y;
+        sel.appendChild(opt);
+      });
+    }
+  });
+  if (single) single.value = RUPTL_DEV_SINGLE_YEAR;
+  if (rFrom) rFrom.value = RUPTL_DEV_RANGE_FROM;
+  if (rTo) rTo.value = RUPTL_DEV_RANGE_TO;
+  // Active mode-tab
+  document.querySelectorAll('#rd-mode-tabs .rd-mode-btn')
+    .forEach(b => b.classList.toggle('active', b.dataset.mode === RUPTL_DEV_MODE));
+  // Panel visibility (hanya panel relevan yang visible)
+  const pSingle = document.getElementById('rd-panel-single');
+  const pRange = document.getElementById('rd-panel-range');
+  if (pSingle) pSingle.style.display = (RUPTL_DEV_MODE === 'single') ? '' : 'none';
+  if (pRange) pRange.style.display = (RUPTL_DEV_MODE === 'range') ? '' : 'none';
 }
 
 // Compute + render project count untuk state saat ini.
@@ -2455,23 +2546,29 @@ function updateRuptlDevCount() {
   const box = document.getElementById('rd-count');
   if (!box) return;
   // Count = semua RUPTL-tagged features (planned + enriched baseline)
-  // yang match year filter. Type toggle affect visibility saja, tidak
-  // affect count — user tau dari sidebar tipe mana yang di-hide.
-  // Enriched baseline dengan target_cod_year_ruptl tetap dihitung
-  // sebagai project tahun tersebut (per requirement tahap 2).
+  // yang lulus temporal gate. Type toggle affect visibility saja,
+  // tidak affect count — user tau dari sidebar tipe mana yang di-hide.
   let total = 0, gen = 0, sub = 0, trm = 0;
   for (const ft of features) {
     if (!isRuptlTagged(ft.props)) continue;
-    if (!ruptlDevPassesYear(ft)) continue;
+    // Temporal check — Single/Range/All (RUPTL-tagged tanpa tahun di
+    // Single/Range → excluded, di All → included).
+    if (RUPTL_DEV_MODE !== 'all') {
+      const y = getTargetCodYear(ft.props);
+      if (y === null) continue;
+      if (RUPTL_DEV_MODE === 'single' && y !== RUPTL_DEV_SINGLE_YEAR) continue;
+      if (RUPTL_DEV_MODE === 'range'
+          && (y < RUPTL_DEV_RANGE_FROM || y > RUPTL_DEV_RANGE_TO)) continue;
+    }
     total++;
     if (ft.kind === 'gen') gen++;
     else if (ft.kind === 'sub') sub++;
     else if (ft.kind === 'trm') trm++;
   }
-  const yearLabel = RUPTL_DEV_YEAR === 'all' ? t('ruptl_dev.year.all')
-                   : RUPTL_DEV_YEAR === 'unspecified' ? t('ruptl_dev.year.unspec')
-                   : RUPTL_DEV_YEAR;
-  box.innerHTML = `<strong>${yearLabel}</strong> · `
+  const modeLabel = RUPTL_DEV_MODE === 'all' ? t('ruptl_dev.mode.all')
+                  : RUPTL_DEV_MODE === 'single' ? RUPTL_DEV_SINGLE_YEAR.toString()
+                  : `${RUPTL_DEV_RANGE_FROM}–${RUPTL_DEV_RANGE_TO}`;
+  box.innerHTML = `<strong>${modeLabel}</strong> · `
                 + t('ruptl_dev.count.total', {n: total}) + `<br>`
                 + `<span style="color:#666;font-size:11px;">`
                 + t('ruptl_dev.count.breakdown', {gen, sub, trm})
@@ -2488,12 +2585,13 @@ function updateRuptlDevChip() {
   const active = isRuptlDevActive();
   chip.classList.toggle('active', active);
   if (!active) return;
-  // Label = "📅 <year>" atau "📅 Tahun tidak tercatat".
-  // Type-off info tidak ditampilkan di chip karena sudah reflected via
-  // sidebar planned toggle checkbox.
-  const yearLabel = RUPTL_DEV_YEAR === 'unspecified'
-    ? t('ruptl_dev.year.unspec') : RUPTL_DEV_YEAR;
-  label.textContent = '📅 ' + yearLabel;
+  // Label per mode: Single = "📅 2029", Range = "📅 2027–2032"
+  let text;
+  if (RUPTL_DEV_MODE === 'single') text = RUPTL_DEV_SINGLE_YEAR.toString();
+  else if (RUPTL_DEV_MODE === 'range')
+    text = `${RUPTL_DEV_RANGE_FROM}–${RUPTL_DEV_RANGE_TO}`;
+  else text = t('ruptl_dev.mode.all');
+  label.textContent = '📅 ' + text;
 }
 
 function buildFeatures() {
@@ -2704,16 +2802,14 @@ function applyFilters() {
       attrVis = capOk && roleOk && typeOk;
     }
 
-    // Year filter — planned only (RUPTL Development temporal exploration)
-    let yearGate = true;
-    if (ft.planned && RUPTL_DEV_YEAR !== 'all') {
-      const y = getRuptlYear(ft.props);
-      if (RUPTL_DEV_YEAR === 'unspecified') yearGate = !y;
-      else yearGate = (y === RUPTL_DEV_YEAR);
-    }
+    // Temporal filter — RUPTL Development mode (All / Single / Range).
+    // Berlaku ke SEMUA RUPTL-tagged features (planned + enriched
+    // baseline dengan target_cod_year_ruptl). Pure baseline (tanpa
+    // RUPTL match) tidak di-filter → tetap tampil sebagai konteks.
+    const temporalGate = ruptlDevPassesTemporal(ft);
 
     const vis = masterOk && regionOk && provinceOk && statusOk
-             && attrVis && yearGate;
+             && attrVis && temporalGate;
 
     if (vis !== ft.visible) {
       if (vis) ft.layer.addTo(map);
@@ -3864,17 +3960,52 @@ document.addEventListener('keydown', e => {
     document.getElementById('ruptl-dev-modal').classList.add('show');
     updateRuptlDevCount();
   });
-  // Year buttons — single-select
-  document.querySelectorAll('#rd-year-grid .year-btn').forEach(btn => {
+  // Mode tabs — All / Single Year / Year Range
+  document.querySelectorAll('#rd-mode-tabs .rd-mode-btn').forEach(btn => {
     btn.addEventListener('click', () => {
-      RUPTL_DEV_YEAR = btn.dataset.year;
-      document.querySelectorAll('#rd-year-grid .year-btn')
-        .forEach(b => b.classList.toggle('active', b === btn));
+      RUPTL_DEV_MODE = btn.dataset.mode;
+      syncRuptlModeUI();
       applyFilters();
       updateRuptlDevCount();
       updateRuptlDevChip();
     });
   });
+  // Single year dropdown
+  const singleSel = document.getElementById('rd-single-year');
+  if (singleSel) {
+    singleSel.addEventListener('change', () => {
+      RUPTL_DEV_SINGLE_YEAR = parseInt(singleSel.value, 10);
+      applyFilters();
+      updateRuptlDevCount();
+      updateRuptlDevChip();
+    });
+  }
+  // Range from/to — auto-correct kalau From > To atau To < From
+  const rFromSel = document.getElementById('rd-range-from');
+  const rToSel = document.getElementById('rd-range-to');
+  if (rFromSel && rToSel) {
+    rFromSel.addEventListener('change', () => {
+      RUPTL_DEV_RANGE_FROM = parseInt(rFromSel.value, 10);
+      // Auto-correct: kalau From > To, geser To = From
+      if (RUPTL_DEV_RANGE_FROM > RUPTL_DEV_RANGE_TO) {
+        RUPTL_DEV_RANGE_TO = RUPTL_DEV_RANGE_FROM;
+        rToSel.value = RUPTL_DEV_RANGE_TO;
+      }
+      applyFilters();
+      updateRuptlDevCount();
+      updateRuptlDevChip();
+    });
+    rToSel.addEventListener('change', () => {
+      RUPTL_DEV_RANGE_TO = parseInt(rToSel.value, 10);
+      if (RUPTL_DEV_RANGE_TO < RUPTL_DEV_RANGE_FROM) {
+        RUPTL_DEV_RANGE_FROM = RUPTL_DEV_RANGE_TO;
+        rFromSel.value = RUPTL_DEV_RANGE_FROM;
+      }
+      applyFilters();
+      updateRuptlDevCount();
+      updateRuptlDevChip();
+    });
+  }
   // Type checkboxes — 3 kind. Sync bidirectional ke sidebar planned toggle
   // supaya kedua UI representation selalu konsisten (RUPTL Dev checkbox
   // dan Layer "Rencana RUPTL" toggle = 2 view untuk state yang sama).
