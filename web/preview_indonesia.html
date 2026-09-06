@@ -2324,8 +2324,9 @@ function getRuptlYear(p) {
   return (y && /^\d{4}$/.test(y)) ? y : '';
 }
 function isRuptlDevActive() {
-  return RUPTL_DEV_YEAR !== 'all'
-      || !RUPTL_DEV_TYPES.gen || !RUPTL_DEV_TYPES.sub || !RUPTL_DEV_TYPES.trm;
+  // Chip indicator — muncul saat year filter aktif. Type filter (planned
+  // toggle) tidak trigger chip karena sudah reflected di sidebar directly.
+  return RUPTL_DEV_YEAR !== 'all';
 }
 function ruptlDevPassesYear(ft) {
   if (RUPTL_DEV_YEAR === 'all') return true;
@@ -2340,9 +2341,29 @@ function ruptlDevPassesType(ft) {
   return true;
 }
 
-// Reset RUPTL Dev state ke default (All + semua type ON).
-// Dipanggil dari: (a) Reset button di modal, (b) chip × clear,
-// (c) f-reset global filter di sidebar, (d) goHome().
+// Activate RUPTL Development mode — dipanggil saat user membuka modal.
+// Force all sidebar planned toggles + RUPTL Dev type checkboxes ke ON
+// supaya semua planned assets langsung visible sebagai starting point
+// eksplorasi temporal (per requirement default state).
+function activateRuptlDevMode() {
+  RUPTL_DEV_TYPES.gen = RUPTL_DEV_TYPES.sub = RUPTL_DEV_TYPES.trm = true;
+  // Turn ON semua sidebar planned toggle
+  ['gen', 'sub', 'trm'].forEach(kind => {
+    const sidebar = document.getElementById('m-' + kind + '-planned');
+    if (sidebar) sidebar.checked = true;
+    const rdCb = document.getElementById('rd-type-' + kind);
+    if (rdCb) rdCb.checked = true;
+  });
+  applyFilters();
+  updateRuptlDevChip();
+}
+
+// Reset RUPTL Dev state ke default (All + planned type ON, sesuai
+// RUPTL Dev default state). Dipanggil dari:
+//   (a) Reset button di modal → back to RUPTL Dev defaults (planned ON)
+//   (b) chip × clear → sama, kembali ke "eksplorasi semua tahun"
+// Beda dengan `deactivateRuptlDevMode` yang dipanggil dari global reset
+// (f-reset di sidebar, goHome) — global reset turn OFF planned toggles.
 function resetRuptlDev() {
   RUPTL_DEV_YEAR = 'all';
   RUPTL_DEV_TYPES.gen = RUPTL_DEV_TYPES.sub = RUPTL_DEV_TYPES.trm = true;
@@ -2351,6 +2372,28 @@ function resetRuptlDev() {
   ['gen', 'sub', 'trm'].forEach(k => {
     const cb = document.getElementById('rd-type-' + k);
     if (cb) cb.checked = true;
+    const sidebar = document.getElementById('m-' + k + '-planned');
+    if (sidebar) sidebar.checked = true;
+  });
+  applyFilters();
+  updateRuptlDevCount();
+  updateRuptlDevChip();
+}
+
+// Global reset RUPTL Dev — dipanggil dari f-reset/goHome. Kembali ke
+// APP defaults: year=all, sidebar planned toggles OFF (initial state),
+// RUPTL Dev checkboxes OFF (sync). Kalau user habis reset lalu buka
+// modal lagi, `activateRuptlDevMode` akan turn semua ON kembali.
+function deactivateRuptlDevMode() {
+  RUPTL_DEV_YEAR = 'all';
+  RUPTL_DEV_TYPES.gen = RUPTL_DEV_TYPES.sub = RUPTL_DEV_TYPES.trm = false;
+  document.querySelectorAll('#rd-year-grid .year-btn')
+    .forEach(b => b.classList.toggle('active', b.dataset.year === 'all'));
+  ['gen', 'sub', 'trm'].forEach(k => {
+    const cb = document.getElementById('rd-type-' + k);
+    if (cb) cb.checked = false;
+    const sidebar = document.getElementById('m-' + k + '-planned');
+    if (sidebar) sidebar.checked = false;
   });
   applyFilters();
   updateRuptlDevCount();
@@ -2365,10 +2408,14 @@ function resetRuptlDev() {
 function updateRuptlDevCount() {
   const box = document.getElementById('rd-count');
   if (!box) return;
+  // Count = semua RUPTL-tagged features (planned + enriched baseline)
+  // yang match year filter. Type toggle affect visibility saja, tidak
+  // affect count — user tau dari sidebar tipe mana yang di-hide.
+  // Enriched baseline dengan target_cod_year_ruptl tetap dihitung
+  // sebagai project tahun tersebut (per requirement tahap 2).
   let total = 0, gen = 0, sub = 0, trm = 0;
   for (const ft of features) {
     if (!isRuptlTagged(ft.props)) continue;
-    if (!ruptlDevPassesType(ft)) continue;
     if (!ruptlDevPassesYear(ft)) continue;
     total++;
     if (ft.kind === 'gen') gen++;
@@ -2395,17 +2442,12 @@ function updateRuptlDevChip() {
   const active = isRuptlDevActive();
   chip.classList.toggle('active', active);
   if (!active) return;
-  const parts = [];
-  if (RUPTL_DEV_YEAR === 'unspecified') {
-    parts.push(t('ruptl_dev.year.unspec'));
-  } else if (RUPTL_DEV_YEAR !== 'all') {
-    parts.push(RUPTL_DEV_YEAR);
-  }
-  const typesOff = ['gen','sub','trm'].filter(k => !RUPTL_DEV_TYPES[k]);
-  if (typesOff.length) {
-    parts.push(t('ruptl_dev.chip.filter_hint', {n: 3 - typesOff.length}));
-  }
-  label.textContent = '📅 ' + (parts.join(' · ') || t('ruptl_dev.year.all'));
+  // Label = "📅 <year>" atau "📅 Tahun tidak tercatat".
+  // Type-off info tidak ditampilkan di chip karena sudah reflected via
+  // sidebar planned toggle checkbox.
+  const yearLabel = RUPTL_DEV_YEAR === 'unspecified'
+    ? t('ruptl_dev.year.unspec') : RUPTL_DEV_YEAR;
+  label.textContent = '📅 ' + yearLabel;
 }
 
 function buildFeatures() {
@@ -2533,51 +2575,68 @@ function applyFilters() {
   const trmPlannedOn = document.getElementById('m-trm-planned').checked;
   const genPlannedOn = document.getElementById('m-gen-planned').checked;
   const subPlannedOn = document.getElementById('m-sub-planned').checked;
-  // RUPTL Development mode aktif kalau ada year filter atau type filter
-  // non-default. Kalau active: (a) override existing planned toggle
-  // supaya planned assets bisa tampil, (b) apply year+type gate ke
-  // semua RUPTL-tagged assets.
-  const rdActive = isRuptlDevActive();
   const province = document.getElementById('f-province').value;
   // Compute province bounds sekali (dipakai passProvince untuk filter
   // transmisi via bbox intersection). Null kalau tidak ada Province Filter.
   const provinceBounds = province ? computeProvinceBounds(province) : null;
 
+  // ------------------------------------------------------------
+  // Filter dimensions terpisah (arsitektur baru):
+  //   ASSET TYPE    — kind (gen/sub/trm) selalu jalan
+  //   STATUS        — existing vs planned (independent dimension)
+  //   ATTRIBUTES    — role/voltage/capacity/plant-type (EXISTING only)
+  //   REGION        — region toggle + province filter (semua feature)
+  // Existing features → gated by SEMUA dimension (asset-type + region +
+  //   province + attribute filters + status gate).
+  // Planned features → gated HANYA by asset-type + region + province +
+  //   status gate (planned toggle) + year filter. Attribute filters
+  //   (voltage/role/capacity/plant-type) TIDAK berlaku ke planned —
+  //   supaya user bisa liat planned assets independent dari existing
+  //   layer state (RUPTL Development is a distinct exploration mode).
+  // ------------------------------------------------------------
   let shown = 0;
   for (const ft of features) {
-    // Visibilitas per sub-layer
-    let layerVis;
-    if (ft.kind === 'trm') {
-      const c = voltageClassOf(ft);
-      layerVis = (c === 'other') ? true : trmVolt.has(c);
-    } else if (ft.kind === 'sub') {
-      const c = voltageClassOf(ft);
-      layerVis = (c === 'other') ? true : subVolt.has(c);
-    } else {
-      // Pembangkit: AND antara filter kapasitas (sub-gen) dan filter peran
-      // (sub-gen-role). Pembangkit terlihat hanya kalau lolos kedua-duanya.
-      layerVis = genBkt.has(capacityBucket(ft.props.capacity_mw))
-              && genRole.has(getRole(ft.props));
-    }
-    // Planned gate: kalau feature planned tapi toggle-nya off, sembunyikan.
-    // NAMUN kalau RUPTL Development mode active, planned toggle dioverride
-    // (RUPTL Dev jadi driver utama untuk planned visibility).
-    let plannedGate = true;
-    if (ft.planned && !rdActive) {
+    // Region + province gate — berlaku untuk semua feature (kind-agnostic)
+    const regionOk = regionOn[ft.region];
+    const provinceOk = passProvince(ft, province, provinceBounds);
+
+    let vis;
+    if (ft.planned) {
+      // ==== PLANNED path ====
+      // Status gate: sidebar planned toggle = source of truth (sync
+      // bidirectional dengan RUPTL Dev type checkbox).
+      let plannedGate = true;
       if (ft.kind === 'trm') plannedGate = trmPlannedOn;
       else if (ft.kind === 'gen') plannedGate = genPlannedOn;
       else if (ft.kind === 'sub') plannedGate = subPlannedOn;
+      // Year gate: dari RUPTL Development mode. All = pass semua tahun.
+      let yearGate = true;
+      if (RUPTL_DEV_YEAR !== 'all') {
+        const y = getRuptlYear(ft.props);
+        if (RUPTL_DEV_YEAR === 'unspecified') yearGate = !y;
+        else yearGate = (y === RUPTL_DEV_YEAR);
+      }
+      vis = regionOk && provinceOk && plannedGate && yearGate;
+    } else {
+      // ==== EXISTING path ====
+      // Attribute filter (voltage/role/capacity/plant-type) berlaku
+      // penuh untuk baseline features.
+      let attrVis;
+      if (ft.kind === 'trm') {
+        const c = voltageClassOf(ft);
+        attrVis = (c === 'other') ? true : trmVolt.has(c);
+      } else if (ft.kind === 'sub') {
+        const c = voltageClassOf(ft);
+        attrVis = (c === 'other') ? true : subVolt.has(c);
+      } else {
+        // Pembangkit: AND kapasitas + peran + plant-type
+        attrVis = genBkt.has(capacityBucket(ft.props.capacity_mw))
+               && genRole.has(getRole(ft.props))
+               && typesOn.has(ft.props.type);
+      }
+      vis = regionOk && provinceOk && attrVis;
     }
-    // RUPTL Development gate: hanya berlaku untuk feature yang RUPTL-tagged
-    // (punya ruptl_id atau target_cod_year_ruptl). Baseline OSM murni
-    // tetap tampil apa adanya (konteks eksplorasi).
-    let rdGate = true;
-    if (rdActive && isRuptlTagged(ft.props)) {
-      rdGate = ruptlDevPassesType(ft) && ruptlDevPassesYear(ft);
-    }
-    const vis = regionOn[ft.region] && layerVis && plannedGate && rdGate
-      && (ft.kind !== 'gen' || typesOn.has(ft.props.type))
-      && passProvince(ft, province, provinceBounds);
+
     if (vis !== ft.visible) {
       if (vis) ft.layer.addTo(map);
       else map.removeLayer(ft.layer);
@@ -2727,9 +2786,21 @@ function setupFilters() {
   // supaya master toggle tidak accidentally hide/show planned assets).
   // Default off; user opt-in secara sadar karena planned data punya lokasi
   // approximate untuk sebagian besar rows.
+  // Sidebar planned toggle change → sync ke RUPTL Dev type checkbox
+  // (reverse direction dari sync di RUPTL Dev modal). Hasil: kedua UI
+  // representation selalu tercermin identik, no contradictory state.
   ['m-trm-planned', 'm-gen-planned', 'm-sub-planned'].forEach(id => {
     const el = document.getElementById(id);
-    if (el) el.addEventListener('change', applyFilters);
+    if (!el) return;
+    el.addEventListener('change', () => {
+      const kind = id.replace('m-', '').replace('-planned', '');
+      RUPTL_DEV_TYPES[kind] = el.checked;
+      const rdCb = document.getElementById('rd-type-' + kind);
+      if (rdCb) rdCb.checked = el.checked;
+      applyFilters();
+      updateRuptlDevCount();
+      updateRuptlDevChip();
+    });
   });
 
   // Reset filter (jenis pembangkit & provinsi & peran + RUPTL Dev)
@@ -2740,9 +2811,9 @@ function setupFilters() {
       c.closest('.type-toggle').classList.remove('off');
     });
     document.querySelectorAll('.sub-gen-role').forEach(c => { c.checked = true; });
-    // Reset RUPTL Development state juga — supaya user tidak ada hidden
-    // filter yang aneh (ff sudah lupa modal yg tertutup masih ngefilter).
-    resetRuptlDev();
+    // Global reset — kembali ke APP default (planned toggles OFF supaya
+    // map bersih dari planned assets, sesuai baseline behaviour app).
+    deactivateRuptlDevMode();
   });
 
   // Search
@@ -2818,9 +2889,10 @@ function goHome() {
   document.getElementById('regional-modal').classList.remove('show');
   document.getElementById('stats-modal').classList.remove('show');
   document.getElementById('ruptl-dev-modal').classList.remove('show');
-  // Reset RUPTL Development state ke default supaya map benar-benar
-  // kembali ke "tampilan awal" (no hidden temporal filter).
-  resetRuptlDev();
+  // Global reset — RUPTL Dev state kembali ke APP default (year=all,
+  // planned toggles OFF). Kalau user habis "Home" lalu buka RUPTL Dev
+  // lagi, activateRuptlDevMode auto-turn ON planned toggles kembali.
+  deactivateRuptlDevMode();
   // 3. Clear search input + dropdown results
   const si = document.getElementById('search-input');
   if (si) si.value = '';
@@ -3688,11 +3760,15 @@ document.addEventListener('keydown', e => {
   document.getElementById('dl-trm').addEventListener('click', () => downloadTransmissionCSV());
 
   // RUPTL Development — buka modal untuk pilih tahun COD + type filter.
+  // Saat modal dibuka: auto-turn ON semua sidebar planned toggle (dan
+  // RUPTL Dev type checkbox) supaya semua planned assets langsung
+  // visible. Ini menghindari state contradictory (user pilih year 2029
+  // tapi tidak ada planned muncul karena sidebar toggle masih OFF).
   // Modal STAYS OPEN saat user klik year supaya bisa iterate cepat.
-  // Filter live-applied; close button dismiss modal (filter tetap aktif).
   document.getElementById('menu-ruptl-dev').addEventListener('click', () => {
+    activateRuptlDevMode();
     document.getElementById('ruptl-dev-modal').classList.add('show');
-    updateRuptlDevCount();  // refresh count saat buka modal
+    updateRuptlDevCount();
   });
   // Year buttons — single-select
   document.querySelectorAll('#rd-year-grid .year-btn').forEach(btn => {
@@ -3705,11 +3781,16 @@ document.addEventListener('keydown', e => {
       updateRuptlDevChip();
     });
   });
-  // Type checkboxes — 3 kind
+  // Type checkboxes — 3 kind. Sync bidirectional ke sidebar planned toggle
+  // supaya kedua UI representation selalu konsisten (RUPTL Dev checkbox
+  // dan Layer "Rencana RUPTL" toggle = 2 view untuk state yang sama).
   ['gen', 'sub', 'trm'].forEach(kind => {
     const cb = document.getElementById('rd-type-' + kind);
     cb.addEventListener('change', () => {
       RUPTL_DEV_TYPES[kind] = cb.checked;
+      // Sync ke sidebar planned toggle
+      const sidebar = document.getElementById('m-' + kind + '-planned');
+      if (sidebar) sidebar.checked = cb.checked;
       applyFilters();
       updateRuptlDevCount();
       updateRuptlDevChip();
