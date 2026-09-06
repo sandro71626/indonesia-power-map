@@ -1905,6 +1905,21 @@ function getRole(props) {
   return (props && props.role) || 'Utility';
 }
 
+// Filter-oriented role getter — berbeda dari getRole karena membedakan
+// baseline (default → Utility, mempertahankan legacy behavior untuk
+// existing OSM feature tanpa role) dari planned (empty → null =
+// unclassified, tidak di-gate oleh role filter). Return: 'Utility'|
+// 'Captive'|'Community'|null (unclassified).
+function getRoleForFilter(ft) {
+  const raw = (ft.props.role || '').toString().trim();
+  if (raw === 'Utility' || raw === 'Captive' || raw === 'Community') return raw;
+  // Baseline missing role → legacy default (Utility)
+  if (!ft.planned) return 'Utility';
+  // Planned tanpa role valid → unclassified, bypass role filter (per
+  // requirement: "jangan infer sebagai Utility/Captive/Community").
+  return null;
+}
+
 function diameterForMW(mw) {
   if (!mw) return 14;
   if (mw < 10) return 14; if (mw < 50) return 16; if (mw < 200) return 20;
@@ -2547,11 +2562,19 @@ function buildFeatures() {
 // ============================================================
 function voltageClassOf(ft) {
   // Return '500'|'275'|'150'|'70'|'other'. Hanya bermakna untuk trm & sub.
+  // Canonical getter — baca baseline + planned + RUPTL companion fields.
+  // Trm: baseline pakai `voltage_kv_max` (OSM), planned pakai `voltage_kv`
+  //      (RUPTL row), fallback `voltage_kv_ruptl` (enriched baseline).
+  // Sub: field `voltage` sudah generic (both baseline "150/20" & planned).
   let v = 0;
   if (ft.kind === 'trm') {
-    v = parseFloat(ft.props.voltage_kv_max) || 0;
+    v = parseFloat(ft.props.voltage_kv_max)
+     || parseFloat(ft.props.voltage_kv)
+     || parseFloat(ft.props.voltage_kv_ruptl)
+     || 0;
   } else if (ft.kind === 'sub') {
-    const m = (ft.props.voltage || '').match(/\d+/);
+    const s = ft.props.voltage || ft.props.voltage_kv_ruptl || '';
+    const m = s.toString().match(/\d+/);
     v = m ? parseInt(m[0], 10) : 0;
   }
   if (v >= 500) return '500';
@@ -2623,75 +2646,74 @@ function applyFilters() {
   const provinceBounds = province ? computeProvinceBounds(province) : null;
 
   // ------------------------------------------------------------
-  // Filter hierarchy (top → bottom):
-  //   REGION        — region toggle + province filter (semua feature)
-  //   MASTER        — asset type visibility gate (top parent per kind)
-  //   STATUS        — existing vs planned (child dimension)
-  //   ATTRIBUTES    — role/voltage/capacity/plant-type (EXISTING only)
-  //   YEAR          — RUPTL Development target COD (PLANNED only)
-  // Master OFF → seluruh kind hidden regardless status/attribute/year.
-  // Existing → master + status_existing + attribute filters.
-  // Planned  → master + status_planned + year filter (independent dari
-  //   attribute filters supaya user bisa eksplorasi planned tanpa
-  //   terikat state existing).
+  // Filter hierarchy (top → bottom, short-circuit di setiap layer):
+  //   REGION + PROVINCE — geographic scope (semua feature)
+  //   MASTER            — asset type visibility gate (parent per kind)
+  //   STATUS            — existing vs planned (child dimension)
+  //   ATTRIBUTE         — voltage/capacity/role/plant-type (SEMUA feature)
+  //   YEAR              — RUPTL Development target COD (planned only)
+  //
+  // Attribute filter sekarang berlaku ke BOTH existing dan planned.
+  // Canonical getter (voltageClassOf, capacityBucket, getRoleForFilter)
+  // baca baseline + planned + RUPTL companion fields.
+  // Planned gen tanpa role → unclassified (bypass role gate, tidak
+  // di-forced ke Utility). Planned trm/sub voltage dibaca dari
+  // voltage_kv / voltage field yang RUPTL populate.
   // ------------------------------------------------------------
   let shown = 0;
   for (const ft of features) {
-    // Region + province gate — berlaku untuk semua feature (kind-agnostic)
+    // Region + province gate
     const regionOk = regionOn[ft.region];
     const provinceOk = passProvince(ft, province, provinceBounds);
 
-    // Master gate — top-level parent per asset type. Master OFF → hide
-    // seluruh feature dari kind ini (short-circuit sebelum evaluasi child).
+    // Master gate — top-level parent per asset type
     let masterOk;
     if (ft.kind === 'trm') masterOk = trmMasterOn;
     else if (ft.kind === 'sub') masterOk = subMasterOn;
     else masterOk = genMasterOn;
 
-    let vis;
-    if (!masterOk) {
-      vis = false;
-    } else if (ft.planned) {
-      // ==== PLANNED path ====
-      // Status gate: sidebar planned toggle = source of truth (sync
-      // bidirectional dengan RUPTL Dev type checkbox).
-      let plannedGate = true;
-      if (ft.kind === 'trm') plannedGate = trmPlannedOn;
-      else if (ft.kind === 'gen') plannedGate = genPlannedOn;
-      else if (ft.kind === 'sub') plannedGate = subPlannedOn;
-      // Year gate: dari RUPTL Development mode. All = pass semua tahun.
-      let yearGate = true;
-      if (RUPTL_DEV_YEAR !== 'all') {
-        const y = getRuptlYear(ft.props);
-        if (RUPTL_DEV_YEAR === 'unspecified') yearGate = !y;
-        else yearGate = (y === RUPTL_DEV_YEAR);
-      }
-      vis = regionOk && provinceOk && plannedGate && yearGate;
+    // Status gate — existing or planned, per checkbox pair
+    let statusOk;
+    if (ft.planned) {
+      if (ft.kind === 'trm') statusOk = trmPlannedOn;
+      else if (ft.kind === 'gen') statusOk = genPlannedOn;
+      else statusOk = subPlannedOn;
     } else {
-      // ==== EXISTING path ====
-      // Status gate: kalau STATUS Existing checkbox OFF → semua existing
-      // dari kind ini hidden, regardless dari attribute filter state.
-      let statusOk;
       if (ft.kind === 'trm') statusOk = trmExistingOn;
-      else if (ft.kind === 'sub') statusOk = subExistingOn;
-      else statusOk = genExistingOn;
-      // Attribute filter (voltage/role/capacity/plant-type) berlaku
-      // penuh untuk baseline features.
-      let attrVis;
-      if (ft.kind === 'trm') {
-        const c = voltageClassOf(ft);
-        attrVis = (c === 'other') ? true : trmVolt.has(c);
-      } else if (ft.kind === 'sub') {
-        const c = voltageClassOf(ft);
-        attrVis = (c === 'other') ? true : subVolt.has(c);
-      } else {
-        // Pembangkit: AND kapasitas + peran + plant-type
-        attrVis = genBkt.has(capacityBucket(ft.props.capacity_mw))
-               && genRole.has(getRole(ft.props))
-               && typesOn.has(ft.props.type);
-      }
-      vis = regionOk && provinceOk && statusOk && attrVis;
+      else if (ft.kind === 'gen') statusOk = genExistingOn;
+      else statusOk = subExistingOn;
     }
+
+    // Attribute filter — uniform untuk existing + planned. Canonical
+    // getter menangani perbedaan field (baseline vs planned/companion).
+    let attrVis;
+    if (ft.kind === 'trm') {
+      const c = voltageClassOf(ft);
+      attrVis = (c === 'other') ? true : trmVolt.has(c);
+    } else if (ft.kind === 'sub') {
+      const c = voltageClassOf(ft);
+      attrVis = (c === 'other') ? true : subVolt.has(c);
+    } else {
+      // Pembangkit — 3 attribute filter: capacity, role, plant-type
+      const cap = capacityBucket(ft.props.capacity_mw);
+      const role = getRoleForFilter(ft);
+      const capOk = genBkt.has(cap);
+      // Role: null = unclassified (planned tanpa role) → bypass gate.
+      const roleOk = (role === null) ? true : genRole.has(role);
+      const typeOk = typesOn.has(ft.props.type);
+      attrVis = capOk && roleOk && typeOk;
+    }
+
+    // Year filter — planned only (RUPTL Development temporal exploration)
+    let yearGate = true;
+    if (ft.planned && RUPTL_DEV_YEAR !== 'all') {
+      const y = getRuptlYear(ft.props);
+      if (RUPTL_DEV_YEAR === 'unspecified') yearGate = !y;
+      else yearGate = (y === RUPTL_DEV_YEAR);
+    }
+
+    const vis = masterOk && regionOk && provinceOk && statusOk
+             && attrVis && yearGate;
 
     if (vis !== ft.visible) {
       if (vis) ft.layer.addTo(map);
