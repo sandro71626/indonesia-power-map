@@ -569,6 +569,14 @@
       <div class="layer-toggle"><input type="checkbox" id="m-trm" checked>
         <label for="m-trm"><strong data-i18n="sidebar.layer.transmisi">Transmisi</strong></label></div>
       <div class="sublayers">
+        <div class="sub-hint" data-i18n="sidebar.layer.status_header">STATUS</div>
+        <label><input type="checkbox" id="m-trm-existing" checked>
+          <span class="sw-line" style="background:#666;height:2px"></span>
+          <span data-i18n="sidebar.layer.status.existing">Existing</span></label>
+        <label><input type="checkbox" id="m-trm-planned">
+          <span class="sw-line" style="border-top:2px dashed #666;height:0"></span>
+          <span data-i18n="sidebar.layer.status.planned">Planned RUPTL</span></label>
+        <div class="sub-hint" data-i18n="sidebar.layer.voltage_header">TEGANGAN</div>
         <label><input type="checkbox" class="sub-trm" value="500" checked>
           <span class="sw-line" style="background:#d62728;height:4px"></span> 500 kV</label>
         <label><input type="checkbox" class="sub-trm" value="275" checked>
@@ -577,9 +585,6 @@
           <span class="sw-line" style="background:#1f77b4;height:2px"></span> 150 kV</label>
         <label><input type="checkbox" class="sub-trm" value="70" checked>
           <span class="sw-line" style="background:#2ca02c;height:1.5px"></span> 70 kV</label>
-        <label><input type="checkbox" id="m-trm-planned">
-          <span class="sw-line" style="border-top:2px dashed #666;height:0"></span>
-          <span data-i18n="sidebar.layer.planned_trm">Rencana RUPTL</span></label>
       </div>
     </div>
 
@@ -587,6 +592,14 @@
       <div class="layer-toggle"><input type="checkbox" id="m-sub">
         <label for="m-sub"><strong data-i18n="sidebar.layer.gi">Gardu Induk</strong></label></div>
       <div class="sublayers">
+        <div class="sub-hint" data-i18n="sidebar.layer.status_header">STATUS</div>
+        <label><input type="checkbox" id="m-sub-existing" checked>
+          <span class="sw-box" style="background:#666;border-color:#666"></span>
+          <span data-i18n="sidebar.layer.status.existing">Existing</span></label>
+        <label><input type="checkbox" id="m-sub-planned">
+          <span class="sw-box" style="background:transparent;border-color:#666"></span>
+          <span data-i18n="sidebar.layer.status.planned">Planned RUPTL</span></label>
+        <div class="sub-hint" data-i18n="sidebar.layer.voltage_header">TEGANGAN</div>
         <label><input type="checkbox" class="sub-sub" value="500" checked>
           <span class="sw-box" style="background:#d62728"></span> 500 kV</label>
         <label><input type="checkbox" class="sub-sub" value="275" checked>
@@ -595,9 +608,6 @@
           <span class="sw-box" style="background:#1f77b4"></span> 150 kV</label>
         <label><input type="checkbox" class="sub-sub" value="70" checked>
           <span class="sw-box" style="background:#2ca02c"></span> 70 kV</label>
-        <label><input type="checkbox" id="m-sub-planned">
-          <span class="sw-box" style="background:transparent;border-color:#666"></span>
-          <span data-i18n="sidebar.layer.planned_sub">Rencana RUPTL</span></label>
       </div>
     </div>
 
@@ -605,6 +615,13 @@
       <div class="layer-toggle"><input type="checkbox" id="m-gen">
         <label for="m-gen"><strong data-i18n="sidebar.layer.pembangkit">Pembangkit</strong></label></div>
       <div class="sublayers">
+        <div class="sub-hint" data-i18n="sidebar.layer.status_header">STATUS</div>
+        <label><input type="checkbox" id="m-gen-existing" checked>
+          <span class="sw-dot" style="background:#666"></span>
+          <span data-i18n="sidebar.layer.status.existing">Existing</span></label>
+        <label><input type="checkbox" id="m-gen-planned">
+          <span class="sw-dot" style="background:transparent;border:1.5px solid #666"></span>
+          <span data-i18n="sidebar.layer.status.planned">Planned RUPTL</span></label>
         <div class="sub-hint" data-i18n="sidebar.layer.size_header">UKURAN</div>
         <label><input type="checkbox" class="sub-gen" value="b500" checked>
           <span data-i18n="sidebar.layer.b500">≥ 500 MW</span></label>
@@ -621,9 +638,6 @@
           <span class="sw-dot" style="background:#d97706"></span> Captive</label>
         <label><input type="checkbox" class="sub-gen-role" value="Community" checked>
           <span class="sw-dot" style="background:#2ca02c"></span> Community</label>
-        <label><input type="checkbox" id="m-gen-planned">
-          <span class="sw-dot" style="background:transparent;border:1.5px solid #666"></span>
-          <span data-i18n="sidebar.layer.planned_gen">Rencana RUPTL</span></label>
       </div>
     </div>
 
@@ -1057,6 +1071,10 @@ const TRANSLATIONS = {
     'sidebar.layer.b100': '100–500 MW',
     'sidebar.layer.b20': '20–100 MW',
     'sidebar.layer.b0': '< 20 MW / tak tercatat',
+    'sidebar.layer.status_header': 'STATUS',
+    'sidebar.layer.status.existing': 'Existing',
+    'sidebar.layer.status.planned': 'Planned RUPTL',
+    'sidebar.layer.voltage_header': 'TEGANGAN',
     'sidebar.layer.planned_trm': 'Rencana RUPTL',
     'sidebar.layer.planned_gen': 'Rencana RUPTL',
     'sidebar.layer.planned_sub': 'Rencana RUPTL',
@@ -1338,6 +1356,10 @@ const TRANSLATIONS = {
     'sidebar.layer.b100': '100–500 MW',
     'sidebar.layer.b20': '20–100 MW',
     'sidebar.layer.b0': '< 20 MW / unrecorded',
+    'sidebar.layer.status_header': 'STATUS',
+    'sidebar.layer.status.existing': 'Existing',
+    'sidebar.layer.status.planned': 'Planned RUPTL',
+    'sidebar.layer.voltage_header': 'VOLTAGE',
     'sidebar.layer.planned_trm': 'RUPTL planned',
     'sidebar.layer.planned_gen': 'RUPTL planned',
     'sidebar.layer.planned_sub': 'RUPTL planned',
@@ -2347,10 +2369,14 @@ function ruptlDevPassesType(ft) {
 // eksplorasi temporal (per requirement default state).
 function activateRuptlDevMode() {
   RUPTL_DEV_TYPES.gen = RUPTL_DEV_TYPES.sub = RUPTL_DEV_TYPES.trm = true;
-  // Turn ON semua sidebar planned toggle
+  // Turn ON semua sidebar planned toggle + existing toggle. RUPTL Dev
+  // ideal state: Existing ON + Planned ON, supaya user liat semua asset
+  // (baseline + planned) sebagai starting point eksplorasi temporal.
   ['gen', 'sub', 'trm'].forEach(kind => {
-    const sidebar = document.getElementById('m-' + kind + '-planned');
-    if (sidebar) sidebar.checked = true;
+    const planned = document.getElementById('m-' + kind + '-planned');
+    if (planned) planned.checked = true;
+    const existing = document.getElementById('m-' + kind + '-existing');
+    if (existing) existing.checked = true;
     const rdCb = document.getElementById('rd-type-' + kind);
     if (rdCb) rdCb.checked = true;
   });
@@ -2372,8 +2398,10 @@ function resetRuptlDev() {
   ['gen', 'sub', 'trm'].forEach(k => {
     const cb = document.getElementById('rd-type-' + k);
     if (cb) cb.checked = true;
-    const sidebar = document.getElementById('m-' + k + '-planned');
-    if (sidebar) sidebar.checked = true;
+    const planned = document.getElementById('m-' + k + '-planned');
+    if (planned) planned.checked = true;
+    const existing = document.getElementById('m-' + k + '-existing');
+    if (existing) existing.checked = true;
   });
   applyFilters();
   updateRuptlDevCount();
@@ -2392,8 +2420,11 @@ function deactivateRuptlDevMode() {
   ['gen', 'sub', 'trm'].forEach(k => {
     const cb = document.getElementById('rd-type-' + k);
     if (cb) cb.checked = false;
-    const sidebar = document.getElementById('m-' + k + '-planned');
-    if (sidebar) sidebar.checked = false;
+    const planned = document.getElementById('m-' + k + '-planned');
+    if (planned) planned.checked = false;
+    // Restore existing ke default ON (kalau user sempat turn off).
+    const existing = document.getElementById('m-' + k + '-existing');
+    if (existing) existing.checked = true;
   });
   applyFilters();
   updateRuptlDevCount();
@@ -2572,9 +2603,14 @@ function applyFilters() {
   // Planned RUPTL toggles — default off (opt-in). Kontrol visibility
   // planned assets terpisah dari layer utama supaya user bisa fokus ke
   // existing infrastructure by default, planned muncul saat diminta.
+  // STATUS dimension per kind — 2 checkbox terpisah untuk existing vs planned.
+  // Independent dari attribute filter (voltage/role/capacity/plant-type).
   const trmPlannedOn = document.getElementById('m-trm-planned').checked;
   const genPlannedOn = document.getElementById('m-gen-planned').checked;
   const subPlannedOn = document.getElementById('m-sub-planned').checked;
+  const trmExistingOn = document.getElementById('m-trm-existing').checked;
+  const genExistingOn = document.getElementById('m-gen-existing').checked;
+  const subExistingOn = document.getElementById('m-sub-existing').checked;
   const province = document.getElementById('f-province').value;
   // Compute province bounds sekali (dipakai passProvince untuk filter
   // transmisi via bbox intersection). Null kalau tidak ada Province Filter.
@@ -2619,6 +2655,12 @@ function applyFilters() {
       vis = regionOk && provinceOk && plannedGate && yearGate;
     } else {
       // ==== EXISTING path ====
+      // Status gate: kalau STATUS Existing checkbox OFF → semua existing
+      // dari kind ini hidden, regardless dari attribute filter state.
+      let statusOk;
+      if (ft.kind === 'trm') statusOk = trmExistingOn;
+      else if (ft.kind === 'sub') statusOk = subExistingOn;
+      else statusOk = genExistingOn;
       // Attribute filter (voltage/role/capacity/plant-type) berlaku
       // penuh untuk baseline features.
       let attrVis;
@@ -2634,7 +2676,7 @@ function applyFilters() {
                && genRole.has(getRole(ft.props))
                && typesOn.has(ft.props.type);
       }
-      vis = regionOk && provinceOk && attrVis;
+      vis = regionOk && provinceOk && statusOk && attrVis;
     }
 
     if (vis !== ft.visible) {
@@ -2801,6 +2843,15 @@ function setupFilters() {
       updateRuptlDevCount();
       updateRuptlDevChip();
     });
+  });
+
+  // STATUS Existing checkboxes — independent dari planned + attribute filters.
+  // Toggle OFF → semua existing feature dari kind tersebut hidden meskipun
+  // attribute filter di-set on. Tidak sync ke RUPTL Dev (RUPTL Dev cuma
+  // control planned).
+  ['m-trm-existing', 'm-gen-existing', 'm-sub-existing'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.addEventListener('change', applyFilters);
   });
 
   // Reset filter (jenis pembangkit & provinsi & peran + RUPTL Dev)
