@@ -1,19 +1,19 @@
-id,name,voltage_kv,action_type,capacity_mva,target_cod_year,status,province,region_key,source_page,source_table
-RUPTL-PAPUA-GI-0001,Holtekamp,150/20,,60.0,2025,Committed,Papua,papua,1125,Tabel C9.15
-RUPTL-PAPUA-GI-0002,Elelim,150/20,,10.0,2030,Planned,Papua,papua,1125,Tabel C9.15
-RUPTL-PAPUA-GI-0003,Ilaga,150/20,,10.0,2030,Planned,Papua,papua,1125,Tabel C9.15
-RUPTL-PAPUA-GI-0004,Karubaga,150/20,,10.0,2030,Planned,Papua,papua,1125,Tabel C9.15
-RUPTL-PAPUA-GI-0005,Mulia,150/20,,10.0,2030,Planned,Papua,papua,1125,Tabel C9.15
-RUPTL-PAPUA-GI-0006,Sumohai,150/20,,10.0,2030,Planned,Papua,papua,1125,Tabel C9.15
-RUPTL-PAPUA-GI-0007,Wamena,150/20,,30.0,2030,Planned,Papua,papua,1125,Tabel C9.15
-RUPTL-PAPUA-GI-0008,Angkasa,150/20,,60.0,2031,Planned,Papua,papua,1125,Tabel C9.15
-RUPTL-PAPUA-GI-0009,Holtekamp,150,,2.0,2031,Planned,Papua,papua,1125,Tabel C9.15
-RUPTL-PAPUA-GI-0010,Jayapura /Skyland,150,,2.0,2031,Planned,Papua,papua,1125,Tabel C9.15
-RUPTL-PAPUA-GI-0011,Sentani Baru,70/20,,60.0,2031,Planned,Papua,papua,1125,Tabel C9.15
-RUPTL-PAPUA-GI-0012,Angkasa,150,,2.0,2033,Planned,Papua,papua,1125,Tabel C9.15
-RUPTL-PAPUA-GI-0013,Holtekamp,150,,2.0,2033,Planned,Papua,papua,1125,Tabel C9.15
-RUPTL-PAPUA-GI-0014,Keerom,150/20,,30.0,2033,Planned,Papua,papua,1125,Tabel C9.15
-RUPTL-PAPUA-GI-0015,Manokwari,150/20,,60.0,2025,Construction,Papua Barat,papua,1146,Tabel C10.13
-RUPTL-PAPUA-GI-0016,PLTMG Manokwari,150,,2.0,2026,Committed,Papua Barat,papua,1147,Tabel C10.18
-RUPTL-PAPUA-GI-0017,Prafi,150/20,,30.0,2026,Committed,Papua Barat,papua,1147,Tabel C10.18
-RUPTL-PAPUA-GI-0018,PLTMG Manokwari,150,,2.0,2029,Planned,Papua Barat,papua,1147,Tabel C10.18
+id,name,voltage_kv,action_type,action_type_raw,capacity_mva,target_cod_year,status,province,region_key,source_page,source_table
+RUPTL-PAPUA-GI-0001,Holtekamp,150/20,Extension,Ext,60.0,2025,Committed,Papua,papua,1125,Tabel C9.15
+RUPTL-PAPUA-GI-0002,Elelim,150/20,New,New,10.0,2030,Planned,Papua,papua,1125,Tabel C9.15
+RUPTL-PAPUA-GI-0003,Ilaga,150/20,Extension,Ext,10.0,2030,Planned,Papua,papua,1125,Tabel C9.15
+RUPTL-PAPUA-GI-0004,Karubaga,150/20,New,New,10.0,2030,Planned,Papua,papua,1125,Tabel C9.15
+RUPTL-PAPUA-GI-0005,Mulia,150/20,New,New,10.0,2030,Planned,Papua,papua,1125,Tabel C9.15
+RUPTL-PAPUA-GI-0006,Sumohai,150/20,New,New,10.0,2030,Planned,Papua,papua,1125,Tabel C9.15
+RUPTL-PAPUA-GI-0007,Wamena,150/20,New,New,30.0,2030,Planned,Papua,papua,1125,Tabel C9.15
+RUPTL-PAPUA-GI-0008,Angkasa,150/20,New,New,60.0,2031,Planned,Papua,papua,1125,Tabel C9.15
+RUPTL-PAPUA-GI-0009,Holtekamp,150,Extension,Ext,2.0,2031,Planned,Papua,papua,1125,Tabel C9.15
+RUPTL-PAPUA-GI-0010,Jayapura /Skyland,150,Extension,Ext,2.0,2031,Planned,Papua,papua,1125,Tabel C9.15
+RUPTL-PAPUA-GI-0011,Sentani Baru,70/20,New,New,60.0,2031,Planned,Papua,papua,1125,Tabel C9.15
+RUPTL-PAPUA-GI-0012,Angkasa,150,Extension,Ext,2.0,2033,Planned,Papua,papua,1125,Tabel C9.15
+RUPTL-PAPUA-GI-0013,Holtekamp,150,Extension,Ext,2.0,2033,Planned,Papua,papua,1125,Tabel C9.15
+RUPTL-PAPUA-GI-0014,Keerom,150/20,New,New,30.0,2033,Planned,Papua,papua,1125,Tabel C9.15
+RUPTL-PAPUA-GI-0015,Manokwari,150/20,New,New,60.0,2025,Construction,Papua Barat,papua,1146,Tabel C10.13
+RUPTL-PAPUA-GI-0016,PLTMG Manokwari,150,Extension,Ext,2.0,2026,Committed,Papua Barat,papua,1147,Tabel C10.18
+RUPTL-PAPUA-GI-0017,Prafi,150/20,New,New,30.0,2026,Committed,Papua Barat,papua,1147,Tabel C10.18
+RUPTL-PAPUA-GI-0018,PLTMG Manokwari,150,Extension,Ext,2.0,2029,Planned,Papua Barat,papua,1147,Tabel C10.18

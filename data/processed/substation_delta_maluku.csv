@@ -1,8 +1,8 @@
-ruptl_id,name,voltage_kv,action_type,capacity_mva,target_cod_year,status,province,classification,baseline_id,baseline_name,source_page,source_table
-RUPTL-MALUKU-GI-0001,Kairatu,150/20,,30.0,2025,Construction,Maluku,ORPHAN,,,1080,Tabel C7.19
-RUPTL-MALUKU-GI-0002,Masohi,150,,4.0,2026,Committed,Maluku,ORPHAN,GI-MLK-0004,Masohi,1080,Tabel C7.19
-RUPTL-MALUKU-GI-0003,Mako,70/20,,20.0,2027,Committed,Maluku,ORPHAN,,,1080,Tabel C7.19
-RUPTL-MALUKU-GI-0004,Piru,150,,2.0,2029,Planned,Maluku,ORPHAN,GI-MLK-0005,Piru,1080,Tabel C7.19
-RUPTL-MALUKU-GI-0005,Tobelo,150,,4.0,2025,Construction,Maluku Utara,ORPHAN,GI-MLK-0012,Tobelo,1100,Tabel C8.18
-RUPTL-MALUKU-GI-0006,Tidore,150/20,,30.0,2027,Committed,Maluku Utara,ORPHAN,,,1100,Tabel C8.18
-RUPTL-MALUKU-GI-0007,Maba,150/20,,30.0,2030,Planned,Maluku Utara,ORPHAN,,,1100,Tabel C8.18
+ruptl_id,name,voltage_kv,action_type,capacity_mva,target_cod_year,status,province,classification,baseline_id,baseline_name,source_page,source_table,override_applied,override_id,override_decision,override_by,override_date,override_reason
+RUPTL-MALUKU-GI-0001,Kairatu,150/20,New,30.0,2025,Construction,Maluku,NEW_BUILD,,,1080,Tabel C7.19,,,,,,
+RUPTL-MALUKU-GI-0002,Masohi,150,Extension,4.0,2026,Committed,Maluku,EXISTING_EXT,GI-MLK-0004,Masohi,1080,Tabel C7.19,,,,,,
+RUPTL-MALUKU-GI-0003,Mako,70/20,New,20.0,2027,Committed,Maluku,NEW_BUILD,,,1080,Tabel C7.19,,,,,,
+RUPTL-MALUKU-GI-0004,Piru,150,Extension,2.0,2029,Planned,Maluku,EXISTING_EXT,GI-MLK-0005,Piru,1080,Tabel C7.19,,,,,,
+RUPTL-MALUKU-GI-0005,Tobelo,150,Extension,4.0,2025,Construction,Maluku Utara,EXISTING_EXT,GI-MLK-0012,Tobelo,1100,Tabel C8.18,,,,,,
+RUPTL-MALUKU-GI-0006,Tidore,150/20,New,30.0,2027,Committed,Maluku Utara,NEW_BUILD,,,1100,Tabel C8.18,,,,,,
+RUPTL-MALUKU-GI-0007,Maba,150/20,New,30.0,2030,Planned,Maluku Utara,NEW_BUILD,,,1100,Tabel C8.18,,,,,,

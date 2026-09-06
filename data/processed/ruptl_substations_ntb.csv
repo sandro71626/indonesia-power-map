@@ -1,16 +1,16 @@
-id,name,voltage_kv,action_type,capacity_mva,target_cod_year,status,province,region_key,source_page,source_table
-RUPTL-NTB-GI-0001,Jeranjang,150,,2.0,2025,Construction,Nusa Tenggara Barat,ntb,1163,Tabel C11.15
-RUPTL-NTB-GI-0002,Mantang,150,,2.0,2025,Committed,Nusa Tenggara Barat,ntb,1163,Tabel C11.15
-RUPTL-NTB-GI-0003,Mataram,150,,2.0,2025,Committed,Nusa Tenggara Barat,ntb,1163,Tabel C11.15
-RUPTL-NTB-GI-0004,Empang,150/20,,30.0,2027,Committed,Nusa Tenggara Barat,ntb,1163,Tabel C11.15
-RUPTL-NTB-GI-0005,Jeranjang,150/20,,60.0,2027,Committed,Nusa Tenggara Barat,ntb,1163,Tabel C11.15
-RUPTL-NTB-GI-0006,Switching Mataram,150/20,,60.0,2027,Committed,Nusa Tenggara Barat,ntb,1163,Tabel C11.15
-RUPTL-NTB-GI-0007,Alas,70/20,,30.0,2028,Planned,Nusa Tenggara Barat,ntb,1163,Tabel C11.15
-RUPTL-NTB-GI-0008,Taliwang,70/20,,30.0,2028,Planned,Nusa Tenggara Barat,ntb,1163,Tabel C11.15
-RUPTL-NTB-GI-0009,Tanjung,150/20,,60.0,2028,Planned,Nusa Tenggara Barat,ntb,1163,Tabel C11.15
-RUPTL-NTB-GI-0010,Pringgabaya,150/20,,30.0,2029,Planned,Nusa Tenggara Barat,ntb,1163,Tabel C11.15
-RUPTL-NTB-GI-0011,Sape,70/20,,30.0,2029,Planned,Nusa Tenggara Barat,ntb,1163,Tabel C11.15
-RUPTL-NTB-GI-0012,Jeranjang,150/20,,60.0,2033,Planned,Nusa Tenggara Barat,ntb,1163,Tabel C11.15
-RUPTL-NTB-GI-0013,Labuhan/ Sumbawa,150/20,,60.0,2033,Planned,Nusa Tenggara Barat,ntb,1163,Tabel C11.15
-RUPTL-NTB-GI-0014,Maluk,70/20,,30.0,2033,Planned,Nusa Tenggara Barat,ntb,1163,Tabel C11.15
-RUPTL-NTB-GI-0015,New Lotim,150/20,,30.0,2033,Planned,Nusa Tenggara Barat,ntb,1163,Tabel C11.15
+id,name,voltage_kv,action_type,action_type_raw,capacity_mva,target_cod_year,status,province,region_key,source_page,source_table
+RUPTL-NTB-GI-0001,Jeranjang,150,Extension,Ext,2.0,2025,Construction,Nusa Tenggara Barat,ntb,1163,Tabel C11.15
+RUPTL-NTB-GI-0002,Mantang,150,Extension,Ext,2.0,2025,Committed,Nusa Tenggara Barat,ntb,1163,Tabel C11.15
+RUPTL-NTB-GI-0003,Mataram,150,Extension,Ext,2.0,2025,Committed,Nusa Tenggara Barat,ntb,1163,Tabel C11.15
+RUPTL-NTB-GI-0004,Empang,150/20,Extension,Ext,30.0,2027,Committed,Nusa Tenggara Barat,ntb,1163,Tabel C11.15
+RUPTL-NTB-GI-0005,Jeranjang,150/20,Uprate,Upr,60.0,2027,Committed,Nusa Tenggara Barat,ntb,1163,Tabel C11.15
+RUPTL-NTB-GI-0006,Switching Mataram,150/20,New,New,60.0,2027,Committed,Nusa Tenggara Barat,ntb,1163,Tabel C11.15
+RUPTL-NTB-GI-0007,Alas,70/20,Extension,Ext,30.0,2028,Planned,Nusa Tenggara Barat,ntb,1163,Tabel C11.15
+RUPTL-NTB-GI-0008,Taliwang,70/20,Extension,Ext,30.0,2028,Planned,Nusa Tenggara Barat,ntb,1163,Tabel C11.15
+RUPTL-NTB-GI-0009,Tanjung,150/20,Extension,Ext,60.0,2028,Planned,Nusa Tenggara Barat,ntb,1163,Tabel C11.15
+RUPTL-NTB-GI-0010,Pringgabaya,150/20,Extension,Ext,30.0,2029,Planned,Nusa Tenggara Barat,ntb,1163,Tabel C11.15
+RUPTL-NTB-GI-0011,Sape,70/20,Extension,Ext,30.0,2029,Planned,Nusa Tenggara Barat,ntb,1163,Tabel C11.15
+RUPTL-NTB-GI-0012,Jeranjang,150/20,Uprate,Upr,60.0,2033,Planned,Nusa Tenggara Barat,ntb,1163,Tabel C11.15
+RUPTL-NTB-GI-0013,Labuhan/ Sumbawa,150/20,Extension,Ext,60.0,2033,Planned,Nusa Tenggara Barat,ntb,1163,Tabel C11.15
+RUPTL-NTB-GI-0014,Maluk,70/20,New,New,30.0,2033,Planned,Nusa Tenggara Barat,ntb,1163,Tabel C11.15
+RUPTL-NTB-GI-0015,New Lotim,150/20,New,New,30.0,2033,Planned,Nusa Tenggara Barat,ntb,1163,Tabel C11.15

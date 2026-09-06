@@ -1,0 +1,183 @@
+# Reconciliation report — sulawesi
+
+Timestamp: 2026-09-06T06:57:58Z
+
+## Thresholds
+- min-mw = 1.0
+- radius (confirm) = 2.0 km
+- radius-name = 15.0 km
+- radius-type = 15.0 km
+- cap-tol (confirm) = 20%
+- doubt-mw = 100.0 MW
+
+## Tier counts
+- CONFIRMED_MATCH: 0 (0.0%)
+- PROBABLE_MATCH: 2 (1.4%)
+- AMBIGUOUS: 0 (0.0%)
+- CONFLICT: 0 (0.0%)
+- UNMATCHED_IPM: 83 (59.3%)
+- UNMATCHED_RUPTL: 55 (39.3%)
+
+## Cases needing manual review
+- **UNMATCHED_RUPTL** · 800.0 MW · Sulbagsel (Kuota) Tersebar Tambahan II · Sulawesi Selatan
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SULAWESI-P-0020`
+- **UNMATCHED_RUPTL** · 800.0 MW · Sulbagsel (Kuota) Tersebar Tambahan II · Sulawesi Barat
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SULAWESI-P-0058`
+- **UNMATCHED_RUPTL** · 600.0 MW · Sulbagsel (Kuota) Tersebar Tambahan II · Sulawesi Selatan
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SULAWESI-P-0021`
+- **UNMATCHED_RUPTL** · 600.0 MW · Sulbagsel 3 · Sulawesi Tenggara
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SULAWESI-P-0028`
+- **UNMATCHED_RUPTL** · 600.0 MW · Sulbagsel 3 · Sulawesi Tenggara
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SULAWESI-P-0053`
+- **UNMATCHED_RUPTL** · 600.0 MW · Sulbagsel (Kuota) Tersebar Tambahan II · Sulawesi Barat
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SULAWESI-P-0059`
+- **UNMATCHED_RUPTL** · 400.0 MW · Sulbagsel (Kuota) Tersebar Tambahan II · Sulawesi Selatan
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SULAWESI-P-0022`
+- **UNMATCHED_RUPTL** · 300.0 MW · Sulbagsel (Kuota) Tersebar Tambahan I · Sulawesi Tengah
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SULAWESI-P-0013`
+- **UNMATCHED_RUPTL** · 300.0 MW · Sulbagsel (Kuota) Tersebar Tambahan I · Sulawesi Tengah
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SULAWESI-P-0014`
+- **UNMATCHED_RUPTL** · 300.0 MW · Sulbagsel 2 · Sulawesi Selatan
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SULAWESI-P-0017`
+- **UNMATCHED_RUPTL** · 300.0 MW · Sulbagsel · Sulawesi Tenggara
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SULAWESI-P-0048`
+- **UNMATCHED_RUPTL** · 300.0 MW · Sulbagsel · Sulawesi Tenggara
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SULAWESI-P-0049`
+- **UNMATCHED_RUPTL** · 200.0 MW · Sulbagsel (Kuota) Tersebar · Sulawesi Tengah
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SULAWESI-P-0009`
+- **UNMATCHED_RUPTL** · 200.0 MW · Sulbagsel (Kuota) Tersebar Tambahan I · Sulawesi Tengah
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SULAWESI-P-0011`
+- **UNMATCHED_RUPTL** · 200.0 MW · Sulbagsel (Kuota) Tersebar Tambahan I · Sulawesi Tengah
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SULAWESI-P-0012`
+- **UNMATCHED_RUPTL** · 200.0 MW · Sulbagsel (Kuota) Tersebar Tambahan · Sulawesi Selatan
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SULAWESI-P-0023`
+- **UNMATCHED_RUPTL** · 200.0 MW · Sulbagsel (Kuota) Tersebar Tambahan · Sulawesi Selatan
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SULAWESI-P-0024`
+- **UNMATCHED_RUPTL** · 200.0 MW · Sulbagsel (Kuota) Tersebar Tambahan · Sulawesi Selatan
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SULAWESI-P-0025`
+- **UNMATCHED_RUPTL** · 200.0 MW · Sulbagsel (Kuota) Tersebar Tambahan II · Sulawesi Selatan
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SULAWESI-P-0026`
+- **UNMATCHED_RUPTL** · 200.0 MW · Sulbagsel (Kuota) Tersebar Tambahan II · Sulawesi Selatan
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SULAWESI-P-0027`
+- **UNMATCHED_RUPTL** · 200.0 MW · MPP Indonesia 2 · Sulawesi Tenggara
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SULAWESI-P-0041`
+- **UNMATCHED_RUPTL** · 200.0 MW · MPP Indonesia 3 · Sulawesi Tenggara
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SULAWESI-P-0042`
+- **UNMATCHED_RUPTL** · 200.0 MW · Kluster PoCi · Sulawesi Tenggara
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SULAWESI-P-0043`
+- **UNMATCHED_RUPTL** · 100.0 MW · Sulbagsel (Kuota) Tersebar Tambahan I · Sulawesi Tengah
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SULAWESI-P-0010`
+- **UNMATCHED_RUPTL** · 100.0 MW · Sulbagsel (Kuota) Tersebar Tambahan · Sulawesi Selatan
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SULAWESI-P-0018`
+- **UNMATCHED_RUPTL** · 100.0 MW · Sulbagsel (Kuota) Tersebar Tambahan · Sulawesi Selatan
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SULAWESI-P-0019`
+- **UNMATCHED_RUPTL** · 100.0 MW · Sulbagsel (Kuota) Tersebar Tambahan · Sulawesi Tenggara
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SULAWESI-P-0054`
+- **UNMATCHED_RUPTL** · 62.0 MW · MPP Sulselbar · Sulawesi Tenggara
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SULAWESI-P-0040`
+- **UNMATCHED_RUPTL** · 50.0 MW · Sulbagut · Sulawesi Utara
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SULAWESI-P-0001`
+- **UNMATCHED_RUPTL** · 46.85 MW · Isolated Sulawesi Tenggara · Sulawesi Tenggara
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SULAWESI-P-0038`
+- **UNMATCHED_RUPTL** · 40.0 MW · Luwuk · Sulawesi Tengah
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SULAWESI-P-0006`
+- **UNMATCHED_RUPTL** · 22.0 MW · Sulbagsel (Kuota) Tersebar Tambahan I · Sulawesi Tenggara
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SULAWESI-P-0050`
+- **UNMATCHED_RUPTL** · 22.0 MW · Watunohu · Sulawesi Tenggara
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SULAWESI-P-0051`
+- **UNMATCHED_RUPTL** · 21.6 MW · Dedieselisasi · Sulawesi Tengah
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SULAWESI-P-0005`
+- **UNMATCHED_RUPTL** · 20.425 MW · Isolated Sulawesi Tenggara · Sulawesi Tenggara
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SULAWESI-P-0037`
+- **UNMATCHED_RUPTL** · 20.0 MW · Sulbagut (Kuota) Tersebar Tambahan · Sulawesi Utara
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SULAWESI-P-0002`
+- **UNMATCHED_RUPTL** · 20.0 MW · Sulbagut (Kuota) Tersebar Tambahan · Sulawesi Utara
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SULAWESI-P-0003`
+- **UNMATCHED_RUPTL** · 20.0 MW · Sulbagut (Kuota) Tersebar Tambahan · Sulawesi Utara
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SULAWESI-P-0004`
+- **UNMATCHED_RUPTL** · 18.6 MW · Isolated Sulawesi Tenggara · Sulawesi Tenggara
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SULAWESI-P-0036`
+- **UNMATCHED_RUPTL** · 10.0 MW · Sulbagsel (Kuota) Tersebar · Sulawesi Tenggara
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SULAWESI-P-0052`
+- **UNMATCHED_RUPTL** · 9.9 MW · Bone Bolango · Gorontalo
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SULAWESI-P-0015`
+- **UNMATCHED_RUPTL** · 8.75 MW · Dedieselisasi · Sulawesi Tenggara
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SULAWESI-P-0033`
+- **UNMATCHED_RUPTL** · 8.75 MW · Isolated Sulawesi Tenggara · Sulawesi Tenggara
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SULAWESI-P-0035`
+- **UNMATCHED_RUPTL** · 4.0 MW · Lapai 2 · Sulawesi Tenggara
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SULAWESI-P-0039`
+- **UNMATCHED_RUPTL** · 4.0 MW · Bonehau · Sulawesi Barat
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SULAWESI-P-0057`
+- **UNMATCHED_RUPTL** · 3.52 MW · Lisdes · Sulawesi Tenggara
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SULAWESI-P-0034`
+- **UNMATCHED_RUPTL** · 2.7 MW · Lapai 1 · Sulawesi Tenggara
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SULAWESI-P-0045`
+- **UNMATCHED_RUPTL** · 2.61 MW · Lapai 1 · Sulawesi Tenggara
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SULAWESI-P-0044`
+- **UNMATCHED_RUPTL** · 2.067 MW · Lisdes · Sulawesi Tenggara
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SULAWESI-P-0032`
+- **UNMATCHED_RUPTL** · 2.0 MW · Iya · Gorontalo
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SULAWESI-P-0016`
+
+Untuk decide, edit `data/overrides/generator_matches.csv`.
+Format kolom: `override_id,decision,ipm_id,ruptl_id,capacity_override,type_override,role_override,reason,reviewed_by,reviewed_at`.
+---
+
+### Override audit — generator
+
+- Loaded overrides: 0 valid, 0 invalid
+- Applied: 0
+- Unused (loaded but not applied): 0
+- Stale (missing baseline_id): 0
+- Stale (missing ruptl_id):    0

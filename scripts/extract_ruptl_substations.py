@@ -84,7 +84,14 @@ def substation_column_map(head_norm: list[str]) -> dict[str, Optional[int]]:
     idx["sistem"] = find("sistem")
     idx["name"] = find("gardu induk", "nama gi", "nama")
     idx["voltage"] = find("tegangan", " kv ", "kv")
-    idx["action"] = find("baru", "ext", "uprate", "jenis")
+    # Action column variants across Lampiran:
+    #   "Baru/ Ext./ Uprate"  (23x, Jamali/Sumatra style)
+    #   "Baru/ Ext/ Upr"      (7x)
+    #   "Ket"                 (6x, small-region Lampiran C style — NTT/NTB/Papua/Maluku)
+    #   "New/Ext /Upr"        (1x)
+    #   "Baru/Ext/Upr"        (1x)
+    # "Ket" (keterangan) adalah short header khas region kecil.
+    idx["action"] = find("baru", "ext", "uprate", "jenis", "ket", "new")
     idx["capacity"] = find("kapasitas", "mva")
     idx["trafo"] = find("trafo", "jumlah")
     # COD: bisa muncul 2x (RE Base + ARED). Ambil yang paling akhir.
@@ -232,7 +239,8 @@ def extract_from_pdf(pdf_path: Path, region_key: str,
         if not name:
             continue
         voltage = parse_voltage(pick("voltage"))
-        action = normalize_action(pick("action"))
+        action_raw = pick("action").strip()  # preserve original untuk audit
+        action = normalize_action(action_raw)
         capacity = parse_capacity_mva(pick("capacity"))
         status_raw = pick("status")
         cod_raw = pick("cod1") or pick("cod2") or pick("target")
@@ -244,6 +252,7 @@ def extract_from_pdf(pdf_path: Path, region_key: str,
             "name": name,
             "voltage_kv": voltage,
             "action_type": action,
+            "action_type_raw": action_raw,  # original PDF text untuk audit
             "capacity_mva": capacity or "",
             "target_cod_year": first_year,
             "status": normalize_status(status_raw),
@@ -307,7 +316,7 @@ def main() -> int:
                 project_root / (opts.out or
                                 f"data/processed/ruptl_substations_{opts.region}.csv"))
     out_path.parent.mkdir(parents=True, exist_ok=True)
-    headers = ["id", "name", "voltage_kv", "action_type", "capacity_mva",
+    headers = ["id", "name", "voltage_kv", "action_type", "action_type_raw", "capacity_mva",
                "target_cod_year", "status", "province", "region_key",
                "source_page", "source_table"]
     with out_path.open("w", encoding="utf-8", newline="") as f:

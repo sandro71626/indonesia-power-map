@@ -1,79 +1,79 @@
-id,name,type,capacity_mw,province,region_key,status,target_cod_year,cod_re_base,cod_ared,developer,source_table,source_page,lat,lon,coord_source,coord_confidence
-RUPTL-NTT-P-0001,Alor,PLTMG,7.0,Nusa Tenggara Timur,ntt,Construction,2025,2025,,PLN,Tabel C12.11,1176,-8.835921,121.246889,province_centroid,low
-RUPTL-NTT-P-0002,Alor 2,PLTMG,10.0,Nusa Tenggara Timur,ntt,Planned,2030,2030,,PLN SH,Tabel C12.11,1176,-8.649475,121.293985,province_centroid,low
-RUPTL-NTT-P-0003,Lisdes,PLTS,3.5,Nusa Tenggara Timur,ntt,Planned,2025,2025,,PLN,Tabel C12.11,1176,-8.495499,121.152512,province_centroid,low
-RUPTL-NTT-P-0004,Lisdes,PLTS,2.92,Nusa Tenggara Timur,ntt,Planned,2026,2026,,PLN,Tabel C12.11,1176,-8.673552,121.001718,province_centroid,low
-RUPTL-NTT-P-0005,Lisdes,PLTS,5.61,Nusa Tenggara Timur,ntt,Planned,2027,2027,,PLN,Tabel C12.11,1176,-8.484172,121.175750,province_centroid,low
-RUPTL-NTT-P-0006,Sumba (Kuota) Tersebar,PLTM,1.6,Nusa Tenggara Timur,ntt,Planned,2025,2025,,IPP,Tabel C12.11,1176,-8.839158,120.880369,province_centroid,low
-RUPTL-NTT-P-0007,Waingapu,PLTMG,10.0,Nusa Tenggara Timur,ntt,Construction,2025,2025,,PLN,Tabel C12.11,1176,-8.622896,120.941782,province_centroid,low
-RUPTL-NTT-P-0008,Alor (Kalabahi),PLTS,1.2,Nusa Tenggara Timur,ntt,Planned,2026,2026,,PLN,Tabel C12.11,1176,-8.520490,120.972492,province_centroid,low
-RUPTL-NTT-P-0009,Kalabahi (Kuota) Tersebar,PLTS,1.0,Nusa Tenggara Timur,ntt,Planned,2030,2030,,IPP,Tabel C12.11,1176,-8.629859,121.292638,province_centroid,low
-RUPTL-NTT-P-0010,Betun,PLTS,0.6,Nusa Tenggara Timur,ntt,Planned,2026,2026,,IPP,Tabel C12.11,1176,-8.733838,121.285724,province_centroid,low
-RUPTL-NTT-P-0011,Lembata,PLTS,3.0,Nusa Tenggara Timur,ntt,Planned,2026,2026,,PLN SH,Tabel C12.11,1176,-8.813136,121.147687,province_centroid,low
-RUPTL-NTT-P-0012,Maubesi,PLTB,3.3,Nusa Tenggara Timur,ntt,Planned,2029,2029,,PLN SH,Tabel C12.11,1176,-8.628133,121.131679,province_centroid,low
-RUPTL-NTT-P-0013,Flores (Labuhan Bajo dan lokasi lain),PLTS,10.0,Nusa Tenggara Timur,ntt,Planned,2026,2026,,PLN SH,,1177,-8.830848,121.094982,province_centroid,low
-RUPTL-NTT-P-0014,Flores (Kuota) Tersebar,PLTS,20.0,Nusa Tenggara Timur,ntt,Planned,2027,2027,,IPP,,1177,-8.461073,119.943518,gazetteer_generator:GEN-NTT-0015,high
-RUPTL-NTT-P-0015,Rote,PLTS,1.2,Nusa Tenggara Timur,ntt,Planned,2026,2026,,PLN,,1177,-8.823748,121.011368,province_centroid,low
-RUPTL-NTT-P-0016,Rote,PLTS,2.0,Nusa Tenggara Timur,ntt,Planned,2026,2026,,PLN,,1177,-8.748630,121.006934,province_centroid,low
-RUPTL-NTT-P-0017,Sumba (Kuota) Tersebar,PLTM,2.0,Nusa Tenggara Timur,ntt,Planned,2026,2026,,IPP,,1177,-8.823576,121.118001,province_centroid,low
-RUPTL-NTT-P-0018,Waingapu 2,PLTMG,10.0,Nusa Tenggara Timur,ntt,Committed,2026,2026,,PLN SH,,1177,-8.683897,121.155227,province_centroid,low
-RUPTL-NTT-P-0019,Lembata,PLTS,3.0,Nusa Tenggara Timur,ntt,Planned,2026,2026,,PLN SH,,1177,-8.508888,121.137356,province_centroid,low
-RUPTL-NTT-P-0020,Sumba (Kuota) Tersebar,PLTB,3.0,Nusa Tenggara Timur,ntt,Planned,2026,2026,,IPP,,1177,-8.512675,120.988796,province_centroid,low
-RUPTL-NTT-P-0021,Sumba,PLTS,5.0,Nusa Tenggara Timur,ntt,Planned,2026,2026,,PLN SH,,1177,-8.779642,121.138394,province_centroid,low
-RUPTL-NTT-P-0022,Timor (Kuota) Tersebar,PLTS,5.0,Nusa Tenggara Timur,ntt,Planned,2027,2027,,IPP,,1177,-10.350133,123.458906,gazetteer_generator:GEN-NTT-0017,high
-RUPTL-NTT-P-0023,Wae Lega - Ruteng,PLTM,1.75,Nusa Tenggara Timur,ntt,Construction,2025,2025,,IPP,,1177,-8.440615,121.037445,province_centroid,low
-RUPTL-NTT-P-0024,Dedieselisasi,PLTS,18.54,Nusa Tenggara Timur,ntt,Planned,2027,2027,,IPP,,1177,-8.654926,120.894054,province_centroid,low
-RUPTL-NTT-P-0025,Atadei (FTP2),PLTP,7.0,Nusa Tenggara Timur,ntt,Planned,2030,2030,,PLN SH,,1177,-8.478755,121.169124,province_centroid,low
-RUPTL-NTT-P-0026,Kupang 2,PLTMG,30.0,Nusa Tenggara Timur,ntt,Planned,2027,2027,,PLN SH,,1177,-10.353854,123.459370,gazetteer_generator:GEN-NTT-0009,high
-RUPTL-NTT-P-0027,Sokoria (FTP2),PLTP,11.0,Nusa Tenggara Timur,ntt,Construction,2028,2028,,IPP,,1177,-8.792978,121.766080,gazetteer_generator:GEN-NTT-0018,high
-RUPTL-NTT-P-0028,Sumba,PLTS,5.0,Nusa Tenggara Timur,ntt,Planned,2026,2026,,PLN SH,,1177,-8.692103,121.133940,province_centroid,low
-RUPTL-NTT-P-0029,Sumba,PLTS,5.0,Nusa Tenggara Timur,ntt,Planned,2026,2026,,PLN SH,,1177,-8.626937,120.986019,province_centroid,low
-RUPTL-NTT-P-0030,Timor (Kuota) Tersebar,PLTB,11.0,Nusa Tenggara Timur,ntt,Planned,2027,2027,,IPP,,1177,-10.350133,123.458906,gazetteer_generator:GEN-NTT-0017,high
-RUPTL-NTT-P-0031,Timor (Kuota) Tersebar,PLTB,11.0,Nusa Tenggara Timur,ntt,Planned,2027,2027,,IPP,,1177,-10.350133,123.458906,gazetteer_generator:GEN-NTT-0017,high
-RUPTL-NTT-P-0032,Timor (Kuota) Tersebar,PLTS,5.0,Nusa Tenggara Timur,ntt,Planned,2027,2027,,IPP,,1177,-10.350133,123.458906,gazetteer_generator:GEN-NTT-0017,high
-RUPTL-NTT-P-0033,Alor,PLTU,3.0,Nusa Tenggara Timur,ntt,Construction,2032,2032,,PLN,,1177,-8.463751,120.919306,province_centroid,low
-RUPTL-NTT-P-0034,Alor,PLTU,3.0,Nusa Tenggara Timur,ntt,Construction,2032,2032,,PLN,,1177,-8.808180,121.020997,province_centroid,low
-RUPTL-NTT-P-0035,Flores,PLTM,3.06,Nusa Tenggara Timur,ntt,Planned,2028,2028,,PLN,,1177,-8.461073,119.943518,gazetteer_generator:GEN-NTT-0015,high
-RUPTL-NTT-P-0036,Mataloko (FTP2),PLTP,10.0,Nusa Tenggara Timur,ntt,Planned,2031,2031,,PLN SH,,1177,-8.730958,121.138091,province_centroid,low
-RUPTL-NTT-P-0037,Rote Ndao,PLTU,5.0,Nusa Tenggara Timur,ntt,Construction,2029,2029,,PLN,,1177,-8.496708,121.118392,province_centroid,low
-RUPTL-NTT-P-0038,Sokoria (FTP2),PLTP,11.0,Nusa Tenggara Timur,ntt,Construction,2029,2029,,IPP,,1177,-8.792978,121.766080,gazetteer_generator:GEN-NTT-0018,high
-RUPTL-NTT-P-0039,Sumba,PLTM,1.83,Nusa Tenggara Timur,ntt,Planned,2029,2029,,PLN,,1177,-8.575594,120.890603,province_centroid,low
-RUPTL-NTT-P-0040,Ulumbu 5,PLTP,20.0,Nusa Tenggara Timur,ntt,Planned,2030,2030,,PLN SH,,1177,-8.726052,120.435514,gazetteer_generator:GEN-NTT-0016,high
-RUPTL-NTT-P-0041,Mataloko (FTP2),PLTP,10.0,Nusa Tenggara Timur,ntt,Planned,2031,2031,,PLN SH,,1177,-8.471648,120.948841,province_centroid,low
-RUPTL-NTT-P-0042,Sumba,PLTS,5.0,Nusa Tenggara Timur,ntt,Planned,2026,2026,,PLN SH,,1177,-8.551070,121.107285,province_centroid,low
-RUPTL-NTT-P-0043,Sumba,PLTS,5.0,Nusa Tenggara Timur,ntt,Planned,2026,2026,,PLN SH,,1177,-8.648836,121.009478,province_centroid,low
-RUPTL-NTT-P-0044,Atambua,PLTU,10.0,Nusa Tenggara Timur,ntt,Construction,2030,2030,,PLN,,1177,-9.087262,124.865583,gazetteer_substation:GI-NTT-0008,medium
-RUPTL-NTT-P-0045,Ulumbu 6,PLTP,20.0,Nusa Tenggara Timur,ntt,Planned,2032,2032,,PLN SH,,1177,-8.726052,120.435514,gazetteer_generator:GEN-NTT-0016,high
-RUPTL-NTT-P-0046,Oka Ile Ange (FTP2)*,PLTP,10.0,Nusa Tenggara Timur,ntt,Planned,2033,2033,,PLN SH,,1177,-8.712448,120.897642,province_centroid,low
-RUPTL-NTT-P-0047,Rote,PLTS,1.0,Nusa Tenggara Timur,ntt,Planned,2028,2028,,PLN SH,,1177,-8.811802,120.960931,province_centroid,low
-RUPTL-NTT-P-0048,PLTMG PLN Shrimp Farming,PLTMG,30.0,Nusa Tenggara Timur,ntt,Planned,2027,2027,,PLN SH,,1177,-8.640162,120.905154,province_centroid,low
-RUPTL-NTT-P-0049,Sumba-1,PLTMG,30.0,Nusa Tenggara Timur,ntt,Planned,2027,2027,,PLN SH,,1177,-8.771676,120.883111,province_centroid,low
-RUPTL-NTT-P-0050,Sumba-2,PLTMG,30.0,Nusa Tenggara Timur,ntt,Planned,2033,2033,,PLN SH,,1177,-8.791636,120.971688,province_centroid,low
-RUPTL-NTT-P-0051,Sumba,PLTS,5.0,Nusa Tenggara Timur,ntt,Planned,2031,2031,,PLN SH,,1178,-8.751008,121.108825,province_centroid,low
-RUPTL-NTT-P-0052,Sumba,PLTS,5.0,Nusa Tenggara Timur,ntt,Planned,2031,2031,,PLN SH,,1178,-8.504833,121.133239,province_centroid,low
-RUPTL-NTT-P-0053,Sumba,PLTS,5.0,Nusa Tenggara Timur,ntt,Planned,2033,2033,,PLN SH,,1178,-8.869422,121.135005,province_centroid,low
-RUPTL-NTT-P-0054,Sumba,PLTS,5.0,Nusa Tenggara Timur,ntt,Planned,2033,2033,,PLN SH,,1178,-8.579436,121.102006,province_centroid,low
-RUPTL-NTT-P-0055,Gunung Sirung*,PLTP,5.0,Nusa Tenggara Timur,ntt,Planned,2033,2033,,PLN SH,,1178,-8.640904,121.137053,province_centroid,low
-RUPTL-NTT-P-0056,Timor (Kuota) Tersebar,PLTS,10.0,Nusa Tenggara Timur,ntt,Planned,2028,2028,,IPP,,1178,-10.350133,123.458906,gazetteer_generator:GEN-NTT-0017,high
-RUPTL-NTT-P-0057,Flores,PLTMG,30.0,Nusa Tenggara Timur,ntt,Planned,2027,2027,,PLN SH,,1178,-8.461073,119.943518,gazetteer_generator:GEN-NTT-0015,high
-RUPTL-NTT-P-0058,Flores - 2,PLTMG,30.0,Nusa Tenggara Timur,ntt,Planned,2028,2028,,PLN SH,,1178,-8.461073,119.943518,gazetteer_generator:GEN-NTT-0015,high
-RUPTL-NTT-P-0059,Rangko 2,PLTMG,30.0,Nusa Tenggara Timur,ntt,Planned,2027,2027,,PLN SH,,1178,-8.461285,119.944263,gazetteer_substation:GI-NTT-0019,medium
-RUPTL-NTT-P-0060,Timor 2,PLTMG,50.0,Nusa Tenggara Timur,ntt,Planned,2028,2028,,PLN SH,,1178,-10.350133,123.458906,gazetteer_generator:GEN-NTT-0017,high
-RUPTL-NTT-P-0061,Timor 3,PLTMG,50.0,Nusa Tenggara Timur,ntt,Planned,2032,2032,,PLN SH,,1178,-10.350133,123.458906,gazetteer_generator:GEN-NTT-0017,high
-RUPTL-NTT-P-0062,Timor (Kuota) Tersebar,PLTBm,5.0,Nusa Tenggara Timur,ntt,Planned,2029,2029,,IPP,,1178,-10.350133,123.458906,gazetteer_generator:GEN-NTT-0017,high
-RUPTL-NTT-P-0063,Flores (Kuota) Tersebar,PLTAL,10.0,Nusa Tenggara Timur,ntt,Planned,2028,2028,,IPP,,1178,-8.461073,119.943518,gazetteer_generator:GEN-NTT-0015,high
-RUPTL-NTT-P-0064,Flores (Kuota) Tersebar,PLTAL,10.0,Nusa Tenggara Timur,ntt,Planned,2028,2028,,IPP,,1178,-8.461073,119.943518,gazetteer_generator:GEN-NTT-0015,high
-RUPTL-NTT-P-0065,Flores (Kuota) Tersebar,PLTS,10.0,Nusa Tenggara Timur,ntt,Planned,2030,2030,,IPP,,1178,-8.461073,119.943518,gazetteer_generator:GEN-NTT-0015,high
-RUPTL-NTT-P-0066,Flores (Kuota) Tersebar,PLTS,10.0,Nusa Tenggara Timur,ntt,Planned,2033,2033,,IPP,,1178,-8.461073,119.943518,gazetteer_generator:GEN-NTT-0015,high
-RUPTL-NTT-P-0067,Timor (Kuota) Tersebar,PLTB,22.0,Nusa Tenggara Timur,ntt,Planned,2032,2032,,IPP,,1178,-10.350133,123.458906,gazetteer_generator:GEN-NTT-0017,high
-RUPTL-NTT-P-0068,Timor (Kuota) Tersebar,PLTS,20.0,Nusa Tenggara Timur,ntt,Planned,2032,2032,,IPP,,1178,-10.350133,123.458906,gazetteer_generator:GEN-NTT-0017,high
-RUPTL-NTT-P-0069,Timor (Kuota) Tersebar,PLTS,50.0,Nusa Tenggara Timur,ntt,Planned,2033,2033,,IPP,,1178,-10.350133,123.458906,gazetteer_generator:GEN-NTT-0017,high
-RUPTL-NTT-P-0070,Isolated Nusa Tenggara Timur,PLTS,2.8,Nusa Tenggara Timur,ntt,Planned,2027,2027,,IPP,,1178,-8.875223,121.169557,province_centroid,low
-RUPTL-NTT-P-0071,Isolated Nusa Tenggara Timur,PLTS,37.0,Nusa Tenggara Timur,ntt,Planned,2028,2028,,IPP,,1178,-8.470445,120.956450,province_centroid,low
-RUPTL-NTT-P-0072,Isolated Nusa Tenggara Timur,PLTS,6.7,Nusa Tenggara Timur,ntt,Planned,2029,2029,,IPP,,1178,-8.548719,121.290782,province_centroid,low
-RUPTL-NTT-P-0073,Isolated Nusa Tenggara Timur,PLTS,4.0,Nusa Tenggara Timur,ntt,Planned,2031,2031,,IPP,,1178,-8.790330,121.092129,province_centroid,low
-RUPTL-NTT-P-0074,Isolated Nusa Tenggara Timur,PLTBm,0.5,Nusa Tenggara Timur,ntt,Planned,2029,2029,,IPP,,1178,-8.781003,121.050539,province_centroid,low
-RUPTL-NTT-P-0075,Timor (Kuota) Tersebar,PLTM,1.4,Nusa Tenggara Timur,ntt,Planned,2029,2029,,IPP,,1178,-10.350133,123.458906,gazetteer_generator:GEN-NTT-0017,high
-RUPTL-NTT-P-0076,Flores (Kuota) Tersebar,PLTM,0.22,Nusa Tenggara Timur,ntt,Planned,2029,2029,,IPP,,1178,-8.461073,119.943518,gazetteer_generator:GEN-NTT-0015,high
-RUPTL-NTT-P-0077,Flores (Kuota) Tersebar,PLTA,16.0,Nusa Tenggara Timur,ntt,Planned,2029,2029,,IPP,,1178,-8.461073,119.943518,gazetteer_generator:GEN-NTT-0015,high
-RUPTL-NTT-P-0078,Flores (Kuota) Tersebar,PLTP,40.0,Nusa Tenggara Timur,ntt,Planned,2032,2032,,IPP,,1178,-8.461073,119.943518,gazetteer_generator:GEN-NTT-0015,high
+id,name,type,capacity_mw,province,region_key,status,target_cod_year,cod_re_base,cod_ared,developer,source_table,source_page,lat,lon,coord_source,coord_confidence,reference_ruptl_id,reference_source_url
+RUPTL-NTT-P-0001,Alor,PLTMG,7.0,Nusa Tenggara Timur,ntt,Construction,2025,2025,,PLN,Tabel C12.11,1176,-8.285133,124.740098,reference_100gw:RUPTL-a570f39ef509,medium,RUPTL-a570f39ef509,https://www.openstreetmap.org/node/1271864185
+RUPTL-NTT-P-0002,Alor 2,PLTMG,10.0,Nusa Tenggara Timur,ntt,Planned,2030,2030,,PLN SH,Tabel C12.11,1176,-8.285133,124.740098,reference_100gw:RUPTL-a570f39ef509,medium,RUPTL-a570f39ef509,https://www.openstreetmap.org/node/1271864185
+RUPTL-NTT-P-0003,Lisdes,PLTS,3.5,Nusa Tenggara Timur,ntt,Planned,2025,2025,,PLN,Tabel C12.11,1176,-8.495499,121.152512,province_centroid,low,,
+RUPTL-NTT-P-0004,Lisdes,PLTS,2.92,Nusa Tenggara Timur,ntt,Planned,2026,2026,,PLN,Tabel C12.11,1176,-8.673552,121.001718,province_centroid,low,,
+RUPTL-NTT-P-0005,Lisdes,PLTS,5.61,Nusa Tenggara Timur,ntt,Planned,2027,2027,,PLN,Tabel C12.11,1176,-8.484172,121.175750,province_centroid,low,,
+RUPTL-NTT-P-0006,Sumba (Kuota) Tersebar,PLTM,1.6,Nusa Tenggara Timur,ntt,Planned,2025,2025,,IPP,Tabel C12.11,1176,-8.839158,120.880369,province_centroid,low,,
+RUPTL-NTT-P-0007,Waingapu,PLTMG,10.0,Nusa Tenggara Timur,ntt,Construction,2025,2025,,PLN,Tabel C12.11,1176,-9.652179,120.263691,reference_100gw:RUPTL-145cbddcdd53,medium,RUPTL-145cbddcdd53,https://www.openstreetmap.org/node/1433540598
+RUPTL-NTT-P-0008,Alor (Kalabahi),PLTS,1.2,Nusa Tenggara Timur,ntt,Planned,2026,2026,,PLN,Tabel C12.11,1176,-8.285133,124.740098,reference_100gw:RUPTL-a570f39ef509,medium,RUPTL-a570f39ef509,https://www.openstreetmap.org/node/1271864185
+RUPTL-NTT-P-0009,Kalabahi (Kuota) Tersebar,PLTS,1.0,Nusa Tenggara Timur,ntt,Planned,2030,2030,,IPP,Tabel C12.11,1176,-8.629859,121.292638,province_centroid,low,,
+RUPTL-NTT-P-0010,Betun,PLTS,0.6,Nusa Tenggara Timur,ntt,Planned,2026,2026,,IPP,Tabel C12.11,1176,-9.568018,124.905828,reference_100gw:RUPTL-e5426ad0802d,medium,RUPTL-e5426ad0802d,https://www.openstreetmap.org/node/6392146270
+RUPTL-NTT-P-0011,Lembata,PLTS,3.0,Nusa Tenggara Timur,ntt,Planned,2026,2026,,PLN SH,Tabel C12.11,1176,-8.693548,120.353500,reference_100gw:RUPTL-f6ed82c7d879,medium,RUPTL-f6ed82c7d879,https://www.openstreetmap.org/node/1271864123
+RUPTL-NTT-P-0012,Maubesi,PLTB,3.3,Nusa Tenggara Timur,ntt,Planned,2029,2029,,PLN SH,Tabel C12.11,1176,-8.628133,121.131679,province_centroid,low,,
+RUPTL-NTT-P-0013,Flores (Labuhan Bajo dan lokasi lain),PLTS,10.0,Nusa Tenggara Timur,ntt,Planned,2026,2026,,PLN SH,,1177,-8.830848,121.094982,province_centroid,low,,
+RUPTL-NTT-P-0014,Flores (Kuota) Tersebar,PLTS,20.0,Nusa Tenggara Timur,ntt,Planned,2027,2027,,IPP,,1177,-8.461073,119.943518,gazetteer_generator:GEN-NTT-0015,high,,
+RUPTL-NTT-P-0015,Rote,PLTS,1.2,Nusa Tenggara Timur,ntt,Planned,2026,2026,,PLN,,1177,-8.823748,121.011368,province_centroid,low,,
+RUPTL-NTT-P-0016,Rote,PLTS,2.0,Nusa Tenggara Timur,ntt,Planned,2026,2026,,PLN,,1177,-8.748630,121.006934,province_centroid,low,,
+RUPTL-NTT-P-0017,Sumba (Kuota) Tersebar,PLTM,2.0,Nusa Tenggara Timur,ntt,Planned,2026,2026,,IPP,,1177,-8.823576,121.118001,province_centroid,low,,
+RUPTL-NTT-P-0018,Waingapu 2,PLTMG,10.0,Nusa Tenggara Timur,ntt,Committed,2026,2026,,PLN SH,,1177,-9.652179,120.263691,reference_100gw:RUPTL-145cbddcdd53,medium,RUPTL-145cbddcdd53,https://www.openstreetmap.org/node/1433540598
+RUPTL-NTT-P-0019,Lembata,PLTS,3.0,Nusa Tenggara Timur,ntt,Planned,2026,2026,,PLN SH,,1177,-8.693548,120.353500,reference_100gw:RUPTL-f6ed82c7d879,medium,RUPTL-f6ed82c7d879,https://www.openstreetmap.org/node/1271864123
+RUPTL-NTT-P-0020,Sumba (Kuota) Tersebar,PLTB,3.0,Nusa Tenggara Timur,ntt,Planned,2026,2026,,IPP,,1177,-8.512675,120.988796,province_centroid,low,,
+RUPTL-NTT-P-0021,Sumba,PLTS,5.0,Nusa Tenggara Timur,ntt,Planned,2026,2026,,PLN SH,,1177,-8.779642,121.138394,province_centroid,low,,
+RUPTL-NTT-P-0022,Timor (Kuota) Tersebar,PLTS,5.0,Nusa Tenggara Timur,ntt,Planned,2027,2027,,IPP,,1177,-10.350133,123.458906,gazetteer_generator:GEN-NTT-0017,high,,
+RUPTL-NTT-P-0023,Wae Lega - Ruteng,PLTM,1.75,Nusa Tenggara Timur,ntt,Construction,2025,2025,,IPP,,1177,-8.598320,120.423150,reference_100gw:RUPTL-b5d66566eaa3,medium,RUPTL-b5d66566eaa3,
+RUPTL-NTT-P-0024,Dedieselisasi,PLTS,18.54,Nusa Tenggara Timur,ntt,Planned,2027,2027,,IPP,,1177,-8.654926,120.894054,province_centroid,low,,
+RUPTL-NTT-P-0025,Atadei (FTP2),PLTP,7.0,Nusa Tenggara Timur,ntt,Planned,2030,2030,,PLN SH,,1177,-8.478755,121.169124,province_centroid,low,,
+RUPTL-NTT-P-0026,Kupang 2,PLTMG,30.0,Nusa Tenggara Timur,ntt,Planned,2027,2027,,PLN SH,,1177,-10.353854,123.459370,gazetteer_generator:GEN-NTT-0009,high,,
+RUPTL-NTT-P-0027,Sokoria (FTP2),PLTP,11.0,Nusa Tenggara Timur,ntt,Construction,2028,2028,,IPP,,1177,-8.792978,121.766080,gazetteer_generator:GEN-NTT-0018,high,,
+RUPTL-NTT-P-0028,Sumba,PLTS,5.0,Nusa Tenggara Timur,ntt,Planned,2026,2026,,PLN SH,,1177,-8.692103,121.133940,province_centroid,low,,
+RUPTL-NTT-P-0029,Sumba,PLTS,5.0,Nusa Tenggara Timur,ntt,Planned,2026,2026,,PLN SH,,1177,-8.626937,120.986019,province_centroid,low,,
+RUPTL-NTT-P-0030,Timor (Kuota) Tersebar,PLTB,11.0,Nusa Tenggara Timur,ntt,Planned,2027,2027,,IPP,,1177,-10.350133,123.458906,gazetteer_generator:GEN-NTT-0017,high,,
+RUPTL-NTT-P-0031,Timor (Kuota) Tersebar,PLTB,11.0,Nusa Tenggara Timur,ntt,Planned,2027,2027,,IPP,,1177,-10.350133,123.458906,gazetteer_generator:GEN-NTT-0017,high,,
+RUPTL-NTT-P-0032,Timor (Kuota) Tersebar,PLTS,5.0,Nusa Tenggara Timur,ntt,Planned,2027,2027,,IPP,,1177,-10.350133,123.458906,gazetteer_generator:GEN-NTT-0017,high,,
+RUPTL-NTT-P-0033,Alor,PLTU,3.0,Nusa Tenggara Timur,ntt,Construction,2032,2032,,PLN,,1177,-8.285133,124.740098,reference_100gw:RUPTL-59d1409fdd14,medium,RUPTL-59d1409fdd14,https://www.openstreetmap.org/node/1271864185
+RUPTL-NTT-P-0034,Alor,PLTU,3.0,Nusa Tenggara Timur,ntt,Construction,2032,2032,,PLN,,1177,-8.285133,124.740098,reference_100gw:RUPTL-59d1409fdd14,medium,RUPTL-59d1409fdd14,https://www.openstreetmap.org/node/1271864185
+RUPTL-NTT-P-0035,Flores,PLTM,3.06,Nusa Tenggara Timur,ntt,Planned,2028,2028,,PLN,,1177,-8.461073,119.943518,gazetteer_generator:GEN-NTT-0015,high,,
+RUPTL-NTT-P-0036,Mataloko (FTP2),PLTP,10.0,Nusa Tenggara Timur,ntt,Planned,2031,2031,,PLN SH,,1177,-8.799778,121.038274,reference_100gw:RUPTL-cdf868a8ca09,medium,RUPTL-cdf868a8ca09,https://www.openstreetmap.org/node/1271856220
+RUPTL-NTT-P-0037,Rote Ndao,PLTU,5.0,Nusa Tenggara Timur,ntt,Construction,2029,2029,,PLN,,1177,-8.496708,121.118392,province_centroid,low,,
+RUPTL-NTT-P-0038,Sokoria (FTP2),PLTP,11.0,Nusa Tenggara Timur,ntt,Construction,2029,2029,,IPP,,1177,-8.792978,121.766080,gazetteer_generator:GEN-NTT-0018,high,,
+RUPTL-NTT-P-0039,Sumba,PLTM,1.83,Nusa Tenggara Timur,ntt,Planned,2029,2029,,PLN,,1177,-8.575594,120.890603,province_centroid,low,,
+RUPTL-NTT-P-0040,Ulumbu 5,PLTP,20.0,Nusa Tenggara Timur,ntt,Planned,2030,2030,,PLN SH,,1177,-8.726052,120.435514,gazetteer_generator:GEN-NTT-0016,high,,
+RUPTL-NTT-P-0041,Mataloko (FTP2),PLTP,10.0,Nusa Tenggara Timur,ntt,Planned,2031,2031,,PLN SH,,1177,-8.799778,121.038274,reference_100gw:RUPTL-cdf868a8ca09,medium,RUPTL-cdf868a8ca09,https://www.openstreetmap.org/node/1271856220
+RUPTL-NTT-P-0042,Sumba,PLTS,5.0,Nusa Tenggara Timur,ntt,Planned,2026,2026,,PLN SH,,1177,-8.551070,121.107285,province_centroid,low,,
+RUPTL-NTT-P-0043,Sumba,PLTS,5.0,Nusa Tenggara Timur,ntt,Planned,2026,2026,,PLN SH,,1177,-8.648836,121.009478,province_centroid,low,,
+RUPTL-NTT-P-0044,Atambua,PLTU,10.0,Nusa Tenggara Timur,ntt,Construction,2030,2030,,PLN,,1177,-9.087262,124.865583,gazetteer_substation:GI-NTT-0008,medium,,
+RUPTL-NTT-P-0045,Ulumbu 6,PLTP,20.0,Nusa Tenggara Timur,ntt,Planned,2032,2032,,PLN SH,,1177,-8.726052,120.435514,gazetteer_generator:GEN-NTT-0016,high,,
+RUPTL-NTT-P-0046,Oka Ile Ange (FTP2)*,PLTP,10.0,Nusa Tenggara Timur,ntt,Planned,2033,2033,,PLN SH,,1177,-8.712448,120.897642,province_centroid,low,,
+RUPTL-NTT-P-0047,Rote,PLTS,1.0,Nusa Tenggara Timur,ntt,Planned,2028,2028,,PLN SH,,1177,-8.811802,120.960931,province_centroid,low,,
+RUPTL-NTT-P-0048,PLTMG PLN Shrimp Farming,PLTMG,30.0,Nusa Tenggara Timur,ntt,Planned,2027,2027,,PLN SH,,1177,-8.640162,120.905154,province_centroid,low,,
+RUPTL-NTT-P-0049,Sumba-1,PLTMG,30.0,Nusa Tenggara Timur,ntt,Planned,2027,2027,,PLN SH,,1177,-8.771676,120.883111,province_centroid,low,,
+RUPTL-NTT-P-0050,Sumba-2,PLTMG,30.0,Nusa Tenggara Timur,ntt,Planned,2033,2033,,PLN SH,,1177,-8.791636,120.971688,province_centroid,low,,
+RUPTL-NTT-P-0051,Sumba,PLTS,5.0,Nusa Tenggara Timur,ntt,Planned,2031,2031,,PLN SH,,1178,-8.751008,121.108825,province_centroid,low,,
+RUPTL-NTT-P-0052,Sumba,PLTS,5.0,Nusa Tenggara Timur,ntt,Planned,2031,2031,,PLN SH,,1178,-8.504833,121.133239,province_centroid,low,,
+RUPTL-NTT-P-0053,Sumba,PLTS,5.0,Nusa Tenggara Timur,ntt,Planned,2033,2033,,PLN SH,,1178,-8.869422,121.135005,province_centroid,low,,
+RUPTL-NTT-P-0054,Sumba,PLTS,5.0,Nusa Tenggara Timur,ntt,Planned,2033,2033,,PLN SH,,1178,-8.579436,121.102006,province_centroid,low,,
+RUPTL-NTT-P-0055,Gunung Sirung*,PLTP,5.0,Nusa Tenggara Timur,ntt,Planned,2033,2033,,PLN SH,,1178,-8.499553,124.127978,reference_100gw:RUPTL-899425ba5217,medium,RUPTL-899425ba5217,https://www.openstreetmap.org/node/548239934
+RUPTL-NTT-P-0056,Timor (Kuota) Tersebar,PLTS,10.0,Nusa Tenggara Timur,ntt,Planned,2028,2028,,IPP,,1178,-10.350133,123.458906,gazetteer_generator:GEN-NTT-0017,high,,
+RUPTL-NTT-P-0057,Flores,PLTMG,30.0,Nusa Tenggara Timur,ntt,Planned,2027,2027,,PLN SH,,1178,-8.461073,119.943518,gazetteer_generator:GEN-NTT-0015,high,,
+RUPTL-NTT-P-0058,Flores - 2,PLTMG,30.0,Nusa Tenggara Timur,ntt,Planned,2028,2028,,PLN SH,,1178,-8.461073,119.943518,gazetteer_generator:GEN-NTT-0015,high,,
+RUPTL-NTT-P-0059,Rangko 2,PLTMG,30.0,Nusa Tenggara Timur,ntt,Planned,2027,2027,,PLN SH,,1178,-8.461285,119.944263,gazetteer_substation:GI-NTT-0019,medium,,
+RUPTL-NTT-P-0060,Timor 2,PLTMG,50.0,Nusa Tenggara Timur,ntt,Planned,2028,2028,,PLN SH,,1178,-10.350133,123.458906,gazetteer_generator:GEN-NTT-0017,high,,
+RUPTL-NTT-P-0061,Timor 3,PLTMG,50.0,Nusa Tenggara Timur,ntt,Planned,2032,2032,,PLN SH,,1178,-10.350133,123.458906,gazetteer_generator:GEN-NTT-0017,high,,
+RUPTL-NTT-P-0062,Timor (Kuota) Tersebar,PLTBm,5.0,Nusa Tenggara Timur,ntt,Planned,2029,2029,,IPP,,1178,-10.350133,123.458906,gazetteer_generator:GEN-NTT-0017,high,,
+RUPTL-NTT-P-0063,Flores (Kuota) Tersebar,PLTAL,10.0,Nusa Tenggara Timur,ntt,Planned,2028,2028,,IPP,,1178,-8.461073,119.943518,gazetteer_generator:GEN-NTT-0015,high,,
+RUPTL-NTT-P-0064,Flores (Kuota) Tersebar,PLTAL,10.0,Nusa Tenggara Timur,ntt,Planned,2028,2028,,IPP,,1178,-8.461073,119.943518,gazetteer_generator:GEN-NTT-0015,high,,
+RUPTL-NTT-P-0065,Flores (Kuota) Tersebar,PLTS,10.0,Nusa Tenggara Timur,ntt,Planned,2030,2030,,IPP,,1178,-8.461073,119.943518,gazetteer_generator:GEN-NTT-0015,high,,
+RUPTL-NTT-P-0066,Flores (Kuota) Tersebar,PLTS,10.0,Nusa Tenggara Timur,ntt,Planned,2033,2033,,IPP,,1178,-8.461073,119.943518,gazetteer_generator:GEN-NTT-0015,high,,
+RUPTL-NTT-P-0067,Timor (Kuota) Tersebar,PLTB,22.0,Nusa Tenggara Timur,ntt,Planned,2032,2032,,IPP,,1178,-10.350133,123.458906,gazetteer_generator:GEN-NTT-0017,high,,
+RUPTL-NTT-P-0068,Timor (Kuota) Tersebar,PLTS,20.0,Nusa Tenggara Timur,ntt,Planned,2032,2032,,IPP,,1178,-10.350133,123.458906,gazetteer_generator:GEN-NTT-0017,high,,
+RUPTL-NTT-P-0069,Timor (Kuota) Tersebar,PLTS,50.0,Nusa Tenggara Timur,ntt,Planned,2033,2033,,IPP,,1178,-10.350133,123.458906,gazetteer_generator:GEN-NTT-0017,high,,
+RUPTL-NTT-P-0070,Isolated Nusa Tenggara Timur,PLTS,2.8,Nusa Tenggara Timur,ntt,Planned,2027,2027,,IPP,,1178,-8.875223,121.169557,province_centroid,low,,
+RUPTL-NTT-P-0071,Isolated Nusa Tenggara Timur,PLTS,37.0,Nusa Tenggara Timur,ntt,Planned,2028,2028,,IPP,,1178,-8.470445,120.956450,province_centroid,low,,
+RUPTL-NTT-P-0072,Isolated Nusa Tenggara Timur,PLTS,6.7,Nusa Tenggara Timur,ntt,Planned,2029,2029,,IPP,,1178,-8.548719,121.290782,province_centroid,low,,
+RUPTL-NTT-P-0073,Isolated Nusa Tenggara Timur,PLTS,4.0,Nusa Tenggara Timur,ntt,Planned,2031,2031,,IPP,,1178,-8.790330,121.092129,province_centroid,low,,
+RUPTL-NTT-P-0074,Isolated Nusa Tenggara Timur,PLTBm,0.5,Nusa Tenggara Timur,ntt,Planned,2029,2029,,IPP,,1178,-8.781003,121.050539,province_centroid,low,,
+RUPTL-NTT-P-0075,Timor (Kuota) Tersebar,PLTM,1.4,Nusa Tenggara Timur,ntt,Planned,2029,2029,,IPP,,1178,-10.350133,123.458906,gazetteer_generator:GEN-NTT-0017,high,,
+RUPTL-NTT-P-0076,Flores (Kuota) Tersebar,PLTM,0.22,Nusa Tenggara Timur,ntt,Planned,2029,2029,,IPP,,1178,-8.461073,119.943518,gazetteer_generator:GEN-NTT-0015,high,,
+RUPTL-NTT-P-0077,Flores (Kuota) Tersebar,PLTA,16.0,Nusa Tenggara Timur,ntt,Planned,2029,2029,,IPP,,1178,-8.461073,119.943518,gazetteer_generator:GEN-NTT-0015,high,,
+RUPTL-NTT-P-0078,Flores (Kuota) Tersebar,PLTP,40.0,Nusa Tenggara Timur,ntt,Planned,2032,2032,,IPP,,1178,-8.461073,119.943518,gazetteer_generator:GEN-NTT-0015,high,,

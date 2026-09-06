@@ -1,75 +1,75 @@
-id,name,type,capacity_mw,province,region_key,status,target_cod_year,cod_re_base,cod_ared,developer,source_table,source_page,lat,lon,coord_source,coord_confidence
-RUPTL-MALUKU-P-0001,Ambon 2,PLTMG,27.0,Maluku,maluku,Construction,2025,2025,,SH-PLN,Tabel C7.14,1076,-3.442170,129.251239,province_centroid,low
-RUPTL-MALUKU-P-0002,MPP Sambelia,PLTMG,30.0,Maluku,maluku,Committed,2026,2026,,SH-PLN,Tabel C7.14,1076,-3.271829,129.574856,province_centroid,low
-RUPTL-MALUKU-P-0003,Ambon (Kuota) Tersebar,PLTS,30.0,Maluku,maluku,Planned,2027,2027,,IPP,Tabel C7.14,1076,-3.041703,129.504391,province_centroid,low
-RUPTL-MALUKU-P-0004,Ambon (Kuota) Tersebar,PLTS,10.0,Maluku,maluku,Planned,2029,2029,,IPP,,1077,-3.235737,129.243238,province_centroid,low
-RUPTL-MALUKU-P-0005,Tulehu (FTP2),PLTP,12.0,Maluku,maluku,Planned,2031,2031,,SH-PLN,,1077,-3.259560,129.553239,province_centroid,low
-RUPTL-MALUKU-P-0006,Ambon (Kuota) Tersebar,PLTB,30.0,Maluku,maluku,Planned,2031,2031,,IPP,,1077,-3.383362,129.344063,province_centroid,low
-RUPTL-MALUKU-P-0007,Ambon (Kuota) Tersebar,PLTS,10.0,Maluku,maluku,Planned,2033,2033,,IPP,,1077,-3.223076,129.469117,province_centroid,low
-RUPTL-MALUKU-P-0008,Bula,PLTS,3.0,Maluku,maluku,Planned,2026,2026,,IPP,,1077,-3.028314,129.443933,province_centroid,low
-RUPTL-MALUKU-P-0009,Bula,PLTMG,10.0,Maluku,maluku,Committed,2027,2027,,SH-PLN,,1077,-3.124911,129.653549,province_centroid,low
-RUPTL-MALUKU-P-0010,Bula,PLTS,5.0,Maluku,maluku,Planned,2030,2030,,SH-PLN,,1077,-3.354219,129.593634,province_centroid,low
-RUPTL-MALUKU-P-0011,Namlea,PLTMG,10.0,Maluku,maluku,Construction,2025,2025,,PLN,,1077,-3.214320,127.091457,gazetteer_substation:GI-MLK-0006,medium
-RUPTL-MALUKU-P-0012,Namlea,PLTS,5.0,Maluku,maluku,Planned,2025,2025,,IPP,,1077,-3.214320,127.091457,gazetteer_substation:GI-MLK-0006,medium
-RUPTL-MALUKU-P-0013,Namrole,PLTMG,10.0,Maluku,maluku,Committed,2026,2026,,SH-PLN,,1077,-3.834022,126.751061,gazetteer_substation:GI-MLK-0007,medium
-RUPTL-MALUKU-P-0014,Buru (Kuota) Tersebar,PLTP,20.0,Maluku,maluku,Planned,2028,2028,,IPP,,1077,-3.040912,129.561748,province_centroid,low
-RUPTL-MALUKU-P-0015,Namlea 2,PLTBm,10.0,Maluku,maluku,Planned,2029,2029,,IPP,,1077,-3.214320,127.091457,gazetteer_substation:GI-MLK-0006,medium
-RUPTL-MALUKU-P-0016,Wai Tina,PLTA,7.0,Maluku,maluku,Planned,2030,2030,,IPP,,1077,-3.251518,129.463288,province_centroid,low
-RUPTL-MALUKU-P-0017,Dobo,PLTMG,10.0,Maluku,maluku,Construction,2025,2025,,PLN,,1077,-3.200422,129.579028,province_centroid,low
-RUPTL-MALUKU-P-0018,Dobo 2,PLTBm,5.0,Maluku,maluku,Planned,2029,2029,,IPP,,1077,-3.106876,129.343321,province_centroid,low
-RUPTL-MALUKU-P-0019,Dobo 2,PLTBm,5.0,Maluku,maluku,Planned,2029,2029,,IPP,,1077,-3.046061,129.304727,province_centroid,low
-RUPTL-MALUKU-P-0020,Lisdes,PLTS,7.71,Maluku,maluku,Planned,2025,2025,,PLN,,1077,-3.416767,129.247940,province_centroid,low
-RUPTL-MALUKU-P-0021,Lisdes,PLTS,1.35,Maluku,maluku,Planned,2026,2026,,PLN,,1077,-3.162089,129.457109,province_centroid,low
-RUPTL-MALUKU-P-0022,Lisdes,PLTS,18.23,Maluku,maluku,Planned,2027,2027,,PLN,,1077,-3.127145,129.595985,province_centroid,low
-RUPTL-MALUKU-P-0023,Dedieselisasi,PLTS,18.08,Maluku,maluku,Planned,2027,2027,,IPP,,1077,-3.220437,129.248345,province_centroid,low
-RUPTL-MALUKU-P-0024,Masela,PLTMG,20.0,Maluku,maluku,Planned,2027,2027,,SH-PLN,,1077,-3.245662,129.483496,province_centroid,low
-RUPTL-MALUKU-P-0025,Wetar,PLTMG,20.0,Maluku,maluku,Planned,2027,2027,,SH-PLN,,1077,-3.065546,129.291881,province_centroid,low
-RUPTL-MALUKU-P-0026,Isolated Maluku,PLTS,10.797,Maluku,maluku,Planned,2028,2028,,IPP,,1077,-3.051793,129.356085,province_centroid,low
-RUPTL-MALUKU-P-0027,Saparua 2,PLTS,5.0,Maluku,maluku,Planned,2027,2027,,PLN,,1077,-3.089603,129.452078,province_centroid,low
-RUPTL-MALUKU-P-0028,Saumlaki,PLTMG,10.0,Maluku,maluku,Construction,2025,2025,,PLN,,1077,-3.188785,129.469797,province_centroid,low
-RUPTL-MALUKU-P-0029,Saumlaki 2,PLTBm,10.0,Maluku,maluku,Planned,2029,2029,,IPP,,1077,-3.201460,129.581379,province_centroid,low
-RUPTL-MALUKU-P-0030,Seram 2,PLTMG,20.0,Maluku,maluku,Committed,2026,2026,,SH-PLN,,1077,-3.306249,128.946325,gazetteer_generator:GEN-MLK-0005,high
-RUPTL-MALUKU-P-0031,Seram (Kuota) Tersebar,PLTM,7.8,Maluku,maluku,Planned,2029,2029,,SH-PLN,,1077,-3.306249,128.946325,gazetteer_generator:GEN-MLK-0005,high
-RUPTL-MALUKU-P-0032,Wae Mala,PLTM,1.1,Maluku,maluku,Planned,2029,2029,,PLN,,1077,-3.277630,129.660917,province_centroid,low
-RUPTL-MALUKU-P-0033,Seram (Kuota) Tersebar,PLTBm,6.0,Maluku,maluku,Planned,2029,2029,,IPP,,1077,-3.306249,128.946325,gazetteer_generator:GEN-MLK-0005,high
-RUPTL-MALUKU-P-0034,Seram (Kuota) Tersebar,PLTP,25.0,Maluku,maluku,Planned,2029,2029,,IPP,,1077,-3.306249,128.946325,gazetteer_generator:GEN-MLK-0005,high
-RUPTL-MALUKU-P-0035,Nua (Masohi),PLTM,6.4,Maluku,maluku,Planned,2030,2030,,SH-PLN,,1077,-3.295317,128.985197,gazetteer_substation:GI-MLK-0004,medium
-RUPTL-MALUKU-P-0036,Wai Tala,PLTA,29.0,Maluku,maluku,Planned,2032,2032,,SH-PLN,,1077,-3.308395,129.393627,province_centroid,low
-RUPTL-MALUKU-P-0037,PLTGU/ G/MG,PLTGU,350.0,Maluku Utara,maluku,IPP,2028,2028,,Rencana,Tabel C8.9,1091,1.614353,127.904260,province_centroid,low
-RUPTL-MALUKU-P-0038,PLTBio,PLTB,30.0,Maluku Utara,maluku,IPP,2030,2030,,Rencana,Tabel C8.9,1091,1.637613,127.671261,province_centroid,low
-RUPTL-MALUKU-P-0039,PLTP,PLTP,50.0,Maluku Utara,maluku,IPP,2032,2032,,Rencana,Tabel C8.9,1091,1.762769,127.790438,province_centroid,low
-RUPTL-MALUKU-P-0040,PLTS +Baterai,PLTS,100.0,Maluku Utara,maluku,IPP,2028,2028,,Rencana,Tabel C8.9,1091,1.562301,127.868058,province_centroid,low
-RUPTL-MALUKU-P-0041,Bacan,PLTMG,10.0,Maluku Utara,maluku,Planned,2026,2026,,SH-PLN,Tabel C8.13,1096,1.781258,127.838118,province_centroid,low
-RUPTL-MALUKU-P-0042,Bacan (Kuota) Tersebar,PLTBm,4.0,Maluku Utara,maluku,Planned,2029,2029,,IPP,Tabel C8.13,1096,1.622718,127.608123,province_centroid,low
-RUPTL-MALUKU-P-0043,Songa Wayaua (FTP2),PLTP,5.0,Maluku Utara,maluku,Planned,2030,2030,,SH-PLN,Tabel C8.13,1096,1.664941,127.754648,province_centroid,low
-RUPTL-MALUKU-P-0044,Songa Wayaua (FTP2),PLTP,5.0,Maluku Utara,maluku,Planned,2030,2030,,SH-PLN,Tabel C8.13,1096,1.696462,127.585846,province_centroid,low
-RUPTL-MALUKU-P-0045,Sofifi,PLTU,5.0,Maluku Utara,maluku,Construction,2025,2025,,PLN,Tabel C8.13,1096,0.701766,127.553693,gazetteer_substation:GI-MLK-0011,medium
-RUPTL-MALUKU-P-0046,Tobelo,PLTMG,10.0,Maluku Utara,maluku,Construction,2025,2025,,SH-PLN,Tabel C8.13,1096,1.765177,127.962740,gazetteer_substation:GI-MLK-0012,medium
-RUPTL-MALUKU-P-0047,Tobelo 2,PLTMG,20.0,Maluku Utara,maluku,Construction,2025,2025,,SH-PLN,Tabel C8.13,1096,1.765177,127.962740,gazetteer_substation:GI-MLK-0012,medium
-RUPTL-MALUKU-P-0048,Tobelo,PLTS,10.0,Maluku Utara,maluku,Planned,2026,2026,,IPP,Tabel C8.13,1096,1.765177,127.962740,gazetteer_substation:GI-MLK-0012,medium
-RUPTL-MALUKU-P-0049,Sofifi,PLTMG,10.0,Maluku Utara,maluku,Committed,2026,2026,,SH-PLN,Tabel C8.13,1096,0.701766,127.553693,gazetteer_substation:GI-MLK-0011,medium
-RUPTL-MALUKU-P-0050,Halmahera 1,PLTMG,10.0,Maluku Utara,maluku,Planned,2027,2027,,SH-PLN,Tabel C8.13,1096,1.640032,127.877316,province_centroid,low
-RUPTL-MALUKU-P-0051,Halmahera 1,PLTMG,10.0,Maluku Utara,maluku,Planned,2027,2027,,SH-PLN,Tabel C8.13,1096,1.522690,127.737087,province_centroid,low
-RUPTL-MALUKU-P-0052,Halmahera 2,PLTG,350.0,Maluku Utara,maluku,Planned,2028,2028,,IPP,Tabel C8.13,1096,1.713817,127.959714,province_centroid,low
-RUPTL-MALUKU-P-0053,Halmahera (Kuota) Tersebar,PLTS,100.0,Maluku Utara,maluku,Planned,2028,2028,,IPP,Tabel C8.13,1096,1.618546,127.746036,province_centroid,low
-RUPTL-MALUKU-P-0054,Halmahera (Kuota) Tersebar,PLTBm,10.0,Maluku Utara,maluku,Planned,2029,2029,,IPP,Tabel C8.13,1096,1.530402,127.975090,province_centroid,low
-RUPTL-MALUKU-P-0055,Halmahera (Kuota) Tersebar,PLTS,50.0,Maluku Utara,maluku,Planned,2029,2029,,IPP,,1097,1.589424,127.883894,province_centroid,low
-RUPTL-MALUKU-P-0056,Halmahera (Kuota) Tersebar,PLTBm,30.0,Maluku Utara,maluku,Planned,2030,2030,,IPP,,1097,1.792984,127.974512,province_centroid,low
-RUPTL-MALUKU-P-0057,Halmahera (Kuota) Tersebar,PLTP,20.0,Maluku Utara,maluku,Planned,2032,2032,,IPP,,1097,1.726189,127.912013,province_centroid,low
-RUPTL-MALUKU-P-0058,Halmahera (Kuota) Tersebar,PLTP,50.0,Maluku Utara,maluku,Planned,2032,2032,,IPP,,1097,1.376832,127.723539,province_centroid,low
-RUPTL-MALUKU-P-0059,Lisdes,PLTS,3.19,Maluku Utara,maluku,Planned,2025,2025,,PLN,,1097,1.387238,127.755645,province_centroid,low
-RUPTL-MALUKU-P-0060,Lisdes,PLTS,0.73,Maluku Utara,maluku,Planned,2026,2026,,PLN,,1097,1.694860,128.016886,province_centroid,low
-RUPTL-MALUKU-P-0061,Dedieselisasi,PLTS,8.676,Maluku Utara,maluku,Planned,2027,2027,,IPP,,1097,1.401239,127.876993,province_centroid,low
-RUPTL-MALUKU-P-0062,Lisdes,PLTS,25.53,Maluku Utara,maluku,Planned,2027,2027,,PLN,,1097,1.718285,127.813016,province_centroid,low
-RUPTL-MALUKU-P-0063,Isolated Maluku Utara,PLTS,15.816,Maluku Utara,maluku,Planned,2028,2028,,IPP,,1097,1.420525,127.640407,province_centroid,low
-RUPTL-MALUKU-P-0064,Morotai 3,PLTS,10.0,Maluku Utara,maluku,Planned,2025,2025,,IPP,,1097,2.004956,128.282803,gazetteer_generator:GEN-MLK-0002,high
-RUPTL-MALUKU-P-0065,Morotai,PLTMG,10.0,Maluku Utara,maluku,Committed,2026,2026,,SH-PLN,,1097,2.004956,128.282803,gazetteer_generator:GEN-MLK-0002,high
-RUPTL-MALUKU-P-0066,Morotai 2,PLTMG,20.0,Maluku Utara,maluku,Planned,2028,2028,,SH-PLN,,1097,2.004956,128.282803,gazetteer_generator:GEN-MLK-0002,high
-RUPTL-MALUKU-P-0067,Morotai 4,PLTMG,20.0,Maluku Utara,maluku,Planned,2032,2032,,SH-PLN,,1097,2.004956,128.282803,gazetteer_generator:GEN-MLK-0002,high
-RUPTL-MALUKU-P-0068,Sanana,PLTMG,10.0,Maluku Utara,maluku,Committed,2026,2026,,SH-PLN,,1097,1.510999,127.845424,province_centroid,low
-RUPTL-MALUKU-P-0069,Sanana 2,PLTBm,10.0,Maluku Utara,maluku,Planned,2030,2030,,IPP,,1097,1.630416,127.783049,province_centroid,low
-RUPTL-MALUKU-P-0070,Ternate 2,PLTMG,20.0,Maluku Utara,maluku,Planned,2026,2026,,SH-PLN,,1097,0.766750,127.306242,gazetteer_generator:GEN-MLK-0008,high
-RUPTL-MALUKU-P-0071,Tidore,PLTMG,20.0,Maluku Utara,maluku,Planned,2027,2027,,SH-PLN,,1097,0.739264,127.388277,gazetteer_generator:GEN-MLK-0004,high
-RUPTL-MALUKU-P-0072,Ternate 3,PLTMG,20.0,Maluku Utara,maluku,Planned,2032,2032,,SH-PLN,,1097,0.766750,127.306242,gazetteer_generator:GEN-MLK-0008,high
-RUPTL-MALUKU-P-0073,Weda,PLTS,5.0,Maluku Utara,maluku,Planned,2027,2027,,SH-PLN,,1097,0.476503,128.001392,gazetteer_generator:GEN-MLK-0013,high
-RUPTL-MALUKU-P-0074,Weda,PLTMG,20.0,Maluku Utara,maluku,Planned,2028,2028,,SH-PLN,,1097,0.476503,128.001392,gazetteer_generator:GEN-MLK-0013,high
+id,name,type,capacity_mw,province,region_key,status,target_cod_year,cod_re_base,cod_ared,developer,source_table,source_page,lat,lon,coord_source,coord_confidence,reference_ruptl_id,reference_source_url
+RUPTL-MALUKU-P-0001,Ambon 2,PLTMG,27.0,Maluku,maluku,Construction,2025,2025,,SH-PLN,Tabel C7.14,1076,-3.695943,128.178785,reference_100gw:RUPTL-9c6719eeb955,medium,RUPTL-9c6719eeb955,
+RUPTL-MALUKU-P-0002,MPP Sambelia,PLTMG,30.0,Maluku,maluku,Committed,2026,2026,,SH-PLN,Tabel C7.14,1076,-3.271829,129.574856,province_centroid,low,,
+RUPTL-MALUKU-P-0003,Ambon (Kuota) Tersebar,PLTS,30.0,Maluku,maluku,Planned,2027,2027,,IPP,Tabel C7.14,1076,-3.695943,128.178785,reference_100gw:RUPTL-9c6719eeb955,medium,RUPTL-9c6719eeb955,
+RUPTL-MALUKU-P-0004,Ambon (Kuota) Tersebar,PLTS,10.0,Maluku,maluku,Planned,2029,2029,,IPP,,1077,-3.695943,128.178785,reference_100gw:RUPTL-9c6719eeb955,medium,RUPTL-9c6719eeb955,
+RUPTL-MALUKU-P-0005,Tulehu (FTP2),PLTP,12.0,Maluku,maluku,Planned,2031,2031,,SH-PLN,,1077,-3.587202,128.298899,reference_100gw:RUPTL-3a5526a9e247,medium,RUPTL-3a5526a9e247,
+RUPTL-MALUKU-P-0006,Ambon (Kuota) Tersebar,PLTB,30.0,Maluku,maluku,Planned,2031,2031,,IPP,,1077,-3.695943,128.178785,reference_100gw:RUPTL-9c6719eeb955,medium,RUPTL-9c6719eeb955,
+RUPTL-MALUKU-P-0007,Ambon (Kuota) Tersebar,PLTS,10.0,Maluku,maluku,Planned,2033,2033,,IPP,,1077,-3.695943,128.178785,reference_100gw:RUPTL-9c6719eeb955,medium,RUPTL-9c6719eeb955,
+RUPTL-MALUKU-P-0008,Bula,PLTS,3.0,Maluku,maluku,Planned,2026,2026,,IPP,,1077,-3.172914,130.414783,reference_100gw:RUPTL-2b0c40fa6410,medium,RUPTL-2b0c40fa6410,
+RUPTL-MALUKU-P-0009,Bula,PLTMG,10.0,Maluku,maluku,Committed,2027,2027,,SH-PLN,,1077,-3.172914,130.414783,reference_100gw:RUPTL-b452bc8eb96a,medium,RUPTL-b452bc8eb96a,
+RUPTL-MALUKU-P-0010,Bula,PLTS,5.0,Maluku,maluku,Planned,2030,2030,,SH-PLN,,1077,-3.172914,130.414783,reference_100gw:RUPTL-31507ed4a131,medium,RUPTL-31507ed4a131,
+RUPTL-MALUKU-P-0011,Namlea,PLTMG,10.0,Maluku,maluku,Construction,2025,2025,,PLN,,1077,-3.214320,127.091457,gazetteer_substation:GI-MLK-0006,medium,,
+RUPTL-MALUKU-P-0012,Namlea,PLTS,5.0,Maluku,maluku,Planned,2025,2025,,IPP,,1077,-3.214320,127.091457,gazetteer_substation:GI-MLK-0006,medium,,
+RUPTL-MALUKU-P-0013,Namrole,PLTMG,10.0,Maluku,maluku,Committed,2026,2026,,SH-PLN,,1077,-3.834022,126.751061,gazetteer_substation:GI-MLK-0007,medium,,
+RUPTL-MALUKU-P-0014,Buru (Kuota) Tersebar,PLTP,20.0,Maluku,maluku,Planned,2028,2028,,IPP,,1077,-3.040912,129.561748,province_centroid,low,,
+RUPTL-MALUKU-P-0015,Namlea 2,PLTBm,10.0,Maluku,maluku,Planned,2029,2029,,IPP,,1077,-3.214320,127.091457,gazetteer_substation:GI-MLK-0006,medium,,
+RUPTL-MALUKU-P-0016,Wai Tina,PLTA,7.0,Maluku,maluku,Planned,2030,2030,,IPP,,1077,-3.483610,126.866801,reference_100gw:RUPTL-8607d5230707,medium,RUPTL-8607d5230707,https://www.openstreetmap.org/node/1308649790
+RUPTL-MALUKU-P-0017,Dobo,PLTMG,10.0,Maluku,maluku,Construction,2025,2025,,PLN,,1077,-3.200422,129.579028,province_centroid,low,,
+RUPTL-MALUKU-P-0018,Dobo 2,PLTBm,5.0,Maluku,maluku,Planned,2029,2029,,IPP,,1077,-3.106876,129.343321,province_centroid,low,,
+RUPTL-MALUKU-P-0019,Dobo 2,PLTBm,5.0,Maluku,maluku,Planned,2029,2029,,IPP,,1077,-3.046061,129.304727,province_centroid,low,,
+RUPTL-MALUKU-P-0020,Lisdes,PLTS,7.71,Maluku,maluku,Planned,2025,2025,,PLN,,1077,-3.416767,129.247940,province_centroid,low,,
+RUPTL-MALUKU-P-0021,Lisdes,PLTS,1.35,Maluku,maluku,Planned,2026,2026,,PLN,,1077,-3.162089,129.457109,province_centroid,low,,
+RUPTL-MALUKU-P-0022,Lisdes,PLTS,18.23,Maluku,maluku,Planned,2027,2027,,PLN,,1077,-3.127145,129.595985,province_centroid,low,,
+RUPTL-MALUKU-P-0023,Dedieselisasi,PLTS,18.08,Maluku,maluku,Planned,2027,2027,,IPP,,1077,-3.220437,129.248345,province_centroid,low,,
+RUPTL-MALUKU-P-0024,Masela,PLTMG,20.0,Maluku,maluku,Planned,2027,2027,,SH-PLN,,1077,-3.245662,129.483496,province_centroid,low,,
+RUPTL-MALUKU-P-0025,Wetar,PLTMG,20.0,Maluku,maluku,Planned,2027,2027,,SH-PLN,,1077,-3.065546,129.291881,province_centroid,low,,
+RUPTL-MALUKU-P-0026,Isolated Maluku,PLTS,10.797,Maluku,maluku,Planned,2028,2028,,IPP,,1077,-3.051793,129.356085,province_centroid,low,,
+RUPTL-MALUKU-P-0027,Saparua 2,PLTS,5.0,Maluku,maluku,Planned,2027,2027,,PLN,,1077,-3.572695,128.655762,reference_100gw:RUPTL-7f5909865c18,medium,RUPTL-7f5909865c18,
+RUPTL-MALUKU-P-0028,Saumlaki,PLTMG,10.0,Maluku,maluku,Construction,2025,2025,,PLN,,1077,-7.974171,131.304876,reference_100gw:RUPTL-7219cb16fd51,medium,RUPTL-7219cb16fd51,https://www.openstreetmap.org/node/1308657520
+RUPTL-MALUKU-P-0029,Saumlaki 2,PLTBm,10.0,Maluku,maluku,Planned,2029,2029,,IPP,,1077,-7.974171,131.304876,reference_100gw:RUPTL-7219cb16fd51,medium,RUPTL-7219cb16fd51,https://www.openstreetmap.org/node/1308657520
+RUPTL-MALUKU-P-0030,Seram 2,PLTMG,20.0,Maluku,maluku,Committed,2026,2026,,SH-PLN,,1077,-3.306249,128.946325,gazetteer_generator:GEN-MLK-0005,high,,
+RUPTL-MALUKU-P-0031,Seram (Kuota) Tersebar,PLTM,7.8,Maluku,maluku,Planned,2029,2029,,SH-PLN,,1077,-3.306249,128.946325,gazetteer_generator:GEN-MLK-0005,high,,
+RUPTL-MALUKU-P-0032,Wae Mala,PLTM,1.1,Maluku,maluku,Planned,2029,2029,,PLN,,1077,-3.277630,129.660917,province_centroid,low,,
+RUPTL-MALUKU-P-0033,Seram (Kuota) Tersebar,PLTBm,6.0,Maluku,maluku,Planned,2029,2029,,IPP,,1077,-3.306249,128.946325,gazetteer_generator:GEN-MLK-0005,high,,
+RUPTL-MALUKU-P-0034,Seram (Kuota) Tersebar,PLTP,25.0,Maluku,maluku,Planned,2029,2029,,IPP,,1077,-3.306249,128.946325,gazetteer_generator:GEN-MLK-0005,high,,
+RUPTL-MALUKU-P-0035,Nua (Masohi),PLTM,6.4,Maluku,maluku,Planned,2030,2030,,SH-PLN,,1077,-3.295317,128.985197,gazetteer_substation:GI-MLK-0004,medium,,
+RUPTL-MALUKU-P-0036,Wai Tala,PLTA,29.0,Maluku,maluku,Planned,2032,2032,,SH-PLN,,1077,-3.308395,129.393627,province_centroid,low,,
+RUPTL-MALUKU-P-0037,PLTGU/ G/MG,PLTGU,350.0,Maluku Utara,maluku,IPP,2028,2028,,Rencana,Tabel C8.9,1091,1.614353,127.904260,province_centroid,low,,
+RUPTL-MALUKU-P-0038,PLTBio,PLTB,30.0,Maluku Utara,maluku,IPP,2030,2030,,Rencana,Tabel C8.9,1091,1.637613,127.671261,province_centroid,low,,
+RUPTL-MALUKU-P-0039,PLTP,PLTP,50.0,Maluku Utara,maluku,IPP,2032,2032,,Rencana,Tabel C8.9,1091,1.762769,127.790438,province_centroid,low,,
+RUPTL-MALUKU-P-0040,PLTS +Baterai,PLTS,100.0,Maluku Utara,maluku,IPP,2028,2028,,Rencana,Tabel C8.9,1091,1.562301,127.868058,province_centroid,low,,
+RUPTL-MALUKU-P-0041,Bacan,PLTMG,10.0,Maluku Utara,maluku,Planned,2026,2026,,SH-PLN,Tabel C8.13,1096,1.781258,127.838118,province_centroid,low,,
+RUPTL-MALUKU-P-0042,Bacan (Kuota) Tersebar,PLTBm,4.0,Maluku Utara,maluku,Planned,2029,2029,,IPP,Tabel C8.13,1096,1.622718,127.608123,province_centroid,low,,
+RUPTL-MALUKU-P-0043,Songa Wayaua (FTP2),PLTP,5.0,Maluku Utara,maluku,Planned,2030,2030,,SH-PLN,Tabel C8.13,1096,1.664941,127.754648,province_centroid,low,,
+RUPTL-MALUKU-P-0044,Songa Wayaua (FTP2),PLTP,5.0,Maluku Utara,maluku,Planned,2030,2030,,SH-PLN,Tabel C8.13,1096,1.696462,127.585846,province_centroid,low,,
+RUPTL-MALUKU-P-0045,Sofifi,PLTU,5.0,Maluku Utara,maluku,Construction,2025,2025,,PLN,Tabel C8.13,1096,0.701766,127.553693,gazetteer_substation:GI-MLK-0011,medium,,
+RUPTL-MALUKU-P-0046,Tobelo,PLTMG,10.0,Maluku Utara,maluku,Construction,2025,2025,,SH-PLN,Tabel C8.13,1096,1.765177,127.962740,gazetteer_substation:GI-MLK-0012,medium,,
+RUPTL-MALUKU-P-0047,Tobelo 2,PLTMG,20.0,Maluku Utara,maluku,Construction,2025,2025,,SH-PLN,Tabel C8.13,1096,1.765177,127.962740,gazetteer_substation:GI-MLK-0012,medium,,
+RUPTL-MALUKU-P-0048,Tobelo,PLTS,10.0,Maluku Utara,maluku,Planned,2026,2026,,IPP,Tabel C8.13,1096,1.765177,127.962740,gazetteer_substation:GI-MLK-0012,medium,,
+RUPTL-MALUKU-P-0049,Sofifi,PLTMG,10.0,Maluku Utara,maluku,Committed,2026,2026,,SH-PLN,Tabel C8.13,1096,0.701766,127.553693,gazetteer_substation:GI-MLK-0011,medium,,
+RUPTL-MALUKU-P-0050,Halmahera 1,PLTMG,10.0,Maluku Utara,maluku,Planned,2027,2027,,SH-PLN,Tabel C8.13,1096,1.640032,127.877316,province_centroid,low,,
+RUPTL-MALUKU-P-0051,Halmahera 1,PLTMG,10.0,Maluku Utara,maluku,Planned,2027,2027,,SH-PLN,Tabel C8.13,1096,1.522690,127.737087,province_centroid,low,,
+RUPTL-MALUKU-P-0052,Halmahera 2,PLTG,350.0,Maluku Utara,maluku,Planned,2028,2028,,IPP,Tabel C8.13,1096,1.713817,127.959714,province_centroid,low,,
+RUPTL-MALUKU-P-0053,Halmahera (Kuota) Tersebar,PLTS,100.0,Maluku Utara,maluku,Planned,2028,2028,,IPP,Tabel C8.13,1096,1.618546,127.746036,province_centroid,low,,
+RUPTL-MALUKU-P-0054,Halmahera (Kuota) Tersebar,PLTBm,10.0,Maluku Utara,maluku,Planned,2029,2029,,IPP,Tabel C8.13,1096,1.530402,127.975090,province_centroid,low,,
+RUPTL-MALUKU-P-0055,Halmahera (Kuota) Tersebar,PLTS,50.0,Maluku Utara,maluku,Planned,2029,2029,,IPP,,1097,1.589424,127.883894,province_centroid,low,,
+RUPTL-MALUKU-P-0056,Halmahera (Kuota) Tersebar,PLTBm,30.0,Maluku Utara,maluku,Planned,2030,2030,,IPP,,1097,1.792984,127.974512,province_centroid,low,,
+RUPTL-MALUKU-P-0057,Halmahera (Kuota) Tersebar,PLTP,20.0,Maluku Utara,maluku,Planned,2032,2032,,IPP,,1097,1.726189,127.912013,province_centroid,low,,
+RUPTL-MALUKU-P-0058,Halmahera (Kuota) Tersebar,PLTP,50.0,Maluku Utara,maluku,Planned,2032,2032,,IPP,,1097,1.376832,127.723539,province_centroid,low,,
+RUPTL-MALUKU-P-0059,Lisdes,PLTS,3.19,Maluku Utara,maluku,Planned,2025,2025,,PLN,,1097,1.387238,127.755645,province_centroid,low,,
+RUPTL-MALUKU-P-0060,Lisdes,PLTS,0.73,Maluku Utara,maluku,Planned,2026,2026,,PLN,,1097,1.694860,128.016886,province_centroid,low,,
+RUPTL-MALUKU-P-0061,Dedieselisasi,PLTS,8.676,Maluku Utara,maluku,Planned,2027,2027,,IPP,,1097,1.401239,127.876993,province_centroid,low,,
+RUPTL-MALUKU-P-0062,Lisdes,PLTS,25.53,Maluku Utara,maluku,Planned,2027,2027,,PLN,,1097,1.718285,127.813016,province_centroid,low,,
+RUPTL-MALUKU-P-0063,Isolated Maluku Utara,PLTS,15.816,Maluku Utara,maluku,Planned,2028,2028,,IPP,,1097,1.420525,127.640407,province_centroid,low,,
+RUPTL-MALUKU-P-0064,Morotai 3,PLTS,10.0,Maluku Utara,maluku,Planned,2025,2025,,IPP,,1097,2.004956,128.282803,gazetteer_generator:GEN-MLK-0002,high,,
+RUPTL-MALUKU-P-0065,Morotai,PLTMG,10.0,Maluku Utara,maluku,Committed,2026,2026,,SH-PLN,,1097,2.004956,128.282803,gazetteer_generator:GEN-MLK-0002,high,,
+RUPTL-MALUKU-P-0066,Morotai 2,PLTMG,20.0,Maluku Utara,maluku,Planned,2028,2028,,SH-PLN,,1097,2.004956,128.282803,gazetteer_generator:GEN-MLK-0002,high,,
+RUPTL-MALUKU-P-0067,Morotai 4,PLTMG,20.0,Maluku Utara,maluku,Planned,2032,2032,,SH-PLN,,1097,2.004956,128.282803,gazetteer_generator:GEN-MLK-0002,high,,
+RUPTL-MALUKU-P-0068,Sanana,PLTMG,10.0,Maluku Utara,maluku,Committed,2026,2026,,SH-PLN,,1097,-2.057332,125.979644,reference_100gw:RUPTL-8e51219418b2,medium,RUPTL-8e51219418b2,https://www.openstreetmap.org/node/3241460910
+RUPTL-MALUKU-P-0069,Sanana 2,PLTBm,10.0,Maluku Utara,maluku,Planned,2030,2030,,IPP,,1097,-2.057332,125.979644,reference_100gw:RUPTL-8e51219418b2,medium,RUPTL-8e51219418b2,https://www.openstreetmap.org/node/3241460910
+RUPTL-MALUKU-P-0070,Ternate 2,PLTMG,20.0,Maluku Utara,maluku,Planned,2026,2026,,SH-PLN,,1097,0.766750,127.306242,gazetteer_generator:GEN-MLK-0008,high,,
+RUPTL-MALUKU-P-0071,Tidore,PLTMG,20.0,Maluku Utara,maluku,Planned,2027,2027,,SH-PLN,,1097,0.739264,127.388277,gazetteer_generator:GEN-MLK-0004,high,,
+RUPTL-MALUKU-P-0072,Ternate 3,PLTMG,20.0,Maluku Utara,maluku,Planned,2032,2032,,SH-PLN,,1097,0.766750,127.306242,gazetteer_generator:GEN-MLK-0008,high,,
+RUPTL-MALUKU-P-0073,Weda,PLTS,5.0,Maluku Utara,maluku,Planned,2027,2027,,SH-PLN,,1097,0.476503,128.001392,gazetteer_generator:GEN-MLK-0013,high,,
+RUPTL-MALUKU-P-0074,Weda,PLTMG,20.0,Maluku Utara,maluku,Planned,2028,2028,,SH-PLN,,1097,0.476503,128.001392,gazetteer_generator:GEN-MLK-0013,high,,
