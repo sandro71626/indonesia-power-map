@@ -1,13 +1,13 @@
 id,name,type,capacity_mw,province,region_key,status,target_cod_year,cod_re_base,cod_ared,developer,source_table,source_page,lat,lon,coord_source,coord_confidence
 RUPTL-SUMATRA-P-0001,Peusangan 1- 2,PLTA,88.0,Aceh,sumatra,Construction,2025,2025 2025,,PLN,Tabel A1.11,607,4.602076,96.742749,gazetteer_generator:GEN-SMT-0113,high
-RUPTL-SUMATRA-P-0002,Tanjung Semanto,PLTBM,9.8,Aceh,sumatra,Construction,2025,2025,,IPP,Tabel A1.11,607,4.578494,96.744362,province_centroid,low
+RUPTL-SUMATRA-P-0002,Tanjung Semanto,PLTBm,9.8,Aceh,sumatra,Construction,2025,2025,,IPP,Tabel A1.11,607,4.578494,96.744362,province_centroid,low
 RUPTL-SUMATRA-P-0003,Bayu Sumatera1),PLTB,55.0,Aceh,sumatra,Planned,2026,2026,,SH-PLN,Tabel A1.11,607,4.594399,96.567353,province_centroid,low
 RUPTL-SUMATRA-P-0004,Bayu Sumatera1),PLTB,55.0,Aceh,sumatra,Planned,2028,2028,,SH-PLN,Tabel A1.11,607,4.883278,96.935117,province_centroid,low
-RUPTL-SUMATRA-P-0005,Sumatera BESS-1#1,?,50.0,Aceh,sumatra,Planned,2026,2026,,SH-PLN,Tabel A1.11,607,4.864940,96.971821,province_centroid,low
-RUPTL-SUMATRA-P-0006,Aceh Tamiang,PLTBG,3.0,Aceh,sumatra,Construction,2026,2026,,IPP,Tabel A1.11,607,4.471710,96.892833,province_centroid,low
-RUPTL-SUMATRA-P-0007,Langsa,PLTBM,10.0,Aceh,sumatra,Committed,2027,2027,,IPP,Tabel A1.11,607,4.510911,97.943056,gazetteer_substation:GI-SMT-0001,medium
+RUPTL-SUMATRA-P-0005,Sumatera BESS-1#1,BESS,50.0,Aceh,sumatra,Planned,2026,2026,,SH-PLN,Tabel A1.11,607,4.864940,96.971821,province_centroid,low
+RUPTL-SUMATRA-P-0006,Aceh Tamiang,PLTBg,3.0,Aceh,sumatra,Construction,2026,2026,,IPP,Tabel A1.11,607,4.471710,96.892833,province_centroid,low
+RUPTL-SUMATRA-P-0007,Langsa,PLTBm,10.0,Aceh,sumatra,Committed,2027,2027,,IPP,Tabel A1.11,607,4.510911,97.943056,gazetteer_substation:GI-SMT-0001,medium
 RUPTL-SUMATRA-P-0008,Sumatera(Kuota) Tersebar Sumbagut1),PLTM,14.4,Aceh,sumatra,Planned,2027,2027,,IPP,Tabel A1.11,607,4.826676,96.794132,province_centroid,low
-RUPTL-SUMATRA-P-0009,Sumbagut / Banda Aceh3),?,80.0,Aceh,sumatra,Planned,2028,2028,,PLN,Tabel A1.11,607,4.767318,96.707335,province_centroid,low
+RUPTL-SUMATRA-P-0009,Sumbagut / Banda Aceh3),PLTG,80.0,Aceh,sumatra,Planned,2028,2028,,PLN,Tabel A1.11,607,4.767318,96.707335,province_centroid,low
 RUPTL-SUMATRA-P-0010,Sumatera(Kuota) Tersebar Sumbagut1),PLTM,10.0,Aceh,sumatra,Planned,2029,2029,,IPP,Tabel A1.11,607,4.861902,96.731509,province_centroid,low
 RUPTL-SUMATRA-P-0011,Kumbih-3,PLTA,45.0,Aceh,sumatra,Committed,2029,2029,,PLN,Tabel A1.11,607,4.906187,96.964171,province_centroid,low
 RUPTL-SUMATRA-P-0012,Sumatera (kuota) tersebar1),PLTA,400.0,Aceh,sumatra,Planned,2030,2030 2031,,IPP,Tabel A1.11,607,4.565957,96.780014,province_centroid,low
@@ -48,8 +48,8 @@ RUPTL-SUMATRA-P-0046,Aek Situmandi,PLTM,7.5,Sumatera Utara,sumatra,Committed,202
 RUPTL-SUMATRA-P-0047,Sumatera (Kuota) Tersebar Sumbagut1),PLTM,17.8,Sumatera Utara,sumatra,Planned,2028,2028 2028,,IPP,,622,2.023229,98.592025,province_centroid,low
 RUPTL-SUMATRA-P-0048,Sumut-14),PLTU,300.0,Sumatera Utara,sumatra,Construction,2028,2028 2028,,Kerjasama Wilus,,622,1.979899,98.870649,province_centroid,low
 RUPTL-SUMATRA-P-0049,Sumatera (Kuota) Tersebar1),PLTA,250.0,Sumatera Utara,sumatra,Planned,2028,2028,,IPP,,622,2.337972,98.801675,province_centroid,low
-RUPTL-SUMATRA-P-0050,Sumatera BESS-1 #3,?,50.0,Sumatera Utara,sumatra,Planned,2028,2028,,SH-PLN,,622,2.120988,98.651149,province_centroid,low
-RUPTL-SUMATRA-P-0051,Sumatera BESS-2,?,200.0,Sumatera Utara,sumatra,Planned,2029,2029,,SH-PLN,,622,1.900856,98.603764,province_centroid,low
+RUPTL-SUMATRA-P-0050,Sumatera BESS-1 #3,BESS,50.0,Sumatera Utara,sumatra,Planned,2028,2028,,SH-PLN,,622,2.120988,98.651149,province_centroid,low
+RUPTL-SUMATRA-P-0051,Sumatera BESS-2,BESS,200.0,Sumatera Utara,sumatra,Planned,2029,2029,,SH-PLN,,622,1.900856,98.603764,province_centroid,low
 RUPTL-SUMATRA-P-0052,Panas Bumi Sumatera (kuota ISJ) Tersebar2),PLTP,800.0,Sumatera Utara,sumatra,Planned,2031,2031 2033,,IPP,,622,2.144220,98.610315,province_centroid,low
 RUPTL-SUMATRA-P-0053,Sumatera Pump Storage -1,?,500.0,Sumatera Utara,sumatra,Planned,2033,2033 2033,,SH-PLN,,622,2.132680,98.727773,province_centroid,low
 RUPTL-SUMATRA-P-0054,Sumbagut (Kuota) Tersebar1),PLTA,100.0,Sumatera Utara,sumatra,Planned,2034,2034,,IPP,,622,2.162558,98.809840,province_centroid,low
@@ -63,10 +63,10 @@ RUPTL-SUMATRA-P-0061,Dedieselisasi,PLTS,1.8,Sumatera Utara,sumatra,Planned,2027,
 RUPTL-SUMATRA-P-0062,Isolated Sumut Tersebar,PLTS,2.76,Sumatera Utara,sumatra,Planned,2029,2029,,IPP,,622,2.132054,98.745808,province_centroid,low
 RUPTL-SUMATRA-P-0063,Isolated Sumut Tersebar,PLTS,3.68,Sumatera Utara,sumatra,Planned,2033,2033,,IPP,,622,1.893316,98.861363,province_centroid,low
 RUPTL-SUMATRA-P-0064,Riau Peaker,PLTMG,200.0,Riau,sumatra,Construction,2026,2026,,PLN,Tabel A3.10,637,0.379595,101.623853,province_centroid,low
-RUPTL-SUMATRA-P-0065,PLTBio Sumatera (kuota) Tersebar,PLTBG,3.0,Riau,sumatra,Planned,2027,2027,,IPP,Tabel A3.10,637,0.123742,101.842624,province_centroid,low
+RUPTL-SUMATRA-P-0065,PLTBio Sumatera (kuota) Tersebar,PLTBg,3.0,Riau,sumatra,Planned,2027,2027,,IPP,Tabel A3.10,637,0.123742,101.842624,province_centroid,low
 RUPTL-SUMATRA-P-0066,Dedieselisasi,PLTS,6.5,Riau,sumatra,Planned,2027,2027 2027,,IPP,Tabel A3.10,637,0.168913,101.694153,province_centroid,low
 RUPTL-SUMATRA-P-0067,Isolated Riau Tersebar,PLTS,3.57,Riau,sumatra,Planned,2033,2033,,IPP,Tabel A3.10,637,0.316133,101.799171,province_centroid,low
-RUPTL-SUMATRA-P-0068,Sumatera BESS-3,?,100.0,Kepulauan Riau,sumatra,Planned,2030,2030,,PLN,Tabel A4.9,648,3.978286,108.305121,province_centroid,low
+RUPTL-SUMATRA-P-0068,Sumatera BESS-3,BESS,100.0,Kepulauan Riau,sumatra,Planned,2030,2030,,PLN,Tabel A4.9,648,3.978286,108.305121,province_centroid,low
 RUPTL-SUMATRA-P-0069,Sumbagut (Kuota) Tersebar*,PLTA,161.0,Kepulauan Riau,sumatra,Planned,2031,2031,,IPP,Tabel A4.9,648,3.984610,108.268589,province_centroid,low
 RUPTL-SUMATRA-P-0070,Pembangkit EBT LISDES,PLTS,4.51,Kepulauan Riau,sumatra,Planned,2025,2025 2025 2026 2027,,PLN,Tabel A4.14,650,3.749460,108.211334,province_centroid,low
 RUPTL-SUMATRA-P-0071,PLTS + BESS Kepri,PLTS,8.0,Kepulauan Riau,sumatra,Planned,2027,2027 2032,,IPP,Tabel A4.14,650,3.928634,108.310227,province_centroid,low
@@ -102,15 +102,15 @@ RUPTL-SUMATRA-P-0100,Sumsel-1,PLTU,300.0,Sumatera Selatan,sumatra,Construction,2
 RUPTL-SUMATRA-P-0101,Sumbagsel-1,PLTU,150.0,Sumatera Selatan,sumatra,Construction,2025,2025,,IPP,Tabel A8.11,697,-3.095185,103.696276,province_centroid,low
 RUPTL-SUMATRA-P-0102,Lumut Balai (FTP2) #2,PLTP,55.0,Sumatera Selatan,sumatra,Construction,2025,2025,,IPP,Tabel A8.11,697,-4.197919,103.648592,gazetteer_generator:GEN-SMT-0067,high
 RUPTL-SUMATRA-P-0103,Sumbagsel 1,PLTGU,150.0,Sumatera Selatan,sumatra,Planned,2026,2026,,IPP,Tabel A8.11,697,-3.135813,103.847427,province_centroid,low
-RUPTL-SUMATRA-P-0104,PLTSa Palembang,PLTSA,17.7,Sumatera Selatan,sumatra,Planned,2026,2026,,IPP,Tabel A8.11,697,-2.928528,104.870687,gazetteer_generator:GEN-SMT-0078,high
+RUPTL-SUMATRA-P-0104,PLTSa Palembang,PLTSa,17.7,Sumatera Selatan,sumatra,Planned,2026,2026,,IPP,Tabel A8.11,697,-2.928528,104.870687,gazetteer_generator:GEN-SMT-0078,high
 RUPTL-SUMATRA-P-0105,Kenali,PLTM,3.6,Sumatera Selatan,sumatra,Construction,2027,2027,,IPP,Tabel A8.11,697,-3.367376,103.877649,province_centroid,low
-RUPTL-SUMATRA-P-0106,Sumatera BESS-1 #4,?,50.0,Sumatera Selatan,sumatra,Planned,2028,2028,,SH-PLN,Tabel A8.11,697,-3.114279,103.971498,province_centroid,low
+RUPTL-SUMATRA-P-0106,Sumatera BESS-1 #4,BESS,50.0,Sumatera Selatan,sumatra,Planned,2028,2028,,SH-PLN,Tabel A8.11,697,-3.114279,103.971498,province_centroid,low
 RUPTL-SUMATRA-P-0107,Sumbagselteng (Kuota) tersebar,PLTA,40.0,Sumatera Selatan,sumatra,Planned,2029,2029,,IPP,Tabel A8.11,697,-3.483198,104.098579,province_centroid,low
 RUPTL-SUMATRA-P-0108,Rantau Dedap (FTP2),PLTP,17.0,Sumatera Selatan,sumatra,Committed,2030,2030,,IPP,Tabel A8.11,697,-4.222504,103.382507,gazetteer_generator:GEN-SMT-0004,high
 RUPTL-SUMATRA-P-0109,Rantau Dedap (FTP2),PLTP,,Sumatera Selatan,sumatra,Committed,2030,2030,,IPP,Tabel A8.11,697,-4.222504,103.382507,gazetteer_generator:GEN-SMT-0004,high
 RUPTL-SUMATRA-P-0110,Sumatera Hybrid1),PLTU,1200.0,Sumatera Selatan,sumatra,Planned,2032,2032 2033,,IPP,Tabel A8.11,697,-3.449684,104.027103,province_centroid,low
 RUPTL-SUMATRA-P-0111,Sumatera Hybrid1),PLTS,300.0,Sumatera Selatan,sumatra,Planned,2032,2032 2033,,IPP,Tabel A8.11,697,-3.282964,103.936499,province_centroid,low
-RUPTL-SUMATRA-P-0112,Sumatera Hybrid1),?,150.0,Sumatera Selatan,sumatra,Planned,2032,2032 2033,,IPP,Tabel A8.11,697,-3.284133,103.802950,province_centroid,low
+RUPTL-SUMATRA-P-0112,Sumatera Hybrid1),PLTS,150.0,Sumatera Selatan,sumatra,Planned,2032,2032 2033,,IPP,Tabel A8.11,697,-3.284133,103.802950,province_centroid,low
 RUPTL-SUMATRA-P-0113,Danau Ranau (FPT2) **,PLTP,20.0,Sumatera Selatan,sumatra,Committed,2033,2033,,SH-PLN,Tabel A8.11,697,-3.251258,103.742802,province_centroid,low
 RUPTL-SUMATRA-P-0114,Tanjung Sakti,PLTA,94.0,Sumatera Selatan,sumatra,Planned,2033,2033,,SH-PLN,Tabel A8.11,697,-3.728124,103.807354,gazetteer_generator:GEN-SMT-0055,high
 RUPTL-SUMATRA-P-0115,Lumut Balai (FTP2) #3,PLTP,55.0,Sumatera Selatan,sumatra,Construction,2033,2033,,IPP,Tabel A8.11,697,-4.197919,103.648592,gazetteer_generator:GEN-SMT-0067,high
@@ -127,8 +127,8 @@ RUPTL-SUMATRA-P-0125,Sumber Jaya,PLTM,6.0,Lampung,sumatra,Construction,2025,2025
 RUPTL-SUMATRA-P-0126,Way Meleson 2,PLTM,2.3,Lampung,sumatra,Construction,2025,2025,,IPP,Tabel A10.11,720,-4.565453,105.279760,province_centroid,low
 RUPTL-SUMATRA-P-0127,Kukusan 2,PLTM,5.4,Lampung,sumatra,Construction,2025,2025 2027,,IPP IPP,Tabel A10.11,720,-4.696871,105.239716,province_centroid,low
 RUPTL-SUMATRA-P-0128,Sumatera (Kuota) Tersebar*,PLTP,40.0,Lampung,sumatra,Unknown,,,,,Tabel A10.11,720,-4.491509,105.619674,province_centroid,low
-RUPTL-SUMATRA-P-0129,Sumatera BESS-1 #2,?,50.0,Lampung,sumatra,Planned,2027,2027,,SH-PLN,Tabel A10.11,720,-4.371350,105.333950,province_centroid,low
-RUPTL-SUMATRA-P-0130,Sumatera BESS-3,?,100.0,Lampung,sumatra,Planned,2030,2030,,SH-PLN,Tabel A10.11,720,-4.683000,105.503920,province_centroid,low
+RUPTL-SUMATRA-P-0129,Sumatera BESS-1 #2,BESS,50.0,Lampung,sumatra,Planned,2027,2027,,SH-PLN,Tabel A10.11,720,-4.371350,105.333950,province_centroid,low
+RUPTL-SUMATRA-P-0130,Sumatera BESS-3,BESS,100.0,Lampung,sumatra,Planned,2030,2030,,SH-PLN,Tabel A10.11,720,-4.683000,105.503920,province_centroid,low
 RUPTL-SUMATRA-P-0131,Sumbagsel 2,PLTG,300.0,Lampung,sumatra,Planned,2029,2029,,SH-PLN,Tabel A10.11,720,-4.654703,105.424437,province_centroid,low
 RUPTL-SUMATRA-P-0132,Sumatera (Kuota) Tersebar Sumbagsel*,PLTM,9.5,Lampung,sumatra,Planned,2029,2029,,IPP,Tabel A10.11,720,-4.505222,105.355394,province_centroid,low
 RUPTL-SUMATRA-P-0133,Sumatera (Kuota) Tersebar Sumbagsel*,PLTM,5.4,Lampung,sumatra,Planned,2029,2029,,IPP,Tabel A10.11,720,-4.363095,105.302305,province_centroid,low
@@ -146,25 +146,25 @@ RUPTL-SUMATRA-P-0144,Isolated Lampung tersebar,PLTS,0.2,Lampung,sumatra,Planned,
 RUPTL-SUMATRA-P-0145,Isolated Lampung tersebar,PLTS,0.6,Lampung,sumatra,Planned,2031,2031,,IPP,Tabel A10.11,720,-4.450283,105.486414,province_centroid,low
 RUPTL-SUMATRA-P-0146,Isolated Lampung tersebar,PLTS,0.2,Lampung,sumatra,Planned,2033,2033,,IPP,Tabel A10.11,720,-4.639045,105.368014,province_centroid,low
 RUPTL-SUMATRA-P-0147,Isolated Lampung tersebar,PLTS,0.79,Lampung,sumatra,Planned,2034,2034,,IPP,Tabel A10.11,720,-4.462346,105.408188,province_centroid,low
-RUPTL-SUMATRA-P-0148,Kuala Mandor,PLTBM,5.0,Lampung,sumatra,Construction,2025,2025,,IPP,Tabel A11.11,735,-4.671226,105.491033,province_centroid,low
+RUPTL-SUMATRA-P-0148,Kuala Mandor,PLTBm,5.0,Lampung,sumatra,Construction,2025,2025,,IPP,Tabel A11.11,735,-4.671226,105.491033,province_centroid,low
 RUPTL-SUMATRA-P-0149,Kalbar-1,PLTGU,250.0,Lampung,sumatra,Planned,2026,2026,,SH-PLN,Tabel A11.11,735,-4.567975,105.410037,province_centroid,low
 RUPTL-SUMATRA-P-0150,Kalbar-1 (PLTS+BESS),PLTS,80.0,Lampung,sumatra,Planned,,,,IPP,Tabel A11.11,735,-4.362916,105.248583,province_centroid,low
-RUPTL-SUMATRA-P-0151,Kalbar-1 (PLTS+BESS),?,50.0,Lampung,sumatra,Planned,,,,IPP,Tabel A11.11,735,-4.441891,105.352631,province_centroid,low
+RUPTL-SUMATRA-P-0151,Kalbar-1 (PLTS+BESS),PLTS,50.0,Lampung,sumatra,Planned,,,,IPP,Tabel A11.11,735,-4.441891,105.352631,province_centroid,low
 RUPTL-SUMATRA-P-0152,Kalbar-1 (PLTS+BESS),PLTS,40.0,Lampung,sumatra,Planned,,,,IPP,Tabel A11.11,735,-4.343355,105.220141,province_centroid,low
-RUPTL-SUMATRA-P-0153,Kalbar-1 (PLTS+BESS),?,25.0,Lampung,sumatra,Planned,,,,IPP,Tabel A11.11,735,-4.619718,105.291679,province_centroid,low
+RUPTL-SUMATRA-P-0153,Kalbar-1 (PLTS+BESS),PLTS,25.0,Lampung,sumatra,Planned,,,,IPP,Tabel A11.11,735,-4.619718,105.291679,province_centroid,low
 RUPTL-SUMATRA-P-0154,Setanggi,PLTM,5.0,Lampung,sumatra,Committed,2027,2027,,IPP,Tabel A11.11,735,-4.572360,105.409742,province_centroid,low
 RUPTL-SUMATRA-P-0155,Manajur,PLTM,5.0,Lampung,sumatra,Committed,2027,2027,,IPP,Tabel A11.11,735,-4.474677,105.523997,province_centroid,low
-RUPTL-SUMATRA-P-0156,Kalbar-2,?,100.0,Lampung,sumatra,Planned,2027,2027,,IPP,Tabel A11.11,735,-4.509140,105.588620,province_centroid,low
+RUPTL-SUMATRA-P-0156,Kalbar-2,PLTGU,100.0,Lampung,sumatra,Planned,2027,2027,,IPP,Tabel A11.11,735,-4.509140,105.588620,province_centroid,low
 RUPTL-SUMATRA-P-0157,Kalbar,PLTS,50.0,Lampung,sumatra,Planned,2028,2028,,SH-PLN,Tabel A11.11,735,-4.730584,105.227860,province_centroid,low
 RUPTL-SUMATRA-P-0158,Khatulistiwa (Kuota) Tersebar,PLTM,16.0,Lampung,sumatra,Planned,2028,2028,,IPP,Tabel A11.11,735,-4.417188,105.273540,province_centroid,low
 RUPTL-SUMATRA-P-0159,Kalimantan (Kuota) Tersebar,?,7.5,Lampung,sumatra,Planned,2029,2029,,IPP,Tabel A11.11,735,-4.448503,105.537056,province_centroid,low
 RUPTL-SUMATRA-P-0160,Kalbar,PLTM,2.0,Lampung,sumatra,Planned,2029,2029,,PLN,Tabel A11.11,735,-4.461707,105.349284,province_centroid,low
 RUPTL-SUMATRA-P-0161,Kalbar-2 (PLTS+BESS),PLTS,80.0,Lampung,sumatra,Planned,,,,IPP,Tabel A11.11,735,-4.499373,105.386744,province_centroid,low
-RUPTL-SUMATRA-P-0162,Kalbar-2 (PLTS+BESS),?,50.0,Lampung,sumatra,Planned,,,,IPP,Tabel A11.11,735,-4.548716,105.450446,province_centroid,low
+RUPTL-SUMATRA-P-0162,Kalbar-2 (PLTS+BESS),PLTS,50.0,Lampung,sumatra,Planned,,,,IPP,Tabel A11.11,735,-4.548716,105.450446,province_centroid,low
 RUPTL-SUMATRA-P-0163,Kalbar-3,PLTMG,50.0,Lampung,sumatra,Planned,2029,2029,,IPP,Tabel A11.11,735,-4.647706,105.468158,province_centroid,low
 RUPTL-SUMATRA-P-0164,Kalimantan (Kuota) Tersebar,?,17.0,Lampung,sumatra,Planned,2030,2030,,IPP,Tabel A11.11,735,-4.340420,105.253195,province_centroid,low
 RUPTL-SUMATRA-P-0165,Kalbar-2 (PLTS+BESS),PLTS,160.0,Lampung,sumatra,Planned,,,,IPP,Tabel A11.11,735,-4.609112,105.562282,province_centroid,low
-RUPTL-SUMATRA-P-0166,Kalbar-2 (PLTS+BESS),?,100.0,Lampung,sumatra,Planned,,,,IPP,Tabel A11.11,735,-4.679426,105.592263,province_centroid,low
+RUPTL-SUMATRA-P-0166,Kalbar-2 (PLTS+BESS),PLTS,100.0,Lampung,sumatra,Planned,,,,IPP,Tabel A11.11,735,-4.679426,105.592263,province_centroid,low
 RUPTL-SUMATRA-P-0167,Parit Baru (FTP1),PLTU,50.0,Lampung,sumatra,Construction,2030,2030,,PLN,Tabel A11.11,735,-4.658421,105.451573,province_centroid,low
 RUPTL-SUMATRA-P-0168,Parit Baru (FTP1),PLTU,50.0,Lampung,sumatra,Construction,2030,2030,,PLN,Tabel A11.11,735,-4.711786,105.375609,province_centroid,low
 RUPTL-SUMATRA-P-0169,Pantai Kura- Kura (FTP1),PLTU,27.5,Lampung,sumatra,Construction,2030,2030,,PLN,Tabel A11.11,735,-4.644159,105.318863,province_centroid,low
@@ -182,7 +182,7 @@ RUPTL-SUMATRA-P-0180,Khatulistiwa (Kuota) Tersebar,PLTA,100.0,Lampung,sumatra,Pl
 RUPTL-SUMATRA-P-0181,Lisdes Kalbar,PLTS,1.9,Lampung,sumatra,Planned,2025,2025,,PLN,,736,-4.648400,105.468131,province_centroid,low
 RUPTL-SUMATRA-P-0182,Dedieselisasi,PLTS,21.6,Lampung,sumatra,Planned,2027,2027,,IPP,,736,-4.350806,105.448047,province_centroid,low
 RUPTL-SUMATRA-P-0183,Tanah Laut,PLTB,70.0,Lampung,sumatra,Planned,2026,2026,,IPP,Tabel A12.10,751,-4.605552,105.387025,province_centroid,low
-RUPTL-SUMATRA-P-0184,Kalselteng*),?,100.0,Lampung,sumatra,Planned,2027,2027,,SH-PLN,Tabel A12.10,751,-4.370195,105.466674,province_centroid,low
+RUPTL-SUMATRA-P-0184,Kalselteng*),PLTGU,100.0,Lampung,sumatra,Planned,2027,2027,,SH-PLN,Tabel A12.10,751,-4.370195,105.466674,province_centroid,low
 RUPTL-SUMATRA-P-0185,Kalseltengtimra (Kuota) Tersebar,PLTM,2.7,Lampung,sumatra,Planned,2029,2029,,IPP,Tabel A12.10,751,-4.518309,105.307996,province_centroid,low
 RUPTL-SUMATRA-P-0186,Kalimantan-1,PLTGU,150.0,Lampung,sumatra,Planned,2028,2028,,SH-PLN,Tabel A12.10,751,-4.558703,105.608140,province_centroid,low
 RUPTL-SUMATRA-P-0187,Add-On Kalselteng*),PLTGU,50.0,Lampung,sumatra,Planned,,,,SH-PLN,Tabel A12.10,751,-4.704266,105.557979,province_centroid,low
@@ -191,13 +191,13 @@ RUPTL-SUMATRA-P-0189,Lisdes Kalsel,PLTS,4.9,Lampung,sumatra,Planned,2026,2026,,P
 RUPTL-SUMATRA-P-0190,Lisdes Kalsel,PLTS,0.6,Lampung,sumatra,Planned,2027,2027,,PLN,Tabel A12.10,751,-4.426371,105.612154,province_centroid,low
 RUPTL-SUMATRA-P-0191,Isolated Kalsel,PLTS,0.8,Lampung,sumatra,Planned,2030,2030,,IPP,Tabel A12.10,751,-4.632646,105.565003,province_centroid,low
 RUPTL-SUMATRA-P-0192,Kalseltengtimra- 5 (PLTS+BESS),PLTS,160.0,Lampung,sumatra,Planned,,,,IPP,Tabel A13.11,765,-4.710315,105.564412,province_centroid,low
-RUPTL-SUMATRA-P-0193,Kalseltengtimra- 5 (PLTS+BESS),?,100.0,Lampung,sumatra,Planned,,,,IPP,Tabel A13.11,765,-4.599661,105.321413,province_centroid,low
+RUPTL-SUMATRA-P-0193,Kalseltengtimra- 5 (PLTS+BESS),PLTS,100.0,Lampung,sumatra,Planned,,,,IPP,Tabel A13.11,765,-4.599661,105.321413,province_centroid,low
 RUPTL-SUMATRA-P-0194,Kalselteng 3,PLTU,200.0,Lampung,sumatra,Committed,2029,2029,,IPP,Tabel A13.11,765,-4.362586,105.400099,province_centroid,low
-RUPTL-SUMATRA-P-0195,Kalimantan (Kuota) Tersebar2),PLTBG,3.8,Lampung,sumatra,Planned,2029,2029,,IPP,Tabel A13.11,765,-4.625368,105.497700,province_centroid,low
+RUPTL-SUMATRA-P-0195,Kalimantan (Kuota) Tersebar2),PLTBg,3.8,Lampung,sumatra,Planned,2029,2029,,IPP,Tabel A13.11,765,-4.625368,105.497700,province_centroid,low
 RUPTL-SUMATRA-P-0196,Kalimantan-2,PLTG,100.0,Lampung,sumatra,Planned,2029,2029,,SH-PLN,Tabel A13.11,765,-4.697311,105.624994,province_centroid,low
 RUPTL-SUMATRA-P-0197,Sampit,PLTU,50.0,Lampung,sumatra,Construction,2030,2030,,PLN,Tabel A13.11,765,-4.587667,105.546762,province_centroid,low
 RUPTL-SUMATRA-P-0198,MT Hybrid Kalselteng 4,PLTS,40.0,Lampung,sumatra,Planned,2032,2032,,IPP,Tabel A13.11,765,-4.353575,105.332953,province_centroid,low
-RUPTL-SUMATRA-P-0199,MT Hybrid Kalselteng 4,?,25.0,Lampung,sumatra,Planned,2032,2032,,IPP,Tabel A13.11,765,-4.671639,105.416512,province_centroid,low
+RUPTL-SUMATRA-P-0199,MT Hybrid Kalselteng 4,PLTS,25.0,Lampung,sumatra,Planned,2032,2032,,IPP,Tabel A13.11,765,-4.671639,105.416512,province_centroid,low
 RUPTL-SUMATRA-P-0200,MT Hybrid Kalselteng 4,PLTU,200.0,Lampung,sumatra,Planned,2032,2032,,IPP,Tabel A13.11,765,-4.506610,105.207900,province_centroid,low
 RUPTL-SUMATRA-P-0201,Muara Juloi,PLTA,3401.0,Lampung,sumatra,Planned,2032,2032 2033,,SH-PLN,Tabel A13.11,765,-4.457974,105.267952,province_centroid,low
 RUPTL-SUMATRA-P-0202,Lisdes Kalteng,PLTS,0.6,Lampung,sumatra,Planned,2026,2026,,PLN,Tabel A13.11,765,-4.464422,105.555023,province_centroid,low
@@ -208,19 +208,19 @@ RUPTL-SUMATRA-P-0206,Kalimantan,PLTGU,400.0,Lampung,sumatra,Planned,2027,2027,,S
 RUPTL-SUMATRA-P-0207,IKN,PLTS,50.0,Lampung,sumatra,Construction,2025,2025,,IPP,Tabel A14.14,781,-4.708280,105.545194,province_centroid,low
 RUPTL-SUMATRA-P-0208,Kaltim Peaker 2,PLTG,100.0,Lampung,sumatra,Planned,2026,2026,,SH-PLN,Tabel A14.14,781,-4.387399,105.542933,province_centroid,low
 RUPTL-SUMATRA-P-0209,Kaltim-1,PLTGU,250.0,Lampung,sumatra,Planned,2026,2026,,SH-PLN,Tabel A14.14,781,-4.368786,105.495700,province_centroid,low
-RUPTL-SUMATRA-P-0210,Kaltara/ Kaltimra***),?,100.0,Lampung,sumatra,Planned,2027,2027,,SH-PLN,Tabel A14.14,781,-4.561514,105.555621,province_centroid,low
+RUPTL-SUMATRA-P-0210,Kaltara/ Kaltimra***),PLTGU,100.0,Lampung,sumatra,Planned,2027,2027,,SH-PLN,Tabel A14.14,781,-4.561514,105.555621,province_centroid,low
 RUPTL-SUMATRA-P-0211,Kaltim Add on Blok 2,PLTGU,80.0,Lampung,sumatra,Planned,2027,2027,,SH-PLN,Tabel A14.14,781,-4.580808,105.411268,province_centroid,low
 RUPTL-SUMATRA-P-0212,Kalseltengtimra-1 (PLTS+BESS),PLTS,80.0,Lampung,sumatra,Planned,2027,2027,,SH-PLN,Tabel A14.14,781,-4.498713,105.319144,province_centroid,low
-RUPTL-SUMATRA-P-0213,Kalseltengtimra-1 (PLTS+BESS),?,50.0,Lampung,sumatra,Planned,2027,2027,,SH-PLN,Tabel A14.14,781,-4.706734,105.182448,province_centroid,low
+RUPTL-SUMATRA-P-0213,Kalseltengtimra-1 (PLTS+BESS),PLTS,50.0,Lampung,sumatra,Planned,2027,2027,,SH-PLN,Tabel A14.14,781,-4.706734,105.182448,province_centroid,low
 RUPTL-SUMATRA-P-0214,Kalseltengtimra-2 (PLTS+BESS),PLTS,240.0,Lampung,sumatra,Planned,,,,IPP,,782,-4.734207,105.469375,province_centroid,low
-RUPTL-SUMATRA-P-0215,Kalseltengtimra-2 (PLTS+BESS),?,150.0,Lampung,sumatra,Planned,,,,IPP,,782,-4.711078,105.574757,province_centroid,low
+RUPTL-SUMATRA-P-0215,Kalseltengtimra-2 (PLTS+BESS),PLTS,150.0,Lampung,sumatra,Planned,,,,IPP,,782,-4.711078,105.574757,province_centroid,low
 RUPTL-SUMATRA-P-0216,Kalseltengtimra (Kuota) Tersebar,PLTS,15.0,Lampung,sumatra,Planned,2029,2029,,IPP,,782,-4.590960,105.325131,province_centroid,low
 RUPTL-SUMATRA-P-0217,Kalseltengtimra (Kuota) Tersebar,PLTM,0.15,Lampung,sumatra,Planned,2029,2029,,IPP,,782,-4.739561,105.455855,province_centroid,low
 RUPTL-SUMATRA-P-0218,Add-On Kaltara/ Kaltimra***),PLTGU,50.0,Lampung,sumatra,Planned,,,,SH-PLN,,782,-4.625656,105.553676,province_centroid,low
 RUPTL-SUMATRA-P-0219,Kalimantan (Kuota) Tersebar,?,10.0,Lampung,sumatra,Planned,2030,2030,,IPP,,782,-4.365473,105.242273,province_centroid,low
 RUPTL-SUMATRA-P-0220,Kalseltengtimra (Kuota) Tersebar,PLTS,30.0,Lampung,sumatra,Planned,2030,2030,,IPP,,782,-4.544675,105.421351,province_centroid,low
 RUPTL-SUMATRA-P-0221,Kalseltengtimra-4 (PLTS+BESS),PLTS,40.0,Lampung,sumatra,Planned,,,,IPP,,782,-4.775405,105.429262,province_centroid,low
-RUPTL-SUMATRA-P-0222,Kalseltengtimra-4 (PLTS+BESS),?,25.0,Lampung,sumatra,Planned,,,,IPP,,782,-4.618735,105.534568,province_centroid,low
+RUPTL-SUMATRA-P-0222,Kalseltengtimra-4 (PLTS+BESS),PLTS,25.0,Lampung,sumatra,Planned,,,,IPP,,782,-4.618735,105.534568,province_centroid,low
 RUPTL-SUMATRA-P-0223,Kelai,PLTA,45.0,Lampung,sumatra,Planned,2032,2032,,SH-PLN,,782,-4.451287,105.199913,province_centroid,low
 RUPTL-SUMATRA-P-0224,Tabang 1,PLTA,101.0,Lampung,sumatra,Planned,2032,2032,,SH-PLN,,782,-4.596836,105.405082,province_centroid,low
 RUPTL-SUMATRA-P-0225,Tanah Grogot**,PLTU,14.0,Lampung,sumatra,Committed,2030,2030,,IPP,,782,-4.780086,105.380413,province_centroid,low
@@ -235,9 +235,9 @@ RUPTL-SUMATRA-P-0233,Lisdes Kaltim,PLTS,12.1,Lampung,sumatra,Planned,2027,2027,,
 RUPTL-SUMATRA-P-0234,Dedieselisasi,PLTS,0.9,Lampung,sumatra,Planned,2027,2027,,IPP,,782,-4.503442,105.271347,province_centroid,low
 RUPTL-SUMATRA-P-0235,Isolated Kaltim,PLTS,7.7,Lampung,sumatra,Planned,2030,2030,,IPP,,782,-4.697647,105.311914,province_centroid,low
 RUPTL-SUMATRA-P-0236,Tarakan,PLTMG,50.0,Lampung,sumatra,Planned,2027,2027,,SH-PLN,Tabel A15.11,803,-4.621505,105.383156,province_centroid,low
-RUPTL-SUMATRA-P-0237,Kaltara/ Kaltimra*),?,100.0,Lampung,sumatra,Planned,2027,2027,,SH-PLN,Tabel A15.11,803,-4.649321,105.611804,province_centroid,low
+RUPTL-SUMATRA-P-0237,Kaltara/ Kaltimra*),PLTGU,100.0,Lampung,sumatra,Planned,2027,2027,,SH-PLN,Tabel A15.11,803,-4.649321,105.611804,province_centroid,low
 RUPTL-SUMATRA-P-0238,Kalseltengtimra-3 (PLTS+BESS),PLTS,240.0,Lampung,sumatra,Planned,,,,IPP,Tabel A15.11,803,-4.400266,105.424863,province_centroid,low
-RUPTL-SUMATRA-P-0239,Kalseltengtimra-3 (PLTS+BESS),?,150.0,Lampung,sumatra,Planned,,,,IPP,Tabel A15.11,803,-4.589454,105.539689,province_centroid,low
+RUPTL-SUMATRA-P-0239,Kalseltengtimra-3 (PLTS+BESS),PLTS,150.0,Lampung,sumatra,Planned,,,,IPP,Tabel A15.11,803,-4.589454,105.539689,province_centroid,low
 RUPTL-SUMATRA-P-0240,Add-On Kaltara/Kaltimra*),PLTGU,50.0,Lampung,sumatra,Planned,,,,SH-PLN,Tabel A15.11,803,-4.576904,105.340967,province_centroid,low
 RUPTL-SUMATRA-P-0241,Tanjung Selor,PLTU,14.0,Lampung,sumatra,Construction,2030,2030,,PLN,Tabel A15.11,803,-4.645987,105.383293,province_centroid,low
 RUPTL-SUMATRA-P-0242,Kalseltengtimra (Kuota) Tersebar,PLTA,300.0,Lampung,sumatra,Planned,2031,2031,,IPP,Tabel A15.11,803,-4.483591,105.601796,province_centroid,low

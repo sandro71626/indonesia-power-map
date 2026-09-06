@@ -547,6 +547,9 @@
           <span class="sw-box" style="background:#1f77b4"></span> 150 kV</label>
         <label><input type="checkbox" class="sub-sub" value="70" checked>
           <span class="sw-box" style="background:#2ca02c"></span> 70 kV</label>
+        <label><input type="checkbox" id="m-sub-planned">
+          <span class="sw-box" style="background:transparent;border-color:#666"></span>
+          <span data-i18n="sidebar.layer.planned_sub">Rencana RUPTL</span></label>
       </div>
     </div>
 
@@ -920,6 +923,7 @@ const TRANSLATIONS = {
     'sidebar.layer.b0': '< 20 MW / tak tercatat',
     'sidebar.layer.planned_trm': 'Rencana RUPTL',
     'sidebar.layer.planned_gen': 'Rencana RUPTL',
+    'sidebar.layer.planned_sub': 'Rencana RUPTL',
     'sidebar.layer.note': 'Kotak = GI · garis = transmisi · lingkaran = pembangkit. Border ganda = 500/275 kV. Rencana RUPTL bertampilan hollow/dashed.',
     'sidebar.planttype': 'Jenis pembangkit',
     'sidebar.planttype.note': 'Klik untuk sembunyikan/tampilkan jenis. Ukuran simbol ∝ kapasitas MW.',
@@ -1181,6 +1185,7 @@ const TRANSLATIONS = {
     'sidebar.layer.b0': '< 20 MW / unrecorded',
     'sidebar.layer.planned_trm': 'RUPTL planned',
     'sidebar.layer.planned_gen': 'RUPTL planned',
+    'sidebar.layer.planned_sub': 'RUPTL planned',
     'sidebar.layer.note': 'Square = substation · line = transmission · circle = power plant. Double border = 500/275 kV. RUPTL planned assets appear hollow/dashed.',
     'sidebar.planttype': 'Plant type',
     'sidebar.planttype.note': 'Click to hide/show type. Symbol size ∝ MW capacity.',
@@ -1660,13 +1665,19 @@ const PLANT_COLORS = {
   'PLTU':'#3a3a3a','PLTGU':'#ff7f0e','PLTG':'#ffbb78','PLTA':'#1f77b4',
   'PLTM':'#76b7e1','PLTMH':'#76b7e1','PLTP':'#d62728','PLTS':'#f7d100',
   'PLTB':'#17becf','PLTD':'#8c564b','PLTMG':'#c49c94','PLTSa':'#8b4513',
-  'PLT Biomas':'#6b8e23','PLT Biomass':'#6b8e23','PLTBg':'#9acd32',
+  'PLT Biomas':'#6b8e23','PLT Biomass':'#6b8e23','PLTBm':'#6b8e23',
+  'PLTBg':'#9acd32',
+  // Tambahan dari RUPTL 2025-2034: PLTAL (arus laut / tidal) reuse warna
+  // biru laut PLTA agar konsisten "tenaga air"; BESS (storage) pakai
+  // warna ungu netral — bukan pembangkit tapi sering muncul di data.
+  'PLTAL':'#4a90c4','BESS':'#7b6ba8',
   'Unknown':'#999',
 };
 const PLANT_LABEL = {
   'PLTU':'U','PLTGU':'GU','PLTG':'G','PLTA':'A','PLTM':'M','PLTMH':'M',
   'PLTP':'P','PLTS':'S','PLTB':'B','PLTD':'D','PLTMG':'MG','PLTSa':'Sa',
-  'PLT Biomas':'BM','PLT Biomass':'BM','PLTBg':'BG',
+  'PLT Biomas':'BM','PLT Biomass':'BM','PLTBm':'BM','PLTBg':'BG',
+  'PLTAL':'AL','BESS':'BE',
   'Unknown':'?',
 };
 // Deskripsi sumber energi tiap jenis pembangkit (untuk legend & panel detail).
@@ -1676,7 +1687,9 @@ const PLANT_DESC = {
   'PLTU':'Batubara (uap)','PLTGU':'Gas (combined cycle)','PLTG':'Gas (open cycle)',
   'PLTMG':'Mesin gas','PLTA':'Tenaga air','PLTM':'Minihidro','PLTMH':'Mikrohidro',
   'PLTP':'Panas bumi','PLTS':'Surya','PLTB':'Angin (bayu)','PLTD':'Diesel',
-  'PLTSa':'Sampah','PLT Biomas':'Biomassa','PLT Biomass':'Biomassa','PLTBg':'Biogas',
+  'PLTSa':'Sampah','PLT Biomas':'Biomassa','PLT Biomass':'Biomassa',
+  'PLTBm':'Biomassa','PLTBg':'Biogas',
+  'PLTAL':'Arus laut (tidal)','BESS':'Baterai penyimpan energi',
   'Unknown':'Tidak diketahui',
 };
 // English descriptions untuk mode EN. Sesuai standar industri global +
@@ -1685,7 +1698,9 @@ const PLANT_DESC_EN = {
   'PLTU':'Coal (Steam)','PLTGU':'Gas (Combined Cycle)','PLTG':'Gas (Open Cycle)',
   'PLTMG':'Gas Engine','PLTA':'Hydro','PLTM':'Mini Hydro','PLTMH':'Micro Hydro',
   'PLTP':'Geothermal','PLTS':'Solar PV','PLTB':'Wind','PLTD':'Diesel',
-  'PLTSa':'Waste-to-Energy','PLT Biomas':'Biomass','PLT Biomass':'Biomass','PLTBg':'Biogas',
+  'PLTSa':'Waste-to-Energy','PLT Biomas':'Biomass','PLT Biomass':'Biomass',
+  'PLTBm':'Biomass','PLTBg':'Biogas',
+  'PLTAL':'Tidal','BESS':'Battery Energy Storage',
   'Unknown':'Unknown',
 };
 // Locale-aware getter — pakai dictionary sesuai currentLanguage.
@@ -1754,14 +1769,23 @@ function sizeForMVA(mva) {
   if (!mva) return 11;
   return Math.max(11, Math.min(22, Math.sqrt(mva) / 3));
 }
-function giIcon(voltage, mva) {
+function giIcon(voltage, mva, planned) {
   const size = sizeForMVA(mva);
   const color = colorForGIVoltage(voltage);
   const isEhv = voltage && (voltage.startsWith('500') || voltage.startsWith('275'));
-  const cls = isEhv ? 'gi-marker gitet' : 'gi-marker';
+  const baseCls = isEhv ? 'gi-marker gitet' : 'gi-marker';
   const outer = isEhv ? size + 8 : size;
+  if (planned) {
+    // Hollow variant: border 2px colored per voltage, fill transparent.
+    // Preserve 500/275 kV gitet outline (via .gi-marker.gitet.planned combo
+    // in CSS — outline tetap muncul karena outline separate dari border).
+    return L.divIcon({ className: '',
+      html: `<div class="${baseCls} planned" style="width:${size}px;height:${size}px;
+          border-color:${color};box-shadow:0 1px 2px rgba(0,0,0,0.15);"></div>`,
+      iconSize: [outer, outer], iconAnchor: [outer/2, outer/2] });
+  }
   return L.divIcon({ className: '',
-    html: `<div class="${cls}" style="width:${size}px;height:${size}px;
+    html: `<div class="${baseCls}" style="width:${size}px;height:${size}px;
         background:${color};box-shadow:0 1px 3px rgba(0,0,0,0.3);"></div>`,
     iconSize: [outer, outer], iconAnchor: [outer/2, outer/2] });
 }
@@ -1791,6 +1815,11 @@ const TIER_LABEL = {
   'UNMATCHED_BASELINE': 'Tidak ada di RUPTL',
   'BASELINE_UNRESOLVED': '',
   'BASELINE':        '',
+  // Substation delta tiers (dari merge_substation_delta_to_geojson.py)
+  'PLANNED_NEW_BUILD':       'Rencana baru',
+  'PLANNED_EXISTING_EXT':    'Rencana penambahan kapasitas',
+  'PLANNED_EXISTING_UPRATE': 'Rencana upgrade tegangan/kapasitas',
+  'PLANNED_RECLASSIFY_NEW':  'Rencana duplikat / naming variant',
 };
 const TIER_LABEL_EN = {
   'CONFIRMED_MATCH': 'Confirmed match',
@@ -1804,6 +1833,10 @@ const TIER_LABEL_EN = {
   'UNMATCHED_BASELINE': 'Not in RUPTL',
   'BASELINE_UNRESOLVED': '',
   'BASELINE':        '',
+  'PLANNED_NEW_BUILD':       'New planned asset',
+  'PLANNED_EXISTING_EXT':    'Planned capacity extension',
+  'PLANNED_EXISTING_UPRATE': 'Planned voltage/capacity uprate',
+  'PLANNED_RECLASSIFY_NEW':  'Planned duplicate / naming variant',
 };
 function tierLabel(tier) {
   const dict = currentLanguage === 'en' ? TIER_LABEL_EN : TIER_LABEL;
@@ -1844,6 +1877,16 @@ function ruptlSectionHTML(p, kind) {
     rows.push(dpRow(t('detail.ruptl.field.capacity'),
       parseFloat(p.capacity_mw_ruptl).toLocaleString(
         currentLanguage === 'id' ? 'id-ID' : 'en-US') + ' MW'));
+  }
+  // Kapasitas RUPTL (untuk substation MVA)
+  if (kind === 'sub' && p.capacity_mva_ruptl) {
+    rows.push(dpRow(t('detail.ruptl.field.capacity'),
+      parseFloat(p.capacity_mva_ruptl).toLocaleString(
+        currentLanguage === 'id' ? 'id-ID' : 'en-US') + ' MVA'));
+  }
+  // Voltage RUPTL (untuk substation planned)
+  if (kind === 'sub' && p.voltage_kv_ruptl) {
+    rows.push(dpRow(t('detail.ruptl.field.voltage'), p.voltage_kv_ruptl + ' kV'));
   }
   // Panjang RUPTL (untuk transmission)
   if (kind === 'trm' && (p.length_km_ruptl || (tier === 'PLANNED_RUPTL' && p.length_km))) {
@@ -2130,8 +2173,15 @@ function buildFeatures() {
       const p = f.properties;
       const [lon, lat] = f.geometry.coordinates;
       const tier = subTier(p);
-      const m = L.marker([lat, lon], { icon: giIcon(p.voltage, parseFloat(p.capacity_mva)) });
-      const rec = { kind:'sub', region, tier, props:p, layer:m, visible:false };
+      // Planned GI: hollow square marker. Trigger untuk feature yang
+      // match_tier = PLANNED_RUPTL (NEW_BUILD dari substation delta).
+      // Baseline features yang di-enrich delta (PLANNED_EXISTING_EXT dll)
+      // TETAP existing style — cuma popup yang show info uprate/extension.
+      const isPlanned = p.match_tier === 'PLANNED_RUPTL';
+      const m = L.marker([lat, lon],
+        { icon: giIcon(p.voltage, parseFloat(p.capacity_mva), isPlanned) });
+      const rec = { kind:'sub', region, tier, props:p, layer:m,
+                    visible:false, planned:isPlanned };
       m.on('click', () => showDetail(rec));
       if (tier === 'backbone' && p.name)
         m.bindTooltip(p.name, {permanent:true, direction:'top', className:'feat-label', offset:[0,-4]});
@@ -2220,6 +2270,7 @@ function applyFilters() {
   // existing infrastructure by default, planned muncul saat diminta.
   const trmPlannedOn = document.getElementById('m-trm-planned').checked;
   const genPlannedOn = document.getElementById('m-gen-planned').checked;
+  const subPlannedOn = document.getElementById('m-sub-planned').checked;
   const province = document.getElementById('f-province').value;
   // Compute province bounds sekali (dipakai passProvince untuk filter
   // transmisi via bbox intersection). Null kalau tidak ada Province Filter.
@@ -2247,6 +2298,7 @@ function applyFilters() {
     if (ft.planned) {
       if (ft.kind === 'trm') plannedGate = trmPlannedOn;
       else if (ft.kind === 'gen') plannedGate = genPlannedOn;
+      else if (ft.kind === 'sub') plannedGate = subPlannedOn;
     }
     const vis = regionOn[ft.region] && layerVis && plannedGate
       && (ft.kind !== 'gen' || typesOn.has(ft.props.type))
@@ -2400,7 +2452,7 @@ function setupFilters() {
   // supaya master toggle tidak accidentally hide/show planned assets).
   // Default off; user opt-in secara sadar karena planned data punya lokasi
   // approximate untuk sebagian besar rows.
-  ['m-trm-planned', 'm-gen-planned'].forEach(id => {
+  ['m-trm-planned', 'm-gen-planned', 'm-sub-planned'].forEach(id => {
     const el = document.getElementById(id);
     if (el) el.addEventListener('change', applyFilters);
   });

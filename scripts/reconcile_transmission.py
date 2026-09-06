@@ -46,6 +46,35 @@ from render_ruptl_transmission_geojson import (  # noqa: E402
     BUS_STOPWORDS, bus_tokens, load_substation_gazetteer, lookup_bus,
 )
 
+# Canonical status/action normalization (mirror pattern dari merge_reconciled)
+STATUS_NORM_MAP = {
+    "planned": "PLANNED", "rencana": "PLANNED",
+    "construction": "CONSTRUCTION", "konstruksi": "CONSTRUCTION",
+    "kontruksi": "CONSTRUCTION",  # typo umum di RUPTL PDF
+    "procurement": "PROCUREMENT", "pengadaan": "PROCUREMENT",
+    "committed": "COMMITTED", "ppa": "COMMITTED",
+    "proposed": "PROPOSED", "eksplorasi": "PROPOSED",
+}
+ACTION_NORM_MAP = {
+    "new": "NEW", "baru": "NEW",
+    "extension": "EXTENSION", "ext": "EXTENSION",
+    "uprate": "UPRATE", "uprating": "UPRATE", "upr": "UPRATE",
+}
+
+
+def norm_status(s: str) -> str:
+    if not s:
+        return ""
+    key = str(s).strip().lower()
+    return STATUS_NORM_MAP.get(key, key.upper())
+
+
+def norm_action(s: str) -> str:
+    if not s:
+        return ""
+    key = str(s).strip().lower()
+    return ACTION_NORM_MAP.get(key, "")
+
 
 # ------------------------------------------------------------
 # Tiers
@@ -226,6 +255,11 @@ def reconcile(region: str, project_root: Path,
     baseline_tier_counts: Counter = Counter()
     for f in features:
         props = f.setdefault("properties", {})
+        # Init canonical temporal + enum fields (kosong kalau tidak ada RUPTL).
+        props.setdefault("target_cod_year_ruptl", "")
+        props.setdefault("action_type_ruptl", "")
+        props.setdefault("action_norm", "")
+        props.setdefault("status_norm", "OPERATIONAL")
         endpoint_conf = props.get("endpoint_confidence", "none")
         if endpoint_conf != "both":
             props["match_tier"] = TIER_BASELINE_UNRESOLVED
@@ -261,6 +295,13 @@ def reconcile(region: str, project_root: Path,
         props["length_km_ruptl"] = r.get("length_km", "")
         props["target_cod_year_ruptl"] = r.get("target_cod_year", "")
         props["action_type_ruptl"] = r.get("action_type", "")
+        props["status_ruptl"] = r.get("status", "")
+        props["action_norm"] = norm_action(r.get("action_type", ""))
+        # Untuk baseline yang tag CONFIRMED/PROBABLE (line existing yang
+        # muncul di RUPTL rencana): status baseline = OPERATIONAL, RUPTL
+        # merefleksikan planned work (uprate/ext). status_norm tetap
+        # OPERATIONAL karena baseline udah ada.
+        props["status_norm"] = "OPERATIONAL"
         baseline_tier_counts[res["tier"]] += 1
 
     # Print tier summaries
@@ -337,6 +378,11 @@ def reconcile(region: str, project_root: Path,
                 "source": "ruptl",
                 "source_page": r.get("source_page", ""),
                 "source_table": r.get("source_table", ""),
+                # Canonical enum (uppercase) untuk year/status filter
+                "action_norm": norm_action(r.get("action_type", "")),
+                "status_norm": norm_status(r.get("status", "")),
+                # target_cod_year_ruptl kosong (PLANNED punya target_cod_year langsung)
+                "target_cod_year_ruptl": "",
             },
         }
         features.append(planned_feat)

@@ -29,7 +29,7 @@ RUPTL-PAPUA-P-0027,Amai,PLTM,1.08,Papua,papua,Planned,2032,2032,,PLN,,1121,-4.28
 RUPTL-PAPUA-P-0028,Jayapura 3,PLTMG,50.0,Papua,papua,Planned,2034,2034,,SH-PLN,,1121,-2.616324,140.791304,gazetteer_generator:GEN-PAP-0006,high
 RUPTL-PAPUA-P-0029,Merauke 4,PLTMG,10.0,Papua,papua,Planned,2027,2027,,SH-PLN,,1121,-4.272285,138.228197,province_centroid,low
 RUPTL-PAPUA-P-0030,Merauke (Kuota) Tersebar,PLTS,10.0,Papua,papua,Planned,2028,2028,,IPP,,1121,-4.203291,137.900216,province_centroid,low
-RUPTL-PAPUA-P-0031,Merauke 3,PLTBM,10.0,Papua,papua,Planned,2029,2029,,IPP,,1121,-4.345747,138.226637,province_centroid,low
+RUPTL-PAPUA-P-0031,Merauke 3,PLTBm,10.0,Papua,papua,Planned,2029,2029,,IPP,,1121,-4.345747,138.226637,province_centroid,low
 RUPTL-PAPUA-P-0032,Merauke (Kuota) Tersebar,PLTS,10.0,Papua,papua,Planned,2030,2030,,IPP,,1121,-4.414549,138.012801,province_centroid,low
 RUPTL-PAPUA-P-0033,Kalibumi I,PLTM,6.35,Papua,papua,Planned,2027,2027,,PLN,,1121,-4.431169,138.011949,province_centroid,low
 RUPTL-PAPUA-P-0034,Nabire (Kuota) Tersebar,PLTS,10.0,Papua,papua,Planned,2028,2028,,IPP,,1121,-4.487461,138.246680,province_centroid,low
@@ -64,7 +64,7 @@ RUPTL-PAPUA-P-0062,Lisdes Papua Barat Daya,PLTS,2.051,Papua Barat Daya,papua,Pla
 RUPTL-PAPUA-P-0063,Isolated Papua Barat,PLTS,0.739,Papua Barat Daya,papua,Planned,2028,2028,,IPP,Tabel C10.11,1144,-1.149440,131.209805,province_centroid,low
 RUPTL-PAPUA-P-0064,Isolated Papua Barat Daya,PLTS,2.97561,Papua Barat Daya,papua,Planned,2028,2028,,IPP,Tabel C10.11,1144,-0.822730,131.374930,province_centroid,low
 RUPTL-PAPUA-P-0065,Kaimana,PLTMG,10.0,Papua Barat Daya,papua,Committed,2026,2026,,PLN,Tabel C10.11,1144,-1.046258,131.152729,province_centroid,low
-RUPTL-PAPUA-P-0066,Kaimana 2,PLTBM,10.0,Papua Barat Daya,papua,Planned,2031,2031,,IPP,Tabel C10.11,1144,-1.082576,131.244350,province_centroid,low
+RUPTL-PAPUA-P-0066,Kaimana 2,PLTBm,10.0,Papua Barat Daya,papua,Planned,2031,2031,,IPP,Tabel C10.11,1144,-1.082576,131.244350,province_centroid,low
 RUPTL-PAPUA-P-0067,MPP Manokwari,PLTMG,20.0,Papua Barat Daya,papua,Construction,2025,2025,,SH-PLN,Tabel C10.11,1144,-1.216750,131.174146,province_centroid,low
 RUPTL-PAPUA-P-0068,Manokwari 3,PLTMG,20.0,Papua Barat Daya,papua,Committed,2026,2026,,SH-PLN,Tabel C10.11,1144,-0.834470,131.137738,province_centroid,low
 RUPTL-PAPUA-P-0069,Manokwari (Eks APBN),PLTS,1.0,Papua Barat Daya,papua,Planned,2026,2026,,IPP,Tabel C10.11,1144,-0.968974,131.216073,province_centroid,low

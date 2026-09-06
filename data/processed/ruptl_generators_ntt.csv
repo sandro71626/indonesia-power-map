@@ -60,9 +60,9 @@ RUPTL-NTT-P-0058,Flores - 2,PLTMG,30.0,Nusa Tenggara Timur,ntt,Planned,2028,2028
 RUPTL-NTT-P-0059,Rangko 2,PLTMG,30.0,Nusa Tenggara Timur,ntt,Planned,2027,2027,,PLN SH,,1178,-8.461285,119.944263,gazetteer_substation:GI-NTT-0019,medium
 RUPTL-NTT-P-0060,Timor 2,PLTMG,50.0,Nusa Tenggara Timur,ntt,Planned,2028,2028,,PLN SH,,1178,-10.350133,123.458906,gazetteer_generator:GEN-NTT-0017,high
 RUPTL-NTT-P-0061,Timor 3,PLTMG,50.0,Nusa Tenggara Timur,ntt,Planned,2032,2032,,PLN SH,,1178,-10.350133,123.458906,gazetteer_generator:GEN-NTT-0017,high
-RUPTL-NTT-P-0062,Timor (Kuota) Tersebar,PLTBM,5.0,Nusa Tenggara Timur,ntt,Planned,2029,2029,,IPP,,1178,-10.350133,123.458906,gazetteer_generator:GEN-NTT-0017,high
-RUPTL-NTT-P-0063,Flores (Kuota) Tersebar,?,10.0,Nusa Tenggara Timur,ntt,Planned,2028,2028,,IPP,,1178,-8.461073,119.943518,gazetteer_generator:GEN-NTT-0015,high
-RUPTL-NTT-P-0064,Flores (Kuota) Tersebar,?,10.0,Nusa Tenggara Timur,ntt,Planned,2028,2028,,IPP,,1178,-8.461073,119.943518,gazetteer_generator:GEN-NTT-0015,high
+RUPTL-NTT-P-0062,Timor (Kuota) Tersebar,PLTBm,5.0,Nusa Tenggara Timur,ntt,Planned,2029,2029,,IPP,,1178,-10.350133,123.458906,gazetteer_generator:GEN-NTT-0017,high
+RUPTL-NTT-P-0063,Flores (Kuota) Tersebar,PLTAL,10.0,Nusa Tenggara Timur,ntt,Planned,2028,2028,,IPP,,1178,-8.461073,119.943518,gazetteer_generator:GEN-NTT-0015,high
+RUPTL-NTT-P-0064,Flores (Kuota) Tersebar,PLTAL,10.0,Nusa Tenggara Timur,ntt,Planned,2028,2028,,IPP,,1178,-8.461073,119.943518,gazetteer_generator:GEN-NTT-0015,high
 RUPTL-NTT-P-0065,Flores (Kuota) Tersebar,PLTS,10.0,Nusa Tenggara Timur,ntt,Planned,2030,2030,,IPP,,1178,-8.461073,119.943518,gazetteer_generator:GEN-NTT-0015,high
 RUPTL-NTT-P-0066,Flores (Kuota) Tersebar,PLTS,10.0,Nusa Tenggara Timur,ntt,Planned,2033,2033,,IPP,,1178,-8.461073,119.943518,gazetteer_generator:GEN-NTT-0015,high
 RUPTL-NTT-P-0067,Timor (Kuota) Tersebar,PLTB,22.0,Nusa Tenggara Timur,ntt,Planned,2032,2032,,IPP,,1178,-10.350133,123.458906,gazetteer_generator:GEN-NTT-0017,high
@@ -72,7 +72,7 @@ RUPTL-NTT-P-0070,Isolated Nusa Tenggara Timur,PLTS,2.8,Nusa Tenggara Timur,ntt,P
 RUPTL-NTT-P-0071,Isolated Nusa Tenggara Timur,PLTS,37.0,Nusa Tenggara Timur,ntt,Planned,2028,2028,,IPP,,1178,-8.470445,120.956450,province_centroid,low
 RUPTL-NTT-P-0072,Isolated Nusa Tenggara Timur,PLTS,6.7,Nusa Tenggara Timur,ntt,Planned,2029,2029,,IPP,,1178,-8.548719,121.290782,province_centroid,low
 RUPTL-NTT-P-0073,Isolated Nusa Tenggara Timur,PLTS,4.0,Nusa Tenggara Timur,ntt,Planned,2031,2031,,IPP,,1178,-8.790330,121.092129,province_centroid,low
-RUPTL-NTT-P-0074,Isolated Nusa Tenggara Timur,PLTBM,0.5,Nusa Tenggara Timur,ntt,Planned,2029,2029,,IPP,,1178,-8.781003,121.050539,province_centroid,low
+RUPTL-NTT-P-0074,Isolated Nusa Tenggara Timur,PLTBm,0.5,Nusa Tenggara Timur,ntt,Planned,2029,2029,,IPP,,1178,-8.781003,121.050539,province_centroid,low
 RUPTL-NTT-P-0075,Timor (Kuota) Tersebar,PLTM,1.4,Nusa Tenggara Timur,ntt,Planned,2029,2029,,IPP,,1178,-10.350133,123.458906,gazetteer_generator:GEN-NTT-0017,high
 RUPTL-NTT-P-0076,Flores (Kuota) Tersebar,PLTM,0.22,Nusa Tenggara Timur,ntt,Planned,2029,2029,,IPP,,1178,-8.461073,119.943518,gazetteer_generator:GEN-NTT-0015,high
 RUPTL-NTT-P-0077,Flores (Kuota) Tersebar,PLTA,16.0,Nusa Tenggara Timur,ntt,Planned,2029,2029,,IPP,,1178,-8.461073,119.943518,gazetteer_generator:GEN-NTT-0015,high

@@ -34,6 +34,25 @@ from typing import Optional
 # ------------------------------------------------------------
 MATCH_META_COLS = ["match_tier", "match_score", "match_reason", "ruptl_id"]
 
+# Canonical status → uppercase enum untuk future year/status filter.
+# Bahasa Indonesia + English inputs sama-sama di-map.
+STATUS_NORM_MAP = {
+    "planned": "PLANNED", "rencana": "PLANNED",
+    "construction": "CONSTRUCTION", "konstruksi": "CONSTRUCTION",
+    "kontruksi": "CONSTRUCTION",  # typo umum di RUPTL PDF
+    "procurement": "PROCUREMENT", "pengadaan": "PROCUREMENT",
+    "committed": "COMMITTED", "ppa": "COMMITTED",
+    "proposed": "PROPOSED", "eksplorasi": "PROPOSED",
+    "existing": "OPERATIONAL", "operational": "OPERATIONAL",
+}
+
+
+def norm_status(s: str) -> str:
+    if not s:
+        return ""
+    key = str(s).strip().lower()
+    return STATUS_NORM_MAP.get(key, key.upper())
+
 SOURCE_COLS = [
     "name_source", "capacity_mw_source", "type_source", "role_source",
     "operator_source", "status_source", "coord_source",
@@ -153,6 +172,9 @@ def merge(region: str, project_root: Path) -> int:
             for c in CONFLICT_COLS:
                 props.setdefault(c, "false")
             props["is_placeholder"] = False
+            props["status_norm"] = norm_status(props.get("status", ""))
+            props["action_norm"] = ""
+            props.setdefault("target_cod_year_ruptl", "")
             continue
 
         # Enrich dengan match metadata + provenance
@@ -160,6 +182,24 @@ def merge(region: str, project_root: Path) -> int:
             v = rec.get(c, "")
             if v != "":
                 props[c] = v
+        # Canonical temporal + status/action untuk enriched baseline features:
+        # cross-lookup ke ruptl_extra_by_id (via ruptl_id) untuk grab
+        # target_cod_year, status, action dari raw RUPTL row.
+        rup_id = rec.get("ruptl_id", "").strip()
+        if rup_id and rup_id in ruptl_extra_by_id:
+            rx = ruptl_extra_by_id[rup_id]
+            for k in ("target_cod_year", "status", "action_type",
+                       "source_page", "source_table"):
+                if rx.get(k) and not props.get(k + "_ruptl"):
+                    props[k + "_ruptl"] = rx[k]
+            props["status_norm"] = norm_status(rx.get("status", ""))
+        else:
+            props["status_norm"] = norm_status(props.get("status", ""))
+        # Baseline generator tidak punya action (semua "existing operational").
+        props["action_norm"] = ""
+        # target_cod_year (canonical) — untuk baseline default kosong;
+        # kalau ada RUPTL match, mirror ke target_cod_year_ruptl.
+        # (Feature filter nanti baca target_cod_year || target_cod_year_ruptl.)
         props["is_placeholder"] = False
         enriched_count += 1
 
@@ -205,6 +245,12 @@ def merge(region: str, project_root: Path) -> int:
         for k, v in extra.items():
             if v and not props.get(k):
                 props[k] = v
+        # Canonical enum fields — PLANNED generator: action always NEW,
+        # status di-normalize dari RUPTL row status field.
+        props["action_norm"] = "NEW"
+        props["status_norm"] = norm_status(props.get("status", ""))
+        props.setdefault("target_cod_year", extra.get("target_cod_year", ""))
+        props.setdefault("target_cod_year_ruptl", "")
         # Ensure numeric-ish fields casted properly
         cap = parse_float(props.get("capacity_mw"))
         if cap is not None:

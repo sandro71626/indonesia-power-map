@@ -35,7 +35,22 @@ from typing import Iterable, Optional
 PLT_PREFIXES: tuple[str, ...] = (
     "PLTGU", "PLTMG", "PLTMH", "PLTBm", "PLTBg", "PLTSa",
     "PLTU", "PLTG", "PLTD", "PLTA", "PLTM", "PLTP", "PLTS", "PLTB", "PLTN",
+    "PLTAL",  # arus laut (tidal)
+    "BESS",   # storage — bukan pembangkit tapi sering di kolom Jenis RUPTL
 )
+
+# Uppercase → canonical (mixed-case) mapping supaya output extractor
+# konsisten dengan PLANT_COLORS/PLANT_LABEL di frontend (yang pakai
+# case sesuai konvensi PLN, mis. "PLTBm" bukan "PLTBM").
+CANONICAL_PLT_TYPE: dict[str, str] = {p.upper(): p for p in PLT_PREFIXES}
+# Alias tambahan (typo umum di RUPTL / variasi penulisan):
+CANONICAL_PLT_TYPE.update({
+    "PLTBM": "PLTBm",       # biomassa uppercase → canonical mixed
+    "PLTBG": "PLTBg",       # biogas
+    "PLTSA": "PLTSa",       # sampah
+    "PLTMH": "PLTMH",       # mikrohidro
+    "PLTM": "PLTM",         # minihidro
+})
 
 # Petunjuk energi primer (BIG `enrgprmr`, OSM `plant:source`, RUPTL `Jenis`
 # textual) → PLT type. Comparison lowercase substring.

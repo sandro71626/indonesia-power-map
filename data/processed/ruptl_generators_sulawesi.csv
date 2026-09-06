@@ -26,7 +26,7 @@ RUPTL-SULAWESI-P-0024,Sulbagsel (Kuota) Tersebar Tambahan,PLTB,200.0,Sulawesi Se
 RUPTL-SULAWESI-P-0025,Sulbagsel (Kuota) Tersebar Tambahan,PLTB,200.0,Sulawesi Selatan,sulawesi,Planned,,,,IPP,Tabel C4.11,1010,-3.837609,120.183801,province_centroid,low
 RUPTL-SULAWESI-P-0026,Sulbagsel (Kuota) Tersebar Tambahan II,PLTS,200.0,Sulawesi Selatan,sulawesi,Planned,,,,IPP,Tabel C4.11,1010,-3.591097,119.785746,province_centroid,low
 RUPTL-SULAWESI-P-0027,Sulbagsel (Kuota) Tersebar Tambahan II,PLTS,200.0,Sulawesi Selatan,sulawesi,Planned,,,,IPP,Tabel C4.11,1010,-3.757335,119.872082,province_centroid,low
-RUPTL-SULAWESI-P-0028,Sulbagsel 3,?,600.0,Sulawesi Tenggara,sulawesi,Planned,2030,2030,,IPP,Tabel C5.9,1034,-4.330845,122.110871,province_centroid,low
+RUPTL-SULAWESI-P-0028,Sulbagsel 3,PLTGU,600.0,Sulawesi Tenggara,sulawesi,Planned,2030,2030,,IPP,Tabel C5.9,1034,-4.330845,122.110871,province_centroid,low
 RUPTL-SULAWESI-P-0029,Lisdes,PLTS,1.74,Sulawesi Tenggara,sulawesi,Planned,2025,2025,,PLN,Tabel C5.15,1039,-3.968339,122.054248,province_centroid,low
 RUPTL-SULAWESI-P-0030,Bau-Bau 2,PLTMG,15.0,Sulawesi Tenggara,sulawesi,Committed,2026,2026,,SH-PLN,Tabel C5.15,1039,-5.457814,122.598484,gazetteer_generator:GEN-SLW-0006,high
 RUPTL-SULAWESI-P-0031,Bau-Bau 2,PLTMG,15.0,Sulawesi Tenggara,sulawesi,Committed,2027,2027,,SH-PLN,Tabel C5.15,1039,-5.457814,122.598484,gazetteer_generator:GEN-SLW-0006,high
@@ -39,20 +39,20 @@ RUPTL-SULAWESI-P-0037,Isolated Sulawesi Tenggara,PLTS,20.425,Sulawesi Tenggara,s
 RUPTL-SULAWESI-P-0038,Isolated Sulawesi Tenggara,PLTS,46.85,Sulawesi Tenggara,sulawesi,Planned,2032,2032,,IPP,Tabel C5.15,1039,-4.095145,122.090017,province_centroid,low
 RUPTL-SULAWESI-P-0039,Lapai 2,PLTM,4.0,Sulawesi Tenggara,sulawesi,Construction,2025,2025,,SH-PLN,Tabel C5.15,1039,-4.252159,121.977838,province_centroid,low
 RUPTL-SULAWESI-P-0040,MPP Sulselbar,PLTMG,62.0,Sulawesi Tenggara,sulawesi,Construction,2025,2025,,SH-PLN,Tabel C5.15,1039,-3.927518,121.967101,province_centroid,low
-RUPTL-SULAWESI-P-0041,MPP Indonesia 2,?,200.0,Sulawesi Tenggara,sulawesi,Planned,2025,2025,,PLN,Tabel C5.15,1039,-4.355273,121.948653,province_centroid,low
-RUPTL-SULAWESI-P-0042,MPP Indonesia 3,?,200.0,Sulawesi Tenggara,sulawesi,Planned,2025,2025,,PLN,Tabel C5.15,1039,-4.304561,122.050434,province_centroid,low
-RUPTL-SULAWESI-P-0043,Kluster PoCi,?,200.0,Sulawesi Tenggara,sulawesi,Planned,2027,2027,,SH-PLN,Tabel C5.15,1039,-4.045107,121.960744,province_centroid,low
+RUPTL-SULAWESI-P-0041,MPP Indonesia 2,PLTGU,200.0,Sulawesi Tenggara,sulawesi,Planned,2025,2025,,PLN,Tabel C5.15,1039,-4.355273,121.948653,province_centroid,low
+RUPTL-SULAWESI-P-0042,MPP Indonesia 3,PLTGU,200.0,Sulawesi Tenggara,sulawesi,Planned,2025,2025,,PLN,Tabel C5.15,1039,-4.304561,122.050434,province_centroid,low
+RUPTL-SULAWESI-P-0043,Kluster PoCi,PLTGU,200.0,Sulawesi Tenggara,sulawesi,Planned,2027,2027,,SH-PLN,Tabel C5.15,1039,-4.045107,121.960744,province_centroid,low
 RUPTL-SULAWESI-P-0044,Lapai 1,PLTM,2.61,Sulawesi Tenggara,sulawesi,Committed,2027,2027,,SH-PLN,Tabel C5.15,1039,-4.176662,122.125057,province_centroid,low
 RUPTL-SULAWESI-P-0045,Lapai 1,PLTM,2.7,Sulawesi Tenggara,sulawesi,Committed,2027,2027,,SH-PLN,Tabel C5.15,1039,-4.297667,121.771816,province_centroid,low
 RUPTL-SULAWESI-P-0046,Riorita,PLTM,1.37,Sulawesi Tenggara,sulawesi,Committed,2027,2027,,SH-PLN,Tabel C5.15,1039,-4.320267,122.053300,province_centroid,low
 RUPTL-SULAWESI-P-0047,Riorita,PLTM,1.3,Sulawesi Tenggara,sulawesi,Committed,2027,2027,,SH-PLN,Tabel C5.15,1039,-4.058304,121.994760,province_centroid,low
-RUPTL-SULAWESI-P-0048,Sulbagsel,?,300.0,Sulawesi Tenggara,sulawesi,Planned,2027,2027,,SH-PLN,Tabel C5.15,1039,-4.225965,122.166723,province_centroid,low
-RUPTL-SULAWESI-P-0049,Sulbagsel,?,300.0,Sulawesi Tenggara,sulawesi,Planned,2027,2027,,SH-PLN,Tabel C5.15,1039,-4.247966,121.994828,province_centroid,low
+RUPTL-SULAWESI-P-0048,Sulbagsel,PLTGU,300.0,Sulawesi Tenggara,sulawesi,Planned,2027,2027,,SH-PLN,Tabel C5.15,1039,-4.225965,122.166723,province_centroid,low
+RUPTL-SULAWESI-P-0049,Sulbagsel,PLTGU,300.0,Sulawesi Tenggara,sulawesi,Planned,2027,2027,,SH-PLN,Tabel C5.15,1039,-4.247966,121.994828,province_centroid,low
 RUPTL-SULAWESI-P-0050,Sulbagsel (Kuota) Tersebar Tambahan I,PLTS,22.0,Sulawesi Tenggara,sulawesi,Planned,,,,IPP,Tabel C5.15,1039,-4.210225,121.962991,province_centroid,low
 RUPTL-SULAWESI-P-0051,Watunohu,PLTA,22.0,Sulawesi Tenggara,sulawesi,Committed,2028,2028,,SH-PLN,Tabel C5.15,1039,-4.293949,121.889701,province_centroid,low
-RUPTL-SULAWESI-P-0052,Sulbagsel (Kuota) Tersebar,PLTBM,10.0,Sulawesi Tenggara,sulawesi,Planned,2029,2029,,IPP,Tabel C5.15,1039,-4.021683,122.182051,province_centroid,low
-RUPTL-SULAWESI-P-0053,Sulbagsel 3,?,600.0,Sulawesi Tenggara,sulawesi,Planned,2030,2030,,IPP,Tabel C5.15,1039,-4.256118,122.004107,province_centroid,low
-RUPTL-SULAWESI-P-0054,Sulbagsel (Kuota) Tersebar Tambahan,PLTBM,100.0,Sulawesi Tenggara,sulawesi,Planned,2030,2030,,IPP,Tabel C5.15,1039,-3.929326,122.092203,province_centroid,low
+RUPTL-SULAWESI-P-0052,Sulbagsel (Kuota) Tersebar,PLTBm,10.0,Sulawesi Tenggara,sulawesi,Planned,2029,2029,,IPP,Tabel C5.15,1039,-4.021683,122.182051,province_centroid,low
+RUPTL-SULAWESI-P-0053,Sulbagsel 3,PLTGU,600.0,Sulawesi Tenggara,sulawesi,Planned,2030,2030,,IPP,Tabel C5.15,1039,-4.256118,122.004107,province_centroid,low
+RUPTL-SULAWESI-P-0054,Sulbagsel (Kuota) Tersebar Tambahan,PLTBm,100.0,Sulawesi Tenggara,sulawesi,Planned,2030,2030,,IPP,Tabel C5.15,1039,-3.929326,122.092203,province_centroid,low
 RUPTL-SULAWESI-P-0055,Lisdes,PLTS,0.28,Sulawesi Barat,sulawesi,Planned,2026,2026,,PLN,Tabel C6.10,1055,-3.052492,119.104634,province_centroid,low
 RUPTL-SULAWESI-P-0056,Lisdes,PLTS,0.07,Sulawesi Barat,sulawesi,Planned,2027,2027,,PLN,Tabel C6.10,1055,-2.684082,119.206256,province_centroid,low
 RUPTL-SULAWESI-P-0057,Bonehau,PLTM,4.0,Sulawesi Barat,sulawesi,Construction,2025,2025,,PLN,Tabel C6.10,1055,-2.751805,119.404813,province_centroid,low

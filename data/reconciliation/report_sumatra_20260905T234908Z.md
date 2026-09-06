@@ -1,0 +1,174 @@
+# Reconciliation report — sumatra
+
+Timestamp: 2026-09-05T23:49:08Z
+
+## Thresholds
+- min-mw = 1.0
+- radius (confirm) = 2.0 km
+- radius-name = 15.0 km
+- radius-type = 15.0 km
+- cap-tol (confirm) = 20%
+- doubt-mw = 100.0 MW
+
+## Tier counts
+- CONFIRMED_MATCH: 3 (0.9%)
+- PROBABLE_MATCH: 7 (2.0%)
+- AMBIGUOUS: 0 (0.0%)
+- CONFLICT: 0 (0.0%)
+- UNMATCHED_IPM: 110 (32.1%)
+- UNMATCHED_RUPTL: 223 (65.0%)
+
+## Cases needing manual review
+- **UNMATCHED_RUPTL** · 3401.0 MW · Muara Juloi · Lampung
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SUMATRA-P-0201`
+- **UNMATCHED_RUPTL** · 1450.0 MW · Sumbagut (kuota ISJ) tersebar2) · Aceh
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SUMATRA-P-0015`
+- **UNMATCHED_RUPTL** · 1200.0 MW · Sumatera Hybrid1) · Sumatera Selatan
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SUMATRA-P-0110`
+- **UNMATCHED_RUPTL** · 800.0 MW · Panas Bumi Sumatera (kuota ISJ) Tersebar2) · Sumatera Utara
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SUMATRA-P-0052`
+- **UNMATCHED_RUPTL** · 600.0 MW · Jambi-1 · Jambi
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SUMATRA-P-0093`
+- **UNMATCHED_RUPTL** · 600.0 MW · Jambi-2 · Jambi
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SUMATRA-P-0094`
+- **UNMATCHED_RUPTL** · 561.0 MW · Sumbagut (Kuota) Tersebar1) · Aceh
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SUMATRA-P-0014`
+- **UNMATCHED_RUPTL** · 500.0 MW · Sumatera Pump Storage -1 · Sumatera Utara
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SUMATRA-P-0053`
+- **UNMATCHED_RUPTL** · 400.0 MW · Sumatera (kuota) tersebar1) · Aceh
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SUMATRA-P-0012`
+- **UNMATCHED_RUPTL** · 400.0 MW · Kalimantan · Lampung
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SUMATRA-P-0206`
+- **UNMATCHED_RUPTL** · 350.0 MW · Sumbagselteng (kuota ISJ) tersebar2) · Sumatera Barat
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SUMATRA-P-0087`
+- **UNMATCHED_RUPTL** · 350.0 MW · Merangin · Jambi
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SUMATRA-P-0092`
+- **UNMATCHED_RUPTL** · 325.0 MW · Sumatera (Kuota) Tersebar1) · Sumatera Utara
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SUMATRA-P-0040`
+- **UNMATCHED_RUPTL** · 302.0 MW · PLTS BESS Sumatera 2 · Aceh
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SUMATRA-P-0016`
+- **UNMATCHED_RUPTL** · 300.0 MW · Sumut-14) · Sumatera Utara
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SUMATRA-P-0048`
+- **UNMATCHED_RUPTL** · 300.0 MW · Sumatera Hybrid1) · Sumatera Selatan
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SUMATRA-P-0111`
+- **UNMATCHED_RUPTL** · 300.0 MW · Sumbagsel 2 · Lampung
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SUMATRA-P-0131`
+- **UNMATCHED_RUPTL** · 300.0 MW · Kalseltengtimra (Kuota) Tersebar · Lampung
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SUMATRA-P-0242`
+- **UNMATCHED_RUPTL** · 270.0 MW · Bayu Sumatera (Kuota) Tersebar · Lampung
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SUMATRA-P-0139`
+- **UNMATCHED_RUPTL** · 250.0 MW · Sumatera (Kuota) Tersebar1) · Sumatera Utara
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SUMATRA-P-0049`
+- **UNMATCHED_RUPTL** · 250.0 MW · Kalbar-1 · Lampung
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SUMATRA-P-0149`
+- **UNMATCHED_RUPTL** · 250.0 MW · PLTN Kalimantan (Kuota) tersebar New EBT*) · Lampung
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SUMATRA-P-0178`
+- **UNMATCHED_RUPTL** · 250.0 MW · Kaltim-1 · Lampung
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SUMATRA-P-0209`
+- **UNMATCHED_RUPTL** · 250.0 MW · PLTN Kalimantan (Kuota) tersebar New EBT*) · Lampung
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SUMATRA-P-0230`
+- **UNMATCHED_RUPTL** · 240.0 MW · Kalseltengtimra-2 (PLTS+BESS) · Lampung
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SUMATRA-P-0214`
+- **UNMATCHED_RUPTL** · 240.0 MW · Kalseltengtimra-3 (PLTS+BESS) · Lampung
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SUMATRA-P-0238`
+- **UNMATCHED_RUPTL** · 236.0 MW · PLTS BESS Sumatera 1 · Lampung
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SUMATRA-P-0134`
+- **UNMATCHED_RUPTL** · 200.0 MW · PLTS BESS Sumatera 2 · Aceh
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SUMATRA-P-0017`
+- **UNMATCHED_RUPTL** · 200.0 MW · Sumatera BESS-2 · Sumatera Utara
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SUMATRA-P-0051`
+- **UNMATCHED_RUPTL** · 200.0 MW · Riau Peaker · Riau
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SUMATRA-P-0064`
+- **UNMATCHED_RUPTL** · 200.0 MW · Kalselteng 3 · Lampung
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SUMATRA-P-0194`
+- **UNMATCHED_RUPTL** · 200.0 MW · MT Hybrid Kalselteng 4 · Lampung
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SUMATRA-P-0200`
+- **UNMATCHED_RUPTL** · 200.0 MW · Kalseltengtimra (Kuota) Tersebar · Lampung
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SUMATRA-P-0243`
+- **UNMATCHED_RUPTL** · 200.0 MW · Kalseltengtimra (Kuota) Tersebar · Lampung
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SUMATRA-P-0244`
+- **UNMATCHED_RUPTL** · 200.0 MW · Kalseltengtimra (Kuota) Tersebar · Lampung
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SUMATRA-P-0245`
+- **UNMATCHED_RUPTL** · 174.0 MW · Asahan III (FTP2) · Sumatera Utara
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SUMATRA-P-0028`
+- **UNMATCHED_RUPTL** · 161.0 MW · Sumbagut (Kuota) Tersebar* · Kepulauan Riau
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SUMATRA-P-0069`
+- **UNMATCHED_RUPTL** · 160.0 MW · Kalbar-2 (PLTS+BESS) · Lampung
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SUMATRA-P-0165`
+- **UNMATCHED_RUPTL** · 160.0 MW · Kalseltengtimra- 5 (PLTS+BESS) · Lampung
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SUMATRA-P-0192`
+- **UNMATCHED_RUPTL** · 150.0 MW · Sumbagsel-1 · Sumatera Selatan
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SUMATRA-P-0099`
+- **UNMATCHED_RUPTL** · 150.0 MW · Sumbagsel-1 · Sumatera Selatan
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SUMATRA-P-0101`
+- **UNMATCHED_RUPTL** · 150.0 MW · Sumbagsel 1 · Sumatera Selatan
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SUMATRA-P-0103`
+- **UNMATCHED_RUPTL** · 150.0 MW · Sumatera Hybrid1) · Sumatera Selatan
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SUMATRA-P-0112`
+- **UNMATCHED_RUPTL** · 150.0 MW · PLTS BESS Sumatera 1 · Lampung
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SUMATRA-P-0135`
+- **UNMATCHED_RUPTL** · 150.0 MW · PLTS BESS Sumatera 3 · Lampung
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SUMATRA-P-0136`
+- **UNMATCHED_RUPTL** · 150.0 MW · Khatulistiwa (Kuota) Tersebar · Lampung
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SUMATRA-P-0171`
+- **UNMATCHED_RUPTL** · 150.0 MW · Kalimantan-1 · Lampung
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SUMATRA-P-0186`
+- **UNMATCHED_RUPTL** · 150.0 MW · Kalseltengtimra-2 (PLTS+BESS) · Lampung
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SUMATRA-P-0215`
+- **UNMATCHED_RUPTL** · 150.0 MW · Kalseltengtimra-3 (PLTS+BESS) · Lampung
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SUMATRA-P-0239`
+- **UNMATCHED_RUPTL** · 125.0 MW · Kalseltengtimra (Kuota) Tersebar · Lampung
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-SUMATRA-P-0229`
+
+Untuk decide, edit `data/overrides/generator_matches.csv`.
+Format kolom: `override_id,decision,ipm_id,ruptl_id,capacity_override,type_override,role_override,reason,reviewed_by,reviewed_at`.

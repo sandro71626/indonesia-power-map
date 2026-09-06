@@ -37,25 +37,65 @@ except ImportError:
 ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT))
 from _shared.name_stem import (  # noqa: E402
-    PLT_PREFIXES, infer_plant_type, normalize,
+    PLT_PREFIXES, CANONICAL_PLT_TYPE, infer_plant_type, normalize,
 )
 
-# Uppercase set of valid PLT codes untuk direct-match kolom Jenis.
-_PLT_CODES = {p.upper() for p in PLT_PREFIXES}
+# Regex untuk cari PLT-token di jenis cell yang kompleks — handle:
+#   "PLTGU/G"        → PLTGU (slash gabung dari pdfplumber "PLTGU//G")
+#   "PLTS+BESS"      → PLTS (composite: solar generation + battery storage)
+#   "PLTS +/BESS"    → PLTS (whitespace variasi)
+#   "PLTBm1)"        → PLTBm (annotation "1)" footnote reference)
+#   "PLTU/MT"        → PLTU
+# Prioritas: PLT prefix panjang duluan (PLTGU sebelum PLTG, PLTMG sebelum PLTM).
+# Sort by length desc supaya greedy match yang benar. BESS di-akhir supaya
+# "PLTS+BESS" match PLTS dulu, bukan BESS.
+_PLT_TOKEN_RE = re.compile(
+    r"\b(" + "|".join(sorted(CANONICAL_PLT_TYPE.keys(), key=len, reverse=True)) + r")\b",
+    re.IGNORECASE,
+)
 
 
 def resolve_plant_type(name: str, jenis_cell: str) -> str:
-    """RUPTL kolom Jenis biasanya sudah berisi kode PLT (PLTU/PLTA/PLTS/…).
+    """Determine canonical PLT type (mixed-case, sesuai frontend).
 
-    Kalau jenis_cell (uppercased, first word) match PLT prefix → pakai
-    langsung. Otherwise fallback ke `infer_plant_type` (name-prefix + fuel
-    heuristic).
+    Order:
+      1. Extract PLT-code token dari jenis_cell via regex (handle slash/plus/
+         parens/footnote annotations).
+      2. Special promote: kalau jenis standalone "BESS" (storage), cek name
+         untuk primary generation type (PLTS+BESS/PLTA+BESS/Hybrid) —
+         Kalau ada, gunakan generation type supaya map tidak salah kira
+         BESS = pembangkit.
+      3. Special: "Hybrid" di nama tanpa jenis clear → default PLTS
+         (Indonesian hybrid systems mayoritas PV+diesel).
+      4. Fallback ke `infer_plant_type` (name-prefix + fuel heuristic).
     """
+    resolved = None
     if jenis_cell:
-        head = jenis_cell.strip().split()[0].upper() if jenis_cell.strip() else ""
-        if head in _PLT_CODES:
-            return head
-    return infer_plant_type(name, jenis_cell)
+        m = _PLT_TOKEN_RE.search(jenis_cell)
+        if m:
+            resolved = CANONICAL_PLT_TYPE.get(m.group(1).upper(), m.group(1))
+
+    # BESS-promotion heuristic: BESS row biasanya companion storage untuk
+    # PLTS project (satu proyek fisik, dua baris RUPTL karena tarif beda).
+    # Kalau name explicit menyebutkan generation partner, gunakan itu.
+    if resolved == "BESS" and name:
+        name_upper = name.upper()
+        for gen_type in ("PLTS", "PLTA", "PLTU", "PLTGU", "PLTB", "PLTP"):
+            if gen_type in name_upper:
+                return gen_type
+        if "hybrid" in name.lower():
+            return "PLTS"
+        # BESS standalone tanpa hint → keep sebagai BESS
+        return "BESS"
+
+    if resolved:
+        return resolved
+
+    # Heuristic: "Hybrid" di nama tanpa jenis clear → default PLTS
+    if name and "hybrid" in name.lower():
+        return "PLTS"
+    fallback = infer_plant_type(name, jenis_cell)
+    return CANONICAL_PLT_TYPE.get(fallback.upper(), fallback)
 
 
 # ------------------------------------------------------------

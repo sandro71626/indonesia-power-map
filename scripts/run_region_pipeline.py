@@ -117,6 +117,10 @@ def run_region(region: str, opts: argparse.Namespace) -> bool:
         rc, _ = run(["python3", "scripts/detect_substation_delta.py",
                       "--region", region, "--write"])
         ok = ok and (rc == 0)
+        # Merge substation delta → reconciled GeoJSON (planned GI features)
+        rc, _ = run(["python3", "scripts/merge_substation_delta_to_geojson.py",
+                      "--region", region])
+        ok = ok and (rc == 0)
 
     if not opts.skip_transmission:
         # Enrich endpoints
