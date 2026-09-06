@@ -282,6 +282,40 @@
                   background: #1f77b4; color: white; border: none; border-radius: 4px;
                   cursor: pointer; font-size: 13px; font-weight: 600; }
   .modal .close:hover { background: #155a85; }
+
+  /* RUPTL Development modal — year grid + type checkboxes. Reuse existing
+     modal + button pattern; year buttons pakai style compact yang match
+     .menu-btn ukuran. Active year highlighted dengan .menu-btn.active
+     color (#1f77b4 solid). */
+  .year-grid { display: grid; grid-template-columns: repeat(4, 1fr);
+               gap: 6px; margin: 4px 0; }
+  .year-btn { background: white; border: 1px solid #ccc; border-radius: 4px;
+              padding: 8px 4px; font-size: 12px; font-weight: 600;
+              cursor: pointer; color: #333;
+              transition: background 0.12s, border-color 0.12s, color 0.12s; }
+  .year-btn:hover { background: #f7faff; border-color: #1f77b4; color: #1f77b4; }
+  .year-btn.active { background: #1f77b4; color: white; border-color: #1f77b4; }
+  .year-btn-unspec { grid-column: span 4; font-size: 11px; font-weight: 400;
+                     color: #666; font-style: italic; }
+  .year-btn-unspec.active { color: white; font-style: normal; }
+  .rd-types { display: flex; gap: 16px; padding: 4px 0; }
+  .rd-types label { display: flex; align-items: center; gap: 6px;
+                    cursor: pointer; font-size: 12px; }
+  .rd-types input { margin: 0; }
+
+  /* RUPTL Dev active chip di top-controls area — mirror .crumb pattern
+     dari breadcrumb. Muncul saat filter tahun ≠ 'all' atau ada type off. */
+  .rd-chip { display: none; align-items: center; gap: 4px;
+             background: white; padding: 5px 10px; border-radius: 6px;
+             font-size: 11px; font-weight: 600; color: #1f77b4;
+             box-shadow: 0 1px 3px rgba(0,0,0,0.15); cursor: pointer;
+             margin-left: 8px; user-select: none;
+             transition: background 0.12s; }
+  .rd-chip.active { display: inline-flex; }
+  .rd-chip:hover { background: #f7faff; }
+  .rd-chip .rd-chip-clear { color: #999; margin-left: 6px; padding: 0 3px;
+             border-radius: 3px; font-weight: 400; }
+  .rd-chip .rd-chip-clear:hover { color: #c0392b; background: #f5f5f5; }
   /* Download Data card — 3 buah di download-modal, satu per dataset. */
   .modal .dl-card { background: #fafafa; border: 1px solid #e8e8e8;
                     border-radius: 6px; padding: 12px 14px; margin: 10px 0;
@@ -428,6 +462,10 @@
             data-i18n="menu.province_label"
             data-i18n-title="menu.province_title"
             title="Profil ringkas per provinsi">📊 Profil Provinsi</button>
+    <button class="menu-btn" id="menu-ruptl-dev"
+            data-i18n="menu.ruptl_dev_label"
+            data-i18n-title="menu.ruptl_dev_title"
+            title="Eksplorasi proyek RUPTL 2025-2034 berdasarkan target tahun COD">📅 RUPTL Development</button>
     <button class="menu-btn" id="menu-download"
             data-i18n="menu.download_label"
             data-i18n-title="menu.download_title"
@@ -458,6 +496,16 @@
     <button class="crumb crumb-province" id="crumb-province" type="button"
             data-i18n-title="menu.breadcrumb_province_title"
             title="Kembali ke Province Profile"></button>
+  </div>
+  <!-- RUPTL Development active chip. Muncul saat ada filter tahun/type
+       aktif. Klik = reopen modal. X = clear (kembali ke default). -->
+  <div class="rd-chip" id="rd-chip"
+       data-i18n-title="ruptl_dev.chip_title"
+       title="Klik untuk atur filter RUPTL">
+    <span class="rd-chip-label" id="rd-chip-label">📅 —</span>
+    <span class="rd-chip-clear" id="rd-chip-clear"
+          data-i18n-title="ruptl_dev.chip_clear_title"
+          title="Kosongkan filter RUPTL">×</span>
   </div>
 </div>
 
@@ -832,6 +880,74 @@
   </div>
 </div>
 
+<!-- RUPTL Development modal: eksplorasi proyek RUPTL 2025-2034 per target
+     COD tahun. Reuse .modal + .modal-backdrop pattern seperti Download
+     Data. Modal STAYS OPEN saat user klik year — filter langsung apply ke
+     map, tapi modal tidak dismiss otomatis supaya user bisa switch year
+     dengan cepat. Close button untuk dismiss modal (filter state tetap
+     active kalau bukan default). Reset button untuk kembali ke default
+     ('Semua' + semua type ON). Chip status di top-controls indicate
+     filter aktif. -->
+<div class="modal-backdrop" id="ruptl-dev-modal"
+     onclick="if(event.target===this)this.classList.remove('show')">
+  <div class="modal" style="max-width:520px;">
+    <h2 data-i18n="ruptl_dev.title">📅 RUPTL Development</h2>
+    <p style="font-size:12px;color:#666;margin:4px 0 14px;line-height:1.5;"
+       data-i18n="ruptl_dev.subtitle">Eksplorasi proyek pengembangan sistem berdasarkan target
+       COD di RUPTL PLN 2025-2034. Pilih tahun untuk lihat proyek yang
+       ditargetkan masuk pada tahun tersebut. Infrastruktur existing
+       tetap tampil sebagai konteks.</p>
+
+    <h3 style="margin:14px 0 6px;font-size:13px;font-weight:600;"
+        data-i18n="ruptl_dev.year_heading">Target COD</h3>
+    <div class="year-grid" id="rd-year-grid">
+      <button class="year-btn active" data-year="all" data-i18n="ruptl_dev.year.all">Semua</button>
+      <button class="year-btn" data-year="2025">2025</button>
+      <button class="year-btn" data-year="2026">2026</button>
+      <button class="year-btn" data-year="2027">2027</button>
+      <button class="year-btn" data-year="2028">2028</button>
+      <button class="year-btn" data-year="2029">2029</button>
+      <button class="year-btn" data-year="2030">2030</button>
+      <button class="year-btn" data-year="2031">2031</button>
+      <button class="year-btn" data-year="2032">2032</button>
+      <button class="year-btn" data-year="2033">2033</button>
+      <button class="year-btn" data-year="2034">2034</button>
+      <button class="year-btn year-btn-unspec" data-year="unspecified"
+              data-i18n="ruptl_dev.year.unspec">Tahun tidak tercatat</button>
+    </div>
+
+    <h3 style="margin:14px 0 6px;font-size:13px;font-weight:600;"
+        data-i18n="ruptl_dev.type_heading">Jenis Aset RUPTL</h3>
+    <div class="rd-types">
+      <label><input type="checkbox" id="rd-type-gen" checked>
+        <span data-i18n="ruptl_dev.type.gen">Pembangkit</span></label>
+      <label><input type="checkbox" id="rd-type-sub" checked>
+        <span data-i18n="ruptl_dev.type.sub">Gardu Induk</span></label>
+      <label><input type="checkbox" id="rd-type-trm" checked>
+        <span data-i18n="ruptl_dev.type.trm">Transmisi</span></label>
+    </div>
+
+    <div class="rd-count" id="rd-count" style="margin-top:14px;
+        padding:10px 12px;background:#f7faff;border-left:3px solid #1f77b4;
+        border-radius:0 3px 3px 0;font-size:12px;color:#444;line-height:1.5;">
+    </div>
+
+    <p class="tip" data-i18n="ruptl_dev.note" style="margin-top:12px;">
+      Filter tahun hanya berlaku pada aset RUPTL (planned + baseline
+      yang ada rencana upgrade). Infrastruktur existing tanpa entry
+      RUPTL tetap tampil sebagai konteks. Filter Region/Provinsi/Layer
+      di sidebar tetap berlaku.</p>
+
+    <div style="display:flex;gap:8px;margin-top:14px;">
+      <button class="close" id="rd-reset"
+              style="flex:1;background:white;color:#1f77b4;border:1px solid #1f77b4;"
+              data-i18n="ruptl_dev.reset">Reset ke Semua</button>
+      <button class="close" onclick="document.getElementById('ruptl-dev-modal').classList.remove('show')"
+              style="flex:1;" data-i18n="ruptl_dev.close">Tutup</button>
+    </div>
+  </div>
+</div>
+
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="data_jamali.js"></script>
 <script src="data_sumatra.js"></script>
@@ -870,6 +986,8 @@ const TRANSLATIONS = {
     'menu.region_title': 'Profil ringkas per region (JAMALI, Sumatra, dst.)',
     'menu.download_label': '⬇ Unduh Data',
     'menu.download_title': 'Unduh dataset lengkap (CSV): Pembangkit, Gardu Induk, Transmisi',
+    'menu.ruptl_dev_label': '📅 RUPTL Development',
+    'menu.ruptl_dev_title': 'Eksplorasi proyek RUPTL 2025-2034 berdasarkan target tahun COD',
     'menu.context_anchor_title': 'Kembali ke Profil Provinsi yang sedang aktif',
     // Download Data modal
     'download.title': 'Unduh Data',
@@ -885,6 +1003,24 @@ const TRANSLATIONS = {
     'download.trm.button': '⬇ Unduh CSV Saluran Transmisi',
     'download.note': 'File CSV di-encoding UTF-8 (dengan BOM) supaya karakter Indonesia dan tanda baca khusus tetap benar saat dibuka di Excel/LibreOffice. Kolom yang tidak tersedia di data sumber dikosongkan (bukan diisi dugaan).',
     'download.close': 'Tutup',
+    // RUPTL Development
+    'ruptl_dev.title': '📅 RUPTL Development',
+    'ruptl_dev.subtitle': 'Eksplorasi proyek pengembangan sistem berdasarkan target COD di RUPTL PLN 2025-2034. Pilih tahun untuk lihat proyek yang ditargetkan masuk pada tahun tersebut. Infrastruktur existing tetap tampil sebagai konteks.',
+    'ruptl_dev.year_heading': 'Target COD',
+    'ruptl_dev.year.all': 'Semua',
+    'ruptl_dev.year.unspec': 'Tahun tidak tercatat',
+    'ruptl_dev.type_heading': 'Jenis Aset RUPTL',
+    'ruptl_dev.type.gen': 'Pembangkit',
+    'ruptl_dev.type.sub': 'Gardu Induk',
+    'ruptl_dev.type.trm': 'Transmisi',
+    'ruptl_dev.count.total': '{n} proyek RUPTL',
+    'ruptl_dev.count.breakdown': '{gen} Pembangkit · {sub} Gardu Induk · {trm} Transmisi',
+    'ruptl_dev.note': 'Filter tahun hanya berlaku pada aset RUPTL (planned + baseline yang ada rencana upgrade). Infrastruktur existing tanpa entry RUPTL tetap tampil sebagai konteks. Filter Region/Provinsi/Layer di sidebar tetap berlaku.',
+    'ruptl_dev.reset': 'Reset ke Semua',
+    'ruptl_dev.close': 'Tutup',
+    'ruptl_dev.chip_title': 'Klik untuk atur filter RUPTL Development',
+    'ruptl_dev.chip_clear_title': 'Kosongkan filter RUPTL',
+    'ruptl_dev.chip.filter_hint': '{n}/3 tipe',
     'menu.breadcrumb_region_title': 'Kembali ke Regional Profile — Province Profile ditutup, filter region tetap aktif',
     'menu.breadcrumb_province_title': 'Buka kembali Province Profile',
     // Regional Profile — mirror Province Profile, plus section Kontribusi Provinsi
@@ -1149,6 +1285,25 @@ const TRANSLATIONS = {
     'download.trm.button': '⬇ Download Transmission Lines CSV',
     'download.note': 'CSV files are encoded in UTF-8 (with BOM) so Indonesian characters and special punctuation remain correct when opened in Excel/LibreOffice. Columns unavailable in the source data are left blank (not inferred).',
     'download.close': 'Close',
+    'menu.ruptl_dev_label': '📅 RUPTL Development',
+    'menu.ruptl_dev_title': 'Explore RUPTL 2025-2034 development projects by target COD year',
+    'ruptl_dev.title': '📅 RUPTL Development',
+    'ruptl_dev.subtitle': 'Explore system development projects by target COD year in RUPTL PLN 2025-2034. Pick a year to see projects targeted for that year. Existing infrastructure remains visible as context.',
+    'ruptl_dev.year_heading': 'Target COD',
+    'ruptl_dev.year.all': 'All',
+    'ruptl_dev.year.unspec': 'Unspecified year',
+    'ruptl_dev.type_heading': 'RUPTL Asset Types',
+    'ruptl_dev.type.gen': 'Generators',
+    'ruptl_dev.type.sub': 'Substations',
+    'ruptl_dev.type.trm': 'Transmission',
+    'ruptl_dev.count.total': '{n} RUPTL projects',
+    'ruptl_dev.count.breakdown': '{gen} Generators · {sub} Substations · {trm} Transmission',
+    'ruptl_dev.note': 'The year filter only applies to RUPTL-tagged assets (planned + baseline with planned upgrades). Existing infrastructure without a RUPTL entry remains visible as context. Sidebar Region/Province/Layer filters still apply.',
+    'ruptl_dev.reset': 'Reset to All',
+    'ruptl_dev.close': 'Close',
+    'ruptl_dev.chip_title': 'Click to adjust RUPTL Development filter',
+    'ruptl_dev.chip_clear_title': 'Clear RUPTL filter',
+    'ruptl_dev.chip.filter_hint': '{n}/3 types',
     'menu.breadcrumb_region_title': 'Return to Regional Profile — closes Province Profile, region filter stays active',
     'menu.breadcrumb_province_title': 'Reopen Province Profile',
     'region.picker.title': 'Regional Profile',
@@ -2146,6 +2301,113 @@ const REGIONS = {};
 REGION_KEYS.forEach(k => { REGIONS[k] = window[k.toUpperCase() + '_DATA'] || null; });
 const features = [];   // { kind, region, tier, props, layer, visible }
 
+// ============================================================
+// RUPTL DEVELOPMENT MODE — temporal filter by target COD year
+// ============================================================
+// State:
+//   RUPTL_DEV_YEAR: 'all' | '2025'..'2034' | 'unspecified'
+//   RUPTL_DEV_TYPES: {gen, sub, trm} booleans
+// Filter aktif kalau year != 'all' ATAU ada type OFF. Kalau active,
+// non-baseline features (yang punya ruptl_id / target_cod_year_ruptl)
+// di-filter berdasarkan tahun + type. Baseline OSM features tanpa RUPTL
+// entry TETAP tampil (konteks eksplorasi).
+let RUPTL_DEV_YEAR = 'all';
+const RUPTL_DEV_TYPES = {gen: true, sub: true, trm: true};
+
+function isRuptlTagged(p) {
+  return !!(p.ruptl_id
+         || (p.target_cod_year || '').toString().trim()
+         || (p.target_cod_year_ruptl || '').toString().trim());
+}
+function getRuptlYear(p) {
+  const y = (p.target_cod_year || p.target_cod_year_ruptl || '').toString().trim();
+  return (y && /^\d{4}$/.test(y)) ? y : '';
+}
+function isRuptlDevActive() {
+  return RUPTL_DEV_YEAR !== 'all'
+      || !RUPTL_DEV_TYPES.gen || !RUPTL_DEV_TYPES.sub || !RUPTL_DEV_TYPES.trm;
+}
+function ruptlDevPassesYear(ft) {
+  if (RUPTL_DEV_YEAR === 'all') return true;
+  const y = getRuptlYear(ft.props);
+  if (RUPTL_DEV_YEAR === 'unspecified') return !y;
+  return y === RUPTL_DEV_YEAR;
+}
+function ruptlDevPassesType(ft) {
+  if (ft.kind === 'gen') return RUPTL_DEV_TYPES.gen;
+  if (ft.kind === 'sub') return RUPTL_DEV_TYPES.sub;
+  if (ft.kind === 'trm') return RUPTL_DEV_TYPES.trm;
+  return true;
+}
+
+// Reset RUPTL Dev state ke default (All + semua type ON).
+// Dipanggil dari: (a) Reset button di modal, (b) chip × clear,
+// (c) f-reset global filter di sidebar, (d) goHome().
+function resetRuptlDev() {
+  RUPTL_DEV_YEAR = 'all';
+  RUPTL_DEV_TYPES.gen = RUPTL_DEV_TYPES.sub = RUPTL_DEV_TYPES.trm = true;
+  document.querySelectorAll('#rd-year-grid .year-btn')
+    .forEach(b => b.classList.toggle('active', b.dataset.year === 'all'));
+  ['gen', 'sub', 'trm'].forEach(k => {
+    const cb = document.getElementById('rd-type-' + k);
+    if (cb) cb.checked = true;
+  });
+  applyFilters();
+  updateRuptlDevCount();
+  updateRuptlDevChip();
+}
+
+// Compute + render project count untuk state saat ini.
+// Count = jumlah RUPTL-tagged features yang lolos year+type gate,
+// TAPI belum apply region/province filter (supaya count stable saat
+// user switch region/province — reflect data availability, not visible).
+// Breakdown per kind ditampilkan kalau > 0.
+function updateRuptlDevCount() {
+  const box = document.getElementById('rd-count');
+  if (!box) return;
+  let total = 0, gen = 0, sub = 0, trm = 0;
+  for (const ft of features) {
+    if (!isRuptlTagged(ft.props)) continue;
+    if (!ruptlDevPassesType(ft)) continue;
+    if (!ruptlDevPassesYear(ft)) continue;
+    total++;
+    if (ft.kind === 'gen') gen++;
+    else if (ft.kind === 'sub') sub++;
+    else if (ft.kind === 'trm') trm++;
+  }
+  const yearLabel = RUPTL_DEV_YEAR === 'all' ? t('ruptl_dev.year.all')
+                   : RUPTL_DEV_YEAR === 'unspecified' ? t('ruptl_dev.year.unspec')
+                   : RUPTL_DEV_YEAR;
+  box.innerHTML = `<strong>${yearLabel}</strong> · `
+                + t('ruptl_dev.count.total', {n: total}) + `<br>`
+                + `<span style="color:#666;font-size:11px;">`
+                + t('ruptl_dev.count.breakdown', {gen, sub, trm})
+                + `</span>`;
+}
+
+// Update chip visibility + label di top-controls. Chip muncul kalau
+// filter tahun ≠ 'all' atau ada type OFF. Label: "📅 2029" atau
+// "📅 Semua · 1 tipe" (contoh saat type filter aktif tapi year=all).
+function updateRuptlDevChip() {
+  const chip = document.getElementById('rd-chip');
+  const label = document.getElementById('rd-chip-label');
+  if (!chip || !label) return;
+  const active = isRuptlDevActive();
+  chip.classList.toggle('active', active);
+  if (!active) return;
+  const parts = [];
+  if (RUPTL_DEV_YEAR === 'unspecified') {
+    parts.push(t('ruptl_dev.year.unspec'));
+  } else if (RUPTL_DEV_YEAR !== 'all') {
+    parts.push(RUPTL_DEV_YEAR);
+  }
+  const typesOff = ['gen','sub','trm'].filter(k => !RUPTL_DEV_TYPES[k]);
+  if (typesOff.length) {
+    parts.push(t('ruptl_dev.chip.filter_hint', {n: 3 - typesOff.length}));
+  }
+  label.textContent = '📅 ' + (parts.join(' · ') || t('ruptl_dev.year.all'));
+}
+
 function buildFeatures() {
   for (const [region, data] of Object.entries(REGIONS)) {
     if (!data) continue;
@@ -2271,6 +2533,11 @@ function applyFilters() {
   const trmPlannedOn = document.getElementById('m-trm-planned').checked;
   const genPlannedOn = document.getElementById('m-gen-planned').checked;
   const subPlannedOn = document.getElementById('m-sub-planned').checked;
+  // RUPTL Development mode aktif kalau ada year filter atau type filter
+  // non-default. Kalau active: (a) override existing planned toggle
+  // supaya planned assets bisa tampil, (b) apply year+type gate ke
+  // semua RUPTL-tagged assets.
+  const rdActive = isRuptlDevActive();
   const province = document.getElementById('f-province').value;
   // Compute province bounds sekali (dipakai passProvince untuk filter
   // transmisi via bbox intersection). Null kalau tidak ada Province Filter.
@@ -2292,15 +2559,23 @@ function applyFilters() {
       layerVis = genBkt.has(capacityBucket(ft.props.capacity_mw))
               && genRole.has(getRole(ft.props));
     }
-    // Planned gate: kalau feature planned tapi toggle-nya off, sembunyikan
-    // (regardless of other filter). Existing feature tidak terpengaruh.
+    // Planned gate: kalau feature planned tapi toggle-nya off, sembunyikan.
+    // NAMUN kalau RUPTL Development mode active, planned toggle dioverride
+    // (RUPTL Dev jadi driver utama untuk planned visibility).
     let plannedGate = true;
-    if (ft.planned) {
+    if (ft.planned && !rdActive) {
       if (ft.kind === 'trm') plannedGate = trmPlannedOn;
       else if (ft.kind === 'gen') plannedGate = genPlannedOn;
       else if (ft.kind === 'sub') plannedGate = subPlannedOn;
     }
-    const vis = regionOn[ft.region] && layerVis && plannedGate
+    // RUPTL Development gate: hanya berlaku untuk feature yang RUPTL-tagged
+    // (punya ruptl_id atau target_cod_year_ruptl). Baseline OSM murni
+    // tetap tampil apa adanya (konteks eksplorasi).
+    let rdGate = true;
+    if (rdActive && isRuptlTagged(ft.props)) {
+      rdGate = ruptlDevPassesType(ft) && ruptlDevPassesYear(ft);
+    }
+    const vis = regionOn[ft.region] && layerVis && plannedGate && rdGate
       && (ft.kind !== 'gen' || typesOn.has(ft.props.type))
       && passProvince(ft, province, provinceBounds);
     if (vis !== ft.visible) {
@@ -2457,7 +2732,7 @@ function setupFilters() {
     if (el) el.addEventListener('change', applyFilters);
   });
 
-  // Reset filter (jenis pembangkit & provinsi & peran)
+  // Reset filter (jenis pembangkit & provinsi & peran + RUPTL Dev)
   document.getElementById('f-reset').addEventListener('click', () => {
     provSel.value = '';
     document.querySelectorAll('.f-type').forEach(c => {
@@ -2465,7 +2740,9 @@ function setupFilters() {
       c.closest('.type-toggle').classList.remove('off');
     });
     document.querySelectorAll('.sub-gen-role').forEach(c => { c.checked = true; });
-    applyFilters();
+    // Reset RUPTL Development state juga — supaya user tidak ada hidden
+    // filter yang aneh (ff sudah lupa modal yg tertutup masih ngefilter).
+    resetRuptlDev();
   });
 
   // Search
@@ -2535,11 +2812,15 @@ function goHome() {
   setProvinceContext(null);  // otomatis updateBreadcrumb
   // 1. Tutup popup pembangkit (detail panel + transmisi highlight)
   closeDetail();
-  // 2. Tutup modal eksplorasi (province, region, stats). Disclaimer (about)
-  //    sengaja TIDAK ditutup paksa di sini.
+  // 2. Tutup modal eksplorasi (province, region, stats, RUPTL dev).
+  //    Disclaimer (about) sengaja TIDAK ditutup paksa di sini.
   document.getElementById('province-modal').classList.remove('show');
   document.getElementById('regional-modal').classList.remove('show');
   document.getElementById('stats-modal').classList.remove('show');
+  document.getElementById('ruptl-dev-modal').classList.remove('show');
+  // Reset RUPTL Development state ke default supaya map benar-benar
+  // kembali ke "tampilan awal" (no hidden temporal filter).
+  resetRuptlDev();
   // 3. Clear search input + dropdown results
   const si = document.getElementById('search-input');
   if (si) si.value = '';
@@ -3405,6 +3686,47 @@ document.addEventListener('keydown', e => {
   document.getElementById('dl-gen').addEventListener('click', () => downloadGeneratorsCSV());
   document.getElementById('dl-sub').addEventListener('click', () => downloadSubstationsCSV());
   document.getElementById('dl-trm').addEventListener('click', () => downloadTransmissionCSV());
+
+  // RUPTL Development — buka modal untuk pilih tahun COD + type filter.
+  // Modal STAYS OPEN saat user klik year supaya bisa iterate cepat.
+  // Filter live-applied; close button dismiss modal (filter tetap aktif).
+  document.getElementById('menu-ruptl-dev').addEventListener('click', () => {
+    document.getElementById('ruptl-dev-modal').classList.add('show');
+    updateRuptlDevCount();  // refresh count saat buka modal
+  });
+  // Year buttons — single-select
+  document.querySelectorAll('#rd-year-grid .year-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      RUPTL_DEV_YEAR = btn.dataset.year;
+      document.querySelectorAll('#rd-year-grid .year-btn')
+        .forEach(b => b.classList.toggle('active', b === btn));
+      applyFilters();
+      updateRuptlDevCount();
+      updateRuptlDevChip();
+    });
+  });
+  // Type checkboxes — 3 kind
+  ['gen', 'sub', 'trm'].forEach(kind => {
+    const cb = document.getElementById('rd-type-' + kind);
+    cb.addEventListener('change', () => {
+      RUPTL_DEV_TYPES[kind] = cb.checked;
+      applyFilters();
+      updateRuptlDevCount();
+      updateRuptlDevChip();
+    });
+  });
+  // Reset button — kembali ke default (All + semua type ON)
+  document.getElementById('rd-reset').addEventListener('click', resetRuptlDev);
+  // Chip: klik body → reopen modal, klik × → clear
+  document.getElementById('rd-chip').addEventListener('click', (e) => {
+    if (e.target.id === 'rd-chip-clear') {
+      e.stopPropagation();
+      resetRuptlDev();
+    } else {
+      document.getElementById('ruptl-dev-modal').classList.add('show');
+      updateRuptlDevCount();
+    }
+  });
 
   // Home — kembali ke tampilan awal eksplorasi (lihat goHome() untuk detail).
   // TIDAK reload halaman; disclaimer/about modal tidak dimunculkan ulang.
