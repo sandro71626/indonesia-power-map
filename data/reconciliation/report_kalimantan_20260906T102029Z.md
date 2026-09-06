@@ -1,0 +1,183 @@
+# Reconciliation report — kalimantan
+
+Timestamp: 2026-09-06T10:20:29Z
+
+## Thresholds
+- min-mw = 1.0
+- radius (confirm) = 2.0 km
+- radius-name = 15.0 km
+- radius-type = 15.0 km
+- cap-tol (confirm) = 20%
+- doubt-mw = 100.0 MW
+
+## Tier counts
+- CONFIRMED_MATCH: 3 (1.9%)
+- PROBABLE_MATCH: 3 (1.9%)
+- AMBIGUOUS: 0 (0.0%)
+- CONFLICT: 0 (0.0%)
+- UNMATCHED_IPM: 64 (39.5%)
+- UNMATCHED_RUPTL: 92 (56.8%)
+
+## Cases needing manual review
+- **UNMATCHED_RUPTL** · 3401.0 MW · Muara Juloi · Kalimantan Tengah
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-KALIMANTAN-P-0054`
+- **UNMATCHED_RUPTL** · 400.0 MW · Kalimantan · Kalimantan Timur
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-KALIMANTAN-P-0059`
+- **UNMATCHED_RUPTL** · 300.0 MW · Kalseltengtimra (Kuota) Tersebar · Kalimantan Utara
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-KALIMANTAN-P-0095`
+- **UNMATCHED_RUPTL** · 250.0 MW · Kalbar-1 · Kalimantan Barat
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-KALIMANTAN-P-0002`
+- **UNMATCHED_RUPTL** · 250.0 MW · PLTN Kalimantan (Kuota) tersebar New EBT*) · Kalimantan Barat
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-KALIMANTAN-P-0031`
+- **UNMATCHED_RUPTL** · 250.0 MW · Kaltim-1 · Kalimantan Timur
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-KALIMANTAN-P-0062`
+- **UNMATCHED_RUPTL** · 250.0 MW · PLTN Kalimantan (Kuota) tersebar New EBT*) · Kalimantan Timur
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-KALIMANTAN-P-0083`
+- **UNMATCHED_RUPTL** · 240.0 MW · Kalseltengtimra-2 (PLTS+BESS) · Kalimantan Timur
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-KALIMANTAN-P-0067`
+- **UNMATCHED_RUPTL** · 240.0 MW · Kalseltengtimra-3 (PLTS+BESS) · Kalimantan Utara
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-KALIMANTAN-P-0091`
+- **UNMATCHED_RUPTL** · 200.0 MW · Kalseltengtimra (Kuota) Tersebar · Kalimantan Utara
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-KALIMANTAN-P-0096`
+- **UNMATCHED_RUPTL** · 200.0 MW · Kalseltengtimra (Kuota) Tersebar · Kalimantan Utara
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-KALIMANTAN-P-0097`
+- **UNMATCHED_RUPTL** · 200.0 MW · Kalseltengtimra (Kuota) Tersebar · Kalimantan Utara
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-KALIMANTAN-P-0098`
+- **UNMATCHED_RUPTL** · 160.0 MW · Kalbar-2 (PLTS+BESS) · Kalimantan Barat
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-KALIMANTAN-P-0018`
+- **UNMATCHED_RUPTL** · 160.0 MW · Kalseltengtimra- 5 (PLTS+BESS) · Kalimantan Tengah
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-KALIMANTAN-P-0045`
+- **UNMATCHED_RUPTL** · 150.0 MW · Khatulistiwa (Kuota) Tersebar · Kalimantan Barat
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-KALIMANTAN-P-0024`
+- **UNMATCHED_RUPTL** · 150.0 MW · Kalimantan-1 · Kalimantan Selatan
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-KALIMANTAN-P-0039`
+- **UNMATCHED_RUPTL** · 150.0 MW · Kalseltengtimra-2 (PLTS+BESS) · Kalimantan Timur
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-KALIMANTAN-P-0068`
+- **UNMATCHED_RUPTL** · 150.0 MW · Kalseltengtimra-3 (PLTS+BESS) · Kalimantan Utara
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-KALIMANTAN-P-0092`
+- **UNMATCHED_RUPTL** · 150.0 MW · Tersebar · Kalimantan Utara
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-KALIMANTAN-P-0107`
+- **UNMATCHED_RUPTL** · 125.0 MW · Kalseltengtimra (Kuota) Tersebar · Kalimantan Timur
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-KALIMANTAN-P-0082`
+- **UNMATCHED_RUPTL** · 101.0 MW · Tabang 1 · Kalimantan Timur
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-KALIMANTAN-P-0077`
+- **UNMATCHED_RUPTL** · 100.0 MW · Kalbar-2 · Kalimantan Barat
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-KALIMANTAN-P-0009`
+- **UNMATCHED_RUPTL** · 100.0 MW · Kalbar-2 (PLTS+BESS) · Kalimantan Barat
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-KALIMANTAN-P-0019`
+- **UNMATCHED_RUPTL** · 100.0 MW · Khatulistiwa (Kuota) Tersebar · Kalimantan Barat
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-KALIMANTAN-P-0027`
+- **UNMATCHED_RUPTL** · 100.0 MW · Khatulistiwa (Kuota) Tersebar · Kalimantan Barat
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-KALIMANTAN-P-0032`
+- **UNMATCHED_RUPTL** · 100.0 MW · Khatulistiwa (Kuota) Tersebar · Kalimantan Barat
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-KALIMANTAN-P-0033`
+- **UNMATCHED_RUPTL** · 100.0 MW · Kalselteng*) · Kalimantan Selatan
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-KALIMANTAN-P-0037`
+- **UNMATCHED_RUPTL** · 100.0 MW · Kalseltengtimra- 5 (PLTS+BESS) · Kalimantan Tengah
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-KALIMANTAN-P-0046`
+- **UNMATCHED_RUPTL** · 100.0 MW · Kalimantan-2 · Kalimantan Tengah
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-KALIMANTAN-P-0049`
+- **UNMATCHED_RUPTL** · 100.0 MW · Kaltim Peaker 2 · Kalimantan Timur
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-KALIMANTAN-P-0061`
+- **UNMATCHED_RUPTL** · 100.0 MW · Kaltara/ Kaltimra***) · Kalimantan Timur
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-KALIMANTAN-P-0063`
+- **UNMATCHED_RUPTL** · 100.0 MW · Kaltara/ Kaltimra*) · Kalimantan Utara
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-KALIMANTAN-P-0090`
+- **UNMATCHED_RUPTL** · 80.0 MW · Kalbar-1 (PLTS+BESS) · Kalimantan Barat
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-KALIMANTAN-P-0003`
+- **UNMATCHED_RUPTL** · 80.0 MW · Kalbar-2 (PLTS+BESS) · Kalimantan Barat
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-KALIMANTAN-P-0014`
+- **UNMATCHED_RUPTL** · 80.0 MW · Kaltim Add on Blok 2 · Kalimantan Timur
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-KALIMANTAN-P-0064`
+- **UNMATCHED_RUPTL** · 80.0 MW · Kalseltengtimra-1 (PLTS+BESS) · Kalimantan Timur
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-KALIMANTAN-P-0065`
+- **UNMATCHED_RUPTL** · 70.0 MW · Tanah Laut · Kalimantan Selatan
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-KALIMANTAN-P-0036`
+- **UNMATCHED_RUPTL** · 65.0 MW · Kelai 2 · Kalimantan Timur
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-KALIMANTAN-P-0079`
+- **UNMATCHED_RUPTL** · 50.0 MW · Kalbar-1 (PLTS+BESS) · Kalimantan Barat
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-KALIMANTAN-P-0004`
+- **UNMATCHED_RUPTL** · 50.0 MW · Kalbar · Kalimantan Barat
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-KALIMANTAN-P-0010`
+- **UNMATCHED_RUPTL** · 50.0 MW · Kalbar-2 (PLTS+BESS) · Kalimantan Barat
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-KALIMANTAN-P-0015`
+- **UNMATCHED_RUPTL** · 50.0 MW · Kalbar-3 · Kalimantan Barat
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-KALIMANTAN-P-0016`
+- **UNMATCHED_RUPTL** · 50.0 MW · Add-On Kalselteng*) · Kalimantan Selatan
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-KALIMANTAN-P-0040`
+- **UNMATCHED_RUPTL** · 50.0 MW · Sampit · Kalimantan Tengah
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-KALIMANTAN-P-0050`
+- **UNMATCHED_RUPTL** · 50.0 MW · Kalseltengtimra-1 (PLTS+BESS) · Kalimantan Timur
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-KALIMANTAN-P-0066`
+- **UNMATCHED_RUPTL** · 50.0 MW · Add-On Kaltara/ Kaltimra***) · Kalimantan Timur
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-KALIMANTAN-P-0071`
+- **UNMATCHED_RUPTL** · 50.0 MW · Kalseltengtimra (Kuota) Tersebar · Kalimantan Timur
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-KALIMANTAN-P-0081`
+- **UNMATCHED_RUPTL** · 50.0 MW · Tarakan · Kalimantan Utara
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-KALIMANTAN-P-0089`
+- **UNMATCHED_RUPTL** · 50.0 MW · Add-On Kaltara/Kaltimra*) · Kalimantan Utara
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-KALIMANTAN-P-0093`
+- **UNMATCHED_RUPTL** · 50.0 MW · Kalseltengtimra (Kuota) Tersebar · Kalimantan Utara
+  - reason: tidak ada IPM row yang cocok dalam thresholds
+  - RUPTL id: `RUPTL-KALIMANTAN-P-0099`
+
+Untuk decide, edit `data/overrides/generator_matches.csv`.
+Format kolom: `override_id,decision,ipm_id,ruptl_id,capacity_override,type_override,role_override,reason,reviewed_by,reviewed_at`.
+---
+
+### Override audit — generator
+
+- Loaded overrides: 0 valid, 0 invalid
+- Applied: 0
+- Unused (loaded but not applied): 0
+- Stale (missing baseline_id): 0
+- Stale (missing ruptl_id):    0
