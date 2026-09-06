@@ -589,7 +589,7 @@
     </div>
 
     <div class="layer-group">
-      <div class="layer-toggle"><input type="checkbox" id="m-sub">
+      <div class="layer-toggle"><input type="checkbox" id="m-sub" checked>
         <label for="m-sub"><strong data-i18n="sidebar.layer.gi">Gardu Induk</strong></label></div>
       <div class="sublayers">
         <div class="sub-hint" data-i18n="sidebar.layer.status_header">STATUS</div>
@@ -612,7 +612,7 @@
     </div>
 
     <div class="layer-group">
-      <div class="layer-toggle"><input type="checkbox" id="m-gen">
+      <div class="layer-toggle"><input type="checkbox" id="m-gen" checked>
         <label for="m-gen"><strong data-i18n="sidebar.layer.pembangkit">Pembangkit</strong></label></div>
       <div class="sublayers">
         <div class="sub-hint" data-i18n="sidebar.layer.status_header">STATUS</div>
@@ -2603,6 +2603,12 @@ function applyFilters() {
   // Planned RUPTL toggles — default off (opt-in). Kontrol visibility
   // planned assets terpisah dari layer utama supaya user bisa fokus ke
   // existing infrastructure by default, planned muncul saat diminta.
+  // MASTER visibility gate per kind — top-level parent. Master OFF →
+  // seluruh feature dari asset type ini hidden (existing + planned).
+  // Master menang atas semua child filter (STATUS + attribute + year).
+  const trmMasterOn = document.getElementById('m-trm').checked;
+  const subMasterOn = document.getElementById('m-sub').checked;
+  const genMasterOn = document.getElementById('m-gen').checked;
   // STATUS dimension per kind — 2 checkbox terpisah untuk existing vs planned.
   // Independent dari attribute filter (voltage/role/capacity/plant-type).
   const trmPlannedOn = document.getElementById('m-trm-planned').checked;
@@ -2617,18 +2623,17 @@ function applyFilters() {
   const provinceBounds = province ? computeProvinceBounds(province) : null;
 
   // ------------------------------------------------------------
-  // Filter dimensions terpisah (arsitektur baru):
-  //   ASSET TYPE    — kind (gen/sub/trm) selalu jalan
-  //   STATUS        — existing vs planned (independent dimension)
-  //   ATTRIBUTES    — role/voltage/capacity/plant-type (EXISTING only)
+  // Filter hierarchy (top → bottom):
   //   REGION        — region toggle + province filter (semua feature)
-  // Existing features → gated by SEMUA dimension (asset-type + region +
-  //   province + attribute filters + status gate).
-  // Planned features → gated HANYA by asset-type + region + province +
-  //   status gate (planned toggle) + year filter. Attribute filters
-  //   (voltage/role/capacity/plant-type) TIDAK berlaku ke planned —
-  //   supaya user bisa liat planned assets independent dari existing
-  //   layer state (RUPTL Development is a distinct exploration mode).
+  //   MASTER        — asset type visibility gate (top parent per kind)
+  //   STATUS        — existing vs planned (child dimension)
+  //   ATTRIBUTES    — role/voltage/capacity/plant-type (EXISTING only)
+  //   YEAR          — RUPTL Development target COD (PLANNED only)
+  // Master OFF → seluruh kind hidden regardless status/attribute/year.
+  // Existing → master + status_existing + attribute filters.
+  // Planned  → master + status_planned + year filter (independent dari
+  //   attribute filters supaya user bisa eksplorasi planned tanpa
+  //   terikat state existing).
   // ------------------------------------------------------------
   let shown = 0;
   for (const ft of features) {
@@ -2636,8 +2641,17 @@ function applyFilters() {
     const regionOk = regionOn[ft.region];
     const provinceOk = passProvince(ft, province, provinceBounds);
 
+    // Master gate — top-level parent per asset type. Master OFF → hide
+    // seluruh feature dari kind ini (short-circuit sebelum evaluasi child).
+    let masterOk;
+    if (ft.kind === 'trm') masterOk = trmMasterOn;
+    else if (ft.kind === 'sub') masterOk = subMasterOn;
+    else masterOk = genMasterOn;
+
     let vis;
-    if (ft.planned) {
+    if (!masterOk) {
+      vis = false;
+    } else if (ft.planned) {
       // ==== PLANNED path ====
       // Status gate: sidebar planned toggle = source of truth (sync
       // bidirectional dengan RUPTL Dev type checkbox).
@@ -2797,19 +2811,26 @@ function setupFilters() {
     applyFilters();
   }));
 
-  // Layer hierarkis: master checkbox <-> sub-toggle
+  // Master toggle — pure visibility gate untuk seluruh asset type (existing
+  // + planned). Master OFF → semua feature dari kind ini hidden regardless
+  // dari status/attribute filter state. Master ON → visibility respects
+  // child state (STATUS + attribute + year filter).
+  //
+  // Design: NO cascade (per requirement — child state harus tetap tersimpan
+  // saat master OFF, restore saat master ON). Sub-checkbox change hanya
+  // update indeterminate visual (kalau master ON dan subs partial).
   function wireLayerGroup(masterId, subClass) {
     const master = document.getElementById(masterId);
     const subs = [...document.querySelectorAll('.' + subClass)];
     master.addEventListener('change', () => {
-      subs.forEach(s => s.checked = master.checked);
       master.indeterminate = false;
       applyFilters();
     });
     subs.forEach(s => s.addEventListener('change', () => {
+      // Reflect partial state di master.indeterminate — cuma visual hint,
+      // tidak affect master.checked (master = user's explicit gate choice).
       const on = subs.filter(x => x.checked).length;
-      master.checked = on > 0;
-      master.indeterminate = on > 0 && on < subs.length;
+      master.indeterminate = master.checked && on > 0 && on < subs.length;
       applyFilters();
     }));
   }
