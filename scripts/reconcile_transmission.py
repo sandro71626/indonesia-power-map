@@ -40,6 +40,7 @@ from typing import Optional
 ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT))
 from _shared.name_stem import plant_name_tokens  # noqa: E402
+from _shared import overrides as ovr  # noqa: E402
 
 # Reuse bus lookup dari phase 1 renderer
 from render_ruptl_transmission_geojson import (  # noqa: E402
@@ -179,6 +180,22 @@ def reconcile(region: str, project_root: Path,
     baseline_index = build_baseline_index(features)
     print(f"  baseline endpoint pairs (unique): {len(baseline_index)}")
 
+    # Load manual overrides
+    ovr_path = project_root / "data/overrides/transmission_reconciliation_overrides.csv"
+    overrides_result = ovr.load_overrides(ovr_path, object_type="trm")
+    overrides_result.valid = [o for o in overrides_result.valid
+                               if not o.region or o.region == region.lower()]
+    # Stale check — ID set dari OSM way ids + RUPTL row ids
+    baseline_osm_ids = {(f.get("properties") or {}).get("osm_id", "").strip()
+                        for f in features}
+    baseline_osm_ids.update((f.get("properties") or {}).get("id", "").strip()
+                             for f in features)
+    ruptl_ids = {r.get("id", "").strip() for r in ruptl_rows}
+    ovr.detect_stale(overrides_result, baseline_osm_ids, ruptl_ids)
+    if overrides_result.valid or overrides_result.invalid:
+        print(f"  overrides: {len(overrides_result.valid)} valid, "
+              f"{len(overrides_result.invalid)} invalid")
+
     # Track baseline features that matched
     matched_baseline_ids: set[str] = set()
 
@@ -187,6 +204,20 @@ def reconcile(region: str, project_root: Path,
     tier_counts: Counter = Counter()
 
     for r in ruptl_rows:
+        rup_id = r.get("id", "").strip()
+
+        # Check row-level overrides pertama (IGNORE_RUPTL_ROW = skip)
+        ruptl_ovrs = ovr.find_overrides_by_ruptl(overrides_result, rup_id)
+        skip_row = False
+        override_applied = None
+        for o in ruptl_ovrs:
+            if o.decision == ovr.DECISION_IGNORE_RUPTL_ROW:
+                overrides_result.applied_ids.add(o.override_id)
+                skip_row = True
+                break
+        if skip_row:
+            continue
+
         prov = r.get("province", "")
         from_pin = lookup_bus(r.get("from_bus", ""), prov, gazetteer)
         to_pin = lookup_bus(r.get("to_bus", ""), prov, gazetteer)
@@ -244,10 +275,29 @@ def reconcile(region: str, project_root: Path,
 
                 matched_baseline_ids.add(id(best))
 
+        # Check pair-level overrides — REJECT_MATCH / CONFIRM_MATCH / FORCE_MATCH
+        if base_match:
+            base_osm_id = (base_match.get("properties") or {}).get("osm_id", "").strip()
+            pair_ovr = ovr.find_override_by_pair(overrides_result, base_osm_id, rup_id)
+            if pair_ovr:
+                overrides_result.applied_ids.add(pair_ovr.override_id)
+                override_applied = pair_ovr
+                if pair_ovr.decision == ovr.DECISION_REJECT_MATCH:
+                    # Split — RUPTL row jadi UNMATCHED, baseline untouched
+                    base_match = None
+                    tier = TIER_UNMATCHED_RUPTL
+                    reason = f"manual REJECT_MATCH ({pair_ovr.override_id}): {pair_ovr.reason}"
+                    matched_baseline_ids.discard(id(base_match) if base_match else 0)
+                elif pair_ovr.decision in (ovr.DECISION_CONFIRM_MATCH,
+                                             ovr.DECISION_FORCE_MATCH):
+                    tier = TIER_CONFIRMED
+                    reason = f"manual {pair_ovr.decision} ({pair_ovr.override_id}): {pair_ovr.reason}"
+
         ruptl_results.append({
             "rup": r, "tier": tier, "base_match": base_match,
             "reason": reason,
             "from_pin": from_pin, "to_pin": to_pin,
+            "override": override_applied,
         })
         tier_counts[tier] += 1
 
@@ -302,6 +352,9 @@ def reconcile(region: str, project_root: Path,
         # merefleksikan planned work (uprate/ext). status_norm tetap
         # OPERATIONAL karena baseline udah ada.
         props["status_norm"] = "OPERATIONAL"
+        # Provenance override tag (kalau ada)
+        if res.get("override"):
+            ovr.tag_row_with_override(props, res["override"])
         baseline_tier_counts[res["tier"]] += 1
 
     # Print tier summaries
@@ -406,7 +459,21 @@ def reconcile(region: str, project_root: Path,
     rep_path.parent.mkdir(parents=True, exist_ok=True)
     write_report(rep_path, region, ruptl_results, baseline_tier_counts,
                   len(features), added_planned)
+    # Append override audit section
+    audit_lines = ovr.format_audit_summary(overrides_result, "transmission")
+    if audit_lines:
+        with rep_path.open("a", encoding="utf-8") as f:
+            f.write("\n---\n\n")
+            f.write("\n".join(audit_lines))
     print(f"  wrote {rep_path}")
+    # Console summary
+    if overrides_result.valid or overrides_result.invalid:
+        applied = len(overrides_result.applied_ids)
+        stale = len(overrides_result.stale_missing_baseline) + \
+                len(overrides_result.stale_missing_ruptl)
+        print(f"  override applied: {applied}, "
+              f"unused: {len(overrides_result.unused)}, stale: {stale}, "
+              f"invalid: {len(overrides_result.invalid)}")
     return 0
 
 

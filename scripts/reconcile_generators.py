@@ -52,6 +52,7 @@ from _shared.name_stem import (  # noqa: E402
     plant_name_stem, plant_name_tokens, infer_plant_type,
     haversine_km, capacity_diff_pct, normalize,
 )
+from _shared import overrides as ovr  # noqa: E402
 
 
 # -----------------------------------------------------------------------
@@ -520,7 +521,7 @@ OUTPUT_HEADERS = [
     "has_capacity_conflict", "has_type_conflict",
     "has_role_conflict", "has_location_conflict",
     "osm_id", "osm_source", "source_id", "review_flag",
-]
+] + ovr.PROVENANCE_COLUMNS
 
 
 def main() -> int:
@@ -581,8 +582,21 @@ def main() -> int:
     ruptl_rows = read_csv_dict(ruptl_path)
     overrides = load_overrides(ovr_path)
 
+    # Secondary: load unified override file (`generator_overrides.csv`)
+    # kalau ada. Format canonical shared_overrides — precedence lebih
+    # tinggi dari legacy karena di-check setelah (last-write-wins tiap
+    # tier). Legacy `generator_matches.csv` tetap didukung backward-compat.
+    unified_path = project_root / "data/overrides/generator_reconciliation_overrides.csv"
+    unified_result = ovr.load_overrides(unified_path, object_type="gen")
+    unified_result.valid = [o for o in unified_result.valid
+                              if not o.region or o.region == opts.region.lower()]
+    ipm_id_set = {r.get("id", "").strip() for r in ipm_rows}
+    rup_id_set = {r.get("id", "").strip() for r in ruptl_rows}
+    ovr.detect_stale(unified_result, ipm_id_set, rup_id_set)
+
     print(f"  → {len(ipm_rows)} IPM rows, {len(ruptl_rows)} RUPTL rows, "
-          f"{len(overrides)} overrides")
+          f"{len(overrides)} legacy overrides, "
+          f"{len(unified_result.valid)} unified overrides")
 
     if not ipm_rows:
         print("  ! IPM baseline empty — nothing to reconcile against.")
@@ -639,7 +653,47 @@ def main() -> int:
                 # Skip this RUPTL row entirely
                 continue
 
+        # Unified overrides — precedence lebih tinggi. Cek row-level first
+        # (IGNORE_RUPTL_ROW → skip), then pair-level.
+        unified_ovr = None
+        u_ruptl = ovr.find_overrides_by_ruptl(unified_result, rup_id)
+        skip = False
+        for o in u_ruptl:
+            if o.decision == ovr.DECISION_IGNORE_RUPTL_ROW:
+                unified_result.applied_ids.add(o.override_id)
+                skip = True
+                break
+            if o.decision == ovr.DECISION_FORCE_MATCH and o.baseline_id:
+                target = next((r for r in ipm_rows
+                                if r.get("id") == o.baseline_id), None)
+                if target:
+                    ipm_match = target
+                    tier = TIER_CONFIRMED
+                    m["reason"] = f"unified FORCE_MATCH ({o.override_id})"
+                    unified_ovr = o
+                    unified_result.applied_ids.add(o.override_id)
+                break
+        if skip:
+            continue
+        if not unified_ovr and ipm_match:
+            pair_ovr = ovr.find_override_by_pair(
+                unified_result, ipm_match.get("id", ""), rup_id)
+            if pair_ovr:
+                unified_result.applied_ids.add(pair_ovr.override_id)
+                unified_ovr = pair_ovr
+                if pair_ovr.decision == ovr.DECISION_REJECT_MATCH:
+                    tier = TIER_UNMATCHED_RUPTL
+                    ipm_match = None
+                    m["reason"] = f"unified REJECT_MATCH ({pair_ovr.override_id})"
+                elif pair_ovr.decision in (ovr.DECISION_CONFIRM_MATCH,
+                                             ovr.DECISION_FORCE_MATCH):
+                    tier = TIER_CONFIRMED
+                    m["reason"] = f"unified {pair_ovr.decision} ({pair_ovr.override_id})"
+
         merged = merge_records(ipm_match, rup, tier, m["reason"], override)
+        # Provenance tag dari unified override
+        if unified_ovr:
+            ovr.tag_row_with_override(merged, unified_ovr)
         results.append(merged)
         if ipm_match:
             matched_ipm_ids.add(ipm_match.get("id", ""))
@@ -668,8 +722,21 @@ def main() -> int:
 
     write_csv_dict(out_path, results, OUTPUT_HEADERS)
     write_report(report_path, opts.region, results, opts)
+    # Append unified override audit section
+    audit_lines = ovr.format_audit_summary(unified_result, "generator")
+    if audit_lines:
+        with report_path.open("a", encoding="utf-8") as f:
+            f.write("\n---\n\n")
+            f.write("\n".join(audit_lines))
     print(f"\n  wrote {out_path}")
     print(f"  wrote {report_path}")
+    if unified_result.valid or unified_result.invalid:
+        applied = len(unified_result.applied_ids)
+        stale = len(unified_result.stale_missing_baseline) + \
+                len(unified_result.stale_missing_ruptl)
+        print(f"  unified override applied: {applied}, "
+              f"unused: {len(unified_result.unused)}, stale: {stale}, "
+              f"invalid: {len(unified_result.invalid)}")
     return 0
 
 

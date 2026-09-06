@@ -35,6 +35,7 @@ from typing import Optional
 ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT))
 from _shared.name_stem import plant_name_stem, plant_name_tokens  # noqa: E402
+from _shared import overrides as ovr  # noqa: E402
 
 
 # ------------------------------------------------------------
@@ -248,15 +249,78 @@ def main() -> int:
     with ruptl_path.open(encoding="utf-8-sig") as f:
         ruptl_rows = list(csv.DictReader(f))
 
+    # Load manual overrides (persistent + reproducible curation layer).
+    # File tidak wajib exist — kalau missing, overrides_result empty.
+    ovr_path = project_root / "data/overrides/substation_reconciliation_overrides.csv"
+    overrides_result = ovr.load_overrides(ovr_path, object_type="sub")
+    # Filter overrides yang untuk region ini saja
+    overrides_result.valid = [o for o in overrides_result.valid
+                               if not o.region or o.region == opts.region.lower()]
+    # Stale detection — ID set dari data aktual
+    baseline_ids = {r.get("id", "").strip() for r in baseline_rows}
+    ruptl_ids = {r.get("id", "").strip() for r in ruptl_rows}
+    ovr.detect_stale(overrides_result, baseline_ids, ruptl_ids)
+
     print(f"[delta] region={opts.region}")
     print(f"  baseline: {len(baseline_rows)} substations")
     print(f"  RUPTL:    {len(ruptl_rows)} planning rows")
+    if overrides_result.valid or overrides_result.invalid:
+        print(f"  overrides: {len(overrides_result.valid)} valid, "
+              f"{len(overrides_result.invalid)} invalid")
 
     deltas = []
     for r in ruptl_rows:
+        rup_id = r.get("id", "").strip()
+        # Precedence: manual override > auto match.
+        # Check ruptl-level overrides first (IGNORE_RUPTL_ROW = skip row).
+        ruptl_ovrs = ovr.find_overrides_by_ruptl(overrides_result, rup_id)
+        skip_row = False
+        forced_baseline = None
+        for o in ruptl_ovrs:
+            if o.decision == ovr.DECISION_IGNORE_RUPTL_ROW:
+                overrides_result.applied_ids.add(o.override_id)
+                skip_row = True
+                break
+            if o.decision == ovr.DECISION_FORCE_MATCH and o.baseline_id:
+                forced_baseline = o
+                break
+        if skip_row:
+            continue
+
+        if forced_baseline:
+            # Cari baseline row dari ID
+            bmatch = next((b for b in baseline_rows
+                            if b.get("id", "").strip() == forced_baseline.baseline_id), None)
+            if bmatch:
+                overrides_result.applied_ids.add(forced_baseline.override_id)
+                cls = "EXISTING_UPRATE"  # force match tag as uprate (analyst decides context)
+                d = {"rup": r, "baseline_match": bmatch, "classification": cls,
+                     "override": forced_baseline}
+                deltas.append(d)
+                continue
+
+        # Auto match
         match = find_baseline_match(r, baseline_rows, baseline_index)
         cls = classify(r, match)
-        deltas.append({"rup": r, "baseline_match": match, "classification": cls})
+
+        # Check pair-level overrides untuk CONFIRM_MATCH / REJECT_MATCH
+        applied_ovr = None
+        if match:
+            pair_ovr = ovr.find_override_by_pair(
+                overrides_result, match.get("id", ""), rup_id)
+            if pair_ovr:
+                overrides_result.applied_ids.add(pair_ovr.override_id)
+                applied_ovr = pair_ovr
+                if pair_ovr.decision == ovr.DECISION_REJECT_MATCH:
+                    match = None
+                    cls = "NEW_BUILD"
+                elif pair_ovr.decision in (ovr.DECISION_CONFIRM_MATCH,
+                                             ovr.DECISION_FORCE_MATCH):
+                    # Keep match, override reason will be tagged
+                    pass
+
+        deltas.append({"rup": r, "baseline_match": match, "classification": cls,
+                       "override": applied_ovr})
 
     print("\n== Classification summary ==")
     counts = Counter(d["classification"] for d in deltas)
@@ -268,21 +332,21 @@ def main() -> int:
         print("\n(dry-run — pass --write to save CSV + report)")
         return 0
 
-    # Write CSV
+    # Write CSV (dengan provenance columns untuk override tracking)
     csv_path = project_root / f"data/processed/substation_delta_{opts.region}.csv"
     csv_headers = [
         "ruptl_id", "name", "voltage_kv", "action_type", "capacity_mva",
         "target_cod_year", "status", "province",
         "classification", "baseline_id", "baseline_name",
         "source_page", "source_table",
-    ]
+    ] + ovr.PROVENANCE_COLUMNS
     with csv_path.open("w", encoding="utf-8", newline="") as f:
         w = csv.DictWriter(f, fieldnames=csv_headers)
         w.writeheader()
         for d in deltas:
             r = d["rup"]
             m = d["baseline_match"] or {}
-            w.writerow({
+            row = {
                 "ruptl_id": r.get("id", ""),
                 "name": r.get("name", ""),
                 "voltage_kv": r.get("voltage_kv", ""),
@@ -296,15 +360,31 @@ def main() -> int:
                 "baseline_name": m.get("name", ""),
                 "source_page": r.get("source_page", ""),
                 "source_table": r.get("source_table", ""),
-            })
+            }
+            if d.get("override"):
+                ovr.tag_row_with_override(row, d["override"])
+            w.writerow(row)
     print(f"\n  wrote {csv_path}")
 
-    # Write report
+    # Write report + append override audit section
     ts = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
     rep_path = project_root / f"data/reconciliation/substation_delta_{opts.region}_{ts}.md"
     write_report(rep_path, opts.region, deltas,
                   len(baseline_rows), len(ruptl_rows))
+    audit_lines = ovr.format_audit_summary(overrides_result, "substation")
+    if audit_lines:
+        with rep_path.open("a", encoding="utf-8") as f:
+            f.write("\n---\n\n")
+            f.write("\n".join(audit_lines))
     print(f"  wrote {rep_path}")
+    # Console summary override
+    if overrides_result.valid or overrides_result.invalid:
+        applied = len(overrides_result.applied_ids)
+        stale = len(overrides_result.stale_missing_baseline) + \
+                len(overrides_result.stale_missing_ruptl)
+        print(f"\n  override applied: {applied}, "
+              f"unused: {len(overrides_result.unused)}, stale: {stale}, "
+              f"invalid: {len(overrides_result.invalid)}")
     return 0
 
 

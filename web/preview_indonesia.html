@@ -2407,15 +2407,27 @@ function isRuptlDevActive() {
   // Chip indicator — muncul saat mode filter aktif (Single atau Range).
   return RUPTL_DEV_MODE !== 'all';
 }
-// Temporal gate — dipakai di applyFilters. Return true kalau feature
-// lulus filter tahun current mode. Non-RUPTL baseline (isRuptlTagged
-// false) tidak di-filter oleh temporal — always pass.
-// Feature RUPTL-tagged tanpa tahun (unknown) → EXCLUDED dari Single/Range
-// (per requirement: "jangan otomatis memasukkan asset tanpa tahun ke
-// Single Year atau Year Range"). Dalam mode All → tetap tampil.
+// Temporal gate — dipakai di applyFilters. Semantics penting:
+//
+//   * Baseline visibility (existing OSM feature) = TIDAK di-filter oleh
+//     temporal mode. Existing infrastructure adalah konteks eksplorasi
+//     yang harus tetap tampil apapun year selection.
+//   * RUPTL event visibility = temporal filter aktif untuk feature
+//     PLANNED NEW saja (ft.planned=true, yaitu PLANNED_RUPTL /
+//     UNMATCHED_RUPTL yang di-render sebagai marker hollow baru).
+//   * Enriched baseline (existing OSM dengan planned Extension/Uprate
+//     di RUPTL) → BASELINE VISIBILITY. RUPTL upgrade event tetap
+//     "aktif" di popup metadata tapi tidak affect visibility marker.
+//
+// Rationale: existing GI Sukatani + planned Extension 2028 tidak boleh
+// disembunyikan saat user pilih Single Year 2029 — kondisi fisik-nya
+// masih ada, cuma event upgrade-nya bukan di window 2029.
+// Feature planned NEW tanpa target_cod_year → EXCLUDED dari Single/Range
+// (planned tanpa tahun tidak bisa di-place di temporal window). Di
+// mode All → tetap tampil.
 function ruptlDevPassesTemporal(ft) {
   if (RUPTL_DEV_MODE === 'all') return true;
-  if (!isRuptlTagged(ft.props)) return true;  // pure baseline lolos
+  if (!ft.planned) return true;  // baseline (with or without RUPTL) → always pass
   const y = getTargetCodYear(ft.props);
   if (y === null) return false;
   if (RUPTL_DEV_MODE === 'single') return y === RUPTL_DEV_SINGLE_YEAR;
