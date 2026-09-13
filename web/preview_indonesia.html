@@ -2820,8 +2820,27 @@ function applyFilters() {
     // RUPTL match) tidak di-filter → tetap tampil sebagai konteks.
     const temporalGate = ruptlDevPassesTemporal(ft);
 
+    // Complex child gate — feature yang tagged is_hidden_by_complex
+    // (part of plant complex, non-parent) di-hide dari map by default
+    // supaya parent complex absorb visual. Pengecualian: kalau RUPTL Dev
+    // year filter active DAN feature planned DAN individual COD-nya
+    // match year selection → unhide (per requirement "year filtering
+    // harus tetap bekerja berdasarkan individual child project/event").
+    let complexGate = true;
+    if (ft.props.is_hidden_by_complex) {
+      complexGate = false;
+      if (ft.planned && RUPTL_DEV_MODE !== 'all') {
+        const y = getTargetCodYear(ft.props);
+        if (y !== null) {
+          if (RUPTL_DEV_MODE === 'single' && y === RUPTL_DEV_SINGLE_YEAR) complexGate = true;
+          else if (RUPTL_DEV_MODE === 'range'
+                    && y >= RUPTL_DEV_RANGE_FROM && y <= RUPTL_DEV_RANGE_TO) complexGate = true;
+        }
+      }
+    }
+
     const vis = masterOk && regionOk && provinceOk && statusOk
-             && attrVis && temporalGate;
+             && attrVis && temporalGate && complexGate;
 
     if (vis !== ft.visible) {
       if (vis) ft.layer.addTo(map);

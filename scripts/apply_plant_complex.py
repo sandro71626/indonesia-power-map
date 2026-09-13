@@ -43,8 +43,46 @@ def is_unnamed(name):
     return n in ("", "(unnamed)", "unnamed", "n/a", "-", "?")
 
 
+def _pick_parent(members, complex_type=""):
+    """Auto-pick parent feature dari cluster members.
+
+    Priority:
+      1. Named baseline (existing, non-planned, valid name)
+      2. Named planned (kalau tidak ada baseline named)
+      3. First member (fallback)
+    Return feature ID atau None.
+    """
+    def is_planned(f):
+        return f["properties"].get("match_tier") == "UNMATCHED_RUPTL"
+    # Baseline named
+    for f in members:
+        p = f["properties"]
+        if not is_planned(f) and not is_unnamed(p.get("name", "")):
+            return p.get("id", "")
+    # Planned named
+    for f in members:
+        p = f["properties"]
+        if not is_unnamed(p.get("name", "")):
+            return p.get("id", "")
+    # Fallback
+    return members[0]["properties"].get("id", "") if members else None
+
+
 def apply_region(region: str, complexes: list[dict]) -> dict:
-    """Apply relevant complex rows to region's reconciled GeoJSON."""
+    """Apply relevant complex rows to region's reconciled GeoJSON.
+
+    Logic:
+      - For each complex, tag all child_feature_ids dengan complex_id + complex_name
+      - Auto-pick parent (baseline named > planned named > first member)
+      - Parent → is_complex_parent=true, tetap visible di map
+      - All non-parent members → is_complex_child=true + is_hidden_by_complex=true
+        (frontend applyFilters akan handle: hide by default, unhide kalau year filter
+        matches individual child COD)
+      - Unnamed satellite tetap dihitung sebagai child hidden
+
+    Preserved: complete raw feature data (name, capacity, target_cod_year,
+    ruptl_id, coord_source, dll) untuk downstream year filter + popup.
+    """
     region_complexes = [c for c in complexes if c.get("region", "").strip().lower() == region]
     if not region_complexes:
         return {"region": region, "applied": 0, "children_tagged": 0, "hidden": 0}
@@ -55,29 +93,54 @@ def apply_region(region: str, complexes: list[dict]) -> dict:
     gj = json.loads(gj_path.read_text())
     features = gj.get("features", [])
 
-    # Index by ID for fast lookup
     by_id = {f["properties"].get("id", ""): f for f in features}
 
     stats = {"region": region, "applied": 0, "children_tagged": 0, "hidden": 0,
-             "missing_ids": []}
+             "parents": 0, "missing_ids": []}
     for c in region_complexes:
         cid = c.get("complex_id", "").strip()
         cname = c.get("complex_name", "").strip()
+        merge_mode = (c.get("merge_mode", "").strip().upper()
+                       or "MERGE_AS_ONE_COMPLEX")
         child_ids = [x.strip() for x in c.get("child_feature_ids", "").split(";") if x.strip()]
+
+        # Collect member features
+        members = []
         for child_id in child_ids:
             feat = by_id.get(child_id)
             if not feat:
                 stats["missing_ids"].append(child_id)
                 continue
+            members.append(feat)
+        if not members:
+            continue
+
+        # Auto-pick parent
+        explicit_parent = c.get("parent_feature_id", "").strip()
+        parent_id = explicit_parent or _pick_parent(members)
+
+        # Tag members
+        for feat in members:
             props = feat["properties"]
             props["complex_id"] = cid
             props["complex_name"] = cname
-            props["is_complex_child"] = True
-            # Hide unnamed children (visual only — data preserved)
-            if is_unnamed(props.get("name", "")):
+            props["complex_merge_mode"] = merge_mode
+            fid = props.get("id", "")
+            if fid == parent_id:
+                props["is_complex_parent"] = True
+                props["is_complex_child"] = False
+                stats["parents"] += 1
+            else:
+                props["is_complex_child"] = True
+                props["is_complex_parent"] = False
+                # All non-parent members hidden by default (parent absorbs visual)
+                # Frontend RUPTL Dev year filter dapat override untuk planned
+                # children yang match year selection.
                 props["is_hidden_by_complex"] = True
+                props["complex_parent_id"] = parent_id
                 stats["hidden"] += 1
-            stats["children_tagged"] += 1
+                stats["children_tagged"] += 1
+
         stats["applied"] += 1
 
     gj_path.write_text(json.dumps(gj, ensure_ascii=False), encoding="utf-8")
