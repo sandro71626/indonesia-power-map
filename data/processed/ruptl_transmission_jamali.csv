@@ -1,36 +1,36 @@
 id,name,from_bus,to_bus,voltage_kv,action_type,circuits,line_type,length_km,target_cod_year,status,province,region_key,source_page,source_table
-RUPTL-JAMALI-T-0001,Gandul II / Pamulang — Inc. (Serpong - Petukangan | Bintaro),Gandul II / Pamulang,Inc. (Serpong - Petukangan | Bintaro),150,New,4,SUTT,80.0,2025,Planned,Dki Jakarta,jamali,819,Tabel B1.11
-RUPTL-JAMALI-T-0002,Budi Kemuliaan — Kebon Sirih,Budi Kemuliaan,Kebon Sirih,150,New,2,SKTT,4.0,2025,Planned,Dki Jakarta,jamali,819,Tabel B1.11
-RUPTL-JAMALI-T-0003,Muara Karang Lama — Budi Kemuliaan,Muara Karang Lama,Budi Kemuliaan,150,New,2,SKTT,24.0,2025,Planned,Dki Jakarta,jamali,819,Tabel B1.11
-RUPTL-JAMALI-T-0004,Kebon Jeruk — Duri Kosambi,Kebon Jeruk,Duri Kosambi,150,New,2,SKTT,20.0,2025,Planned,Dki Jakarta,jamali,819,Tabel B1.11
-RUPTL-JAMALI-T-0005,Priok — Muara Tawar,Priok,Muara Tawar,500,New,2,SUTET,30.0,2025,Construction,Dki Jakarta,jamali,819,Tabel B1.11
-RUPTL-JAMALI-T-0006,Setiabudi II / Casablanca — Inc. (Cawang - Abadi Guna Papan | Taman Rasuna),Setiabudi II / Casablanca,Inc. (Cawang - Abadi Guna Papan | Taman Rasuna),150,New,4,SKTT,4.0,2026,Planned,Dki Jakarta,jamali,819,Tabel B1.11
-RUPTL-JAMALI-T-0007,Manggarai — Dukuh Atas,Manggarai,Dukuh Atas,150,New,1,SKTT,3.0,2026,Planned,Dki Jakarta,jamali,819,Tabel B1.11
-RUPTL-JAMALI-T-0008,Cawang Lama — Tx. Cawang Lama,Cawang Lama,Tx. Cawang Lama,150,New,2,SUTT,9.1,2026,Construction,Dki Jakarta,jamali,819,Tabel B1.11
-RUPTL-JAMALI-T-0009,Duren Tiga II / Ragunan — Tx. Ragunan,Duren Tiga II / Ragunan,Tx. Ragunan,150,New,2,SUTT,2.6,2026,Construction,Dki Jakarta,jamali,819,Tabel B1.11
-RUPTL-JAMALI-T-0010,Tx Cawang Lama — Tx. Ragunan,Tx Cawang Lama,Tx. Ragunan,150,New,2,SKTT,3.6,2026,Planned,Dki Jakarta,jamali,819,Tabel B1.11
-RUPTL-JAMALI-T-0011,Danayasa — Abadi Guna Papan,Danayasa,Abadi Guna Papan,150,New,2,SKTT,4.0,2026,Planned,Dki Jakarta,jamali,819,Tabel B1.11
-RUPTL-JAMALI-T-0012,Cawang Baru — Gandul,Cawang Baru,Gandul,500,New,2,,44.0,2026,Planned,Dki Jakarta,jamali,819,Tabel B1.11
-RUPTL-JAMALI-T-0013,Ancol II / Pinangsia — Angke,Ancol II / Pinangsia,Angke,150,New,2,SKTT,10.0,2027,Planned,Dki Jakarta,jamali,819,Tabel B1.11
-RUPTL-JAMALI-T-0014,Gambir Lama II — Inc. (Kebon Sirih - Gambir Lama),Gambir Lama II,Inc. (Kebon Sirih - Gambir Lama),150,New,2,SKTT,1.0,2027,Planned,Dki Jakarta,jamali,819,Tabel B1.11
-RUPTL-JAMALI-T-0015,Angke — Ancol,Angke,Ancol,150,New,2,SKTT,11.8,2027,Planned,Dki Jakarta,jamali,819,Tabel B1.11
-RUPTL-JAMALI-T-0016,Ancol — Kemayoran,Ancol,Kemayoran,150,New,2,SKTT,9.6,2027,Planned,Dki Jakarta,jamali,819,Tabel B1.11
-RUPTL-JAMALI-T-0017,Kemayoran — Tx. Kemayoran,Kemayoran,Tx. Kemayoran,150,New,2,SKTT,10.0,2027,Planned,Dki Jakarta,jamali,819,Tabel B1.11
-RUPTL-JAMALI-T-0018,Muara Karang Lama — Duri Kosambi,Muara Karang Lama,Duri Kosambi,150,New,2,SKTT,38.0,2027,Planned,Dki Jakarta,jamali,819,Tabel B1.11
-RUPTL-JAMALI-T-0019,Petukangan — PLTD Senayan,Petukangan,PLTD Senayan,150,New,2,SKTT,19.0,2027,Planned,Dki Jakarta,jamali,819,Tabel B1.11
-RUPTL-JAMALI-T-0020,Manggarai — Gedung Pola,Manggarai,Gedung Pola,150,New,1,SKTT,3.5,2027,Planned,Dki Jakarta,jamali,819,Tabel B1.11
-RUPTL-JAMALI-T-0021,Duri Kosambi — Kembangan,Duri Kosambi,Kembangan,150,New,2,SKTT,13.6,2027,Planned,Dki Jakarta,jamali,819,Tabel B1.11
-RUPTL-JAMALI-T-0022,Priok — Muara karang,Priok,Muara karang,500,New,2,SUTET,20.0,2027,Planned,Dki Jakarta,jamali,820,Tabel B1.14
-RUPTL-JAMALI-T-0023,Mampang Baru II — Inc. (Mampang - Karet Lama),Mampang Baru II,Inc. (Mampang - Karet Lama),150,New,4,SUTT,6.4,2028,Planned,Dki Jakarta,jamali,820,Tabel B1.14
-RUPTL-JAMALI-T-0024,PLTSA Sunter — Kemayoran,PLTSA Sunter,Kemayoran,150,New,1,SUTT,3.0,2028,Planned,Dki Jakarta,jamali,820,Tabel B1.14
-RUPTL-JAMALI-T-0025,Rasuna Said — Cawang,Rasuna Said,Cawang,275,New,2,,20.0,2028,Planned,Dki Jakarta,jamali,820,Tabel B1.14
-RUPTL-JAMALI-T-0026,Citra Garden — Kapuk / PIK,Citra Garden,Kapuk / PIK,150,New,2,SUTT,18.0,2032,Planned,Dki Jakarta,jamali,820,Tabel B1.14
-RUPTL-JAMALI-T-0027,Taman Rasuna II / Benhil — Karet Lama,Taman Rasuna II / Benhil,Karet Lama,150,New,2,SKTT,10.0,2033,Planned,Dki Jakarta,jamali,820,Tabel B1.14
-RUPTL-JAMALI-T-0028,Semanggi Barat II / Petamburan — Karet Lama,Semanggi Barat II / Petamburan,Karet Lama,150,New,2,SKTT,3.0,2034,Planned,Dki Jakarta,jamali,820,Tabel B1.14
-RUPTL-JAMALI-T-0029,PLTSa DKI Jakarta (Kuota) Tersebar 1 — DKI Jakarta Eksisting / Baru,PLTSa DKI Jakarta (Kuota) Tersebar 1,DKI Jakarta Eksisting / Baru,150,New,2,SUTT,10.0,2029,Planned,Dki Jakarta,jamali,820,Tabel B1.14
-RUPTL-JAMALI-T-0030,PLTSa DKI Jakarta (Kuota) Tersebar 1 — DKI Jakarta Eksisting / Baru,PLTSa DKI Jakarta (Kuota) Tersebar 1,DKI Jakarta Eksisting / Baru,150,New,2,SUTT,10.0,2029,Planned,Dki Jakarta,jamali,820,Tabel B1.14
-RUPTL-JAMALI-T-0031,PLTSa DKI Jakarta (Kuota) Tersebar 1 — DKI Jakarta Eksisting / Baru,PLTSa DKI Jakarta (Kuota) Tersebar 1,DKI Jakarta Eksisting / Baru,150,New,2,SUTT,10.0,2029,Planned,Dki Jakarta,jamali,820,Tabel B1.14
-RUPTL-JAMALI-T-0032,Pondok Kelapa II — Inc. (Pondok Kelapa - Jatiwaringin),Pondok Kelapa II,Inc. (Pondok Kelapa - Jatiwaringin),150,New,4,SUTT,4.0,2026,Planned,Dki Jakarta,jamali,820,Tabel B1.14
+RUPTL-JAMALI-T-0001,Gandul II / Pamulang — Inc. (Serpong - Petukangan | Bintaro),Gandul II / Pamulang,Inc. (Serpong - Petukangan | Bintaro),150,New,4,SUTT,80.0,2025,Planned,DKI Jakarta,jamali,819,Tabel B1.11
+RUPTL-JAMALI-T-0002,Budi Kemuliaan — Kebon Sirih,Budi Kemuliaan,Kebon Sirih,150,New,2,SKTT,4.0,2025,Planned,DKI Jakarta,jamali,819,Tabel B1.11
+RUPTL-JAMALI-T-0003,Muara Karang Lama — Budi Kemuliaan,Muara Karang Lama,Budi Kemuliaan,150,New,2,SKTT,24.0,2025,Planned,DKI Jakarta,jamali,819,Tabel B1.11
+RUPTL-JAMALI-T-0004,Kebon Jeruk — Duri Kosambi,Kebon Jeruk,Duri Kosambi,150,New,2,SKTT,20.0,2025,Planned,DKI Jakarta,jamali,819,Tabel B1.11
+RUPTL-JAMALI-T-0005,Priok — Muara Tawar,Priok,Muara Tawar,500,New,2,SUTET,30.0,2025,Construction,DKI Jakarta,jamali,819,Tabel B1.11
+RUPTL-JAMALI-T-0006,Setiabudi II / Casablanca — Inc. (Cawang - Abadi Guna Papan | Taman Rasuna),Setiabudi II / Casablanca,Inc. (Cawang - Abadi Guna Papan | Taman Rasuna),150,New,4,SKTT,4.0,2026,Planned,DKI Jakarta,jamali,819,Tabel B1.11
+RUPTL-JAMALI-T-0007,Manggarai — Dukuh Atas,Manggarai,Dukuh Atas,150,New,1,SKTT,3.0,2026,Planned,DKI Jakarta,jamali,819,Tabel B1.11
+RUPTL-JAMALI-T-0008,Cawang Lama — Tx. Cawang Lama,Cawang Lama,Tx. Cawang Lama,150,New,2,SUTT,9.1,2026,Construction,DKI Jakarta,jamali,819,Tabel B1.11
+RUPTL-JAMALI-T-0009,Duren Tiga II / Ragunan — Tx. Ragunan,Duren Tiga II / Ragunan,Tx. Ragunan,150,New,2,SUTT,2.6,2026,Construction,DKI Jakarta,jamali,819,Tabel B1.11
+RUPTL-JAMALI-T-0010,Tx Cawang Lama — Tx. Ragunan,Tx Cawang Lama,Tx. Ragunan,150,New,2,SKTT,3.6,2026,Planned,DKI Jakarta,jamali,819,Tabel B1.11
+RUPTL-JAMALI-T-0011,Danayasa — Abadi Guna Papan,Danayasa,Abadi Guna Papan,150,New,2,SKTT,4.0,2026,Planned,DKI Jakarta,jamali,819,Tabel B1.11
+RUPTL-JAMALI-T-0012,Cawang Baru — Gandul,Cawang Baru,Gandul,500,New,2,,44.0,2026,Planned,DKI Jakarta,jamali,819,Tabel B1.11
+RUPTL-JAMALI-T-0013,Ancol II / Pinangsia — Angke,Ancol II / Pinangsia,Angke,150,New,2,SKTT,10.0,2027,Planned,DKI Jakarta,jamali,819,Tabel B1.11
+RUPTL-JAMALI-T-0014,Gambir Lama II — Inc. (Kebon Sirih - Gambir Lama),Gambir Lama II,Inc. (Kebon Sirih - Gambir Lama),150,New,2,SKTT,1.0,2027,Planned,DKI Jakarta,jamali,819,Tabel B1.11
+RUPTL-JAMALI-T-0015,Angke — Ancol,Angke,Ancol,150,New,2,SKTT,11.8,2027,Planned,DKI Jakarta,jamali,819,Tabel B1.11
+RUPTL-JAMALI-T-0016,Ancol — Kemayoran,Ancol,Kemayoran,150,New,2,SKTT,9.6,2027,Planned,DKI Jakarta,jamali,819,Tabel B1.11
+RUPTL-JAMALI-T-0017,Kemayoran — Tx. Kemayoran,Kemayoran,Tx. Kemayoran,150,New,2,SKTT,10.0,2027,Planned,DKI Jakarta,jamali,819,Tabel B1.11
+RUPTL-JAMALI-T-0018,Muara Karang Lama — Duri Kosambi,Muara Karang Lama,Duri Kosambi,150,New,2,SKTT,38.0,2027,Planned,DKI Jakarta,jamali,819,Tabel B1.11
+RUPTL-JAMALI-T-0019,Petukangan — PLTD Senayan,Petukangan,PLTD Senayan,150,New,2,SKTT,19.0,2027,Planned,DKI Jakarta,jamali,819,Tabel B1.11
+RUPTL-JAMALI-T-0020,Manggarai — Gedung Pola,Manggarai,Gedung Pola,150,New,1,SKTT,3.5,2027,Planned,DKI Jakarta,jamali,819,Tabel B1.11
+RUPTL-JAMALI-T-0021,Duri Kosambi — Kembangan,Duri Kosambi,Kembangan,150,New,2,SKTT,13.6,2027,Planned,DKI Jakarta,jamali,819,Tabel B1.11
+RUPTL-JAMALI-T-0022,Priok — Muara karang,Priok,Muara karang,500,New,2,SUTET,20.0,2027,Planned,DKI Jakarta,jamali,820,Tabel B1.14
+RUPTL-JAMALI-T-0023,Mampang Baru II — Inc. (Mampang - Karet Lama),Mampang Baru II,Inc. (Mampang - Karet Lama),150,New,4,SUTT,6.4,2028,Planned,DKI Jakarta,jamali,820,Tabel B1.14
+RUPTL-JAMALI-T-0024,PLTSA Sunter — Kemayoran,PLTSA Sunter,Kemayoran,150,New,1,SUTT,3.0,2028,Planned,DKI Jakarta,jamali,820,Tabel B1.14
+RUPTL-JAMALI-T-0025,Rasuna Said — Cawang,Rasuna Said,Cawang,275,New,2,,20.0,2028,Planned,DKI Jakarta,jamali,820,Tabel B1.14
+RUPTL-JAMALI-T-0026,Citra Garden — Kapuk / PIK,Citra Garden,Kapuk / PIK,150,New,2,SUTT,18.0,2032,Planned,DKI Jakarta,jamali,820,Tabel B1.14
+RUPTL-JAMALI-T-0027,Taman Rasuna II / Benhil — Karet Lama,Taman Rasuna II / Benhil,Karet Lama,150,New,2,SKTT,10.0,2033,Planned,DKI Jakarta,jamali,820,Tabel B1.14
+RUPTL-JAMALI-T-0028,Semanggi Barat II / Petamburan — Karet Lama,Semanggi Barat II / Petamburan,Karet Lama,150,New,2,SKTT,3.0,2034,Planned,DKI Jakarta,jamali,820,Tabel B1.14
+RUPTL-JAMALI-T-0029,PLTSa DKI Jakarta (Kuota) Tersebar 1 — DKI Jakarta Eksisting / Baru,PLTSa DKI Jakarta (Kuota) Tersebar 1,DKI Jakarta Eksisting / Baru,150,New,2,SUTT,10.0,2029,Planned,DKI Jakarta,jamali,820,Tabel B1.14
+RUPTL-JAMALI-T-0030,PLTSa DKI Jakarta (Kuota) Tersebar 1 — DKI Jakarta Eksisting / Baru,PLTSa DKI Jakarta (Kuota) Tersebar 1,DKI Jakarta Eksisting / Baru,150,New,2,SUTT,10.0,2029,Planned,DKI Jakarta,jamali,820,Tabel B1.14
+RUPTL-JAMALI-T-0031,PLTSa DKI Jakarta (Kuota) Tersebar 1 — DKI Jakarta Eksisting / Baru,PLTSa DKI Jakarta (Kuota) Tersebar 1,DKI Jakarta Eksisting / Baru,150,New,2,SUTT,10.0,2029,Planned,DKI Jakarta,jamali,820,Tabel B1.14
+RUPTL-JAMALI-T-0032,Pondok Kelapa II — Inc. (Pondok Kelapa - Jatiwaringin),Pondok Kelapa II,Inc. (Pondok Kelapa - Jatiwaringin),150,New,4,SUTT,4.0,2026,Planned,DKI Jakarta,jamali,820,Tabel B1.14
 RUPTL-JAMALI-T-0033,Cikupa — Inc. (Balaraja - Kembangan),Cikupa,Inc. (Balaraja - Kembangan),500,New,4,SUTET,4.0,2025,Construction,Banten,jamali,833,Tabel B2.13
 RUPTL-JAMALI-T-0034,Cikupa New — Tx. Cikupa New (Inc. Jatake - Jatake II),Cikupa New,Tx. Cikupa New (Inc. Jatake - Jatake II),150,New,4,SKTT,8.8,2025,Committed,Banten,jamali,833,Tabel B2.13
 RUPTL-JAMALI-T-0035,Tx. Cikupa New — Inc. (Jatake - Jatake II),Tx. Cikupa New,Inc. (Jatake - Jatake II),150,New,4,SUTT,2.4,2025,Committed,Banten,jamali,833,Tabel B2.13

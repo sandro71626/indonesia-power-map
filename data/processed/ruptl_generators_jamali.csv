@@ -1,6 +1,6 @@
 id,name,type,capacity_mw,province,region_key,status,target_cod_year,cod_re_base,cod_ared,developer,source_table,source_page,lat,lon,coord_source,coord_confidence,reference_ruptl_id,reference_source_url
-RUPTL-JAMALI-P-0001,Sunter Jawa-Bali (Kuota),PLTSa,35.0,Dki Jakarta,jamali,Planned,2028,2028 2029,2028 2029,IPP,Tabel B1.9,818,-6.189644,106.777948,province_centroid,low,,
-RUPTL-JAMALI-P-0002,Tersebar,PLTSa,150.0,Dki Jakarta,jamali,Planned,,,,IPP,Tabel B1.9,818,-6.021344,106.702155,province_centroid,low,,
+RUPTL-JAMALI-P-0001,Sunter Jawa-Bali (Kuota),PLTSa,35.0,DKI Jakarta,jamali,Planned,2028,2028 2029,2028 2029,IPP,Tabel B1.9,818,-6.189644,106.777948,province_centroid,low,,
+RUPTL-JAMALI-P-0002,Tersebar,PLTSa,150.0,DKI Jakarta,jamali,Planned,,,,IPP,Tabel B1.9,818,-6.021344,106.702155,province_centroid,low,,
 RUPTL-JAMALI-P-0003,Jawa-9,PLTU,1000.0,Banten,jamali,Construction,2025,2025,2025,IPP,Tabel B2.11,830,-6.257013,106.036013,province_centroid,low,,
 RUPTL-JAMALI-P-0004,Jawa-10,PLTU,1000.0,Banten,jamali,Construction,2025,2025,2025,IPP,Tabel B2.11,830,-6.359439,106.223833,province_centroid,low,,
 RUPTL-JAMALI-P-0005,Cikotok,PLTM,4.2,Banten,jamali,Construction,2026,2026,2026,IPP,Tabel B2.11,830,-6.850629,106.304046,reference_100gw:RUPTL-342e19042a09,medium,RUPTL-342e19042a09,https://www.openstreetmap.org/node/1308683322

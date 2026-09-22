@@ -1,68 +1,68 @@
 ruptl_id,name,voltage_kv,action_type,capacity_mva,target_cod_year,status,province,classification,baseline_id,baseline_name,source_page,source_table
-RUPTL-JAMALI-GI-0001,Gandul II / Pamulang,150/20,New,120.0,2025,Planned,Dki Jakarta,NEW_BUILD,,,821,Tabel B1.14
-RUPTL-JAMALI-GI-0002,Muara Tawar,500,Extension,,2025,Construction,Dki Jakarta,NEW_BUILD,,,821,Tabel B1.14
-RUPTL-JAMALI-GI-0003,Budi Kemuliaan,150,Uprate,2.0,2025,Planned,Dki Jakarta,EXISTING_UPRATE,GI-JMB-0007,Budi Kemuliaan,821,Tabel B1.14
-RUPTL-JAMALI-GI-0004,Muara Karang Lama,150,Uprate,2.0,2025,Planned,Dki Jakarta,NEW_BUILD,,,821,Tabel B1.14
-RUPTL-JAMALI-GI-0005,Marunda,150,Extension,2.0,2025,Construction,Dki Jakarta,EXISTING_EXT,GI-JMB-0052,Marunda,821,Tabel B1.14
-RUPTL-JAMALI-GI-0006,Senayan III / Ulujami,150/20,Extension,60.0,2026,Planned,Dki Jakarta,EXISTING_EXT,GI-JMB-0072,Senayan III / Ulujami,821,Tabel B1.14
-RUPTL-JAMALI-GI-0007,Setiabudi II / Casablanca,150/20,New,120.0,2026,Planned,Dki Jakarta,NEW_BUILD,,,821,Tabel B1.14
-RUPTL-JAMALI-GI-0008,Dukuh Atas,150,Extension,1.0,2026,Planned,Dki Jakarta,EXISTING_EXT,GI-JMB-0017,Dukuh Atas,821,Tabel B1.14
-RUPTL-JAMALI-GI-0009,Manggarai,150,Extension,1.0,2026,Planned,Dki Jakarta,EXISTING_EXT,GI-JMB-0051,Manggarai,821,Tabel B1.14
-RUPTL-JAMALI-GI-0010,Gandul,500,Extension,1.0,2026,Planned,Dki Jakarta,EXISTING_EXT,GI-JMB-0024,Gandul,821,Tabel B1.14
-RUPTL-JAMALI-GI-0011,Cawang Lama,150,Extension,2.0,2026,Planned,Dki Jakarta,NEW_BUILD,,,821,Tabel B1.14
-RUPTL-JAMALI-GI-0012,Cawang Lama,150,Extension,,2026,Planned,Dki Jakarta,NEW_BUILD,,,821,Tabel B1.14
-RUPTL-JAMALI-GI-0013,Abadi Guna Papan,150,Extension,2.0,2026,Planned,Dki Jakarta,EXISTING_EXT,GI-JMB-0001,Abadi Guna Papan,821,Tabel B1.14
-RUPTL-JAMALI-GI-0014,Angke,150,Extension,2.0,2027,Planned,Dki Jakarta,EXISTING_EXT,GI-JMB-0003,Angke,821,Tabel B1.14
-RUPTL-JAMALI-GI-0015,Ancol II / Pinangsia,150/20,New,60.0,2027,Planned,Dki Jakarta,NEW_BUILD,,,821,Tabel B1.14
-RUPTL-JAMALI-GI-0016,Duren Tiga II / Ragunan,150/20,Extension,60.0,2027,Construction,Dki Jakarta,EXISTING_EXT,GI-JMB-0078,Duren Tiga II / Ragunan,821,Tabel B1.14
-RUPTL-JAMALI-GI-0017,Duri Kosambi,500/150,Extension,500.0,2027,Planned,Dki Jakarta,EXISTING_EXT,GI-JMB-0019,Duri Kosambi,821,Tabel B1.14
-RUPTL-JAMALI-GI-0018,Duri Kosambi,500/150,Extension,500.0,2027,Planned,Dki Jakarta,EXISTING_EXT,GI-JMB-0019,Duri Kosambi,821,Tabel B1.14
-RUPTL-JAMALI-GI-0019,Duri Kosambi,150,Extension,,2027,Planned,Dki Jakarta,EXISTING_EXT,GI-JMB-0019,Duri Kosambi,821,Tabel B1.14
-RUPTL-JAMALI-GI-0020,Kapuk / PIK,150/20,Extension,60.0,2027,Construction,Dki Jakarta,NEW_BUILD,,,821,Tabel B1.14
-RUPTL-JAMALI-GI-0021,Gambir Lama II,150,Extension,1.0,2027,Planned,Dki Jakarta,EXISTING_EXT,GI-JMB-0021,Gambir Lama,821,Tabel B1.14
-RUPTL-JAMALI-GI-0022,Karet Lama,150,Extension,1.0,2027,Planned,Dki Jakarta,EXISTING_EXT,GI-JMB-0037,Karet Lama,821,Tabel B1.14
-RUPTL-JAMALI-GI-0023,Muara Karang Lama,150,New,1.0,2027,Planned,Dki Jakarta,NEW_BUILD,,,821,Tabel B1.14
-RUPTL-JAMALI-GI-0024,Muara Karang New,150/20,New,60.0,2027,Construction,Dki Jakarta,RECLASSIFY_NEW,GI-JMB-0054,Muara Karang Baru,821,Tabel B1.14
-RUPTL-JAMALI-GI-0025,PLTD Senayan,150,Extension,1.0,2027,Planned,Dki Jakarta,EXISTING_EXT,GI-JMB-0055,New Senayan,821,Tabel B1.14
-RUPTL-JAMALI-GI-0026,Gedung Pola,150,Extension,1.0,2027,Planned,Dki Jakarta,EXISTING_EXT,GI-JMB-0026,Gedung Pola,821,Tabel B1.14
-RUPTL-JAMALI-GI-0027,Manggarai,150,Extension,1.0,2027,Planned,Dki Jakarta,EXISTING_EXT,GI-JMB-0051,Manggarai,821,Tabel B1.14
-RUPTL-JAMALI-GI-0028,Cawang Baru,500/150,Extension,1000.0,2027,Planned,Dki Jakarta,EXISTING_EXT,GI-JMB-0008,Cawang,821,Tabel B1.14
-RUPTL-JAMALI-GI-0029,Duri Kosambi,150,Uprate,2.0,2027,Planned,Dki Jakarta,EXISTING_UPRATE,GI-JMB-0019,Duri Kosambi,821,Tabel B1.14
-RUPTL-JAMALI-GI-0030,Kembangan,150,Uprate,2.0,2027,Planned,Dki Jakarta,EXISTING_UPRATE,GI-JMB-0045,Kembangan,821,Tabel B1.14
-RUPTL-JAMALI-GI-0031,Kemayoran,150,Extension,1.0,2028,Planned,Dki Jakarta,EXISTING_EXT,GI-JMB-0043,Kemayoran,821,Tabel B1.14
-RUPTL-JAMALI-GI-0032,PLTSA Sunter,150,New,1.0,2028,Planned,Dki Jakarta,RECLASSIFY_NEW,GI-JMB-0074,Sunter,821,Tabel B1.14
-RUPTL-JAMALI-GI-0033,Pondok Indah II / Cirendeu,150/20,Extension,120.0,2028,Planned,Dki Jakarta,EXISTING_EXT,GI-JMB-0064,Pondok Indah 2 / Cirendeu,821,Tabel B1.14
-RUPTL-JAMALI-GI-0034,Cawang,500,Extension,2.0,2028,Planned,Dki Jakarta,EXISTING_EXT,GI-JMB-0008,Cawang,821,Tabel B1.14
-RUPTL-JAMALI-GI-0035,Cawang,275,New,2.0,2028,Planned,Dki Jakarta,RECLASSIFY_NEW,GI-JMB-0008,Cawang,821,Tabel B1.14
-RUPTL-JAMALI-GI-0036,Rasuna Said,275/150,New,1000.0,2028,Planned,Dki Jakarta,NEW_BUILD,,,821,Tabel B1.14
-RUPTL-JAMALI-GI-0037,Rasuna Said,150/20,New,60.0,2028,Planned,Dki Jakarta,NEW_BUILD,,,821,Tabel B1.14
-RUPTL-JAMALI-GI-0038,Cawang,500/275,Extension,1000.0,2028,Planned,Dki Jakarta,EXISTING_EXT,GI-JMB-0008,Cawang,821,Tabel B1.14
-RUPTL-JAMALI-GI-0039,Harapan Indah,150/20,Extension,60.0,2029,Planned,Dki Jakarta,EXISTING_EXT,GI-JMB-0030,Harapan Indah,821,Tabel B1.14
-RUPTL-JAMALI-GI-0040,Bintaro,150/20,Extension,60.0,2031,Planned,Dki Jakarta,EXISTING_EXT,GI-JMB-0005,Bintaro,821,Tabel B1.14
-RUPTL-JAMALI-GI-0041,Kapuk / PIK,150,Extension,2.0,2032,Planned,Dki Jakarta,NEW_BUILD,,,822,Tabel B1.9
-RUPTL-JAMALI-GI-0042,Citra Garden,150/20,New,60.0,2032,Planned,Dki Jakarta,NEW_BUILD,,,822,Tabel B1.9
-RUPTL-JAMALI-GI-0043,Kembangan II / Metland Cyber City,150/20,Extension,60.0,2032,Planned,Dki Jakarta,NEW_BUILD,,,822,Tabel B1.9
-RUPTL-JAMALI-GI-0044,Gambir Baru,150/20,Extension,60.0,2033,Planned,Dki Jakarta,EXISTING_EXT,GI-JMB-0020,Gambir Baru,822,Tabel B1.9
-RUPTL-JAMALI-GI-0045,Gambir Lama II,150/20,Extension,60.0,2033,Planned,Dki Jakarta,EXISTING_EXT,GI-JMB-0021,Gambir Lama,822,Tabel B1.9
-RUPTL-JAMALI-GI-0046,Grogol II / Kedaung,150/20,Extension,120.0,2033,Planned,Dki Jakarta,NEW_BUILD,,,822,Tabel B1.9
-RUPTL-JAMALI-GI-0047,Kandang Sapi,150/20,Extension,60.0,2033,Planned,Dki Jakarta,EXISTING_EXT,GI-JMB-0035,Kandang Sapi,822,Tabel B1.9
-RUPTL-JAMALI-GI-0048,Tomang,150,Extension,1.0,2033,Planned,Dki Jakarta,EXISTING_EXT,GI-JMB-0077,Tomang,822,Tabel B1.9
-RUPTL-JAMALI-GI-0049,Tomang,150,Extension,1.0,2033,Planned,Dki Jakarta,EXISTING_EXT,GI-JMB-0077,Tomang,822,Tabel B1.9
-RUPTL-JAMALI-GI-0050,Plumpang,150,Uprate,2.0,2033,Planned,Dki Jakarta,EXISTING_UPRATE,GI-JMB-0062,Plumpang,822,Tabel B1.9
-RUPTL-JAMALI-GI-0051,Pulo Gadung II,150/20,Extension,60.0,2033,Planned,Dki Jakarta,NEW_BUILD,,,822,Tabel B1.9
-RUPTL-JAMALI-GI-0052,Karet Lama,150,Extension,2.0,2033,Planned,Dki Jakarta,EXISTING_EXT,GI-JMB-0037,Karet Lama,822,Tabel B1.9
-RUPTL-JAMALI-GI-0053,Taman Rasuna II / Benhil,150/20,New,60.0,2033,Planned,Dki Jakarta,NEW_BUILD,,,822,Tabel B1.9
-RUPTL-JAMALI-GI-0054,Gandaria II / Jl. Raya Bogor,150/20,Extension,60.0,2034,Planned,Dki Jakarta,NEW_BUILD,,,822,Tabel B1.9
-RUPTL-JAMALI-GI-0055,Mangga Besar,150/20,Extension,60.0,2034,Planned,Dki Jakarta,EXISTING_EXT,GI-JMB-0050,Mangga Besar,822,Tabel B1.9
-RUPTL-JAMALI-GI-0056,Karet Lama,150,Extension,2.0,2034,Planned,Dki Jakarta,EXISTING_EXT,GI-JMB-0037,Karet Lama,822,Tabel B1.9
-RUPTL-JAMALI-GI-0057,Semanggi Barat II / Petamburan,150/20,New,120.0,2034,Planned,Dki Jakarta,NEW_BUILD,,,822,Tabel B1.9
-RUPTL-JAMALI-GI-0058,DKI Jakarta Eksisting/Baru,150,Extension,2.0,2029,Planned,Dki Jakarta,NEW_BUILD,,,822,Tabel B1.9
-RUPTL-JAMALI-GI-0059,DKI Jakarta Eksisting/Baru,150,Extension,2.0,2029,Planned,Dki Jakarta,NEW_BUILD,,,822,Tabel B1.9
-RUPTL-JAMALI-GI-0060,DKI Jakarta Eksisting/Baru,150,Extension,2.0,2029,Planned,Dki Jakarta,NEW_BUILD,,,822,Tabel B1.9
-RUPTL-JAMALI-GI-0061,Pondok Kelapa II,150/20,New,60.0,2026,Construction,Dki Jakarta,RECLASSIFY_NEW,GI-JMB-0065,Pondok Kelapa,822,Tabel B1.9
-RUPTL-JAMALI-GI-0062,Mampang Baru II,150/20,New,120.0,2028,Planned,Dki Jakarta,RECLASSIFY_NEW,GI-JMB-0048,Mampang Baru,822,Tabel B1.9
-RUPTL-JAMALI-GI-0063,Ancol,150/20,Extension,60.0,2032,Planned,Dki Jakarta,EXISTING_EXT,GI-JMB-0002,Ancol,822,Tabel B1.9
-RUPTL-JAMALI-GI-0064,Kuningan,150/20,Extension,120.0,2034,Planned,Dki Jakarta,NEW_BUILD,,,822,Tabel B1.9
+RUPTL-JAMALI-GI-0001,Gandul II / Pamulang,150/20,New,120.0,2025,Planned,DKI Jakarta,NEW_BUILD,,,821,Tabel B1.14
+RUPTL-JAMALI-GI-0002,Muara Tawar,500,Extension,,2025,Construction,DKI Jakarta,NEW_BUILD,,,821,Tabel B1.14
+RUPTL-JAMALI-GI-0003,Budi Kemuliaan,150,Uprate,2.0,2025,Planned,DKI Jakarta,EXISTING_UPRATE,GI-JMB-0007,Budi Kemuliaan,821,Tabel B1.14
+RUPTL-JAMALI-GI-0004,Muara Karang Lama,150,Uprate,2.0,2025,Planned,DKI Jakarta,NEW_BUILD,,,821,Tabel B1.14
+RUPTL-JAMALI-GI-0005,Marunda,150,Extension,2.0,2025,Construction,DKI Jakarta,EXISTING_EXT,GI-JMB-0052,Marunda,821,Tabel B1.14
+RUPTL-JAMALI-GI-0006,Senayan III / Ulujami,150/20,Extension,60.0,2026,Planned,DKI Jakarta,EXISTING_EXT,GI-JMB-0072,Senayan III / Ulujami,821,Tabel B1.14
+RUPTL-JAMALI-GI-0007,Setiabudi II / Casablanca,150/20,New,120.0,2026,Planned,DKI Jakarta,NEW_BUILD,,,821,Tabel B1.14
+RUPTL-JAMALI-GI-0008,Dukuh Atas,150,Extension,1.0,2026,Planned,DKI Jakarta,EXISTING_EXT,GI-JMB-0017,Dukuh Atas,821,Tabel B1.14
+RUPTL-JAMALI-GI-0009,Manggarai,150,Extension,1.0,2026,Planned,DKI Jakarta,EXISTING_EXT,GI-JMB-0051,Manggarai,821,Tabel B1.14
+RUPTL-JAMALI-GI-0010,Gandul,500,Extension,1.0,2026,Planned,DKI Jakarta,EXISTING_EXT,GI-JMB-0024,Gandul,821,Tabel B1.14
+RUPTL-JAMALI-GI-0011,Cawang Lama,150,Extension,2.0,2026,Planned,DKI Jakarta,NEW_BUILD,,,821,Tabel B1.14
+RUPTL-JAMALI-GI-0012,Cawang Lama,150,Extension,,2026,Planned,DKI Jakarta,NEW_BUILD,,,821,Tabel B1.14
+RUPTL-JAMALI-GI-0013,Abadi Guna Papan,150,Extension,2.0,2026,Planned,DKI Jakarta,EXISTING_EXT,GI-JMB-0001,Abadi Guna Papan,821,Tabel B1.14
+RUPTL-JAMALI-GI-0014,Angke,150,Extension,2.0,2027,Planned,DKI Jakarta,EXISTING_EXT,GI-JMB-0003,Angke,821,Tabel B1.14
+RUPTL-JAMALI-GI-0015,Ancol II / Pinangsia,150/20,New,60.0,2027,Planned,DKI Jakarta,NEW_BUILD,,,821,Tabel B1.14
+RUPTL-JAMALI-GI-0016,Duren Tiga II / Ragunan,150/20,Extension,60.0,2027,Construction,DKI Jakarta,EXISTING_EXT,GI-JMB-0078,Duren Tiga II / Ragunan,821,Tabel B1.14
+RUPTL-JAMALI-GI-0017,Duri Kosambi,500/150,Extension,500.0,2027,Planned,DKI Jakarta,EXISTING_EXT,GI-JMB-0019,Duri Kosambi,821,Tabel B1.14
+RUPTL-JAMALI-GI-0018,Duri Kosambi,500/150,Extension,500.0,2027,Planned,DKI Jakarta,EXISTING_EXT,GI-JMB-0019,Duri Kosambi,821,Tabel B1.14
+RUPTL-JAMALI-GI-0019,Duri Kosambi,150,Extension,,2027,Planned,DKI Jakarta,EXISTING_EXT,GI-JMB-0019,Duri Kosambi,821,Tabel B1.14
+RUPTL-JAMALI-GI-0020,Kapuk / PIK,150/20,Extension,60.0,2027,Construction,DKI Jakarta,NEW_BUILD,,,821,Tabel B1.14
+RUPTL-JAMALI-GI-0021,Gambir Lama II,150,Extension,1.0,2027,Planned,DKI Jakarta,EXISTING_EXT,GI-JMB-0021,Gambir Lama,821,Tabel B1.14
+RUPTL-JAMALI-GI-0022,Karet Lama,150,Extension,1.0,2027,Planned,DKI Jakarta,EXISTING_EXT,GI-JMB-0037,Karet Lama,821,Tabel B1.14
+RUPTL-JAMALI-GI-0023,Muara Karang Lama,150,New,1.0,2027,Planned,DKI Jakarta,NEW_BUILD,,,821,Tabel B1.14
+RUPTL-JAMALI-GI-0024,Muara Karang New,150/20,New,60.0,2027,Construction,DKI Jakarta,RECLASSIFY_NEW,GI-JMB-0054,Muara Karang Baru,821,Tabel B1.14
+RUPTL-JAMALI-GI-0025,PLTD Senayan,150,Extension,1.0,2027,Planned,DKI Jakarta,EXISTING_EXT,GI-JMB-0055,New Senayan,821,Tabel B1.14
+RUPTL-JAMALI-GI-0026,Gedung Pola,150,Extension,1.0,2027,Planned,DKI Jakarta,EXISTING_EXT,GI-JMB-0026,Gedung Pola,821,Tabel B1.14
+RUPTL-JAMALI-GI-0027,Manggarai,150,Extension,1.0,2027,Planned,DKI Jakarta,EXISTING_EXT,GI-JMB-0051,Manggarai,821,Tabel B1.14
+RUPTL-JAMALI-GI-0028,Cawang Baru,500/150,Extension,1000.0,2027,Planned,DKI Jakarta,EXISTING_EXT,GI-JMB-0008,Cawang,821,Tabel B1.14
+RUPTL-JAMALI-GI-0029,Duri Kosambi,150,Uprate,2.0,2027,Planned,DKI Jakarta,EXISTING_UPRATE,GI-JMB-0019,Duri Kosambi,821,Tabel B1.14
+RUPTL-JAMALI-GI-0030,Kembangan,150,Uprate,2.0,2027,Planned,DKI Jakarta,EXISTING_UPRATE,GI-JMB-0045,Kembangan,821,Tabel B1.14
+RUPTL-JAMALI-GI-0031,Kemayoran,150,Extension,1.0,2028,Planned,DKI Jakarta,EXISTING_EXT,GI-JMB-0043,Kemayoran,821,Tabel B1.14
+RUPTL-JAMALI-GI-0032,PLTSA Sunter,150,New,1.0,2028,Planned,DKI Jakarta,RECLASSIFY_NEW,GI-JMB-0074,Sunter,821,Tabel B1.14
+RUPTL-JAMALI-GI-0033,Pondok Indah II / Cirendeu,150/20,Extension,120.0,2028,Planned,DKI Jakarta,EXISTING_EXT,GI-JMB-0064,Pondok Indah 2 / Cirendeu,821,Tabel B1.14
+RUPTL-JAMALI-GI-0034,Cawang,500,Extension,2.0,2028,Planned,DKI Jakarta,EXISTING_EXT,GI-JMB-0008,Cawang,821,Tabel B1.14
+RUPTL-JAMALI-GI-0035,Cawang,275,New,2.0,2028,Planned,DKI Jakarta,RECLASSIFY_NEW,GI-JMB-0008,Cawang,821,Tabel B1.14
+RUPTL-JAMALI-GI-0036,Rasuna Said,275/150,New,1000.0,2028,Planned,DKI Jakarta,NEW_BUILD,,,821,Tabel B1.14
+RUPTL-JAMALI-GI-0037,Rasuna Said,150/20,New,60.0,2028,Planned,DKI Jakarta,NEW_BUILD,,,821,Tabel B1.14
+RUPTL-JAMALI-GI-0038,Cawang,500/275,Extension,1000.0,2028,Planned,DKI Jakarta,EXISTING_EXT,GI-JMB-0008,Cawang,821,Tabel B1.14
+RUPTL-JAMALI-GI-0039,Harapan Indah,150/20,Extension,60.0,2029,Planned,DKI Jakarta,EXISTING_EXT,GI-JMB-0030,Harapan Indah,821,Tabel B1.14
+RUPTL-JAMALI-GI-0040,Bintaro,150/20,Extension,60.0,2031,Planned,DKI Jakarta,EXISTING_EXT,GI-JMB-0005,Bintaro,821,Tabel B1.14
+RUPTL-JAMALI-GI-0041,Kapuk / PIK,150,Extension,2.0,2032,Planned,DKI Jakarta,NEW_BUILD,,,822,Tabel B1.9
+RUPTL-JAMALI-GI-0042,Citra Garden,150/20,New,60.0,2032,Planned,DKI Jakarta,NEW_BUILD,,,822,Tabel B1.9
+RUPTL-JAMALI-GI-0043,Kembangan II / Metland Cyber City,150/20,Extension,60.0,2032,Planned,DKI Jakarta,NEW_BUILD,,,822,Tabel B1.9
+RUPTL-JAMALI-GI-0044,Gambir Baru,150/20,Extension,60.0,2033,Planned,DKI Jakarta,EXISTING_EXT,GI-JMB-0020,Gambir Baru,822,Tabel B1.9
+RUPTL-JAMALI-GI-0045,Gambir Lama II,150/20,Extension,60.0,2033,Planned,DKI Jakarta,EXISTING_EXT,GI-JMB-0021,Gambir Lama,822,Tabel B1.9
+RUPTL-JAMALI-GI-0046,Grogol II / Kedaung,150/20,Extension,120.0,2033,Planned,DKI Jakarta,NEW_BUILD,,,822,Tabel B1.9
+RUPTL-JAMALI-GI-0047,Kandang Sapi,150/20,Extension,60.0,2033,Planned,DKI Jakarta,EXISTING_EXT,GI-JMB-0035,Kandang Sapi,822,Tabel B1.9
+RUPTL-JAMALI-GI-0048,Tomang,150,Extension,1.0,2033,Planned,DKI Jakarta,EXISTING_EXT,GI-JMB-0077,Tomang,822,Tabel B1.9
+RUPTL-JAMALI-GI-0049,Tomang,150,Extension,1.0,2033,Planned,DKI Jakarta,EXISTING_EXT,GI-JMB-0077,Tomang,822,Tabel B1.9
+RUPTL-JAMALI-GI-0050,Plumpang,150,Uprate,2.0,2033,Planned,DKI Jakarta,EXISTING_UPRATE,GI-JMB-0062,Plumpang,822,Tabel B1.9
+RUPTL-JAMALI-GI-0051,Pulo Gadung II,150/20,Extension,60.0,2033,Planned,DKI Jakarta,NEW_BUILD,,,822,Tabel B1.9
+RUPTL-JAMALI-GI-0052,Karet Lama,150,Extension,2.0,2033,Planned,DKI Jakarta,EXISTING_EXT,GI-JMB-0037,Karet Lama,822,Tabel B1.9
+RUPTL-JAMALI-GI-0053,Taman Rasuna II / Benhil,150/20,New,60.0,2033,Planned,DKI Jakarta,NEW_BUILD,,,822,Tabel B1.9
+RUPTL-JAMALI-GI-0054,Gandaria II / Jl. Raya Bogor,150/20,Extension,60.0,2034,Planned,DKI Jakarta,NEW_BUILD,,,822,Tabel B1.9
+RUPTL-JAMALI-GI-0055,Mangga Besar,150/20,Extension,60.0,2034,Planned,DKI Jakarta,EXISTING_EXT,GI-JMB-0050,Mangga Besar,822,Tabel B1.9
+RUPTL-JAMALI-GI-0056,Karet Lama,150,Extension,2.0,2034,Planned,DKI Jakarta,EXISTING_EXT,GI-JMB-0037,Karet Lama,822,Tabel B1.9
+RUPTL-JAMALI-GI-0057,Semanggi Barat II / Petamburan,150/20,New,120.0,2034,Planned,DKI Jakarta,NEW_BUILD,,,822,Tabel B1.9
+RUPTL-JAMALI-GI-0058,DKI Jakarta Eksisting/Baru,150,Extension,2.0,2029,Planned,DKI Jakarta,NEW_BUILD,,,822,Tabel B1.9
+RUPTL-JAMALI-GI-0059,DKI Jakarta Eksisting/Baru,150,Extension,2.0,2029,Planned,DKI Jakarta,NEW_BUILD,,,822,Tabel B1.9
+RUPTL-JAMALI-GI-0060,DKI Jakarta Eksisting/Baru,150,Extension,2.0,2029,Planned,DKI Jakarta,NEW_BUILD,,,822,Tabel B1.9
+RUPTL-JAMALI-GI-0061,Pondok Kelapa II,150/20,New,60.0,2026,Construction,DKI Jakarta,RECLASSIFY_NEW,GI-JMB-0065,Pondok Kelapa,822,Tabel B1.9
+RUPTL-JAMALI-GI-0062,Mampang Baru II,150/20,New,120.0,2028,Planned,DKI Jakarta,RECLASSIFY_NEW,GI-JMB-0048,Mampang Baru,822,Tabel B1.9
+RUPTL-JAMALI-GI-0063,Ancol,150/20,Extension,60.0,2032,Planned,DKI Jakarta,EXISTING_EXT,GI-JMB-0002,Ancol,822,Tabel B1.9
+RUPTL-JAMALI-GI-0064,Kuningan,150/20,Extension,120.0,2034,Planned,DKI Jakarta,NEW_BUILD,,,822,Tabel B1.9
 RUPTL-JAMALI-GI-0065,Cikupa,500/150,New,1000.0,2025,Construction,Banten,RECLASSIFY_NEW,GI-JMB-0092,Cikupa,835,Tabel B2.15
 RUPTL-JAMALI-GI-0066,Cikupa New,150/20,New,60.0,2025,Committed,Banten,RECLASSIFY_NEW,GI-JMB-0092,Cikupa,835,Tabel B2.15
 RUPTL-JAMALI-GI-0067,Cilegon,500,Uprate,2.0,2025,Construction,Banten,EXISTING_UPRATE,GI-JMB-0094,Cilegon,835,Tabel B2.15
