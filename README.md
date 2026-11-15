@@ -1,3 +1,35 @@
+# Indonesia Power Map — Legacy Repository
+
+> **Project Status: Legacy / Historical Reference**
+>
+> This repository preserves the original development of **Indonesia Power Map (IPM)**, launched in June 2026. It is no longer the primary repository for the latest IPM datasets or website development.
+
+## Indonesia Power Map Has Moved
+
+Indonesia Power Map has evolved into an interactive platform for exploring Indonesia's electricity infrastructure, power generation, transmission networks, and energy system data.
+
+Please refer to the following official resources:
+
+- **Official Website:** https://indonesiapowermap.com
+- **Current Open Data Repository:** https://github.com/sandro71626/ipm-model
+
+The latest IPM website is hosted on Cloudflare Pages, with its application source maintained in a private development repository. Public datasets remain openly accessible through IPM Model.
+
+## About This Repository
+
+This repository remains publicly available to preserve the project's original development history, documentation, methodologies, and contributions.
+
+The original V1.1.1 documentation below reflects the state of IPM in June 2026 and should not be interpreted as the current platform specification.
+
+Thank you to everyone who has supported Indonesia Power Map since its initial release.
+
+---
+
+*The original project documentation is preserved below.*
+
+---
+
+
 # Peta Ketenagalistrikan Indonesia
 
 > Indonesia Power Map adalah peta digital sistem tenaga listrik Indonesia berbasis data publik, ditujukan untuk edukasi, eksplorasi, dan analisis umum.
